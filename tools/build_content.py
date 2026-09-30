@@ -583,7 +583,7 @@ def clean(o):
 if __name__ == "__main__":
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from levels_de import de_levels
-    from levels_at import at_levels
+    from levels_at import at_levels, at_antenna_tiers, at_qso_levels
     from levels_primers import us_levels, uk_levels
     from levels_parts import TIERS
     from levels_qso import qso_levels
@@ -595,7 +595,10 @@ if __name__ == "__main__":
     plist = parts()
     for p in plist:
         p["tiers"] = {str(lv): TIERS[p["id"]][lv] for lv in (2, 3)}
+        if p["id"] == "antenna":
+            p["country_tiers"] = {"at": at_antenna_tiers()}
     dump("content/tech/parts.json", clean(plist))
     q = qso()
     q["levels"] = {str(lv): v for lv, v in qso_levels().items()}
+    q["country_levels"] = {"at": at_qso_levels()}
     dump("content/qso/scripts.json", clean(q))

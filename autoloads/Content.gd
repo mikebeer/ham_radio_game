@@ -37,12 +37,22 @@ func callsign_book(country: String) -> Dictionary:
 ## Lesson and questions of a part for a level (1 = basic, 2/3 = deeper tiers).
 func part_tier(id: String, level: int) -> Dictionary:
 	var p := part(id)
+	var cc := str(Game.profile.get("country", ""))
+	var over: Dictionary = (p.get("country_tiers", {}) as Dictionary).get(cc, {})
+	if over.has(str(level)):
+		var d: Dictionary = (over[str(level)] as Dictionary).duplicate()
+		d["id"] = id
+		return d
 	if level <= 1:
 		return p
 	return (p.get("tiers", {}) as Dictionary).get(str(level), p)
 
 
 func qso_steps(level: int) -> Array:
+	var cc := str(Game.profile.get("country", ""))
+	var over: Dictionary = (qso.get("country_levels", {}) as Dictionary).get(cc, {})
+	if over.has(str(level)):
+		return (over[str(level)] as Dictionary).get("steps", [])
 	if level <= 1:
 		return qso.get("steps", [])
 	return (qso.get("levels", {}) as Dictionary).get(str(level), {}).get("steps", qso.get("steps", []))

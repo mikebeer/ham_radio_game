@@ -54,6 +54,11 @@ func _initialize() -> void:
 		_check(root.get_node("Content").qso_steps(3).size() == 3, "level 3 qso steps")
 		await _finish_level(g, 3)
 		_check(g.level_done(3) and g.check_level_up() == 0, c + " all levels done")
+	# Austria: band-specific content
+	g.begin_new_game("T", 1, "at")
+	_check(root.get_node("Content").part_tier("antenna", 1)["lesson"]["en"].contains("2 m"), "at class 3 antenna is 2 m / 70 cm")
+	_check(root.get_node("Content").part_tier("antenna", 2)["lesson"]["en"].contains("80 m"), "at class 4 antenna mentions 80 m")
+	_check(root.get_node("Content").qso_steps(1).size() == 3 and root.get_node("Content").qso_steps(2).size() == 3, "at qso steps")
 	# countries with one level
 	g.begin_new_game("T", 1, "ch")
 	_check(g.level_count() == 1, "ch has 1 level")

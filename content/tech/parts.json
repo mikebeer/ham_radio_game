@@ -653,6 +653,226 @@
      }
     ]
    }
+  },
+  "country_tiers": {
+   "at": {
+    "1": {
+     "lesson": {
+      "en": "Class 3 uses two bands: 2 m (144 to 146 MHz) and 70 cm (430 to 440 MHz). The wavelength in metres is about 300 divided by the frequency in MHz, so at 145 MHz it is about 2 m and at 435 MHz about 0.7 m. A quarter-wave vertical for 2 m is only about 50 cm long, and a half-wave dipole about 1 m. Such small antennas are easy to build into a window, a car or a mast. Keep away from power lines.",
+      "de": "Klasse 3 nutzt zwei Bänder: 2 m (144 bis 146 MHz) und 70 cm (430 bis 440 MHz). Die Wellenlänge in Metern beträgt etwa 300 geteilt durch die Frequenz in MHz, bei 145 MHz also rund 2 m und bei 435 MHz rund 0,7 m. Ein Viertelwellenstrahler für 2 m ist nur etwa 50 cm lang, ein Halbwellendipol etwa 1 m. Solche kleinen Antennen lassen sich leicht am Fenster, am Auto oder auf einem Mast unterbringen. Halte Abstand zu Stromleitungen."
+     },
+     "questions": [
+      {
+       "q": {
+        "en": "What is the wavelength at 145 MHz (approximately)?",
+        "de": "Wie groß ist die Wellenlänge bei 145 MHz (ungefähr)?"
+       },
+       "a": [
+        {
+         "en": "2 m",
+         "de": "2 m"
+        },
+        {
+         "en": "20 m",
+         "de": "20 m"
+        },
+        {
+         "en": "0.2 m",
+         "de": "0,2 m"
+        },
+        {
+         "en": "200 m",
+         "de": "200 m"
+        }
+       ],
+       "c": 0
+      },
+      {
+       "q": {
+        "en": "What is the wavelength at 435 MHz (approximately)?",
+        "de": "Wie groß ist die Wellenlänge bei 435 MHz (ungefähr)?"
+       },
+       "a": [
+        {
+         "en": "0.7 m",
+         "de": "0,7 m"
+        },
+        {
+         "en": "7 m",
+         "de": "7 m"
+        },
+        {
+         "en": "70 m",
+         "de": "70 m"
+        },
+        {
+         "en": "0.07 m",
+         "de": "0,07 m"
+        }
+       ],
+       "c": 0
+      },
+      {
+       "q": {
+        "en": "About how long is a quarter-wave vertical for the 2 m band?",
+        "de": "Wie lang ist ein Viertelwellenstrahler für das 2-m-Band etwa?"
+       },
+       "a": [
+        {
+         "en": "50 cm",
+         "de": "50 cm"
+        },
+        {
+         "en": "5 m",
+         "de": "5 m"
+        },
+        {
+         "en": "2 m",
+         "de": "2 m"
+        },
+        {
+         "en": "10 cm",
+         "de": "10 cm"
+        }
+       ],
+       "c": 0
+      },
+      {
+       "q": {
+        "en": "Which band is 430 to 440 MHz?",
+        "de": "Welches Band ist 430 bis 440 MHz?"
+       },
+       "a": [
+        {
+         "en": "70 cm",
+         "de": "70 cm"
+        },
+        {
+         "en": "2 m",
+         "de": "2 m"
+        },
+        {
+         "en": "10 m",
+         "de": "10 m"
+        },
+        {
+         "en": "80 m",
+         "de": "80 m"
+        }
+       ],
+       "c": 0
+      }
+     ]
+    },
+    "2": {
+     "lesson": {
+      "en": "Class 4 adds the HF bands 160 m, 80 m, 15 m and 10 m. A real half-wave dipole is about 5 % shorter than half a wavelength, so its length in metres is roughly 143 divided by the frequency in MHz. For 80 m (3.6 MHz) that is about 40 m of wire, for 10 m (28.5 MHz) only about 5 m. On 160 m (1.85 MHz) a dipole would be about 77 m, so many stations use a shortened or loaded antenna. A balun joins a balanced dipole to unbalanced coax. You must buy your transmitter: class 4 does not allow self-built transmitters, but you may build antennas.",
+      "de": "Klasse 4 bringt die Kurzwellenbänder 160 m, 80 m, 15 m und 10 m dazu. Ein realer Halbwellendipol ist etwa 5 % kürzer als eine halbe Wellenlänge; seine Länge in Metern beträgt grob 143 geteilt durch die Frequenz in MHz. Für 80 m (3,6 MHz) sind das rund 40 m Draht, für 10 m (28,5 MHz) nur rund 5 m. Auf 160 m (1,85 MHz) wäre ein Dipol etwa 77 m lang, darum nutzen viele eine verkürzte oder belastete Antenne. Ein Balun verbindet einen symmetrischen Dipol mit unsymmetrischem Koax. Den Sender musst du kaufen: Klasse 4 erlaubt keine selbstgebauten Sender, Antennen darfst du aber bauen."
+     },
+     "questions": [
+      {
+       "q": {
+        "en": "About how long is a real half-wave dipole for 3.6 MHz (80 m)?",
+        "de": "Wie lang ist ein realer Halbwellendipol für 3,6 MHz (80 m) etwa?"
+       },
+       "a": [
+        {
+         "en": "40 m",
+         "de": "40 m"
+        },
+        {
+         "en": "20 m",
+         "de": "20 m"
+        },
+        {
+         "en": "80 m",
+         "de": "80 m"
+        },
+        {
+         "en": "10 m",
+         "de": "10 m"
+        }
+       ],
+       "c": 0
+      },
+      {
+       "q": {
+        "en": "About how long is a real half-wave dipole for 28.5 MHz (10 m)?",
+        "de": "Wie lang ist ein realer Halbwellendipol für 28,5 MHz (10 m) etwa?"
+       },
+       "a": [
+        {
+         "en": "5 m",
+         "de": "5 m"
+        },
+        {
+         "en": "15 m",
+         "de": "15 m"
+        },
+        {
+         "en": "50 m",
+         "de": "50 m"
+        },
+        {
+         "en": "0.5 m",
+         "de": "0,5 m"
+        }
+       ],
+       "c": 0
+      },
+      {
+       "q": {
+        "en": "Why is 160 m often run with a shortened antenna?",
+        "de": "Warum wird auf 160 m oft eine verkürzte Antenne genutzt?"
+       },
+       "a": [
+        {
+         "en": "A full dipole would be about 77 m long",
+         "de": "Ein voller Dipol wäre etwa 77 m lang"
+        },
+        {
+         "en": "The band needs no antenna",
+         "de": "Das Band braucht keine Antenne"
+        },
+        {
+         "en": "Shorter antennas have more power",
+         "de": "Kürzere Antennen haben mehr Leistung"
+        },
+        {
+         "en": "The law demands it",
+         "de": "Das Gesetz verlangt es"
+        }
+       ],
+       "c": 0
+      },
+      {
+       "q": {
+        "en": "Which of these may a class 4 operator build?",
+        "de": "Was darf ein Klasse-4-Funker selbst bauen?"
+       },
+       "a": [
+        {
+         "en": "An antenna",
+         "de": "Eine Antenne"
+        },
+        {
+         "en": "A transmitter",
+         "de": "Einen Sender"
+        },
+        {
+         "en": "A 400 W amplifier",
+         "de": "Eine 400-W-Endstufe"
+        },
+        {
+         "en": "Nothing at all",
+         "de": "Gar nichts"
+        }
+       ],
+       "c": 0
+      }
+     ]
+    }
+   }
   }
  },
  {
