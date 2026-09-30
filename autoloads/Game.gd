@@ -8,11 +8,13 @@ signal goal_completed(quest_id: String)
 const SAVE_PATH := "user://cq_quest_save.json"
 const PART_IDS: Array = ["psu", "antenna", "transceiver", "mic", "speaker", "swr", "key", "logbook"]
 const QUEST_IDS: Array = ["rules", "shack", "qso", "morse"]
+const MAX_LEVELS := 3
 const MORSE_LEVELS := 10
+const MORSE_CAP := [3, 6, 10]
 const AVATAR_COUNT := 6
 const QSO_STEPS := 5
 
-var profile: Dictionary = {"name": "", "avatar": 1, "country": "de", "locale": "", "started": false}
+var profile: Dictionary = {"name": "", "avatar": 1, "country": "de", "locale": "", "started": false, "level": 1}
 
 
 func _ready() -> void:
@@ -25,9 +27,9 @@ func _ready() -> void:
 func begin_new_game(name: String, avatar: int, country: String) -> void:
 	FactDatabase.clear_all()
 	Global.reset()
-	for q in QUEST_IDS:
+	for q in all_quest_ids():
 		QuestSystem.reset_quest(q)
-	profile = {"name": name.strip_edges(), "avatar": avatar, "country": country, "locale": I18n.locale, "started": true}
+	profile = {"name": name.strip_edges(), "avatar": avatar, "country": country, "locale": I18n.locale, "started": true, "level": 1}
 	FactDatabase.set_fact("rules.country", country)
 	_start_quests()
 	save_game()
@@ -36,17 +38,19 @@ func begin_new_game(name: String, avatar: int, country: String) -> void:
 func reset_all() -> void:
 	FactDatabase.clear_all()
 	Global.reset()
-	for q in QUEST_IDS:
+	for q in all_quest_ids():
 		QuestSystem.reset_quest(q)
-	profile = {"name": "", "avatar": 1, "country": "de", "locale": "", "started": false}
+	profile = {"name": "", "avatar": 1, "country": "de", "locale": "", "started": false, "level": 1}
 	if FileAccess.file_exists(SAVE_PATH):
 		DirAccess.remove_absolute(ProjectSettings.globalize_path(SAVE_PATH))
 
 
 func _start_quests() -> void:
-	for q in QUEST_IDS:
-		if QuestSystem.get_quest_state(q) == QuestSystem.ItemState.INACTIVE:
-			QuestSystem.start_quest(q)
+	for lv in range(1, levels_unlocked() + 1):
+		for b in QUEST_IDS:
+			var q := quest_id(b, lv)
+			if QuestSystem.get_quest_state(q) == QuestSystem.ItemState.INACTIVE:
+				QuestSystem.start_quest(q)
 	pump()
 
 
@@ -119,20 +123,21 @@ func set_profile(name: String, avatar: int) -> void:
 	save_game()
 
 
-## Changing the country restarts goal 1 (different rules) and gives the callsign back.
+## Changing the country restarts the rules goals (different rules) and gives the callsign back.
 func change_country(c: String) -> void:
 	if c == country():
 		return
 	profile["country"] = c
 	profile["callsign"] = ""
-	QuestSystem.reset_quest("rules")
-	for k in ["rules.lessons_done", "rules.quiz_passed", "rules.callsign", "goal.rules"]:
-		FactDatabase.set_fact(k, false if k != "rules.lessons_done" else 0)
+	for lv in range(1, MAX_LEVELS + 1):
+		QuestSystem.reset_quest(quest_id("rules", lv))
+		for key in ["rules.lessons_done", "rules.lessons_all", "rules.quiz_passed", "goal.rules"]:
+			FactDatabase.set_fact(k(key, lv), 0 if key == "rules.lessons_done" else false)
+		FactDatabase.set_fact("level.unlocked", 1)
+	FactDatabase.set_fact("rules.callsign", false)
 	FactDatabase.set_fact("rules.country", c)
-	for q in ["rules"]:
-		if QuestSystem.get_quest_state(q) == QuestSystem.ItemState.INACTIVE:
-			QuestSystem.start_quest(q)
-	pump()
+	profile["level"] = 1
+	_start_quests()
 	save_game()
 
 
@@ -140,42 +145,125 @@ func fact_int(key: String, default: int = 0) -> int:
 	return int(FactDatabase.get_fact(key, default))
 
 
-func owns(part_id: String) -> bool:
-	return bool(FactDatabase.get_fact("shack." + part_id, false))
+# ---- levels -----------------------------------------------------------------------------
+# Level 1 = entry class (plain fact names), level 2/3 = higher classes (facts prefixed "l2.").
+
+func all_quest_ids() -> Array:
+	var out: Array = []
+	for lv in range(1, MAX_LEVELS + 1):
+		for b in QUEST_IDS:
+			out.append(quest_id(b, lv))
+	return out
+
+
+func quest_id(base: String, level: int = 0) -> String:
+	var l := level if level > 0 else cur_level()
+	return base if l == 1 else "%s%d" % [base, l]
+
+
+## Fact key for the given level (0 = current level).
+func k(key: String, level: int = 0) -> String:
+	var l := level if level > 0 else cur_level()
+	return key if l == 1 else "l%d.%s" % [l, key]
+
+
+func cur_level() -> int:
+	return clampi(int(profile.get("level", 1)), 1, maxi(1, level_count()))
+
+
+func set_level(n: int) -> void:
+	profile["level"] = clampi(n, 1, levels_unlocked())
+	save_game()
+
+
+func level_count() -> int:
+	return mini(MAX_LEVELS, (pack().get("levels", []) as Array).size())
+
+
+func level_data(level: int = 0) -> Dictionary:
+	var l := level if level > 0 else cur_level()
+	var lvls: Array = pack().get("levels", [])
+	return lvls[clampi(l, 1, lvls.size()) - 1] if lvls.size() > 0 else {}
+
+
+func levels_unlocked() -> int:
+	return clampi(fact_int("level.unlocked", 1), 1, maxi(1, level_count()))
+
+
+func goal_done(base: String, level: int = 0) -> bool:
+	return bool(FactDatabase.get_fact(k("goal." + base, level), false))
+
+
+func level_done(level: int = 0) -> bool:
+	for b in QUEST_IDS:
+		if not goal_done(b, level):
+			return false
+	return true
+
+
+## Unlocks the next level when the highest unlocked one is complete. Returns the new level or 0.
+func check_level_up() -> int:
+	var u := levels_unlocked()
+	if u < level_count() and level_done(u):
+		FactDatabase.set_fact("level.unlocked", u + 1)
+		_start_quests()
+		profile["level"] = u + 1
+		save_game()
+		return u + 1
+	return 0
+
+
+# ---- progress helpers (all default to the current level) --------------------------------
+
+func owns(part_id: String, level: int = 0) -> bool:
+	return bool(FactDatabase.get_fact(k("shack." + part_id, level), false))
+
+
+## Highest level at which the part was earned (0 = not owned yet).
+func tier(part_id: String) -> int:
+	var t := 0
+	for l in range(1, MAX_LEVELS + 1):
+		if owns(part_id, l):
+			t = l
+	return t
 
 
 func award(part_id: String) -> void:
-	FactDatabase.set_fact("shack." + part_id, true)
+	FactDatabase.set_fact(k("shack." + part_id), true)
 	part_awarded.emit(part_id)
 	save_game()
 
 
-func parts_owned() -> int:
+func parts_owned(level: int = 0) -> int:
 	var n := 0
 	for p in PART_IDS:
-		if owns(p):
+		if owns(p, level):
 			n += 1
 	return n
 
 
-func rules_done() -> bool:
-	return bool(FactDatabase.get_fact("goal.rules", false))
+func rules_done(level: int = 0) -> bool:
+	return bool(FactDatabase.get_fact(k("goal.rules", level), false))
 
 
 func qso_ready() -> bool:
 	return rules_done() and owns("transceiver") and owns("antenna") and owns("mic") and owns("psu")
 
 
-func qso_steps_done() -> int:
+func qso_steps_done(level: int = 0) -> int:
 	var n := 0
-	for k in ["qso.tuned", "qso.answered", "qso.exchanged", "qso.spelled", "qso.done"]:
-		if bool(FactDatabase.get_fact(k, false)):
+	for key in ["qso.tuned", "qso.answered", "qso.exchanged", "qso.spelled", "qso.done"]:
+		if bool(FactDatabase.get_fact(k(key, level), false)):
 			n += 1
 	return n
 
 
 func morse_passed() -> int:
 	return fact_int("morse.passed", 0)
+
+
+func morse_cap(level: int = 0) -> int:
+	return int(MORSE_CAP[(level if level > 0 else cur_level()) - 1])
 
 
 func set_flag(key: String, value = true) -> void:

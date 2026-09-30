@@ -160,6 +160,12 @@ UI = {
     "morse.you_sent": ("You sent", "Du hast gegeben"),
     "morse.clear": ("Clear", "Löschen"),
     "morse.practice_send": ("Try to send", "Versuche zu geben"),
+    "level.name": ("Level %d", "Stufe %d"),
+    "level.up": ("Level %d unlocked!", "Stufe %d freigeschaltet!"),
+    "level.up_body": ("Your shack can be upgraded, new rules and questions are waiting, and there is a deeper first contact to try.",
+                      "Deine Funkbude lässt sich ausbauen, neue Regeln und Fragen warten und ein anspruchsvolleres Funkgespräch ebenfalls."),
+    "level.soon": ("More levels for this country are coming.", "Weitere Stufen für dieses Land folgen."),
+    "level.locked": ("Finish all four goals of the previous level to unlock.", "Schließe alle vier Ziele der vorigen Stufe ab, um sie freizuschalten."),
     "hub.profile": ("Profile", "Profil"),
     "share.btn": ("Share", "Teilen"),
     "share.title": ("Share your progress", "Teile deinen Fortschritt"),
@@ -347,8 +353,8 @@ def uk_pack():
          "b": L("Your licence comes with a callsign. Give it to identify your station, keep your messages appropriate and do not cause interference.",
                 "Zu deiner Lizenz gehört ein Rufzeichen. Nenne es, um deine Station zu kennzeichnen, halte deine Nachrichten angemessen und störe niemanden.")},
         {"t": L("Power and limits", "Leistung und Grenzen"),
-         "b": L("Each licence level has its own limits on power and frequencies. Foundation licence holders may use up to 10 watts.",
-                "Jede Lizenzstufe hat eigene Grenzen für Leistung und Frequenzen. Foundation-Inhaber dürfen bis zu 10 Watt nutzen.")},
+         "b": L("Each licence level has its own limits on power and frequencies. Since Ofcom's 2024 update, Foundation licence holders may use up to 25 watts.",
+                "Jede Lizenzstufe hat eigene Grenzen für Leistung und Frequenzen. Seit dem Ofcom-Update von 2024 dürfen Foundation-Inhaber bis zu 25 Watt nutzen.")},
         {"t": L("Check the details", "Details prüfen"),
          "b": L("Licence terms change. Read the current Ofcom licence and RSGB guidance before you transmit.",
                 "Lizenzbedingungen ändern sich. Lies vor dem Senden die aktuelle Ofcom-Lizenz und die Hinweise der RSGB.")},
@@ -361,7 +367,7 @@ def uk_pack():
         Q("May you use your amateur station for business?", "Darfst du deine Amateurfunkstelle für Geschäfte nutzen?",
           ["No", "Yes, always", "Yes, on VHF only", "Yes, at night"], ["Nein", "Ja, immer", "Ja, nur auf UKW", "Ja, nachts"]),
         Q("What is the maximum power for a Foundation licence?", "Wie hoch ist die Höchstleistung bei der Foundation-Lizenz?",
-          ["10 watts", "400 watts", "1000 watts", "1 watt"], ["10 Watt", "400 Watt", "1000 Watt", "1 Watt"]),
+          ["25 watts", "400 watts", "1000 watts", "1 watt"], ["25 Watt", "400 Watt", "1000 Watt", "1 Watt"]),
         Q("How is a station identified on air?", "Woran erkennt man eine Station im Funkbetrieb?",
           ["By its callsign", "By its colour", "By its antenna", "By its power supply"], ["Am Rufzeichen", "An ihrer Farbe", "An ihrer Antenne", "An ihrem Netzteil"]),
         Q("Which body is the UK's national amateur radio society?", "Welcher Verband ist der nationale Amateurfunkverband Großbritanniens?",
@@ -542,9 +548,49 @@ def qso():
     return {"steps": steps}
 
 
+SHORTS = {"de": ["N", "E", "A"], "us": ["Tech", "Gen", "Extra"], "uk": ["Found.", "Inter.", "Full"], "ch": ["HB3"], "at": ["4/3"]}
+
+
+def leveled(pack, extras):
+    """Turns a level-1 pack (top-level lessons/questions/pass/licence) into a pack with a `levels` list."""
+    shorts = SHORTS[pack["country"]]
+    lvl1 = {"short": shorts[0], "class": pack["licence"], "licence": pack.pop("licence"),
+            "lessons": pack.pop("lessons"), "questions": pack.pop("questions"), "pass": pack.pop("pass")}
+    levels = [lvl1]
+    for short, e in zip(shorts[1:], extras):
+        e = dict(e)
+        e["short"] = short
+        levels.append(e)
+    pack["levels"] = levels
+    return pack
+
+
+def clean(o):
+    """Replaces characters the game fonts lack."""
+    if isinstance(o, dict):
+        return {k: clean(v) for k, v in o.items()}
+    if isinstance(o, list):
+        return [clean(v) for v in o]
+    if isinstance(o, str):
+        return o.replace("\u03c1", "rho")
+    return o
+
+
 if __name__ == "__main__":
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from levels_de import de_levels
+    from levels_primers import us_levels, uk_levels
+    from levels_parts import TIERS
+    from levels_qso import qso_levels
     dump("content/i18n/ui.json", {k: L(*v) for k, v in UI.items()})
+    extra = {"de": de_levels(), "us": us_levels(), "uk": uk_levels(), "ch": [], "at": []}
     for pack in (de_pack(), us_pack(), uk_pack(), ch_pack(), at_pack()):
-        dump("content/legal/%s.json" % pack["country"], pack)
-    dump("content/tech/parts.json", parts())
-    dump("content/qso/scripts.json", qso())
+        pack = leveled(pack, extra[pack["country"]])
+        dump("content/legal/%s.json" % pack["country"], clean(pack))
+    plist = parts()
+    for p in plist:
+        p["tiers"] = {str(lv): TIERS[p["id"]][lv] for lv in (2, 3)}
+    dump("content/tech/parts.json", clean(plist))
+    q = qso()
+    q["levels"] = {str(lv): v for lv, v in qso_levels().items()}
+    dump("content/qso/scripts.json", clean(q))

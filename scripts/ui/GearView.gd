@@ -13,6 +13,14 @@ var glow := 0.0:
 	set(v):
 		glow = v
 		queue_redraw()
+var tier := 0:
+	set(v):
+		tier = v
+		queue_redraw()
+var need_upgrade := false:
+	set(v):
+		need_upgrade = v
+		queue_redraw()
 var freq := "14.205"
 var _hover := false
 
@@ -46,6 +54,16 @@ func _draw() -> void:
 		var fs := 34
 		var text_size := f.get_string_size("?", HORIZONTAL_ALIGNMENT_LEFT, -1, fs)
 		draw_string(f, Vector2((size.x - text_size.x) / 2.0, size.y / 2.0 + fs * 0.35), "?", HORIZONTAL_ALIGNMENT_LEFT, -1, fs, Art.fade(Palette.MUTED, 0.8 if _hover else 0.5))
+	if owned and tier >= 2:
+		# one pip per extra class level earned
+		for i in tier - 1:
+			draw_circle(Vector2(size.x - 12.0 - i * 16.0, 12.0), 6.0, Palette.AMBER)
+			draw_arc(Vector2(size.x - 12.0 - i * 16.0, 12.0), 6.0, 0.0, TAU, 16, Palette.INK, 1.5, true)
+	if owned and need_upgrade:
+		var c := Vector2(14.0, 14.0)
+		draw_circle(c, 12.0, Palette.GREEN)
+		draw_colored_polygon(PackedVector2Array([c + Vector2(0, -7), c + Vector2(7, 3), c + Vector2(-7, 3)]), Palette.INK)
+		draw_rect(Rect2(c + Vector2(-2.5, 2), Vector2(5, 6)), Palette.INK)
 	if _hover:
 		Art.rrect(self, r.grow(4.0), Palette.CLEAR, 18, Palette.AMBER, 3)
 

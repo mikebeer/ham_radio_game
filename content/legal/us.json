@@ -7,217 +7,838 @@
   "en": "Boston",
   "de": "Boston"
  },
- "licence": {
-  "en": "Technician (entry level)",
-  "de": "Technician (Einstieg)"
- },
- "pass": 5,
  "source": {
   "en": "Original primer based on FCC Part 97",
   "de": "Eigener Überblick nach FCC Part 97"
  },
- "lessons": [
+ "levels": [
   {
-   "t": {
-    "en": "Amateur radio in the US",
-    "de": "Amateurfunk in den USA"
+   "short": "Tech",
+   "class": {
+    "en": "Technician (entry level)",
+    "de": "Technician (Einstieg)"
    },
-   "b": {
-    "en": "The Federal Communications Commission (FCC) regulates amateur radio under Part 97 of its rules. The service is non-commercial: it is for personal enjoyment, self-training, emergency communication and technical experiments.",
-    "de": "Die Federal Communications Commission (FCC) regelt den Amateurfunk in Part 97 ihrer Vorschriften. Der Dienst ist nichtkommerziell: für persönliche Freude, Weiterbildung, Notfunk und technische Experimente."
-   }
-  },
-  {
-   "t": {
-    "en": "Licence classes and exams",
-    "de": "Lizenzklassen und Prüfungen"
+   "licence": {
+    "en": "Technician (entry level)",
+    "de": "Technician (Einstieg)"
    },
-   "b": {
-    "en": "There are three classes: Technician (entry level), General and Amateur Extra. Exams are run by volunteer examiners coordinated by Volunteer Examiner Coordinators (VECs). Morse code is not tested.",
-    "de": "Es gibt drei Klassen: Technician (Einstieg), General und Amateur Extra. Die Prüfungen nehmen ehrenamtliche Prüfer ab, koordiniert von Volunteer Examiner Coordinators (VECs). Morsen wird nicht geprüft."
-   }
-  },
-  {
-   "t": {
-    "en": "Your callsign",
-    "de": "Dein Rufzeichen"
-   },
-   "b": {
-    "en": "The FCC assigns your callsign. You identify at the end of a communication and at least every 10 minutes during it.",
-    "de": "Die FCC teilt dein Rufzeichen zu. Du nennst es am Ende einer Verbindung und mindestens alle 10 Minuten währenddessen."
-   }
-  },
-  {
-   "t": {
-    "en": "What is not allowed",
-    "de": "Was nicht erlaubt ist"
-   },
-   "b": {
-    "en": "You may not use amateur radio for business, broadcast music, or send messages meant to hide their meaning. Be polite and avoid interfering with others.",
-    "de": "Du darfst Amateurfunk nicht für Geschäfte nutzen, keine Musik senden und keine Nachrichten verschleiern. Sei höflich und störe andere nicht."
-   }
-  },
-  {
-   "t": {
-    "en": "Check the details",
-    "de": "Details prüfen"
-   },
-   "b": {
-    "en": "Privileges depend on your class: a Technician has all privileges above 30 MHz and limited access to some HF bands. Always check the current FCC rules and the current question pool before your exam.",
-    "de": "Die Rechte hängen von der Klasse ab: Technician haben alle Rechte oberhalb von 30 MHz und begrenzten Zugang zu einigen Kurzwellenbändern. Prüfe vor der Prüfung immer die aktuellen FCC-Regeln und den aktuellen Fragenpool."
-   }
-  }
- ],
- "questions": [
-  {
-   "q": {
-    "en": "Which agency regulates amateur radio in the United States?",
-    "de": "Welche Behörde regelt den Amateurfunk in den USA?"
-   },
-   "a": [
+   "lessons": [
     {
-     "en": "The FCC",
-     "de": "Die FCC"
+     "t": {
+      "en": "Amateur radio in the US",
+      "de": "Amateurfunk in den USA"
+     },
+     "b": {
+      "en": "The Federal Communications Commission (FCC) regulates amateur radio under Part 97 of its rules. The service is non-commercial: it is for personal enjoyment, self-training, emergency communication and technical experiments.",
+      "de": "Die Federal Communications Commission (FCC) regelt den Amateurfunk in Part 97 ihrer Vorschriften. Der Dienst ist nichtkommerziell: für persönliche Freude, Weiterbildung, Notfunk und technische Experimente."
+     }
     },
     {
-     "en": "The FAA",
-     "de": "Die FAA"
+     "t": {
+      "en": "Licence classes and exams",
+      "de": "Lizenzklassen und Prüfungen"
+     },
+     "b": {
+      "en": "There are three classes: Technician (entry level), General and Amateur Extra. Exams are run by volunteer examiners coordinated by Volunteer Examiner Coordinators (VECs). Morse code is not tested.",
+      "de": "Es gibt drei Klassen: Technician (Einstieg), General und Amateur Extra. Die Prüfungen nehmen ehrenamtliche Prüfer ab, koordiniert von Volunteer Examiner Coordinators (VECs). Morsen wird nicht geprüft."
+     }
     },
     {
-     "en": "The ARRL",
-     "de": "Die ARRL"
+     "t": {
+      "en": "Your callsign",
+      "de": "Dein Rufzeichen"
+     },
+     "b": {
+      "en": "The FCC assigns your callsign. You identify at the end of a communication and at least every 10 minutes during it.",
+      "de": "Die FCC teilt dein Rufzeichen zu. Du nennst es am Ende einer Verbindung und mindestens alle 10 Minuten währenddessen."
+     }
     },
     {
-     "en": "The NTSB",
-     "de": "Die NTSB"
+     "t": {
+      "en": "What is not allowed",
+      "de": "Was nicht erlaubt ist"
+     },
+     "b": {
+      "en": "You may not use amateur radio for business, broadcast music, or send messages meant to hide their meaning. Be polite and avoid interfering with others.",
+      "de": "Du darfst Amateurfunk nicht für Geschäfte nutzen, keine Musik senden und keine Nachrichten verschleiern. Sei höflich und störe andere nicht."
+     }
+    },
+    {
+     "t": {
+      "en": "Check the details",
+      "de": "Details prüfen"
+     },
+     "b": {
+      "en": "Privileges depend on your class: a Technician has all privileges above 30 MHz and limited access to some HF bands. Always check the current FCC rules and the current question pool before your exam.",
+      "de": "Die Rechte hängen von der Klasse ab: Technician haben alle Rechte oberhalb von 30 MHz und begrenzten Zugang zu einigen Kurzwellenbändern. Prüfe vor der Prüfung immer die aktuellen FCC-Regeln und den aktuellen Fragenpool."
+     }
     }
    ],
-   "c": 0
-  },
-  {
-   "q": {
-    "en": "How often must you identify your station during a conversation?",
-    "de": "Wie oft musst du dich während eines Gesprächs identifizieren?"
-   },
-   "a": [
+   "questions": [
     {
-     "en": "At the end and at least every 10 minutes",
-     "de": "Am Ende und mindestens alle 10 Minuten"
+     "q": {
+      "en": "Which agency regulates amateur radio in the United States?",
+      "de": "Welche Behörde regelt den Amateurfunk in den USA?"
+     },
+     "a": [
+      {
+       "en": "The FCC",
+       "de": "Die FCC"
+      },
+      {
+       "en": "The FAA",
+       "de": "Die FAA"
+      },
+      {
+       "en": "The ARRL",
+       "de": "Die ARRL"
+      },
+      {
+       "en": "The NTSB",
+       "de": "Die NTSB"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "Only at the start",
-     "de": "Nur am Anfang"
+     "q": {
+      "en": "How often must you identify your station during a conversation?",
+      "de": "Wie oft musst du dich während eines Gesprächs identifizieren?"
+     },
+     "a": [
+      {
+       "en": "At the end and at least every 10 minutes",
+       "de": "Am Ende und mindestens alle 10 Minuten"
+      },
+      {
+       "en": "Only at the start",
+       "de": "Nur am Anfang"
+      },
+      {
+       "en": "Once per hour",
+       "de": "Einmal pro Stunde"
+      },
+      {
+       "en": "Only if someone asks",
+       "de": "Nur auf Nachfrage"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "Once per hour",
-     "de": "Einmal pro Stunde"
+     "q": {
+      "en": "Which is the entry-level licence class?",
+      "de": "Welche ist die Einsteiger-Lizenzklasse?"
+     },
+     "a": [
+      {
+       "en": "Technician",
+       "de": "Technician"
+      },
+      {
+       "en": "Amateur Extra",
+       "de": "Amateur Extra"
+      },
+      {
+       "en": "General",
+       "de": "General"
+      },
+      {
+       "en": "Novice Plus",
+       "de": "Novice Plus"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "Only if someone asks",
-     "de": "Nur auf Nachfrage"
+     "q": {
+      "en": "May you use amateur radio for your business communications?",
+      "de": "Darfst du Amateurfunk für geschäftliche Kommunikation nutzen?"
+     },
+     "a": [
+      {
+       "en": "No",
+       "de": "Nein"
+      },
+      {
+       "en": "Yes, if you are polite",
+       "de": "Ja, wenn du höflich bist"
+      },
+      {
+       "en": "Yes, on weekends",
+       "de": "Ja, am Wochenende"
+      },
+      {
+       "en": "Yes, with a special callsign",
+       "de": "Ja, mit besonderem Rufzeichen"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Who runs the licence exams?",
+      "de": "Wer nimmt die Lizenzprüfungen ab?"
+     },
+     "a": [
+      {
+       "en": "Volunteer examiners",
+       "de": "Ehrenamtliche Prüfer"
+      },
+      {
+       "en": "The post office",
+       "de": "Die Post"
+      },
+      {
+       "en": "Local police",
+       "de": "Die örtliche Polizei"
+      },
+      {
+       "en": "Commercial radio stations",
+       "de": "Kommerzielle Radiosender"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Is a Morse code test required today?",
+      "de": "Ist heute eine Morseprüfung erforderlich?"
+     },
+     "a": [
+      {
+       "en": "No",
+       "de": "Nein"
+      },
+      {
+       "en": "Yes, at 5 WPM",
+       "de": "Ja, mit 5 WPM"
+      },
+      {
+       "en": "Yes, at 13 WPM",
+       "de": "Ja, mit 13 WPM"
+      },
+      {
+       "en": "Only for Technician",
+       "de": "Nur für Technician"
+      }
+     ],
+     "c": 0
     }
    ],
-   "c": 0
+   "pass": 5
   },
   {
-   "q": {
-    "en": "Which is the entry-level licence class?",
-    "de": "Welche ist die Einsteiger-Lizenzklasse?"
+   "class": {
+    "en": "General",
+    "de": "General"
    },
-   "a": [
+   "licence": {
+    "en": "General class",
+    "de": "General-Klasse"
+   },
+   "lessons": [
     {
-     "en": "Technician",
-     "de": "Technician"
+     "t": {
+      "en": "What General adds",
+      "de": "Was General dazu bringt"
+     },
+     "b": {
+      "en": "The General class opens most of the HF bands. You get CW and data on 30 metres, phone and more on 17, 12 and 10 metres, and large parts of 80, 40, 20 and 15 metres. A few segments stay reserved for Amateur Extra. To earn it you pass Element 3: 35 questions, 26 correct, on top of the Technician exam.",
+      "de": "Die General-Klasse öffnet dir den Großteil der Kurzwelle. Du bekommst Telegrafie und Datenbetrieb auf 30 Metern, Telefonie und mehr auf 17, 12 und 10 Metern sowie große Teile von 80, 40, 20 und 15 Metern. Einige Abschnitte bleiben der Klasse Amateur Extra vorbehalten. Dafür bestehst du Element 3: 35 Fragen, 26 richtige Antworten, zusätzlich zur Technician-Prüfung."
+     }
     },
     {
-     "en": "Amateur Extra",
-     "de": "Amateur Extra"
+     "t": {
+      "en": "Power and identification",
+      "de": "Leistung und Kennung"
+     },
+     "b": {
+      "en": "The power limit for US amateurs is 1500 watts PEP, but you must always use no more than the minimum power needed for the contact. On 30 metres (10.10 to 10.15 MHz) the limit is lower, 200 watts PEP. Identify with your callsign at the end of each communication and at least every 10 minutes during it. On phone, use English.",
+      "de": "Die Leistungsgrenze für US-Funkamateure liegt bei 1500 Watt PEP, du sollst aber immer nur so viel Leistung nutzen, wie für die Verbindung nötig ist. Auf 30 Metern (10,10 bis 10,15 MHz) gilt die niedrigere Grenze von 200 Watt PEP. Nenne dein Rufzeichen am Ende jeder Verbindung und mindestens alle 10 Minuten währenddessen. In Telefonie sprichst du Englisch."
+     }
     },
     {
-     "en": "General",
-     "de": "General"
+     "t": {
+      "en": "Control operator and third parties",
+      "de": "Control Operator und Dritte"
+     },
+     "b": {
+      "en": "The control operator is the licensed person in charge of the station at that moment. The station may only be used within the privileges of the control operator's own class. Third parties may take part in a contact if the control operator is present and supervises them all the time. Messages to foreign countries need an agreement between that country and the US, unless it is an emergency.",
+      "de": "Der Control Operator ist die lizenzierte Person, die die Station in diesem Moment verantwortet. Die Station darf nur im Rahmen der Rechte seiner eigenen Klasse betrieben werden. Dritte dürfen an einer Verbindung teilnehmen, wenn der Control Operator anwesend ist und sie ständig beaufsichtigt. Für Nachrichten ins Ausland muss es ein Abkommen zwischen dem Land und den USA geben, außer im Notfall."
+     }
     },
     {
-     "en": "Novice Plus",
-     "de": "Novice Plus"
+     "t": {
+      "en": "Upgrading and operating tips",
+      "de": "Aufstieg und Betriebstipps"
+     },
+     "b": {
+      "en": "After you pass, you may use General privileges as soon as your upgrade appears in the FCC licence database, and you keep your callsign. You can also apply for a vanity callsign of your own class or lower; for General that means three-letter suffix calls. Plan your band by the time of day: 20 metres carries far in daylight, 80 and 40 metres come alive at night.",
+      "de": "Nach bestandener Prüfung darfst du die General-Rechte nutzen, sobald dein Aufstieg in der FCC-Datenbank steht, und du behältst dein Rufzeichen. Außerdem kannst du ein Wunschrufzeichen deiner oder einer niedrigeren Klasse beantragen; für General sind das Rufzeichen mit drei Buchstaben im Suffix. Wähle das Band nach der Tageszeit: 20 Meter trägt tagsüber weit, 80 und 40 Meter erwachen nachts."
+     }
     }
    ],
-   "c": 0
+   "questions": [
+    {
+     "q": {
+      "en": "What is the maximum transmitter power for US amateur stations on most bands?",
+      "de": "Wie hoch ist die maximale Senderleistung für US-Amateurstationen auf den meisten Bändern?"
+     },
+     "a": [
+      {
+       "en": "1500 watts PEP",
+       "de": "1500 Watt PEP"
+      },
+      {
+       "en": "100 watts PEP",
+       "de": "100 Watt PEP"
+      },
+      {
+       "en": "500 watts PEP",
+       "de": "500 Watt PEP"
+      },
+      {
+       "en": "1000 watts PEP",
+       "de": "1000 Watt PEP"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "What is the maximum power on the 30 metre band (10.10 to 10.15 MHz)?",
+      "de": "Wie hoch ist die maximale Leistung auf dem 30-Meter-Band (10,10 bis 10,15 MHz)?"
+     },
+     "a": [
+      {
+       "en": "200 watts PEP",
+       "de": "200 Watt PEP"
+      },
+      {
+       "en": "1500 watts PEP",
+       "de": "1500 Watt PEP"
+      },
+      {
+       "en": "50 watts PEP",
+       "de": "50 Watt PEP"
+      },
+      {
+       "en": "1000 watts PEP",
+       "de": "1000 Watt PEP"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "In which language must you identify your station on phone?",
+      "de": "In welcher Sprache musst du dich in Telefonie identifizieren?"
+     },
+     "a": [
+      {
+       "en": "English",
+       "de": "Englisch"
+      },
+      {
+       "en": "Spanish",
+       "de": "Spanisch"
+      },
+      {
+       "en": "The language of the other station",
+       "de": "In der Sprache der Gegenstation"
+      },
+      {
+       "en": "Any language you like",
+       "de": "In einer beliebigen Sprache"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "How many questions does the General exam (Element 3) have, and how many must you answer correctly?",
+      "de": "Wie viele Fragen hat die General-Prüfung (Element 3), und wie viele musst du richtig beantworten?"
+     },
+     "a": [
+      {
+       "en": "35 questions, 26 correct",
+       "de": "35 Fragen, 26 richtig"
+      },
+      {
+       "en": "35 questions, 35 correct",
+       "de": "35 Fragen, 35 richtig"
+      },
+      {
+       "en": "50 questions, 37 correct",
+       "de": "50 Fragen, 37 richtig"
+      },
+      {
+       "en": "25 questions, 20 correct",
+       "de": "25 Fragen, 20 richtig"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which 20 metre frequency may a General class operator use on phone?",
+      "de": "Welche Frequenz im 20-Meter-Band darf ein General-Funkamateur in Telefonie nutzen?"
+     },
+     "a": [
+      {
+       "en": "14.250 MHz",
+       "de": "14,250 MHz"
+      },
+      {
+       "en": "14.180 MHz",
+       "de": "14,180 MHz"
+      },
+      {
+       "en": "14.100 MHz",
+       "de": "14,100 MHz"
+      },
+      {
+       "en": "14.010 MHz",
+       "de": "14,010 MHz"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "An Amateur Extra lets a General licensee operate the Extra's station. Whose privileges apply?",
+      "de": "Ein Amateur Extra lässt einen General-Inhaber an seiner Station funken. Welche Rechte gelten?"
+     },
+     "a": [
+      {
+       "en": "The General's, because privileges follow the control operator's class",
+       "de": "Die des General, weil sich die Rechte nach der Klasse des Control Operators richten"
+      },
+      {
+       "en": "The Extra's, because it is the Extra's station",
+       "de": "Die des Extra, weil es dessen Station ist"
+      },
+      {
+       "en": "The Extra's, but only on HF",
+       "de": "Die des Extra, aber nur auf Kurzwelle"
+      },
+      {
+       "en": "None, only the licensee may transmit",
+       "de": "Keine, nur der Lizenzinhaber darf senden"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "What must be true when a third party takes part in a contact from your station?",
+      "de": "Was muss gelten, wenn ein Dritter von deiner Station aus an einer Verbindung teilnimmt?"
+     },
+     "a": [
+      {
+       "en": "The control operator is present and continuously supervises",
+       "de": "Der Control Operator ist anwesend und beaufsichtigt ständig"
+      },
+      {
+       "en": "The third party holds a commercial radio licence",
+       "de": "Der Dritte besitzt eine gewerbliche Funklizenz"
+      },
+      {
+       "en": "The contact is shorter than 10 minutes",
+       "de": "Die Verbindung dauert weniger als 10 Minuten"
+      },
+      {
+       "en": "The contact is on 2 metres only",
+       "de": "Die Verbindung findet nur auf 2 Metern statt"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "About how long is a half-wave dipole for 7.1 MHz (40 metres)?",
+      "de": "Wie lang ist ein Halbwellendipol für 7,1 MHz (40 Meter) ungefähr?"
+     },
+     "a": [
+      {
+       "en": "About 20 metres",
+       "de": "Etwa 20 Meter"
+      },
+      {
+       "en": "About 10 metres",
+       "de": "Etwa 10 Meter"
+      },
+      {
+       "en": "About 40 metres",
+       "de": "Etwa 40 Meter"
+      },
+      {
+       "en": "About 5 metres",
+       "de": "Etwa 5 Meter"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which band usually supports long-distance contacts in full daylight?",
+      "de": "Welches Band trägt tagsüber meist über große Entfernungen?"
+     },
+     "a": [
+      {
+       "en": "20 metres",
+       "de": "20 Meter"
+      },
+      {
+       "en": "160 metres",
+       "de": "160 Meter"
+      },
+      {
+       "en": "80 metres",
+       "de": "80 Meter"
+      },
+      {
+       "en": "2 metres",
+       "de": "2 Meter"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "When may a new General licensee start using General privileges?",
+      "de": "Wann darf ein neuer General-Inhaber die General-Rechte nutzen?"
+     },
+     "a": [
+      {
+       "en": "When the upgrade appears in the FCC licence database",
+       "de": "Sobald der Aufstieg in der FCC-Lizenzdatenbank steht"
+      },
+      {
+       "en": "Right after passing the exam, before any record",
+       "de": "Sofort nach bestandener Prüfung, noch vor dem Eintrag"
+      },
+      {
+       "en": "After 30 days of waiting",
+       "de": "Nach 30 Tagen Wartezeit"
+      },
+      {
+       "en": "Only after a club sends a letter",
+       "de": "Erst nach einem Brief vom Club"
+      }
+     ],
+     "c": 0
+    }
+   ],
+   "pass": 7,
+   "short": "Gen"
   },
   {
-   "q": {
-    "en": "May you use amateur radio for your business communications?",
-    "de": "Darfst du Amateurfunk für geschäftliche Kommunikation nutzen?"
+   "class": {
+    "en": "Amateur Extra",
+    "de": "Amateur Extra"
    },
-   "a": [
+   "licence": {
+    "en": "Amateur Extra class",
+    "de": "Amateur-Extra-Klasse"
+   },
+   "lessons": [
     {
-     "en": "No",
-     "de": "Nein"
+     "t": {
+      "en": "All privileges",
+      "de": "Alle Rechte"
+     },
+     "b": {
+      "en": "Amateur Extra is the top US class. It has every amateur privilege on every amateur band. The reserved segments include 3.500 to 3.525 and 3.600 to 3.800 MHz, 7.000 to 7.025 and 7.125 to 7.175 MHz, 14.000 to 14.025 and 14.150 to 14.225 MHz, and 21.000 to 21.025 and 21.200 to 21.275 MHz. The power limit stays at 1500 watts PEP.",
+      "de": "Amateur Extra ist die höchste US-Klasse. Sie hat alle Amateurfunkrechte auf allen Amateurfunkbändern. Vorbehalten sind unter anderem 3,500 bis 3,525 und 3,600 bis 3,800 MHz, 7,000 bis 7,025 und 7,125 bis 7,175 MHz, 14,000 bis 14,025 und 14,150 bis 14,225 MHz sowie 21,000 bis 21,025 und 21,200 bis 21,275 MHz. Die Leistungsgrenze bleibt bei 1500 Watt PEP."
+     }
     },
     {
-     "en": "Yes, if you are polite",
-     "de": "Ja, wenn du höflich bist"
+     "t": {
+      "en": "The Element 4 exam",
+      "de": "Die Prüfung Element 4"
+     },
+     "b": {
+      "en": "Element 4 has 50 questions and you need 37 correct. It goes deeper into electronics, antennas, propagation, station design and FCC rules, so plan real study time. Exams are given by a team of at least three volunteer examiners under a VEC. Element 4 must be given by examiners who hold Amateur Extra themselves.",
+      "de": "Element 4 hat 50 Fragen, und du brauchst 37 richtige Antworten. Die Prüfung geht tiefer in Elektronik, Antennen, Wellenausbreitung, Stationsaufbau und FCC-Regeln, plane also echte Lernzeit ein. Geprüft wird von einem Team aus mindestens drei ehrenamtlichen Prüfern unter einem VEC. Element 4 müssen Prüfer abnehmen, die selbst Amateur Extra besitzen."
+     }
     },
     {
-     "en": "Yes, on weekends",
-     "de": "Ja, am Wochenende"
+     "t": {
+      "en": "Short callsigns",
+      "de": "Kurze Rufzeichen"
+     },
+     "b": {
+      "en": "Amateur Extra can ask for vanity callsigns from Group A: one-letter prefix with two-letter suffix (like W1AW), two-letter prefix with one-letter suffix, and two-by-two calls that start with A. A licensee may pick from their own group or a lower one. A deceased licensee's callsign is held back for two years, unless a previous holder or a family member asks for it.",
+      "de": "Amateur Extra kann Wunschrufzeichen aus Gruppe A beantragen: ein Buchstabe als Präfix mit zwei Buchstaben im Suffix (wie W1AW), zwei Buchstaben Präfix mit einem Buchstaben Suffix sowie Zwei-mal-zwei-Rufzeichen, die mit A beginnen. Man darf aus der eigenen oder einer niedrigeren Gruppe wählen. Das Rufzeichen eines Verstorbenen bleibt zwei Jahre gesperrt, außer ein früherer Inhaber oder ein Familienmitglied beantragt es."
+     }
     },
     {
-     "en": "Yes, with a special callsign",
-     "de": "Ja, mit besonderem Rufzeichen"
+     "t": {
+      "en": "Responsibility and forbidden traffic",
+      "de": "Verantwortung und verbotener Verkehr"
+     },
+     "b": {
+      "en": "The licensee is responsible for proper operation of the station. If another amateur is control operator, both are equally responsible. You may not transmit for pay, send music, use obscene language, broadcast, or send codes meant to hide the meaning of a message. Brief test transmissions, Morse practice and bulletins are fine, and so are emergency communications.",
+      "de": "Der Lizenzinhaber ist für den ordnungsgemäßen Betrieb der Station verantwortlich. Ist ein anderer Funkamateur Control Operator, sind beide gleichermaßen verantwortlich. Verboten sind Sendungen gegen Bezahlung, Musik, obszöne Sprache, Rundfunk und Codes, die den Inhalt einer Nachricht verschleiern sollen. Kurze Testsendungen, Morseübungen und Bulletins sind in Ordnung, ebenso Notfunkverkehr in echten Notlagen."
+     }
     }
    ],
-   "c": 0
-  },
-  {
-   "q": {
-    "en": "Who runs the licence exams?",
-    "de": "Wer nimmt die Lizenzprüfungen ab?"
-   },
-   "a": [
+   "questions": [
     {
-     "en": "Volunteer examiners",
-     "de": "Ehrenamtliche Prüfer"
+     "q": {
+      "en": "How many questions does the Amateur Extra exam (Element 4) have, and how many must you answer correctly?",
+      "de": "Wie viele Fragen hat die Amateur-Extra-Prüfung (Element 4), und wie viele musst du richtig beantworten?"
+     },
+     "a": [
+      {
+       "en": "50 questions, 37 correct",
+       "de": "50 Fragen, 37 richtig"
+      },
+      {
+       "en": "35 questions, 26 correct",
+       "de": "35 Fragen, 26 richtig"
+      },
+      {
+       "en": "50 questions, 50 correct",
+       "de": "50 Fragen, 50 richtig"
+      },
+      {
+       "en": "100 questions, 75 correct",
+       "de": "100 Fragen, 75 richtig"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "The post office",
-     "de": "Die Post"
+     "q": {
+      "en": "Which 40 metre frequency is reserved for Amateur Extra?",
+      "de": "Welche Frequenz im 40-Meter-Band ist Amateur Extra vorbehalten?"
+     },
+     "a": [
+      {
+       "en": "7.150 MHz",
+       "de": "7,150 MHz"
+      },
+      {
+       "en": "7.050 MHz",
+       "de": "7,050 MHz"
+      },
+      {
+       "en": "7.200 MHz",
+       "de": "7,200 MHz"
+      },
+      {
+       "en": "7.280 MHz",
+       "de": "7,280 MHz"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "Local police",
-     "de": "Die örtliche Polizei"
+     "q": {
+      "en": "Which vanity callsign format is available only to Amateur Extra?",
+      "de": "Welches Format eines Wunschrufzeichens steht nur Amateur Extra offen?"
+     },
+     "a": [
+      {
+       "en": "One-letter prefix and two-letter suffix, such as W1AW",
+       "de": "Ein Buchstabe Präfix und zwei Buchstaben Suffix, wie W1AW"
+      },
+      {
+       "en": "One-letter prefix and three-letter suffix, such as K1ABC",
+       "de": "Ein Buchstabe Präfix und drei Buchstaben Suffix, wie K1ABC"
+      },
+      {
+       "en": "Two-letter prefix and three-letter suffix, such as KD2ABC",
+       "de": "Zwei Buchstaben Präfix und drei Buchstaben Suffix, wie KD2ABC"
+      },
+      {
+       "en": "Any format with a K prefix",
+       "de": "Jedes Format mit K als Präfix"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "Commercial radio stations",
-     "de": "Kommerzielle Radiosender"
+     "q": {
+      "en": "Who must give the Element 4 exam?",
+      "de": "Wer muss die Prüfung Element 4 abnehmen?"
+     },
+     "a": [
+      {
+       "en": "A team of at least three volunteer examiners who hold Amateur Extra",
+       "de": "Ein Team aus mindestens drei ehrenamtlichen Prüfern mit Amateur Extra"
+      },
+      {
+       "en": "A single FCC officer",
+       "de": "Ein einzelner FCC-Beamter"
+      },
+      {
+       "en": "Two examiners of any class",
+       "de": "Zwei Prüfer beliebiger Klasse"
+      },
+      {
+       "en": "The local ham club president",
+       "de": "Der Vorsitzende des örtlichen Clubs"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "For how long is a deceased licensee's callsign normally unavailable to others?",
+      "de": "Wie lange ist das Rufzeichen eines Verstorbenen normalerweise für andere gesperrt?"
+     },
+     "a": [
+      {
+       "en": "Two years",
+       "de": "Zwei Jahre"
+      },
+      {
+       "en": "Six months",
+       "de": "Sechs Monate"
+      },
+      {
+       "en": "Ten years",
+       "de": "Zehn Jahre"
+      },
+      {
+       "en": "It is reissued the next day",
+       "de": "Es wird am nächsten Tag neu vergeben"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "A station licensee lets another amateur act as control operator. Who is responsible for proper operation?",
+      "de": "Ein Lizenzinhaber lässt einen anderen Funkamateur als Control Operator arbeiten. Wer ist für den ordnungsgemäßen Betrieb verantwortlich?"
+     },
+     "a": [
+      {
+       "en": "Both, equally",
+       "de": "Beide gleichermaßen"
+      },
+      {
+       "en": "Only the licensee",
+       "de": "Nur der Lizenzinhaber"
+      },
+      {
+       "en": "Only the control operator",
+       "de": "Nur der Control Operator"
+      },
+      {
+       "en": "The FCC",
+       "de": "Die FCC"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which transmission is prohibited on amateur frequencies?",
+      "de": "Welche Sendung ist auf Amateurfunkfrequenzen verboten?"
+     },
+     "a": [
+      {
+       "en": "A message in a code meant to hide its meaning",
+       "de": "Eine Nachricht in einem Code, der ihren Inhalt verschleiern soll"
+      },
+      {
+       "en": "Using Q-codes and abbreviations",
+       "de": "Die Verwendung von Q-Gruppen und Abkürzungen"
+      },
+      {
+       "en": "A brief transmission to adjust the station",
+       "de": "Eine kurze Sendung zum Einstellen der Station"
+      },
+      {
+       "en": "A contact with a station in another country",
+       "de": "Eine Verbindung mit einer Station in einem anderen Land"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "At what frequency does a circuit with 10 microhenries and 100 picofarads resonate?",
+      "de": "Bei welcher Frequenz schwingt ein Kreis mit 10 Mikrohenry und 100 Pikofarad in Resonanz?"
+     },
+     "a": [
+      {
+       "en": "About 5 MHz",
+       "de": "Etwa 5 MHz"
+      },
+      {
+       "en": "About 50 MHz",
+       "de": "Etwa 50 MHz"
+      },
+      {
+       "en": "About 0.5 MHz",
+       "de": "Etwa 0,5 MHz"
+      },
+      {
+       "en": "About 16 MHz",
+       "de": "Etwa 16 MHz"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "By about how much does a 6 dB increase raise the power?",
+      "de": "Um etwa welchen Faktor erhöht eine Zunahme um 6 dB die Leistung?"
+     },
+     "a": [
+      {
+       "en": "Four times",
+       "de": "Vierfach"
+      },
+      {
+       "en": "Twice",
+       "de": "Doppelt"
+      },
+      {
+       "en": "Six times",
+       "de": "Sechsfach"
+      },
+      {
+       "en": "Ten times",
+       "de": "Zehnfach"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Does Amateur Extra allow more than 1500 watts PEP on the HF bands?",
+      "de": "Erlaubt Amateur Extra auf den Kurzwellenbändern mehr als 1500 Watt PEP?"
+     },
+     "a": [
+      {
+       "en": "No, 1500 watts PEP is the limit for everyone",
+       "de": "Nein, 1500 Watt PEP gelten für alle als Grenze"
+      },
+      {
+       "en": "Yes, up to 5000 watts",
+       "de": "Ja, bis zu 5000 Watt"
+      },
+      {
+       "en": "Yes, but only at night",
+       "de": "Ja, aber nur nachts"
+      },
+      {
+       "en": "Yes, with a special permit",
+       "de": "Ja, mit einer Sondergenehmigung"
+      }
+     ],
+     "c": 0
     }
    ],
-   "c": 0
-  },
-  {
-   "q": {
-    "en": "Is a Morse code test required today?",
-    "de": "Ist heute eine Morseprüfung erforderlich?"
-   },
-   "a": [
-    {
-     "en": "No",
-     "de": "Nein"
-    },
-    {
-     "en": "Yes, at 5 WPM",
-     "de": "Ja, mit 5 WPM"
-    },
-    {
-     "en": "Yes, at 13 WPM",
-     "de": "Ja, mit 13 WPM"
-    },
-    {
-     "en": "Only for Technician",
-     "de": "Nur für Technician"
-    }
-   ],
-   "c": 0
+   "pass": 7,
+   "short": "Extra"
   }
  ]
 }

@@ -56,7 +56,7 @@ func _draw_room() -> void:
 	ci.draw_rect(Rect2(688, 52, 4, 186), Palette.LINE)
 	ci.draw_rect(Rect2(562, 143, 256, 4), Palette.LINE)
 	# wall decorations earned by goals
-	if Game.rules_done():
+	if Game.rules_done(1):
 		Art.rrect(ci, Rect2(350, 80, 150, 110), Palette.CREAM, 6, Palette.AMBER_DEEP, 4)
 		for i in 4:
 			ci.draw_line(Vector2(368, 108 + i * 16), Vector2(482 - (i % 2) * 30, 108 + i * 16), Palette.MUTED, 2.0)
@@ -66,7 +66,7 @@ func _draw_room() -> void:
 		ci.draw_string(Style.font_mono, Vector2(872, 152), Game.callsign(), HORIZONTAL_ALIGNMENT_LEFT, 110, 20, Palette.INK)
 		ci.draw_string(Style.font_mono, Vector2(872, 182), "QSL 73", HORIZONTAL_ALIGNMENT_LEFT, 110, 16, Palette.INK)
 	# on the air: signal rings around the antenna
-	if Game.owns("antenna") and Game.owns("transceiver"):
+	if Game.tier("antenna") > 0 and Game.tier("transceiver") > 0:
 		Art.rings(ci, Vector2(1165, 76), _t, 3, 100.0, Palette.TEAL, 2.0)
 
 
@@ -75,7 +75,9 @@ func _build_slots() -> void:
 		var r: Rect2 = SLOTS[id]
 		var g := GearView.new()
 		g.part_id = id
-		g.owned = Game.owns(id)
+		g.owned = Game.tier(id) > 0
+		g.tier = Game.tier(id)
+		g.need_upgrade = Game.tier(id) > 0 and Game.tier(id) < Game.cur_level()
 		g.position = r.position
 		g.size = r.size
 		g.pressed.connect(_on_slot)
@@ -87,7 +89,7 @@ func _build_slots() -> void:
 
 func _on_slot(id: String) -> void:
 	Sfx.click()
-	if not Game.owns(id):
+	if Game.tier(id) < Game.cur_level():
 		SceneManager.go("build", {"part": id})
 		return
 	_gear[id].wiggle()
@@ -129,25 +131,27 @@ func _build_sidebar() -> void:
 	add_child(pb)
 	add_lbl(I18n.t("hub.goals"), Vector2(24, 132), 0, 14, Palette.MUTED, Style.font_body_bold)
 
-	var pack := Game.pack()
-	var lessons_total := (pack.get("lessons", []) as Array).size()
-	var lessons_done := Game.fact_int("rules.lessons_done")
-	var quiz_ok := int(bool(FactDatabase.get_fact("rules.quiz_passed", false)))
-	var g1_total := lessons_total + 2
-	var g1_done := mini(lessons_done, lessons_total) + quiz_ok + int(Game.has_callsign())
+	var lvl := Game.level_data()
+	var lessons_total := (lvl.get("lessons", []) as Array).size()
+	var lessons_done := Game.fact_int(Game.k("rules.lessons_done"))
+	var quiz_ok := int(bool(FactDatabase.get_fact(Game.k("rules.quiz_passed"), false)))
+	var extra := 2 if Game.cur_level() == 1 else 1
+	var g1_total := lessons_total + extra
+	var g1_done := mini(lessons_done, lessons_total) + quiz_ok + (int(Game.has_callsign()) if extra == 2 else 0)
 	var g1 := 1.0 if Game.rules_done() else float(g1_done) / float(g1_total)
 	var qso_ready := Game.qso_ready()
 	var steps := Game.qso_steps_done()
 	var passed := Game.morse_passed()
+	var cap := Game.morse_cap()
 	var goals := [
-		{"prog": g1, "sub": I18n.t("hub.goal1.sub", [I18n.t("country." + Game.country()), I18n.loc(pack.get("licence", ""))]),
+		{"prog": g1, "sub": I18n.t("hub.goal1.sub", [I18n.t("country." + Game.country()), I18n.loc(lvl.get("licence", ""))]),
 		 "status": I18n.t("hub.goal1.prog", [g1_total if Game.rules_done() else g1_done, g1_total]), "cb": _goal_rules},
 		{"prog": float(Game.parts_owned()) / 8.0, "sub": I18n.t("hub.goal2.sub"),
 		 "status": I18n.t("hub.goal2.prog", [Game.parts_owned(), 8]), "cb": _goal_shack},
 		{"prog": float(steps) / float(Game.QSO_STEPS), "sub": I18n.t("hub.goal3.sub"),
 		 "status": I18n.t("common.locked") if (not qso_ready and steps == 0) else I18n.t("hub.goal3.prog", [steps, Game.QSO_STEPS]), "cb": _goal_qso},
-		{"prog": float(passed) / float(Game.MORSE_LEVELS), "sub": I18n.t("hub.goal4.sub"),
-		 "status": I18n.t("hub.goal4.prog", [mini(passed + 1, Game.MORSE_LEVELS), Game.MORSE_LEVELS]), "cb": _goal_morse},
+		{"prog": float(mini(passed, cap)) / float(cap), "sub": I18n.t("hub.goal4.sub"),
+		 "status": I18n.t("hub.goal4.prog", [mini(passed + 1, cap), cap]), "cb": _goal_morse},
 	]
 	for i in 4:
 		var y := 156 + i * 128
@@ -192,7 +196,7 @@ func _build_sidebar() -> void:
 
 
 func _goal_rules() -> void:
-	if bool(FactDatabase.get_fact("rules.quiz_passed", false)) and not Game.has_callsign():
+	if Game.cur_level() == 1 and bool(FactDatabase.get_fact("rules.quiz_passed", false)) and not Game.has_callsign():
 		SceneManager.go("callsign")
 	else:
 		SceneManager.go("legal")
@@ -201,7 +205,7 @@ func _goal_rules() -> void:
 func _goal_shack() -> void:
 	toast(I18n.t("hub.click_slot"), Palette.AMBER)
 	for id in Game.PART_IDS:
-		if not Game.owns(id):
+		if Game.tier(id) < Game.cur_level():
 			_gear[id].wiggle()
 
 
@@ -219,19 +223,58 @@ func _goal_morse() -> void:
 # ---- top bar ----------------------------------------------------------------------------
 
 func _build_topbar() -> void:
-	var chip := add_card(Rect2(610, 14, 230, 40), Style.box(Palette.PANEL2, 20, Palette.LINE, 1))
+	# level chips: one per class level of this country
+	var x := 330.0
+	for n in range(1, Game.MAX_LEVELS + 1):
+		var exists := n <= Game.level_count()
+		var open := exists and n <= Game.levels_unlocked()
+		var text := "%d · %s" % [n, I18n.loc(Game.level_data(n).get("short", ""))] if exists else "%d · —" % n
+		var b := _toggle_chip(text, Vector2(x, 14), Vector2(96, 40), n == Game.cur_level())
+		b.disabled = not open
+		if not exists:
+			b.tooltip_text = I18n.t("level.soon")
+		elif not open:
+			b.tooltip_text = I18n.t("level.locked")
+		else:
+			b.tooltip_text = I18n.loc(Game.level_data(n).get("licence", ""))
+			b.pressed.connect(func() -> void:
+				Game.set_level(n)
+				_rebuild())
+		x += 102.0
+	var chip := add_card(Rect2(650, 14, 200, 40), Style.box(Palette.PANEL2, 20, Palette.LINE, 1))
 	chip.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var dot := Panel.new()
-	dot.position = Vector2(624, 22)
+	dot.position = Vector2(662, 22)
 	dot.size = Vector2(24, 24)
 	dot.add_theme_stylebox_override("panel", Style.box(Palette.AMBER, 12))
 	add_child(dot)
-	add_lbl(I18n.t("hub.shack", [Game.parts_owned(), 8]), Vector2(656, 20), 0, 20, Palette.AMBER, Style.font_display)
-	var x := 856.0
-	for item in [["hub.profile", 128, _open_profile], ["share.btn", 108, Share.open], ["hub.about", 104, _show_about]]:
+	add_lbl(I18n.t("hub.shack", [Game.parts_owned(), 8]), Vector2(694, 20), 0, 20, Palette.AMBER, Style.font_display)
+	x = 862.0
+	for item in [["hub.profile", 116, _open_profile], ["share.btn", 100, Share.open], ["hub.about", 100, _show_about]]:
 		var b := add_btn(I18n.t(item[0]), Vector2(x, 14), item[2], "", Vector2(item[1], 40))
 		b.add_theme_font_size_override("font_size", 16)
 		x += float(item[1]) + 8.0
+
+
+func _toggle_chip(text: String, pos: Vector2, sz: Vector2, on: bool) -> Button:
+	var b := Button.new()
+	b.text = text
+	b.position = pos
+	b.custom_minimum_size = sz
+	b.size = sz
+	b.focus_mode = Control.FOCUS_NONE
+	b.add_theme_font_size_override("font_size", 16)
+	b.add_theme_stylebox_override("normal", Style.box(Palette.AMBER if on else Palette.PANEL2, 20, Palette.CLEAR if on else Palette.LINE, 0 if on else 1, Vector2(8, 6)))
+	b.add_theme_stylebox_override("hover", Style.box(Palette.AMBER if on else Palette.LINE, 20, Palette.CLEAR, 0, Vector2(8, 6)))
+	b.add_theme_stylebox_override("pressed", Style.box(Palette.AMBER, 20, Palette.CLEAR, 0, Vector2(8, 6)))
+	b.add_theme_stylebox_override("disabled", Style.box(Palette.fade_ink(0.4), 20, Palette.LINE, 1, Vector2(8, 6)))
+	b.add_theme_color_override("font_color", Palette.INK if on else Palette.CREAM)
+	b.add_theme_color_override("font_hover_color", Palette.INK if on else Palette.CREAM)
+	b.add_theme_color_override("font_disabled_color", Art.fade(Palette.MUTED, 0.6))
+	b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+	b.pressed.connect(Sfx.click)
+	add_child(b)
+	return b
 
 
 func _open_profile() -> void:
@@ -275,6 +318,55 @@ func _show_about() -> void:
 	_about.add_child(close)
 
 
+# ---- level up ---------------------------------------------------------------------------
+
+func _show_levelup(n: int) -> void:
+	Sfx.reward()
+	var ov := Control.new()
+	ov.set_anchors_preset(Control.PRESET_FULL_RECT)
+	add_child(ov)
+	var dim := ColorRect.new()
+	dim.color = Color(0, 0, 0, 0.7)
+	dim.set_anchors_preset(Control.PRESET_FULL_RECT)
+	ov.add_child(dim)
+	var art := Control.new()
+	art.set_anchors_preset(Control.PRESET_FULL_RECT)
+	art.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	art.draw.connect(func() -> void:
+		Art.rrect(art, Rect2(340, 130, 600, 460), Palette.PANEL, 28, Palette.AMBER, 3)
+		Art.rings(art, Vector2(640, 232), _t, 3, 110.0, Palette.AMBER)
+		for i in 8:
+			var a := _t * 0.6 + float(i) * TAU / 8.0
+			Art.sparkle(art, Vector2(640, 232) + Vector2(cos(a), sin(a)) * 130.0, 9.0 + 3.0 * sin(_t * 3.0 + i), Palette.AMBER, _t)
+		Art.avatar(art, Vector2(640, 232), 64.0, int(Game.profile.get("avatar", 1))))
+	ov.add_child(art)
+	var t1 := Style.display_label(I18n.t("level.up", [n]), 40, Palette.AMBER)
+	t1.position = Vector2(340, 352)
+	t1.size = Vector2(600, 50)
+	t1.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	ov.add_child(t1)
+	var t2 := Style.display_label(I18n.loc(Game.level_data(n).get("licence", "")), 26, Palette.CREAM)
+	t2.position = Vector2(340, 404)
+	t2.size = Vector2(600, 40)
+	t2.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	ov.add_child(t2)
+	var t3 := Style.label(I18n.t("level.up_body"), 17, Palette.MUTED)
+	t3.position = Vector2(380, 450)
+	t3.size = Vector2(520, 80)
+	t3.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	t3.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	ov.add_child(t3)
+	var b := Button.new()
+	b.text = I18n.t("common.continue")
+	b.theme_type_variation = "PrimaryButton"
+	b.position = Vector2(540, 526)
+	b.custom_minimum_size = Vector2(200, 48)
+	b.pressed.connect(func() -> void:
+		ov.queue_free()
+		_rebuild())
+	ov.add_child(b)
+
+
 # ---- arrival effects --------------------------------------------------------------------
 
 func _first_show() -> void:
@@ -292,3 +384,8 @@ func _first_show() -> void:
 	elif p.has("goal"):
 		Sfx.reward()
 		toast(I18n.t("hub.goal%d" % (Game.QUEST_IDS.find(p["goal"]) + 1)), Palette.GREEN)
+	var up := Game.check_level_up()
+	if up > 0:
+		await get_tree().create_timer(1.6 if p.has("goal") else 0.4).timeout
+		if is_inside_tree():
+			_show_levelup(up)

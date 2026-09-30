@@ -7,217 +7,838 @@
   "en": "London",
   "de": "London"
  },
- "licence": {
-  "en": "Foundation (entry level)",
-  "de": "Foundation (Einstieg)"
- },
- "pass": 5,
  "source": {
   "en": "Original primer based on Ofcom / RSGB information",
   "de": "Eigener Überblick nach Ofcom / RSGB"
  },
- "lessons": [
+ "levels": [
   {
-   "t": {
-    "en": "Amateur radio in the UK",
-    "de": "Amateurfunk in Großbritannien"
+   "short": "Found.",
+   "class": {
+    "en": "Foundation (entry level)",
+    "de": "Foundation (Einstieg)"
    },
-   "b": {
-    "en": "Ofcom, the communications regulator, issues amateur radio licences. The service is for self-training, experiments and communicating with other amateurs. It is not for business.",
-    "de": "Ofcom, die Regulierungsbehörde, vergibt Amateurfunklizenzen. Der Dienst dient der Weiterbildung, Experimenten und dem Kontakt mit anderen Funkamateuren. Er ist nicht für Geschäfte gedacht."
-   }
-  },
-  {
-   "t": {
-    "en": "Three licence levels",
-    "de": "Drei Lizenzstufen"
+   "licence": {
+    "en": "Foundation (entry level)",
+    "de": "Foundation (Einstieg)"
    },
-   "b": {
-    "en": "You can progress from Foundation to Intermediate to Full. You start with a Foundation exam. The Radio Society of Great Britain (RSGB) is the national society and supports training.",
-    "de": "Du kannst von Foundation über Intermediate zu Full aufsteigen. Du beginnst mit der Foundation-Prüfung. Die Radio Society of Great Britain (RSGB) ist der nationale Verband und unterstützt die Ausbildung."
-   }
-  },
-  {
-   "t": {
-    "en": "Callsign and etiquette",
-    "de": "Rufzeichen und Umgangsformen"
-   },
-   "b": {
-    "en": "Your licence comes with a callsign. Give it to identify your station, keep your messages appropriate and do not cause interference.",
-    "de": "Zu deiner Lizenz gehört ein Rufzeichen. Nenne es, um deine Station zu kennzeichnen, halte deine Nachrichten angemessen und störe niemanden."
-   }
-  },
-  {
-   "t": {
-    "en": "Power and limits",
-    "de": "Leistung und Grenzen"
-   },
-   "b": {
-    "en": "Each licence level has its own limits on power and frequencies. Foundation licence holders may use up to 10 watts.",
-    "de": "Jede Lizenzstufe hat eigene Grenzen für Leistung und Frequenzen. Foundation-Inhaber dürfen bis zu 10 Watt nutzen."
-   }
-  },
-  {
-   "t": {
-    "en": "Check the details",
-    "de": "Details prüfen"
-   },
-   "b": {
-    "en": "Licence terms change. Read the current Ofcom licence and RSGB guidance before you transmit.",
-    "de": "Lizenzbedingungen ändern sich. Lies vor dem Senden die aktuelle Ofcom-Lizenz und die Hinweise der RSGB."
-   }
-  }
- ],
- "questions": [
-  {
-   "q": {
-    "en": "Who issues amateur radio licences in the UK?",
-    "de": "Wer vergibt Amateurfunklizenzen in Großbritannien?"
-   },
-   "a": [
+   "lessons": [
     {
-     "en": "Ofcom",
-     "de": "Ofcom"
+     "t": {
+      "en": "Amateur radio in the UK",
+      "de": "Amateurfunk in Großbritannien"
+     },
+     "b": {
+      "en": "Ofcom, the communications regulator, issues amateur radio licences. The service is for self-training, experiments and communicating with other amateurs. It is not for business.",
+      "de": "Ofcom, die Regulierungsbehörde, vergibt Amateurfunklizenzen. Der Dienst dient der Weiterbildung, Experimenten und dem Kontakt mit anderen Funkamateuren. Er ist nicht für Geschäfte gedacht."
+     }
     },
     {
-     "en": "The BBC",
-     "de": "Die BBC"
+     "t": {
+      "en": "Three licence levels",
+      "de": "Drei Lizenzstufen"
+     },
+     "b": {
+      "en": "You can progress from Foundation to Intermediate to Full. You start with a Foundation exam. The Radio Society of Great Britain (RSGB) is the national society and supports training.",
+      "de": "Du kannst von Foundation über Intermediate zu Full aufsteigen. Du beginnst mit der Foundation-Prüfung. Die Radio Society of Great Britain (RSGB) ist der nationale Verband und unterstützt die Ausbildung."
+     }
     },
     {
-     "en": "The Post Office",
-     "de": "Die Post"
+     "t": {
+      "en": "Callsign and etiquette",
+      "de": "Rufzeichen und Umgangsformen"
+     },
+     "b": {
+      "en": "Your licence comes with a callsign. Give it to identify your station, keep your messages appropriate and do not cause interference.",
+      "de": "Zu deiner Lizenz gehört ein Rufzeichen. Nenne es, um deine Station zu kennzeichnen, halte deine Nachrichten angemessen und störe niemanden."
+     }
     },
     {
-     "en": "The police",
-     "de": "Die Polizei"
+     "t": {
+      "en": "Power and limits",
+      "de": "Leistung und Grenzen"
+     },
+     "b": {
+      "en": "Each licence level has its own limits on power and frequencies. Since Ofcom's 2024 update, Foundation licence holders may use up to 25 watts.",
+      "de": "Jede Lizenzstufe hat eigene Grenzen für Leistung und Frequenzen. Seit dem Ofcom-Update von 2024 dürfen Foundation-Inhaber bis zu 25 Watt nutzen."
+     }
+    },
+    {
+     "t": {
+      "en": "Check the details",
+      "de": "Details prüfen"
+     },
+     "b": {
+      "en": "Licence terms change. Read the current Ofcom licence and RSGB guidance before you transmit.",
+      "de": "Lizenzbedingungen ändern sich. Lies vor dem Senden die aktuelle Ofcom-Lizenz und die Hinweise der RSGB."
+     }
     }
    ],
-   "c": 0
-  },
-  {
-   "q": {
-    "en": "Which licence do beginners take first?",
-    "de": "Welche Lizenz machen Einsteiger zuerst?"
-   },
-   "a": [
+   "questions": [
     {
-     "en": "Foundation",
-     "de": "Foundation"
+     "q": {
+      "en": "Who issues amateur radio licences in the UK?",
+      "de": "Wer vergibt Amateurfunklizenzen in Großbritannien?"
+     },
+     "a": [
+      {
+       "en": "Ofcom",
+       "de": "Ofcom"
+      },
+      {
+       "en": "The BBC",
+       "de": "Die BBC"
+      },
+      {
+       "en": "The Post Office",
+       "de": "Die Post"
+      },
+      {
+       "en": "The police",
+       "de": "Die Polizei"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "Full",
-     "de": "Full"
+     "q": {
+      "en": "Which licence do beginners take first?",
+      "de": "Welche Lizenz machen Einsteiger zuerst?"
+     },
+     "a": [
+      {
+       "en": "Foundation",
+       "de": "Foundation"
+      },
+      {
+       "en": "Full",
+       "de": "Full"
+      },
+      {
+       "en": "Intermediate",
+       "de": "Intermediate"
+      },
+      {
+       "en": "Advanced",
+       "de": "Advanced"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "Intermediate",
-     "de": "Intermediate"
+     "q": {
+      "en": "May you use your amateur station for business?",
+      "de": "Darfst du deine Amateurfunkstelle für Geschäfte nutzen?"
+     },
+     "a": [
+      {
+       "en": "No",
+       "de": "Nein"
+      },
+      {
+       "en": "Yes, always",
+       "de": "Ja, immer"
+      },
+      {
+       "en": "Yes, on VHF only",
+       "de": "Ja, nur auf UKW"
+      },
+      {
+       "en": "Yes, at night",
+       "de": "Ja, nachts"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "Advanced",
-     "de": "Advanced"
+     "q": {
+      "en": "What is the maximum power for a Foundation licence?",
+      "de": "Wie hoch ist die Höchstleistung bei der Foundation-Lizenz?"
+     },
+     "a": [
+      {
+       "en": "25 watts",
+       "de": "25 Watt"
+      },
+      {
+       "en": "400 watts",
+       "de": "400 Watt"
+      },
+      {
+       "en": "1000 watts",
+       "de": "1000 Watt"
+      },
+      {
+       "en": "1 watt",
+       "de": "1 Watt"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "How is a station identified on air?",
+      "de": "Woran erkennt man eine Station im Funkbetrieb?"
+     },
+     "a": [
+      {
+       "en": "By its callsign",
+       "de": "Am Rufzeichen"
+      },
+      {
+       "en": "By its colour",
+       "de": "An ihrer Farbe"
+      },
+      {
+       "en": "By its antenna",
+       "de": "An ihrer Antenne"
+      },
+      {
+       "en": "By its power supply",
+       "de": "An ihrem Netzteil"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which body is the UK's national amateur radio society?",
+      "de": "Welcher Verband ist der nationale Amateurfunkverband Großbritanniens?"
+     },
+     "a": [
+      {
+       "en": "RSGB",
+       "de": "RSGB"
+      },
+      {
+       "en": "ARRL",
+       "de": "ARRL"
+      },
+      {
+       "en": "DARC",
+       "de": "DARC"
+      },
+      {
+       "en": "USKA",
+       "de": "USKA"
+      }
+     ],
+     "c": 0
     }
    ],
-   "c": 0
+   "pass": 5
   },
   {
-   "q": {
-    "en": "May you use your amateur station for business?",
-    "de": "Darfst du deine Amateurfunkstelle für Geschäfte nutzen?"
+   "class": {
+    "en": "Intermediate",
+    "de": "Intermediate"
    },
-   "a": [
+   "licence": {
+    "en": "Intermediate licence",
+    "de": "Intermediate-Lizenz"
+   },
+   "lessons": [
     {
-     "en": "No",
-     "de": "Nein"
+     "t": {
+      "en": "What Intermediate adds",
+      "de": "Was Intermediate dazu bringt"
+     },
+     "b": {
+      "en": "The Intermediate licence is the middle step of the UK ladder and raises your power limit to 100 watts PEP (Foundation: 25 watts). You take the exam after Foundation: 46 multiple-choice questions in 90 minutes, each with four answers. Since February 2024, all licensees may also control a station remotely over the internet.",
+      "de": "Die Intermediate-Lizenz ist die mittlere Stufe der britischen Leiter und hebt deine Leistungsgrenze auf 100 Watt PEP an (Foundation: 25 Watt). Die Prüfung legst du nach Foundation ab: 46 Multiple-Choice-Fragen in 90 Minuten, jeweils mit vier Antworten. Seit Februar 2024 dürfen außerdem ausnahmslos alle Lizenzinhaber eine Station per Internet fernsteuern."
+     }
     },
     {
-     "en": "Yes, always",
-     "de": "Ja, immer"
+     "t": {
+      "en": "Your Intermediate callsign",
+      "de": "Dein Intermediate-Rufzeichen"
+     },
+     "b": {
+      "en": "New Intermediate callsigns start with M8 or M9, followed by three letters. Older Intermediate callsigns began with a 2 and keep their regional locator. For newer callsigns, the locator is optional. After the slash you may add any suffix, for example /P for portable or /M for mobile, as long as your station stays identifiable.",
+      "de": "Neue Intermediate-Rufzeichen beginnen mit M8 oder M9, gefolgt von drei Buchstaben. Ältere Intermediate-Rufzeichen begannen mit einer 2 und behalten ihren Regionalcode. Bei neueren Rufzeichen ist dieser Regionalcode freiwillig. Nach dem Schrägstrich darfst du einen beliebigen Zusatz anhängen, zum Beispiel /P für portabel oder /M für mobil, solange deine Station erkennbar bleibt."
+     }
     },
     {
-     "en": "Yes, on VHF only",
-     "de": "Ja, nur auf UKW"
+     "t": {
+      "en": "Guests and licence upkeep",
+      "de": "Gäste und Pflege der Lizenz"
+     },
+     "b": {
+      "en": "Anyone may use your station, as long as you supervise them directly and physically. Your licence is for life, provided you revalidate it every five years and keep your details up to date in Ofcom's online licensing system. Applying online costs nothing. If you neglect your details, Ofcom may propose to revoke the licence.",
+      "de": "Jeder darf deine Station benutzen, solange du ihn direkt und persönlich beaufsichtigst. Deine Lizenz gilt lebenslang, wenn du sie alle fünf Jahre bestätigst und deine Angaben im Online-Lizenzsystem von Ofcom aktuell hältst. Die Online-Beantragung kostet nichts. Wer seine Angaben vernachlässigt, muss damit rechnen, dass Ofcom den Widerruf der Lizenz vorschlägt."
+     }
     },
     {
-     "en": "Yes, at night",
-     "de": "Ja, nachts"
+     "t": {
+      "en": "Rules that stay the same",
+      "de": "Regeln, die gleich bleiben"
+     },
+     "b": {
+      "en": "Amateur radio stays strictly non-commercial. You may not send messages for general reception, except initial CQ calls or transmissions to groups of three or more amateurs. Your equipment must not cause undue interference to other users, even home-built gear. Keep in mind that 100 watts is 20 dBW: every tenfold power step adds 10 dB.",
+      "de": "Amateurfunk bleibt streng nichtkommerziell. Du darfst keine Nachrichten zum allgemeinen Empfang senden, außer erste CQ-Rufe oder Sendungen an Gruppen von drei oder mehr Funkamateuren. Deine Geräte dürfen andere Funknutzer nicht unzumutbar stören, auch nicht mit selbstgebauter Technik. Merke: 100 Watt entsprechen 20 dBW, jeder Sprung um den Faktor zehn bringt 10 dB."
+     }
     }
    ],
-   "c": 0
+   "questions": [
+    {
+     "q": {
+      "en": "What is the maximum power for an Intermediate licence?",
+      "de": "Wie hoch ist die Höchstleistung bei der Intermediate-Lizenz?"
+     },
+     "a": [
+      {
+       "en": "100 watts PEP",
+       "de": "100 Watt PEP"
+      },
+      {
+       "en": "25 watts PEP",
+       "de": "25 Watt PEP"
+      },
+      {
+       "en": "400 watts PEP",
+       "de": "400 Watt PEP"
+      },
+      {
+       "en": "10 watts PEP",
+       "de": "10 Watt PEP"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "How many questions does the Intermediate exam have?",
+      "de": "Wie viele Fragen hat die Intermediate-Prüfung?"
+     },
+     "a": [
+      {
+       "en": "46 multiple-choice questions",
+       "de": "46 Multiple-Choice-Fragen"
+      },
+      {
+       "en": "26 multiple-choice questions",
+       "de": "26 Multiple-Choice-Fragen"
+      },
+      {
+       "en": "58 multiple-choice questions",
+       "de": "58 Multiple-Choice-Fragen"
+      },
+      {
+       "en": "100 multiple-choice questions",
+       "de": "100 Multiple-Choice-Fragen"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "What must you pass before you may sit the Intermediate exam?",
+      "de": "Was musst du bestehen, bevor du die Intermediate-Prüfung ablegen darfst?"
+     },
+     "a": [
+      {
+       "en": "The Foundation exam",
+       "de": "Die Foundation-Prüfung"
+      },
+      {
+       "en": "The Full exam",
+       "de": "Die Full-Prüfung"
+      },
+      {
+       "en": "A Morse test",
+       "de": "Eine Morseprüfung"
+      },
+      {
+       "en": "A driving test",
+       "de": "Eine Fahrprüfung"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which prefixes do new Intermediate callsigns start with?",
+      "de": "Mit welchen Präfixen beginnen neue Intermediate-Rufzeichen?"
+     },
+     "a": [
+      {
+       "en": "M8 or M9",
+       "de": "M8 oder M9"
+      },
+      {
+       "en": "M3 or M6",
+       "de": "M3 oder M6"
+      },
+      {
+       "en": "M0 or M1",
+       "de": "M0 oder M1"
+      },
+      {
+       "en": "G4 or G8",
+       "de": "G4 oder G8"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "What does the suffix /M show after your callsign?",
+      "de": "Was zeigt der Zusatz /M hinter deinem Rufzeichen an?"
+     },
+     "a": [
+      {
+       "en": "You are operating mobile",
+       "de": "Du funkst mobil"
+      },
+      {
+       "en": "You are at sea",
+       "de": "Du bist auf See"
+      },
+      {
+       "en": "You are a member of a club",
+       "de": "Du bist Clubmitglied"
+      },
+      {
+       "en": "You are using low power",
+       "de": "Du sendest mit geringer Leistung"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "How often must you revalidate your Ofcom amateur licence?",
+      "de": "Wie oft musst du deine Amateurfunklizenz bei Ofcom bestätigen?"
+     },
+     "a": [
+      {
+       "en": "Every five years",
+       "de": "Alle fünf Jahre"
+      },
+      {
+       "en": "Every year",
+       "de": "Jedes Jahr"
+      },
+      {
+       "en": "Every 20 years",
+       "de": "Alle 20 Jahre"
+      },
+      {
+       "en": "Never",
+       "de": "Nie"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Under what condition may a visitor use your station?",
+      "de": "Unter welcher Bedingung darf ein Besucher deine Station benutzen?"
+     },
+     "a": [
+      {
+       "en": "You supervise them directly and physically",
+       "de": "Du beaufsichtigst ihn direkt und persönlich"
+      },
+      {
+       "en": "They own a scanner",
+       "de": "Er besitzt einen Scanner"
+      },
+      {
+       "en": "They pay a small fee",
+       "de": "Er zahlt eine kleine Gebühr"
+      },
+      {
+       "en": "They are over 60",
+       "de": "Er ist über 60"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which transmission to the general public is allowed?",
+      "de": "Welche Sendung an die Allgemeinheit ist erlaubt?"
+     },
+     "a": [
+      {
+       "en": "An initial CQ call",
+       "de": "Ein erster CQ-Ruf"
+      },
+      {
+       "en": "A music broadcast",
+       "de": "Eine Musiksendung"
+      },
+      {
+       "en": "An advert for your shop",
+       "de": "Eine Werbung für dein Geschäft"
+      },
+      {
+       "en": "A weather forecast for listeners",
+       "de": "Ein Wetterbericht für Zuhörer"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "How many decibels higher is 100 watts than 10 watts?",
+      "de": "Um wie viele Dezibel ist 100 Watt größer als 10 Watt?"
+     },
+     "a": [
+      {
+       "en": "10 dB",
+       "de": "10 dB"
+      },
+      {
+       "en": "3 dB",
+       "de": "3 dB"
+      },
+      {
+       "en": "20 dB",
+       "de": "20 dB"
+      },
+      {
+       "en": "100 dB",
+       "de": "100 dB"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "About how long is the wavelength at 7.1 MHz?",
+      "de": "Wie lang ist die Wellenlänge bei 7,1 MHz ungefähr?"
+     },
+     "a": [
+      {
+       "en": "About 42 metres",
+       "de": "Etwa 42 Meter"
+      },
+      {
+       "en": "About 4 metres",
+       "de": "Etwa 4 Meter"
+      },
+      {
+       "en": "About 420 metres",
+       "de": "Etwa 420 Meter"
+      },
+      {
+       "en": "About 10 metres",
+       "de": "Etwa 10 Meter"
+      }
+     ],
+     "c": 0
+    }
+   ],
+   "pass": 7,
+   "short": "Inter."
   },
   {
-   "q": {
-    "en": "What is the maximum power for a Foundation licence?",
-    "de": "Wie hoch ist die Höchstleistung bei der Foundation-Lizenz?"
+   "class": {
+    "en": "Full",
+    "de": "Full"
    },
-   "a": [
+   "licence": {
+    "en": "Full licence",
+    "de": "Full-Lizenz"
+   },
+   "lessons": [
     {
-     "en": "10 watts",
-     "de": "10 Watt"
+     "t": {
+      "en": "What Full adds",
+      "de": "Was Full dazu bringt"
+     },
+     "b": {
+      "en": "The Full licence has the highest power limits: 400 watts PEP on most bands and up to 1000 watts (30 dBW) on primary bands. You take the exam after Intermediate: 58 multiple-choice questions in two hours. A pass brings a HAREC certificate. Only Full licensees can seek to operate overseas under the CEPT rules.",
+      "de": "Die Full-Lizenz hat die höchsten Leistungsgrenzen: 400 Watt PEP auf den meisten Bändern und bis zu 1000 Watt (30 dBW) auf Primärbändern. Die Prüfung legst du nach Intermediate ab: 58 Multiple-Choice-Fragen in zwei Stunden. Mit dem Bestehen erhältst du ein HAREC-Zertifikat. Nur Full-Lizenzinhaber können eine Genehmigung für den Funkbetrieb im Ausland nach den CEPT-Regeln beantragen."
+     }
     },
     {
-     "en": "400 watts",
-     "de": "400 Watt"
+     "t": {
+      "en": "Callsigns and operating abroad",
+      "de": "Rufzeichen und Funkbetrieb im Ausland"
+     },
+     "b": {
+      "en": "Full callsigns start with M0, M1 or M5, or with G and a digit, then normally three letters. Regional locators are optional, and England now has its own locator, E. Under CEPT you may operate in other participating countries for a short stay, usually up to three months, and you put the country prefix in front of your callsign.",
+      "de": "Full-Rufzeichen beginnen mit M0, M1 oder M5 oder mit G und einer Ziffer, danach normalerweise drei Buchstaben. Regionalcodes sind freiwillig, und England hat mit E jetzt einen eigenen. Nach CEPT darfst du in anderen teilnehmenden Ländern kurzzeitig funken, meist bis zu drei Monate, und stellst deinem Rufzeichen das Länderpräfix voran."
+     }
     },
     {
-     "en": "1000 watts",
-     "de": "1000 Watt"
+     "t": {
+      "en": "Notices of Variation",
+      "de": "Notices of Variation"
+     },
+     "b": {
+      "en": "Some activities need a Notice of Variation (NoV) from Ofcom: a special event station, a special contest callsign, beacons or repeaters above 25 watts ERP, and extra frequency bands such as 70.5 to 71.5 MHz. Under a Full (Club) licence, any Full licensee can supervise guests using the club station. Ofcom's online licensing system handles the paperwork.",
+      "de": "Manche Aktivitäten brauchen eine Notice of Variation (NoV) von Ofcom: eine Sonderstation, ein besonderes Contest-Rufzeichen, Baken oder Relaisstellen über 25 Watt ERP und zusätzliche Frequenzbereiche wie 70,5 bis 71,5 MHz. Bei einer Full-(Club-)Lizenz kann jeder Full-Inhaber Gäste an der Klubstation beaufsichtigen. Den Papierkram erledigst du über das Online-Lizenzsystem von Ofcom."
+     }
     },
     {
-     "en": "1 watt",
-     "de": "1 Watt"
+     "t": {
+      "en": "Duties of a Full licensee",
+      "de": "Pflichten eines Full-Inhabers"
+     },
+     "b": {
+      "en": "You must keep your licence details correct and revalidate every five years. If you do not, Ofcom may propose to revoke the licence. Your traffic stays non-commercial. You send messages to other amateurs, not to the general public, except CQ calls and transmissions to groups of three or more. A Full licence gives power and freedom, and more responsibility.",
+      "de": "Du musst deine Lizenzdaten korrekt halten und sie alle fünf Jahre bestätigen. Tust du das nicht, kann Ofcom den Widerruf der Lizenz vorschlagen. Dein Funkverkehr bleibt nichtkommerziell. Du sendest Nachrichten an andere Funkamateure, nicht an die Allgemeinheit, außer CQ-Rufe und Sendungen an Gruppen von drei oder mehr. Die Full-Lizenz bringt Leistung und Freiheit, aber auch mehr Verantwortung."
+     }
     }
    ],
-   "c": 0
-  },
-  {
-   "q": {
-    "en": "How is a station identified on air?",
-    "de": "Woran erkennt man eine Station im Funkbetrieb?"
-   },
-   "a": [
+   "questions": [
     {
-     "en": "By its callsign",
-     "de": "Am Rufzeichen"
+     "q": {
+      "en": "What is the highest power a Full licence allows on primary bands?",
+      "de": "Wie hoch ist die höchste Leistung, die die Full-Lizenz auf Primärbändern erlaubt?"
+     },
+     "a": [
+      {
+       "en": "1000 watts PEP",
+       "de": "1000 Watt PEP"
+      },
+      {
+       "en": "400 watts PEP",
+       "de": "400 Watt PEP"
+      },
+      {
+       "en": "100 watts PEP",
+       "de": "100 Watt PEP"
+      },
+      {
+       "en": "2000 watts PEP",
+       "de": "2000 Watt PEP"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "By its colour",
-     "de": "An ihrer Farbe"
+     "q": {
+      "en": "How many questions does the Full exam have?",
+      "de": "Wie viele Fragen hat die Full-Prüfung?"
+     },
+     "a": [
+      {
+       "en": "58 multiple-choice questions",
+       "de": "58 Multiple-Choice-Fragen"
+      },
+      {
+       "en": "46 multiple-choice questions",
+       "de": "46 Multiple-Choice-Fragen"
+      },
+      {
+       "en": "26 multiple-choice questions",
+       "de": "26 Multiple-Choice-Fragen"
+      },
+      {
+       "en": "20 multiple-choice questions",
+       "de": "20 Multiple-Choice-Fragen"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "By its antenna",
-     "de": "An ihrer Antenne"
+     "q": {
+      "en": "Which exam must you pass before the Full exam?",
+      "de": "Welche Prüfung musst du vor der Full-Prüfung bestehen?"
+     },
+     "a": [
+      {
+       "en": "The Intermediate exam",
+       "de": "Die Intermediate-Prüfung"
+      },
+      {
+       "en": "A Morse exam",
+       "de": "Eine Morseprüfung"
+      },
+      {
+       "en": "A computer exam",
+       "de": "Eine Computerprüfung"
+      },
+      {
+       "en": "No other exam",
+       "de": "Keine andere Prüfung"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "By its power supply",
-     "de": "An ihrem Netzteil"
+     "q": {
+      "en": "Which callsign format belongs to a Full licence?",
+      "de": "Welches Rufzeichenformat gehört zu einer Full-Lizenz?"
+     },
+     "a": [
+      {
+       "en": "M0ABC",
+       "de": "M0ABC"
+      },
+      {
+       "en": "M3ABC",
+       "de": "M3ABC"
+      },
+      {
+       "en": "M6ABC",
+       "de": "M6ABC"
+      },
+      {
+       "en": "M8ABC",
+       "de": "M8ABC"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which licence level can seek to operate overseas under CEPT?",
+      "de": "Welche Lizenzstufe kann den Funkbetrieb im Ausland nach CEPT beantragen?"
+     },
+     "a": [
+      {
+       "en": "Full only",
+       "de": "Nur Full"
+      },
+      {
+       "en": "Foundation only",
+       "de": "Nur Foundation"
+      },
+      {
+       "en": "Foundation and Intermediate",
+       "de": "Foundation und Intermediate"
+      },
+      {
+       "en": "All three levels",
+       "de": "Alle drei Stufen"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "For a short stay under CEPT, how long can you usually operate in another country?",
+      "de": "Wie lange darfst du bei einem Kurzaufenthalt nach CEPT in einem anderen Land meist funken?"
+     },
+     "a": [
+      {
+       "en": "Up to three months",
+       "de": "Bis zu drei Monate"
+      },
+      {
+       "en": "One week",
+       "de": "Eine Woche"
+      },
+      {
+       "en": "Up to five years",
+       "de": "Bis zu fünf Jahre"
+      },
+      {
+       "en": "Only one day",
+       "de": "Nur einen Tag"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "What do you need to run a special event station?",
+      "de": "Was brauchst du, um eine Sonderstation zu betreiben?"
+     },
+     "a": [
+      {
+       "en": "A Notice of Variation",
+       "de": "Eine Notice of Variation"
+      },
+      {
+       "en": "A second exam",
+       "de": "Eine zweite Prüfung"
+      },
+      {
+       "en": "A club of 50 members",
+       "de": "Einen Club mit 50 Mitgliedern"
+      },
+      {
+       "en": "Nothing at all",
+       "de": "Gar nichts"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Under a Full (Club) licence, who may supervise guests using the club station?",
+      "de": "Wer darf bei einer Full-(Club-)Lizenz Gäste an der Klubstation beaufsichtigen?"
+     },
+     "a": [
+      {
+       "en": "Any Full licensee",
+       "de": "Jeder Full-Inhaber"
+      },
+      {
+       "en": "Only the club chairperson",
+       "de": "Nur der Clubvorsitzende"
+      },
+      {
+       "en": "Only Foundation holders",
+       "de": "Nur Foundation-Inhaber"
+      },
+      {
+       "en": "Nobody, guests may not transmit",
+       "de": "Niemand, Gäste dürfen nicht senden"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "How many dBW is 1000 watts?",
+      "de": "Wie viele dBW entsprechen 1000 Watt?"
+     },
+     "a": [
+      {
+       "en": "30 dBW",
+       "de": "30 dBW"
+      },
+      {
+       "en": "10 dBW",
+       "de": "10 dBW"
+      },
+      {
+       "en": "20 dBW",
+       "de": "20 dBW"
+      },
+      {
+       "en": "40 dBW",
+       "de": "40 dBW"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "What may Ofcom propose if a licensee does not keep their details up to date?",
+      "de": "Was kann Ofcom vorschlagen, wenn ein Lizenzinhaber seine Angaben nicht aktuell hält?"
+     },
+     "a": [
+      {
+       "en": "To revoke the licence",
+       "de": "Die Lizenz zu widerrufen"
+      },
+      {
+       "en": "To double the power limit",
+       "de": "Die Leistungsgrenze zu verdoppeln"
+      },
+      {
+       "en": "To change the callsign to G0",
+       "de": "Das Rufzeichen in G0 zu ändern"
+      },
+      {
+       "en": "To add a second exam",
+       "de": "Eine zweite Prüfung anzusetzen"
+      }
+     ],
+     "c": 0
     }
    ],
-   "c": 0
-  },
-  {
-   "q": {
-    "en": "Which body is the UK's national amateur radio society?",
-    "de": "Welcher Verband ist der nationale Amateurfunkverband Großbritanniens?"
-   },
-   "a": [
-    {
-     "en": "RSGB",
-     "de": "RSGB"
-    },
-    {
-     "en": "ARRL",
-     "de": "ARRL"
-    },
-    {
-     "en": "DARC",
-     "de": "DARC"
-    },
-    {
-     "en": "USKA",
-     "de": "USKA"
-    }
-   ],
-   "c": 0
+   "pass": 7,
+   "short": "Full"
   }
  ]
 }

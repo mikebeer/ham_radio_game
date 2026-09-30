@@ -34,6 +34,20 @@ func callsign_book(country: String) -> Dictionary:
 	return callsigns.get(country, callsigns.get("de", {}))
 
 
+## Lesson and questions of a part for a level (1 = basic, 2/3 = deeper tiers).
+func part_tier(id: String, level: int) -> Dictionary:
+	var p := part(id)
+	if level <= 1:
+		return p
+	return (p.get("tiers", {}) as Dictionary).get(str(level), p)
+
+
+func qso_steps(level: int) -> Array:
+	if level <= 1:
+		return qso.get("steps", [])
+	return (qso.get("levels", {}) as Dictionary).get(str(level), {}).get("steps", qso.get("steps", []))
+
+
 func part(id: String) -> Dictionary:
 	for p in parts:
 		if p.get("id", "") == id:

@@ -107,7 +107,225 @@
     ],
     "c": 0
    }
-  ]
+  ],
+  "tiers": {
+   "2": {
+    "lesson": {
+     "en": "A linear power supply uses a mains transformer, a rectifier and a large smoothing capacitor. It is heavy but quiet. A switching supply chops the voltage at tens of kilohertz, so it is light and efficient, but it can radiate noise into your receiver. Rectifying leaves a small leftover AC called ripple. To size a supply, use I = P / U: a radio that needs 138 W at 13.8 V draws 10 A.",
+     "de": "Ein Linearnetzteil besteht aus Netztransformator, Gleichrichter und einem großen Siebkondensator. Es ist schwer, aber leise. Ein Schaltnetzteil zerhackt die Spannung mit einigen zehn Kilohertz; es ist leicht und effizient, kann aber Störungen in deinen Empfänger einstreuen. Nach dem Gleichrichten bleibt eine kleine Restwechselspannung, die Brummspannung. Zur Dimensionierung gilt I = P / U: Ein Gerät mit 138 W bei 13,8 V nimmt 10 A auf."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "A radio needs 138 W at 13.8 V. What current does it draw?",
+       "de": "Ein Funkgerät braucht 138 W bei 13,8 V. Welchen Strom nimmt es auf?"
+      },
+      "a": [
+       {
+        "en": "10 A",
+        "de": "10 A"
+       },
+       {
+        "en": "1 A",
+        "de": "1 A"
+       },
+       {
+        "en": "19 A",
+        "de": "19 A"
+       },
+       {
+        "en": "100 A",
+        "de": "100 A"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "What is the main advantage of a switching supply over a linear one?",
+       "de": "Was ist der Hauptvorteil eines Schaltnetzteils gegenüber einem Linearnetzteil?"
+      },
+      "a": [
+       {
+        "en": "Smaller, lighter and more efficient",
+        "de": "Kleiner, leichter und effizienter"
+       },
+       {
+        "en": "It never produces any interference",
+        "de": "Es erzeugt nie Störungen"
+       },
+       {
+        "en": "It needs no fuse",
+        "de": "Es braucht keine Sicherung"
+       },
+       {
+        "en": "It works without mains power",
+        "de": "Es funktioniert ohne Netzspannung"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "A full-wave rectifier runs on 50 Hz mains. What is the ripple frequency?",
+       "de": "Ein Zweiweggleichrichter arbeitet an 50-Hz-Netzspannung. Welche Frequenz hat die Brummspannung?"
+      },
+      "a": [
+       {
+        "en": "100 Hz",
+        "de": "100 Hz"
+       },
+       {
+        "en": "50 Hz",
+        "de": "50 Hz"
+       },
+       {
+        "en": "25 Hz",
+        "de": "25 Hz"
+       },
+       {
+        "en": "200 Hz",
+        "de": "200 Hz"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "Which part smooths the rectified voltage in a linear supply?",
+       "de": "Welches Bauteil glättet im Linearnetzteil die gleichgerichtete Spannung?"
+      },
+      "a": [
+       {
+        "en": "A large electrolytic capacitor",
+        "de": "Ein großer Elektrolytkondensator"
+       },
+       {
+        "en": "A fuse",
+        "de": "Eine Sicherung"
+       },
+       {
+        "en": "A relay",
+        "de": "Ein Relais"
+       },
+       {
+        "en": "A loudspeaker",
+        "de": "Ein Lautsprecher"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   },
+   "3": {
+    "lesson": {
+     "en": "Efficiency is output power divided by input power. The difference is lost as heat, so a supply delivering 276 W at 80 % efficiency takes 345 W from the mains. A linear regulator turns the voltage difference times the current into heat. Load regulation tells how much the output voltage changes when the load current changes. Cables drop voltage too: by Ohm's law the drop is I × R, which matters at 20 A.",
+     "de": "Der Wirkungsgrad ist Ausgangsleistung geteilt durch Eingangsleistung. Der Rest geht als Wärme verloren: Ein Netzteil, das 276 W bei 80 % Wirkungsgrad liefert, nimmt 345 W aus dem Netz auf. Ein Linearregler setzt die Spannungsdifferenz mal Strom in Wärme um. Die Lastregelung gibt an, wie stark sich die Ausgangsspannung bei Laständerung ändert. Auch Kabel verursachen Spannungsabfall: nach dem Ohmschen Gesetz I × R, was bei 20 A zählt."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "A supply delivers 276 W at 80 % efficiency. How much power does it take from the mains?",
+       "de": "Ein Netzteil liefert 276 W bei 80 % Wirkungsgrad. Wie viel Leistung nimmt es aus dem Netz auf?"
+      },
+      "a": [
+       {
+        "en": "345 W",
+        "de": "345 W"
+       },
+       {
+        "en": "221 W",
+        "de": "221 W"
+       },
+       {
+        "en": "276 W",
+        "de": "276 W"
+       },
+       {
+        "en": "552 W",
+        "de": "552 W"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "A linear regulator gets 18 V and delivers 13.8 V at 10 A. How much heat does it dissipate?",
+       "de": "Ein Linearregler bekommt 18 V und liefert 13,8 V bei 10 A. Wie viel Wärme verbraucht er?"
+      },
+      "a": [
+       {
+        "en": "42 W",
+        "de": "42 W"
+       },
+       {
+        "en": "138 W",
+        "de": "138 W"
+       },
+       {
+        "en": "4.2 W",
+        "de": "4,2 W"
+       },
+       {
+        "en": "180 W",
+        "de": "180 W"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "20 A flows through supply cables with a total resistance of 0.05 ohm. What is the voltage drop?",
+       "de": "Durch Netzteilkabel mit 0,05 Ohm Gesamtwiderstand fließen 20 A. Wie groß ist der Spannungsabfall?"
+      },
+      "a": [
+       {
+        "en": "1 V",
+        "de": "1 V"
+       },
+       {
+        "en": "0.25 V",
+        "de": "0,25 V"
+       },
+       {
+        "en": "10 V",
+        "de": "10 V"
+       },
+       {
+        "en": "400 V",
+        "de": "400 V"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "What does good load regulation mean?",
+       "de": "Was bedeutet gute Lastregelung?"
+      },
+      "a": [
+       {
+        "en": "The output voltage barely changes when the load current changes",
+        "de": "Die Ausgangsspannung ändert sich bei Laständerung kaum"
+       },
+       {
+        "en": "The supply is very light",
+        "de": "Das Netzteil ist sehr leicht"
+       },
+       {
+        "en": "The supply has no ripple at all",
+        "de": "Das Netzteil hat gar keine Brummspannung"
+       },
+       {
+        "en": "The supply only works at low current",
+        "de": "Das Netzteil funktioniert nur bei kleinem Strom"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   }
+  }
  },
  {
   "id": "antenna",
@@ -217,7 +435,225 @@
     ],
     "c": 0
    }
-  ]
+  ],
+  "tiers": {
+   "2": {
+    "lesson": {
+     "en": "A half-wave dipole is about half a wavelength long, but real wire needs to be about 5 % shorter, so its length in metres is roughly 143 divided by the frequency in MHz. In coax the wave travels slower: the velocity factor is about 0.66 for solid polyethylene. Antenna gain is given in dBi (against an isotropic radiator) or dBd (against a dipole); 0 dBd equals 2.15 dBi. A balun joins a balanced dipole to unbalanced coax.",
+     "de": "Ein Halbwellendipol ist etwa eine halbe Wellenlänge lang, der reale Draht muss aber etwa 5 % kürzer sein; die Länge in Metern beträgt grob 143 geteilt durch die Frequenz in MHz. Im Koaxkabel breitet sich die Welle langsamer aus: Der Verkürzungsfaktor beträgt bei Vollpolyethylen etwa 0,66. Antennengewinn wird in dBi (gegenüber dem Kugelstrahler) oder dBd (gegenüber dem Dipol) angegeben; 0 dBd sind 2,15 dBi. Ein Balun verbindet einen symmetrischen Dipol mit unsymmetrischem Koax."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "About how long is a real half-wave dipole for 7.1 MHz?",
+       "de": "Wie lang ist ein realer Halbwellendipol für 7,1 MHz etwa?"
+      },
+      "a": [
+       {
+        "en": "20 m",
+        "de": "20 m"
+       },
+       {
+        "en": "10 m",
+        "de": "10 m"
+       },
+       {
+        "en": "42 m",
+        "de": "42 m"
+       },
+       {
+        "en": "5 m",
+        "de": "5 m"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "How long is a quarter-wave piece of coax (velocity factor 0.66) at 14 MHz?",
+       "de": "Wie lang ist ein Viertelwellenstück Koax (Verkürzungsfaktor 0,66) bei 14 MHz?"
+      },
+      "a": [
+       {
+        "en": "About 3.5 m",
+        "de": "Etwa 3,5 m"
+       },
+       {
+        "en": "About 5.4 m",
+        "de": "Etwa 5,4 m"
+       },
+       {
+        "en": "About 7.1 m",
+        "de": "Etwa 7,1 m"
+       },
+       {
+        "en": "About 1.8 m",
+        "de": "Etwa 1,8 m"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "An antenna has 5 dBd gain. What is that in dBi?",
+       "de": "Eine Antenne hat 5 dBd Gewinn. Wie viel sind das in dBi?"
+      },
+      "a": [
+       {
+        "en": "7.15 dBi",
+        "de": "7,15 dBi"
+       },
+       {
+        "en": "2.85 dBi",
+        "de": "2,85 dBi"
+       },
+       {
+        "en": "5 dBi",
+        "de": "5 dBi"
+       },
+       {
+        "en": "10.75 dBi",
+        "de": "10,75 dBi"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "What is the job of a balun at a dipole?",
+       "de": "Was ist die Aufgabe eines Baluns am Dipol?"
+      },
+      "a": [
+       {
+        "en": "Connect a balanced antenna to an unbalanced coax and reduce sheath currents",
+        "de": "Eine symmetrische Antenne an unsymmetrisches Koax anpassen und Mantelwellen verringern"
+       },
+       {
+        "en": "Amplify the signal by 10 dB",
+        "de": "Das Signal um 10 dB verstärken"
+       },
+       {
+        "en": "Lengthen the dipole electrically",
+        "de": "Den Dipol elektrisch verlängern"
+       },
+       {
+        "en": "Filter out the mains hum",
+        "de": "Netzbrummen herausfiltern"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   },
+   "3": {
+    "lesson": {
+     "en": "ERP refers to a dipole, EIRP to an isotropic radiator: EIRP = ERP + 2.15 dB. Both equal transmitter power plus antenna gain minus feedline loss, calculated in dB. A half-wave dipole has roughly 73 ohms feed impedance in free space. A Yagi's front-to-back ratio compares forward and rearward signal; 20 dB means the rear signal is 100 times weaker in power. Feeding 73 ohms from 50-ohm coax gives SWR 1.46.",
+     "de": "ERP bezieht sich auf einen Dipol, EIRP auf den Kugelstrahler: EIRP = ERP + 2,15 dB. Beide ergeben sich aus Sendeleistung plus Antennengewinn minus Kabeldämpfung, gerechnet in dB. Ein Halbwellendipol hat im Freiraum etwa 73 Ohm Fußpunktwiderstand. Das Vor-Rück-Verhältnis einer Yagi vergleicht Vorwärts- und Rückwärtssignal; 20 dB bedeuten, dass das Signal nach hinten um den Faktor 100 schwächer in der Leistung ist. Speist man 73 Ohm aus 50-Ohm-Koax, ergibt sich ein SWR von 1,46."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "100 W transmitter, feedline loss 2 dB, antenna gain 5 dBd. What is the ERP?",
+       "de": "Sender mit 100 W, Kabeldämpfung 2 dB, Antennengewinn 5 dBd. Wie groß ist die ERP?"
+      },
+      "a": [
+       {
+        "en": "About 200 W",
+        "de": "Etwa 200 W"
+       },
+       {
+        "en": "About 316 W",
+        "de": "Etwa 316 W"
+       },
+       {
+        "en": "About 63 W",
+        "de": "Etwa 63 W"
+       },
+       {
+        "en": "About 500 W",
+        "de": "Etwa 500 W"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "An ERP of 100 W corresponds to which EIRP?",
+       "de": "Welcher EIRP entspricht eine ERP von 100 W?"
+      },
+      "a": [
+       {
+        "en": "About 164 W",
+        "de": "Etwa 164 W"
+       },
+       {
+        "en": "About 61 W",
+        "de": "Etwa 61 W"
+       },
+       {
+        "en": "100 W",
+        "de": "100 W"
+       },
+       {
+        "en": "About 215 W",
+        "de": "Etwa 215 W"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "A Yagi has a front-to-back ratio of 20 dB. A signal from behind arrives with what power compared to the same signal from the front?",
+       "de": "Eine Yagi hat ein Vor-Rück-Verhältnis von 20 dB. Mit welcher Leistung kommt ein Signal von hinten an, verglichen mit dem gleichen Signal von vorn?"
+      },
+      "a": [
+       {
+        "en": "1/100",
+        "de": "1/100"
+       },
+       {
+        "en": "1/20",
+        "de": "1/20"
+       },
+       {
+        "en": "1/10",
+        "de": "1/10"
+       },
+       {
+        "en": "1/2",
+        "de": "1/2"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "A half-wave dipole (73 ohms) is fed directly with 50-ohm coax. Which SWR results?",
+       "de": "Ein Halbwellendipol (73 Ohm) wird direkt mit 50-Ohm-Koax gespeist. Welches SWR ergibt sich?"
+      },
+      "a": [
+       {
+        "en": "About 1.5:1",
+        "de": "Etwa 1,5:1"
+       },
+       {
+        "en": "1:1",
+        "de": "1:1"
+       },
+       {
+        "en": "About 2.5:1",
+        "de": "Etwa 2,5:1"
+       },
+       {
+        "en": "About 3.6:1",
+        "de": "Etwa 3,6:1"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   }
+  }
  },
  {
   "id": "transceiver",
@@ -327,7 +763,225 @@
     ],
     "c": 0
    }
-  ]
+  ],
+  "tiers": {
+   "2": {
+    "lesson": {
+     "en": "Each mode needs a different bandwidth: an SSB voice signal uses about 2.4 to 3 kHz, CW only a few hundred hertz, and FM voice on VHF more than 10 kHz. A narrower receiver filter lets in less noise: noise power is proportional to bandwidth. By convention, amateurs use lower sideband below 10 MHz and upper sideband above. Digital modes such as FT8 need a PC clock accurate to about a second.",
+     "de": "Jede Betriebsart braucht eine andere Bandbreite: Ein SSB-Sprachsignal belegt etwa 2,4 bis 3 kHz, CW nur wenige hundert Hertz, FM-Sprache auf UKW mehr als 10 kHz. Ein schmaleres Empfängerfilter lässt weniger Rauschen durch: Die Rauschleistung ist proportional zur Bandbreite. Üblicherweise nutzt man unterhalb von 10 MHz das untere Seitenband (LSB), darüber das obere (USB). Digitale Betriebsarten wie FT8 brauchen eine auf etwa eine Sekunde genaue PC-Uhr."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "Roughly how wide is a normal SSB voice signal?",
+       "de": "Wie breit ist ein normales SSB-Sprachsignal ungefähr?"
+      },
+      "a": [
+       {
+        "en": "2.4 to 3 kHz",
+        "de": "2,4 bis 3 kHz"
+       },
+       {
+        "en": "50 Hz",
+        "de": "50 Hz"
+       },
+       {
+        "en": "15 to 20 kHz",
+        "de": "15 bis 20 kHz"
+       },
+       {
+        "en": "200 kHz",
+        "de": "200 kHz"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "You narrow the receiver filter from 2400 Hz to 600 Hz. How much less noise power gets through?",
+       "de": "Du verkleinerst die Empfängerbandbreite von 2400 Hz auf 600 Hz. Um wie viel sinkt die Rauschleistung?"
+      },
+      "a": [
+       {
+        "en": "About 6 dB",
+        "de": "Etwa 6 dB"
+       },
+       {
+        "en": "About 3 dB",
+        "de": "Etwa 3 dB"
+       },
+       {
+        "en": "About 4 dB",
+        "de": "Etwa 4 dB"
+       },
+       {
+        "en": "About 12 dB",
+        "de": "Etwa 12 dB"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "Which sideband is conventionally used on the 40 m band?",
+       "de": "Welches Seitenband wird auf dem 40-m-Band üblicherweise benutzt?"
+      },
+      "a": [
+       {
+        "en": "Lower sideband (LSB)",
+        "de": "Unteres Seitenband (LSB)"
+       },
+       {
+        "en": "Upper sideband (USB)",
+        "de": "Oberes Seitenband (USB)"
+       },
+       {
+        "en": "Both at once",
+        "de": "Beide gleichzeitig"
+       },
+       {
+        "en": "Neither, only AM",
+        "de": "Keines, nur AM"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "Why must the PC clock be accurate for FT8?",
+       "de": "Warum muss die PC-Uhr für FT8 genau gehen?"
+      },
+      "a": [
+       {
+        "en": "Transmissions are sent in fixed time slots that stations must share",
+        "de": "Die Aussendungen laufen in festen Zeitfenstern, die alle Stationen teilen müssen"
+       },
+       {
+        "en": "The antenna needs it for tuning",
+        "de": "Die Antenne braucht sie zum Abstimmen"
+       },
+       {
+        "en": "It sets the transmit power",
+        "de": "Sie bestimmt die Sendeleistung"
+       },
+       {
+        "en": "It charges the battery",
+        "de": "Sie lädt den Akku"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   },
+   "3": {
+    "lesson": {
+     "en": "A superheterodyne receiver mixes the signal with a local oscillator to a fixed intermediate frequency (IF), where filtering is easy. A second frequency, the image, also produces the same IF and must be blocked by front-end filters. Dynamic range is the span between the noise floor and the strongest signal handled without distortion. Oscillators are usually PLL synthesizers locked to a crystal; an SDR digitises the signal and processes it in software.",
+     "de": "Ein Superhet-Empfänger mischt das Signal mit einem Oszillator auf eine feste Zwischenfrequenz (ZF), wo sich gut filtern lässt. Eine zweite Frequenz, die Spiegelfrequenz, ergibt dieselbe ZF und muss von Eingangsfiltern unterdrückt werden. Der Dynamikbereich ist der Abstand zwischen Rauschgrenze und dem stärksten Signal, das ohne Verzerrung verarbeitet wird. Oszillatoren sind meist PLL-Synthesizer, die auf einen Quarz geregelt sind; ein SDR digitalisiert das Signal und verarbeitet es per Software."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "An IF of 9 MHz is used and the oscillator runs above the signal. Receiving 14.2 MHz, where is the image frequency?",
+       "de": "Es wird eine ZF von 9 MHz genutzt, der Oszillator liegt über dem Signal. Beim Empfang von 14,2 MHz: Wo liegt die Spiegelfrequenz?"
+      },
+      "a": [
+       {
+        "en": "32.2 MHz",
+        "de": "32,2 MHz"
+       },
+       {
+        "en": "23.2 MHz",
+        "de": "23,2 MHz"
+       },
+       {
+        "en": "5.2 MHz",
+        "de": "5,2 MHz"
+       },
+       {
+        "en": "18.0 MHz",
+        "de": "18,0 MHz"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "What does the dynamic range of a receiver describe?",
+       "de": "Was beschreibt der Dynamikbereich eines Empfängers?"
+      },
+      "a": [
+       {
+        "en": "The span between the noise floor and the strongest undistorted signal",
+        "de": "Den Abstand zwischen Rauschgrenze und stärkstem unverzerrtem Signal"
+       },
+       {
+        "en": "How many bands it can tune",
+        "de": "Wie viele Bänder er abstimmen kann"
+       },
+       {
+        "en": "The range of the audio volume knob",
+        "de": "Den Bereich des Lautstärkereglers"
+       },
+       {
+        "en": "The distance to the nearest station",
+        "de": "Die Entfernung zur nächsten Station"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "On a low HF band with a good antenna, what does an extra preamplifier usually do?",
+       "de": "Was bewirkt ein zusätzlicher Vorverstärker auf einem niedrigen Kurzwellenband mit guter Antenne meist?"
+      },
+      "a": [
+       {
+        "en": "Adds little benefit and raises the risk of overload",
+        "de": "Bringt wenig Nutzen und erhöht die Übersteuerungsgefahr"
+       },
+       {
+        "en": "Doubles the dynamic range",
+        "de": "Verdoppelt den Dynamikbereich"
+       },
+       {
+        "en": "Removes the image frequency",
+        "de": "Beseitigt die Spiegelfrequenz"
+       },
+       {
+        "en": "Lowers the SWR",
+        "de": "Senkt das SWR"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "What does a PLL synthesizer do?",
+       "de": "Was macht ein PLL-Synthesizer?"
+      },
+      "a": [
+       {
+        "en": "Generates stable frequencies locked to a crystal reference",
+        "de": "Erzeugt stabile Frequenzen, die auf eine Quarzreferenz geregelt sind"
+       },
+       {
+        "en": "Amplifies the audio",
+        "de": "Verstärkt das Tonsignal"
+       },
+       {
+        "en": "Measures the antenna impedance",
+        "de": "Misst die Antennenimpedanz"
+       },
+       {
+        "en": "Rectifies the mains voltage",
+        "de": "Richtet die Netzspannung gleich"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   }
+  }
  },
  {
   "id": "mic",
@@ -437,7 +1091,225 @@
     ],
     "c": 0
    }
-  ]
+  ],
+  "tiers": {
+   "2": {
+    "lesson": {
+     "en": "Dynamic microphones are rugged and need no power. Condenser (including electret) microphones are more sensitive and need a small bias voltage. A VOX circuit switches the transmitter on automatically when it hears your voice. The ALC meter shows how hard you drive the transmitter: adjust the microphone gain so it moves only on voice peaks and stays within its marked zone. A speech processor raises the average talk power.",
+     "de": "Dynamische Mikrofone sind robust und brauchen keine Speisung. Kondensatormikrofone (auch Elektret) sind empfindlicher und brauchen eine kleine Vorspannung. Eine VOX schaltet den Sender automatisch ein, sobald sie deine Stimme hört. Das ALC-Instrument zeigt, wie stark du den Sender aussteuerst: Stelle die Mikrofonverstärkung so ein, dass es nur bei Sprachspitzen ausschlägt und im markierten Bereich bleibt. Ein Sprachprozessor erhöht die mittlere Sprechleistung."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "Which microphone type needs a bias or phantom voltage?",
+       "de": "Welcher Mikrofontyp braucht eine Vorspannung oder Phantomspeisung?"
+      },
+      "a": [
+       {
+        "en": "Condenser / electret",
+        "de": "Kondensator / Elektret"
+       },
+       {
+        "en": "Dynamic",
+        "de": "Dynamisch"
+       },
+       {
+        "en": "Moving-coil only",
+        "de": "Nur Tauchspulmikrofone"
+       },
+       {
+        "en": "Every type",
+        "de": "Jeder Typ"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "What does VOX do?",
+       "de": "Was macht die VOX?"
+      },
+      "a": [
+       {
+        "en": "Switches to transmit when it detects your voice",
+        "de": "Schaltet auf Senden, wenn sie deine Stimme erkennt"
+       },
+       {
+        "en": "Raises the frequency",
+        "de": "Erhöht die Frequenz"
+       },
+       {
+        "en": "Measures SWR",
+        "de": "Misst das SWR"
+       },
+       {
+        "en": "Stores the log",
+        "de": "Speichert das Logbuch"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "How should the ALC meter behave while you speak in SSB?",
+       "de": "Wie sollte sich das ALC-Instrument beim SSB-Sprechen verhalten?"
+      },
+      "a": [
+       {
+        "en": "Move only on voice peaks, within its marked zone",
+        "de": "Nur bei Sprachspitzen im markierten Bereich ausschlagen"
+       },
+       {
+        "en": "Stay pinned at full scale",
+        "de": "Dauernd am Anschlag stehen"
+       },
+       {
+        "en": "Stay at zero",
+        "de": "Bei null bleiben"
+       },
+       {
+        "en": "Swing back and forth across the whole scale",
+        "de": "Über die ganze Skala pendeln"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "What does a speech processor (compressor) do?",
+       "de": "Was macht ein Sprachprozessor (Kompressor)?"
+      },
+      "a": [
+       {
+        "en": "Raises the average level relative to the peaks",
+        "de": "Hebt den mittleren Pegel gegenüber den Spitzen an"
+       },
+       {
+        "en": "Lowers the carrier frequency",
+        "de": "Senkt die Trägerfrequenz"
+       },
+       {
+        "en": "Makes the antenna longer",
+        "de": "Verlängert die Antenne"
+       },
+       {
+        "en": "Removes the sidebands",
+        "de": "Entfernt die Seitenbänder"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   },
+   "3": {
+    "lesson": {
+     "en": "In FM, the deviation is how far the carrier frequency swings. The modulation index is deviation divided by the audio frequency, and Carson's rule estimates bandwidth as B = 2 × (deviation + highest audio frequency). Voltage ratios in dB use 20 × log10, so a tenfold voltage is +20 dB. Overdriving an SSB transmitter creates intermodulation products, called splatter, that spread beyond the normal bandwidth and disturb neighbours.",
+     "de": "Bei FM ist der Frequenzhub das Ausmaß, um das die Trägerfrequenz schwingt. Der Modulationsindex ist Hub geteilt durch Modulationsfrequenz, und die Carson-Regel schätzt die Bandbreite als B = 2 × (Hub + höchste Modulationsfrequenz). Spannungsverhältnisse in dB rechnet man mit 20 × log10: Die zehnfache Spannung sind +20 dB. Übersteuert man einen SSB-Sender, entstehen Intermodulationsprodukte (Splatter), die über die normale Bandbreite hinausreichen und Nachbarn stören."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "An FM signal has 3 kHz deviation and a 1 kHz audio tone. What is the modulation index?",
+       "de": "Ein FM-Signal hat 3 kHz Hub bei einem 1-kHz-Ton. Wie groß ist der Modulationsindex?"
+      },
+      "a": [
+       {
+        "en": "3",
+        "de": "3"
+       },
+       {
+        "en": "0.33",
+        "de": "0,33"
+       },
+       {
+        "en": "4",
+        "de": "4"
+       },
+       {
+        "en": "1",
+        "de": "1"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "Deviation 3 kHz, highest audio frequency 3 kHz. What bandwidth does Carson's rule give?",
+       "de": "Hub 3 kHz, höchste Modulationsfrequenz 3 kHz. Welche Bandbreite liefert die Carson-Regel?"
+      },
+      "a": [
+       {
+        "en": "12 kHz",
+        "de": "12 kHz"
+       },
+       {
+        "en": "6 kHz",
+        "de": "6 kHz"
+       },
+       {
+        "en": "9 kHz",
+        "de": "9 kHz"
+       },
+       {
+        "en": "3 kHz",
+        "de": "3 kHz"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "The microphone voltage rises from 10 mV to 100 mV. By how many dB?",
+       "de": "Die Mikrofonspannung steigt von 10 mV auf 100 mV. Um wie viel dB?"
+      },
+      "a": [
+       {
+        "en": "20 dB",
+        "de": "20 dB"
+       },
+       {
+        "en": "10 dB",
+        "de": "10 dB"
+       },
+       {
+        "en": "40 dB",
+        "de": "40 dB"
+       },
+       {
+        "en": "100 dB",
+        "de": "100 dB"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "What is the typical result of overdriving an SSB transmitter?",
+       "de": "Was ist die typische Folge einer Übersteuerung eines SSB-Senders?"
+      },
+      "a": [
+       {
+        "en": "Splatter: distortion products outside the normal bandwidth",
+        "de": "Splatter: Verzerrungsprodukte außerhalb der normalen Bandbreite"
+       },
+       {
+        "en": "A longer antenna",
+        "de": "Eine längere Antenne"
+       },
+       {
+        "en": "A lower noise floor in the receiver",
+        "de": "Ein geringeres Empfängerrauschen"
+       },
+       {
+        "en": "A narrower signal",
+        "de": "Ein schmaleres Signal"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   }
+  }
  },
  {
   "id": "speaker",
@@ -547,7 +1419,225 @@
     ],
     "c": 0
    }
-  ]
+  ],
+  "tiers": {
+   "2": {
+    "lesson": {
+     "en": "Speakers usually have 4 or 8 ohms. Connect two in parallel and the impedance falls (two 8-ohm speakers give 4 ohms); in series it adds up. Audio power follows P = U² / R. A narrow audio filter helps with CW, because only your tone passes and the noise around it is cut. A level change of 3 dB means the power doubles; DSP noise reduction cleans up weak signals.",
+     "de": "Lautsprecher haben meist 4 oder 8 Ohm. Schaltet man zwei parallel, sinkt die Impedanz (zweimal 8 Ohm ergeben 4 Ohm); in Reihe addiert sie sich. Die Tonleistung folgt P = U² / R. Ein schmales NF-Filter hilft beim CW-Empfang, weil nur dein Ton durchkommt und das Rauschen drumherum abgeschnitten wird. Eine Pegeländerung von 3 dB bedeutet doppelte Leistung; DSP-Rauschminderung säubert schwache Signale."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "Two 8-ohm speakers are connected in parallel. What is the total impedance?",
+       "de": "Zwei 8-Ohm-Lautsprecher werden parallel geschaltet. Wie groß ist die Gesamtimpedanz?"
+      },
+      "a": [
+       {
+        "en": "4 ohms",
+        "de": "4 Ohm"
+       },
+       {
+        "en": "16 ohms",
+        "de": "16 Ohm"
+       },
+       {
+        "en": "8 ohms",
+        "de": "8 Ohm"
+       },
+       {
+        "en": "2 ohms",
+        "de": "2 Ohm"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "4 V (RMS) are applied to an 8-ohm speaker. What power does it receive?",
+       "de": "An einem 8-Ohm-Lautsprecher liegen 4 V (Effektivwert). Welche Leistung nimmt er auf?"
+      },
+      "a": [
+       {
+        "en": "2 W",
+        "de": "2 W"
+       },
+       {
+        "en": "0.5 W",
+        "de": "0,5 W"
+       },
+       {
+        "en": "32 W",
+        "de": "32 W"
+       },
+       {
+        "en": "4 W",
+        "de": "4 W"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "Why use a narrow audio filter for CW?",
+       "de": "Warum nutzt man für CW ein schmales NF-Filter?"
+      },
+      "a": [
+       {
+        "en": "Only the tone passes and noise outside it is cut",
+        "de": "Nur der Ton kommt durch und Rauschen außerhalb wird abgeschnitten"
+       },
+       {
+        "en": "It makes the transmitter stronger",
+        "de": "Es macht den Sender stärker"
+       },
+       {
+        "en": "It lowers the SWR",
+        "de": "Es senkt das SWR"
+       },
+       {
+        "en": "It raises the frequency of the tone",
+        "de": "Es erhöht die Tonfrequenz"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "An audio amplifier's output power is raised by 3 dB. What happens to the power?",
+       "de": "Die Ausgangsleistung eines NF-Verstärkers steigt um 3 dB. Was passiert mit der Leistung?"
+      },
+      "a": [
+       {
+        "en": "It roughly doubles",
+        "de": "Sie verdoppelt sich ungefähr"
+       },
+       {
+        "en": "It triples",
+        "de": "Sie verdreifacht sich"
+       },
+       {
+        "en": "It rises by 3 W",
+        "de": "Sie steigt um 3 W"
+       },
+       {
+        "en": "It stays the same",
+        "de": "Sie bleibt gleich"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   },
+   "3": {
+    "lesson": {
+     "en": "Decibels compare powers with 10 × log10 and voltages with 20 × log10: doubling power is +3 dB, doubling voltage +6 dB, a tenfold power +10 dB. Amplifier output voltage follows U = √(P × R). Digital audio processing samples the signal: by the Nyquist theorem the sampling rate must be more than twice the highest frequency. DSP filters and noise reduction work on these samples.",
+     "de": "Dezibel vergleichen Leistungen mit 10 × log10 und Spannungen mit 20 × log10: Doppelte Leistung sind +3 dB, doppelte Spannung +6 dB, zehnfache Leistung +10 dB. Die Ausgangsspannung eines Verstärkers folgt U = √(P × R). Digitale Signalverarbeitung tastet das Signal ab: Nach dem Nyquist-Theorem muss die Abtastrate mehr als doppelt so hoch sein wie die höchste Frequenz. DSP-Filter und Rauschminderung arbeiten mit diesen Abtastwerten."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "Amplifier output power rises from 1 W to 10 W. How many dB is that?",
+       "de": "Die Ausgangsleistung eines Verstärkers steigt von 1 W auf 10 W. Wie viele dB sind das?"
+      },
+      "a": [
+       {
+        "en": "+10 dB",
+        "de": "+10 dB"
+       },
+       {
+        "en": "+20 dB",
+        "de": "+20 dB"
+       },
+       {
+        "en": "+3 dB",
+        "de": "+3 dB"
+       },
+       {
+        "en": "+100 dB",
+        "de": "+100 dB"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "The audio voltage doubles. By how many dB does the level rise?",
+       "de": "Die NF-Spannung verdoppelt sich. Um wie viele dB steigt der Pegel?"
+      },
+      "a": [
+       {
+        "en": "About 6 dB",
+        "de": "Etwa 6 dB"
+       },
+       {
+        "en": "About 3 dB",
+        "de": "Etwa 3 dB"
+       },
+       {
+        "en": "About 12 dB",
+        "de": "Etwa 12 dB"
+       },
+       {
+        "en": "About 2 dB",
+        "de": "Etwa 2 dB"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "An amplifier delivers 50 W into 8 ohms. What RMS voltage is across the speaker?",
+       "de": "Ein Verstärker liefert 50 W an 8 Ohm. Welche Effektivspannung liegt am Lautsprecher?"
+      },
+      "a": [
+       {
+        "en": "20 V",
+        "de": "20 V"
+       },
+       {
+        "en": "6.3 V",
+        "de": "6,3 V"
+       },
+       {
+        "en": "400 V",
+        "de": "400 V"
+       },
+       {
+        "en": "40 V",
+        "de": "40 V"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "Speech audio up to 3 kHz is digitised. What sampling rate is the theoretical minimum?",
+       "de": "Sprache bis 3 kHz wird digitalisiert. Welche Abtastrate ist theoretisch mindestens nötig?"
+      },
+      "a": [
+       {
+        "en": "More than 6 kHz",
+        "de": "Mehr als 6 kHz"
+       },
+       {
+        "en": "More than 3 kHz",
+        "de": "Mehr als 3 kHz"
+       },
+       {
+        "en": "More than 1.5 kHz",
+        "de": "Mehr als 1,5 kHz"
+       },
+       {
+        "en": "More than 12 kHz",
+        "de": "Mehr als 12 kHz"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   }
+  }
  },
  {
   "id": "swr",
@@ -657,7 +1747,225 @@
     ],
     "c": 0
    }
-  ]
+  ],
+  "tiers": {
+   "2": {
+    "lesson": {
+     "en": "SWR is the ratio between load and line impedance, whichever is larger over the smaller. A 100-ohm load on 50-ohm coax gives 2:1. The reflection coefficient rho = (SWR − 1) / (SWR + 1), and reflected power is rho². At 1.5:1, only 4 % of the power is reflected, which is perfectly fine. An antenna tuner (ATU) does not change the antenna, but makes the radio see 50 ohms.",
+     "de": "Das SWR ist das Verhältnis von Last- und Leitungsimpedanz, der größere Wert geteilt durch den kleineren. Eine 100-Ohm-Last an 50-Ohm-Koax ergibt 2:1. Der Reflexionsfaktor ist r = (SWR − 1) / (SWR + 1), die reflektierte Leistung r². Bei 1,5:1 werden nur 4 % der Leistung reflektiert, das ist völlig in Ordnung. Ein Antennentuner (ATU) verändert die Antenne nicht, sorgt aber dafür, dass das Funkgerät 50 Ohm sieht."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "A 100-ohm load is connected to 50-ohm coax. What is the SWR?",
+       "de": "Eine 100-Ohm-Last hängt an 50-Ohm-Koax. Wie groß ist das SWR?"
+      },
+      "a": [
+       {
+        "en": "2:1",
+        "de": "2:1"
+       },
+       {
+        "en": "50:1",
+        "de": "50:1"
+       },
+       {
+        "en": "0.5:1",
+        "de": "0,5:1"
+       },
+       {
+        "en": "5:1",
+        "de": "5:1"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "At SWR 1.5:1, about what share of the power is reflected?",
+       "de": "Bei einem SWR von 1,5:1: Welcher Anteil der Leistung wird ungefähr reflektiert?"
+      },
+      "a": [
+       {
+        "en": "4 %",
+        "de": "4 %"
+       },
+       {
+        "en": "20 %",
+        "de": "20 %"
+       },
+       {
+        "en": "50 %",
+        "de": "50 %"
+       },
+       {
+        "en": "1.5 %",
+        "de": "1,5 %"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "What does an ATU do?",
+       "de": "Was macht ein Antennentuner (ATU)?"
+      },
+      "a": [
+       {
+        "en": "Transforms the impedance so the radio sees about 50 ohms",
+        "de": "Transformiert die Impedanz, sodass das Funkgerät etwa 50 Ohm sieht"
+       },
+       {
+        "en": "Makes the antenna physically longer",
+        "de": "Verlängert die Antenne physisch"
+       },
+       {
+        "en": "Amplifies the signal",
+        "de": "Verstärkt das Signal"
+       },
+       {
+        "en": "Removes the reflected power from the antenna",
+        "de": "Entfernt die reflektierte Leistung aus der Antenne"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "Which SWR is normally still acceptable?",
+       "de": "Welches SWR ist normalerweise noch akzeptabel?"
+      },
+      "a": [
+       {
+        "en": "1.5:1",
+        "de": "1,5:1"
+       },
+       {
+        "en": "10:1",
+        "de": "10:1"
+       },
+       {
+        "en": "Infinite",
+        "de": "Unendlich"
+       },
+       {
+        "en": "5:1",
+        "de": "5:1"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   },
+   "3": {
+    "lesson": {
+     "en": "Reflection coefficient rho = (Z_L − Z_0) / (Z_L + Z_0); SWR = (1 + rho) / (1 − rho). Reflected power is rho² of the forward power, and return loss is −20 × log10(rho) in dB. Coax loss hides a bad antenna: the reflected wave is attenuated twice on its way back, so the SWR measured at the radio looks lower than at the antenna. A low reading through lossy cable proves little.",
+     "de": "Reflexionsfaktor r = (Z_L − Z_0) / (Z_L + Z_0); SWR = (1 + r) / (1 − r). Die reflektierte Leistung beträgt r² der Vorwärtsleistung, die Rückflussdämpfung −20 × log10(r) in dB. Kabeldämpfung kaschiert eine schlechte Antenne: Die reflektierte Welle wird auf dem Rückweg zusätzlich gedämpft, daher sieht das SWR am Funkgerät besser aus als an der Antenne. Ein niedriger Wert über ein verlustreiches Kabel beweist wenig."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "What is the reflection coefficient at SWR 3:1?",
+       "de": "Wie groß ist der Reflexionsfaktor bei SWR 3:1?"
+      },
+      "a": [
+       {
+        "en": "0.5",
+        "de": "0,5"
+       },
+       {
+        "en": "0.33",
+        "de": "0,33"
+       },
+       {
+        "en": "0.67",
+        "de": "0,67"
+       },
+       {
+        "en": "0.75",
+        "de": "0,75"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "100 W forward power, SWR 3:1, lossless line. How much power does the load absorb?",
+       "de": "100 W Vorwärtsleistung, SWR 3:1, verlustfreie Leitung. Wie viel Leistung nimmt die Last auf?"
+      },
+      "a": [
+       {
+        "en": "75 W",
+        "de": "75 W"
+       },
+       {
+        "en": "25 W",
+        "de": "25 W"
+       },
+       {
+        "en": "50 W",
+        "de": "50 W"
+       },
+       {
+        "en": "67 W",
+        "de": "67 W"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "A return loss of 20 dB corresponds to about which SWR?",
+       "de": "Einer Rückflussdämpfung von 20 dB entspricht etwa welches SWR?"
+      },
+      "a": [
+       {
+        "en": "1.2:1",
+        "de": "1,2:1"
+       },
+       {
+        "en": "2:1",
+        "de": "2:1"
+       },
+       {
+        "en": "1.5:1",
+        "de": "1,5:1"
+       },
+       {
+        "en": "3:1",
+        "de": "3:1"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "Long, lossy coax shows 1.5:1 at the radio, but the antenna is badly matched. What is the explanation?",
+       "de": "Langes, verlustreiches Koax zeigt am Funkgerät 1,5:1, die Antenne ist aber schlecht angepasst. Wie ist das zu erklären?"
+      },
+      "a": [
+       {
+        "en": "Much of the power is lost in the cable, which hides the mismatch",
+        "de": "Viel Leistung geht im Kabel verloren, das die Fehlanpassung verdeckt"
+       },
+       {
+        "en": "The antenna is actually perfect",
+        "de": "Die Antenne ist tatsächlich perfekt"
+       },
+       {
+        "en": "The SWR meter measures voltage only",
+        "de": "Das SWR-Meter misst nur Spannung"
+       },
+       {
+        "en": "Coax cable raises the SWR",
+        "de": "Koaxkabel erhöht das SWR"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   }
+  }
  },
  {
   "id": "key",
@@ -767,7 +2075,225 @@
     ],
     "c": 0
    }
-  ]
+  ],
+  "tiers": {
+   "2": {
+    "lesson": {
+     "en": "Morse speed is measured in words per minute (WPM) using the word PARIS, which is 50 dit lengths long. So one dit lasts 1.2 / WPM seconds: at 20 WPM, 60 ms. Gaps matter as well: 1 dit between elements, 3 dits between letters and 7 dits between words. An iambic paddle keyer sends alternating dits and dahs automatically while you squeeze both paddles.",
+     "de": "Die Morsegeschwindigkeit misst man in Wörtern pro Minute (WPM) mit dem Wort PARIS, das 50 Dit-Längen lang ist. Ein Dit dauert also 1,2 / WPM Sekunden: bei 20 WPM 60 ms. Auch die Pausen zählen: 1 Dit zwischen den Zeichen, 3 Dits zwischen Buchstaben und 7 Dits zwischen Wörtern. Ein Iambic-Paddle sendet abwechselnd Dits und Dahs automatisch, solange du beide Paddles drückst."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "How long is one dit at 20 WPM?",
+       "de": "Wie lang ist ein Dit bei 20 WPM?"
+      },
+      "a": [
+       {
+        "en": "60 ms",
+        "de": "60 ms"
+       },
+       {
+        "en": "120 ms",
+        "de": "120 ms"
+       },
+       {
+        "en": "30 ms",
+        "de": "30 ms"
+       },
+       {
+        "en": "600 ms",
+        "de": "600 ms"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "How many dit lengths does the standard word PARIS take?",
+       "de": "Wie viele Dit-Längen braucht das Standardwort PARIS?"
+      },
+      "a": [
+       {
+        "en": "50",
+        "de": "50"
+       },
+       {
+        "en": "25",
+        "de": "25"
+       },
+       {
+        "en": "100",
+        "de": "100"
+       },
+       {
+        "en": "10",
+        "de": "10"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "How long is the gap between two words?",
+       "de": "Wie lang ist die Pause zwischen zwei Wörtern?"
+      },
+      "a": [
+       {
+        "en": "7 dit lengths",
+        "de": "7 Dit-Längen"
+       },
+       {
+        "en": "3 dit lengths",
+        "de": "3 Dit-Längen"
+       },
+       {
+        "en": "1 dit length",
+        "de": "1 Dit-Länge"
+       },
+       {
+        "en": "10 dit lengths",
+        "de": "10 Dit-Längen"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "What does an iambic paddle do when you squeeze both paddles?",
+       "de": "Was macht ein Iambic-Paddle, wenn du beide Paddles drückst?"
+      },
+      "a": [
+       {
+        "en": "Sends alternating dits and dahs",
+        "de": "Sendet abwechselnd Dits und Dahs"
+       },
+       {
+        "en": "Sends a continuous tone",
+        "de": "Sendet einen Dauerton"
+       },
+       {
+        "en": "Stops sending",
+        "de": "Sendet nichts mehr"
+       },
+       {
+        "en": "Sends only dahs",
+        "de": "Sendet nur Dahs"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   },
+   "3": {
+    "lesson": {
+     "en": "If the transmitter switches on and off too abruptly, the signal gets key clicks: sharp edges that spread over neighbouring frequencies. Rounding the rise and fall of the keyed envelope to a few milliseconds cures this. Full break-in (QSK) switches between transmit and receive so fast that you can hear the other station between your own dits. Dit length is 1.2 / WPM seconds; a letter's length is the sum of its dits, dahs and gaps.",
+     "de": "Schaltet der Sender zu abrupt ein und aus, entstehen Tastklicks: steile Flanken, die sich auf Nachbarfrequenzen ausbreiten. Das Abrunden von Anstieg und Abfall der getasteten Hüllkurve auf einige Millisekunden behebt das. Beim vollen Break-in (QSK) wird so schnell zwischen Senden und Empfang umgeschaltet, dass du die Gegenstation zwischen deinen eigenen Dits hörst. Die Dit-Länge beträgt 1,2 / WPM Sekunden; die Länge eines Buchstabens ergibt sich aus Dits, Dahs und Pausen."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "What causes key clicks?",
+       "de": "Was verursacht Tastklicks?"
+      },
+      "a": [
+       {
+        "en": "Too sharp rise and fall of the keyed signal",
+        "de": "Zu steile Flanken des getasteten Signals"
+       },
+       {
+        "en": "A too long antenna",
+        "de": "Eine zu lange Antenne"
+       },
+       {
+        "en": "A too slow keying speed",
+        "de": "Eine zu niedrige Tastgeschwindigkeit"
+       },
+       {
+        "en": "Too much speaker volume",
+        "de": "Zu hohe Lautsprecherlautstärke"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "The dit length is 40 ms. What is the speed?",
+       "de": "Die Dit-Länge beträgt 40 ms. Wie hoch ist die Geschwindigkeit?"
+      },
+      "a": [
+       {
+        "en": "30 WPM",
+        "de": "30 WPM"
+       },
+       {
+        "en": "24 WPM",
+        "de": "24 WPM"
+       },
+       {
+        "en": "40 WPM",
+        "de": "40 WPM"
+       },
+       {
+        "en": "15 WPM",
+        "de": "15 WPM"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "What does full break-in (QSK) allow?",
+       "de": "Was ermöglicht volles Break-in (QSK)?"
+      },
+      "a": [
+       {
+        "en": "Hearing the other station between your dits and dahs",
+        "de": "Die Gegenstation zwischen deinen Dits und Dahs zu hören"
+       },
+       {
+        "en": "Sending without an antenna",
+        "de": "Senden ohne Antenne"
+       },
+       {
+        "en": "Doubling the power",
+        "de": "Die Leistung zu verdoppeln"
+       },
+       {
+        "en": "Sending faster than 100 WPM",
+        "de": "Schneller als 100 WPM zu senden"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "At 24 WPM (dit = 50 ms), how long does the letter K (dah dit dah) take, including the gaps between elements?",
+       "de": "Bei 24 WPM (Dit = 50 ms): Wie lange dauert der Buchstabe K (Dah Dit Dah) einschließlich der Pausen zwischen den Elementen?"
+      },
+      "a": [
+       {
+        "en": "450 ms",
+        "de": "450 ms"
+       },
+       {
+        "en": "350 ms",
+        "de": "350 ms"
+       },
+       {
+        "en": "250 ms",
+        "de": "250 ms"
+       },
+       {
+        "en": "600 ms",
+        "de": "600 ms"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   }
+  }
  },
  {
   "id": "logbook",
@@ -877,6 +2403,224 @@
     ],
     "c": 0
    }
-  ]
+  ],
+  "tiers": {
+   "2": {
+    "lesson": {
+     "en": "Always log in UTC, which has no daylight saving. To convert, subtract the local offset: Central European Time (CET) is UTC+1, summer time (CEST) is UTC+2. So 20:30 CEST is 18:30 UTC. Near midnight the date changes too. In the RST report, R is readability (1 to 5), S is signal strength (1 to 9), and T is tone (1 to 9, CW only).",
+     "de": "Logge immer in UTC, das keine Sommerzeit kennt. Zum Umrechnen ziehst du den lokalen Versatz ab: Mitteleuropäische Zeit (MEZ) ist UTC+1, die Sommerzeit (MESZ) UTC+2. Also sind 20:30 MESZ gleich 18:30 UTC. Kurz nach Mitternacht ändert sich auch das Datum. Im Rapport RST steht R für Lesbarkeit (1 bis 5), S für Signalstärke (1 bis 9) und T für den Ton (1 bis 9, nur bei CW)."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "A contact starts at 20:30 CEST (UTC+2). What is that in UTC?",
+       "de": "Eine Verbindung beginnt um 20:30 MESZ (UTC+2). Wie viel Uhr ist das in UTC?"
+      },
+      "a": [
+       {
+        "en": "18:30 UTC",
+        "de": "18:30 UTC"
+       },
+       {
+        "en": "22:30 UTC",
+        "de": "22:30 UTC"
+       },
+       {
+        "en": "19:30 UTC",
+        "de": "19:30 UTC"
+       },
+       {
+        "en": "20:30 UTC",
+        "de": "20:30 UTC"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "It is 00:30 CEST on 12 June. What are date and time in UTC?",
+       "de": "Es ist 00:30 MESZ am 12. Juni. Welches Datum und welche Uhrzeit gelten in UTC?"
+      },
+      "a": [
+       {
+        "en": "22:30 UTC on 11 June",
+        "de": "22:30 UTC am 11. Juni"
+       },
+       {
+        "en": "02:30 UTC on 12 June",
+        "de": "02:30 UTC am 12. Juni"
+       },
+       {
+        "en": "22:30 UTC on 12 June",
+        "de": "22:30 UTC am 12. Juni"
+       },
+       {
+        "en": "23:30 UTC on 11 June",
+        "de": "23:30 UTC am 11. Juni"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "Why do amateurs log in UTC?",
+       "de": "Warum loggen Funkamateure in UTC?"
+      },
+      "a": [
+       {
+        "en": "It is the same worldwide and has no daylight saving",
+        "de": "Es gilt weltweit einheitlich und kennt keine Sommerzeit"
+       },
+       {
+        "en": "It is the local time of the operator",
+        "de": "Es ist die Ortszeit des Funkers"
+       },
+       {
+        "en": "It changes with the sunrise",
+        "de": "Es ändert sich mit dem Sonnenaufgang"
+       },
+       {
+        "en": "It is required by the radio",
+        "de": "Das Funkgerät verlangt es"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "In the CW report RST 579, what does the last digit describe?",
+       "de": "Im CW-Rapport RST 579: Was beschreibt die letzte Ziffer?"
+      },
+      "a": [
+       {
+        "en": "Tone quality",
+        "de": "Die Tonqualität"
+       },
+       {
+        "en": "Signal strength",
+        "de": "Die Signalstärke"
+       },
+       {
+        "en": "Readability",
+        "de": "Die Lesbarkeit"
+       },
+       {
+        "en": "Frequency",
+        "de": "Die Frequenz"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   },
+   "3": {
+    "lesson": {
+     "en": "A good log entry holds date, UTC time, both callsigns, band or frequency, mode and reports. ADIF is the standard file format to exchange logs between programs and QSL services. The Maidenhead grid locator, like JO62QM, has two letters (field), two digits (square) and two letters (subsquare); it shows your position in a short code. When converting, remember the sign: UTC−5 means add 5 hours to get UTC.",
+     "de": "Ein guter Logeintrag enthält Datum, UTC-Zeit, beide Rufzeichen, Band oder Frequenz, Betriebsart und Rapporte. ADIF ist das Standarddateiformat, um Logs zwischen Programmen und QSL-Diensten auszutauschen. Der Maidenhead-Locator, etwa JO62QM, besteht aus zwei Buchstaben (Feld), zwei Ziffern (Quadrat) und zwei Buchstaben (Subquadrat); er beschreibt deine Position in einem kurzen Code. Beim Umrechnen auf das Vorzeichen achten: Bei UTC−5 addierst du 5 Stunden, um UTC zu erhalten."
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "What is ADIF used for?",
+       "de": "Wofür wird ADIF verwendet?"
+      },
+      "a": [
+       {
+        "en": "Exchanging log data between programs and services",
+        "de": "Logdaten zwischen Programmen und Diensten austauschen"
+       },
+       {
+        "en": "Tuning the antenna",
+        "de": "Die Antenne abstimmen"
+       },
+       {
+        "en": "Measuring the SWR",
+        "de": "Das SWR messen"
+       },
+       {
+        "en": "Encoding Morse",
+        "de": "Morsezeichen codieren"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "How is a six-character Maidenhead locator like JO62QM structured?",
+       "de": "Wie ist ein sechsstelliger Maidenhead-Locator wie JO62QM aufgebaut?"
+      },
+      "a": [
+       {
+        "en": "2 letters, 2 digits, 2 letters",
+        "de": "2 Buchstaben, 2 Ziffern, 2 Buchstaben"
+       },
+       {
+        "en": "6 digits",
+        "de": "6 Ziffern"
+       },
+       {
+        "en": "3 letters, 3 digits",
+        "de": "3 Buchstaben, 3 Ziffern"
+       },
+       {
+        "en": "2 digits, 2 letters, 2 digits",
+        "de": "2 Ziffern, 2 Buchstaben, 2 Ziffern"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "Which set of data is enough to match a QSO with your partner's log?",
+       "de": "Mit welchen Angaben lässt sich ein QSO mit dem Log des Partners abgleichen?"
+      },
+      "a": [
+       {
+        "en": "Date, UTC time, callsigns, band and mode",
+        "de": "Datum, UTC-Zeit, Rufzeichen, Band und Betriebsart"
+       },
+       {
+        "en": "Local time, weather and antenna height",
+        "de": "Ortszeit, Wetter und Antennenhöhe"
+       },
+       {
+        "en": "Only the RST report",
+        "de": "Nur der RST-Rapport"
+       },
+       {
+        "en": "Transmitter power and supply voltage",
+        "de": "Sendeleistung und Versorgungsspannung"
+       }
+      ],
+      "c": 0
+     },
+     {
+      "q": {
+       "en": "A contact took place at 21:00 local time in a zone at UTC−5. What is the UTC time?",
+       "de": "Eine Verbindung fand um 21:00 Ortszeit in einer Zone mit UTC−5 statt. Welche UTC-Zeit gilt?"
+      },
+      "a": [
+       {
+        "en": "02:00 UTC on the next day",
+        "de": "02:00 UTC am nächsten Tag"
+       },
+       {
+        "en": "16:00 UTC on the same day",
+        "de": "16:00 UTC am selben Tag"
+       },
+       {
+        "en": "02:00 UTC on the same day",
+        "de": "02:00 UTC am selben Tag"
+       },
+       {
+        "en": "21:00 UTC on the next day",
+        "de": "21:00 UTC am nächsten Tag"
+       }
+      ],
+      "c": 0
+     }
+    ]
+   }
+  }
  }
 ]

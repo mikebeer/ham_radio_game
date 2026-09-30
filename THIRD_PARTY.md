@@ -2,6 +2,8 @@
 
 | Material | Where | Licence | Notes |
 |---|---|---|---|
+| Bundesnetzagentur questions for classes E and A (levels 2 and 3) | `content/legal/de.json` | DL-DE-BY-2.0 | Selected questions, verbatim German, English unofficial translation |
+| US (General, Extra) and UK (Intermediate, Full) primers | `content/legal/us.json`, `uk.json` | original | Facts checked against 47 CFR Part 97 and Ofcom licence documents (UK limits per Ofcom's 2024 variation: 25/100/400 W), not exam pools |
 | 50ohm.de lessons, DARC e.V. | `content/legal/de.json` (shortened) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Adapted: shortened, English added |
 | Bundesnetzagentur question catalogue, 3rd ed. March 2024 | `content/legal/de.json` | [DL-DE-BY-2.0](https://www.govdata.de/dl-de/by-2-0) | English text is an unofficial translation |
 | Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009 | topics/abbreviations in `content/legal/at.json` | no licence stated | Only topics and abbreviations used, no questions copied. Clear with the ministry before a store release |

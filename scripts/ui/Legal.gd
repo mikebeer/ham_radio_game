@@ -5,6 +5,7 @@ const PASS_RATIO := 0.7
 const QUIZ_LENGTH := 10
 
 var _pack: Dictionary
+var _lvl: Dictionary
 var _step := 0                   # 0..n-1 lessons, n = quiz
 var _quiz: Quiz
 var _result: Dictionary = {}
@@ -14,16 +15,17 @@ var _t := 0.0
 
 func _build() -> void:
 	_pack = Game.pack()
+	_lvl = Game.level_data()
 	add_bg()
-	var lessons: Array = _pack.get("lessons", [])
+	var lessons: Array = _lvl.get("lessons", [])
 	var n := lessons.size()
-	var country_name := I18n.t("country." + Game.country())
+	var country_name := "%s · %s" % [I18n.t("country." + Game.country()), I18n.loc(_lvl.get("class", ""))]
 	var sub := I18n.t("legal.sub", [country_name, mini(_step + 1, n), n]) if _step < n else I18n.t("legal.quiz_sub", [country_name])
 	add_header(I18n.t("legal.title"), sub)
 
 	for i in n + 1:
 		var d := Panel.new()
-		d.position = Vector2(1220 - (n + 1 - i) * 32, 40)
+		d.position = Vector2(1090 - (n + 1 - i) * 32, 40)
 		d.size = Vector2(20, 20)
 		var on := i < _step or (_step >= n and i == n)
 		d.add_theme_stylebox_override("panel", Style.box(Palette.TEAL if on else Palette.LINE, 10))
@@ -102,10 +104,11 @@ func _draw_lesson_art(idx: int) -> void:
 
 
 func _next_lesson() -> void:
-	var n := (_pack.get("lessons", []) as Array).size()
-	Game.set_flag("rules.lessons_done", maxi(Game.fact_int("rules.lessons_done"), _step + 1))
+	var n := (_lvl.get("lessons", []) as Array).size()
+	Game.set_flag(Game.k("rules.lessons_done"), maxi(Game.fact_int(Game.k("rules.lessons_done")), _step + 1))
 	_step += 1
 	if _step >= n:
+		Game.set_flag(Game.k("rules.lessons_all"), true)
 		_start_quiz()
 	_rebuild()
 
@@ -113,11 +116,11 @@ func _next_lesson() -> void:
 # ---- outline (right, while reading) -----------------------------------------------------
 
 func _build_outline(lessons: Array, n: int) -> void:
-	add_title(I18n.loc(_pack.get("licence", "")), Vector2(672, 146), 26, Palette.AMBER, 516)
+	add_title(I18n.loc(_lvl.get("licence", "")), Vector2(672, 146), 26, Palette.AMBER, 516)
 	add_lbl(I18n.t("country." + Game.country()), Vector2(672, 186), 0, 16, Palette.MUTED)
 	for i in n:
 		var y := 240 + i * 56
-		var done := i < _step or Game.fact_int("rules.lessons_done") > i
+		var done := i < _step or Game.fact_int(Game.k("rules.lessons_done")) > i
 		var dot := Panel.new()
 		dot.position = Vector2(672, y)
 		dot.size = Vector2(32, 32)
@@ -131,7 +134,7 @@ func _build_outline(lessons: Array, n: int) -> void:
 # ---- quiz (right) -----------------------------------------------------------------------
 
 func _quiz_size() -> int:
-	return mini(QUIZ_LENGTH, (_pack.get("questions", []) as Array).size())
+	return mini(QUIZ_LENGTH, (_lvl.get("questions", []) as Array).size())
 
 
 func _start_quiz() -> void:
@@ -145,15 +148,16 @@ func _build_quiz_panel() -> void:
 	_quiz = Quiz.new()
 	_quiz.position = Vector2(672, 146)
 	add_child(_quiz)
-	_quiz.start(Quiz.prepare(_pack.get("questions", []), _quiz_size()), 516.0)
+	_quiz.start(Quiz.prepare(_lvl.get("questions", []), _quiz_size()), 516.0)
 	_quiz.finished.connect(_on_finished)
 
 
 func _on_finished(correct: int, total: int) -> void:
 	_result = {"correct": correct, "total": total, "need": ceili(total * PASS_RATIO)}
 	if correct >= int(_result["need"]):
-		Game.set_flag("rules.quiz_passed", true)
-		Game.set_flag("rules.lessons_done", (_pack.get("lessons", []) as Array).size())
+		Game.set_flag(Game.k("rules.quiz_passed"), true)
+		Game.set_flag(Game.k("rules.lessons_done"), (_lvl.get("lessons", []) as Array).size())
+		Game.set_flag(Game.k("rules.lessons_all"), true)
 		Sfx.reward()
 	_rebuild()
 
@@ -165,7 +169,7 @@ func _build_result() -> void:
 	var msg := I18n.t("legal.passed", [I18n.t("country." + Game.country())]) if ok else I18n.t("legal.failed", [_result["need"]])
 	add_lbl(msg, Vector2(672, 220), 516, 22, Palette.CREAM, Style.font_body_bold)
 	if ok:
-		if Game.has_callsign():
+		if Game.has_callsign() or Game.cur_level() > 1:
 			add_btn(I18n.t("build.back"), Vector2(672, 400), func() -> void:
 				SceneManager.go("hub", {"goal": "rules"}), "PrimaryButton", Vector2(240, 52))
 		else:

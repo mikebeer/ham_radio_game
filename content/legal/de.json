@@ -7,457 +7,1482 @@
   "en": "Vienna",
   "de": "Wien"
  },
- "licence": {
-  "en": "Class N (entry level)",
-  "de": "Klasse N (Einsteiger)"
- },
- "pass": 11,
  "source": {
   "en": "50ohm.de, DARC e.V. (CC BY 4.0); Bundesnetzagentur question catalogue, 3rd ed. March 2024 (DL-DE-BY-2.0)",
   "de": "50ohm.de, DARC e.V. (CC BY 4.0); Fragenkatalog der Bundesnetzagentur, 3. Aufl. März 2024 (DL-DE-BY-2.0)"
  },
- "lessons": [
+ "levels": [
   {
-   "t": {
-    "en": "What amateur radio is",
-    "de": "Was Amateurfunk ist"
+   "short": "N",
+   "class": {
+    "en": "Class N (entry level)",
+    "de": "Klasse N (Einsteiger)"
    },
-   "b": {
-    "en": "Amateur radio is a radio service that radio amateurs use among themselves, for their own training and for technical experiments. The Amateur Radio Act (AFuG) is the legal basis in Germany. You may not use it for business, and you may only talk to other amateur stations.",
-    "de": "Amateurfunk ist ein Funkdienst, den Funkamateure untereinander, zur eigenen Weiterbildung und für technische Experimente nutzen. Rechtsgrundlage in Deutschland ist das Amateurfunkgesetz (AFuG). Für Geschäfte darfst du ihn nicht nutzen, und du sprichst nur mit anderen Amateurfunkstellen."
-   }
-  },
-  {
-   "t": {
-    "en": "Authority and licence",
-    "de": "Behörde und Zulassung"
+   "licence": {
+    "en": "Class N (entry level)",
+    "de": "Klasse N (Einsteiger)"
    },
-   "b": {
-    "en": "The Bundesnetzagentur looks after amateur radio. To become a radio amateur you pass an exam and get a licence with your own callsign. The licence belongs to you personally and cannot be handed over. The law sets no minimum age.",
-    "de": "Die Bundesnetzagentur kümmert sich um den Amateurfunk. Um Funkamateur zu werden, legst du eine Prüfung ab und bekommst eine Zulassung mit eigenem Rufzeichen. Die Zulassung gehört dir persönlich und kann nicht weitergegeben werden. Ein Mindestalter gibt es im Gesetz nicht."
-   }
-  },
-  {
-   "t": {
-    "en": "Your callsign",
-    "de": "Dein Rufzeichen"
-   },
-   "b": {
-    "en": "A callsign identifies your station. You say it at the start and end of every contact and at least every 10 minutes. You cannot demand a particular callsign. Use only the callsign assigned to you.",
-    "de": "Ein Rufzeichen kennzeichnet deine Station. Du nennst es am Anfang und am Ende jeder Funkverbindung und mindestens alle 10 Minuten. Auf ein bestimmtes Rufzeichen hast du keinen Anspruch. Benutze nur das dir zugeteilte Rufzeichen."
-   }
-  },
-  {
-   "t": {
-    "en": "What you may and may not do",
-    "de": "Was erlaubt ist und was nicht"
-   },
-   "b": {
-    "en": "Transmit only on frequencies allocated to amateur radio. Talk only to other amateur stations. Do not pass messages for third parties, except in emergencies and disasters. Do not operate for commercial purposes.",
-    "de": "Sende nur auf Frequenzen, die dem Amateurfunkdienst zugewiesen sind. Sprich nur mit anderen Amateurfunkstellen. Übermittle keine Nachrichten für Dritte, außer in Not- und Katastrophenfällen. Betreibe keinen Funk zu gewerblichen Zwecken."
-   }
-  },
-  {
-   "t": {
-    "en": "Training operation",
-    "de": "Ausbildungsfunkbetrieb"
-   },
-   "b": {
-    "en": "Beginners may try radio before their exam under direct guidance and supervision of a licensed amateur. The trainee adds \"/T\" to the callsign. It is meant to prepare you for the exam, not to replace it.",
-    "de": "Einsteiger dürfen vor der Prüfung unter unmittelbarer Anleitung und Aufsicht eines Funkamateurs Funkbetrieb erleben. Der Auszubildende hängt \"/T\" an das Rufzeichen. Das soll auf die Prüfung vorbereiten, nicht sie ersetzen."
-   }
-  }
- ],
- "questions": [
-  {
-   "id": "VC101",
-   "q": {
-    "en": "Which law is the legal basis for taking part in amateur radio in Germany?",
-    "de": "Welches Gesetz bildet die Rechtsgrundlage und regelt die Voraussetzungen und die Bedingungen für die Teilnahme am Amateurfunkdienst in Deutschland?"
-   },
-   "a": [
+   "lessons": [
     {
-     "en": "The Amateur Radio Act (AFuG)",
-     "de": "Das Gesetz über den Amateurfunk"
+     "t": {
+      "en": "What amateur radio is",
+      "de": "Was Amateurfunk ist"
+     },
+     "b": {
+      "en": "Amateur radio is a radio service that radio amateurs use among themselves, for their own training and for technical experiments. The Amateur Radio Act (AFuG) is the legal basis in Germany. You may not use it for business, and you may only talk to other amateur stations.",
+      "de": "Amateurfunk ist ein Funkdienst, den Funkamateure untereinander, zur eigenen Weiterbildung und für technische Experimente nutzen. Rechtsgrundlage in Deutschland ist das Amateurfunkgesetz (AFuG). Für Geschäfte darfst du ihn nicht nutzen, und du sprichst nur mit anderen Amateurfunkstellen."
+     }
     },
     {
-     "en": "The Telecommunications Act",
-     "de": "Das Telekommunikationsgesetz"
+     "t": {
+      "en": "Authority and licence",
+      "de": "Behörde und Zulassung"
+     },
+     "b": {
+      "en": "The Bundesnetzagentur looks after amateur radio. To become a radio amateur you pass an exam and get a licence with your own callsign. The licence belongs to you personally and cannot be handed over. The law sets no minimum age.",
+      "de": "Die Bundesnetzagentur kümmert sich um den Amateurfunk. Um Funkamateur zu werden, legst du eine Prüfung ab und bekommst eine Zulassung mit eigenem Rufzeichen. Die Zulassung gehört dir persönlich und kann nicht weitergegeben werden. Ein Mindestalter gibt es im Gesetz nicht."
+     }
     },
     {
-     "en": "The Act on making radio equipment available on the market",
-     "de": "Das Gesetz über die Bereitstellung von Funkanlagen auf dem Markt"
+     "t": {
+      "en": "Your callsign",
+      "de": "Dein Rufzeichen"
+     },
+     "b": {
+      "en": "A callsign identifies your station. You say it at the start and end of every contact and at least every 10 minutes. You cannot demand a particular callsign. Use only the callsign assigned to you.",
+      "de": "Ein Rufzeichen kennzeichnet deine Station. Du nennst es am Anfang und am Ende jeder Funkverbindung und mindestens alle 10 Minuten. Auf ein bestimmtes Rufzeichen hast du keinen Anspruch. Benutze nur das dir zugeteilte Rufzeichen."
+     }
     },
     {
-     "en": "The Act on electromagnetic compatibility of equipment",
-     "de": "Das Gesetz über die elektromagnetische Verträglichkeit von Betriebsmitteln"
+     "t": {
+      "en": "What you may and may not do",
+      "de": "Was erlaubt ist und was nicht"
+     },
+     "b": {
+      "en": "Transmit only on frequencies allocated to amateur radio. Talk only to other amateur stations. Do not pass messages for third parties, except in emergencies and disasters. Do not operate for commercial purposes.",
+      "de": "Sende nur auf Frequenzen, die dem Amateurfunkdienst zugewiesen sind. Sprich nur mit anderen Amateurfunkstellen. Übermittle keine Nachrichten für Dritte, außer in Not- und Katastrophenfällen. Betreibe keinen Funk zu gewerblichen Zwecken."
+     }
+    },
+    {
+     "t": {
+      "en": "Training operation",
+      "de": "Ausbildungsfunkbetrieb"
+     },
+     "b": {
+      "en": "Beginners may try radio before their exam under direct guidance and supervision of a licensed amateur. The trainee adds \"/T\" to the callsign. It is meant to prepare you for the exam, not to replace it.",
+      "de": "Einsteiger dürfen vor der Prüfung unter unmittelbarer Anleitung und Aufsicht eines Funkamateurs Funkbetrieb erleben. Der Auszubildende hängt \"/T\" an das Rufzeichen. Das soll auf die Prüfung vorbereiten, nicht sie ersetzen."
+     }
     }
    ],
-   "c": 0
-  },
-  {
-   "id": "VC104",
-   "q": {
-    "en": "Which German authority carries out the tasks arising from the Amateur Radio Act (AFuG) and Ordinance (AFuV)?",
-    "de": "Welche deutsche Behörde nimmt die Aufgaben und Befugnisse wahr, die sich aus dem Amateurfunkgesetz (AFuG) und der Amateurfunkverordnung (AFuV) ergeben?"
-   },
-   "a": [
+   "questions": [
     {
-     "en": "The Federal Network Agency (Bundesnetzagentur)",
-     "de": "Die Bundesnetzagentur"
+     "id": "VC101",
+     "q": {
+      "en": "Which law is the legal basis for taking part in amateur radio in Germany?",
+      "de": "Welches Gesetz bildet die Rechtsgrundlage und regelt die Voraussetzungen und die Bedingungen für die Teilnahme am Amateurfunkdienst in Deutschland?"
+     },
+     "a": [
+      {
+       "en": "The Amateur Radio Act (AFuG)",
+       "de": "Das Gesetz über den Amateurfunk"
+      },
+      {
+       "en": "The Telecommunications Act",
+       "de": "Das Telekommunikationsgesetz"
+      },
+      {
+       "en": "The Act on making radio equipment available on the market",
+       "de": "Das Gesetz über die Bereitstellung von Funkanlagen auf dem Markt"
+      },
+      {
+       "en": "The Act on electromagnetic compatibility of equipment",
+       "de": "Das Gesetz über die elektromagnetische Verträglichkeit von Betriebsmitteln"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "The Federal Physical-Technical Institute",
-     "de": "Die Physikalisch-Technische Bundesanstalt"
+     "id": "VC104",
+     "q": {
+      "en": "Which German authority carries out the tasks arising from the Amateur Radio Act (AFuG) and Ordinance (AFuV)?",
+      "de": "Welche deutsche Behörde nimmt die Aufgaben und Befugnisse wahr, die sich aus dem Amateurfunkgesetz (AFuG) und der Amateurfunkverordnung (AFuV) ergeben?"
+     },
+     "a": [
+      {
+       "en": "The Federal Network Agency (Bundesnetzagentur)",
+       "de": "Die Bundesnetzagentur"
+      },
+      {
+       "en": "The Federal Physical-Technical Institute",
+       "de": "Die Physikalisch-Technische Bundesanstalt"
+      },
+      {
+       "en": "The Federal Post and Telecommunications Office",
+       "de": "Die Bundesanstalt für Post und Telekommunikation"
+      },
+      {
+       "en": "The Federal Agency for digital radio of authorities and security organisations",
+       "de": "Die Bundesanstalt für den Digitalfunk der Behörden und Organisationen mit Sicherheitsaufgaben"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "The Federal Post and Telecommunications Office",
-     "de": "Die Bundesanstalt für Post und Telekommunikation"
+     "id": "VC107",
+     "q": {
+      "en": "May a radio amateur temporarily pass their licence to another person? The licence is ...",
+      "de": "Darf ein Funkamateur seine Amateurfunkzulassung vorübergehend einer anderen Person übertragen? Die Amateurfunkzulassung ist ..."
+     },
+     "a": [
+      {
+       "en": "tied to the person named on it and cannot be transferred.",
+       "de": "an die in der Zulassungsurkunde angegebene Person gebunden und nicht übertragbar."
+      },
+      {
+       "en": "transferable to people in the same household after notifying the Bundesnetzagentur.",
+       "de": "nach vorheriger Anzeige bei der Bundesnetzagentur an Personen im gleichen Haushalt übertragbar."
+      },
+      {
+       "en": "transferable if the other person is a radio amateur who passed the exam.",
+       "de": "übertragbar, wenn es sich bei der Person um einen Funkamateur mit erfolgreich abgelegter Prüfung handelt."
+      },
+      {
+       "en": "transferable to foreign radio amateurs staying in Germany for a short time.",
+       "de": "übertragbar, wenn es sich um ausländische Funkamateure handelt, die sich vorübergehend in Deutschland aufhalten."
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "The Federal Agency for digital radio of authorities and security organisations",
-     "de": "Die Bundesanstalt für den Digitalfunk der Behörden und Organisationen mit Sicherheitsaufgaben"
+     "id": "VC108",
+     "q": {
+      "en": "Does the Amateur Radio Act require a minimum age for a licence?",
+      "de": "Ist nach dem Amateurfunkgesetz (AFuG) für die Erteilung einer Amateurfunkzulassung ein Mindestalter erforderlich?"
+     },
+     "a": [
+      {
+       "en": "The Act sets no minimum age.",
+       "de": "Das Amateurfunkgesetz (AFuG) sieht kein Mindestalter vor."
+      },
+      {
+       "en": "The minimum age to apply is 15.",
+       "de": "Das Mindestalter für die Antragstellung beträgt 15 Jahre."
+      },
+      {
+       "en": "From class E the Act sets a minimum age of 16.",
+       "de": "Das Amateurfunkgesetz (AFuG) sieht ab Klassen E ein Mindestalter von 16 Jahren vor."
+      },
+      {
+       "en": "For class A you must be of legal age.",
+       "de": "Für die Erteilung der Klasse A ist  die Volljährigkeit Voraussetzung."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VC110",
+     "q": {
+      "en": "What applies to frequency use? A radio amateur may transmit with their station ...",
+      "de": "Was gilt für Funkamateure hinsichtlich der Frequenznutzung? Ein Funkamateur darf mit seiner Amateurfunkstelle ..."
+     },
+     "a": [
+      {
+       "en": "on the frequencies allocated to the amateur radio service.",
+       "de": "auf den für den Amateurfunkdienst ausgewiesenen Frequenzen senden."
+      },
+      {
+       "en": "on all frequencies permitted in their ITU region.",
+       "de": "auf allen für seine ITU-Region zugelassenen Frequenzen senden."
+      },
+      {
+       "en": "on any frequency as long as other services are not disturbed.",
+       "de": "beliebige Frequenzen nutzen, sofern keine anderen Funkdienste gestört werden."
+      },
+      {
+       "en": "during an emergency-radio exercise also on frequencies not allocated to amateur radio.",
+       "de": "im Rahmen einer Notfunkübung auch auf nicht für den Amateurfunkdienst ausgewiesenen Frequenzen senden."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VC111",
+     "q": {
+      "en": "Which stations may a radio amateur communicate with?",
+      "de": "Mit welchen Funkstellen darf der Funkamateur Funkverkehr abwickeln?"
+     },
+     "a": [
+      {
+       "en": "Only other amateur stations",
+       "de": "Ausschließlich mit anderen Amateurfunkstellen"
+      },
+      {
+       "en": "All stations active on the amateur bands",
+       "de": "Mit allen Funkstellen, die auf den Amateurfunkbändern tätig sind"
+      },
+      {
+       "en": "Other amateur stations and stations of authorities and security organisations",
+       "de": "Mit anderen Amateurfunkstellen und Funkstellen der Behörden und Organisationen mit Sicherheitsaufgaben (BOS)"
+      },
+      {
+       "en": "Other amateur stations and stations of the aeronautical or maritime service",
+       "de": "Mit anderen Amateurfunkstellen und Funkstellen des Flug- und/oder Seefunkdienstes"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VC112",
+     "q": {
+      "en": "May a radio amateur relay messages that are not about amateur radio for or to third parties?",
+      "de": "Darf ein Funkamateur Nachrichten, die nicht den Amateurfunkdienst betreffen, für und an Dritte übermitteln?"
+     },
+     "a": [
+      {
+       "en": "Only in emergencies and disasters",
+       "de": "Nur in Not- und Katastrophenfällen"
+      },
+      {
+       "en": "No, never",
+       "de": "Nein, unter keinen Umständen"
+      },
+      {
+       "en": "Yes, at any time",
+       "de": "Ja, jederzeit"
+      },
+      {
+       "en": "Only when asked by the local office of the Bundesnetzagentur",
+       "de": "Nur nach Aufforderung durch die zuständige Außenstelle der Bundesnetzagentur"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VC114",
+     "q": {
+      "en": "May an amateur station be operated for commercial purposes? An amateur station may ...",
+      "de": "Darf die Amateurfunkstelle zu gewerblich-wirtschaftlichen Zwecken betrieben werden? Eine Amateurfunkstelle darf ..."
+     },
+     "a": [
+      {
+       "en": "not be operated for commercial purposes.",
+       "de": "nicht zu gewerblich-wirtschaftlichen Zwecken betrieben werden."
+      },
+      {
+       "en": "be operated commercially after registering a business with the callsign.",
+       "de": "nach Anzeige des Gewerbes unter Angabe des Rufzeichens zu gewerblich-wirtschaftlichen Zwecken betrieben werden."
+      },
+      {
+       "en": "be operated to provide telecommunications services professionally.",
+       "de": "zum Zwecke des geschäftsmäßigen Erbringens von Telekommunikationsdiensten betrieben werden."
+      },
+      {
+       "en": "be operated commercially after approval by the Bundesnetzagentur.",
+       "de": "nach Genehmigung durch die Bundesnetzagentur zu gewerblich-wirtschaftlichen Zwecken betrieben werden."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VC116",
+     "q": {
+      "en": "Which personal callsigns may a radio amateur use?",
+      "de": "Welche personengebundenen Rufzeichen darf ein Funkamateur benutzen?"
+     },
+     "a": [
+      {
+       "en": "Only a callsign assigned to them by the Bundesnetzagentur",
+       "de": "Nur ein ihm von der Bundesnetzagentur zugeteiltes Rufzeichen"
+      },
+      {
+       "en": "Any callsign",
+       "de": "Beliebige Rufzeichen"
+      },
+      {
+       "en": "Only a callsign assigned by an amateur radio association",
+       "de": "Nur ein von einer Amateurfunkvereinigung zugeteiltes Rufzeichen"
+      },
+      {
+       "en": "When using someone else's station, the personal callsign of the station owner",
+       "de": "Bei Nutzung einer fremden Station das personengebundene Rufzeichen des Stationsinhabers"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VD205",
+     "q": {
+      "en": "When must a radio amateur give their callsign?",
+      "de": "Wann muss der Funkamateur sein Rufzeichen nennen?"
+     },
+     "a": [
+      {
+       "en": "At the start and end of every contact and at least every 10 minutes",
+       "de": "Am Anfang und am Ende jeder Funkverbindung sowie mindestens alle 10 Minuten"
+      },
+      {
+       "en": "When asked by another station in the contact",
+       "de": "Auf Verlangen einer anderen am Funkverkehr beteiligten Funkstelle"
+      },
+      {
+       "en": "At least every 15 minutes during a contact",
+       "de": "Mindestens alle 15 Minuten während einer Funkverbindung"
+      },
+      {
+       "en": "At the latest 5 minutes into an uninterrupted transmission",
+       "de": "Spätestens 5 Minuten nach einer ununterbrochenen Aussendung"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VD207",
+     "q": {
+      "en": "How can you recognise an amateur station on the air?",
+      "de": "Woran erkennt man eine Amateurfunkstelle im Funkbetrieb?"
+     },
+     "a": [
+      {
+       "en": "By its amateur radio callsign",
+       "de": "Am Amateurfunkrufzeichen"
+      },
+      {
+       "en": "By the frequency range used",
+       "de": "Am benutzten Frequenzbereich"
+      },
+      {
+       "en": "By the emission mode used",
+       "de": "An der verwendeten Sendeart"
+      },
+      {
+       "en": "By the modulation",
+       "de": "An der Modulation"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VD208",
+     "q": {
+      "en": "Is a radio amateur entitled to a specific callsign?",
+      "de": "Hat ein Funkamateur Anspruch auf Zuteilung eines bestimmten Rufzeichens?"
+     },
+     "a": [
+      {
+       "en": "No, there is no such entitlement.",
+       "de": "Nein, es besteht kein Anspruch darauf."
+      },
+      {
+       "en": "Yes, if it is not yet assigned.",
+       "de": "Ja, wenn es noch nicht vergeben ist."
+      },
+      {
+       "en": "No, unless they have special personal reasons and the callsign is free.",
+       "de": "Nein, es sei denn, er kann besondere persönliche Gründe geltend machen und das Rufzeichen ist frei."
+      },
+      {
+       "en": "Yes, if it was assigned to them before.",
+       "de": "Ja, wenn es ihm schon einmal zugeteilt war."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VD301",
+     "q": {
+      "en": "What is training radio operation (Ausbildungsfunkbetrieb) for under the Amateur Radio Ordinance? It serves ...",
+      "de": "Wozu dient der Ausbildungsfunkbetrieb gemäß Amateurfunkverordnung (AFuV)? Er dient ..."
+     },
+     "a": [
+      {
+       "en": "the practical preparation for the technical exam for an amateur radio certificate.",
+       "de": "der praktischen Vorbereitung auf das Ablegen der fachlichen Prüfung zum Erwerb eines Amateurfunkzeugnisses."
+      },
+      {
+       "en": "the sole demonstration of amateur radio operation.",
+       "de": "der alleinigen Vorführung des Amateurfunkbetriebes."
+      },
+      {
+       "en": "the trainee taking part in amateur radio without supervision.",
+       "de": "der Teilnahme des Auszubildenden am Amateurfunkdienst ohne Aufsicht."
+      },
+      {
+       "en": "completing the radio amateur's skills in Morse telegraphy.",
+       "de": "der Vervollständigung der Fertigkeiten des Funkamateurs in der Morsetelegrafie."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VD303",
+     "q": {
+      "en": "Non-amateurs may take part in training radio operation ...",
+      "de": "Nicht-Funkamateure dürfen am Ausbildungsfunkbetrieb ..."
+     },
+     "a": [
+      {
+       "en": "only under direct guidance and supervision of a radio amateur with an assigned class A or E callsign.",
+       "de": "nur unter unmittelbarer Anleitung und Aufsicht eines Funkamateurs mit zugeteiltem Rufzeichen der Klasse A oder E teilnehmen."
+      },
+      {
+       "en": "only at club stations under supervision of a class A or E amateur.",
+       "de": "nur an Klubstationen unter Aufsicht eines Funkamateurs mit zugeteiltem Rufzeichen der Klasse A oder E teilnehmen."
+      },
+      {
+       "en": "also at weekends without special conditions.",
+       "de": "auch an Wochenenden ohne besondere Auflagen teilnehmen."
+      },
+      {
+       "en": "also without guidance and supervision of the training amateur.",
+       "de": "auch ohne Anleitung und Aufsicht des ausbildenden Funkamateurs teilnehmen."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VD306",
+     "q": {
+      "en": "Who must use the callsign suffix \"/T\" or \"/Trainee\" during training radio operation?",
+      "de": "Von wem ist während des Ausbildungsfunkbetriebs der Rufzeichenzusatz \"/T\" bzw. \"/Trainee\" zu benutzen?"
+     },
+     "a": [
+      {
+       "en": "The trainee",
+       "de": "Vom Auszubildenden"
+      },
+      {
+       "en": "The trainer",
+       "de": "Vom Ausbilder"
+      },
+      {
+       "en": "The trainee and the trainer",
+       "de": "Vom Auszubildenden und vom Ausbilder"
+      },
+      {
+       "en": "The person responsible for the school station",
+       "de": "Vom Verantwortlichen der Schulstation"
+      }
+     ],
+     "c": 0
     }
    ],
-   "c": 0
+   "pass": 11
   },
   {
-   "id": "VC107",
-   "q": {
-    "en": "May a radio amateur temporarily pass their licence to another person? The licence is ...",
-    "de": "Darf ein Funkamateur seine Amateurfunkzulassung vorübergehend einer anderen Person übertragen? Die Amateurfunkzulassung ist ..."
+   "class": {
+    "en": "Class E",
+    "de": "Klasse E"
    },
-   "a": [
+   "licence": {
+    "en": "Class E (intermediate)",
+    "de": "Klasse E (Fortgeschrittene)"
+   },
+   "lessons": [
     {
-     "en": "tied to the person named on it and cannot be transferred.",
-     "de": "an die in der Zulassungsurkunde angegebene Person gebunden und nicht übertragbar."
+     "t": {
+      "en": "Decibels and tolerances",
+      "de": "Dezibel und Toleranzen"
+     },
+     "b": {
+      "en": "Doubling the power adds 3 dB to the power level. A resistor with a 10 % tolerance may differ by that much from its nominal value, so 5.6 kOhm can really be anywhere from 5040 to 6160 Ohm. The turns ratio of a transformer is a simple proportion: a 150-turn primary at 45 V with 180 V on the secondary needs 600 secondary turns.",
+      "de": "Eine Verdopplung der Leistung erhöht den Leistungspegel um 3 dB. Ein Widerstand mit 10 % Toleranz darf um so viel vom Nennwert abweichen, 5,6 kOhm können also zwischen 5040 und 6160 Ohm liegen. Das Windungsverhältnis eines Transformators ist eine einfache Proportion: Bei 150 Windungen primär mit 45 V und 180 V sekundär braucht man 600 Windungen sekundär."
+     }
     },
     {
-     "en": "transferable to people in the same household after notifying the Bundesnetzagentur.",
-     "de": "nach vorheriger Anzeige bei der Bundesnetzagentur an Personen im gleichen Haushalt übertragbar."
+     "t": {
+      "en": "Coils, capacitors, diodes, transistors",
+      "de": "Spule, Kondensator, Diode, Transistor"
+     },
+     "b": {
+      "en": "With rising frequency the AC resistance of an ideal capacitor falls, while that of an ideal coil rises. A germanium diode starts to conduct at about 0.2 to 0.4 V, a silicon diode at about 0.6 to 0.8 V. A transistor amplifies current: a small base current controls a large collector current. Together, these parts make up the building blocks of every radio circuit you will meet later.",
+      "de": "Mit steigender Frequenz sinkt der Wechselstromwiderstand eines idealen Kondensators, der einer idealen Spule steigt. Eine Germaniumdiode leitet ab etwa 0,2 bis 0,4 V, eine Siliziumdiode ab etwa 0,6 bis 0,8 V. Ein Transistor verstärkt den Strom: Ein kleiner Basisstrom steuert einen großen Kollektorstrom. Diese Bauteile sind die Bausteine aller Funkschaltungen, die dir später begegnen."
+     }
     },
     {
-     "en": "transferable if the other person is a radio amateur who passed the exam.",
-     "de": "übertragbar, wenn es sich bei der Person um einen Funkamateur mit erfolgreich abgelegter Prüfung handelt."
+     "t": {
+      "en": "SSB and the receiver",
+      "de": "SSB und der Empfänger"
+     },
+     "b": {
+      "en": "A single-sideband signal needs about as much RF bandwidth as the audio signal it carries, because the carrier and one sideband are suppressed. In the receiver, the beat-frequency oscillator (BFO) supplies an auxiliary carrier so that CW and SSB signals become audible. Without it, these signals would only sound like faint clicks or unintelligible noise.",
+      "de": "Ein Einseitenbandsignal braucht etwa so viel HF-Bandbreite wie das übertragene NF-Signal, weil Träger und ein Seitenband unterdrückt werden. Im Empfänger liefert der Überlagerungsoszillator (BFO) einen Hilfsträger, damit CW- und SSB-Signale hörbar werden. Ohne ihn wären diese Signale nur als leises Knacken oder unverständliches Rauschen zu hören."
+     }
     },
     {
-     "en": "transferable to foreign radio amateurs staying in Germany for a short time.",
-     "de": "übertragbar, wenn es sich um ausländische Funkamateure handelt, die sich vorübergehend in Deutschland aufhalten."
+     "t": {
+      "en": "Antennas and propagation",
+      "de": "Antennen und Ausbreitung"
+     },
+     "b": {
+      "en": "At the centre of a half-wave dipole the feed-point resistance is roughly 40 to 90 Ohm, depending on height. An antenna gain given in dBd becomes dBi by adding 2.15 dB, so 5 dBd is 7.15 dBi. On shortwave, the MUF is the maximum usable frequency for a given path.",
+      "de": "In der Mitte eines Halbwellendipols beträgt der Fußpunktwiderstand je nach Aufbauhöhe etwa 40 bis 90 Ohm. Ein Antennengewinn in dBd wird durch Addition von 2,15 dB zu dBi, 5 dBd sind also 7,15 dBi. Im Kurzwellenbereich ist die MUF die höchste nutzbare Frequenz einer Funkstrecke."
+     }
+    },
+    {
+     "t": {
+      "en": "Power, CEPT, Q-codes and log",
+      "de": "Leistung, CEPT, Q-Gruppen und Log"
+     },
+     "b": {
+      "en": "In the 2 m and 70 cm bands class A may use up to 750 W PEP and class E up to 75 W PEP. Under the CEPT arrangement you may operate temporarily abroad for up to 3 months per stay. \"PSE QRP\" asks you to reduce your power. Write times on QSL cards in UTC so partners abroad can find them in their log.",
+      "de": "Auf 2 m und 70 cm darf Klasse A bis 750 W PEP senden, Klasse E bis 75 W PEP. Nach der CEPT-Regelung darfst du je Aufenthalt bis zu 3 Monate vorübergehend im Ausland funken. \"PSE QRP\" bittet dich, die Sendeleistung zu verringern. Trage Uhrzeiten auf QSL-Karten in UTC ein, damit Funkpartner im Ausland sie im Logbuch finden."
+     }
     }
    ],
-   "c": 0
+   "questions": [
+    {
+     "id": "EA107",
+     "q": {
+      "en": "By how many decibels does the power level change when the power is doubled?",
+      "de": "Um wie viel Dezibel verändert sich der Leistungspegel, wenn die Leistung verdoppelt wird?"
+     },
+     "a": [
+      {
+       "en": "3 dB",
+       "de": "3 dB"
+      },
+      {
+       "en": "6 dB",
+       "de": "6 dB"
+      },
+      {
+       "en": "1.5 dB",
+       "de": "1,5 dB"
+      },
+      {
+       "en": "12 dB",
+       "de": "12 dB"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "EC112",
+     "q": {
+      "en": "A resistor has a tolerance of 10 %. With a nominal resistance of 5.6 kOhm, the actual value lies between ...",
+      "de": "Ein Widerstand hat eine Toleranz von 10 %. Bei einem nominalen Widerstandswert von 5,6 kOhm liegt der tatsächliche Wert zwischen ..."
+     },
+     "a": [
+      {
+       "en": "5040 to 6160 Ohm.",
+       "de": "5040 bis 6160 Ohm."
+      },
+      {
+       "en": "4760 to 6440 Ohm.",
+       "de": "4760 bis 6440 Ohm."
+      },
+      {
+       "en": "4.7 to 6.8 kOhm.",
+       "de": "4,7 bis 6,8 kOhm."
+      },
+      {
+       "en": "5.2 to 6.3 kOhm.",
+       "de": "5,2 bis 6,3 kOhm."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "EC202",
+     "q": {
+      "en": "How does the AC resistance of an ideal capacitor behave as frequency increases?",
+      "de": "Welches Verhalten zeigt der Wechselstromwiderstand eines idealen Kondensators mit zunehmender Frequenz?"
+     },
+     "a": [
+      {
+       "en": "It falls.",
+       "de": "Er sinkt."
+      },
+      {
+       "en": "It falls to a minimum and then rises again.",
+       "de": "Er sinkt bis zu einem Minimum und steigt dann wieder."
+      },
+      {
+       "en": "It rises.",
+       "de": "Er steigt."
+      },
+      {
+       "en": "It rises to a maximum and then falls again.",
+       "de": "Er steigt bis zu einem Maximum und sinkt dann wieder."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "EC303",
+     "q": {
+      "en": "How does the AC resistance of an ideal coil behave as frequency increases?",
+      "de": "Welches Verhalten zeigt der Wechselstromwiderstand einer idealen Spule mit zunehmender Frequenz?"
+     },
+     "a": [
+      {
+       "en": "It rises.",
+       "de": "Er steigt."
+      },
+      {
+       "en": "It falls.",
+       "de": "Er sinkt."
+      },
+      {
+       "en": "It falls to a minimum and then rises again.",
+       "de": "Er sinkt bis zu einem Minimum und steigt dann wieder."
+      },
+      {
+       "en": "It rises to a maximum and then falls again.",
+       "de": "Er steigt bis zu einem Maximum und sinkt dann wieder."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "EC404",
+     "q": {
+      "en": "A transformer primary winding with 150 turns has 45 V applied. The secondary voltage is 180 V. How many turns does the secondary have?",
+      "de": "An der Primärwicklung eines Transformators mit 150 Windungen liegt eine Spannung von 45 V an. Die Sekundärspannung beträgt 180 V. Wie groß ist die Sekundärwindungszahl?"
+     },
+     "a": [
+      {
+       "en": "600 turns",
+       "de": "600 Windungen"
+      },
+      {
+       "en": "850 turns",
+       "de": "850 Windungen"
+      },
+      {
+       "en": "38 turns",
+       "de": "38 Windungen"
+      },
+      {
+       "en": "30 turns",
+       "de": "30 Windungen"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "EC503",
+     "q": {
+      "en": "What are the typical threshold voltages of germanium and silicon diodes? They are ...",
+      "de": "Welche typischen Schwellspannungen haben Germanium- und Siliziumdioden? Sie liegen bei ..."
+     },
+     "a": [
+      {
+       "en": "germanium between 0.2 and 0.4 V, silicon between 0.6 and 0.8 V.",
+       "de": "Germanium zwischen 0,2 bis 0,4 V, bei Silizium zwischen 0,6 bis 0,8 V."
+      },
+      {
+       "en": "germanium between 0.6 and 0.8 V, silicon between 0.2 and 0.4 V.",
+       "de": "Germanium zwischen 0,6 bis 0,8 V, bei Silizium zwischen 0,2 bis 0,4 V."
+      },
+      {
+       "en": "germanium between 1.4 and 1.6 V, silicon 0.6 to 0.8 V.",
+       "de": "Germanium zwischen 1,4 bis 1,6 V, bei Silizium 0,6 bis 0,8 V."
+      },
+      {
+       "en": "germanium between 0.6 and 0.8 V, silicon 1.4 to 1.6 V.",
+       "de": "Germanium zwischen 0,6 bis 0,8 V, bei Silizium 1,4 bis 1,6 V."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "EC603",
+     "q": {
+      "en": "What is meant by current gain in a transistor?",
+      "de": "Was versteht man unter Stromverstärkung beim Transistor?"
+     },
+     "a": [
+      {
+       "en": "A small base current controls a large collector current.",
+       "de": "Mit einem geringen Basisstrom wird ein großer Kollektorstrom gesteuert."
+      },
+      {
+       "en": "A small emitter current controls a large collector current.",
+       "de": "Mit einem geringen Emitterstrom wird ein großer Kollektorstrom gesteuert."
+      },
+      {
+       "en": "A small emitter current controls a large base current.",
+       "de": "Mit einem geringen Emitterstrom wird ein großer Basisstrom gesteuert."
+      },
+      {
+       "en": "A small collector current controls a large emitter current.",
+       "de": "Mit einem geringen Kollektorstrom wird ein großer Emitterstrom gesteuert."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "EE202",
+     "q": {
+      "en": "Roughly how much RF bandwidth is needed to transmit an SSB signal?",
+      "de": "Wie groß ist in etwa die HF-Bandbreite, die für die Übertragung eines SSB-Signals erforderlich ist?"
+     },
+     "a": [
+      {
+       "en": "It equals the bandwidth of the audio signal.",
+       "de": "Sie entspricht der Bandbreite des NF-Signals."
+      },
+      {
+       "en": "It equals half the bandwidth of the audio signal.",
+       "de": "Sie entspricht der Hälfte der Bandbreite des NF-Signals."
+      },
+      {
+       "en": "It equals twice the bandwidth of the audio signal.",
+       "de": "Sie entspricht der doppelten Bandbreite des NF-Signals."
+      },
+      {
+       "en": "It is zero, because the RF carrier is suppressed in SSB.",
+       "de": "Sie ist Null, weil bei SSB-Modulation der HF-Träger unterdrückt wird."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "EF209",
+     "q": {
+      "en": "What is the purpose of a BFO in a receiver?",
+      "de": "Welchem Zweck dient ein BFO in einem Empfänger?"
+     },
+     "a": [
+      {
+       "en": "To generate an auxiliary carrier so that CW or SSB signals become audible",
+       "de": "Zur Hilfsträgererzeugung, um CW- oder SSB-Signale hörbar zu machen"
+      },
+      {
+       "en": "To mix with a received signal to produce the IF",
+       "de": "Zur Mischung mit einem Empfangssignal zur Erzeugung der ZF"
+      },
+      {
+       "en": "To suppress amplitude interference",
+       "de": "Zur Unterdrückung der Amplitudenüberlagerung"
+      },
+      {
+       "en": "To suppress FM signals",
+       "de": "Um FM-Signale zu unterdrücken"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "EG208",
+     "q": {
+      "en": "Depending on installation height, the feed-point resistance at the centre of a half-wave dipole is about ...",
+      "de": "Der Fußpunktwiderstand in der Mitte eines Halbwellendipols beträgt je nach Aufbauhöhe ungefähr ..."
+     },
+     "a": [
+      {
+       "en": "40 to 90 Ohm.",
+       "de": "40 bis 90 Ohm."
+      },
+      {
+       "en": "100 to 120 Ohm.",
+       "de": "100 bis 120 Ohm."
+      },
+      {
+       "en": "120 to 240 Ohm.",
+       "de": "120 bis 240 Ohm."
+      },
+      {
+       "en": "240 to 600 Ohm.",
+       "de": "240 bis 600 Ohm."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "EG221",
+     "q": {
+      "en": "An antenna manufacturer specifies the gain of an antenna as 5 dBd. What is the gain of the antenna in dBi?",
+      "de": "Ein Antennenhersteller gibt den Gewinn einer Antenne mit 5 dBd an. Wie groß ist der Gewinn der Antenne in dBi?"
+     },
+     "a": [
+      {
+       "en": "7.15 dBi",
+       "de": "7,15 dBi"
+      },
+      {
+       "en": "5 dBi",
+       "de": "5 dBi"
+      },
+      {
+       "en": "2.5 dBi",
+       "de": "2,5 dBi"
+      },
+      {
+       "en": "2.85 dBi",
+       "de": "2,85 dBi"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "EH204",
+     "q": {
+      "en": "What does \"MUF\" mean in shortwave propagation?",
+      "de": "Was bedeutet die \"MUF\" bei der Kurzwellenausbreitung?"
+     },
+     "a": [
+      {
+       "en": "Maximum usable frequency",
+       "de": "Höchste nutzbare Frequenz"
+      },
+      {
+       "en": "Lowest usable frequency",
+       "de": "Niedrigste nutzbare Frequenz"
+      },
+      {
+       "en": "Critical cut-off frequency",
+       "de": "Kritische Grenzfrequenz"
+      },
+      {
+       "en": "Mean usable frequency",
+       "de": "Mittlere Nutzfrequenz"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VD734",
+     "q": {
+      "en": "Which power limits apply to callsign holders of class A and E in the frequency ranges 144 to 146 MHz and 430 to 440 MHz?",
+      "de": "Welche Leistungsgrenzen gelten für die Rufzeicheninhaber der Klasse A und E in den Frequenzbereichen 144 bis 146 MHz und 430 bis 440 MHz?"
+     },
+     "a": [
+      {
+       "en": "Maximum 750 W PEP for class A and 75 W PEP for class E",
+       "de": "Maximal 750 W PEP für Klasse A und 75 W PEP für Klasse E"
+      },
+      {
+       "en": "Maximum 750 W PEP for both classes",
+       "de": "Maximal 750 W PEP für beide Klassen"
+      },
+      {
+       "en": "Maximum 100 W PEP for class A and 50 W PEP for class E",
+       "de": "Maximal 100 W PEP für Klasse A und 50 W PEP für Klasse E"
+      },
+      {
+       "en": "Maximum 10 W PEP for both classes",
+       "de": "Maximal 10 W PEP für beide Klassen"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VB109",
+     "q": {
+      "en": "For how long may a radio amateur temporarily operate abroad per stay when the CEPT arrangement applies?",
+      "de": "Wie lange darf ein Funkamateur vorübergehend Amateurfunkverkehr im Ausland je Aufenthalt durchführen, wenn die CEPT-Regelung Anwendung findet?"
+     },
+     "a": [
+      {
+       "en": "Up to 3 months",
+       "de": "Bis zu 3 Monaten"
+      },
+      {
+       "en": "Up to 9 months",
+       "de": "Bis zu 9 Monaten"
+      },
+      {
+       "en": "Up to 6 months",
+       "de": "Bis zu 6 Monaten"
+      },
+      {
+       "en": "Up to one year",
+       "de": "Bis zu einem Jahr"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "BB205",
+     "q": {
+      "en": "What do you do when you receive \"PSE QRP\"?",
+      "de": "Wie verhalten Sie sich, wenn Sie \"PSE QRP\" aufnehmen?"
+     },
+     "a": [
+      {
+       "en": "You reduce your transmitter power.",
+       "de": "Sie verringern die Sendeleistung."
+      },
+      {
+       "en": "You increase your transmitter power.",
+       "de": "Sie erhöhen die Sendeleistung."
+      },
+      {
+       "en": "You change frequency.",
+       "de": "Sie wechseln die Frequenz."
+      },
+      {
+       "en": "You send a confirmation card to the other station.",
+       "de": "Sie senden eine Bestätigungskarte an die Gegenstation."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "BG106",
+     "q": {
+      "en": "What should you bear in mind when entering times on QSL cards? They should be entered in ...",
+      "de": "Was sollten Sie bei der Eintragung von Uhrzeiten in QSL-Karten beachten? Sie sollten in ..."
+     },
+     "a": [
+      {
+       "en": "Coordinated Universal Time (UTC), to make it easier for radio partners abroad to find the entry in their log.",
+       "de": "der koordinierten Weltzeit (UTC) eingetragen werden, um Funkpartnern im Ausland das Auffinden im Logbuch zu erleichtern."
+      },
+      {
+       "en": "your own local time, to comply with German regulations.",
+       "de": "der eigenen Ortszeit eingetragen werden, um den deutschen Vorschriften zu genügen."
+      },
+      {
+       "en": "the local time of your radio partner, to avoid confusion.",
+       "de": "der Ortszeit des Funkpartners eingetragen werden, damit es zu keinen Verwechselungen kommt."
+      },
+      {
+       "en": "your own local time and additionally in your partner's local time, to satisfy both German regulations and make it easy for partners abroad to find the log entry.",
+       "de": "der eigenen Ortszeit und zusätzlich in der Ortszeit des Funkpartners eingetragen werden, um sowohl den deutschen Vorschriften zu genügen als auch Funkpartnern im Ausland das Auffinden im Logbuch zu erleichtern."
+      }
+     ],
+     "c": 0
+    }
+   ],
+   "pass": 7,
+   "short": "E"
   },
   {
-   "id": "VC108",
-   "q": {
-    "en": "Does the Amateur Radio Act require a minimum age for a licence?",
-    "de": "Ist nach dem Amateurfunkgesetz (AFuG) für die Erteilung einer Amateurfunkzulassung ein Mindestalter erforderlich?"
+   "class": {
+    "en": "Class A",
+    "de": "Klasse A"
    },
-   "a": [
+   "licence": {
+    "en": "Class A (full licence)",
+    "de": "Klasse A (Vollzugang)"
+   },
+   "lessons": [
     {
-     "en": "The Act sets no minimum age.",
-     "de": "Das Amateurfunkgesetz (AFuG) sieht kein Mindestalter vor."
+     "t": {
+      "en": "Decibels and the S-meter",
+      "de": "Dezibel und S-Meter"
+     },
+     "b": {
+      "en": "One S-unit is 6 dB, so S4 to S7 is 18 dB. A power gain of 40 equals 16 dB, and a voltage ratio of 4 equals 12 dB. Raising power from 10 to 100 W adds 10 dB, which takes an S8 reading to S9+4 dB. Efficiency is output power divided by input power: 3 A at 5 V from 2 A at 12 V is 62.5 %.",
+      "de": "Eine S-Stufe entspricht 6 dB, von S4 auf S7 sind es also 18 dB. Eine Leistungsverstärkung von 40 entspricht 16 dB, ein Spannungsverhältnis von 4 entspricht 12 dB. Von 10 auf 100 W sind es 10 dB, die S8 auf S9+4 dB anheben. Der Wirkungsgrad ist Ausgangsleistung geteilt durch Eingangsleistung: 3 A bei 5 V aus 2 A bei 12 V ergeben 62,5 %."
+     }
     },
     {
-     "en": "The minimum age to apply is 15.",
-     "de": "Das Mindestalter für die Antragstellung beträgt 15 Jahre."
+     "t": {
+      "en": "Reactance, filters, transformers",
+      "de": "Blindwiderstand, Filter, Übertrager"
+     },
+     "b": {
+      "en": "In an ideal capacitor the current leads the voltage by 90 degrees. A 50 pF capacitor has about 22 Ohm of reactance at 145 MHz. A high-pass filter of 4.7 kOhm and 2.2 nF cuts off at 15.4 kHz. To match 450 Ohm to 50 Ohm you need a 3:1 turns ratio, because impedance scales with the square of the turns.",
+      "de": "Im idealen Kondensator eilt der Strom der Spannung um 90 Grad voraus. Ein Kondensator mit 50 pF hat bei 145 MHz etwa 22 Ohm Blindwiderstand. Ein Hochpass aus 4,7 kOhm und 2,2 nF hat eine Grenzfrequenz von 15,4 kHz. Zur Anpassung von 450 Ohm an 50 Ohm braucht man ein Windungsverhältnis von 3:1, weil die Impedanz mit dem Quadrat der Windungszahl wächst."
+     }
     },
     {
-     "en": "From class E the Act sets a minimum age of 16.",
-     "de": "Das Amateurfunkgesetz (AFuG) sieht ab Klassen E ein Mindestalter von 16 Jahren vor."
+     "t": {
+      "en": "Modulation, receivers, digital",
+      "de": "Modulation, Empfänger, Digitales"
+     },
+     "b": {
+      "en": "An FM signal with 2 kHz audio and 1.8 kHz deviation needs roughly 7.6 kHz of bandwidth. In a superhet the image frequency lies twice the IF away from the wanted one: for 14.24 MHz with a 24.94 MHz oscillator it is 35.64 MHz. A 10-bit D/A converter can produce 1024 different output values.",
+      "de": "Ein FM-Signal mit 2 kHz NF und 1,8 kHz Hub braucht etwa 7,6 kHz Bandbreite. Beim Superhet liegt die Spiegelfrequenz um die doppelte ZF von der Nutzfrequenz entfernt: Bei 14,24 MHz und einem Oszillator auf 24,94 MHz sind es 35,64 MHz. Ein D/A-Umsetzer mit 10 Bit Auflösung kann 1024 verschiedene Ausgangswerte erzeugen."
+     }
     },
     {
-     "en": "For class A you must be of legal age.",
-     "de": "Für die Erteilung der Klasse A ist  die Volljährigkeit Voraussetzung."
+     "t": {
+      "en": "Oscillators, antennas, harmonics",
+      "de": "Oszillatoren, Antennen, Oberwellen"
+     },
+     "b": {
+      "en": "Of the listed oscillator types the OCXO, a crystal oscillator in a temperature-controlled oven, is the most stable. A 20 m wire dipole with a velocity factor of 0.95 resonates at 7.125 MHz. The second harmonic of a signal is at twice its frequency, so for 3.730 MHz it lies at 7.460 MHz.",
+      "de": "Von den genannten Oszillatoren ist der OCXO, ein Quarzoszillator im temperaturgeregelten Ofen, der stabilste. Ein 20 m langer Runddraht-Dipol mit Verkürzungsfaktor 0,95 ist bei 7,125 MHz in Resonanz. Die zweite Harmonische liegt bei der doppelten Frequenz, bei 3,730 MHz also bei 7,460 MHz."
+     }
+    },
+    {
+     "t": {
+      "en": "Power limits for class A",
+      "de": "Leistungsgrenzen der Klasse A"
+     },
+     "b": {
+      "en": "Class A has the highest limits: up to 750 W PEP on 20 m and 17 m, and 750 W PEP at 1240 to 1300 MHz, but no more than 5 W EIRP in the sub-range 1247 to 1263 MHz. On 30 m (10.1 to 10.15 MHz) the limit is 150 W PEP.",
+      "de": "Die Klasse A hat die höchsten Grenzen: bis zu 750 W PEP auf 20 m und 17 m sowie 750 W PEP bei 1240 bis 1300 MHz, im Teilbereich 1247 bis 1263 MHz jedoch höchstens 5 W EIRP. Auf 30 m (10,1 bis 10,15 MHz) liegt die Grenze bei 150 W PEP."
+     }
     }
    ],
-   "c": 0
-  },
-  {
-   "id": "VC110",
-   "q": {
-    "en": "What applies to frequency use? A radio amateur may transmit with their station ...",
-    "de": "Was gilt für Funkamateure hinsichtlich der Frequenznutzung? Ein Funkamateur darf mit seiner Amateurfunkstelle ..."
-   },
-   "a": [
+   "questions": [
     {
-     "en": "on the frequencies allocated to the amateur radio service.",
-     "de": "auf den für den Amateurfunkdienst ausgewiesenen Frequenzen senden."
+     "id": "AA113",
+     "q": {
+      "en": "How big is the difference between S-units S4 and S7 in dB?",
+      "de": "Wie groß ist der Unterschied zwischen den S-Stufen S4 und S7 in dB?"
+     },
+     "a": [
+      {
+       "en": "18 dB",
+       "de": "18 dB"
+      },
+      {
+       "en": "9 dB",
+       "de": "9 dB"
+      },
+      {
+       "en": "15 dB",
+       "de": "15 dB"
+      },
+      {
+       "en": "3 dB",
+       "de": "3 dB"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "on all frequencies permitted in their ITU region.",
-     "de": "auf allen für seine ITU-Region zugelassenen Frequenzen senden."
+     "id": "AA105",
+     "q": {
+      "en": "A power gain of 40 corresponds to ...",
+      "de": "Einer Leistungsverstärkung von 40 entsprechen ..."
+     },
+     "a": [
+      {
+       "en": "16 dB.",
+       "de": "16 dB."
+      },
+      {
+       "en": "36.8 dB.",
+       "de": "36,8 dB."
+      },
+      {
+       "en": "32 dB.",
+       "de": "32 dB."
+      },
+      {
+       "en": "73.8 dB.",
+       "de": "73,8 dB."
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "on any frequency as long as other services are not disturbed.",
-     "de": "beliebige Frequenzen nutzen, sofern keine anderen Funkdienste gestört werden."
+     "id": "AB213",
+     "q": {
+      "en": "A voltage converter changes 12 V to 5 V. It draws 2 A and delivers 3 A. What is its efficiency?",
+      "de": "Ein Spannungswandler setzt 12 V auf 5 V um. Er nimmt 2 A auf und gibt 3 A ab. Wie groß ist sein Wirkungsgrad?"
+     },
+     "a": [
+      {
+       "en": "62.5 %",
+       "de": "62,5 %"
+      },
+      {
+       "en": "160 %",
+       "de": "160 %"
+      },
+      {
+       "en": "27.7 %",
+       "de": "27,7 %"
+      },
+      {
+       "en": "41.7 %",
+       "de": "41,7 %"
+      }
+     ],
+     "c": 0
     },
     {
-     "en": "during an emergency-radio exercise also on frequencies not allocated to amateur radio.",
-     "de": "im Rahmen einer Notfunkübung auch auf nicht für den Amateurfunkdienst ausgewiesenen Frequenzen senden."
+     "id": "AC105",
+     "q": {
+      "en": "What is the magnitude of the capacitive reactance of a 50 pF capacitor at a frequency of 145 MHz?",
+      "de": "Wie groß ist der Betrag des kapazitiven Blindwiderstands eines Kondensators mit 50 pF bei einer Frequenz von 145 MHz ?"
+     },
+     "a": [
+      {
+       "en": "approx. 22 Ohm",
+       "de": "ca. 22 Ohm"
+      },
+      {
+       "en": "approx. 0.045 Ohm",
+       "de": "ca. 0,045 Ohm"
+      },
+      {
+       "en": "approx. 18.2 kOhm",
+       "de": "ca. 18,2 kOhm"
+      },
+      {
+       "en": "approx. 69 Ohm",
+       "de": "ca. 69 Ohm"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "AC101",
+     "q": {
+      "en": "A lossless capacitor is connected to an AC voltage source. What phase shift between voltage and current results?",
+      "de": "Ein verlustloser Kondensator wird an eine Wechselspannungsquelle angeschlossen. Welche Phasenverschiebung zwischen Spannung und Strom stellt sich ein?"
+     },
+     "a": [
+      {
+       "en": "The current leads the voltage by 90 degrees.",
+       "de": "Der Strom eilt der Spannung um 90 ° voraus."
+      },
+      {
+       "en": "The voltage leads the current by 90 degrees.",
+       "de": "Die Spannung eilt dem Strom um 90 ° voraus."
+      },
+      {
+       "en": "The voltage leads the current by 45 degrees.",
+       "de": "Die Spannung eilt dem Strom um 45 ° voraus."
+      },
+      {
+       "en": "The current leads the voltage by 45 degrees.",
+       "de": "Der Strom eilt der Spannung um 45 ° voraus."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "AC305",
+     "q": {
+      "en": "To match an antenna with a feed-point resistance of 450 Ohm to a 50 Ohm transmission line, a transformer with a turns ratio of ...",
+      "de": "Für die Anpassung einer Antenne mit einem Fußpunktwiderstand von 450 Ohm an eine 50 Ohm-Übertragungsleitung sollte ein Übertrager mit einem Windungsverhältnis von ..."
+     },
+     "a": [
+      {
+       "en": "3:1 should be used.",
+       "de": "3:1 verwendet werden."
+      },
+      {
+       "en": "4:1 should be used.",
+       "de": "4:1 verwendet werden."
+      },
+      {
+       "en": "9:1 should be used.",
+       "de": "9:1 verwendet werden."
+      },
+      {
+       "en": "16:1 should be used.",
+       "de": "16:1 verwendet werden."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "AD201",
+     "q": {
+      "en": "What cut-off frequency results for a high-pass filter with a resistor of 4.7 kOhm and a capacitor of 2.2 nF?",
+      "de": "Welche Grenzfrequenz ergibt sich bei einem Hochpass mit einem Widerstand von 4,7 kOhm und einem Kondensator von 2,2 nF?"
+     },
+     "a": [
+      {
+       "en": "15.4 kHz",
+       "de": "15,4 kHz"
+      },
+      {
+       "en": "1.54 kHz",
+       "de": "1,54 kHz"
+      },
+      {
+       "en": "154 kHz",
+       "de": "154 kHz"
+      },
+      {
+       "en": "154 Hz",
+       "de": "154 Hz"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "AD427",
+     "q": {
+      "en": "An audio amplifier raises the input voltage from 1 mV to 4 mV output voltage. Input and output resistance are equal. What is the voltage gain of the amplifier?",
+      "de": "Ein NF-Verstärker hebt die Eingangsspannung von 1 mV auf 4 mV Ausgangsspannung an. Eingangs- und Ausgangswiderstand sind gleich. Wie groß ist die Spannungsverstärkung des Verstärkers?"
+     },
+     "a": [
+      {
+       "en": "12 dB",
+       "de": "12 dB"
+      },
+      {
+       "en": "3 dB",
+       "de": "3 dB"
+      },
+      {
+       "en": "6 dB",
+       "de": "6 dB"
+      },
+      {
+       "en": "9 dB",
+       "de": "9 dB"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "AE309",
+     "q": {
+      "en": "A 145 MHz carrier is frequency-modulated with an audio frequency of 2 kHz and a deviation of 1.8 kHz. Roughly what bandwidth does the modulated signal have? The bandwidth is approximately ...",
+      "de": "Ein Träger von 145 MHz wird mit der NF-Frequenz von 2 kHz und einem Hub von 1,8 kHz frequenzmoduliert. Welche Bandbreite hat das modulierte Signal ungefähr? Die Bandbreite beträgt ungefähr ..."
+     },
+     "a": [
+      {
+       "en": "7.6 kHz",
+       "de": "7,6 kHz"
+      },
+      {
+       "en": "3.8 kHz",
+       "de": "3,8 kHz"
+      },
+      {
+       "en": "5.8 kHz",
+       "de": "5,8 kHz"
+      },
+      {
+       "en": "12 kHz",
+       "de": "12 kHz"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "AF107",
+     "q": {
+      "en": "A single-conversion superhet receiver is tuned to 14.24 MHz. The local oscillator runs at 24.94 MHz, which is above the IF. Where can image-frequency interference occur?",
+      "de": "Ein Einfachsuperhet-Empfänger ist auf 14,24 MHz eingestellt. Der Lokaloszillator schwingt mit 24,94 MHz und liegt mit dieser Frequenz über der ZF. Wo können Spiegelfrequenzstörungen auftreten?"
+     },
+     "a": [
+      {
+       "en": "35.64 MHz",
+       "de": "35,64 MHz"
+      },
+      {
+       "en": "10.7 MHz",
+       "de": "10,7 MHz"
+      },
+      {
+       "en": "3.54 MHz",
+       "de": "3,54 MHz"
+      },
+      {
+       "en": "24.94 MHz",
+       "de": "24,94 MHz"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "AF103",
+     "q": {
+      "en": "A radio amateur increases his transmitter power from 10 to 100 W. Before the increase your S-meter showed exactly S8. To what value should your S-meter reading rise after the power increase?",
+      "de": "Ein Funkamateur erhöht seine Sendeleistung von 10 auf 100 W. Vor der Leistungserhöhung zeigte Ihr S-Meter genau S8. Auf welchen Wert müsste die Anzeige Ihres S-Meters nach der Leistungserhöhung ansteigen?"
+     },
+     "a": [
+      {
+       "en": "S9+4 dB",
+       "de": "S9+4 dB"
+      },
+      {
+       "en": "S9+7 dB",
+       "de": "S9+7 dB"
+      },
+      {
+       "en": "S9",
+       "de": "S9"
+      },
+      {
+       "en": "S9+9 dB",
+       "de": "S9+9 dB"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "AF609",
+     "q": {
+      "en": "How many different output values, e.g. voltages, can an ideal D/A converter with 10-bit resolution produce?",
+      "de": "Wie viele verschiedene Ausgangswerte, z. B. Spannungen, kann ein idealer D/A-Umsetzer mit 10 Bit Auflösung erzeugen?"
+     },
+     "a": [
+      {
+       "en": "1024",
+       "de": "1024"
+      },
+      {
+       "en": "10",
+       "de": "10"
+      },
+      {
+       "en": "100",
+       "de": "100"
+      },
+      {
+       "en": "256",
+       "de": "256"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "AD605",
+     "q": {
+      "en": "Which of the listed oscillators has the greatest frequency stability?",
+      "de": "Welcher der angegebenen Oszillatoren hat die größte Frequenzstabilität?"
+     },
+     "a": [
+      {
+       "en": "OCXO",
+       "de": "OCXO"
+      },
+      {
+       "en": "TCXO",
+       "de": "TCXO"
+      },
+      {
+       "en": "VCO",
+       "de": "VCO"
+      },
+      {
+       "en": "XO",
+       "de": "XO"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "AG103",
+     "q": {
+      "en": "A wire dipole has a total length of 20 m. At what frequency is the dipole resonant if a velocity (shortening) factor of 0.95 is used?",
+      "de": "Ein Drahtdipol hat eine Gesamtlänge von 20 m. Für welche Frequenz ist der Dipol in Resonanz, wenn mit einem Verkürzungsfaktor von 0,95 gerechnet wird?"
+     },
+     "a": [
+      {
+       "en": "7.125 MHz",
+       "de": "7,125 MHz"
+      },
+      {
+       "en": "6.768 MHz",
+       "de": "6,768 MHz"
+      },
+      {
+       "en": "7.500 MHz",
+       "de": "7,500 MHz"
+      },
+      {
+       "en": "7.000 MHz",
+       "de": "7,000 MHz"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "AJ201",
+     "q": {
+      "en": "The second harmonic of the frequency 3.730 MHz is located at ...",
+      "de": "Die zweite Harmonische der Frequenz 3,730 MHz befindet sich auf ..."
+     },
+     "a": [
+      {
+       "en": "7.460 MHz.",
+       "de": "7,460 MHz."
+      },
+      {
+       "en": "1.865 MHz.",
+       "de": "1,865 MHz."
+      },
+      {
+       "en": "11.190 MHz.",
+       "de": "11,190 MHz."
+      },
+      {
+       "en": "5.730 MHz.",
+       "de": "5,730 MHz."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VD731",
+     "q": {
+      "en": "What is the maximum permitted transmitter output power for callsign holders of class A in the frequency ranges 14.000 to 14.350 MHz and 18.068 to 18.168 MHz?",
+      "de": "Wie hoch ist die maximal zulässige Senderausgangsleistung für Rufzeicheninhaber der Klasse A in den Frequenzbereichen 14,000 bis 14,350 MHz und 18,068 bis 18,168 MHz?"
+     },
+     "a": [
+      {
+       "en": "750 W PEP",
+       "de": "750 W PEP"
+      },
+      {
+       "en": "75 W PEP",
+       "de": "75 W PEP"
+      },
+      {
+       "en": "150 W PEP",
+       "de": "150 W PEP"
+      },
+      {
+       "en": "250 W PEP",
+       "de": "250 W PEP"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VD735",
+     "q": {
+      "en": "What is the maximum permitted transmit power for callsign holders of class A in the frequency range 1240 to 1300 MHz?",
+      "de": "Wie hoch ist die maximal zulässige Sendeleistung für Rufzeicheninhaber der Klasse A im Frequenzbereich 1240 bis 1300 MHz?"
+     },
+     "a": [
+      {
+       "en": "750 W PEP, but only a maximum of 5 W EIRP in the sub-range 1247 to 1263 MHz",
+       "de": "750 W PEP, jedoch nur maximal 5 W EIRP im Teilbereich 1247 bis 1263 MHz"
+      },
+      {
+       "en": "100 W PEP",
+       "de": "100 W PEP"
+      },
+      {
+       "en": "250 W PEP",
+       "de": "250 W PEP"
+      },
+      {
+       "en": "75 W PEP, but only a maximum of 5 W EIRP in the sub-range 1247 to 1263 MHz",
+       "de": "75 W PEP, jedoch nur maximal 5 W EIRP im Teilbereich 1247 bis 1263 MHz"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "VD730",
+     "q": {
+      "en": "What is the maximum permitted transmitter output power for callsign holders of class A in the frequency range 10.1 to 10.15 MHz?",
+      "de": "Wie hoch ist die maximal zulässige Senderausgangsleistung für Rufzeicheninhaber der Klasse A im Frequenzbereich 10,1 bis 10,15 MHz?"
+     },
+     "a": [
+      {
+       "en": "150 W PEP",
+       "de": "150 W PEP"
+      },
+      {
+       "en": "75 W PEP",
+       "de": "75 W PEP"
+      },
+      {
+       "en": "250 W PEP",
+       "de": "250 W PEP"
+      },
+      {
+       "en": "750 W PEP",
+       "de": "750 W PEP"
+      }
+     ],
+     "c": 0
     }
    ],
-   "c": 0
-  },
-  {
-   "id": "VC111",
-   "q": {
-    "en": "Which stations may a radio amateur communicate with?",
-    "de": "Mit welchen Funkstellen darf der Funkamateur Funkverkehr abwickeln?"
-   },
-   "a": [
-    {
-     "en": "Only other amateur stations",
-     "de": "Ausschließlich mit anderen Amateurfunkstellen"
-    },
-    {
-     "en": "All stations active on the amateur bands",
-     "de": "Mit allen Funkstellen, die auf den Amateurfunkbändern tätig sind"
-    },
-    {
-     "en": "Other amateur stations and stations of authorities and security organisations",
-     "de": "Mit anderen Amateurfunkstellen und Funkstellen der Behörden und Organisationen mit Sicherheitsaufgaben (BOS)"
-    },
-    {
-     "en": "Other amateur stations and stations of the aeronautical or maritime service",
-     "de": "Mit anderen Amateurfunkstellen und Funkstellen des Flug- und/oder Seefunkdienstes"
-    }
-   ],
-   "c": 0
-  },
-  {
-   "id": "VC112",
-   "q": {
-    "en": "May a radio amateur relay messages that are not about amateur radio for or to third parties?",
-    "de": "Darf ein Funkamateur Nachrichten, die nicht den Amateurfunkdienst betreffen, für und an Dritte übermitteln?"
-   },
-   "a": [
-    {
-     "en": "Only in emergencies and disasters",
-     "de": "Nur in Not- und Katastrophenfällen"
-    },
-    {
-     "en": "No, never",
-     "de": "Nein, unter keinen Umständen"
-    },
-    {
-     "en": "Yes, at any time",
-     "de": "Ja, jederzeit"
-    },
-    {
-     "en": "Only when asked by the local office of the Bundesnetzagentur",
-     "de": "Nur nach Aufforderung durch die zuständige Außenstelle der Bundesnetzagentur"
-    }
-   ],
-   "c": 0
-  },
-  {
-   "id": "VC114",
-   "q": {
-    "en": "May an amateur station be operated for commercial purposes? An amateur station may ...",
-    "de": "Darf die Amateurfunkstelle zu gewerblich-wirtschaftlichen Zwecken betrieben werden? Eine Amateurfunkstelle darf ..."
-   },
-   "a": [
-    {
-     "en": "not be operated for commercial purposes.",
-     "de": "nicht zu gewerblich-wirtschaftlichen Zwecken betrieben werden."
-    },
-    {
-     "en": "be operated commercially after registering a business with the callsign.",
-     "de": "nach Anzeige des Gewerbes unter Angabe des Rufzeichens zu gewerblich-wirtschaftlichen Zwecken betrieben werden."
-    },
-    {
-     "en": "be operated to provide telecommunications services professionally.",
-     "de": "zum Zwecke des geschäftsmäßigen Erbringens von Telekommunikationsdiensten betrieben werden."
-    },
-    {
-     "en": "be operated commercially after approval by the Bundesnetzagentur.",
-     "de": "nach Genehmigung durch die Bundesnetzagentur zu gewerblich-wirtschaftlichen Zwecken betrieben werden."
-    }
-   ],
-   "c": 0
-  },
-  {
-   "id": "VC116",
-   "q": {
-    "en": "Which personal callsigns may a radio amateur use?",
-    "de": "Welche personengebundenen Rufzeichen darf ein Funkamateur benutzen?"
-   },
-   "a": [
-    {
-     "en": "Only a callsign assigned to them by the Bundesnetzagentur",
-     "de": "Nur ein ihm von der Bundesnetzagentur zugeteiltes Rufzeichen"
-    },
-    {
-     "en": "Any callsign",
-     "de": "Beliebige Rufzeichen"
-    },
-    {
-     "en": "Only a callsign assigned by an amateur radio association",
-     "de": "Nur ein von einer Amateurfunkvereinigung zugeteiltes Rufzeichen"
-    },
-    {
-     "en": "When using someone else's station, the personal callsign of the station owner",
-     "de": "Bei Nutzung einer fremden Station das personengebundene Rufzeichen des Stationsinhabers"
-    }
-   ],
-   "c": 0
-  },
-  {
-   "id": "VD205",
-   "q": {
-    "en": "When must a radio amateur give their callsign?",
-    "de": "Wann muss der Funkamateur sein Rufzeichen nennen?"
-   },
-   "a": [
-    {
-     "en": "At the start and end of every contact and at least every 10 minutes",
-     "de": "Am Anfang und am Ende jeder Funkverbindung sowie mindestens alle 10 Minuten"
-    },
-    {
-     "en": "When asked by another station in the contact",
-     "de": "Auf Verlangen einer anderen am Funkverkehr beteiligten Funkstelle"
-    },
-    {
-     "en": "At least every 15 minutes during a contact",
-     "de": "Mindestens alle 15 Minuten während einer Funkverbindung"
-    },
-    {
-     "en": "At the latest 5 minutes into an uninterrupted transmission",
-     "de": "Spätestens 5 Minuten nach einer ununterbrochenen Aussendung"
-    }
-   ],
-   "c": 0
-  },
-  {
-   "id": "VD207",
-   "q": {
-    "en": "How can you recognise an amateur station on the air?",
-    "de": "Woran erkennt man eine Amateurfunkstelle im Funkbetrieb?"
-   },
-   "a": [
-    {
-     "en": "By its amateur radio callsign",
-     "de": "Am Amateurfunkrufzeichen"
-    },
-    {
-     "en": "By the frequency range used",
-     "de": "Am benutzten Frequenzbereich"
-    },
-    {
-     "en": "By the emission mode used",
-     "de": "An der verwendeten Sendeart"
-    },
-    {
-     "en": "By the modulation",
-     "de": "An der Modulation"
-    }
-   ],
-   "c": 0
-  },
-  {
-   "id": "VD208",
-   "q": {
-    "en": "Is a radio amateur entitled to a specific callsign?",
-    "de": "Hat ein Funkamateur Anspruch auf Zuteilung eines bestimmten Rufzeichens?"
-   },
-   "a": [
-    {
-     "en": "No, there is no such entitlement.",
-     "de": "Nein, es besteht kein Anspruch darauf."
-    },
-    {
-     "en": "Yes, if it is not yet assigned.",
-     "de": "Ja, wenn es noch nicht vergeben ist."
-    },
-    {
-     "en": "No, unless they have special personal reasons and the callsign is free.",
-     "de": "Nein, es sei denn, er kann besondere persönliche Gründe geltend machen und das Rufzeichen ist frei."
-    },
-    {
-     "en": "Yes, if it was assigned to them before.",
-     "de": "Ja, wenn es ihm schon einmal zugeteilt war."
-    }
-   ],
-   "c": 0
-  },
-  {
-   "id": "VD301",
-   "q": {
-    "en": "What is training radio operation (Ausbildungsfunkbetrieb) for under the Amateur Radio Ordinance? It serves ...",
-    "de": "Wozu dient der Ausbildungsfunkbetrieb gemäß Amateurfunkverordnung (AFuV)? Er dient ..."
-   },
-   "a": [
-    {
-     "en": "the practical preparation for the technical exam for an amateur radio certificate.",
-     "de": "der praktischen Vorbereitung auf das Ablegen der fachlichen Prüfung zum Erwerb eines Amateurfunkzeugnisses."
-    },
-    {
-     "en": "the sole demonstration of amateur radio operation.",
-     "de": "der alleinigen Vorführung des Amateurfunkbetriebes."
-    },
-    {
-     "en": "the trainee taking part in amateur radio without supervision.",
-     "de": "der Teilnahme des Auszubildenden am Amateurfunkdienst ohne Aufsicht."
-    },
-    {
-     "en": "completing the radio amateur's skills in Morse telegraphy.",
-     "de": "der Vervollständigung der Fertigkeiten des Funkamateurs in der Morsetelegrafie."
-    }
-   ],
-   "c": 0
-  },
-  {
-   "id": "VD303",
-   "q": {
-    "en": "Non-amateurs may take part in training radio operation ...",
-    "de": "Nicht-Funkamateure dürfen am Ausbildungsfunkbetrieb ..."
-   },
-   "a": [
-    {
-     "en": "only under direct guidance and supervision of a radio amateur with an assigned class A or E callsign.",
-     "de": "nur unter unmittelbarer Anleitung und Aufsicht eines Funkamateurs mit zugeteiltem Rufzeichen der Klasse A oder E teilnehmen."
-    },
-    {
-     "en": "only at club stations under supervision of a class A or E amateur.",
-     "de": "nur an Klubstationen unter Aufsicht eines Funkamateurs mit zugeteiltem Rufzeichen der Klasse A oder E teilnehmen."
-    },
-    {
-     "en": "also at weekends without special conditions.",
-     "de": "auch an Wochenenden ohne besondere Auflagen teilnehmen."
-    },
-    {
-     "en": "also without guidance and supervision of the training amateur.",
-     "de": "auch ohne Anleitung und Aufsicht des ausbildenden Funkamateurs teilnehmen."
-    }
-   ],
-   "c": 0
-  },
-  {
-   "id": "VD306",
-   "q": {
-    "en": "Who must use the callsign suffix \"/T\" or \"/Trainee\" during training radio operation?",
-    "de": "Von wem ist während des Ausbildungsfunkbetriebs der Rufzeichenzusatz \"/T\" bzw. \"/Trainee\" zu benutzen?"
-   },
-   "a": [
-    {
-     "en": "The trainee",
-     "de": "Vom Auszubildenden"
-    },
-    {
-     "en": "The trainer",
-     "de": "Vom Ausbilder"
-    },
-    {
-     "en": "The trainee and the trainer",
-     "de": "Vom Auszubildenden und vom Ausbilder"
-    },
-    {
-     "en": "The person responsible for the school station",
-     "de": "Vom Verantwortlichen der Schulstation"
-    }
-   ],
-   "c": 0
+   "pass": 7,
+   "short": "A"
   }
  ]
 }

@@ -58,7 +58,7 @@ func _fmt(s: String) -> String:
 
 
 func _step_data(i: int) -> Dictionary:
-	return (Content.qso.get("steps", []) as Array)[i]
+	return Content.qso_steps(Game.cur_level())[i]
 
 
 # ---- layout -----------------------------------------------------------------------------
@@ -123,7 +123,7 @@ func _build_tuner() -> void:
 	if _tuned:
 		add_lbl(I18n.t("qso.found"), Vector2(672, 330), 516, 22, Palette.GREEN, Style.font_body_bold)
 		add_btn(I18n.t("common.continue"), Vector2(672, 400), func() -> void:
-			Game.set_flag("qso.tuned", true)
+			Game.set_flag(Game.k("qso.tuned"), true)
 			Sfx.stop_morse()
 			_stage = 1
 			_start_step(0)
@@ -221,16 +221,16 @@ func _on_choice(step_idx: int, idx: int) -> void:
 	_log.append({"who": "me", "d": (s["choices"] as Array)[idx]})
 	match _stage:
 		1:
-			Game.set_flag("qso.answered", true)
+			Game.set_flag(Game.k("qso.answered"), true)
 			_stage = 2
 			_start_step(1)
 		2:
-			Game.set_flag("qso.exchanged", true)
+			Game.set_flag(Game.k("qso.exchanged"), true)
 			_stage = 3
 			_spell_i = 0
 			_new_spell_round()
 		4:
-			Game.set_flag("qso.done", true)
+			Game.set_flag(Game.k("qso.done"), true)
 			Sfx.reward()
 			_stage = 5
 	_rebuild()
@@ -274,7 +274,7 @@ func _on_spell(word: String) -> void:
 	Sfx.good()
 	_spell_i += 1
 	if _spell_i >= cs.length():
-		Game.set_flag("qso.spelled", true)
+		Game.set_flag(Game.k("qso.spelled"), true)
 		_stage = 4
 		_start_step(2)
 	else:

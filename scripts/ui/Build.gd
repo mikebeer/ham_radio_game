@@ -19,7 +19,7 @@ var _score := 0
 
 func _ready() -> void:
 	_part = str(SceneManager.params.get("part", "psu"))
-	_data = Content.part(_part)
+	_data = Content.part_tier(_part, Game.cur_level())
 	if Game.owns(_part):
 		_state = "lesson"
 	super._ready()
@@ -28,7 +28,7 @@ func _ready() -> void:
 func _build() -> void:
 	add_bg()
 	var part_name := I18n.t("part." + _part)
-	add_header(I18n.t("build.title"), I18n.t("build.lesson_sub", [part_name]) if _state == "lesson" else part_name)
+	add_header(I18n.t("build.title"), I18n.t("build.lesson_sub", [part_name]) + " · " + I18n.t("level.name", [Game.cur_level()]) if _state == "lesson" else part_name)
 	add_card(Rect2(60, 120, 560, 500))
 	_scene = Control.new()
 	_scene.position = Vector2(60, 120)

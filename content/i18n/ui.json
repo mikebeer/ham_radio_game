@@ -467,6 +467,26 @@
   "en": "Try to send",
   "de": "Versuche zu geben"
  },
+ "level.name": {
+  "en": "Level %d",
+  "de": "Stufe %d"
+ },
+ "level.up": {
+  "en": "Level %d unlocked!",
+  "de": "Stufe %d freigeschaltet!"
+ },
+ "level.up_body": {
+  "en": "Your shack can be upgraded, new rules and questions are waiting, and there is a deeper first contact to try.",
+  "de": "Deine Funkbude lässt sich ausbauen, neue Regeln und Fragen warten und ein anspruchsvolleres Funkgespräch ebenfalls."
+ },
+ "level.soon": {
+  "en": "More levels for this country are coming.",
+  "de": "Weitere Stufen für dieses Land folgen."
+ },
+ "level.locked": {
+  "en": "Finish all four goals of the previous level to unlock.",
+  "de": "Schließe alle vier Ziele der vorigen Stufe ab, um sie freizuschalten."
+ },
  "hub.profile": {
   "en": "Profile",
   "de": "Profil"

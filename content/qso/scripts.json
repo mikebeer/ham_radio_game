@@ -78,5 +78,171 @@
    ],
    "c": 0
   }
- ]
+ ],
+ "levels": {
+  "2": {
+   "steps": [
+    {
+     "id": "answer",
+     "them": {
+      "en": "CQ CQ CQ, this is {other}, {other}, calling CQ and listening. K.",
+      "de": "CQ CQ CQ, hier ist {other}, {other}, rufe CQ und höre. Kommen."
+     },
+     "prompt": {
+      "en": "Answer his CQ call with both callsigns, phonetics optional.",
+      "de": "Antworte auf seinen CQ-Ruf mit beiden Rufzeichen, Buchstabieren ist optional."
+     },
+     "choices": [
+      {
+       "en": "{other} de {my}, {my}. K.",
+       "de": "{other} de {my}, {my}. Kommen."
+      },
+      {
+       "en": "Break break, 10-4 good buddy, what's your twenty?",
+       "de": "Break break, 10-4 guter Freund, wo steckst du?"
+      },
+      {
+       "en": "{other}, {other}, {other}. Come in.",
+       "de": "{other}, {other}, {other}. Kommen."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "exchange",
+     "them": {
+      "en": "{my} de {other}. Thanks for the call, you are 57 here. My name is {pname}, QTH {pqth}. I am running 50 watts into a dipole. Weather is sunny and warm. How copy? K.",
+      "de": "{my} de {other}. Danke für den Anruf, du bist hier 57. Mein Name ist {pname}, QTH {pqth}. Ich fahre 50 Watt auf einen Dipol. Wetter ist sonnig und warm. Wie hörst du mich? Kommen."
+     },
+     "prompt": {
+      "en": "Answer every item: confirm, give his report, your name, QTH, rig and weather.",
+      "de": "Beantworte jeden Punkt: bestätige, gib seinen Rapport, deinen Namen, QTH, Station und Wetter durch."
+     },
+     "choices": [
+      {
+       "en": "{other} de {my}. R R, thanks {pname}. Your report is 57. My name is {name}. Your QTH {pqth} is copied. Fine business on 50 watts. Weather here is cloudy. K.",
+       "de": "{other} de {my}. Roger, danke {pname}. Dein Rapport ist 57. Mein Name ist {name}. Dein QTH {pqth} ist notiert. Schön, mit 50 Watt. Wetter hier ist bewölkt. Kommen."
+      },
+      {
+       "en": "{other} de {my}. You are 59, 10-4. My handle is {name}. Over and out.",
+       "de": "{other} de {my}. Du bist 59, 10-4. Mein Handle ist {name}. Over and out."
+      },
+      {
+       "en": "R, thanks. I am {name}. Weather is cloudy. K.",
+       "de": "Verstanden, danke. Ich bin {name}. Wetter ist bewölkt. Kommen."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "sign_off",
+     "them": {
+      "en": "{my} de {other}. Thanks for the nice chat, {name}. Please confirm by QSL card. 73 and all the best. {my} de {other}, K.",
+      "de": "{my} de {other}. Danke für das nette Gespräch, {name}. Bitte bestätige per QSL-Karte. 73 und alles Gute. {my} de {other}, Kommen."
+     },
+     "prompt": {
+      "en": "Confirm the QSL and close properly with 73 and both callsigns.",
+      "de": "Bestätige die QSL und beende korrekt mit 73 und beiden Rufzeichen."
+     },
+     "choices": [
+      {
+       "en": "{other} de {my}. QSL, thanks {pname}, I will send my card. 73 and good DX! {other} de {my}, SK.",
+       "de": "{other} de {my}. QSL, danke {pname}, ich schicke meine Karte. 73 und gutes DX! {other} de {my}, Ende."
+      },
+      {
+       "en": "Over and out, 10-4, catch you on the flip side!",
+       "de": "Over and out, 10-4, bis zur nächsten Runde!"
+      },
+      {
+       "en": "73, bye bye.",
+       "de": "73, tschüss."
+      }
+     ],
+     "c": 0
+    }
+   ]
+  },
+  "3": {
+   "steps": [
+    {
+     "id": "answer",
+     "them": {
+      "en": "CQ DX, CQ DX, this is {other}, {other}. Listening up 5. QRZ?",
+      "de": "CQ DX, CQ DX, hier ist {other}, {other}. Höre up 5. QRZ?"
+     },
+     "prompt": {
+      "en": "He listens up 5 kHz (split). Call him once, short, on the right frequency.",
+      "de": "Er hört 5 kHz höher (Split). Rufe ihn kurz und einmal auf der richtigen Frequenz."
+     },
+     "choices": [
+      {
+       "en": "{my}. (Calling up 5, callsign only.)",
+       "de": "{my}. (Rufe up 5, nur das Rufzeichen.)"
+      },
+      {
+       "en": "{other}, {other}, {other}, please answer me, I am a new station, {other} de {my}, pse pse pse.",
+       "de": "{other}, {other}, {other}, bitte antworte mir, ich bin eine neue Station, {other} de {my}, bitte bitte bitte."
+      },
+      {
+       "en": "{my}. (Calling on his own frequency, on top of him.)",
+       "de": "{my}. (Rufe auf seiner eigenen Frequenz, mitten in sein Signal.)"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "exchange",
+     "them": {
+      "en": "{my}, you are 59 001. QRZ? Again please, your report? K.",
+      "de": "{my}, du bist 59 001. QRZ? Noch einmal bitte, dein Rapport? Kommen."
+     },
+     "prompt": {
+      "en": "He asks you to repeat. Send your report and serial number.",
+      "de": "Er bittet um Wiederholung. Gib Rapport und Seriennummer durch."
+     },
+     "choices": [
+      {
+       "en": "{other}, you are 59 001. I say again, 59 002. {my}.",
+       "de": "{other}, du bist 59 001. Ich wiederhole, 59 002. {my}."
+      },
+      {
+       "en": "Pardon? What? Say it again slowly please, I did not get anything.",
+       "de": "Wie bitte? Was? Sag es bitte nochmal langsam, ich habe nichts verstanden."
+      },
+      {
+       "en": "59 59 59 59 59 59, over.",
+       "de": "59 59 59 59 59 59, over."
+      }
+     ],
+     "c": 0
+    },
+    {
+     "id": "sign_off",
+     "them": {
+      "en": "{my}, QSL 002, thanks. Time is 1432 UTC. I will upload to LoTW. 73! {other}.",
+      "de": "{my}, QSL 002, danke. Zeit ist 1432 UTC. Ich lade auf LoTW hoch. 73! {other}."
+     },
+     "prompt": {
+      "en": "Confirm the log, say thanks and close briefly.",
+      "de": "Bestätige das Log, bedanke dich und beende kurz."
+     },
+     "choices": [
+      {
+       "en": "{other}, QSL, 1432 UTC, thanks for the contact. LoTW confirmed. 73! {my}.",
+       "de": "{other}, QSL, 1432 UTC, danke für den Kontakt. LoTW bestätigt. 73! {my}."
+      },
+      {
+       "en": "Great, see you later, time was half past two local, bye!",
+       "de": "Super, bis später, Zeit war halb drei Ortszeit, tschüss!"
+      },
+      {
+       "en": "Over and out, good luck with the contest!",
+       "de": "Over and out, viel Glück beim Contest!"
+      }
+     ],
+     "c": 0
+    }
+   ]
+  }
+ }
 }

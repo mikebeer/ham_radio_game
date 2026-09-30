@@ -27,7 +27,7 @@ var _sent_msg := ""
 
 
 func _ready() -> void:
-	_level = clampi(Game.morse_passed() + 1, 1, Game.MORSE_LEVELS)
+	_level = clampi(Game.morse_passed() + 1, 1, Game.morse_cap())
 	_new_round()
 	super._ready()
 	# play the first character after the screen is up
@@ -128,7 +128,7 @@ func _restart_level() -> void:
 
 func _build() -> void:
 	add_bg()
-	add_header(I18n.t("morse.title"), I18n.t("morse.sub", [_level, Game.MORSE_LEVELS]))
+	add_header(I18n.t("morse.title"), I18n.t("morse.sub", [_level, Game.morse_cap()]))
 	add_card(Rect2(60, 120, 540, 500))
 	add_lbl(I18n.t("morse.known"), Vector2(92, 140), 0, 14, Palette.MUTED, Style.font_body_bold)
 	_grid = Control.new()
@@ -207,8 +207,8 @@ func _build_result() -> void:
 	var col := Palette.GREEN if _passed else Palette.CORAL
 	add_title(I18n.t("common.score", [_hits, ROUNDS]), Vector2(672, 150), 40, col, 516)
 	if _passed:
-		add_lbl(I18n.t("morse.levelup") if Game.morse_passed() < Game.MORSE_LEVELS else I18n.t("build.all_done"), Vector2(672, 230), 516, 22, Palette.CREAM, Style.font_body_bold)
-		if _level < Game.MORSE_LEVELS:
+		add_lbl(I18n.t("morse.levelup") if Game.morse_passed() < Game.morse_cap() else I18n.t("build.all_done"), Vector2(672, 230), 516, 22, Palette.CREAM, Style.font_body_bold)
+		if _level < Game.morse_cap():
 			add_btn(I18n.t("common.next"), Vector2(672, 400), func() -> void:
 				_level += 1
 				_restart_level(), "PrimaryButton", Vector2(200, 52))
