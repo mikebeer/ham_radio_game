@@ -1,0 +1,273 @@
+{
+ "country": "at",
+ "status": "primer",
+ "callsign": "OE1ABC",
+ "partner": "DL5XYZ",
+ "partner_qth": {
+  "en": "Munich",
+  "de": "München"
+ },
+ "licence": {
+  "en": "Class 4 / class 3",
+  "de": "Klasse 4 / Klasse 3"
+ },
+ "pass": 6,
+ "source": {
+  "en": "Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009 (topics and Q-codes); original text",
+  "de": "Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009 (Themen und Q-Gruppen); eigener Text"
+ },
+ "lessons": [
+  {
+   "t": {
+    "en": "Rules that apply",
+    "de": "Welche Regeln gelten"
+   },
+   "b": {
+    "en": "Austrian amateur radio is based on the Amateur Radio Act, national ordinances, international rules of the ITU (Radio Regulations) and recommendations of the CEPT. The exam catalogue lists these as legal topics.",
+    "de": "Der österreichische Amateurfunk beruht auf dem Amateurfunkgesetz, nationalen Verordnungen, den internationalen Regeln der ITU (VO Funk) und Empfehlungen der CEPT. Der Fragenkatalog führt diese als Rechtsthemen auf."
+   }
+  },
+  {
+   "t": {
+    "en": "Licence classes 1, 3 and 4",
+    "de": "Bewilligungsklassen 1, 3 und 4"
+   },
+   "b": {
+    "en": "Austria issues amateur radio licences in classes 1, 3 and 4. The exam covers legal rules, operating and skills, and technical basics. On request you can take an extra Morse exam.",
+    "de": "Österreich vergibt Amateurfunkbewilligungen der Klassen 1, 3 und 4. Die Prüfung umfasst Recht, Betrieb und Fertigkeiten sowie technische Grundlagen. Auf Antrag kann zusätzlich eine Morseprüfung abgelegt werden."
+   }
+  },
+  {
+   "t": {
+    "en": "Callsigns and the log",
+    "de": "Rufzeichen und Funktagebuch"
+   },
+   "b": {
+    "en": "Austrian callsigns start with OE. The digit tells you the region. You keep a station log (Funktagebuch) of your contacts.",
+    "de": "Österreichische Rufzeichen beginnen mit OE. Die Ziffer zeigt die Region an. Du führst ein Funktagebuch über deine Verbindungen."
+   }
+  },
+  {
+   "t": {
+    "en": "Q-codes and abbreviations",
+    "de": "Q-Gruppen und Abkürzungen"
+   },
+   "b": {
+    "en": "Operators use short codes: QRM (interference), QSO (contact), QSY (change frequency), QRP (low power), QTH (my location), QRT (stop). CQ means a call to all stations, DE means from, K means go ahead.",
+    "de": "Funkamateure nutzen Kurzzeichen: QRM (Störung), QSO (Verbindung), QSY (Frequenzwechsel), QRP (geringe Leistung), QTH (mein Standort), QRT (Sendeschluss). CQ heißt Anruf an alle, DE heißt von, K heißt kommen."
+   }
+  },
+  {
+   "t": {
+    "en": "Exam topics to practise",
+    "de": "Prüfungsthemen zum Üben"
+   },
+   "b": {
+    "en": "The 2009 catalogue asks open questions, for example: What is the ITU? What is the CEPT? When does a licence expire? What must you do if you move your station? What does the log contain? Try to answer them aloud. This catalogue is from 2009, so check the current rules.",
+    "de": "Der Katalog von 2009 stellt offene Fragen, zum Beispiel: Was ist die ITU? Was ist die CEPT? Wann erlischt eine Bewilligung? Was tun bei Standortwechsel? Was steht im Funktagebuch? Versuche, sie laut zu beantworten. Dieser Katalog stammt von 2009, prüfe also die aktuellen Regeln."
+   }
+  }
+ ],
+ "questions": [
+  {
+   "q": {
+    "en": "What does QRM mean?",
+    "de": "Was bedeutet QRM?"
+   },
+   "a": [
+    {
+     "en": "I am being interfered with",
+     "de": "Ich werde gestört"
+    },
+    {
+     "en": "I will send a confirmation",
+     "de": "Ich gebe eine Empfangsbestätigung"
+    },
+    {
+     "en": "Change to frequency ...",
+     "de": "Wechseln Sie auf die Frequenz ..."
+    },
+    {
+     "en": "My location is ...",
+     "de": "Mein Standort ist ..."
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "What does QSY mean?",
+    "de": "Was bedeutet QSY?"
+   },
+   "a": [
+    {
+     "en": "Change to another frequency",
+     "de": "Wechseln Sie die Frequenz"
+    },
+    {
+     "en": "Reduce your power",
+     "de": "Vermindern Sie die Leistung"
+    },
+    {
+     "en": "Stop transmitting",
+     "de": "Stellen Sie die Aussendung ein"
+    },
+    {
+     "en": "What time is it?",
+     "de": "Wie spät ist es?"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "What does QTH mean?",
+    "de": "Was bedeutet QTH?"
+   },
+   "a": [
+    {
+     "en": "My location is ...",
+     "de": "Mein Standort ist ..."
+    },
+    {
+     "en": "Your signal fades",
+     "de": "Ihre Zeichen schwanken"
+    },
+    {
+     "en": "I am ready",
+     "de": "Ich bin betriebsbereit"
+    },
+    {
+     "en": "Send faster",
+     "de": "Geben Sie schneller"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "Which Q-code asks the other station to reduce power?",
+    "de": "Welche Q-Gruppe bittet die Gegenstation, die Leistung zu vermindern?"
+   },
+   "a": [
+    {
+     "en": "QRP",
+     "de": "QRP"
+    },
+    {
+     "en": "QRO",
+     "de": "QRO"
+    },
+    {
+     "en": "QRT",
+     "de": "QRT"
+    },
+    {
+     "en": "QRV",
+     "de": "QRV"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "What does CQ mean?",
+    "de": "Was bedeutet CQ?"
+   },
+   "a": [
+    {
+     "en": "A call to all stations",
+     "de": "Anruf an alle Funkstellen"
+    },
+    {
+     "en": "Please repeat",
+     "de": "Bitte wiederholen"
+    },
+    {
+     "en": "Go ahead",
+     "de": "Kommen"
+    },
+    {
+     "en": "Goodbye",
+     "de": "Auf Wiederhören"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "What does DE mean in a radio call?",
+    "de": "Was bedeutet DE in einem Funkanruf?"
+   },
+   "a": [
+    {
+     "en": "From",
+     "de": "Von"
+    },
+    {
+     "en": "Please",
+     "de": "Bitte"
+    },
+    {
+     "en": "Good",
+     "de": "Gut"
+    },
+    {
+     "en": "Distance",
+     "de": "Entfernung"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "What does QRT mean?",
+    "de": "Was bedeutet QRT?"
+   },
+   "a": [
+    {
+     "en": "Stop transmitting",
+     "de": "Stellen Sie die Aussendung ein"
+    },
+    {
+     "en": "I am ready",
+     "de": "Ich bin betriebsbereit"
+    },
+    {
+     "en": "Send slower",
+     "de": "Geben Sie langsamer"
+    },
+    {
+     "en": "Increase power",
+     "de": "Erhöhen Sie die Leistung"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "What does R mean in Morse operating?",
+    "de": "Was bedeutet R im Funkbetrieb?"
+   },
+   "a": [
+    {
+     "en": "Roger, understood",
+     "de": "Verstanden"
+    },
+    {
+     "en": "No",
+     "de": "Nein"
+    },
+    {
+     "en": "Repeat",
+     "de": "Wiederholen"
+    },
+    {
+     "en": "Reduce",
+     "de": "Vermindern"
+    }
+   ],
+   "c": 0
+  }
+ ]
+}

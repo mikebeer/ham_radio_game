@@ -1,0 +1,474 @@
+{
+ "app.title": {
+  "en": "CQ Quest",
+  "de": "CQ Quest"
+ },
+ "app.tagline": {
+  "en": "Become a ham radio operator",
+  "de": "Werde Funkamateur"
+ },
+ "splash.start": {
+  "en": "Press to start",
+  "de": "Zum Starten drücken"
+ },
+ "common.next": {
+  "en": "Next",
+  "de": "Weiter"
+ },
+ "common.back": {
+  "en": "Back",
+  "de": "Zurück"
+ },
+ "common.skip": {
+  "en": "Skip",
+  "de": "Überspringen"
+ },
+ "common.continue": {
+  "en": "Continue",
+  "de": "Los geht's"
+ },
+ "common.check": {
+  "en": "Check",
+  "de": "Prüfen"
+ },
+ "common.retry": {
+  "en": "Try again",
+  "de": "Nochmal"
+ },
+ "common.close": {
+  "en": "Close",
+  "de": "Schließen"
+ },
+ "common.correct": {
+  "en": "Correct! Well done.",
+  "de": "Richtig! Gut gemacht."
+ },
+ "common.wrong": {
+  "en": "Not quite. The right answer is highlighted.",
+  "de": "Leider falsch. Die richtige Antwort ist markiert."
+ },
+ "common.score": {
+  "en": "%d of %d correct",
+  "de": "%d von %d richtig"
+ },
+ "common.locked": {
+  "en": "Locked",
+  "de": "Gesperrt"
+ },
+ "intro.1.t": {
+  "en": "Somewhere out there, someone is calling CQ.",
+  "de": "Irgendwo da draußen ruft jemand CQ."
+ },
+ "intro.1.b": {
+  "en": "Radio waves cross oceans without wires or the internet. Amateur radio lets you send them yourself, once you know the rules and how to build a station.",
+  "de": "Funkwellen überqueren Ozeane, ganz ohne Kabel und Internet. Mit Amateurfunk sendest du sie selbst, sobald du die Regeln kennst und eine Station aufbauen kannst."
+ },
+ "intro.2.t": {
+  "en": "Your own radio shack",
+  "de": "Deine eigene Funkbude"
+ },
+ "intro.2.b": {
+  "en": "Every part you learn about, from power supply to antenna, appears in your shack. Answer the questions and the part is yours.",
+  "de": "Jedes Teil, über das du etwas lernst, vom Netzteil bis zur Antenne, erscheint in deiner Funkbude. Beantworte die Fragen und das Teil gehört dir."
+ },
+ "intro.3.t": {
+  "en": "Four goals",
+  "de": "Vier Ziele"
+ },
+ "intro.3.b": {
+  "en": "Learn the rules of your country. Build your shack. Make your first contact. Learn Morse code.",
+  "de": "Lerne die Regeln deines Landes. Baue deine Funkbude auf. Führe dein erstes Funkgespräch. Lerne Morsen."
+ },
+ "intro.goal1": {
+  "en": "Know the rules",
+  "de": "Die Regeln kennen"
+ },
+ "intro.goal2": {
+  "en": "Build your radio shack",
+  "de": "Deine Funkbude bauen"
+ },
+ "intro.goal3": {
+  "en": "Make your first contact",
+  "de": "Dein erstes Funkgespräch"
+ },
+ "intro.goal4": {
+  "en": "Learn Morse code",
+  "de": "Morsen lernen"
+ },
+ "setup.title": {
+  "en": "Who are you?",
+  "de": "Wer bist du?"
+ },
+ "setup.sub": {
+  "en": "Pick an avatar, a name, your country and language.",
+  "de": "Wähle Avatar, Namen, Land und Sprache."
+ },
+ "setup.name": {
+  "en": "Your name",
+  "de": "Dein Name"
+ },
+ "setup.name_hint": {
+  "en": "Type your name",
+  "de": "Namen eingeben"
+ },
+ "setup.country": {
+  "en": "Country (sets the legal chapter)",
+  "de": "Land (bestimmt das Rechtskapitel)"
+ },
+ "setup.language": {
+  "en": "Language",
+  "de": "Sprache"
+ },
+ "country.de": {
+  "en": "Germany",
+  "de": "Deutschland"
+ },
+ "country.ch": {
+  "en": "Switzerland",
+  "de": "Schweiz"
+ },
+ "country.at": {
+  "en": "Austria",
+  "de": "Österreich"
+ },
+ "country.us": {
+  "en": "United States",
+  "de": "USA"
+ },
+ "country.uk": {
+  "en": "United Kingdom",
+  "de": "Großbritannien"
+ },
+ "hub.goals": {
+  "en": "Your goals",
+  "de": "Deine Ziele"
+ },
+ "hub.goal1": {
+  "en": "Know the rules",
+  "de": "Regeln kennen"
+ },
+ "hub.goal2": {
+  "en": "Build your shack",
+  "de": "Funkbude bauen"
+ },
+ "hub.goal3": {
+  "en": "First contact (QSO)",
+  "de": "Erstes Funkgespräch (QSO)"
+ },
+ "hub.goal4": {
+  "en": "Morse code",
+  "de": "Morsen"
+ },
+ "hub.goal1.sub": {
+  "en": "%s · %s",
+  "de": "%s · %s"
+ },
+ "hub.goal2.sub": {
+  "en": "Earn each part by learning",
+  "de": "Jedes Teil durch Lernen verdienen"
+ },
+ "hub.goal3.sub": {
+  "en": "Needs a working shack",
+  "de": "Braucht eine funktionierende Funkbude"
+ },
+ "hub.goal4.sub": {
+  "en": "Koch method",
+  "de": "Koch-Methode"
+ },
+ "hub.goal1.prog": {
+  "en": "%d / %d lessons",
+  "de": "%d / %d Lektionen"
+ },
+ "hub.goal2.prog": {
+  "en": "%d / %d parts",
+  "de": "%d / %d Teile"
+ },
+ "hub.goal4.prog": {
+  "en": "Level %d / %d",
+  "de": "Stufe %d / %d"
+ },
+ "hub.goal3.prog": {
+  "en": "%d / %d steps",
+  "de": "%d / %d Schritte"
+ },
+ "hub.shack": {
+  "en": "Shack %d / %d",
+  "de": "Funkbude %d / %d"
+ },
+ "hub.callsign": {
+  "en": "Practice callsign: %s",
+  "de": "Übungsrufzeichen: %s"
+ },
+ "hub.tip_locked": {
+  "en": "Finish the rules and build the transceiver, antenna, microphone and power supply first.",
+  "de": "Schließe zuerst die Regeln ab und baue Transceiver, Antenne, Mikrofon und Netzteil."
+ },
+ "hub.click_slot": {
+  "en": "Click an empty slot to learn about that part.",
+  "de": "Klicke auf einen leeren Platz, um das Teil kennenzulernen."
+ },
+ "hub.owned": {
+  "en": "Already in your shack. Tune in!",
+  "de": "Schon in deiner Funkbude. Viel Spaß beim Funken!"
+ },
+ "hub.about": {
+  "en": "About",
+  "de": "Info"
+ },
+ "hub.callsign_pending": {
+  "en": "Callsign: pending",
+  "de": "Rufzeichen: offen"
+ },
+ "hub.reset_sure": {
+  "en": "Sure?",
+  "de": "Sicher?"
+ },
+ "hub.reset": {
+  "en": "New game",
+  "de": "Neues Spiel"
+ },
+ "part.psu": {
+  "en": "Power supply",
+  "de": "Netzteil"
+ },
+ "part.antenna": {
+  "en": "Antenna",
+  "de": "Antenne"
+ },
+ "part.transceiver": {
+  "en": "Transceiver",
+  "de": "Transceiver"
+ },
+ "part.mic": {
+  "en": "Microphone",
+  "de": "Mikrofon"
+ },
+ "part.speaker": {
+  "en": "Speaker",
+  "de": "Lautsprecher"
+ },
+ "part.swr": {
+  "en": "SWR meter",
+  "de": "SWR-Meter"
+ },
+ "part.key": {
+  "en": "Morse key",
+  "de": "Morsetaste"
+ },
+ "part.logbook": {
+  "en": "Logbook",
+  "de": "Logbuch"
+ },
+ "legal.review": {
+  "en": "Read the lessons",
+  "de": "Lektionen lesen"
+ },
+ "legal.title": {
+  "en": "Goal 1 · Know the rules",
+  "de": "Ziel 1 · Regeln kennen"
+ },
+ "legal.sub": {
+  "en": "%s · Lesson %d of %d",
+  "de": "%s · Lektion %d von %d"
+ },
+ "legal.quiz_sub": {
+  "en": "%s · Quiz",
+  "de": "%s · Quiz"
+ },
+ "legal.question": {
+  "en": "QUESTION %d / %d",
+  "de": "FRAGE %d / %d"
+ },
+ "legal.start_quiz": {
+  "en": "Start the quiz",
+  "de": "Quiz starten"
+ },
+ "legal.passed": {
+  "en": "You know the rules of %s. Goal 1 complete!",
+  "de": "Du kennst die Regeln für %s. Ziel 1 geschafft!"
+ },
+ "legal.failed": {
+  "en": "You need %d correct answers. Read the lessons again and retry.",
+  "de": "Du brauchst %d richtige Antworten. Lies die Lektionen nochmal und versuche es erneut."
+ },
+ "legal.primer": {
+  "en": "Learning primer, not an official exam pool. Check your regulator's current rules.",
+  "de": "Lern-Überblick, kein offizieller Fragenkatalog. Prüfe die aktuellen Regeln deiner Behörde."
+ },
+ "legal.official": {
+  "en": "Official question catalogue",
+  "de": "Offizieller Fragenkatalog"
+ },
+ "legal.translation": {
+  "en": "English text is an unofficial translation.",
+  "de": "Der englische Text ist eine inoffizielle Übersetzung."
+ },
+ "build.title": {
+  "en": "Goal 2 · Build your shack",
+  "de": "Ziel 2 · Funkbude bauen"
+ },
+ "build.sub": {
+  "en": "%s · Question %d of %d",
+  "de": "%s · Frage %d von %d"
+ },
+ "build.lesson_sub": {
+  "en": "%s · Learn first",
+  "de": "%s · Erst lernen"
+ },
+ "build.unlocked": {
+  "en": "NEW PART UNLOCKED",
+  "de": "NEUES TEIL FREIGESCHALTET"
+ },
+ "build.shack_count": {
+  "en": "Shack",
+  "de": "Funkbude"
+ },
+ "build.next_part": {
+  "en": "Next part: %s",
+  "de": "Nächstes Teil: %s"
+ },
+ "build.all_done": {
+  "en": "Your shack is complete!",
+  "de": "Deine Funkbude ist komplett!"
+ },
+ "build.back": {
+  "en": "Back to the shack",
+  "de": "Zurück zur Funkbude"
+ },
+ "build.start_quiz": {
+  "en": "Take the quiz",
+  "de": "Zum Quiz"
+ },
+ "build.failed": {
+  "en": "You need %d of %d. Have another look at the lesson.",
+  "de": "Du brauchst %d von %d. Sieh dir die Lektion nochmal an."
+ },
+ "qso.title": {
+  "en": "Goal 3 · First contact",
+  "de": "Ziel 3 · Erstes Funkgespräch"
+ },
+ "qso.sub": {
+  "en": "Practice a real QSO, step by step",
+  "de": "Übe ein echtes QSO, Schritt für Schritt"
+ },
+ "qso.tune": {
+  "en": "Tune in",
+  "de": "Abstimmen"
+ },
+ "qso.tune_hint": {
+  "en": "Turn the dial with the slider until you hear the station.",
+  "de": "Drehe mit dem Regler, bis du die Station hörst."
+ },
+ "qso.signal": {
+  "en": "Signal",
+  "de": "Signal"
+ },
+ "qso.found": {
+  "en": "Found a station! Now answer them.",
+  "de": "Station gefunden! Jetzt antworte ihr."
+ },
+ "qso.conversation": {
+  "en": "The conversation",
+  "de": "Das Gespräch"
+ },
+ "qso.your_turn": {
+  "en": "Your turn: pick the right reply",
+  "de": "Du bist dran: wähle die richtige Antwort"
+ },
+ "qso.step1": {
+  "en": "Find a station",
+  "de": "Station finden"
+ },
+ "qso.step2": {
+  "en": "Answer the call",
+  "de": "Anruf beantworten"
+ },
+ "qso.step3": {
+  "en": "Exchange details",
+  "de": "Daten austauschen"
+ },
+ "qso.step4": {
+  "en": "Spell your callsign",
+  "de": "Rufzeichen buchstabieren"
+ },
+ "qso.step5": {
+  "en": "Say 73",
+  "de": "73 sagen"
+ },
+ "qso.wrong": {
+  "en": "Not the best reply. Try another one.",
+  "de": "Nicht die beste Antwort. Versuche eine andere."
+ },
+ "qso.done": {
+  "en": "Your first QSO is in the log! 73!",
+  "de": "Dein erstes QSO steht im Logbuch! 73!"
+ },
+ "qso.replay": {
+  "en": "Practice again",
+  "de": "Nochmal üben"
+ },
+ "qso.need": {
+  "en": "You need the rules, transceiver, antenna, microphone and power supply first.",
+  "de": "Du brauchst zuerst die Regeln, Transceiver, Antenne, Mikrofon und Netzteil."
+ },
+ "morse.title": {
+  "en": "Goal 4 · Morse code",
+  "de": "Ziel 4 · Morsen"
+ },
+ "morse.sub": {
+  "en": "Koch method · Level %d of %d · %d WPM",
+  "de": "Koch-Methode · Stufe %d von %d · %d WPM"
+ },
+ "morse.listen": {
+  "en": "LISTEN AND PICK WHAT YOU HEAR",
+  "de": "HÖREN UND AUSWÄHLEN"
+ },
+ "morse.play": {
+  "en": "Play again",
+  "de": "Nochmal hören"
+ },
+ "morse.send": {
+  "en": "Send it yourself",
+  "de": "Selbst geben"
+ },
+ "morse.hold": {
+  "en": "Hold SPACE or click",
+  "de": "SPACE halten oder klicken"
+ },
+ "morse.known": {
+  "en": "Letters you know",
+  "de": "Bekannte Zeichen"
+ },
+ "morse.round": {
+  "en": "Character %d / %d",
+  "de": "Zeichen %d / %d"
+ },
+ "morse.levelup": {
+  "en": "Level up! New characters unlocked.",
+  "de": "Stufe geschafft! Neue Zeichen freigeschaltet."
+ },
+ "morse.levelfail": {
+  "en": "You need %d of %d. Listen again.",
+  "de": "Du brauchst %d von %d. Hör nochmal hin."
+ },
+ "morse.you_sent": {
+  "en": "You sent",
+  "de": "Du hast gegeben"
+ },
+ "morse.clear": {
+  "en": "Clear",
+  "de": "Löschen"
+ },
+ "morse.practice_send": {
+  "en": "Try to send",
+  "de": "Versuche zu geben"
+ },
+ "about.title": {
+  "en": "About CQ Quest",
+  "de": "Über CQ Quest"
+ },
+ "about.body": {
+  "en": "CQ Quest is a free game that shows how much fun amateur radio is.\n\nGerman lessons and questions: 50ohm.de, DARC e.V. (CC BY 4.0) and the Bundesnetzagentur question catalogue, 3rd edition, March 2024 (DL-DE-BY-2.0). Changes: shortened, English translation added.\n\nAustrian topics: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009.\n\nOther text is original. Practice callsigns are examples only.",
+  "de": "CQ Quest ist ein freies Spiel, das zeigt, wie viel Spaß Amateurfunk macht.\n\nDeutsche Lektionen und Fragen: 50ohm.de, DARC e.V. (CC BY 4.0) und der Fragenkatalog der Bundesnetzagentur, 3. Auflage, März 2024 (DL-DE-BY-2.0). Änderungen: gekürzt, englische Übersetzung ergänzt.\n\nÖsterreichische Themen: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009.\n\nAlle anderen Texte sind eigene Texte. Übungsrufzeichen sind nur Beispiele."
+ }
+}

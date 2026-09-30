@@ -1,0 +1,82 @@
+{
+ "steps": [
+  {
+   "id": "answer",
+   "them": {
+    "en": "{other} de {other} calling CQ, CQ, CQ. K.",
+    "de": "CQ CQ CQ de {other}, {other} kommen."
+   },
+   "prompt": {
+    "en": "Answer their call.",
+    "de": "Antworte auf den Anruf."
+   },
+   "choices": [
+    {
+     "en": "{other} de {my}, {my}. K.",
+     "de": "{other} de {my}, {my}. Kommen."
+    },
+    {
+     "en": "Hello, who is there?",
+     "de": "Hallo, wer ist da?"
+    },
+    {
+     "en": "QRT QRT QRT.",
+     "de": "QRT QRT QRT."
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "exchange",
+   "them": {
+    "en": "{my} de {other}. Good evening! Your report is 59. My name is {pname}, QTH {pqth}. How copy? K.",
+    "de": "{my} de {other}. Guten Abend! Dein Rapport ist 59. Mein Name ist {pname}, QTH {pqth}. Wie hörst du mich? Kommen."
+   },
+   "prompt": {
+    "en": "Send your report, name and location.",
+    "de": "Gib deinen Rapport, Namen und Standort durch."
+   },
+   "choices": [
+    {
+     "en": "{other} de {my}. R, thanks {pname}. You are 59. Name {name}. K.",
+     "de": "{other} de {my}. Verstanden, danke {pname}. Du bist 59. Name {name}. Kommen."
+    },
+    {
+     "en": "CQ CQ CQ, anyone there?",
+     "de": "CQ CQ CQ, ist da jemand?"
+    },
+    {
+     "en": "Goodbye.",
+     "de": "Auf Wiedersehen."
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "sign_off",
+   "them": {
+    "en": "{my} de {other}. Thanks for the QSO, {name}. 73 and all the best. {my} de {other}, SK.",
+    "de": "{my} de {other}. Danke für das QSO, {name}. 73 und alles Gute. {my} de {other}, Ende."
+   },
+   "prompt": {
+    "en": "Close the contact politely.",
+    "de": "Beende das Gespräch höflich."
+   },
+   "choices": [
+    {
+     "en": "{other} de {my}. Thanks {pname}, 73! {my} SK.",
+     "de": "{other} de {my}. Danke {pname}, 73! {my} Ende."
+    },
+    {
+     "en": "QSY QSY QSY!",
+     "de": "QSY QSY QSY!"
+    },
+    {
+     "en": "No more radio for me.",
+     "de": "Kein Funk mehr für mich."
+    }
+   ],
+   "c": 0
+  }
+ ]
+}

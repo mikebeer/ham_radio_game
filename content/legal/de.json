@@ -1,0 +1,463 @@
+{
+ "country": "de",
+ "status": "official",
+ "callsign": "DN1ABC",
+ "partner": "OE3XYZ",
+ "partner_qth": {
+  "en": "Vienna",
+  "de": "Wien"
+ },
+ "licence": {
+  "en": "Class N (entry level)",
+  "de": "Klasse N (Einsteiger)"
+ },
+ "pass": 11,
+ "source": {
+  "en": "50ohm.de, DARC e.V. (CC BY 4.0); Bundesnetzagentur question catalogue, 3rd ed. March 2024 (DL-DE-BY-2.0)",
+  "de": "50ohm.de, DARC e.V. (CC BY 4.0); Fragenkatalog der Bundesnetzagentur, 3. Aufl. März 2024 (DL-DE-BY-2.0)"
+ },
+ "lessons": [
+  {
+   "t": {
+    "en": "What amateur radio is",
+    "de": "Was Amateurfunk ist"
+   },
+   "b": {
+    "en": "Amateur radio is a radio service that radio amateurs use among themselves, for their own training and for technical experiments. The Amateur Radio Act (AFuG) is the legal basis in Germany. You may not use it for business, and you may only talk to other amateur stations.",
+    "de": "Amateurfunk ist ein Funkdienst, den Funkamateure untereinander, zur eigenen Weiterbildung und für technische Experimente nutzen. Rechtsgrundlage in Deutschland ist das Amateurfunkgesetz (AFuG). Für Geschäfte darfst du ihn nicht nutzen, und du sprichst nur mit anderen Amateurfunkstellen."
+   }
+  },
+  {
+   "t": {
+    "en": "Authority and licence",
+    "de": "Behörde und Zulassung"
+   },
+   "b": {
+    "en": "The Bundesnetzagentur looks after amateur radio. To become a radio amateur you pass an exam and get a licence with your own callsign. The licence belongs to you personally and cannot be handed over. The law sets no minimum age.",
+    "de": "Die Bundesnetzagentur kümmert sich um den Amateurfunk. Um Funkamateur zu werden, legst du eine Prüfung ab und bekommst eine Zulassung mit eigenem Rufzeichen. Die Zulassung gehört dir persönlich und kann nicht weitergegeben werden. Ein Mindestalter gibt es im Gesetz nicht."
+   }
+  },
+  {
+   "t": {
+    "en": "Your callsign",
+    "de": "Dein Rufzeichen"
+   },
+   "b": {
+    "en": "A callsign identifies your station. You say it at the start and end of every contact and at least every 10 minutes. You cannot demand a particular callsign. Use only the callsign assigned to you.",
+    "de": "Ein Rufzeichen kennzeichnet deine Station. Du nennst es am Anfang und am Ende jeder Funkverbindung und mindestens alle 10 Minuten. Auf ein bestimmtes Rufzeichen hast du keinen Anspruch. Benutze nur das dir zugeteilte Rufzeichen."
+   }
+  },
+  {
+   "t": {
+    "en": "What you may and may not do",
+    "de": "Was erlaubt ist und was nicht"
+   },
+   "b": {
+    "en": "Transmit only on frequencies allocated to amateur radio. Talk only to other amateur stations. Do not pass messages for third parties, except in emergencies and disasters. Do not operate for commercial purposes.",
+    "de": "Sende nur auf Frequenzen, die dem Amateurfunkdienst zugewiesen sind. Sprich nur mit anderen Amateurfunkstellen. Übermittle keine Nachrichten für Dritte, außer in Not- und Katastrophenfällen. Betreibe keinen Funk zu gewerblichen Zwecken."
+   }
+  },
+  {
+   "t": {
+    "en": "Training operation",
+    "de": "Ausbildungsfunkbetrieb"
+   },
+   "b": {
+    "en": "Beginners may try radio before their exam under direct guidance and supervision of a licensed amateur. The trainee adds \"/T\" to the callsign. It is meant to prepare you for the exam, not to replace it.",
+    "de": "Einsteiger dürfen vor der Prüfung unter unmittelbarer Anleitung und Aufsicht eines Funkamateurs Funkbetrieb erleben. Der Auszubildende hängt \"/T\" an das Rufzeichen. Das soll auf die Prüfung vorbereiten, nicht sie ersetzen."
+   }
+  }
+ ],
+ "questions": [
+  {
+   "id": "VC101",
+   "q": {
+    "en": "Which law is the legal basis for taking part in amateur radio in Germany?",
+    "de": "Welches Gesetz bildet die Rechtsgrundlage und regelt die Voraussetzungen und die Bedingungen für die Teilnahme am Amateurfunkdienst in Deutschland?"
+   },
+   "a": [
+    {
+     "en": "The Amateur Radio Act (AFuG)",
+     "de": "Das Gesetz über den Amateurfunk"
+    },
+    {
+     "en": "The Telecommunications Act",
+     "de": "Das Telekommunikationsgesetz"
+    },
+    {
+     "en": "The Act on making radio equipment available on the market",
+     "de": "Das Gesetz über die Bereitstellung von Funkanlagen auf dem Markt"
+    },
+    {
+     "en": "The Act on electromagnetic compatibility of equipment",
+     "de": "Das Gesetz über die elektromagnetische Verträglichkeit von Betriebsmitteln"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VC104",
+   "q": {
+    "en": "Which German authority carries out the tasks arising from the Amateur Radio Act (AFuG) and Ordinance (AFuV)?",
+    "de": "Welche deutsche Behörde nimmt die Aufgaben und Befugnisse wahr, die sich aus dem Amateurfunkgesetz (AFuG) und der Amateurfunkverordnung (AFuV) ergeben?"
+   },
+   "a": [
+    {
+     "en": "The Federal Network Agency (Bundesnetzagentur)",
+     "de": "Die Bundesnetzagentur"
+    },
+    {
+     "en": "The Federal Physical-Technical Institute",
+     "de": "Die Physikalisch-Technische Bundesanstalt"
+    },
+    {
+     "en": "The Federal Post and Telecommunications Office",
+     "de": "Die Bundesanstalt für Post und Telekommunikation"
+    },
+    {
+     "en": "The Federal Agency for digital radio of authorities and security organisations",
+     "de": "Die Bundesanstalt für den Digitalfunk der Behörden und Organisationen mit Sicherheitsaufgaben"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VC107",
+   "q": {
+    "en": "May a radio amateur temporarily pass their licence to another person? The licence is ...",
+    "de": "Darf ein Funkamateur seine Amateurfunkzulassung vorübergehend einer anderen Person übertragen? Die Amateurfunkzulassung ist ..."
+   },
+   "a": [
+    {
+     "en": "tied to the person named on it and cannot be transferred.",
+     "de": "an die in der Zulassungsurkunde angegebene Person gebunden und nicht übertragbar."
+    },
+    {
+     "en": "transferable to people in the same household after notifying the Bundesnetzagentur.",
+     "de": "nach vorheriger Anzeige bei der Bundesnetzagentur an Personen im gleichen Haushalt übertragbar."
+    },
+    {
+     "en": "transferable if the other person is a radio amateur who passed the exam.",
+     "de": "übertragbar, wenn es sich bei der Person um einen Funkamateur mit erfolgreich abgelegter Prüfung handelt."
+    },
+    {
+     "en": "transferable to foreign radio amateurs staying in Germany for a short time.",
+     "de": "übertragbar, wenn es sich um ausländische Funkamateure handelt, die sich vorübergehend in Deutschland aufhalten."
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VC108",
+   "q": {
+    "en": "Does the Amateur Radio Act require a minimum age for a licence?",
+    "de": "Ist nach dem Amateurfunkgesetz (AFuG) für die Erteilung einer Amateurfunkzulassung ein Mindestalter erforderlich?"
+   },
+   "a": [
+    {
+     "en": "The Act sets no minimum age.",
+     "de": "Das Amateurfunkgesetz (AFuG) sieht kein Mindestalter vor."
+    },
+    {
+     "en": "The minimum age to apply is 15.",
+     "de": "Das Mindestalter für die Antragstellung beträgt 15 Jahre."
+    },
+    {
+     "en": "From class E the Act sets a minimum age of 16.",
+     "de": "Das Amateurfunkgesetz (AFuG) sieht ab Klassen E ein Mindestalter von 16 Jahren vor."
+    },
+    {
+     "en": "For class A you must be of legal age.",
+     "de": "Für die Erteilung der Klasse A ist  die Volljährigkeit Voraussetzung."
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VC110",
+   "q": {
+    "en": "What applies to frequency use? A radio amateur may transmit with their station ...",
+    "de": "Was gilt für Funkamateure hinsichtlich der Frequenznutzung? Ein Funkamateur darf mit seiner Amateurfunkstelle ..."
+   },
+   "a": [
+    {
+     "en": "on the frequencies allocated to the amateur radio service.",
+     "de": "auf den für den Amateurfunkdienst ausgewiesenen Frequenzen senden."
+    },
+    {
+     "en": "on all frequencies permitted in their ITU region.",
+     "de": "auf allen für seine ITU-Region zugelassenen Frequenzen senden."
+    },
+    {
+     "en": "on any frequency as long as other services are not disturbed.",
+     "de": "beliebige Frequenzen nutzen, sofern keine anderen Funkdienste gestört werden."
+    },
+    {
+     "en": "during an emergency-radio exercise also on frequencies not allocated to amateur radio.",
+     "de": "im Rahmen einer Notfunkübung auch auf nicht für den Amateurfunkdienst ausgewiesenen Frequenzen senden."
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VC111",
+   "q": {
+    "en": "Which stations may a radio amateur communicate with?",
+    "de": "Mit welchen Funkstellen darf der Funkamateur Funkverkehr abwickeln?"
+   },
+   "a": [
+    {
+     "en": "Only other amateur stations",
+     "de": "Ausschließlich mit anderen Amateurfunkstellen"
+    },
+    {
+     "en": "All stations active on the amateur bands",
+     "de": "Mit allen Funkstellen, die auf den Amateurfunkbändern tätig sind"
+    },
+    {
+     "en": "Other amateur stations and stations of authorities and security organisations",
+     "de": "Mit anderen Amateurfunkstellen und Funkstellen der Behörden und Organisationen mit Sicherheitsaufgaben (BOS)"
+    },
+    {
+     "en": "Other amateur stations and stations of the aeronautical or maritime service",
+     "de": "Mit anderen Amateurfunkstellen und Funkstellen des Flug- und/oder Seefunkdienstes"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VC112",
+   "q": {
+    "en": "May a radio amateur relay messages that are not about amateur radio for or to third parties?",
+    "de": "Darf ein Funkamateur Nachrichten, die nicht den Amateurfunkdienst betreffen, für und an Dritte übermitteln?"
+   },
+   "a": [
+    {
+     "en": "Only in emergencies and disasters",
+     "de": "Nur in Not- und Katastrophenfällen"
+    },
+    {
+     "en": "No, never",
+     "de": "Nein, unter keinen Umständen"
+    },
+    {
+     "en": "Yes, at any time",
+     "de": "Ja, jederzeit"
+    },
+    {
+     "en": "Only when asked by the local office of the Bundesnetzagentur",
+     "de": "Nur nach Aufforderung durch die zuständige Außenstelle der Bundesnetzagentur"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VC114",
+   "q": {
+    "en": "May an amateur station be operated for commercial purposes? An amateur station may ...",
+    "de": "Darf die Amateurfunkstelle zu gewerblich-wirtschaftlichen Zwecken betrieben werden? Eine Amateurfunkstelle darf ..."
+   },
+   "a": [
+    {
+     "en": "not be operated for commercial purposes.",
+     "de": "nicht zu gewerblich-wirtschaftlichen Zwecken betrieben werden."
+    },
+    {
+     "en": "be operated commercially after registering a business with the callsign.",
+     "de": "nach Anzeige des Gewerbes unter Angabe des Rufzeichens zu gewerblich-wirtschaftlichen Zwecken betrieben werden."
+    },
+    {
+     "en": "be operated to provide telecommunications services professionally.",
+     "de": "zum Zwecke des geschäftsmäßigen Erbringens von Telekommunikationsdiensten betrieben werden."
+    },
+    {
+     "en": "be operated commercially after approval by the Bundesnetzagentur.",
+     "de": "nach Genehmigung durch die Bundesnetzagentur zu gewerblich-wirtschaftlichen Zwecken betrieben werden."
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VC116",
+   "q": {
+    "en": "Which personal callsigns may a radio amateur use?",
+    "de": "Welche personengebundenen Rufzeichen darf ein Funkamateur benutzen?"
+   },
+   "a": [
+    {
+     "en": "Only a callsign assigned to them by the Bundesnetzagentur",
+     "de": "Nur ein ihm von der Bundesnetzagentur zugeteiltes Rufzeichen"
+    },
+    {
+     "en": "Any callsign",
+     "de": "Beliebige Rufzeichen"
+    },
+    {
+     "en": "Only a callsign assigned by an amateur radio association",
+     "de": "Nur ein von einer Amateurfunkvereinigung zugeteiltes Rufzeichen"
+    },
+    {
+     "en": "When using someone else's station, the personal callsign of the station owner",
+     "de": "Bei Nutzung einer fremden Station das personengebundene Rufzeichen des Stationsinhabers"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VD205",
+   "q": {
+    "en": "When must a radio amateur give their callsign?",
+    "de": "Wann muss der Funkamateur sein Rufzeichen nennen?"
+   },
+   "a": [
+    {
+     "en": "At the start and end of every contact and at least every 10 minutes",
+     "de": "Am Anfang und am Ende jeder Funkverbindung sowie mindestens alle 10 Minuten"
+    },
+    {
+     "en": "When asked by another station in the contact",
+     "de": "Auf Verlangen einer anderen am Funkverkehr beteiligten Funkstelle"
+    },
+    {
+     "en": "At least every 15 minutes during a contact",
+     "de": "Mindestens alle 15 Minuten während einer Funkverbindung"
+    },
+    {
+     "en": "At the latest 5 minutes into an uninterrupted transmission",
+     "de": "Spätestens 5 Minuten nach einer ununterbrochenen Aussendung"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VD207",
+   "q": {
+    "en": "How can you recognise an amateur station on the air?",
+    "de": "Woran erkennt man eine Amateurfunkstelle im Funkbetrieb?"
+   },
+   "a": [
+    {
+     "en": "By its amateur radio callsign",
+     "de": "Am Amateurfunkrufzeichen"
+    },
+    {
+     "en": "By the frequency range used",
+     "de": "Am benutzten Frequenzbereich"
+    },
+    {
+     "en": "By the emission mode used",
+     "de": "An der verwendeten Sendeart"
+    },
+    {
+     "en": "By the modulation",
+     "de": "An der Modulation"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VD208",
+   "q": {
+    "en": "Is a radio amateur entitled to a specific callsign?",
+    "de": "Hat ein Funkamateur Anspruch auf Zuteilung eines bestimmten Rufzeichens?"
+   },
+   "a": [
+    {
+     "en": "No, there is no such entitlement.",
+     "de": "Nein, es besteht kein Anspruch darauf."
+    },
+    {
+     "en": "Yes, if it is not yet assigned.",
+     "de": "Ja, wenn es noch nicht vergeben ist."
+    },
+    {
+     "en": "No, unless they have special personal reasons and the callsign is free.",
+     "de": "Nein, es sei denn, er kann besondere persönliche Gründe geltend machen und das Rufzeichen ist frei."
+    },
+    {
+     "en": "Yes, if it was assigned to them before.",
+     "de": "Ja, wenn es ihm schon einmal zugeteilt war."
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VD301",
+   "q": {
+    "en": "What is training radio operation (Ausbildungsfunkbetrieb) for under the Amateur Radio Ordinance? It serves ...",
+    "de": "Wozu dient der Ausbildungsfunkbetrieb gemäß Amateurfunkverordnung (AFuV)? Er dient ..."
+   },
+   "a": [
+    {
+     "en": "the practical preparation for the technical exam for an amateur radio certificate.",
+     "de": "der praktischen Vorbereitung auf das Ablegen der fachlichen Prüfung zum Erwerb eines Amateurfunkzeugnisses."
+    },
+    {
+     "en": "the sole demonstration of amateur radio operation.",
+     "de": "der alleinigen Vorführung des Amateurfunkbetriebes."
+    },
+    {
+     "en": "the trainee taking part in amateur radio without supervision.",
+     "de": "der Teilnahme des Auszubildenden am Amateurfunkdienst ohne Aufsicht."
+    },
+    {
+     "en": "completing the radio amateur's skills in Morse telegraphy.",
+     "de": "der Vervollständigung der Fertigkeiten des Funkamateurs in der Morsetelegrafie."
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VD303",
+   "q": {
+    "en": "Non-amateurs may take part in training radio operation ...",
+    "de": "Nicht-Funkamateure dürfen am Ausbildungsfunkbetrieb ..."
+   },
+   "a": [
+    {
+     "en": "only under direct guidance and supervision of a radio amateur with an assigned class A or E callsign.",
+     "de": "nur unter unmittelbarer Anleitung und Aufsicht eines Funkamateurs mit zugeteiltem Rufzeichen der Klasse A oder E teilnehmen."
+    },
+    {
+     "en": "only at club stations under supervision of a class A or E amateur.",
+     "de": "nur an Klubstationen unter Aufsicht eines Funkamateurs mit zugeteiltem Rufzeichen der Klasse A oder E teilnehmen."
+    },
+    {
+     "en": "also at weekends without special conditions.",
+     "de": "auch an Wochenenden ohne besondere Auflagen teilnehmen."
+    },
+    {
+     "en": "also without guidance and supervision of the training amateur.",
+     "de": "auch ohne Anleitung und Aufsicht des ausbildenden Funkamateurs teilnehmen."
+    }
+   ],
+   "c": 0
+  },
+  {
+   "id": "VD306",
+   "q": {
+    "en": "Who must use the callsign suffix \"/T\" or \"/Trainee\" during training radio operation?",
+    "de": "Von wem ist während des Ausbildungsfunkbetriebs der Rufzeichenzusatz \"/T\" bzw. \"/Trainee\" zu benutzen?"
+   },
+   "a": [
+    {
+     "en": "The trainee",
+     "de": "Vom Auszubildenden"
+    },
+    {
+     "en": "The trainer",
+     "de": "Vom Ausbilder"
+    },
+    {
+     "en": "The trainee and the trainer",
+     "de": "Vom Auszubildenden und vom Ausbilder"
+    },
+    {
+     "en": "The person responsible for the school station",
+     "de": "Vom Verantwortlichen der Schulstation"
+    }
+   ],
+   "c": 0
+  }
+ ]
+}

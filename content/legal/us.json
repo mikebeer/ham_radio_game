@@ -1,0 +1,223 @@
+{
+ "country": "us",
+ "status": "primer",
+ "callsign": "KD2ABC",
+ "partner": "W1XYZ",
+ "partner_qth": {
+  "en": "Boston",
+  "de": "Boston"
+ },
+ "licence": {
+  "en": "Technician (entry level)",
+  "de": "Technician (Einstieg)"
+ },
+ "pass": 5,
+ "source": {
+  "en": "Original primer based on FCC Part 97",
+  "de": "Eigener Überblick nach FCC Part 97"
+ },
+ "lessons": [
+  {
+   "t": {
+    "en": "Amateur radio in the US",
+    "de": "Amateurfunk in den USA"
+   },
+   "b": {
+    "en": "The Federal Communications Commission (FCC) regulates amateur radio under Part 97 of its rules. The service is non-commercial: it is for personal enjoyment, self-training, emergency communication and technical experiments.",
+    "de": "Die Federal Communications Commission (FCC) regelt den Amateurfunk in Part 97 ihrer Vorschriften. Der Dienst ist nichtkommerziell: für persönliche Freude, Weiterbildung, Notfunk und technische Experimente."
+   }
+  },
+  {
+   "t": {
+    "en": "Licence classes and exams",
+    "de": "Lizenzklassen und Prüfungen"
+   },
+   "b": {
+    "en": "There are three classes: Technician (entry level), General and Amateur Extra. Exams are run by volunteer examiners coordinated by Volunteer Examiner Coordinators (VECs). Morse code is not tested.",
+    "de": "Es gibt drei Klassen: Technician (Einstieg), General und Amateur Extra. Die Prüfungen nehmen ehrenamtliche Prüfer ab, koordiniert von Volunteer Examiner Coordinators (VECs). Morsen wird nicht geprüft."
+   }
+  },
+  {
+   "t": {
+    "en": "Your callsign",
+    "de": "Dein Rufzeichen"
+   },
+   "b": {
+    "en": "The FCC assigns your callsign. You identify at the end of a communication and at least every 10 minutes during it.",
+    "de": "Die FCC teilt dein Rufzeichen zu. Du nennst es am Ende einer Verbindung und mindestens alle 10 Minuten währenddessen."
+   }
+  },
+  {
+   "t": {
+    "en": "What is not allowed",
+    "de": "Was nicht erlaubt ist"
+   },
+   "b": {
+    "en": "You may not use amateur radio for business, broadcast music, or send messages meant to hide their meaning. Be polite and avoid interfering with others.",
+    "de": "Du darfst Amateurfunk nicht für Geschäfte nutzen, keine Musik senden und keine Nachrichten verschleiern. Sei höflich und störe andere nicht."
+   }
+  },
+  {
+   "t": {
+    "en": "Check the details",
+    "de": "Details prüfen"
+   },
+   "b": {
+    "en": "Privileges depend on your class: a Technician has all privileges above 30 MHz and limited access to some HF bands. Always check the current FCC rules and the current question pool before your exam.",
+    "de": "Die Rechte hängen von der Klasse ab: Technician haben alle Rechte oberhalb von 30 MHz und begrenzten Zugang zu einigen Kurzwellenbändern. Prüfe vor der Prüfung immer die aktuellen FCC-Regeln und den aktuellen Fragenpool."
+   }
+  }
+ ],
+ "questions": [
+  {
+   "q": {
+    "en": "Which agency regulates amateur radio in the United States?",
+    "de": "Welche Behörde regelt den Amateurfunk in den USA?"
+   },
+   "a": [
+    {
+     "en": "The FCC",
+     "de": "Die FCC"
+    },
+    {
+     "en": "The FAA",
+     "de": "Die FAA"
+    },
+    {
+     "en": "The ARRL",
+     "de": "Die ARRL"
+    },
+    {
+     "en": "The NTSB",
+     "de": "Die NTSB"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "How often must you identify your station during a conversation?",
+    "de": "Wie oft musst du dich während eines Gesprächs identifizieren?"
+   },
+   "a": [
+    {
+     "en": "At the end and at least every 10 minutes",
+     "de": "Am Ende und mindestens alle 10 Minuten"
+    },
+    {
+     "en": "Only at the start",
+     "de": "Nur am Anfang"
+    },
+    {
+     "en": "Once per hour",
+     "de": "Einmal pro Stunde"
+    },
+    {
+     "en": "Only if someone asks",
+     "de": "Nur auf Nachfrage"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "Which is the entry-level licence class?",
+    "de": "Welche ist die Einsteiger-Lizenzklasse?"
+   },
+   "a": [
+    {
+     "en": "Technician",
+     "de": "Technician"
+    },
+    {
+     "en": "Amateur Extra",
+     "de": "Amateur Extra"
+    },
+    {
+     "en": "General",
+     "de": "General"
+    },
+    {
+     "en": "Novice Plus",
+     "de": "Novice Plus"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "May you use amateur radio for your business communications?",
+    "de": "Darfst du Amateurfunk für geschäftliche Kommunikation nutzen?"
+   },
+   "a": [
+    {
+     "en": "No",
+     "de": "Nein"
+    },
+    {
+     "en": "Yes, if you are polite",
+     "de": "Ja, wenn du höflich bist"
+    },
+    {
+     "en": "Yes, on weekends",
+     "de": "Ja, am Wochenende"
+    },
+    {
+     "en": "Yes, with a special callsign",
+     "de": "Ja, mit besonderem Rufzeichen"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "Who runs the licence exams?",
+    "de": "Wer nimmt die Lizenzprüfungen ab?"
+   },
+   "a": [
+    {
+     "en": "Volunteer examiners",
+     "de": "Ehrenamtliche Prüfer"
+    },
+    {
+     "en": "The post office",
+     "de": "Die Post"
+    },
+    {
+     "en": "Local police",
+     "de": "Die örtliche Polizei"
+    },
+    {
+     "en": "Commercial radio stations",
+     "de": "Kommerzielle Radiosender"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "Is a Morse code test required today?",
+    "de": "Ist heute eine Morseprüfung erforderlich?"
+   },
+   "a": [
+    {
+     "en": "No",
+     "de": "Nein"
+    },
+    {
+     "en": "Yes, at 5 WPM",
+     "de": "Ja, mit 5 WPM"
+    },
+    {
+     "en": "Yes, at 13 WPM",
+     "de": "Ja, mit 13 WPM"
+    },
+    {
+     "en": "Only for Technician",
+     "de": "Nur für Technician"
+    }
+   ],
+   "c": 0
+  }
+ ]
+}

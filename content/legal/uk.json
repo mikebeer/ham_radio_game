@@ -1,0 +1,223 @@
+{
+ "country": "uk",
+ "status": "primer",
+ "callsign": "M7ABC",
+ "partner": "G3XYZ",
+ "partner_qth": {
+  "en": "London",
+  "de": "London"
+ },
+ "licence": {
+  "en": "Foundation (entry level)",
+  "de": "Foundation (Einstieg)"
+ },
+ "pass": 5,
+ "source": {
+  "en": "Original primer based on Ofcom / RSGB information",
+  "de": "Eigener Überblick nach Ofcom / RSGB"
+ },
+ "lessons": [
+  {
+   "t": {
+    "en": "Amateur radio in the UK",
+    "de": "Amateurfunk in Großbritannien"
+   },
+   "b": {
+    "en": "Ofcom, the communications regulator, issues amateur radio licences. The service is for self-training, experiments and communicating with other amateurs. It is not for business.",
+    "de": "Ofcom, die Regulierungsbehörde, vergibt Amateurfunklizenzen. Der Dienst dient der Weiterbildung, Experimenten und dem Kontakt mit anderen Funkamateuren. Er ist nicht für Geschäfte gedacht."
+   }
+  },
+  {
+   "t": {
+    "en": "Three licence levels",
+    "de": "Drei Lizenzstufen"
+   },
+   "b": {
+    "en": "You can progress from Foundation to Intermediate to Full. You start with a Foundation exam. The Radio Society of Great Britain (RSGB) is the national society and supports training.",
+    "de": "Du kannst von Foundation über Intermediate zu Full aufsteigen. Du beginnst mit der Foundation-Prüfung. Die Radio Society of Great Britain (RSGB) ist der nationale Verband und unterstützt die Ausbildung."
+   }
+  },
+  {
+   "t": {
+    "en": "Callsign and etiquette",
+    "de": "Rufzeichen und Umgangsformen"
+   },
+   "b": {
+    "en": "Your licence comes with a callsign. Give it to identify your station, keep your messages appropriate and do not cause interference.",
+    "de": "Zu deiner Lizenz gehört ein Rufzeichen. Nenne es, um deine Station zu kennzeichnen, halte deine Nachrichten angemessen und störe niemanden."
+   }
+  },
+  {
+   "t": {
+    "en": "Power and limits",
+    "de": "Leistung und Grenzen"
+   },
+   "b": {
+    "en": "Each licence level has its own limits on power and frequencies. Foundation licence holders may use up to 10 watts.",
+    "de": "Jede Lizenzstufe hat eigene Grenzen für Leistung und Frequenzen. Foundation-Inhaber dürfen bis zu 10 Watt nutzen."
+   }
+  },
+  {
+   "t": {
+    "en": "Check the details",
+    "de": "Details prüfen"
+   },
+   "b": {
+    "en": "Licence terms change. Read the current Ofcom licence and RSGB guidance before you transmit.",
+    "de": "Lizenzbedingungen ändern sich. Lies vor dem Senden die aktuelle Ofcom-Lizenz und die Hinweise der RSGB."
+   }
+  }
+ ],
+ "questions": [
+  {
+   "q": {
+    "en": "Who issues amateur radio licences in the UK?",
+    "de": "Wer vergibt Amateurfunklizenzen in Großbritannien?"
+   },
+   "a": [
+    {
+     "en": "Ofcom",
+     "de": "Ofcom"
+    },
+    {
+     "en": "The BBC",
+     "de": "Die BBC"
+    },
+    {
+     "en": "The Post Office",
+     "de": "Die Post"
+    },
+    {
+     "en": "The police",
+     "de": "Die Polizei"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "Which licence do beginners take first?",
+    "de": "Welche Lizenz machen Einsteiger zuerst?"
+   },
+   "a": [
+    {
+     "en": "Foundation",
+     "de": "Foundation"
+    },
+    {
+     "en": "Full",
+     "de": "Full"
+    },
+    {
+     "en": "Intermediate",
+     "de": "Intermediate"
+    },
+    {
+     "en": "Advanced",
+     "de": "Advanced"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "May you use your amateur station for business?",
+    "de": "Darfst du deine Amateurfunkstelle für Geschäfte nutzen?"
+   },
+   "a": [
+    {
+     "en": "No",
+     "de": "Nein"
+    },
+    {
+     "en": "Yes, always",
+     "de": "Ja, immer"
+    },
+    {
+     "en": "Yes, on VHF only",
+     "de": "Ja, nur auf UKW"
+    },
+    {
+     "en": "Yes, at night",
+     "de": "Ja, nachts"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "What is the maximum power for a Foundation licence?",
+    "de": "Wie hoch ist die Höchstleistung bei der Foundation-Lizenz?"
+   },
+   "a": [
+    {
+     "en": "10 watts",
+     "de": "10 Watt"
+    },
+    {
+     "en": "400 watts",
+     "de": "400 Watt"
+    },
+    {
+     "en": "1000 watts",
+     "de": "1000 Watt"
+    },
+    {
+     "en": "1 watt",
+     "de": "1 Watt"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "How is a station identified on air?",
+    "de": "Woran erkennt man eine Station im Funkbetrieb?"
+   },
+   "a": [
+    {
+     "en": "By its callsign",
+     "de": "Am Rufzeichen"
+    },
+    {
+     "en": "By its colour",
+     "de": "An ihrer Farbe"
+    },
+    {
+     "en": "By its antenna",
+     "de": "An ihrer Antenne"
+    },
+    {
+     "en": "By its power supply",
+     "de": "An ihrem Netzteil"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "Which body is the UK's national amateur radio society?",
+    "de": "Welcher Verband ist der nationale Amateurfunkverband Großbritanniens?"
+   },
+   "a": [
+    {
+     "en": "RSGB",
+     "de": "RSGB"
+    },
+    {
+     "en": "ARRL",
+     "de": "ARRL"
+    },
+    {
+     "en": "DARC",
+     "de": "DARC"
+    },
+    {
+     "en": "USKA",
+     "de": "USKA"
+    }
+   ],
+   "c": 0
+  }
+ ]
+}

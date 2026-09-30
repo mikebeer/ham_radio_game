@@ -1,0 +1,223 @@
+{
+ "country": "ch",
+ "status": "primer",
+ "callsign": "HB3ABC",
+ "partner": "HB9XYZ",
+ "partner_qth": {
+  "en": "Bern",
+  "de": "Bern"
+ },
+ "licence": {
+  "en": "HB3 (entry level)",
+  "de": "HB3 (Einsteiger)"
+ },
+ "pass": 5,
+ "source": {
+  "en": "Original primer, check BAKOM and USKA",
+  "de": "Eigener Überblick, siehe BAKOM und USKA"
+ },
+ "lessons": [
+  {
+   "t": {
+    "en": "Amateur radio in Switzerland",
+    "de": "Amateurfunk in der Schweiz"
+   },
+   "b": {
+    "en": "The Federal Office of Communications (OFCOM, BAKOM) is responsible for radio in Switzerland. Swiss amateur callsigns start with HB.",
+    "de": "Das Bundesamt für Kommunikation (BAKOM) ist in der Schweiz für den Funk zuständig. Schweizer Amateurfunkrufzeichen beginnen mit HB."
+   }
+  },
+  {
+   "t": {
+    "en": "Entry and full class",
+    "de": "Einsteiger- und Vollklasse"
+   },
+   "b": {
+    "en": "There is an entry-level class with callsigns starting HB3 and a full class with HB9. The national society is the USKA (Union of Swiss Shortwave Amateurs).",
+    "de": "Es gibt eine Einsteigerklasse mit Rufzeichen HB3 und eine Vollklasse mit HB9. Der nationale Verband ist die USKA (Union Schweizerischer Kurzwellen-Amateure)."
+   }
+  },
+  {
+   "t": {
+    "en": "Not for business",
+    "de": "Nicht für Geschäfte"
+   },
+   "b": {
+    "en": "Amateur radio is a hobby service. You do not use it for commercial messages or to pass messages for others in place of a normal service.",
+    "de": "Amateurfunk ist ein Hobbydienst. Du nutzt ihn nicht für geschäftliche Nachrichten oder um Nachrichten für andere anstelle eines normalen Dienstes weiterzugeben."
+   }
+  },
+  {
+   "t": {
+    "en": "Operating abroad",
+    "de": "Funken im Ausland"
+   },
+   "b": {
+    "en": "A CEPT licence lets you operate temporarily in many other European countries as a guest. Always check the rules of the country you visit.",
+    "de": "Mit einer CEPT-Lizenz darfst du in vielen anderen europäischen Ländern vorübergehend als Gast funken. Prüfe immer die Regeln des Gastlandes."
+   }
+  },
+  {
+   "t": {
+    "en": "Check the details",
+    "de": "Details prüfen"
+   },
+   "b": {
+    "en": "Details of exams and rules change. Ask the USKA or check the BAKOM website for the current requirements.",
+    "de": "Prüfungen und Regeln ändern sich. Frage die USKA oder sieh auf der BAKOM-Webseite nach den aktuellen Anforderungen."
+   }
+  }
+ ],
+ "questions": [
+  {
+   "q": {
+    "en": "Which authority is responsible for radio in Switzerland?",
+    "de": "Welche Behörde ist in der Schweiz für den Funk zuständig?"
+   },
+   "a": [
+    {
+     "en": "BAKOM (OFCOM)",
+     "de": "BAKOM"
+    },
+    {
+     "en": "The Post",
+     "de": "Die Post"
+    },
+    {
+     "en": "SBB",
+     "de": "SBB"
+    },
+    {
+     "en": "MeteoSwiss",
+     "de": "MeteoSchweiz"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "Swiss amateur callsigns start with ...",
+    "de": "Schweizer Amateurfunkrufzeichen beginnen mit ..."
+   },
+   "a": [
+    {
+     "en": "HB",
+     "de": "HB"
+    },
+    {
+     "en": "DL",
+     "de": "DL"
+    },
+    {
+     "en": "OE",
+     "de": "OE"
+    },
+    {
+     "en": "G",
+     "de": "G"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "Which callsign prefix belongs to the entry-level class?",
+    "de": "Welches Rufzeichenpräfix gehört zur Einsteigerklasse?"
+   },
+   "a": [
+    {
+     "en": "HB3",
+     "de": "HB3"
+    },
+    {
+     "en": "HB9",
+     "de": "HB9"
+    },
+    {
+     "en": "HB0",
+     "de": "HB0"
+    },
+    {
+     "en": "HB1",
+     "de": "HB1"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "What is the USKA?",
+    "de": "Was ist die USKA?"
+   },
+   "a": [
+    {
+     "en": "The Swiss national amateur radio society",
+     "de": "Der Schweizer Amateurfunkverband"
+    },
+    {
+     "en": "A Swiss TV station",
+     "de": "Ein Schweizer Fernsehsender"
+    },
+    {
+     "en": "The exam authority",
+     "de": "Die Prüfungsbehörde"
+    },
+    {
+     "en": "A radio manufacturer",
+     "de": "Ein Funkgerätehersteller"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "May you use amateur radio for commercial messages?",
+    "de": "Darfst du Amateurfunk für geschäftliche Nachrichten nutzen?"
+   },
+   "a": [
+    {
+     "en": "No",
+     "de": "Nein"
+    },
+    {
+     "en": "Yes, if short",
+     "de": "Ja, wenn kurz"
+    },
+    {
+     "en": "Yes, on 2 m",
+     "de": "Ja, auf 2 m"
+    },
+    {
+     "en": "Yes, for friends",
+     "de": "Ja, für Freunde"
+    }
+   ],
+   "c": 0
+  },
+  {
+   "q": {
+    "en": "What does a CEPT licence allow?",
+    "de": "Was erlaubt eine CEPT-Lizenz?"
+   },
+   "a": [
+    {
+     "en": "Temporary operation in other CEPT countries",
+     "de": "Vorübergehenden Betrieb in anderen CEPT-Ländern"
+    },
+    {
+     "en": "Unlimited power everywhere",
+     "de": "Unbegrenzte Leistung überall"
+    },
+    {
+     "en": "Broadcasting music",
+     "de": "Musik senden"
+    },
+    {
+     "en": "Skipping the exam",
+     "de": "Die Prüfung überspringen"
+    }
+   ],
+   "c": 0
+  }
+ ]
+}

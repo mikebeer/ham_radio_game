@@ -1,0 +1,882 @@
+[
+ {
+  "id": "psu",
+  "order": 1,
+  "lesson": {
+   "en": "Most transceivers run on 13.8 volts of direct current (DC). A power supply turns mains AC into steady DC and must deliver enough current. Ohm's law: voltage U = current I × resistance R. Power P = U × I. A fuse protects against overload.",
+   "de": "Die meisten Transceiver laufen mit 13,8 Volt Gleichspannung (DC). Ein Netzteil wandelt Netz-Wechselspannung in stabile Gleichspannung und muss genug Strom liefern. Ohmsches Gesetz: Spannung U = Strom I × Widerstand R. Leistung P = U × I. Eine Sicherung schützt vor Überlast."
+  },
+  "questions": [
+   {
+    "q": {
+     "en": "Which supply voltage do most transceivers use?",
+     "de": "Welche Versorgungsspannung nutzen die meisten Transceiver?"
+    },
+    "a": [
+     {
+      "en": "13.8 V DC",
+      "de": "13,8 V Gleichspannung"
+     },
+     {
+      "en": "230 V AC",
+      "de": "230 V Wechselspannung"
+     },
+     {
+      "en": "3.3 V DC",
+      "de": "3,3 V Gleichspannung"
+     },
+     {
+      "en": "1000 V DC",
+      "de": "1000 V Gleichspannung"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "A device draws 20 A at 13.8 V. What is its power?",
+     "de": "Ein Gerät nimmt bei 13,8 V einen Strom von 20 A auf. Welche Leistung ist das?"
+    },
+    "a": [
+     {
+      "en": "276 W",
+      "de": "276 W"
+     },
+     {
+      "en": "34.5 W",
+      "de": "34,5 W"
+     },
+     {
+      "en": "6.9 W",
+      "de": "6,9 W"
+     },
+     {
+      "en": "2760 W",
+      "de": "2760 W"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "Which formula is Ohm's law?",
+     "de": "Welche Formel ist das Ohmsche Gesetz?"
+    },
+    "a": [
+     {
+      "en": "U = I × R",
+      "de": "U = I × R"
+     },
+     {
+      "en": "U = I / R",
+      "de": "U = I / R"
+     },
+     {
+      "en": "U = I + R",
+      "de": "U = I + R"
+     },
+     {
+      "en": "U = R / I",
+      "de": "U = R / I"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What protects a circuit against too much current?",
+     "de": "Was schützt eine Schaltung vor zu hohem Strom?"
+    },
+    "a": [
+     {
+      "en": "A fuse",
+      "de": "Eine Sicherung"
+     },
+     {
+      "en": "A knob",
+      "de": "Ein Drehknopf"
+     },
+     {
+      "en": "A speaker",
+      "de": "Ein Lautsprecher"
+     },
+     {
+      "en": "A key",
+      "de": "Eine Taste"
+     }
+    ],
+    "c": 0
+   }
+  ]
+ },
+ {
+  "id": "antenna",
+  "order": 2,
+  "lesson": {
+   "en": "An antenna turns electrical signals into radio waves and back. The wavelength in metres is about 300 divided by the frequency in MHz. A half-wave dipole is two wires, each a quarter wavelength long. Keep antennas far away from power lines.",
+   "de": "Eine Antenne wandelt elektrische Signale in Funkwellen um und zurück. Die Wellenlänge in Metern beträgt etwa 300 geteilt durch die Frequenz in MHz. Ein Halbwellendipol besteht aus zwei Drähten von je einer Viertelwellenlänge. Halte Antennen weit weg von Stromleitungen."
+  },
+  "questions": [
+   {
+    "q": {
+     "en": "What is the wavelength at 14 MHz (approximately)?",
+     "de": "Wie groß ist die Wellenlänge bei 14 MHz (ungefähr)?"
+    },
+    "a": [
+     {
+      "en": "21 m",
+      "de": "21 m"
+     },
+     {
+      "en": "2.1 m",
+      "de": "2,1 m"
+     },
+     {
+      "en": "210 m",
+      "de": "210 m"
+     },
+     {
+      "en": "0.21 m",
+      "de": "0,21 m"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "About how long is a half-wave dipole for 14 MHz?",
+     "de": "Wie lang ist ein Halbwellendipol für 14 MHz etwa?"
+    },
+    "a": [
+     {
+      "en": "10 m",
+      "de": "10 m"
+     },
+     {
+      "en": "2 m",
+      "de": "2 m"
+     },
+     {
+      "en": "40 m",
+      "de": "40 m"
+     },
+     {
+      "en": "100 m",
+      "de": "100 m"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "A higher frequency means the wavelength is ...",
+     "de": "Eine höhere Frequenz bedeutet, die Wellenlänge ist ..."
+    },
+    "a": [
+     {
+      "en": "shorter",
+      "de": "kürzer"
+     },
+     {
+      "en": "longer",
+      "de": "länger"
+     },
+     {
+      "en": "the same",
+      "de": "gleich"
+     },
+     {
+      "en": "zero",
+      "de": "null"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What must you keep well away from when putting up an antenna?",
+     "de": "Wovon musst du beim Antennenbau weit entfernt bleiben?"
+    },
+    "a": [
+     {
+      "en": "Overhead power lines",
+      "de": "Freileitungen"
+     },
+     {
+      "en": "Birds",
+      "de": "Vögeln"
+     },
+     {
+      "en": "Garden gnomes",
+      "de": "Gartenzwergen"
+     },
+     {
+      "en": "Rain",
+      "de": "Regen"
+     }
+    ],
+    "c": 0
+   }
+  ]
+ },
+ {
+  "id": "transceiver",
+  "order": 3,
+  "lesson": {
+   "en": "A transceiver combines a transmitter and a receiver. You choose a frequency, measured in hertz, and a mode: CW for Morse, SSB for voice on shortwave, FM for local voice. 14.205 MHz lies in the 20-metre band.",
+   "de": "Ein Transceiver vereint Sender und Empfänger. Du wählst eine Frequenz in Hertz und eine Betriebsart: CW für Morsen, SSB für Sprache auf Kurzwelle, FM für lokale Sprache. 14,205 MHz liegt im 20-Meter-Band."
+  },
+  "questions": [
+   {
+    "q": {
+     "en": "What does \"transceiver\" mean?",
+     "de": "Was bedeutet \"Transceiver\"?"
+    },
+    "a": [
+     {
+      "en": "Transmitter and receiver in one",
+      "de": "Sender und Empfänger in einem"
+     },
+     {
+      "en": "A kind of antenna",
+      "de": "Eine Antennenart"
+     },
+     {
+      "en": "A power supply",
+      "de": "Ein Netzteil"
+     },
+     {
+      "en": "A cable",
+      "de": "Ein Kabel"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "How many kilohertz are 1 MHz?",
+     "de": "Wie viele Kilohertz sind 1 MHz?"
+    },
+    "a": [
+     {
+      "en": "1000 kHz",
+      "de": "1000 kHz"
+     },
+     {
+      "en": "10 kHz",
+      "de": "10 kHz"
+     },
+     {
+      "en": "100 kHz",
+      "de": "100 kHz"
+     },
+     {
+      "en": "1 kHz",
+      "de": "1 kHz"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "Which mode is common for long-distance voice on shortwave?",
+     "de": "Welche Betriebsart ist für Sprache auf Kurzwelle über große Entfernung üblich?"
+    },
+    "a": [
+     {
+      "en": "SSB",
+      "de": "SSB"
+     },
+     {
+      "en": "Broadcast AM",
+      "de": "Rundfunk-AM"
+     },
+     {
+      "en": "Morse only",
+      "de": "Nur Morse"
+     },
+     {
+      "en": "Fax",
+      "de": "Fax"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "Which band is 14.205 MHz in?",
+     "de": "In welchem Band liegt 14,205 MHz?"
+    },
+    "a": [
+     {
+      "en": "20 m",
+      "de": "20 m"
+     },
+     {
+      "en": "40 m",
+      "de": "40 m"
+     },
+     {
+      "en": "10 m",
+      "de": "10 m"
+     },
+     {
+      "en": "2 m",
+      "de": "2 m"
+     }
+    ],
+    "c": 0
+   }
+  ]
+ },
+ {
+  "id": "mic",
+  "order": 4,
+  "lesson": {
+   "en": "The microphone turns sound into a weak electrical audio signal. The transceiver uses it to modulate the radio signal. Speak clearly and do not shout: too much audio distorts your signal and can disturb others. PTT means push to talk.",
+   "de": "Das Mikrofon wandelt Schall in ein schwaches elektrisches Tonsignal um. Der Transceiver moduliert damit das Funksignal. Sprich deutlich und schreie nicht: zu viel Ton verzerrt dein Signal und kann andere stören. PTT heißt Sprechtaste (push to talk)."
+  },
+  "questions": [
+   {
+    "q": {
+     "en": "What does a microphone do?",
+     "de": "Was macht ein Mikrofon?"
+    },
+    "a": [
+     {
+      "en": "Turns sound into an electrical signal",
+      "de": "Wandelt Schall in ein elektrisches Signal"
+     },
+     {
+      "en": "Turns light into sound",
+      "de": "Wandelt Licht in Schall"
+     },
+     {
+      "en": "Stores power",
+      "de": "Speichert Strom"
+     },
+     {
+      "en": "Measures SWR",
+      "de": "Misst das SWR"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What does PTT stand for?",
+     "de": "Wofür steht PTT?"
+    },
+    "a": [
+     {
+      "en": "Push to talk",
+      "de": "Sprechtaste (push to talk)"
+     },
+     {
+      "en": "Power to tune",
+      "de": "Power to tune"
+     },
+     {
+      "en": "Peak transmit time",
+      "de": "Peak transmit time"
+     },
+     {
+      "en": "Play the tone",
+      "de": "Play the tone"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What is modulation?",
+     "de": "Was ist Modulation?"
+    },
+    "a": [
+     {
+      "en": "Putting information onto a radio wave",
+      "de": "Information auf eine Funkwelle aufbringen"
+     },
+     {
+      "en": "Making an antenna longer",
+      "de": "Eine Antenne verlängern"
+     },
+     {
+      "en": "Charging a battery",
+      "de": "Einen Akku laden"
+     },
+     {
+      "en": "Filtering mains hum",
+      "de": "Netzbrummen filtern"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What happens if you speak much too loudly?",
+     "de": "Was passiert, wenn du viel zu laut sprichst?"
+    },
+    "a": [
+     {
+      "en": "Your signal gets distorted",
+      "de": "Dein Signal wird verzerrt"
+     },
+     {
+      "en": "Your antenna grows",
+      "de": "Deine Antenne wächst"
+     },
+     {
+      "en": "The band closes",
+      "de": "Das Band schließt"
+     },
+     {
+      "en": "Nothing",
+      "de": "Nichts"
+     }
+    ],
+    "c": 0
+   }
+  ]
+ },
+ {
+  "id": "speaker",
+  "order": 5,
+  "lesson": {
+   "en": "The speaker or headphones turn the receiver's audio signal back into sound. Speech uses roughly 300 to 3000 hertz. Headphones help you hear weak stations and keep the noise out. Signal levels are compared in decibels (dB).",
+   "de": "Der Lautsprecher oder Kopfhörer wandelt das Tonsignal des Empfängers zurück in Schall. Sprache belegt etwa 300 bis 3000 Hertz. Kopfhörer helfen dir, schwache Stationen zu hören, und halten Störgeräusche fern. Signalpegel vergleicht man in Dezibel (dB)."
+  },
+  "questions": [
+   {
+    "q": {
+     "en": "What does a speaker do?",
+     "de": "Was macht ein Lautsprecher?"
+    },
+    "a": [
+     {
+      "en": "Turns an electrical signal into sound",
+      "de": "Wandelt ein elektrisches Signal in Schall"
+     },
+     {
+      "en": "Turns sound into a signal",
+      "de": "Wandelt Schall in ein Signal"
+     },
+     {
+      "en": "Measures frequency",
+      "de": "Misst die Frequenz"
+     },
+     {
+      "en": "Stores audio",
+      "de": "Speichert Ton"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "Roughly which audio range does speech use?",
+     "de": "Welchen Tonbereich belegt Sprache ungefähr?"
+    },
+    "a": [
+     {
+      "en": "300 to 3000 Hz",
+      "de": "300 bis 3000 Hz"
+     },
+     {
+      "en": "3 to 30 Hz",
+      "de": "3 bis 30 Hz"
+     },
+     {
+      "en": "30 to 300 MHz",
+      "de": "30 bis 300 MHz"
+     },
+     {
+      "en": "3 to 30 GHz",
+      "de": "3 bis 30 GHz"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "Why use headphones?",
+     "de": "Warum Kopfhörer benutzen?"
+    },
+    "a": [
+     {
+      "en": "To hear weak stations better",
+      "de": "Um schwache Stationen besser zu hören"
+     },
+     {
+      "en": "To make the antenna work",
+      "de": "Damit die Antenne funktioniert"
+     },
+     {
+      "en": "To raise the power",
+      "de": "Um die Leistung zu erhöhen"
+     },
+     {
+      "en": "To tune the dial",
+      "de": "Um den Regler zu drehen"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "Which unit compares signal levels?",
+     "de": "Welche Einheit vergleicht Signalpegel?"
+    },
+    "a": [
+     {
+      "en": "Decibel (dB)",
+      "de": "Dezibel (dB)"
+     },
+     {
+      "en": "Ohm",
+      "de": "Ohm"
+     },
+     {
+      "en": "Farad",
+      "de": "Farad"
+     },
+     {
+      "en": "Henry",
+      "de": "Henry"
+     }
+    ],
+    "c": 0
+   }
+  ]
+ },
+ {
+  "id": "swr",
+  "order": 6,
+  "lesson": {
+   "en": "The SWR meter shows how well the antenna matches the transmitter. Ham radios and coax cables are usually 50 ohms, which is where the name of the 50ohm.de learning platform comes from. An SWR of 1:1 is perfect. A high SWR means power is reflected back, so fix the antenna first.",
+   "de": "Das SWR-Meter zeigt, wie gut die Antenne zum Sender passt. Amateurfunkgeräte und Koaxkabel haben meist 50 Ohm, daher kommt der Name der Lernplattform 50ohm.de. Ein SWR von 1:1 ist ideal. Ein hohes SWR bedeutet, dass Leistung zurückgeworfen wird. Repariere also zuerst die Antenne."
+  },
+  "questions": [
+   {
+    "q": {
+     "en": "Which impedance do amateur coax cables usually have?",
+     "de": "Welche Impedanz haben Amateurfunk-Koaxkabel meist?"
+    },
+    "a": [
+     {
+      "en": "50 ohms",
+      "de": "50 Ohm"
+     },
+     {
+      "en": "5 ohms",
+      "de": "5 Ohm"
+     },
+     {
+      "en": "500 ohms",
+      "de": "500 Ohm"
+     },
+     {
+      "en": "5000 ohms",
+      "de": "5000 Ohm"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "Which SWR is ideal?",
+     "de": "Welches SWR ist ideal?"
+    },
+    "a": [
+     {
+      "en": "1:1",
+      "de": "1:1"
+     },
+     {
+      "en": "10:1",
+      "de": "10:1"
+     },
+     {
+      "en": "100:1",
+      "de": "100:1"
+     },
+     {
+      "en": "0:1",
+      "de": "0:1"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What does a high SWR tell you?",
+     "de": "Was sagt ein hohes SWR aus?"
+    },
+    "a": [
+     {
+      "en": "Power is reflected because of a mismatch",
+      "de": "Leistung wird wegen Fehlanpassung reflektiert"
+     },
+     {
+      "en": "The antenna is perfect",
+      "de": "Die Antenne ist perfekt"
+     },
+     {
+      "en": "The battery is full",
+      "de": "Die Batterie ist voll"
+     },
+     {
+      "en": "The band is open",
+      "de": "Das Band ist offen"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What should you do about a high SWR?",
+     "de": "Was tust du bei hohem SWR?"
+    },
+    "a": [
+     {
+      "en": "Reduce power and fix the antenna",
+      "de": "Leistung reduzieren und die Antenne prüfen"
+     },
+     {
+      "en": "Turn the power up",
+      "de": "Die Leistung erhöhen"
+     },
+     {
+      "en": "Ignore it",
+      "de": "Es ignorieren"
+     },
+     {
+      "en": "Add a longer cable",
+      "de": "Ein längeres Kabel anschließen"
+     }
+    ],
+    "c": 0
+   }
+  ]
+ },
+ {
+  "id": "key",
+  "order": 7,
+  "lesson": {
+   "en": "A Morse key sends short and long tones: dit and dah. A dah is three times as long as a dit. Morse code, also called CW, works with weak signals and simple equipment. The letter E is one dit, T is one dah.",
+   "de": "Eine Morsetaste sendet kurze und lange Töne: Dit und Dah. Ein Dah ist dreimal so lang wie ein Dit. Morsen, auch CW genannt, funktioniert mit schwachen Signalen und einfacher Technik. Der Buchstabe E ist ein Dit, T ist ein Dah."
+  },
+  "questions": [
+   {
+    "q": {
+     "en": "How long is a dah compared to a dit?",
+     "de": "Wie lang ist ein Dah im Vergleich zu einem Dit?"
+    },
+    "a": [
+     {
+      "en": "3 times as long",
+      "de": "3-mal so lang"
+     },
+     {
+      "en": "Twice as long",
+      "de": "Doppelt so lang"
+     },
+     {
+      "en": "The same",
+      "de": "Gleich lang"
+     },
+     {
+      "en": "10 times as long",
+      "de": "10-mal so lang"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "How is the letter E sent?",
+     "de": "Wie wird der Buchstabe E gesendet?"
+    },
+    "a": [
+     {
+      "en": "One dit",
+      "de": "Ein Dit"
+     },
+     {
+      "en": "One dah",
+      "de": "Ein Dah"
+     },
+     {
+      "en": "Two dits",
+      "de": "Zwei Dits"
+     },
+     {
+      "en": "Dit dah",
+      "de": "Dit Dah"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What is Morse code called as a mode?",
+     "de": "Wie heißt Morsen als Betriebsart?"
+    },
+    "a": [
+     {
+      "en": "CW",
+      "de": "CW"
+     },
+     {
+      "en": "FM",
+      "de": "FM"
+     },
+     {
+      "en": "SSB",
+      "de": "SSB"
+     },
+     {
+      "en": "TV",
+      "de": "TV"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What does the Q-code QRS ask?",
+     "de": "Worum bittet die Q-Gruppe QRS?"
+    },
+    "a": [
+     {
+      "en": "Send more slowly",
+      "de": "Geben Sie langsamer"
+     },
+     {
+      "en": "Send faster",
+      "de": "Geben Sie schneller"
+     },
+     {
+      "en": "Stop",
+      "de": "Aufhören"
+     },
+     {
+      "en": "Repeat",
+      "de": "Wiederholen"
+     }
+    ],
+    "c": 0
+   }
+  ]
+ },
+ {
+  "id": "logbook",
+  "order": 8,
+  "lesson": {
+   "en": "A log records date, time, frequency, mode, callsign and signal reports of each contact. Logs use UTC, a time that is the same everywhere. A QSL card confirms a contact. RST 59 means perfectly readable and very strong.",
+   "de": "Ein Logbuch hält Datum, Uhrzeit, Frequenz, Betriebsart, Rufzeichen und Rapport jeder Verbindung fest. Logbücher nutzen UTC, eine Zeit, die überall gleich ist. Eine QSL-Karte bestätigt eine Verbindung. RST 59 heißt perfekt lesbar und sehr stark."
+  },
+  "questions": [
+   {
+    "q": {
+     "en": "Which time standard do amateur logs use?",
+     "de": "Welche Zeit nutzen Amateurfunk-Logbücher?"
+    },
+    "a": [
+     {
+      "en": "UTC",
+      "de": "UTC"
+     },
+     {
+      "en": "Local summer time",
+      "de": "Lokale Sommerzeit"
+     },
+     {
+      "en": "Sunrise time",
+      "de": "Sonnenaufgangszeit"
+     },
+     {
+      "en": "Winter time",
+      "de": "Winterzeit"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What does QSO mean?",
+     "de": "Was bedeutet QSO?"
+    },
+    "a": [
+     {
+      "en": "A radio contact",
+      "de": "Eine Funkverbindung"
+     },
+     {
+      "en": "A power supply",
+      "de": "Ein Netzteil"
+     },
+     {
+      "en": "An antenna type",
+      "de": "Eine Antennenart"
+     },
+     {
+      "en": "A radio band",
+      "de": "Ein Funkband"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What does a QSL card do?",
+     "de": "Was bewirkt eine QSL-Karte?"
+    },
+    "a": [
+     {
+      "en": "Confirms a contact",
+      "de": "Bestätigt eine Verbindung"
+     },
+     {
+      "en": "Tunes the radio",
+      "de": "Stimmt das Funkgerät ab"
+     },
+     {
+      "en": "Pays the licence fee",
+      "de": "Bezahlt die Lizenzgebühr"
+     },
+     {
+      "en": "Powers the shack",
+      "de": "Versorgt die Funkbude"
+     }
+    ],
+    "c": 0
+   },
+   {
+    "q": {
+     "en": "What does the report 59 mean?",
+     "de": "Was bedeutet der Rapport 59?"
+    },
+    "a": [
+     {
+      "en": "Perfectly readable, very strong",
+      "de": "Perfekt lesbar, sehr stark"
+     },
+     {
+      "en": "Barely readable, very weak",
+      "de": "Kaum lesbar, sehr schwach"
+     },
+     {
+      "en": "The 59th contact",
+      "de": "Die 59. Verbindung"
+     },
+     {
+      "en": "59 watts",
+      "de": "59 Watt"
+     }
+    ],
+    "c": 0
+   }
+  ]
+ }
+]
