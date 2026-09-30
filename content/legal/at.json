@@ -13,14 +13,14 @@
  },
  "levels": [
   {
-   "short": "4/3",
+   "short": "3",
    "class": {
-    "en": "Class 4 / class 3",
-    "de": "Klasse 4 / Klasse 3"
+    "en": "Class 3 (entry level)",
+    "de": "Klasse 3 (Einstieg)"
    },
    "licence": {
-    "en": "Class 4 / class 3",
-    "de": "Klasse 4 / Klasse 3"
+    "en": "Class 3 (entry level)",
+    "de": "Klasse 3 (Einstieg)"
    },
    "lessons": [
     {
@@ -35,12 +35,12 @@
     },
     {
      "t": {
-      "en": "Licence classes 1, 3 and 4",
-      "de": "Bewilligungsklassen 1, 3 und 4"
+      "en": "Licence classes 3, 4 and 1",
+      "de": "Bewilligungsklassen 3, 4 und 1"
      },
      "b": {
-      "en": "Austria issues amateur radio licences in classes 1, 3 and 4. The exam covers legal rules, operating and skills, and technical basics. On request you can take an extra Morse exam.",
-      "de": "Österreich vergibt Amateurfunkbewilligungen der Klassen 1, 3 und 4. Die Prüfung umfasst Recht, Betrieb und Fertigkeiten sowie technische Grundlagen. Auf Antrag kann zusätzlich eine Morseprüfung abgelegt werden."
+      "en": "Austria has three licence classes, and you climb them in the order 3, 4, 1. Class 3 is national only: 2 m (144-146 MHz) and 70 cm (430-440 MHz), all modes, power class A (100 W), no self-built or modified transmitters. The class 3 exam covers law in full, technology and operating in simplified form. The operating exam takes you to class 4, technology plus operating to class 1.",
+      "de": "Österreich hat drei Bewilligungsklassen, die du in der Reihenfolge 3, 4, 1 durchläufst. Klasse 3 gilt nur national: 2 m (144–146 MHz) und 70 cm (430–440 MHz), alle Betriebsarten, Leistungsklasse A (100 W), keine selbstgebauten oder veränderten Sender. Die Prüfung umfasst Recht vollständig, Technik und Betrieb vereinfacht. Mit der Betriebsprüfung kommst du auf Klasse 4, mit Technik und Betrieb auf Klasse 1."
      }
     },
     {
@@ -49,8 +49,8 @@
       "de": "Rufzeichen und Funktagebuch"
      },
      "b": {
-      "en": "Austrian callsigns start with OE. The digit tells you the region. You keep a station log (Funktagebuch) of your contacts.",
-      "de": "Österreichische Rufzeichen beginnen mit OE. Die Ziffer zeigt die Region an. Du führst ein Funktagebuch über deine Verbindungen."
+      "en": "Every callsign is unique worldwide. Austrian callsigns start with OE, then one digit for the state (1 Vienna, 2 Salzburg, 3 Lower Austria, 4 Burgenland, 5 Upper Austria, 6 Styria, 7 Tyrol, 8 Carinthia, 9 Vorarlberg) and a suffix of one to four letters. Example: OE1XTU. You keep a station log (Funktagebuch).",
+      "de": "Jedes Rufzeichen ist weltweit einmalig. Österreichische beginnen mit OE, dann eine Ziffer für das Bundesland (1 Wien, 2 Salzburg, 3 Niederösterreich, 4 Burgenland, 5 Oberösterreich, 6 Steiermark, 7 Tirol, 8 Kärnten, 9 Vorarlberg) und ein Suffix aus ein bis vier Buchstaben. Beispiel: OE1XTU. Du führst ein Funktagebuch."
      }
     },
     {
@@ -252,6 +252,106 @@
     },
     {
      "q": {
+      "en": "In OE1XTU, what does the digit 1 stand for?",
+      "de": "Wofür steht die Ziffer 1 in OE1XTU?"
+     },
+     "a": [
+      {
+       "en": "Vienna",
+       "de": "Wien"
+      },
+      {
+       "en": "Salzburg",
+       "de": "Salzburg"
+      },
+      {
+       "en": "Tyrol",
+       "de": "Tirol"
+      },
+      {
+       "en": "Styria",
+       "de": "Steiermark"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which bands does class 3 cover?",
+      "de": "Welche Bänder umfasst Klasse 3?"
+     },
+     "a": [
+      {
+       "en": "2 m and 70 cm",
+       "de": "2 m und 70 cm"
+      },
+      {
+       "en": "80 m and 40 m",
+       "de": "80 m und 40 m"
+      },
+      {
+       "en": "All bands",
+       "de": "Alle Bänder"
+      },
+      {
+       "en": "Only 10 m",
+       "de": "Nur 10 m"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "What is the power limit of class 3?",
+      "de": "Wie hoch ist die Leistungsgrenze in Klasse 3?"
+     },
+     "a": [
+      {
+       "en": "100 W",
+       "de": "100 W"
+      },
+      {
+       "en": "10 W",
+       "de": "10 W"
+      },
+      {
+       "en": "400 W",
+       "de": "400 W"
+      },
+      {
+       "en": "1 kW",
+       "de": "1 kW"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which exam takes you from class 3 to class 4?",
+      "de": "Welche Prüfung führt von Klasse 3 auf Klasse 4?"
+     },
+     "a": [
+      {
+       "en": "The operating exam",
+       "de": "Die Betriebsprüfung"
+      },
+      {
+       "en": "The technology exam",
+       "de": "Die Technikprüfung"
+      },
+      {
+       "en": "No exam",
+       "de": "Keine"
+      },
+      {
+       "en": "A Morse exam",
+       "de": "Eine Morseprüfung"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
       "en": "What does R mean in Morse operating?",
       "de": "Was bedeutet R im Funkbetrieb?"
      },
@@ -277,6 +377,478 @@
     }
    ],
    "pass": 6
+  },
+  {
+   "class": {
+    "en": "Class 4",
+    "de": "Klasse 4"
+   },
+   "licence": {
+    "en": "Class 4 (CEPT Novice)",
+    "de": "Klasse 4 (CEPT-Novice)"
+   },
+   "lessons": [
+    {
+     "t": {
+      "en": "The Einsteigerlizenz",
+      "de": "Die Einsteigerlizenz"
+     },
+     "b": {
+      "en": "Class 4 is the CEPT Novice licence, called Einsteigerlizenz. You may use all modes at up to 100 watts. Because it is a CEPT licence, you may also operate in other countries that recognise it.",
+      "de": "Klasse 4 ist die CEPT-Novice-Bewilligung, die Einsteigerlizenz. Du darfst alle Betriebsarten mit bis zu 100 Watt nutzen. Weil sie eine CEPT-Bewilligung ist, darfst du auch in anderen Ländern funken, die sie anerkennen."
+     }
+    },
+    {
+     "t": {
+      "en": "Your bands",
+      "de": "Deine Bänder"
+     },
+     "b": {
+      "en": "Class 4 gives you 160 m, 80 m, 15 m, 10 m, 2 m and 70 cm. Low bands like 160 m and 80 m carry regional contacts, 15 m and 10 m open for worldwide contacts when conditions are good, and 2 m and 70 cm are for local work.",
+      "de": "Klasse 4 gibt dir 160 m, 80 m, 15 m, 10 m, 2 m und 70 cm. Die tiefen Bänder 160 m und 80 m tragen regionale Verbindungen, 15 m und 10 m öffnen bei guten Bedingungen für weltweite Verbindungen, 2 m und 70 cm dienen dem lokalen Betrieb."
+     }
+    },
+    {
+     "t": {
+      "en": "Rules for this class",
+      "de": "Regeln dieser Klasse"
+     },
+     "b": {
+      "en": "With class 4 you may not use self-built transmitters. You use commercial equipment. The exam covers law and operating in full, and technology in a simplified form.",
+      "de": "Mit Klasse 4 darfst du keine selbstgebauten Sender betreiben, sondern nur Industriegeräte. Die Prüfung umfasst Recht und Betrieb vollständig und Technik vereinfacht."
+     }
+    },
+    {
+     "t": {
+      "en": "Upgrade path",
+      "de": "Der Aufstieg"
+     },
+     "b": {
+      "en": "From class 3 you upgrade to class 4 with the operating (Betrieb) exam. From class 4 you upgrade to class 1 with the technology (Technik) exam.",
+      "de": "Von Klasse 3 kommst du mit der Betriebsprüfung auf Klasse 4. Von Klasse 4 kommst du mit der Technikprüfung auf Klasse 1."
+     }
+    },
+    {
+     "t": {
+      "en": "Callsigns of Austria",
+      "de": "Rufzeichen in Österreich"
+     },
+     "b": {
+      "en": "Every callsign is unique worldwide and assigned by the authority on request. An Austrian callsign is the prefix OE, one digit for the federal state and a suffix of one to four letters. The ITU, a United Nations agency for telecommunications, assigned the prefix to Austria. Example: OE1XTU is Austria, 1 is Vienna, XTU is the personal suffix.",
+      "de": "Jedes Rufzeichen ist weltweit einmalig und wird von der Behörde auf Antrag zugewiesen. Ein österreichisches Rufzeichen besteht aus dem Landeskenner OE, einer Ziffer für das Bundesland und einem Suffix aus ein bis vier Buchstaben. Den Landeskenner hat die ITU, eine UN-Agentur für Telekommunikation, Österreich zugewiesen. Beispiel: OE1XTU ist Österreich, 1 ist Wien, XTU ist der persönliche Suffix."
+     }
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "What is another name for the class 4 licence?",
+      "de": "Wie heißt die Klasse-4-Bewilligung noch?"
+     },
+     "a": [
+      {
+       "en": "CEPT Novice (Einsteigerlizenz)",
+       "de": "CEPT-Novice (Einsteigerlizenz)"
+      },
+      {
+       "en": "Club licence",
+       "de": "Clublizenz"
+      },
+      {
+       "en": "Broadcast licence",
+       "de": "Rundfunklizenz"
+      },
+      {
+       "en": "Test licence",
+       "de": "Testlizenz"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which band is open to class 4 but NOT to class 3?",
+      "de": "Welches Band ist für Klasse 4, aber NICHT für Klasse 3 offen?"
+     },
+     "a": [
+      {
+       "en": "80 m",
+       "de": "80 m"
+      },
+      {
+       "en": "2 m",
+       "de": "2 m"
+      },
+      {
+       "en": "70 cm",
+       "de": "70 cm"
+      },
+      {
+       "en": "None, they are the same",
+       "de": "Keines, sie sind gleich"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "What is the maximum power for class 4?",
+      "de": "Wie hoch ist die maximale Leistung in Klasse 4?"
+     },
+     "a": [
+      {
+       "en": "100 W",
+       "de": "100 W"
+      },
+      {
+       "en": "10 W",
+       "de": "10 W"
+      },
+      {
+       "en": "400 W",
+       "de": "400 W"
+      },
+      {
+       "en": "1 kW",
+       "de": "1 kW"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which exam takes you from class 4 to class 1?",
+      "de": "Welche Prüfung bringt dich von Klasse 4 auf Klasse 1?"
+     },
+     "a": [
+      {
+       "en": "The technology exam",
+       "de": "Die Technikprüfung"
+      },
+      {
+       "en": "The law exam",
+       "de": "Die Rechtsprüfung"
+      },
+      {
+       "en": "A Morse exam",
+       "de": "Eine Morseprüfung"
+      },
+      {
+       "en": "No exam",
+       "de": "Keine Prüfung"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "May a class 4 operator use a self-built transmitter?",
+      "de": "Darf man in Klasse 4 einen selbstgebauten Sender betreiben?"
+     },
+     "a": [
+      {
+       "en": "No",
+       "de": "Nein"
+      },
+      {
+       "en": "Yes, always",
+       "de": "Ja, immer"
+      },
+      {
+       "en": "Yes, on 2 m",
+       "de": "Ja, auf 2 m"
+      },
+      {
+       "en": "Yes, up to 10 W",
+       "de": "Ja, bis 10 W"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "In OE1XTU, what does the digit 1 stand for?",
+      "de": "Wofür steht die Ziffer 1 in OE1XTU?"
+     },
+     "a": [
+      {
+       "en": "Vienna",
+       "de": "Wien"
+      },
+      {
+       "en": "Salzburg",
+       "de": "Salzburg"
+      },
+      {
+       "en": "Tyrol",
+       "de": "Tirol"
+      },
+      {
+       "en": "Styria",
+       "de": "Steiermark"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which region has the digit 7?",
+      "de": "Welches Bundesland hat die Ziffer 7?"
+     },
+     "a": [
+      {
+       "en": "Tyrol",
+       "de": "Tirol"
+      },
+      {
+       "en": "Carinthia",
+       "de": "Kärnten"
+      },
+      {
+       "en": "Burgenland",
+       "de": "Burgenland"
+      },
+      {
+       "en": "Vorarlberg",
+       "de": "Vorarlberg"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which region has the digit 9?",
+      "de": "Welches Bundesland hat die Ziffer 9?"
+     },
+     "a": [
+      {
+       "en": "Vorarlberg",
+       "de": "Vorarlberg"
+      },
+      {
+       "en": "Upper Austria",
+       "de": "Oberösterreich"
+      },
+      {
+       "en": "Lower Austria",
+       "de": "Niederösterreich"
+      },
+      {
+       "en": "Styria",
+       "de": "Steiermark"
+      }
+     ],
+     "c": 0
+    }
+   ],
+   "pass": 6,
+   "short": "4"
+  },
+  {
+   "class": {
+    "en": "Class 1",
+    "de": "Klasse 1"
+   },
+   "licence": {
+    "en": "Class 1 (CEPT, full licence)",
+    "de": "Klasse 1 (CEPT, Vollzugang)"
+   },
+   "lessons": [
+    {
+     "t": {
+      "en": "The full licence",
+      "de": "Die volle Bewilligung"
+     },
+     "b": {
+      "en": "Class 1 is the CEPT licence with access to all bands and all modes according to the IARU band plan. A Morse test is no longer required.",
+      "de": "Klasse 1 ist die CEPT-Bewilligung mit Zugang zu allen Bändern und Betriebsarten nach dem IARU-Bandplan. Eine Morseprüfung ist nicht mehr nötig."
+     }
+    },
+    {
+     "t": {
+      "en": "Power classes",
+      "de": "Leistungsklassen"
+     },
+     "b": {
+      "en": "Class 1 covers all power classes. Power class D is reserved for club stations only.",
+      "de": "Klasse 1 umfasst alle Leistungsklassen. Die Leistungsklasse D ist nur für Klubstationen vorgesehen."
+     }
+    },
+    {
+     "t": {
+      "en": "Building equipment",
+      "de": "Geräte bauen"
+     },
+     "b": {
+      "en": "Only class 1 operators may build or modify transmitters. That is why the exam covers technology in full, including the things you need to build and adjust a station safely.",
+      "de": "Nur in Klasse 1 darfst du Sender selbst bauen oder verändern. Darum umfasst die Prüfung die Technik vollständig, mit allem, was du für Bau und Abgleich einer Station sicher brauchst."
+     }
+    },
+    {
+     "t": {
+      "en": "Band plan and respect",
+      "de": "Bandplan und Rücksicht"
+     },
+     "b": {
+      "en": "The IARU band plan divides each band into segments for modes such as CW, data and phone. Stay inside your segment and listen before you transmit.",
+      "de": "Der IARU-Bandplan teilt jedes Band in Abschnitte für Betriebsarten wie Telegrafie, Datenbetrieb und Telefonie. Bleib in deinem Abschnitt und höre vor dem Senden zu."
+     }
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "Which class allows you to build or modify transmitters?",
+      "de": "Welche Klasse erlaubt den Bau oder die Änderung von Sendern?"
+     },
+     "a": [
+      {
+       "en": "Class 1",
+       "de": "Klasse 1"
+      },
+      {
+       "en": "Class 3",
+       "de": "Klasse 3"
+      },
+      {
+       "en": "Class 4",
+       "de": "Klasse 4"
+      },
+      {
+       "en": "All classes",
+       "de": "Alle Klassen"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which licence gives access to all bands according to the IARU band plan?",
+      "de": "Welche Bewilligung erlaubt alle Bänder nach IARU-Bandplan?"
+     },
+     "a": [
+      {
+       "en": "Class 1",
+       "de": "Klasse 1"
+      },
+      {
+       "en": "Class 3",
+       "de": "Klasse 3"
+      },
+      {
+       "en": "Class 4",
+       "de": "Klasse 4"
+      },
+      {
+       "en": "None",
+       "de": "Keine"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Who may use power class D?",
+      "de": "Wer darf die Leistungsklasse D nutzen?"
+     },
+     "a": [
+      {
+       "en": "Club stations only",
+       "de": "Nur Klubstationen"
+      },
+      {
+       "en": "Everyone in class 1",
+       "de": "Alle in Klasse 1"
+      },
+      {
+       "en": "Class 4 operators",
+       "de": "Klasse-4-Funker"
+      },
+      {
+       "en": "Nobody",
+       "de": "Niemand"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Is a Morse exam required for class 1?",
+      "de": "Ist für Klasse 1 eine Morseprüfung nötig?"
+     },
+     "a": [
+      {
+       "en": "No, not any more",
+       "de": "Nein, nicht mehr"
+      },
+      {
+       "en": "Yes, always",
+       "de": "Ja, immer"
+      },
+      {
+       "en": "Only on 80 m",
+       "de": "Nur auf 80 m"
+      },
+      {
+       "en": "Only for clubs",
+       "de": "Nur für Klubs"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "Which exam takes you from class 3 directly to class 1?",
+      "de": "Welche Prüfungen führen von Klasse 3 direkt zu Klasse 1?"
+     },
+     "a": [
+      {
+       "en": "Technology and operating",
+       "de": "Technik und Betrieb"
+      },
+      {
+       "en": "Law only",
+       "de": "Nur Recht"
+      },
+      {
+       "en": "Operating only",
+       "de": "Nur Betrieb"
+      },
+      {
+       "en": "None",
+       "de": "Keine"
+      }
+     ],
+     "c": 0
+    },
+    {
+     "q": {
+      "en": "What does the IARU band plan define?",
+      "de": "Was legt der IARU-Bandplan fest?"
+     },
+     "a": [
+      {
+       "en": "Which modes are used in which segment",
+       "de": "Welche Betriebsarten in welchem Abschnitt genutzt werden"
+      },
+      {
+       "en": "Your callsign",
+       "de": "Dein Rufzeichen"
+      },
+      {
+       "en": "Your exam date",
+       "de": "Dein Prüfungsdatum"
+      },
+      {
+       "en": "Mains voltage",
+       "de": "Die Netzspannung"
+      }
+     ],
+     "c": 0
+    }
+   ],
+   "pass": 5,
+   "short": "1"
   }
  ]
 }

@@ -28,7 +28,7 @@ func _initialize() -> void:
 	for i in 5:
 		await process_frame
 	var g = root.get_node("Game")
-	for c in ["de", "us", "uk"]:
+	for c in ["de", "us", "uk", "at"]:
 		g.begin_new_game("T", 1, c)
 		_check(g.level_count() == 3, c + " has 3 levels")
 		_check(g.levels_unlocked() == 1, "starts at level 1")

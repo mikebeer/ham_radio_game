@@ -420,12 +420,12 @@ def at_pack():
         {"t": L("Rules that apply", "Welche Regeln gelten"),
          "b": L("Austrian amateur radio is based on the Amateur Radio Act, national ordinances, international rules of the ITU (Radio Regulations) and recommendations of the CEPT. The exam catalogue lists these as legal topics.",
                 "Der österreichische Amateurfunk beruht auf dem Amateurfunkgesetz, nationalen Verordnungen, den internationalen Regeln der ITU (VO Funk) und Empfehlungen der CEPT. Der Fragenkatalog führt diese als Rechtsthemen auf.")},
-        {"t": L("Licence classes 1, 3 and 4", "Bewilligungsklassen 1, 3 und 4"),
-         "b": L("Austria issues amateur radio licences in classes 1, 3 and 4. The exam covers legal rules, operating and skills, and technical basics. On request you can take an extra Morse exam.",
-                "Österreich vergibt Amateurfunkbewilligungen der Klassen 1, 3 und 4. Die Prüfung umfasst Recht, Betrieb und Fertigkeiten sowie technische Grundlagen. Auf Antrag kann zusätzlich eine Morseprüfung abgelegt werden.")},
+        {"t": L("Licence classes 3, 4 and 1", "Bewilligungsklassen 3, 4 und 1"),
+         "b": L("Austria has three licence classes, and you climb them in the order 3, 4, 1. Class 3 is national only: 2 m (144-146 MHz) and 70 cm (430-440 MHz), all modes, power class A (100 W), no self-built or modified transmitters. The class 3 exam covers law in full, technology and operating in simplified form. The operating exam takes you to class 4, technology plus operating to class 1.",
+                "Österreich hat drei Bewilligungsklassen, die du in der Reihenfolge 3, 4, 1 durchläufst. Klasse 3 gilt nur national: 2 m (144–146 MHz) und 70 cm (430–440 MHz), alle Betriebsarten, Leistungsklasse A (100 W), keine selbstgebauten oder veränderten Sender. Die Prüfung umfasst Recht vollständig, Technik und Betrieb vereinfacht. Mit der Betriebsprüfung kommst du auf Klasse 4, mit Technik und Betrieb auf Klasse 1.")},
         {"t": L("Callsigns and the log", "Rufzeichen und Funktagebuch"),
-         "b": L("Austrian callsigns start with OE. The digit tells you the region. You keep a station log (Funktagebuch) of your contacts.",
-                "Österreichische Rufzeichen beginnen mit OE. Die Ziffer zeigt die Region an. Du führst ein Funktagebuch über deine Verbindungen.")},
+         "b": L("Every callsign is unique worldwide. Austrian callsigns start with OE, then one digit for the state (1 Vienna, 2 Salzburg, 3 Lower Austria, 4 Burgenland, 5 Upper Austria, 6 Styria, 7 Tyrol, 8 Carinthia, 9 Vorarlberg) and a suffix of one to four letters. Example: OE1XTU. You keep a station log (Funktagebuch).",
+                "Jedes Rufzeichen ist weltweit einmalig. Österreichische beginnen mit OE, dann eine Ziffer für das Bundesland (1 Wien, 2 Salzburg, 3 Niederösterreich, 4 Burgenland, 5 Oberösterreich, 6 Steiermark, 7 Tirol, 8 Kärnten, 9 Vorarlberg) und ein Suffix aus ein bis vier Buchstaben. Beispiel: OE1XTU. Du führst ein Funktagebuch.")},
         {"t": L("Q-codes and abbreviations", "Q-Gruppen und Abkürzungen"),
          "b": L("Operators use short codes: QRM (interference), QSO (contact), QSY (change frequency), QRP (low power), QTH (my location), QRT (stop). CQ means a call to all stations, DE means from, K means go ahead.",
                 "Funkamateure nutzen Kurzzeichen: QRM (Störung), QSO (Verbindung), QSY (Frequenzwechsel), QRP (geringe Leistung), QTH (mein Standort), QRT (Sendeschluss). CQ heißt Anruf an alle, DE heißt von, K heißt kommen.")},
@@ -448,10 +448,14 @@ def at_pack():
           ["Von", "Bitte", "Gut", "Entfernung"]),
         Q("What does QRT mean?", "Was bedeutet QRT?", ["Stop transmitting", "I am ready", "Send slower", "Increase power"],
           ["Stellen Sie die Aussendung ein", "Ich bin betriebsbereit", "Geben Sie langsamer", "Erhöhen Sie die Leistung"]),
+        Q("In OE1XTU, what does the digit 1 stand for?", "Wofür steht die Ziffer 1 in OE1XTU?", ["Vienna", "Salzburg", "Tyrol", "Styria"], ["Wien", "Salzburg", "Tirol", "Steiermark"]),
+        Q("Which bands does class 3 cover?", "Welche Bänder umfasst Klasse 3?", ["2 m and 70 cm", "80 m and 40 m", "All bands", "Only 10 m"], ["2 m und 70 cm", "80 m und 40 m", "Alle Bänder", "Nur 10 m"]),
+        Q("What is the power limit of class 3?", "Wie hoch ist die Leistungsgrenze in Klasse 3?", ["100 W", "10 W", "400 W", "1 kW"], ["100 W", "10 W", "400 W", "1 kW"]),
+        Q("Which exam takes you from class 3 to class 4?", "Welche Prüfung führt von Klasse 3 auf Klasse 4?", ["The operating exam", "The technology exam", "No exam", "A Morse exam"], ["Die Betriebsprüfung", "Die Technikprüfung", "Keine", "Eine Morseprüfung"]),
         Q("What does R mean in Morse operating?", "Was bedeutet R im Funkbetrieb?", ["Roger, understood", "No", "Repeat", "Reduce"],
           ["Verstanden", "Nein", "Wiederholen", "Vermindern"]),
     ]
-    return primer("at", "OE1ABC", "DL5XYZ", L("Munich", "München"), L("Class 4 / class 3", "Klasse 4 / Klasse 3"),
+    return primer("at", "OE1ABC", "DL5XYZ", L("Munich", "München"), L("Class 3 (entry level)", "Klasse 3 (Einstieg)"),
                   L("Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009 (topics and Q-codes); original text", "Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009 (Themen und Q-Gruppen); eigener Text"),
                   lessons, qs, 6)
 
@@ -548,7 +552,7 @@ def qso():
     return {"steps": steps}
 
 
-SHORTS = {"de": ["N", "E", "A"], "us": ["Tech", "Gen", "Extra"], "uk": ["Found.", "Inter.", "Full"], "ch": ["HB3"], "at": ["4/3"]}
+SHORTS = {"de": ["N", "E", "A"], "us": ["Tech", "Gen", "Extra"], "uk": ["Found.", "Inter.", "Full"], "ch": ["HB3"], "at": ["3", "4", "1"]}
 
 
 def leveled(pack, extras):
@@ -579,11 +583,12 @@ def clean(o):
 if __name__ == "__main__":
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from levels_de import de_levels
+    from levels_at import at_levels
     from levels_primers import us_levels, uk_levels
     from levels_parts import TIERS
     from levels_qso import qso_levels
     dump("content/i18n/ui.json", {k: L(*v) for k, v in UI.items()})
-    extra = {"de": de_levels(), "us": us_levels(), "uk": uk_levels(), "ch": [], "at": []}
+    extra = {"de": de_levels(), "us": us_levels(), "uk": uk_levels(), "ch": [], "at": at_levels()}
     for pack in (de_pack(), us_pack(), uk_pack(), ch_pack(), at_pack()):
         pack = leveled(pack, extra[pack["country"]])
         dump("content/legal/%s.json" % pack["country"], clean(pack))

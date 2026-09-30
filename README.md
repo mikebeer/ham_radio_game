@@ -6,7 +6,7 @@ Germany, Austria, Switzerland, the USA and the UK.
 
 **Flow:** splash → short intro → pick an avatar, name, country and language → radio-shack hub.
 
-**Levels follow the licence classes.** Level 1 is the entry class (DE: N, US: Technician, UK: Foundation), level 2 the intermediate class (E, General, Intermediate), level 3 the advanced class (A, Extra, Full). Each level repeats the four goals at a higher depth, and the detailed technical questions (dB, reflection coefficient, image frequency, Carson's rule ...) only appear in level 3. Finishing all four goals of a level unlocks the next. CH and AT have level 1 only so far (chips show "—").
+**Levels follow the licence classes.** Level 1 is the entry class (DE: N, US: Technician, UK: Foundation), level 2 the intermediate class (E, General, Intermediate), level 3 the advanced class (A, Extra, Full). Each level repeats the four goals at a higher depth, and the detailed technical questions (dB, reflection coefficient, image frequency, Carson's rule ...) only appear in level 3. Finishing all four goals of a level unlocks the next. CH and AT have level 1 only so far (chips show "—"). Austria climbs Klasse 3, Klasse 4 (CEPT Novice), Klasse 1 (CEPT); its questions are original primers.
 
 **Four goals per level** (driven by the quest system from [mikebeer/galene](https://github.com/mikebeer/galene), one chapter per level):
 
