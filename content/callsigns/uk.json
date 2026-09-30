@@ -1,0 +1,84 @@
+{
+ "country": "uk",
+ "prefix": "M7",
+ "pattern": "^M7[A-Z]{3}$",
+ "example": "M7ABC",
+ "entries": [
+  {
+   "call": "M7BIN",
+   "name": "Ella L.",
+   "qth": "York"
+  },
+  {
+   "call": "M7DEO"
+  },
+  {
+   "call": "M7ENV"
+  },
+  {
+   "call": "M7FUK"
+  },
+  {
+   "call": "M7IPZ"
+  },
+  {
+   "call": "M7IZD",
+   "name": "Harry O.",
+   "qth": "Belfast"
+  },
+  {
+   "call": "M7JDB",
+   "name": "Freya Z.",
+   "qth": "Dundee"
+  },
+  {
+   "call": "M7JOB"
+  },
+  {
+   "call": "M7KJT",
+   "name": "Poppy C.",
+   "qth": "Leeds"
+  },
+  {
+   "call": "M7NON",
+   "name": "Thomas J.",
+   "qth": "Leeds"
+  },
+  {
+   "call": "M7OSS"
+  },
+  {
+   "call": "M7QML"
+  },
+  {
+   "call": "M7QZC",
+   "name": "Amelia Z.",
+   "qth": "Exeter"
+  },
+  {
+   "call": "M7TPR",
+   "name": "George J.",
+   "qth": "Cardiff"
+  },
+  {
+   "call": "M7UVN",
+   "name": "Jack I.",
+   "qth": "Glasgow"
+  },
+  {
+   "call": "M7YHS",
+   "name": "Grace K.",
+   "qth": "Norwich"
+  },
+  {
+   "call": "M7YTA",
+   "name": "Oliver B.",
+   "qth": "Belfast"
+  },
+  {
+   "call": "M7YZR",
+   "name": "Isla W.",
+   "qth": "Dundee"
+  }
+ ]
+}

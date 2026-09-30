@@ -39,7 +39,7 @@ func _exit_tree() -> void:
 
 
 func _wpm() -> float:
-	return 10.0 + float(_level)
+	return float(clampi(Game.fact_int("morse.wpm", 12), 5, 30))
 
 
 func _known_count() -> int:
@@ -80,7 +80,7 @@ func _play() -> void:
 	if not is_inside_tree() or _mode != "listen" or _target == "":
 		return
 	Sfx.play_morse(_target, _wpm())
-	_segs = Sfx.morse_segments(_target, _wpm())
+	_segs = [[false, Sfx.LEAD_IN]] + Sfx.morse_segments(_target, _wpm())
 	_play_start = _t
 
 
@@ -128,7 +128,7 @@ func _restart_level() -> void:
 
 func _build() -> void:
 	add_bg()
-	add_header(I18n.t("morse.title"), I18n.t("morse.sub", [_level, Game.MORSE_LEVELS, int(_wpm())]))
+	add_header(I18n.t("morse.title"), I18n.t("morse.sub", [_level, Game.MORSE_LEVELS]))
 	add_card(Rect2(60, 120, 540, 500))
 	add_lbl(I18n.t("morse.known"), Vector2(92, 140), 0, 14, Palette.MUTED, Style.font_body_bold)
 	_grid = Control.new()
@@ -137,6 +137,7 @@ func _build() -> void:
 	_grid.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_grid.draw.connect(_draw_grid)
 	add_child(_grid)
+	_build_speed()
 	add_card(Rect2(640, 120, 580, 500))
 
 	if _mode != "result":
@@ -151,6 +152,25 @@ func _build() -> void:
 			_build_send()
 		"result":
 			_build_result()
+
+
+func _build_speed() -> void:
+	var lbl := add_lbl(I18n.t("morse.speed", [int(_wpm())]), Vector2(92, 556), 300, 16, Palette.CREAM, Style.font_body_bold)
+	var sl := HSlider.new()
+	sl.min_value = 5
+	sl.max_value = 30
+	sl.step = 1
+	sl.value = _wpm()
+	sl.position = Vector2(300, 556)
+	sl.size = Vector2(270, 28)
+	sl.focus_mode = Control.FOCUS_NONE
+	sl.value_changed.connect(func(v: float) -> void: lbl.text = I18n.t("morse.speed", [int(v)]))
+	sl.drag_ended.connect(func(changed: bool) -> void:
+		if changed:
+			Game.set_flag("morse.wpm", int(sl.value))
+			if _mode == "listen":
+				_play())
+	add_child(sl)
 
 
 func _switch(m: String) -> void:
@@ -328,8 +348,8 @@ func _draw_grid() -> void:
 			x += ln + 5.0
 	# lamp
 	var on := _lamp_on()
-	var lamp := Vector2(270, 410)
+	var lamp := Vector2(270, 384)
 	if on:
-		ci.draw_circle(lamp, 46, Art.fade(Palette.AMBER, 0.25))
+		ci.draw_circle(lamp, 40, Art.fade(Palette.AMBER, 0.25))
 	ci.draw_circle(lamp, 30, Palette.AMBER if on else Palette.LINE)
 	ci.draw_arc(lamp, 30, 0.0, TAU, 32, Palette.AMBER_DEEP, 3.0, true)

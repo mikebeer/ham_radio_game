@@ -2,6 +2,7 @@ extends Node
 ## Synthesised sound effects and Morse tones. No audio files needed.
 
 const RATE := 22050
+const LEAD_IN := 0.25
 const MORSE := {
 	"A": ".-", "B": "-...", "C": "-.-.", "D": "-..", "E": ".", "F": "..-.", "G": "--.", "H": "....",
 	"I": "..", "J": ".---", "K": "-.-", "L": ".-..", "M": "--", "N": "-.", "O": "---", "P": ".--.",
@@ -102,6 +103,9 @@ func play_morse(text: String, wpm: float = 12.0, freq: float = 600.0) -> void:
 	if not enabled:
 		return
 	var data := PackedByteArray()
+	# Lead-in silence: the audio device swallows the start of a fresh stream, which made
+	# "S" (...) sound like "I" (..).
+	data.append_array(_silence_bytes(LEAD_IN))
 	for s in morse_segments(text, wpm):
 		if s[0]:
 			data.append_array(_tone_bytes(freq, float(s[1]), 0.45))

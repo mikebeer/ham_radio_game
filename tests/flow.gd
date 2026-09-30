@@ -9,6 +9,28 @@ func _initialize() -> void:
 	for id in g.PART_IDS:
 		g.award(id)
 	g.set_flag("goal.rules", true)
+	var cb = (load("res://scenes/callsign.tscn") as PackedScene).instantiate()
+	root.add_child(cb)
+	await process_frame
+	var free_call := ""
+	for e in cb._book["entries"]:
+		if not e.has("name"):
+			free_call = e["call"]
+			break
+	cb._on_row({"call": "X", "name": "Taken T.", "qth": "Nowhere"})
+	assert(cb._choice == "")
+	cb._on_row({"call": free_call})
+	assert(cb._choice == free_call)
+	cb._edit.text = "XX9"
+	cb._check_wish()
+	assert(cb._choice == free_call)
+	cb.queue_free()
+	g.set_callsign(free_call)
+	assert(g.has_callsign() and g.callsign() == free_call)
+	g.change_country("at")
+	assert(not g.has_callsign() and g.country() == "at")
+	g.change_country("de")
+	g.set_flag("goal.rules", true)
 	var q = (load("res://scenes/qso.tscn") as PackedScene).instantiate()
 	root.add_child(q)
 	await process_frame

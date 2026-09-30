@@ -1,0 +1,84 @@
+{
+ "country": "ch",
+ "prefix": "HB3",
+ "pattern": "^HB3[A-Z]{3}$",
+ "example": "HB3ABC",
+ "entries": [
+  {
+   "call": "HB3BSN"
+  },
+  {
+   "call": "HB3CMV",
+   "name": "Jan P.",
+   "qth": "Chur"
+  },
+  {
+   "call": "HB3CPX",
+   "name": "Nora U.",
+   "qth": "Luzern"
+  },
+  {
+   "call": "HB3DPZ"
+  },
+  {
+   "call": "HB3EXG",
+   "name": "Reto Y.",
+   "qth": "Luzern"
+  },
+  {
+   "call": "HB3JIO",
+   "name": "Beat Y.",
+   "qth": "Chur"
+  },
+  {
+   "call": "HB3JRD",
+   "name": "Sara J.",
+   "qth": "Luzern"
+  },
+  {
+   "call": "HB3LJA"
+  },
+  {
+   "call": "HB3NDT"
+  },
+  {
+   "call": "HB3OSX",
+   "name": "Fabienne F.",
+   "qth": "Lugano"
+  },
+  {
+   "call": "HB3QAI",
+   "name": "Lea U.",
+   "qth": "Chur"
+  },
+  {
+   "call": "HB3RLS",
+   "name": "Anja J.",
+   "qth": "Zürich"
+  },
+  {
+   "call": "HB3SMQ",
+   "name": "Livia Z.",
+   "qth": "Bern"
+  },
+  {
+   "call": "HB3SPS"
+  },
+  {
+   "call": "HB3SZV",
+   "name": "Urs V.",
+   "qth": "Luzern"
+  },
+  {
+   "call": "HB3WQR"
+  },
+  {
+   "call": "HB3YPF",
+   "name": "Luca H.",
+   "qth": "Chur"
+  },
+  {
+   "call": "HB3ZJT"
+  }
+ ]
+}

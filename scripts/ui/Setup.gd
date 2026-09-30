@@ -6,12 +6,27 @@ var _name := ""
 var _country := "de"
 var _name_edit: LineEdit
 var _preview: ArtView
+var _profile_mode := false
+var _country_lbl: Label
+var _reset_armed := false
+
+
+func _ready() -> void:
+	_profile_mode = bool(SceneManager.params.get("profile", false))
+	if _profile_mode:
+		_avatar = int(Game.profile.get("avatar", 1))
+		_name = str(Game.profile.get("name", ""))
+		_country = Game.country()
+	super._ready()
 
 
 func _build() -> void:
 	add_bg()
-	add_title(I18n.t("setup.title"), Vector2(60, 36), 48)
-	add_lbl(I18n.t("setup.sub"), Vector2(60, 108), 560, 18, Palette.MUTED)
+	add_title(I18n.t("profile.title") if _profile_mode else I18n.t("setup.title"), Vector2(60, 36), 48)
+	add_lbl(I18n.t("profile.sub") if _profile_mode else I18n.t("setup.sub"), Vector2(60, 108), 560, 18, Palette.MUTED)
+	if _profile_mode:
+		add_btn(I18n.t("common.back"), Vector2(500, 40), func() -> void: SceneManager.go("hub"), "", Vector2(110, 44))
+		_build_profile_extras()
 
 	var group := ButtonGroup.new()
 	for i in Game.AVATAR_COUNT:
@@ -58,9 +73,13 @@ func _build() -> void:
 	for c in Content.COUNTRIES:
 		var b := _toggle(c.to_upper(), Vector2(x, 476), Vector2(80, 44), cg, c == _country)
 		b.tooltip_text = I18n.t("country." + c)
-		b.pressed.connect(func() -> void: _country = c)
+		b.pressed.connect(func() -> void:
+			_country = c
+			_country_lbl.text = I18n.t("country." + c)
+			if _profile_mode and c != Game.country():
+				toast(I18n.t("profile.country_warn"), Palette.CORAL))
 		x += 92.0
-	add_lbl(I18n.t("country." + _country), Vector2(700, 526), 480, 16, Palette.TEAL, Style.font_body_bold)
+	_country_lbl = add_lbl(I18n.t("country." + _country), Vector2(700, 526), 480, 16, Palette.TEAL, Style.font_body_bold)
 
 	add_lbl(I18n.t("setup.language"), Vector2(700, 556), 0, 14, Palette.MUTED, Style.font_body_bold)
 	var lg := ButtonGroup.new()
@@ -70,7 +89,7 @@ func _build() -> void:
 		b.pressed.connect(func() -> void: I18n.set_locale(loc))
 		x += 130.0
 
-	var cb := add_btn(I18n.t("common.continue"), Vector2(0, 592), _continue, "PrimaryButton", Vector2(160, 52))
+	var cb := add_btn(I18n.t("profile.save") if _profile_mode else I18n.t("common.continue"), Vector2(0, 592), _save if _profile_mode else _continue, "PrimaryButton", Vector2(160, 52))
 	cb.position.x = 1196.0 - cb.size.x
 
 
@@ -108,4 +127,35 @@ func _continue() -> void:
 	if nm == "":
 		nm = "Player" if I18n.locale == "en" else "Spieler"
 	Game.begin_new_game(nm, _avatar, _country)
+	SceneManager.go("hub")
+
+
+# ---- profile mode -----------------------------------------------------------------------
+
+func _build_profile_extras() -> void:
+	var has := Game.has_callsign()
+	add_lbl(I18n.t("profile.callsign") + ": " + (Game.callsign() if has else I18n.t("profile.none")), Vector2(60, 602), 360, 20,
+			Palette.AMBER if has else Palette.MUTED, Style.font_mono)
+	if bool(FactDatabase.get_fact("rules.quiz_passed", false)):
+		add_btn(I18n.t("profile.change_call"), Vector2(60, 636), func() -> void: SceneManager.go("callsign"), "", Vector2(200, 40))
+	var snd := add_btn(I18n.t("profile.sound_on") if Sfx.enabled else I18n.t("profile.sound_off"), Vector2(280, 636), func() -> void:
+		Sfx.enabled = not Sfx.enabled
+		_rebuild(), "", Vector2(150, 40))
+	snd.add_theme_font_size_override("font_size", 16)
+	var nb := add_btn(I18n.t("hub.reset_sure") if _reset_armed else I18n.t("hub.reset"), Vector2(440, 636), func() -> void:
+		if not _reset_armed:
+			_reset_armed = true
+			_rebuild()
+			return
+		Game.reset_all()
+		SceneManager.go("splash"), "", Vector2(150, 40))
+	nb.add_theme_font_size_override("font_size", 16)
+
+
+func _save() -> void:
+	var nm := _name.strip_edges()
+	if nm == "":
+		nm = str(Game.profile.get("name", "Player"))
+	Game.set_profile(nm, _avatar)
+	Game.change_country(_country)
 	SceneManager.go("hub")

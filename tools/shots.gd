@@ -12,8 +12,11 @@ func _initialize() -> void:
 		game.award(id)
 	game.set_flag("rules.quiz_passed", true)
 	game.set_flag("goal.rules", true)
-	for n in ["splash", "intro", "setup", "hub", "legal", "build", "qso", "morse"]:
-		var s = (load("res://scenes/%s.tscn" % n) as PackedScene).instantiate()
+	for n in ["splash", "intro", "setup", "profile", "hub", "callsign", "legal", "build", "qso", "morse"]:
+		var scene_name: String = "setup" if n == "profile" else n
+		if n == "profile":
+			root.get_node("SceneManager").params = {"profile": true}
+		var s = (load("res://scenes/%s.tscn" % scene_name) as PackedScene).instantiate()
 		root.add_child(s)
 		for i in 30:
 			await process_frame
@@ -29,6 +32,12 @@ func _initialize() -> void:
 			for i in 10:
 				await process_frame
 			root.get_viewport().get_texture().get_image().save_png("%s/qso_chat.png" % out)
+		if n == "hub":
+			root.get_node("Share").open()
+			for i in 10:
+				await process_frame
+			root.get_viewport().get_texture().get_image().save_png("%s/share.png" % out)
+			root.get_node("Share").close()
 		if n == "legal":
 			s._step = 5
 			s._rebuild()

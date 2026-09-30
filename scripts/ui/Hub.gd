@@ -18,7 +18,6 @@ var _t := 0.0
 var _room: Control
 var _gear: Dictionary = {}
 var _pending_award := ""
-var _reset_armed := false
 var _about: Control
 
 
@@ -118,20 +117,31 @@ func _build_sidebar() -> void:
 
 	add_art("avatar", Rect2(8, 6, 100, 110), int(Game.profile.get("avatar", 1)))
 	add_title(str(Game.profile.get("name", "")), Vector2(112, 22), 26, Palette.CREAM, 196)
-	var cs := I18n.t("hub.callsign", [Game.callsign()]) if Game.rules_done() else I18n.t("hub.callsign_pending")
+	var cs := I18n.t("hub.callsign", [Game.callsign()]) if Game.has_callsign() else I18n.t("hub.callsign_pending")
 	add_lbl(cs, Vector2(112, 60), 200, 14, Palette.MUTED, Style.font_mono)
+	var pb := Button.new()
+	pb.position = Vector2(4, 4)
+	pb.size = Vector2(312, 118)
+	pb.flat = true
+	pb.focus_mode = Control.FOCUS_NONE
+	pb.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+	pb.pressed.connect(_open_profile)
+	add_child(pb)
 	add_lbl(I18n.t("hub.goals"), Vector2(24, 132), 0, 14, Palette.MUTED, Style.font_body_bold)
 
 	var pack := Game.pack()
 	var lessons_total := (pack.get("lessons", []) as Array).size()
 	var lessons_done := Game.fact_int("rules.lessons_done")
-	var g1 := 1.0 if Game.rules_done() else float(mini(lessons_done, lessons_total)) / maxf(1.0, lessons_total)
+	var quiz_ok := int(bool(FactDatabase.get_fact("rules.quiz_passed", false)))
+	var g1_total := lessons_total + 2
+	var g1_done := mini(lessons_done, lessons_total) + quiz_ok + int(Game.has_callsign())
+	var g1 := 1.0 if Game.rules_done() else float(g1_done) / float(g1_total)
 	var qso_ready := Game.qso_ready()
 	var steps := Game.qso_steps_done()
 	var passed := Game.morse_passed()
 	var goals := [
 		{"prog": g1, "sub": I18n.t("hub.goal1.sub", [I18n.t("country." + Game.country()), I18n.loc(pack.get("licence", ""))]),
-		 "status": I18n.t("hub.goal1.prog", [lessons_done if not Game.rules_done() else lessons_total, lessons_total]), "cb": _goal_rules},
+		 "status": I18n.t("hub.goal1.prog", [g1_total if Game.rules_done() else g1_done, g1_total]), "cb": _goal_rules},
 		{"prog": float(Game.parts_owned()) / 8.0, "sub": I18n.t("hub.goal2.sub"),
 		 "status": I18n.t("hub.goal2.prog", [Game.parts_owned(), 8]), "cb": _goal_shack},
 		{"prog": float(steps) / float(Game.QSO_STEPS), "sub": I18n.t("hub.goal3.sub"),
@@ -162,24 +172,30 @@ func _build_sidebar() -> void:
 		badge.add_theme_stylebox_override("panel", Style.box(Art.fade(col, 0.35 if locked else 1.0), 18))
 		add_child(badge)
 		add_lbl(str(i + 1), Vector2(36, y + 18), 36, 20, Palette.INK, Style.font_display, HORIZONTAL_ALIGNMENT_CENTER)
-		add_lbl(I18n.t("hub.goal%d" % (i + 1)), Vector2(84, y + 12), 208, 20, Palette.MUTED if locked else Palette.CREAM, Style.font_display)
-		add_lbl(g["sub"], Vector2(84, y + 40), 208, 13, Palette.MUTED)
-		var bar := ProgressBar.new()
-		bar.position = Vector2(36, y + 70)
-		bar.size = Vector2(248, 10)
-		bar.custom_minimum_size = Vector2(248, 10)
-		bar.show_percentage = false
-		bar.max_value = 1.0
-		bar.value = g["prog"]
-		bar.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		bar.add_theme_stylebox_override("fill", Style.box(col, 5, Palette.CLEAR, 0, Vector2(0, 0)))
-		bar.add_theme_stylebox_override("background", Style.box(Palette.INK, 5, Palette.CLEAR, 0, Vector2(0, 0)))
-		add_child(bar)
-		add_lbl(g["status"], Vector2(36, y + 88), 248, 12, Palette.MUTED, Style.font_body_bold)
+		add_lbl(I18n.t("hub.goal%d" % (i + 1)), Vector2(84, y + 10), 208, 19, Palette.MUTED if locked else Palette.CREAM, Style.font_display)
+		add_lbl(g["sub"], Vector2(84, y + 38), 208, 12, Palette.MUTED)
+		var track := Panel.new()
+		track.position = Vector2(36, y + 80)
+		track.size = Vector2(248, 10)
+		track.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		track.add_theme_stylebox_override("panel", Style.box(Palette.INK, 5, Palette.CLEAR, 0, Vector2(0, 0)))
+		add_child(track)
+		var fill_w := 248.0 * clampf(float(g["prog"]), 0.0, 1.0)
+		if fill_w > 0.0:
+			var fill := Panel.new()
+			fill.position = Vector2(36, y + 80)
+			fill.size = Vector2(maxf(fill_w, 10.0), 10)
+			fill.mouse_filter = Control.MOUSE_FILTER_IGNORE
+			fill.add_theme_stylebox_override("panel", Style.box(col, 5, Palette.CLEAR, 0, Vector2(0, 0)))
+			add_child(fill)
+		add_lbl(g["status"], Vector2(36, y + 94), 248, 12, Palette.MUTED, Style.font_body_bold)
 
 
 func _goal_rules() -> void:
-	SceneManager.go("legal")
+	if bool(FactDatabase.get_fact("rules.quiz_passed", false)) and not Game.has_callsign():
+		SceneManager.go("callsign")
+	else:
+		SceneManager.go("legal")
 
 
 func _goal_shack() -> void:
@@ -203,41 +219,23 @@ func _goal_morse() -> void:
 # ---- top bar ----------------------------------------------------------------------------
 
 func _build_topbar() -> void:
-	var chip := add_card(Rect2(760, 14, 230, 40), Style.box(Palette.PANEL2, 20, Palette.LINE, 1))
+	var chip := add_card(Rect2(610, 14, 230, 40), Style.box(Palette.PANEL2, 20, Palette.LINE, 1))
 	chip.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var dot := Panel.new()
-	dot.position = Vector2(774, 22)
+	dot.position = Vector2(624, 22)
 	dot.size = Vector2(24, 24)
 	dot.add_theme_stylebox_override("panel", Style.box(Palette.AMBER, 12))
 	add_child(dot)
-	add_lbl(I18n.t("hub.shack", [Game.parts_owned(), 8]), Vector2(806, 20), 0, 20, Palette.AMBER, Style.font_display)
-	var ab := add_btn(I18n.t("hub.about"), Vector2(1004, 14), _show_about, "", Vector2(96, 40))
-	ab.add_theme_font_size_override("font_size", 16)
-	var nb := add_btn(I18n.t("hub.reset"), Vector2(1110, 14), _new_game, "", Vector2(136, 40))
-	nb.add_theme_font_size_override("font_size", 16)
-	_reset_btn = nb
-	var x := 336.0
-	for loc in I18n.LOCALES:
-		var lb := add_btn(loc.to_upper(), Vector2(x, 14), func() -> void: I18n.set_locale(loc),
-				"PrimaryButton" if loc == I18n.locale else "", Vector2(64, 40))
-		lb.add_theme_font_size_override("font_size", 16)
-		x += 72.0
+	add_lbl(I18n.t("hub.shack", [Game.parts_owned(), 8]), Vector2(656, 20), 0, 20, Palette.AMBER, Style.font_display)
+	var x := 856.0
+	for item in [["hub.profile", 128, _open_profile], ["share.btn", 108, Share.open], ["hub.about", 104, _show_about]]:
+		var b := add_btn(I18n.t(item[0]), Vector2(x, 14), item[2], "", Vector2(item[1], 40))
+		b.add_theme_font_size_override("font_size", 16)
+		x += float(item[1]) + 8.0
 
 
-var _reset_btn: Button
-
-
-func _new_game() -> void:
-	if not _reset_armed:
-		_reset_armed = true
-		_reset_btn.text = I18n.t("hub.reset_sure")
-		get_tree().create_timer(3.0).timeout.connect(func() -> void:
-			_reset_armed = false
-			if is_instance_valid(_reset_btn):
-				_reset_btn.text = I18n.t("hub.reset"))
-		return
-	Game.reset_all()
-	SceneManager.go("splash")
+func _open_profile() -> void:
+	SceneManager.go("setup", {"profile": true})
 
 
 func _show_about() -> void:
@@ -251,22 +249,26 @@ func _show_about() -> void:
 	dim.set_anchors_preset(Control.PRESET_FULL_RECT)
 	_about.add_child(dim)
 	var card := Panel.new()
-	card.position = Vector2(260, 100)
-	card.size = Vector2(760, 520)
+	card.position = Vector2(260, 90)
+	card.size = Vector2(760, 550)
 	_about.add_child(card)
 	var title := Style.display_label(I18n.t("about.title"), 32)
-	title.position = Vector2(296, 124)
+	title.position = Vector2(296, 110)
 	_about.add_child(title)
-	var body := Style.label(I18n.t("about.body"), 17, Palette.MUTED)
-	body.position = Vector2(296, 180)
-	body.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	body.custom_minimum_size.x = 690
+	var body := RichTextLabel.new()
+	body.bbcode_enabled = true
+	body.text = I18n.t("about.body")
+	body.position = Vector2(296, 176)
 	body.size = Vector2(690, 360)
+	body.add_theme_font_override("normal_font", Style.font_body)
+	body.add_theme_font_size_override("normal_font_size", 16)
+	body.add_theme_color_override("default_color", Palette.MUTED)
+	body.meta_clicked.connect(func(m) -> void: OS.shell_open(str(m)))
 	_about.add_child(body)
 	var close := Button.new()
 	close.text = I18n.t("common.close")
 	close.theme_type_variation = "PrimaryButton"
-	close.position = Vector2(860, 548)
+	close.position = Vector2(860, 572)
 	close.pressed.connect(func() -> void:
 		_about.queue_free()
 		_about = null)

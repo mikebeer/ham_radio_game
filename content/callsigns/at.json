@@ -1,0 +1,84 @@
+{
+ "country": "at",
+ "prefix": "OE",
+ "pattern": "^OE[1-9][A-Z]{1,3}$",
+ "example": "OE1ABC",
+ "entries": [
+  {
+   "call": "OE1AYB"
+  },
+  {
+   "call": "OE1ERV",
+   "name": "Stefan K.",
+   "qth": "Salzburg"
+  },
+  {
+   "call": "OE2CU",
+   "name": "Andreas B.",
+   "qth": "Innsbruck"
+  },
+  {
+   "call": "OE2OCF",
+   "name": "Eva H.",
+   "qth": "Wien"
+  },
+  {
+   "call": "OE3FUI",
+   "name": "Marie O.",
+   "qth": "St. Pölten"
+  },
+  {
+   "call": "OE3NYF"
+  },
+  {
+   "call": "OE3OTE",
+   "name": "Lisa T.",
+   "qth": "Linz"
+  },
+  {
+   "call": "OE4DUM",
+   "name": "Matthias W.",
+   "qth": "Linz"
+  },
+  {
+   "call": "OE4KX"
+  },
+  {
+   "call": "OE4UU",
+   "name": "Katharina L.",
+   "qth": "Linz"
+  },
+  {
+   "call": "OE5JZ",
+   "name": "Thomas F.",
+   "qth": "Linz"
+  },
+  {
+   "call": "OE5PH",
+   "name": "Anna W.",
+   "qth": "Linz"
+  },
+  {
+   "call": "OE7BN",
+   "name": "Sarah T.",
+   "qth": "St. Pölten"
+  },
+  {
+   "call": "OE7CDC"
+  },
+  {
+   "call": "OE7KA",
+   "name": "Nina D.",
+   "qth": "Graz"
+  },
+  {
+   "call": "OE8FJZ"
+  },
+  {
+   "call": "OE8IGZ"
+  },
+  {
+   "call": "OE9MUJ"
+  }
+ ]
+}

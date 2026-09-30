@@ -1,0 +1,84 @@
+{
+ "country": "de",
+ "prefix": "DN",
+ "pattern": "^DN[0-9][A-Z]{3}$",
+ "example": "DN1ABC",
+ "entries": [
+  {
+   "call": "DN1PFP"
+  },
+  {
+   "call": "DN1PJC",
+   "name": "Mia N.",
+   "qth": "Kiel"
+  },
+  {
+   "call": "DN1PZC",
+   "name": "Ben X.",
+   "qth": "Berlin"
+  },
+  {
+   "call": "DN2EDQ",
+   "name": "Paul A.",
+   "qth": "Leipzig"
+  },
+  {
+   "call": "DN3AZO",
+   "name": "Tim X.",
+   "qth": "Dresden"
+  },
+  {
+   "call": "DN3UMM",
+   "name": "Hannah J.",
+   "qth": "Stuttgart"
+  },
+  {
+   "call": "DN4CEA"
+  },
+  {
+   "call": "DN4GBR",
+   "name": "Emma V.",
+   "qth": "Berlin"
+  },
+  {
+   "call": "DN4RNW",
+   "name": "Laura P.",
+   "qth": "Berlin"
+  },
+  {
+   "call": "DN4ZPM"
+  },
+  {
+   "call": "DN5EWU",
+   "name": "Finn Y.",
+   "qth": "Stuttgart"
+  },
+  {
+   "call": "DN5FVZ"
+  },
+  {
+   "call": "DN5ZPU"
+  },
+  {
+   "call": "DN6NDG"
+  },
+  {
+   "call": "DN6QWL",
+   "name": "Oskar S.",
+   "qth": "München"
+  },
+  {
+   "call": "DN8NYF",
+   "name": "Nele M.",
+   "qth": "Köln"
+  },
+  {
+   "call": "DN8SNK"
+  },
+  {
+   "call": "DN9SHC",
+   "name": "Leon H.",
+   "qth": "Köln"
+  }
+ ]
+}

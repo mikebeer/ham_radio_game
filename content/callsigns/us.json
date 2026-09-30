@@ -1,0 +1,84 @@
+{
+ "country": "us",
+ "prefix": "K/N/W",
+ "pattern": "^[KNW][A-Z]?[0-9][A-Z]{2,3}$",
+ "example": "KD2ABC",
+ "entries": [
+  {
+   "call": "KL4TAX"
+  },
+  {
+   "call": "KN8LSW",
+   "name": "Dylan X.",
+   "qth": "Chicago"
+  },
+  {
+   "call": "KP9HGJ"
+  },
+  {
+   "call": "KS6KMT",
+   "name": "Carlos Y.",
+   "qth": "Boston"
+  },
+  {
+   "call": "NC8IKO",
+   "name": "Priya O.",
+   "qth": "Denver"
+  },
+  {
+   "call": "NG9KZY",
+   "name": "Luis S.",
+   "qth": "Portland"
+  },
+  {
+   "call": "NI5VUP",
+   "name": "Chloe D.",
+   "qth": "Phoenix"
+  },
+  {
+   "call": "NM8AUJ"
+  },
+  {
+   "call": "NO2SPE"
+  },
+  {
+   "call": "NP6FWB",
+   "name": "Ryan N.",
+   "qth": "Phoenix"
+  },
+  {
+   "call": "NQ3GWW",
+   "name": "Jake Y.",
+   "qth": "Atlanta"
+  },
+  {
+   "call": "NS7WQT"
+  },
+  {
+   "call": "WH6TBH",
+   "name": "Kevin P.",
+   "qth": "Austin"
+  },
+  {
+   "call": "WL6VED"
+  },
+  {
+   "call": "WQ0WOA",
+   "name": "Dana W.",
+   "qth": "Denver"
+  },
+  {
+   "call": "WW3JPG",
+   "name": "Amy O.",
+   "qth": "Atlanta"
+  },
+  {
+   "call": "WX5LSM"
+  },
+  {
+   "call": "WX9ZAR",
+   "name": "Tyler U.",
+   "qth": "Boston"
+  }
+ ]
+}

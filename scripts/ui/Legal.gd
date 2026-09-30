@@ -165,8 +165,11 @@ func _build_result() -> void:
 	var msg := I18n.t("legal.passed", [I18n.t("country." + Game.country())]) if ok else I18n.t("legal.failed", [_result["need"]])
 	add_lbl(msg, Vector2(672, 220), 516, 22, Palette.CREAM, Style.font_body_bold)
 	if ok:
-		add_btn(I18n.t("build.back"), Vector2(672, 400), func() -> void:
-			SceneManager.go("hub", {"goal": "rules"}), "PrimaryButton", Vector2(240, 52))
+		if Game.has_callsign():
+			add_btn(I18n.t("build.back"), Vector2(672, 400), func() -> void:
+				SceneManager.go("hub", {"goal": "rules"}), "PrimaryButton", Vector2(240, 52))
+		else:
+			add_btn(I18n.t("callsign.find"), Vector2(672, 400), func() -> void: SceneManager.go("callsign"), "PrimaryButton", Vector2(280, 52))
 	else:
 		add_btn(I18n.t("common.retry"), Vector2(672, 400), func() -> void:
 			_result = {}

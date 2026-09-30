@@ -97,8 +97,43 @@ func pack() -> Dictionary:
 	return Content.legal_pack(country())
 
 
+## The callsign the player picked in the directory, or the country's practice callsign.
 func callsign() -> String:
-	return str(pack().get("callsign", "N0CALL"))
+	var own := str(profile.get("callsign", ""))
+	return own if own != "" else str(pack().get("callsign", "N0CALL"))
+
+
+func has_callsign() -> bool:
+	return str(profile.get("callsign", "")) != ""
+
+
+func set_callsign(cs: String) -> void:
+	profile["callsign"] = cs
+	FactDatabase.set_fact("rules.callsign", cs != "")
+	save_game()
+
+
+func set_profile(name: String, avatar: int) -> void:
+	profile["name"] = name.strip_edges()
+	profile["avatar"] = avatar
+	save_game()
+
+
+## Changing the country restarts goal 1 (different rules) and gives the callsign back.
+func change_country(c: String) -> void:
+	if c == country():
+		return
+	profile["country"] = c
+	profile["callsign"] = ""
+	QuestSystem.reset_quest("rules")
+	for k in ["rules.lessons_done", "rules.quiz_passed", "rules.callsign", "goal.rules"]:
+		FactDatabase.set_fact(k, false if k != "rules.lessons_done" else 0)
+	FactDatabase.set_fact("rules.country", c)
+	for q in ["rules"]:
+		if QuestSystem.get_quest_state(q) == QuestSystem.ItemState.INACTIVE:
+			QuestSystem.start_quest(q)
+	pump()
+	save_game()
 
 
 func fact_int(key: String, default: int = 0) -> int:

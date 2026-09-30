@@ -93,6 +93,7 @@ func add_art(kind: String, rect: Rect2, index: int = 0, part: String = "") -> Ar
 ## Back button plus title and subtitle, as on the Figma work screens.
 func add_header(title: String, sub: String, back_scene: String = "hub", back_params: Dictionary = {}) -> Label:
 	add_btn(I18n.t("common.back"), Vector2(40, 28), func() -> void: SceneManager.go(back_scene, back_params))
+	add_btn(I18n.t("share.btn"), Vector2(1112, 28), Share.open, "", Vector2(108, 40))
 	add_title(title, Vector2(190, 26), 32)
 	return add_lbl(sub, Vector2(190, 70), 700, 16, Palette.MUTED)
 

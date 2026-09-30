@@ -23,6 +23,7 @@ Content="*res://autoloads/Content.gd"
 Game="*res://autoloads/Game.gd"
 Sfx="*res://autoloads/Sfx.gd"
 SceneManager="*res://autoloads/SceneManager.gd"
+Share="*res://autoloads/Share.gd"
 
 [display]
 
