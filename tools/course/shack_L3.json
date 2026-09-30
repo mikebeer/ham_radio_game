@@ -1,0 +1,586 @@
+{
+ "level": 3,
+ "parts": {
+  "psu": [
+   {
+    "t": {
+     "en": "Efficiency and heat",
+     "de": "Wirkungsgrad und Abwärme"
+    },
+    "b": {
+     "en": "Efficiency is output power divided by input power: eta = P_out / P_in. The part that is not delivered is lost as heat: P_loss = P_in - P_out.\n\nExample: a supply delivers 13.8 V x 20 A = 276 W at an efficiency of 80 % (0.8). It takes P_in = 276 W / 0.8 = 345 W from the mains. 69 W are turned into heat and must be carried away by the heat sink or fan.\n\nThe lower the efficiency, the more heat the supply has to get rid of.",
+     "de": "Der Wirkungsgrad ist das Verhältnis von abgegebener zu aufgenommener Leistung: eta = P_aus / P_ein. Der Rest geht als Wärme verloren: P_V = P_ein - P_aus.\n\nBeispiel: Ein Netzteil liefert 13,8 V x 20 A = 276 W bei einem Wirkungsgrad von 80 % (0,8). Es nimmt P_ein = 276 W / 0,8 = 345 W aus dem Netz auf. 69 W werden zu Wärme und müssen über Kühlkörper oder Lüfter abgeführt werden.\n\nJe niedriger der Wirkungsgrad, desto mehr Wärme fällt an."
+    },
+    "tip": {
+     "en": "Always divide by eta to get the input power: P_in = P_out / eta (not P_out x eta).",
+     "de": "Zur Eingangsleistung immer durch eta teilen: P_ein = P_aus / eta (nicht malnehmen)."
+    }
+   },
+   {
+    "t": {
+     "en": "Linear regulator losses",
+     "de": "Verluste im Linearregler"
+    },
+    "b": {
+     "en": "A linear regulator uses a pass transistor as a variable resistor. It stabilises the output by burning the surplus voltage as heat:\n\nP_loss = (U_in - U_out) x I\n\nExample: 18 V in, 13.8 V out at 10 A. The transistor drops 4.2 V, so P_loss = 4.2 V x 10 A = 42 W, while the load gets 138 W. Efficiency = 13.8 V / 18 V = 77 %. That is why pass transistors sit on a heat sink.",
+     "de": "Ein Linearregler betreibt einen Längstransistor als veränderlichen Widerstand. Er stabilisiert die Ausgangsspannung, indem er die überschüssige Spannung in Wärme umsetzt:\n\nP_V = (U_ein - U_aus) x I\n\nBeispiel: 18 V Eingang, 13,8 V Ausgang bei 10 A. Am Transistor fallen 4,2 V ab, also P_V = 4,2 V x 10 A = 42 W, während die Last 138 W erhält. Wirkungsgrad = 13,8 V / 18 V = 77 %. Deshalb sitzt der Längstransistor auf einem Kühlkörper."
+    },
+    "tip": {
+     "en": "The load current flows through the pass transistor, so heat rises with current.",
+     "de": "Der Laststrom fließt durch den Längstransistor, die Wärme wächst also mit dem Strom."
+    },
+    "img": "1079",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Switching power supply",
+     "de": "Schaltnetzteil"
+    },
+    "b": {
+     "en": "A switching supply turns a transistor fully on or off. There is no state in between, so little heat is produced and efficiency is high. The output voltage is regulated by pulse width modulation: the switching frequency stays constant, the on-time changes. A longer on-time moves more energy to the load and raises the output voltage.\n\nA ferrite-core transformer isolates the output from the mains. The switching creates interference, e.g. every 30 kHz at a 30 kHz clock, so a low-pass filter sits at the 230 V input.",
+     "de": "Ein Schaltnetzteil schaltet einen Transistor voll ein oder aus. Es gibt keinen Zustand dazwischen, daher entsteht wenig Wärme und der Wirkungsgrad ist hoch. Die Ausgangsspannung wird per Pulsbreitenmodulation geregelt: Die Schaltfrequenz bleibt konstant, die Einschaltdauer ändert sich. Ein längeres Einschalten transportiert mehr Energie zur Last, die Spannung steigt.\n\nEin Übertrager mit Ferritkern trennt den Ausgang galvanisch vom Netz. Das Schalten erzeugt Störungen, z. B. alle 30 kHz bei 30 kHz Takt. Darum sitzt am 230-V-Eingang ein Tiefpassfilter."
+    },
+    "tip": {
+     "en": "A badly filtered switching supply can ruin HF reception near it.",
+     "de": "Ein schlecht entstörtes Schaltnetzteil kann den Funkempfang in der Nähe stark stören."
+    },
+    "img": "35",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Internal resistance, load regulation",
+     "de": "Innenwiderstand, Lastregelung"
+    },
+    "b": {
+     "en": "A real supply has an internal resistance R_i in series with the ideal source. Under load the terminal voltage drops: U_k = U_q - I x R_i. So R_i should be as small as possible, R_i << R_L.\n\nGood load regulation means the output voltage barely changes when the load current changes. Measure it with two cases: R_i = (U_q - U_L) / I_L.\n\nExample: 13.8 V unloaded, 13.5 V at 20 A gives R_i = 0.3 V / 20 A = 15 milliohm.",
+     "de": "Ein reales Netzteil hat einen Innenwiderstand R_i in Reihe zur idealen Quelle. Unter Last sinkt die Klemmenspannung: U_k = U_q - I x R_i. Der Innenwiderstand soll daher möglichst klein sein, R_i << R_L.\n\nGute Lastregelung heißt: Die Ausgangsspannung ändert sich kaum, wenn sich der Laststrom ändert. R_i ergibt sich aus zwei Belastungsfällen: R_i = (U_q - U_L) / I_L.\n\nBeispiel: 13,8 V im Leerlauf, 13,5 V bei 20 A ergibt R_i = 0,3 V / 20 A = 15 Milliohm."
+    },
+    "tip": {
+     "en": "Power matching (R_i = R_L) gives maximum power but only 50 % efficiency - not wanted for a supply.",
+     "de": "Leistungsanpassung (R_i = R_L) liefert maximale Leistung, aber nur 50 % Wirkungsgrad - beim Netzteil nicht gewollt."
+    },
+    "img": "1018",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Voltage drop in supply cables",
+     "de": "Spannungsfall in Zuleitungen"
+    },
+    "b": {
+     "en": "Cables have resistance too. By Ohm's law the drop is U = I x R. With 20 A through cables of total 0.05 ohm: U = 20 A x 0.05 ohm = 1 V. The rig then sees only 12.8 V instead of 13.8 V. The heat in the cable is P = I^2 x R = 400 x 0.05 = 20 W.\n\nThe wire resistance is R = rho x l / A (copper rho = 0.018 ohm mm^2/m). Example: 4 m (out and back) of 2.5 mm^2 gives 0.029 ohm. Use short, thick cables and good contacts.",
+     "de": "Auch Kabel haben einen Widerstand. Nach dem Ohmschen Gesetz fällt U = I x R ab. Bei 20 A durch Kabel mit insgesamt 0,05 Ohm: U = 20 A x 0,05 Ohm = 1 V. Das Funkgerät sieht dann nur 12,8 V statt 13,8 V. Die Wärme im Kabel beträgt P = I^2 x R = 400 x 0,05 = 20 W.\n\nDer Drahtwiderstand ist R = rho x l / A (Kupfer rho = 0,018 Ohm mm^2/m). Beispiel: 4 m (hin und zurück) mit 2,5 mm^2 ergeben 0,029 Ohm. Kurze, dicke Kabel und gute Kontakte verwenden."
+    },
+    "tip": {
+     "en": "Doubling the length doubles R; doubling the cross-section halves it.",
+     "de": "Doppelte Länge verdoppelt R, doppelter Querschnitt halbiert R."
+    }
+   }
+  ],
+  "antenna": [
+   {
+    "t": {
+     "en": "dBd, dBi and EIRP",
+     "de": "dBd, dBi und EIRP"
+    },
+    "b": {
+     "en": "Antenna gain needs a reference. dBd refers to the half-wave dipole, dBi to the isotropic radiator. The dipole itself has 2.15 dBi, so g_i = g_d + 2.15 dB.\n\nERP refers to a dipole, EIRP to an isotropic radiator, so EIRP = ERP x 1.64, i.e. +2.15 dB. Example: 100 W ERP corresponds to 100 W x 1.64 = 164 W EIRP.\n\nEIRP is always larger than ERP for the same antenna and power.",
+     "de": "Antennengewinn braucht einen Bezug. dBd bezieht sich auf den Halbwellendipol, dBi auf den isotropen Strahler. Der Dipol selbst hat 2,15 dBi, also g_i = g_d + 2,15 dB.\n\nDie ERP bezieht sich auf einen Dipol, die EIRP auf einen isotropen Strahler, also EIRP = ERP x 1,64, das sind +2,15 dB. Beispiel: 100 W ERP entsprechen 100 W x 1,64 = 164 W EIRP.\n\nDie EIRP ist bei gleicher Antenne und Leistung immer größer als die ERP."
+    },
+    "tip": {
+     "en": "Memory aid: 2.15 dB equals a power factor of 1.64.",
+     "de": "Merkhilfe: 2,15 dB entsprechen dem Leistungsfaktor 1,64."
+    },
+    "img": "751",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Calculating ERP in dB",
+     "de": "ERP in dB berechnen"
+    },
+    "b": {
+     "en": "Only the power that reaches the antenna counts. Feedline loss is subtracted first, then the gain is added, all in dB. With gain in dBd the result is ERP:\n\nERP = P_TX x 10^((g_d - a) / 10 dB)\n\nExample: 100 W transmitter, 2 dB feedline loss, 5 dBd antenna. Net = 5 - 2 = +3 dB, a factor 2, so ERP = 200 W. With a gain given in dBi, the same formula gives EIRP. For this example EIRP = 200 W x 1.64 = about 328 W.",
+     "de": "Es zählt nur die Leistung, die an der Antenne ankommt. Zuerst wird die Kabeldämpfung abgezogen, dann der Gewinn addiert, alles in dB. Bei Gewinn in dBd ergibt sich die ERP:\n\nERP = P_Sender x 10^((g_d - a) / 10 dB)\n\nBeispiel: 100 W Sender, 2 dB Kabeldämpfung, 5 dBd Antenne. Netto 5 - 2 = +3 dB, das ist Faktor 2, also ERP = 200 W. Bei Gewinn in dBi liefert dieselbe Formel die EIRP. Hier: EIRP = 200 W x 1,64 = rund 328 W."
+    },
+    "tip": {
+     "en": "Watch the signs: loss is subtracted, gain is added.",
+     "de": "Auf die Vorzeichen achten: Dämpfung abziehen, Gewinn addieren."
+    }
+   },
+   {
+    "t": {
+     "en": "Dipole feed impedance",
+     "de": "Speisewiderstand des Dipols"
+    },
+    "b": {
+     "en": "A centre-fed half-wave dipole in free space has a feed resistance of about 73 ohms. Near the ground it is usually 65 to 75 ohms and settles at the free-space value from about one wavelength height.\n\nAt resonance the feed impedance is purely resistive. Below the resonant frequency the dipole is electrically too short and looks capacitive, above it is too long and looks inductive. A folded dipole has about 240 to 300 ohms.",
+     "de": "Ein in der Mitte gespeister Halbwellendipol hat im Freiraum einen Speisewiderstand von etwa 73 Ohm. In Bodennähe sind es meist 65 bis 75 Ohm; ab etwa einer Wellenlänge Aufbauhöhe nähert er sich dem Freiraumwert.\n\nIn Resonanz ist die Speiseimpedanz ein reiner Wirkwiderstand. Unterhalb der Resonanzfrequenz ist der Dipol elektrisch zu kurz und wirkt kapazitiv, oberhalb ist er zu lang und wirkt induktiv. Ein Faltdipol hat etwa 240 bis 300 Ohm."
+    },
+    "tip": {
+     "en": "Current leads voltage in a capacitive, lags in an inductive impedance.",
+     "de": "Bei kapazitiver Impedanz eilt der Strom der Spannung voraus, bei induktiver nach."
+    },
+    "img": "788",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "SWR from feed resistance",
+     "de": "SWR aus dem Speisewiderstand"
+    },
+    "b": {
+     "en": "For a purely resistive antenna, SWR is the ratio of load resistance R_a to line impedance Z, arranged so that SWR >= 1:\n\ns = R_a / Z if R_a > Z, and s = Z / R_a if R_a < Z.\n\nExamples on 50 ohm coax: 100 ohm gives s = 2, 10 ohm gives s = 5. A dipole with 73 ohms fed directly gives s = 73 / 50 = 1.46, about 1.5:1. At SWR 1.5 only 4 % of the power is reflected, so this is perfectly usable.",
+     "de": "Bei einer rein ohmschen Antenne ist das SWR das Verhältnis von Lastwiderstand R_a zu Leitungswellenwiderstand Z, so gebildet, dass SWR >= 1:\n\ns = R_a / Z für R_a > Z und s = Z / R_a für R_a < Z.\n\nBeispiele an 50-Ohm-Koax: 100 Ohm ergeben s = 2, 10 Ohm ergeben s = 5. Ein Dipol mit 73 Ohm direkt angeschlossen ergibt s = 73 / 50 = 1,46, also etwa 1,5:1. Bei SWR 1,5 werden nur 4 % der Leistung reflektiert, das ist gut brauchbar."
+    }
+   },
+   {
+    "t": {
+     "en": "Yagi: gain and front-to-back",
+     "de": "Yagi: Gewinn und Vor-Rück"
+    },
+    "b": {
+     "en": "A Yagi bundles the power in the main direction. More directors and a longer boom raise the gain and narrow the beam. The gain is given relative to a dipole (dBd) or isotropic radiator (dBi).\n\nThe front-to-back ratio compares forward and rearward power. 20 dB means a factor of 100: a signal from behind arrives with 1/100 of the power it would have from the front. 10 dB would be 1/10. The parasitic elements also change the feed impedance.",
+     "de": "Eine Yagi bündelt die Leistung in Hauptstrahlrichtung. Mehr Direktoren und ein längerer Boom erhöhen den Gewinn und verkleinern den Öffnungswinkel. Der Gewinn wird auf den Dipol (dBd) oder den isotropen Strahler (dBi) bezogen.\n\nDas Vor-Rück-Verhältnis vergleicht die Leistung nach vorn und nach hinten. 20 dB bedeuten Faktor 100: Ein Signal von hinten kommt mit 1/100 der Leistung an, die es von vorn hätte. 10 dB wären 1/10. Die parasitären Elemente verändern außerdem die Speiseimpedanz."
+    },
+    "img": "1106",
+    "img_kind": "drawing"
+   }
+  ],
+  "transceiver": [
+   {
+    "t": {
+     "en": "Superheterodyne principle",
+     "de": "Überlagerungsprinzip"
+    },
+    "b": {
+     "en": "In a superheterodyne receiver a mixer combines the input signal f_e with a local oscillator f_o. The difference is a fixed intermediate frequency: f_IF = |f_e - f_o|.\n\nTuning moves the oscillator, while everything after the mixer works on one fixed IF. There the IF filter can be built very steep and stable. This filter decides how well the receiver separates neighbouring stations (selectivity). After the IF stage come the demodulator, the AF amplifier and the speaker.",
+     "de": "Im Überlagerungsempfänger mischt ein Mischer das Eingangssignal f_e mit einem Oszillator f_o. Die Differenz ist eine feste Zwischenfrequenz: f_ZF = |f_e - f_o|.\n\nBeim Abstimmen wird der Oszillator verstellt, alle Stufen hinter dem Mischer arbeiten auf einer festen ZF. Dort lässt sich das ZF-Filter sehr steil und stabil bauen. Es bestimmt, wie gut der Empfänger benachbarte Stationen trennt (Trennschärfe). Danach folgen Demodulator, NF-Verstärker und Lautsprecher."
+    },
+    "img": "839",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "The image frequency",
+     "de": "Die Spiegelfrequenz"
+    },
+    "b": {
+     "en": "The mixer equation has two solutions: the wanted frequency and the image frequency. Both give the same IF. They are 2 x f_IF apart. With the oscillator above the signal, the image lies above: f_S = f_E + 2 x f_IF; with the oscillator below, f_S = f_E - 2 x f_IF.\n\nExample: IF 9 MHz, receiving 14.2 MHz, oscillator at 23.2 MHz. Image = 14.2 + 18 = 32.2 MHz. Front-end band-pass filters must block it. A higher IF gives a larger spacing and makes this easier.",
+     "de": "Die Mischgleichung hat zwei Lösungen: die gewünschte Frequenz und die Spiegelfrequenz. Beide ergeben dieselbe ZF. Sie liegen 2 x f_ZF auseinander. Schwingt der Oszillator oberhalb, liegt die Spiegelfrequenz oberhalb: f_S = f_E + 2 x f_ZF; bei Oszillator unterhalb ist f_S = f_E - 2 x f_ZF.\n\nBeispiel: ZF 9 MHz, Empfang 14,2 MHz, Oszillator 23,2 MHz. Spiegelfrequenz = 14,2 + 18 = 32,2 MHz. Bandfilter am Eingang müssen sie sperren. Eine höhere ZF vergrößert den Abstand und erleichtert das."
+    },
+    "img": "807",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Dynamic range and overload",
+     "de": "Dynamikbereich und Übersteuerung"
+    },
+    "b": {
+     "en": "The dynamic range of a receiver is the span between the noise floor (weakest usable signal) and the strongest signal that is still handled without distortion. It is given in dB.\n\nTwo strong signals in a non-linear stage create intermodulation products, which do not come from outside. The third-order intercept point IP3 is a measure of large-signal strength: the higher the IP3, the stronger the signals the receiver handles cleanly. Overload sounds like distorted, unreadable audio.",
+     "de": "Der Dynamikbereich eines Empfängers ist der Abstand zwischen Rauschgrenze (schwächstes nutzbares Signal) und dem stärksten Signal, das noch ohne Verzerrung verarbeitet wird. Er wird in dB angegeben.\n\nZwei starke Signale erzeugen in nichtlinearen Stufen Intermodulationsprodukte, die nicht von außen kommen. Der Intercept Point dritter Ordnung (IP3) misst die Großsignalfestigkeit: Je höher der IP3, desto stärkere Signale verarbeitet der Empfänger sauber. Übersteuerung klingt verzerrt und unverständlich."
+    },
+    "tip": {
+     "en": "Intermodulation appears as extra signals next to two strong ones.",
+     "de": "Intermodulation erscheint als zusätzliche Signale neben zwei starken."
+    }
+   },
+   {
+    "t": {
+     "en": "Preamplifier or attenuator?",
+     "de": "Vorverstärker oder Abschwächer?"
+    },
+    "b": {
+     "en": "On the HF bands, noise and signals from the antenna are already strong. A good antenna makes an extra preamplifier almost useless, and it only raises the risk of overload. If a receiver is overloaded, switch on the attenuator. It reduces strong input signals by a fixed value.\n\nOn VHF and above, cable loss matters more. There a preamplifier at the antenna compensates it. It must be switched off during transmit (PTT-controlled). The noise figure of a preamp in dB tells how much the SNR gets worse: a factor 2 is 3 dB.",
+     "de": "Auf Kurzwelle sind Rauschen und Signale aus der Antenne ohnehin stark. Bei guter Antenne bringt ein zusätzlicher Vorverstärker kaum Nutzen und erhöht nur die Gefahr der Übersteuerung. Ist der Empfänger übersteuert, schaltet man den Abschwächer (Attenuator) zu, der starke Eingangssignale um einen festen Wert dämpft.\n\nAb VHF überwiegen die Kabelverluste. Dort gleicht ein Vorverstärker an der Antenne sie aus. Er muss im Sendefall abgeschaltet werden (PTT-gesteuert). Die Rauschzahl in dB sagt, wie stark das SNR schlechter wird: Faktor 2 sind 3 dB."
+    }
+   },
+   {
+    "t": {
+     "en": "PLL synthesizer",
+     "de": "PLL-Synthesizer"
+    },
+    "b": {
+     "en": "Modern rigs generate their oscillator frequencies with a PLL (phase-locked loop). A phase detector compares the VCO output, divided by n, with a stable reference from a crystal oscillator. A low-pass filter turns the error into a control voltage for the VCO. When locked: f_out = n x f_ref.\n\nExample: f_ref = 10 MHz, n = 100 gives 1 GHz. Accuracy and stability come from the crystal. The smallest step equals f_ref: with 12.5 kHz as reference, n + 1 shifts the output by 12.5 kHz.",
+     "de": "Moderne Geräte erzeugen ihre Oszillatorfrequenzen mit einer PLL (Phasenregelschleife). Ein Phasenvergleicher vergleicht den durch n geteilten VCO-Ausgang mit einer stabilen Referenz aus einem Quarzoszillator. Ein Tiefpass macht aus dem Fehler eine Steuerspannung für den VCO. Im eingerasteten Zustand gilt: f_aus = n x f_ref.\n\nBeispiel: f_ref = 10 MHz, n = 100 ergibt 1 GHz. Genauigkeit und Stabilität kommen vom Quarz. Die kleinste Schrittweite ist f_ref: Bei 12,5 kHz Referenz verschiebt n + 1 den Ausgang um 12,5 kHz."
+    },
+    "img": "45",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "SDR: signal chain in software",
+     "de": "SDR: Signalkette in Software"
+    },
+    "b": {
+     "en": "A software defined radio (SDR) digitises the signal with an A/D converter and processes it in software or an FPGA. A transmit chain: microphone, A/D converter, source coder (compress), channel coder (add redundancy), mapper (symbols), I/Q modulator, power amplifier, antenna.\n\nThe receiver works in reverse: I/Q demodulator, de-mapper, channel decoder (correct errors), source decoder, D/A converter, speaker. Filters, noise reduction and modes are then just software.",
+     "de": "Ein Software Defined Radio (SDR) digitalisiert das Signal mit einem A/D-Umsetzer und verarbeitet es in Software oder im FPGA. Eine Sendekette: Mikrofon, A/D-Umsetzer, Quellencodierer (komprimieren), Kanalcodierer (Redundanz), Mapper (Symbole), I/Q-Modulator, Leistungsverstärker, Antenne.\n\nDer Empfänger arbeitet rückwärts: I/Q-Demodulator, De-Mapper, Kanaldecodierer (Fehler korrigieren), Quellendecodierer, D/A-Umsetzer, Lautsprecher. Filter, Rauschunterdrückung und Betriebsarten sind dann reine Software."
+    }
+   }
+  ],
+  "mic": [
+   {
+    "t": {
+     "en": "Microphone level in dB",
+     "de": "Mikrofonpegel in dB"
+    },
+    "b": {
+     "en": "The microphone amplifier raises the tiny microphone voltage. Levels are compared in dB. Power: 10 x log10(P2/P1). Since P = U^2/R, voltages use a factor 20: g = 20 x log10(U2/U1).\n\nExamples: 10 mV to 100 mV is a factor 10 in voltage, so 20 x log10(10) = +20 dB. Doubling the voltage is +6 dB, a tenfold power is +10 dB, doubled power is +3 dB.\n\nThe amplifier also band-limits the audio to about 300 Hz to 3 kHz, which is enough for speech.",
+     "de": "Der Mikrofonverstärker hebt die kleine Mikrofonspannung an. Pegel vergleicht man in dB. Leistung: 10 x log10(P2/P1). Wegen P = U^2/R gilt für Spannungen der Faktor 20: g = 20 x log10(U2/U1).\n\nBeispiele: 10 mV auf 100 mV ist Spannungsfaktor 10, also 20 x log10(10) = +20 dB. Doppelte Spannung sind +6 dB, zehnfache Leistung +10 dB, doppelte Leistung +3 dB.\n\nDer Verstärker begrenzt das NF-Signal außerdem auf etwa 300 Hz bis 3 kHz, das reicht für Sprache."
+    },
+    "tip": {
+     "en": "Voltage: 20 x log. Power: 10 x log. Mixing these up is a classic error.",
+     "de": "Spannung: 20 x log, Leistung: 10 x log. Diese Verwechslung ist ein Klassiker."
+    }
+   },
+   {
+    "t": {
+     "en": "FM deviation",
+     "de": "Frequenzhub bei FM"
+    },
+    "b": {
+     "en": "In FM the information is in the frequency change of the carrier. The frequency deviation is how far the instantaneous frequency swings away from the carrier. A louder microphone signal gives a larger deviation, while the audio frequency only decides how often the frequency swings.\n\nToo much deviation widens the bandwidth and disturbs adjacent channels. So the microphone signal is limited in amplitude first and then applied to the carrier, e.g. with a capacitance diode in the oscillator.",
+     "de": "Bei FM steckt die Information in der Frequenzänderung des Trägers. Der Frequenzhub ist die Auslenkung der momentanen Frequenz vom Träger. Ein lauteres Mikrofonsignal ergibt einen größeren Hub, die NF-Frequenz bestimmt nur, wie oft die Frequenz schwingt.\n\nZu viel Hub vergrößert die Bandbreite und stört Nachbarkanäle. Darum wird das Mikrofonsignal zuerst in der Amplitude begrenzt und dann auf den Träger moduliert, z. B. mit einer Kapazitätsdiode im Oszillator."
+    }
+   },
+   {
+    "t": {
+     "en": "Modulation index and Carson",
+     "de": "Modulationsindex und Carson"
+    },
+    "b": {
+     "en": "The modulation index relates deviation to audio frequency: m = deviation / f_audio. With 3 kHz deviation and a 1 kHz tone: m = 3.\n\nCarson's rule estimates the occupied bandwidth, which holds about 99 % of the power:\n\nB = 2 x (deviation + highest audio frequency)\n\nExample: deviation 3 kHz, highest audio frequency 3 kHz gives B = 2 x (3 + 3) kHz = 12 kHz. Rearranged, the formula also gives the deviation from a given bandwidth.",
+     "de": "Der Modulationsindex setzt den Hub ins Verhältnis zur NF-Frequenz: m = Hub / f_NF. Bei 3 kHz Hub und 1 kHz Ton ist m = 3.\n\nDie Carson-Formel schätzt die belegte Bandbreite ab, in der etwa 99 % der Leistung liegen:\n\nB = 2 x (Hub + höchste NF-Frequenz)\n\nBeispiel: Hub 3 kHz, höchste NF-Frequenz 3 kHz ergibt B = 2 x (3 + 3) kHz = 12 kHz. Durch Umstellen erhält man auch den Hub aus einer gegebenen Bandbreite."
+    },
+    "img": "910",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Overdriving SSB: splatter",
+     "de": "SSB übersteuert: Splatter"
+    },
+    "b": {
+     "en": "If the microphone gain is too high, the audio stages and the SSB modulator are overdriven. The signal is distorted and intermodulation products appear outside the normal bandwidth of 2.7 kHz. This is called splatter and disturbs neighbouring stations.\n\nThe ALC meter helps: slowly raise the audio level until the ALC just responds, then turn it back a little. A slight ALC action is fine, the red range is too much.",
+     "de": "Ist die Mikrofonverstärkung zu hoch, werden die NF-Stufen und der SSB-Modulator übersteuert. Das Signal wird verzerrt, und Intermodulationsprodukte entstehen außerhalb der normalen Bandbreite von 2,7 kHz. Man nennt das Splatter; er stört benachbarte Stationen.\n\nALC-Instrument beachten: NF-Pegel langsam erhöhen, bis die ALC gerade anspricht, dann etwas zurückdrehen. Der rote Bereich ist zu viel."
+    },
+    "img": "914",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Speech compressor",
+     "de": "Sprachkompressor"
+    },
+    "b": {
+     "en": "Speech has large level swings between quiet and loud parts (dynamic range). A speech compressor amplifies loud parts less than quiet ones, so the differences shrink. Afterwards the overall level can be raised. The average transmit power increases without a higher peak power, which helps in DX and contests.\n\nToo much compression sounds unnatural, hurts readability and can overdrive later stages. Then splatter appears again. Set the mic gain first, then add compression step by step.",
+     "de": "Sprache hat große Pegelunterschiede zwischen leisen und lauten Anteilen (Dynamikumfang). Ein Sprachkompressor verstärkt laute Anteile weniger als leise, die Unterschiede werden kleiner. Danach lässt sich der Gesamtpegel anheben. Die mittlere Sendeleistung steigt, ohne dass die Spitzenleistung wächst; das hilft bei DX und im Contest.\n\nZu viel Kompression klingt unnatürlich, verschlechtert die Verständlichkeit und kann spätere Stufen übersteuern (Splatter). Erst die Mikrofonverstärkung einstellen, dann die Kompression schrittweise zuschalten."
+    },
+    "img": "1043",
+    "img_kind": "drawing"
+   }
+  ],
+  "speaker": [
+   {
+    "t": {
+     "en": "Decibel for power",
+     "de": "Dezibel bei Leistung"
+    },
+    "b": {
+     "en": "The decibel compares two powers logarithmically: g = 10 x log10(P2/P1). Multiplication becomes addition, which makes chains of gains and losses easy.\n\nValues to know: factor 2 is +3 dB, factor 4 is +6 dB, factor 10 is +10 dB, factor 100 is +20 dB. Negative dB means a factor below 1: -3 dB is 0.5, -10 dB is 0.1.\n\nExample: an audio amplifier goes from 1 W to 10 W. That is a factor 10, so +10 dB.",
+     "de": "Das Dezibel vergleicht zwei Leistungen logarithmisch: g = 10 x log10(P2/P1). Multiplikationen werden zu Additionen, so sind Ketten aus Verstärkung und Dämpfung einfach zu rechnen.\n\nWichtige Werte: Faktor 2 sind +3 dB, Faktor 4 sind +6 dB, Faktor 10 sind +10 dB, Faktor 100 sind +20 dB. Negative dB bedeuten einen Faktor unter 1: -3 dB sind 0,5, -10 dB sind 0,1.\n\nBeispiel: Ein NF-Verstärker geht von 1 W auf 10 W. Das ist Faktor 10, also +10 dB."
+    }
+   },
+   {
+    "t": {
+     "en": "Decibel for voltage",
+     "de": "Dezibel bei Spannung"
+    },
+    "b": {
+     "en": "For voltages the factor is 20, because power grows with the square of the voltage (P = U^2/R):\n\ng = 20 x log10(U2/U1)\n\nDoubling the audio voltage is +6 dB (20 x log10 2). A tenfold voltage is +20 dB and a hundredfold voltage +40 dB. Half the voltage is -6 dB.\n\nCheck: doubled voltage means four times the power, and four times the power is 10 x log10(4) = +6 dB. Both ways give the same result.",
+     "de": "Bei Spannungen gilt der Faktor 20, weil die Leistung mit dem Quadrat der Spannung wächst (P = U^2/R):\n\ng = 20 x log10(U2/U1)\n\nVerdoppelt sich die NF-Spannung, sind das +6 dB (20 x log10 2). Zehnfache Spannung sind +20 dB, hundertfache +40 dB. Halbe Spannung sind -6 dB.\n\nProbe: Doppelte Spannung bedeutet vierfache Leistung, und vierfache Leistung sind 10 x log10(4) = +6 dB. Beide Wege führen zum selben Ergebnis."
+    }
+   },
+   {
+    "t": {
+     "en": "Amplifier voltage and current",
+     "de": "Spannung am Lautsprecher"
+    },
+    "b": {
+     "en": "An audio amplifier delivers power P into the speaker impedance R. From P = U^2/R follows:\n\nU = sqrt(P x R)\n\nExample: 50 W into 8 ohms. U = sqrt(50 x 8) = sqrt(400) = 20 V (RMS). The current is I = U/R = 20 V / 8 ohms = 2.5 A. Check: 20 V x 2.5 A = 50 W.\n\nThe same power into 4 ohms needs only 14.1 V, but 3.5 A.",
+     "de": "Ein NF-Verstärker gibt die Leistung P an die Lautsprecherimpedanz R ab. Aus P = U^2/R folgt:\n\nU = Wurzel(P x R)\n\nBeispiel: 50 W an 8 Ohm. U = Wurzel(50 x 8) = Wurzel(400) = 20 V (Effektivwert). Der Strom ist I = U/R = 20 V / 8 Ohm = 2,5 A. Probe: 20 V x 2,5 A = 50 W.\n\nDieselbe Leistung an 4 Ohm braucht nur 14,1 V, dafür aber 3,5 A."
+    }
+   },
+   {
+    "t": {
+     "en": "Digital audio: sampling",
+     "de": "Digitales Audio: Abtastung"
+    },
+    "b": {
+     "en": "To process audio digitally, an A/D converter samples the signal at fixed time steps. The sampling theorem of Nyquist and Shannon says: the sampling rate must be more than twice the highest signal frequency, f_s > 2 x f_max.\n\nExample: speech up to 3 kHz needs more than 6 kHz. A CD uses 44.1 kHz, so it reproduces up to about 22 kHz.\n\nIf the rate is too low, aliasing occurs and the signal cannot be rebuilt correctly. An anti-alias filter before the converter removes higher frequencies.",
+     "de": "Zur digitalen Verarbeitung tastet ein A/D-Umsetzer das Signal in festen Zeitabständen ab. Das Abtasttheorem von Nyquist und Shannon besagt: Die Abtastrate muss mehr als das Doppelte der höchsten Signalfrequenz betragen, f_s > 2 x f_max.\n\nBeispiel: Sprache bis 3 kHz braucht mehr als 6 kHz. Eine CD nutzt 44,1 kHz und gibt daher Frequenzen bis etwa 22 kHz wieder.\n\nIst die Rate zu klein, entsteht Aliasing und das Signal lässt sich nicht richtig rekonstruieren. Ein Anti-Alias-Filter vor dem Umsetzer entfernt höhere Frequenzen."
+    },
+    "img": "411",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "DSP: from antenna to speaker",
+     "de": "DSP: von der Antenne zum Lautsprecher"
+    },
+    "b": {
+     "en": "In a modern rig the audio path is digital: the signal is sampled by an A/D converter, processed by a digital signal processor (DSP) and turned back into an analogue voltage by a D/A converter. The NF amplifier then drives the speaker.\n\nFilters, noise reduction and notch filters are calculations on the samples, so they can be changed by software. More samples per second and more bits per sample mean higher quality, but also more computing work.",
+     "de": "In einem modernen Funkgerät ist der NF-Weg digital: Der A/D-Umsetzer tastet das Signal ab, ein digitaler Signalprozessor (DSP) verarbeitet es, und ein D/A-Umsetzer macht daraus wieder eine analoge Spannung. Der NF-Verstärker treibt dann den Lautsprecher.\n\nFilter, Rauschunterdrückung und Notchfilter sind Rechenschritte auf den Abtastwerten und lassen sich per Software ändern. Mehr Abtastwerte pro Sekunde und mehr Bit je Wert bedeuten höhere Qualität, aber auch mehr Rechenaufwand."
+    },
+    "img": "911",
+    "img_kind": "drawing"
+   }
+  ],
+  "swr": [
+   {
+    "t": {
+     "en": "SWR from power and resistance",
+     "de": "SWR aus Leistung und Widerstand"
+    },
+    "b": {
+     "en": "SWR (s) can be found from forward power P_f and reflected power P_r:\n\ns = (sqrt(P_f) + sqrt(P_r)) / (sqrt(P_f) - sqrt(P_r))\n\nExample: 100 W forward and 25 W reflected give s = (10 + 5) / (10 - 5) = 3. So SWR 3 means 25 % reflection. Other values: SWR 1.5 is 4 %, SWR 2 is 11 %, SWR 6 is 51 %, SWR infinity is 100 %.\n\nOn the line the voltage swings between U_max and U_min: s = U_max / U_min.",
+     "de": "Das SWR (s) folgt aus vorlaufender Leistung P_v und rücklaufender Leistung P_r:\n\ns = (Wurzel(P_v) + Wurzel(P_r)) / (Wurzel(P_v) - Wurzel(P_r))\n\nBeispiel: 100 W vor und 25 W zurück ergeben s = (10 + 5) / (10 - 5) = 3. SWR 3 bedeutet also 25 % Reflexion. Weitere Werte: SWR 1,5 sind 4 %, SWR 2 sind 11 %, SWR 6 sind 51 %, SWR unendlich sind 100 %.\n\nAuf der Leitung schwankt die Spannung zwischen U_max und U_min: s = U_max / U_min."
+    },
+    "img": "978",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Reflection coefficient",
+     "de": "Reflexionsfaktor"
+    },
+    "b": {
+     "en": "The reflection coefficient rho tells how much of the voltage wave is reflected at the load Z_L on a line of impedance Z_0:\n\nrho = (Z_L - Z_0) / (Z_L + Z_0)\n\nThe SWR follows as s = (1 + rho) / (1 - rho), and the reflected power is rho^2 x P_f.\n\nExample: SWR 3 gives rho = (3 - 1) / (3 + 1) = 0.5, so the reflected power is 0.25 of the forward power. Check: 150 ohms on 50 ohm coax gives rho = 100 / 200 = 0.5 and s = 3.",
+     "de": "Der Reflexionsfaktor rho sagt, welcher Teil der Spannungswelle an der Last Z_L auf einer Leitung mit Wellenwiderstand Z_0 reflektiert wird:\n\nrho = (Z_L - Z_0) / (Z_L + Z_0)\n\nDas SWR folgt aus s = (1 + rho) / (1 - rho), die reflektierte Leistung ist rho^2 x P_v.\n\nBeispiel: SWR 3 ergibt rho = (3 - 1) / (3 + 1) = 0,5, die reflektierte Leistung ist also 0,25 der vorlaufenden. Probe: 150 Ohm an 50-Ohm-Koax ergeben rho = 100 / 200 = 0,5 und s = 3."
+    },
+    "tip": {
+     "en": "Inverse: rho = (s - 1) / (s + 1).",
+     "de": "Umkehrung: rho = (s - 1) / (s + 1)."
+    }
+   },
+   {
+    "t": {
+     "en": "How much power does the load get?",
+     "de": "Wie viel Leistung nimmt die Last auf?"
+    },
+    "b": {
+     "en": "On a lossless line the load absorbs the forward power minus the reflected power: P_load = P_f - P_r.\n\nExample: P_f = 100 W at SWR 3. Reflected power is rho^2 = 0.5^2 = 25 %, so P_r = 25 W and the load absorbs 75 W. At SWR 2 the load gets 89 %, at SWR 1.5 it gets 96 %.\n\nA high reflected power alone is not lost on a good line, but it can overload the transmitter output stage. With no antenna connected, nearly all power is reflected.",
+     "de": "Auf einer verlustfreien Leitung nimmt die Last die vorlaufende Leistung abzüglich der reflektierten auf: P_Last = P_v - P_r.\n\nBeispiel: P_v = 100 W bei SWR 3. Die reflektierte Leistung ist rho^2 = 0,5^2 = 25 %, also P_r = 25 W, und die Last nimmt 75 W auf. Bei SWR 2 erhält sie 89 %, bei SWR 1,5 sind es 96 %.\n\nDie Leistung geht auf einer guten Leitung nicht verloren, kann aber die Endstufe des Senders überlasten. Ohne angeschlossene Antenne wird fast alles reflektiert."
+    }
+   },
+   {
+    "t": {
+     "en": "Return loss",
+     "de": "Rückflussdämpfung"
+    },
+    "b": {
+     "en": "Return loss says by how many dB the reflected wave is weaker than the forward wave:\n\na_r = -20 x log10(rho) = 10 x log10(P_f / P_r)\n\nA large return loss means a good match. Examples: rho = 0.5 (SWR 3) is 6 dB. SWR 1.5 gives rho = 0.2, about 14 dB. A return loss of 20 dB means rho = 0.1, and SWR = (1 + 0.1) / (1 - 0.1) = about 1.2:1. At 10 dB the SWR is about 1.9:1.",
+     "de": "Die Rückflussdämpfung gibt an, um wie viel dB die reflektierte Welle schwächer ist als die vorlaufende:\n\na_r = -20 x log10(rho) = 10 x log10(P_v / P_r)\n\nEine große Rückflussdämpfung bedeutet gute Anpassung. Beispiele: rho = 0,5 (SWR 3) sind 6 dB. SWR 1,5 ergibt rho = 0,2, etwa 14 dB. 20 dB Rückflussdämpfung bedeuten rho = 0,1 und SWR = (1 + 0,1) / (1 - 0,1) = etwa 1,2:1. Bei 10 dB liegt das SWR bei etwa 1,9:1."
+    },
+    "tip": {
+     "en": "Higher return loss = lower SWR.",
+     "de": "Mehr Rückflussdämpfung = kleineres SWR."
+    }
+   },
+   {
+    "t": {
+     "en": "Cable loss hides a mismatch",
+     "de": "Kabeldämpfung täuscht gutes SWR vor"
+    },
+    "b": {
+     "en": "Coax attenuates the forward wave on the way to the antenna and the reflected wave again on the way back. The reflected power is weakened twice. A lossy cable therefore shows a better SWR at the radio than at the antenna.\n\nExample: 5 dB loss each way is 10 dB in total, so P_r is only 1/10 of P_f at the meter: s = (1 + 0.32) / (1 - 0.32) = 1.9, even with the antenna disconnected (total reflection)! A low reading through long, lossy cable proves little. Measure at the antenna.",
+     "de": "Koax dämpft die vorlaufende Welle auf dem Weg zur Antenne und die reflektierte Welle noch einmal auf dem Rückweg. Die reflektierte Leistung wird also doppelt geschwächt. Ein verlustreiches Kabel zeigt daher am Funkgerät ein besseres SWR als an der Antenne.\n\nBeispiel: 5 dB Dämpfung je Richtung sind insgesamt 10 dB, P_r beträgt am Messgerät nur 1/10 von P_v: s = (1 + 0,32) / (1 - 0,32) = 1,9, sogar bei abgeklemmter Antenne (Totalreflexion)! Ein niedriger Wert über langes, dämpfendes Kabel beweist wenig. Am Antennenfuß messen."
+    },
+    "img": "1051",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "How a SWR meter works",
+     "de": "So arbeitet ein SWR-Meter"
+    },
+    "b": {
+     "en": "A SWR meter contains two directional couplers, connected in opposite directions. Each one takes a small part of the voltage (capacitive coupling) and of the current (inductive coupling) from the line. For one wave direction these parts add up, for the other they cancel.\n\nSo one coupler gives forward and one reflected wave. Diodes rectify the RF, capacitors smooth it, and two meters (cross-pointer) show both values. Measure directly at the antenna to judge the antenna, directly behind the transmitter to judge the whole system.",
+     "de": "Ein SWR-Meter enthält zwei Richtkoppler, die gegensinnig betrieben werden. Jeder koppelt einen kleinen Teil der Spannung (kapazitiv) und des Stroms (induktiv) aus der Leitung aus. Bei der einen Laufrichtung addieren sich die Anteile, bei der anderen heben sie sich auf.\n\nSo liefert ein Koppler die vorlaufende, der andere die rücklaufende Welle. Dioden richten die HF gleich, Kondensatoren glätten, zwei Messwerke (Kreuzzeiger) zeigen beide Werte. Direkt an der Antenne messen, um die Antenne zu beurteilen, direkt hinter dem Sender für die gesamte Anlage."
+    },
+    "img": "499",
+    "img_kind": "drawing"
+   }
+  ],
+  "key": [
+   {
+    "t": {
+     "en": "CW: keying the carrier",
+     "de": "CW: Tastung des Trägers"
+    },
+    "b": {
+     "en": "In Morse telegraphy (CW) the key switches the transmitter carrier on and off: 0 % and 100 % of the amplitude. This is the oldest digital mode.\n\nAll times are multiples of one dit length t:\n- dit = 1 t\n- dah = 3 t\n- gap between elements in a letter = 1 t\n- gap between letters = 3 t\n- gap between words = 7 t\n\nThese ratios stay the same at any speed. Only t changes.",
+     "de": "Bei der Morsetelegrafie (CW) schaltet die Taste den Träger des Senders ein und aus: 0 % und 100 % der Amplitude. Es ist das älteste digitale Verfahren.\n\nAlle Zeiten sind Vielfache der Punktlänge t:\n- Punkt (dit) = 1 t\n- Strich (dah) = 3 t\n- Pause zwischen Elementen eines Zeichens = 1 t\n- Pause zwischen Zeichen = 3 t\n- Pause zwischen Wörtern = 7 t\n\nDiese Verhältnisse bleiben bei jedem Tempo gleich. Nur t ändert sich."
+    }
+   },
+   {
+    "t": {
+     "en": "Speed: WPM and dit length",
+     "de": "Tempo: WPM und Punktlänge"
+    },
+    "b": {
+     "en": "Speed is given in WPM (words per minute). The standard word PARIS takes 50 dit lengths, so\n\nt = 1.2 s / WPM\n\nExamples: 12 WPM gives t = 100 ms; 24 WPM gives t = 50 ms. Reverse: WPM = 1.2 s / t. A dit of 40 ms is 1.2 / 0.040 = 30 WPM.\n\nDoubling the speed halves all times. As a rule, never send faster than the other station or than you can copy yourself.",
+     "de": "Das Tempo wird in WPM (Wörter pro Minute) angegeben. Das Standardwort PARIS dauert 50 Punktlängen, daher gilt\n\nt = 1,2 s / WPM\n\nBeispiele: 12 WPM ergeben t = 100 ms; 24 WPM ergeben t = 50 ms. Umgekehrt: WPM = 1,2 s / t. Ein Punkt von 40 ms entspricht 1,2 / 0,040 = 30 WPM.\n\nDoppeltes Tempo halbiert alle Zeiten. Als Faustregel gilt: nie schneller geben als die Gegenstation oder als man selbst aufnehmen kann."
+    }
+   },
+   {
+    "t": {
+     "en": "Duration of a letter",
+     "de": "Dauer eines Zeichens"
+    },
+    "b": {
+     "en": "A letter's length is the sum of its dits, dahs and the gaps between its elements. Count in units of t.\n\nExample K = dah dit dah: dah 3 + gap 1 + dit 1 + gap 1 + dah 3 = 9 t. At 24 WPM (t = 50 ms) this is 9 x 50 ms = 450 ms. The gap after the letter (3 t) is not counted in the letter itself.\n\nAnother example: the letter A = dit dah = 1 + 1 + 3 = 5 t, at 50 ms that is 250 ms.",
+     "de": "Die Länge eines Zeichens ist die Summe aus Punkten, Strichen und den Pausen zwischen den Elementen. Man zählt in Einheiten von t.\n\nBeispiel K = Strich Punkt Strich: Strich 3 + Pause 1 + Punkt 1 + Pause 1 + Strich 3 = 9 t. Bei 24 WPM (t = 50 ms) sind das 9 x 50 ms = 450 ms. Die Pause nach dem Zeichen (3 t) gehört nicht mehr zum Zeichen.\n\nEin weiteres Beispiel: Der Buchstabe A = Punkt Strich = 1 + 1 + 3 = 5 t, bei 50 ms sind das 250 ms."
+    }
+   },
+   {
+    "t": {
+     "en": "Key clicks",
+     "de": "Tastklicks"
+    },
+    "b": {
+     "en": "If the carrier is switched on and off too abruptly by the key, the keyed envelope has sharp, nearly square edges. Such edges contain many frequency components and spread far to both sides of the signal. They are heard as clicks on neighbouring frequencies and disturb other stations.\n\nThe cure is to round the rise and fall of the envelope to a few milliseconds, e.g. with a filter or soft keying in the transmitter. The signal gets narrower and the clicks disappear. Do not make it too slow either, or dits get mushy.",
+     "de": "Wird der Träger durch die Taste zu abrupt ein- und ausgeschaltet, hat die getastete Hüllkurve scharfe, fast rechteckige Flanken. Solche Flanken enthalten viele Frequenzanteile und reichen weit zu beiden Seiten des Signals. Man hört sie als Klicks auf Nachbarfrequenzen, sie stören andere Stationen.\n\nAbhilfe: Anstieg und Abfall der Hüllkurve auf einige Millisekunden abrunden, z. B. durch ein Filter oder weiches Tasten im Sender. Das Signal wird schmaler und die Klicks verschwinden. Nicht zu langsam wählen, sonst klingen die Punkte verschmiert."
+    },
+    "tip": {
+     "en": "A sudden switch means a broad spectrum. A soft edge means a narrow one.",
+     "de": "Schlagartiges Schalten heißt breites Spektrum. Weiche Flanken heißen schmales Spektrum."
+    }
+   },
+   {
+    "t": {
+     "en": "Full break-in (QSK)",
+     "de": "Vollbreak-in (QSK)"
+    },
+    "b": {
+     "en": "With full break-in (QSK) the rig switches between transmit and receive so fast that the receiver is listening in every gap between dits and dahs. You can hear the other station between your own elements and they can interrupt you at once.\n\nWith semi break-in the rig stays in transmit for a short hold time after the last element, so you hear the other station only in longer pauses. QSK needs fast antenna relays or electronic switching, and the receiver must recover quickly after each element.",
+     "de": "Bei Vollbreak-in (QSK) schaltet das Gerät so schnell zwischen Senden und Empfangen um, dass der Empfänger in jeder Lücke zwischen Punkten und Strichen mithört. Man hört die Gegenstation zwischen den eigenen Zeichen, und sie kann sofort unterbrechen.\n\nBei Semi-Break-in bleibt das Gerät nach dem letzten Element noch kurz auf Senden (Hold-Zeit), sodass man die Gegenstation nur in längeren Pausen hört. QSK erfordert schnelle Antennenrelais oder elektronisches Umschalten, und der Empfänger muss nach jedem Element schnell erholt sein."
+    }
+   },
+   {
+    "t": {
+     "en": "Types of Morse keys",
+     "de": "Arten von Morsetasten"
+    },
+    "b": {
+     "en": "A straight key is a simple lever: you form every dit and dah by hand, so the timing depends on your hand. A paddle (iambic key) with an electronic keyer produces dits and dahs automatically with exact timing; you set the speed in WPM and press the left or right lever. Squeezing both gives alternating elements.\n\nThe keyer follows the 1 : 3 : 1 timing, so the spacing is always regular. For the transmitter any key is just a switch.",
+     "de": "Eine Handtaste ist ein einfacher Hebel: Jeden Punkt und Strich formt man von Hand, der Rhythmus hängt von der eigenen Hand ab. Eine Paddle (Doppeltaste, iambic) mit elektronischem Keyer erzeugt Punkte und Striche automatisch mit exaktem Timing; man stellt das Tempo in WPM ein und drückt den linken oder rechten Hebel. Drückt man beide, entstehen abwechselnde Elemente.\n\nDer Keyer folgt dem Zeitverhältnis 1 : 3 : 1, die Abstände sind stets gleichmäßig. Für den Sender ist jede Taste nur ein Schalter."
+    }
+   }
+  ],
+  "logbook": [
+   {
+    "t": {
+     "en": "What goes into a log entry",
+     "de": "Was ins Logbuch gehört"
+    },
+    "b": {
+     "en": "A log documents every contact. For each QSO write down: date and time in UTC, your and the partner's callsign, band or frequency, mode (SSB, CW, FT8), the reports given and received, and optionally power and remarks such as the name.\n\nTo match your QSO with the partner's log, date, UTC time, both callsigns, band and mode are enough. The same minimum holds for a QSL card. A log can be on paper or electronic, but it must stay readable.",
+     "de": "Ein Logbuch dokumentiert jede Funkverbindung. Pro QSO trägt man ein: Datum und Uhrzeit in UTC, eigenes Rufzeichen und das der Gegenstation, Band oder Frequenz, Betriebsart (SSB, CW, FT8), gegebenen und erhaltenen Rapport und optional Leistung sowie Bemerkungen, z. B. den Namen.\n\nUm ein QSO mit dem Log der Gegenstation abzugleichen, genügen Datum, UTC-Zeit, beide Rufzeichen, Band und Betriebsart. Dasselbe Minimum gilt für die QSL-Karte. Das Logbuch kann auf Papier oder elektronisch geführt werden, muss aber lesbar bleiben."
+    }
+   },
+   {
+    "t": {
+     "en": "Time in UTC",
+     "de": "Die Zeit in UTC"
+    },
+    "b": {
+     "en": "Log times are always UTC, so nobody has to convert across time zones. In Germany: UTC = CET - 1 h in winter, UTC = CEST - 2 h in summer. Example: Berlin 08:00 local (winter) is 07:00 UTC, the same moment as 02:00 in New York.\n\nFor zones behind UTC the sign is reversed: UTC-5 means local time = UTC - 5 h, so UTC = local + 5 h. Example: 21:00 local at UTC-5 gives 21 + 5 = 26:00, i.e. 02:00 UTC on the next day. Always check the date too.",
+     "de": "Im Logbuch steht die Zeit immer in UTC, damit man nicht über Zeitzonen umrechnen muss. In Deutschland gilt: UTC = MEZ - 1 h im Winter, UTC = MESZ - 2 h im Sommer. Beispiel: Berlin 08:00 Ortszeit (Winter) sind 07:00 UTC, zugleich 02:00 Uhr in New York.\n\nBei Zonen hinter UTC ist das Vorzeichen umgekehrt: UTC-5 bedeutet Ortszeit = UTC - 5 h, also UTC = Ortszeit + 5 h. Beispiel: 21:00 Ortszeit bei UTC-5 ergibt 21 + 5 = 26:00, also 02:00 UTC am Folgetag. Auch das Datum prüfen."
+    },
+    "tip": {
+     "en": "UTC-5 means add 5 hours to get UTC; UTC+2 means subtract 2.",
+     "de": "UTC-5: 5 Stunden addieren, um UTC zu erhalten; UTC+2: 2 Stunden abziehen."
+    }
+   },
+   {
+    "t": {
+     "en": "ADIF: exchanging logs",
+     "de": "ADIF: Logdaten austauschen"
+    },
+    "b": {
+     "en": "ADIF (Amateur Data Interchange Format) is the standard text format for log data. Every program can export and import it, so you can move a log from one logging software to another or to a new computer. It is also used to upload QSOs to QSL services such as LoTW, eQSL, QRZ or the DARC DCL.\n\nEach field is tagged with its length, e.g. <CALL:5>DL1AB <BAND:3>20m <MODE:3>SSB <EOR>. The end-of-record tag closes one QSO. When you change software, export to ADIF and keep the file.",
+     "de": "ADIF (Amateur Data Interchange Format) ist das Standard-Textformat für Logdaten. Jedes Programm kann es exportieren und importieren, so lässt sich ein Log von einer Logbuch-Software in eine andere oder auf einen neuen Computer übertragen. Es dient auch zum Hochladen der QSOs zu QSL-Diensten wie LoTW, eQSL, QRZ oder dem DARC-DCL.\n\nJedes Feld trägt seine Länge im Tag, z. B. <CALL:5>DL1AB <BAND:3>20m <MODE:3>SSB <EOR>. Die Endemarke schließt ein QSO ab. Beim Wechsel der Software exportiert man nach ADIF und bewahrt die Datei auf."
+    }
+   },
+   {
+    "t": {
+     "en": "Maidenhead locator",
+     "de": "Maidenhead-Locator"
+    },
+    "b": {
+     "en": "The Maidenhead locator describes your position in a short code. A six-character locator has three steps: field, square, subsquare.\n\n- Field: 2 letters, A to R (18 x 18 fields)\n- Square: 2 digits, 00 to 99\n- Subsquare: 2 letters, A to X\n\nExample JO62QM: field JO, square 62, subsquare QM. The DARC office in Baunatal is in JO41RG. So the pattern is letters, digits, letters. It is used mostly on VHF, UHF and higher bands, and the locator is often exchanged in the QSO and logged.",
+     "de": "Der Maidenhead-Locator beschreibt die eigene Position in einem kurzen Code. Ein sechsstelliger Locator hat drei Stufen: Feld, Quadrat, Unter-Quadrat.\n\n- Feld: 2 Buchstaben, A bis R (18 x 18 Felder)\n- Quadrat: 2 Ziffern, 00 bis 99\n- Unter-Quadrat: 2 Buchstaben, A bis X\n\nBeispiel JO62QM: Feld JO, Quadrat 62, Unter-Quadrat QM. Die DARC-Geschäftsstelle in Baunatal liegt in JO41RG. Das Muster lautet also Buchstaben, Ziffern, Buchstaben. Er wird vor allem auf VHF, UHF und höheren Bändern genutzt und im QSO ausgetauscht und geloggt."
+    },
+    "img": "4",
+    "img_kind": "photo"
+   },
+   {
+    "t": {
+     "en": "Keeping and confirming logs",
+     "de": "Logbuch führen und bestätigen"
+    },
+    "b": {
+     "en": "A QSL card confirms a contact, e.g. for awards. It should show at least date, time in UTC, both callsigns, band or frequency, mode and report. Because all times are UTC, the partner can find the QSO in his log at once.\n\nThe authorities may order you to keep a log, e.g. to find interference causes. Then it must stay available, also after a change of method: keep the old paper log or software, or transfer the data to the new program, for example via an ADIF file.",
+     "de": "Eine QSL-Karte bestätigt eine Verbindung, z. B. für Diplome. Sie sollte mindestens Datum, Uhrzeit in UTC, beide Rufzeichen, Band oder Frequenz, Betriebsart und Rapport enthalten. Da alle Zeiten in UTC stehen, findet die Gegenstation das QSO sofort in ihrem Log.\n\nDie Behörde kann anordnen, ein Logbuch zu führen, z. B. um Störungsursachen zu klären. Dann muss es auch nach einem Methodenwechsel einsehbar bleiben: Altes Papierlogbuch oder alte Software aufheben oder die Daten in das neue Programm übertragen, z. B. über eine ADIF-Datei."
+    }
+   }
+  ]
+ },
+ "sources": [
+  "innenwiderstand",
+  "spannungsstabilisierung",
+  "schaltnetzteil_2",
+  "leiterwiderstand",
+  "netzgeraet_1",
+  "verstaerker_wirkungsgrad",
+  "effektive_strahlungsleistung_erp_2",
+  "aequivalente_isotrope_strahlungsleistung_eirp_2",
+  "antennengewinn",
+  "fusspunktimpedanz_2",
+  "yagi_uda_3",
+  "vor_rueck_verhaeltnis",
+  "swr_3",
+  "swr_2",
+  "swr_meter_1",
+  "swr_meter_2",
+  "uebertragungsleitungen_3",
+  "kabeldaempfung_1",
+  "ueberlagerungsempfaenger_einfachsuper_2",
+  "spiegelfrequenzen",
+  "intermodulation_kreuzmodulation",
+  "snr_rauschzahl",
+  "vorverstaerker_daempfungsglied",
+  "oszillator_pll",
+  "sende_empfangsketten",
+  "digitale_signalverarbeitung_einleitung",
+  "dezibel_1",
+  "dezibel_2",
+  "fm_2",
+  "fm_3",
+  "ssb_2",
+  "ssb_3",
+  "alc",
+  "dynamik_compressor_2",
+  "verstaerker",
+  "abtasttheorem",
+  "symbolumschaltung_bandbreite",
+  "morsetelegrafie",
+  "logbuch",
+  "qsl_karten",
+  "locator"
+ ]
+}

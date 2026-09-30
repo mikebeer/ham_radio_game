@@ -1,0 +1,517 @@
+{
+ "level": 1,
+ "sources": [
+  "netzgeraet_1",
+  "ohmsches_gesetz",
+  "leistung",
+  "sicherungen",
+  "antennen",
+  "wellenlaenge",
+  "dipol",
+  "antennen_energieleitungen",
+  "erste_schritte",
+  "frequenz",
+  "amateurfunkbaender",
+  "trxmodulation",
+  "ssb",
+  "ssb_2",
+  "sprachsignale",
+  "aufbau_sender",
+  "aufbau_empfaenger",
+  "modulationsarten",
+  "rauch_und_morsezeichen",
+  "dezibel_1",
+  "rst",
+  "wellenwiderstand",
+  "swr",
+  "morsetelegrafie",
+  "q_schluessel",
+  "logbuch",
+  "qsl_karten",
+  "betriebsabwicklung"
+ ],
+ "parts": {
+  "psu": [
+   {
+    "t": {
+     "en": "Your shack's power source",
+     "de": "Die Stromquelle deiner Station"
+    },
+    "b": {
+     "en": "A power supply unit turns the 230 V alternating current (AC) from the wall socket into a lower direct current (DC) voltage.\n\nIn amateur radio we often use supplies with 13.8 V DC at the output. That is exactly what most transceivers want, so this is the number to remember.\n\nYou can see voltage and current on the display, and the output sockets are coloured.",
+     "de": "Ein Netzgerät wandelt die Wechselspannung von 230 V aus der Steckdose in eine kleinere Gleichspannung um.\n\nIm Amateurfunk verwenden wir häufig Netzgeräte, die am Ausgang 13,8 V Gleichspannung bereitstellen. Damit betreibst du zum Beispiel einen Transceiver. Diese Zahl solltest du dir merken.\n\nAuf dem Display siehst du Spannung und Strom, die Ausgangsbuchsen sind farbig."
+    },
+    "tip": {
+     "en": "The mains plug has a protective earth contact, so the metal case is earthed.",
+     "de": "Der Schutzkontakt im Schukostecker erdet das Metallgehäuse des Netzgeräts."
+    },
+    "img": "740",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Connect it safely",
+     "de": "Sicher anschließen"
+    },
+    "b": {
+     "en": "The output of the supply and the cable to the transceiver have two poles, so a closed circuit is formed: current flows from the supply through the transceiver and back.\n\nThe terminals are coloured: red is plus, black is minus. Always respect this polarity, otherwise a short circuit or even a destroyed transceiver can result.\n\nOnly switch the supply on once everything is connected and checked.",
+     "de": "Der Ausgang des Netzgeräts und die Leitung zum Transceiver sind zweipolig. So ergibt sich ein geschlossener Stromkreis: Der Strom fließt vom Netzgerät durch den Transceiver und zurück.\n\nDie Klemmen sind farbig: Rot steht für Plus, Schwarz für Minus. Achte unbedingt auf die Polung, sonst droht ein Kurzschluss oder sogar die Zerstörung des Transceivers.\n\nSchalte das Netzgerät erst ein, wenn alles angeschlossen und kontrolliert ist."
+    },
+    "tip": {
+     "en": "Red = plus, black = minus. Check twice before you switch on.",
+     "de": "Rot = Plus, Schwarz = Minus. Vor dem Einschalten zweimal prüfen."
+    },
+    "img": "680",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Ohm's law",
+     "de": "Das Ohmsche Gesetz"
+    },
+    "b": {
+     "en": "Voltage U (volts, V), current I (amperes, A) and resistance R (ohms) belong together. Ohm's law: U = R × I.\n\nRearranged: I = U / R and R = U / I. Example: 10 V drive 1 mA through a resistor. Then R = 10 V / 0.001 A = 10,000 ohms, or 10 kilohms.\n\nDouble the voltage and the current doubles too.",
+     "de": "Spannung U (Volt, V), Strom I (Ampere, A) und Widerstand R (Ohm) hängen zusammen. Das Ohmsche Gesetz lautet: U = R · I.\n\nUmgestellt: I = U / R und R = U / I. Beispiel: 10 V treiben 1 mA durch einen Widerstand. Dann ist R = 10 V / 0,001 A = 10000 Ohm, also 10 Kiloohm.\n\nVerdoppelst du die Spannung, verdoppelt sich auch der Strom."
+    },
+    "tip": {
+     "en": "You do not need to memorise the formulas: the exam provides a formula sheet.",
+     "de": "Du musst die Formeln nicht auswendig lernen: In der Prüfung gibt es eine Formelsammlung."
+    }
+   },
+   {
+    "t": {
+     "en": "How much power?",
+     "de": "Wie viel Leistung?"
+    },
+    "b": {
+     "en": "Electrical power P is measured in watts (W). It is voltage times current: P = U × I.\n\nExample: a transceiver draws 20 A from a 13.8 V supply. Then P = 13.8 V × 20 A = 276 W.\n\nThe bigger the voltage or the current, the bigger the power. Conversely I = P / U tells you how much current a device needs, so your supply must be able to deliver enough current.",
+     "de": "Die elektrische Leistung P wird in Watt (W) gemessen. Sie ist das Produkt aus Spannung und Strom: P = U · I.\n\nBeispiel: Ein Transceiver zieht 20 A aus einem Netzgerät mit 13,8 V. Dann ist P = 13,8 V · 20 A = 276 W.\n\nJe größer Spannung oder Strom, desto größer die Leistung. Umgekehrt sagt dir I = P / U, wie viel Strom ein Gerät braucht. Dein Netzgerät muss diesen Strom liefern können."
+    }
+   },
+   {
+    "t": {
+     "en": "The fuse protects you",
+     "de": "Die Sicherung schützt"
+    },
+    "b": {
+     "en": "Fuses protect against a short circuit or overload. A thin wire inside melts when too much current flows and opens the circuit. The fuse has blown.\n\nFind and fix the cause first, then replace the fuse with one of the same type: same current rating and same tripping characteristic (fast, medium, slow).\n\nBridging a blown fuse, for example with aluminium foil, is forbidden and can start a fire.",
+     "de": "Sicherungen schützen bei Kurzschluss oder Überlast. Ein dünner Draht schmilzt, wenn zu viel Strom fließt, und unterbricht den Stromkreis. Die Sicherung ist durchgebrannt.\n\nSuche zuerst die Ursache und behebe sie. Ersetze die Sicherung dann nur durch eine gleichartige: gleiche Stromstärke und gleiche Auslösecharakteristik (flink, mittelträge, träge).\n\nEine defekte Sicherung zu überbrücken, z. B. mit Alufolie, ist unzulässig und kann einen Brand auslösen."
+    },
+    "tip": {
+     "en": "Never bridge a fuse. Fire hazard!",
+     "de": "Sicherung nie überbrücken. Brandgefahr!"
+    }
+   }
+  ],
+  "antenna": [
+   {
+    "t": {
+     "en": "The magic of the antenna",
+     "de": "Die Magie der Antenne"
+    },
+    "b": {
+     "en": "The antenna does the real magic of radio. When transmitting, it turns electrical oscillations into radio waves that travel far away. When receiving, it picks up radio waves and passes them on as electrical signals through the antenna cable to your radio.\n\nAn amateur station is simple: transceiver, cable, antenna.",
+     "de": "Die Antenne bewirkt die eigentliche Magie des Funkens. Beim Senden gibt sie elektrische Schwingungen als Funkwellen ab, die sich in die Ferne ausbreiten. Beim Empfang nimmt sie Funkwellen auf und leitet sie als elektrische Schwingungen über das Antennenkabel zum Funkgerät weiter.\n\nEine Amateurfunkstation ist einfach aufgebaut: Transceiver, Kabel, Antenne."
+    },
+    "img": "657",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Wavelength from frequency",
+     "de": "Wellenlänge aus der Frequenz"
+    },
+    "b": {
+     "en": "The distance between two wave crests is the wavelength. It depends on the frequency: the higher the frequency, the shorter the wavelength.\n\nA simple rule: wavelength in metres = 300 divided by frequency in MHz. Example: 14 MHz gives 300 / 14 = about 21 m. And 145.3 MHz gives about 2.06 m.\n\nThis is why bands are named by their rounded wavelength, like the 2 m band.",
+     "de": "Den Abstand zwischen zwei Wellenbergen nennt man Wellenlänge. Sie hängt von der Frequenz ab: Je größer die Frequenz, desto kleiner die Wellenlänge.\n\nEine einfache Regel: Wellenlänge in Metern = 300 geteilt durch die Frequenz in MHz. Beispiel: 14 MHz ergeben 300 / 14 = rund 21 m. Und 145,3 MHz ergeben etwa 2,06 m.\n\nDeshalb benennt man Bänder nach der gerundeten Wellenlänge, z. B. das 2-m-Band."
+    },
+    "tip": {
+     "en": "High frequency means short wavelength, low frequency means long wavelength.",
+     "de": "Hohe Frequenz heißt kurze Wellenlänge, niedrige Frequenz heißt lange Wellenlänge."
+    }
+   },
+   {
+    "t": {
+     "en": "The half-wave dipole",
+     "de": "Der Halbwellendipol"
+    },
+    "b": {
+     "en": "The basic antenna is the dipole: two wires or rods, with the cable connected in the middle, one conductor to each half.\n\nThe common half-wave dipole is half a wavelength long, so each half is a quarter wavelength. For the 10 m band: wavelength about 10 m, dipole 5 m, each half about 2.5 m. For 14 MHz (about 21 m) the dipole is about 10 m long.\n\nThen the antenna is in resonance and radiates well.",
+     "de": "Die Grundform der Antenne ist der Dipol: zwei Drähte oder Stäbe. Das Kabel wird in der Mitte angeschlossen, je ein Leiter an jede Hälfte.\n\nHäufig nutzt man den Halbwellendipol mit einer Länge von einer halben Wellenlänge. Jede Hälfte ist also eine Viertelwellenlänge. Im 10-m-Band: Wellenlänge rund 10 m, Dipol 5 m, jede Hälfte etwa 2,5 m. Bei 14 MHz (rund 21 m) ist der Dipol etwa 10 m lang.\n\nDann ist er in Resonanz und strahlt gut ab."
+    },
+    "tip": {
+     "en": "Cut the wire a bit long first and shorten it step by step: shortening is easier than extending.",
+     "de": "Draht zuerst etwas länger auslegen und schrittweise kürzen: Kürzen ist einfacher als verlängern."
+    },
+    "img": "589",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Tuning by length",
+     "de": "Abstimmen über die Länge"
+    },
+    "b": {
+     "en": "A dipole of the right length radiates best. Long dipoles suit low frequencies, short dipoles suit high frequencies, like a double bass and a violin.\n\nIf the resonance frequency is below the wanted frequency, the dipole is too long: shorten both sides equally. If it is too high, lengthen both sides equally.\n\nOn other frequencies the dipole works worse and worse.",
+     "de": "Ein Dipol der richtigen Länge strahlt am besten ab. Lange Dipole eignen sich für tiefe Frequenzen, kurze Dipole für hohe Frequenzen, wie Kontrabass und Geige.\n\nLiegt die Resonanzfrequenz unter der gewünschten Frequenz, ist der Dipol zu lang: Kürze beide Seiten gleichmäßig. Ist sie zu hoch, verlängere beide Seiten gleichmäßig.\n\nAuf anderen Frequenzen funktioniert der Dipol zunehmend schlechter."
+    }
+   },
+   {
+    "t": {
+     "en": "Stay away from power lines",
+     "de": "Abstand zu Freileitungen"
+    },
+    "b": {
+     "en": "Overhead power lines carry dangerously high voltage. An antenna must never touch them, and must be kept well away from them.\n\nThink ahead: in a storm, a wire or a mast part could come loose and fall onto a power line or onto people.\n\nIf an antenna touches a power line, there is acute danger of a lethal electric shock.",
+     "de": "Freileitungen führen gefährlich hohe Spannungen. Eine Antenne muss von ihnen immer weit entfernt sein und darf sie unter keinen Umständen berühren.\n\nDenke voraus: Bei einem Sturm könnten sich Drähte oder Antennenteile lösen und auf eine Leitung oder auf Personen fallen.\n\nBerührt eine Antenne eine Energieversorgungsleitung, besteht akute Lebensgefahr durch Stromschlag."
+    },
+    "tip": {
+     "en": "Safety first: always plan the antenna site away from overhead lines.",
+     "de": "Sicherheit zuerst: Antennenstandort immer weit weg von Freileitungen planen."
+    }
+   }
+  ],
+  "transceiver": [
+   {
+    "t": {
+     "en": "Transmitter and receiver in one",
+     "de": "Sender und Empfänger in einem"
+    },
+    "b": {
+     "en": "The word transceiver combines transmitter and receiver. One device does both jobs.\n\nNormally it is in receive mode. Only when you press and hold the PTT key does it transmit. When you release the key, it switches back to receiving.\n\nAnyone may buy and own such a radio and listen. Only licensed radio amateurs may transmit on amateur frequencies.",
+     "de": "Der Begriff Transceiver setzt sich aus Transmitter (Sender) und Receiver (Empfänger) zusammen. Ein Gerät erledigt beide Aufgaben.\n\nNormalerweise ist er im Empfangsbetrieb. Erst wenn du die PTT-Taste drückst und hältst, wird gesendet. Lässt du los, schaltet er zurück auf Empfang.\n\nJeder darf ein solches Gerät kaufen, besitzen und damit hören. Senden auf Amateurfunkfrequenzen darf nur ein Funkamateur."
+    },
+    "img": "117",
+    "img_kind": "photo"
+   },
+   {
+    "t": {
+     "en": "Frequency and hertz",
+     "de": "Frequenz und Hertz"
+    },
+    "b": {
+     "en": "The number of oscillations per second is the frequency, measured in hertz (Hz). The mains oscillates 50 times per second, so 50 Hz.\n\nRadio uses much higher frequencies, so we use prefixes: 1 kilohertz (kHz) is 1000 Hz, 1 megahertz (MHz) is 1000 kHz or 1,000,000 Hz.\n\nSo 144 MHz means 144 million oscillations per second.",
+     "de": "Die Anzahl der Schwingungen pro Sekunde nennt man Frequenz. Sie wird in Hertz (Hz) gemessen. Unser Stromnetz schwingt 50-mal pro Sekunde, also 50 Hz.\n\nIm Funk nutzen wir viel höhere Frequenzen, darum gibt es Vorsätze: 1 Kilohertz (kHz) sind 1000 Hz, 1 Megahertz (MHz) sind 1000 kHz oder 1000000 Hz.\n\n144 MHz bedeuten also 144 Millionen Schwingungen pro Sekunde."
+    },
+    "tip": {
+     "en": "Remember: 1 MHz = 1000 kHz.",
+     "de": "Merke: 1 MHz = 1000 kHz."
+    }
+   },
+   {
+    "t": {
+     "en": "Choose a mode",
+     "de": "Die Betriebsart wählen"
+    },
+    "b": {
+     "en": "Most transceivers have a MODE switch. Common modes: CW (Morse code), AM, FM and SSB. SSB is sent as LSB or USB.\n\nSSB sends only one sideband and saves power and bandwidth: it is the usual voice mode on shortwave. FM is typical for local voice on VHF and UHF.\n\nOn SSB, tune very gently with the VFO knob. A wrong sideband or a slightly wrong frequency makes speech unintelligible.",
+     "de": "An vielen Funkgeräten gibt es einen Schalter, der meist mit Mode beschriftet ist. Gängig sind CW (Telegrafie), AM, FM und SSB. SSB wird als LSB oder USB gesendet.\n\nSSB sendet nur ein Seitenband und spart Leistung und Bandbreite. Es ist die übliche Sprechbetriebsart auf Kurzwelle. FM ist typisch für lokalen Sprechfunk auf UKW und UHF.\n\nBei SSB stellst du mit dem VFO-Knopf ganz feinfühlig ein. Falsches Seitenband oder leicht falsche Frequenz machen Sprache unverständlich."
+    },
+    "tip": {
+     "en": "Class N can always use USB because of the allowed bands.",
+     "de": "Mit Klasse N nutzt du wegen der erlaubten Bänder immer USB."
+    }
+   },
+   {
+    "t": {
+     "en": "Bands by wavelength",
+     "de": "Bänder nach Wellenlänge"
+    },
+    "b": {
+     "en": "Amateur bands are named after the rounded wavelength. Class N may use 28 to 29.7 MHz (10 m band), 144 to 146 MHz (2 m band) and 430 to 440 MHz (70 cm band).\n\nHigher classes get more bands. For instance 14.205 MHz lies in the 20 m band: 300 divided by about 14 MHz is roughly 21 m, which is rounded to 20 m.\n\nListen first, then ask whether the frequency is free.",
+     "de": "Amateurfunkbänder werden nach der gerundeten Wellenlänge benannt. Mit Klasse N darfst du 28 bis 29,7 MHz (10-m-Band), 144 bis 146 MHz (2-m-Band) und 430 bis 440 MHz (70-cm-Band) nutzen.\n\nHöhere Klassen bekommen weitere Bänder. So liegt 14,205 MHz im 20-m-Band: 300 geteilt durch rund 14 MHz sind etwa 21 m, gerundet also 20 m.\n\nErst hören, dann fragen, ob die Frequenz frei ist."
+    },
+    "img": "749",
+    "img_kind": "drawing"
+   }
+  ],
+  "mic": [
+   {
+    "t": {
+     "en": "From sound to signal",
+     "de": "Vom Schall zum Signal"
+    },
+    "b": {
+     "en": "When you speak, you create many deep and high, quiet and loud tones as sound waves. This is your speech signal.\n\nThe microphone converts it into an electrical signal: deep and high tones become slow and fast oscillations, quiet and loud tones become small and large amplitudes.\n\nNow your voice can be processed inside the radio.",
+     "de": "Wenn du sprichst, entstehen viele tiefe und hohe sowie leise und laute Töne als Schallwellen. Das nennt man Sprachsignal.\n\nDas Mikrofon wandelt es in ein elektrisches Signal um: Aus tiefen und hohen Tönen werden langsame und schnelle Schwingungen, aus leisen und lauten Tönen kleine und große Amplituden.\n\nSo kann deine Stimme im Funkgerät weiterverarbeitet werden."
+    },
+    "img": "730",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Push to talk",
+     "de": "Push to talk"
+    },
+    "b": {
+     "en": "PTT stands for push to talk. It is the function that switches the transceiver to transmit.\n\nThe transceiver starts in receive mode. Press and hold PTT to transmit, release it to listen again. On hand microphones the PTT key is usually on the side of the mic.\n\nThe voice from the microphone is amplified in the radio and then used to modulate the radio signal.",
+     "de": "PTT ist die Abkürzung für push to talk, also drücken, um zu senden. So heißt die Funktion, die den Transceiver auf Sendung schaltet.\n\nNormalerweise ist der Transceiver im Empfangsbetrieb. Halte PTT gedrückt, um zu senden, und lass los, um wieder zu hören. Die PTT-Taste ist meistens am Mikrofon angebracht.\n\nDie Stimme vom Mikrofon wird im Funkgerät verstärkt und dient dann zur Modulation des Funksignals."
+    },
+    "img": "118",
+    "img_kind": "photo"
+   },
+   {
+    "t": {
+     "en": "What is modulation?",
+     "de": "Was ist Modulation?"
+    },
+    "b": {
+     "en": "A radio wave alone carries no message. It is the carrier. To send information, you change the carrier: that is modulation.\n\nWith Morse code the carrier is switched on and off. With AM the amplitude is changed, with FM the frequency. The signal that does this, such as your voice from the microphone, is the modulation signal.\n\nThe receiver then recovers it from the wave.",
+     "de": "Eine Funkwelle allein trägt noch keine Nachricht. Sie ist der Träger. Um Information zu übertragen, beeinflusst man den Träger gezielt: Das ist Modulation.\n\nBei Morsetelegrafie wird der Träger ein- und ausgeschaltet. Bei AM verändert man die Amplitude, bei FM die Frequenz. Das Signal, das dies bewirkt, etwa deine Stimme vom Mikrofon, heißt Modulationssignal.\n\nDer Empfänger gewinnt die Information aus der Welle zurück."
+    }
+   },
+   {
+    "t": {
+     "en": "Speak clearly, not loudly",
+     "de": "Deutlich, nicht laut"
+    },
+    "b": {
+     "en": "Too much microphone gain or shouting overdrives the audio stages. Your signal gets distorted and becomes wider, so-called splatter, which can disturb neighbouring stations.\n\nToo little audio reduces your output power and modulation.\n\nSo speak at normal volume, clearly and close enough to the microphone, and adjust the mic gain moderately.",
+     "de": "Zu viel Mikrofonverstärkung oder Schreien übersteuert die Niederfrequenzstufen. Dein Signal wird verzerrt und breiter, man spricht von Splattern. Das kann benachbarte Stationen stören.\n\nZu wenig Sprachsignal verringert dagegen Modulation und Ausgangsleistung.\n\nSprich also in normaler Lautstärke, deutlich und nah genug am Mikrofon, und stelle die Mikrofonverstärkung mäßig ein."
+    },
+    "tip": {
+     "en": "Best setting: not too high, not too low. Ask for a signal report.",
+     "de": "Am besten nicht zu hoch, nicht zu niedrig einstellen. Frage nach einem Rapport."
+    }
+   }
+  ],
+  "speaker": [
+   {
+    "t": {
+     "en": "Back to sound",
+     "de": "Zurück zum Schall"
+    },
+    "b": {
+     "en": "In the receiver the demodulated signal is amplified by an audio amplifier. The last step is the loudspeaker: it converts the electrical oscillation into a sound wave and makes it audible again.\n\nHeadphones do the same job directly at your ears.\n\nSo the speaker is the counterpart of the microphone: the microphone turns sound into an electrical signal, the speaker turns it back into sound.",
+     "de": "Im Empfänger wird das demodulierte Signal von einem Niederfrequenz-Verstärker verstärkt. Den letzten Schritt macht der Lautsprecher: Er wandelt die elektrische Schwingung in eine Schallwelle um und macht sie wieder hörbar.\n\nKopfhörer erledigen dieselbe Aufgabe direkt an deinen Ohren.\n\nDer Lautsprecher ist also das Gegenstück zum Mikrofon: Das Mikrofon macht aus Schall ein elektrisches Signal, der Lautsprecher macht wieder Schall daraus."
+    }
+   },
+   {
+    "t": {
+     "en": "How wide is speech?",
+     "de": "Wie breit ist Sprache?"
+    },
+    "b": {
+     "en": "Speech contains deep and high tones, but not arbitrarily high ones. For radio we use only a limited range: roughly 300 to 3000 Hz. That is enough for good intelligibility.\n\nIn the 50ohm example the range is 300 to 2700 Hz. The width of the signal is called bandwidth, here 2700 - 300 = 2400 Hz.\n\nA narrow signal leaves more room for other stations.",
+     "de": "Sprache enthält tiefe und hohe Töne, aber keine beliebig hohen. Für Funk nutzt man nur einen begrenzten Bereich: grob 300 bis 3000 Hz. Das reicht für gute Verständlichkeit.\n\nIm Beispiel von 50ohm sind es 300 bis 2700 Hz. Die Breite des Signals heißt Bandbreite, hier 2700 - 300 = 2400 Hz.\n\nEin schmales Signal lässt mehr Platz für andere Stationen."
+    },
+    "tip": {
+     "en": "Audio range: about 300 Hz to 3 kHz.",
+     "de": "Sprachbereich: etwa 300 Hz bis 3 kHz."
+    },
+    "img": "475",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Headphones for weak stations",
+     "de": "Kopfhörer für schwache Stationen"
+    },
+    "b": {
+     "en": "Headphones help you hear weak stations better, because they bring the sound directly into your ears and keep room noise out.\n\nThey are also polite: neighbours and family are not disturbed when you listen late in the evening.\n\nSet the volume to a comfortable level. A weak signal you can barely hear is often readable with headphones.",
+     "de": "Kopfhörer helfen dir, schwache Stationen besser zu hören, weil sie den Ton direkt ans Ohr bringen und Raumgeräusche fernhalten.\n\nSie sind auch rücksichtsvoll: Nachbarn und Familie werden nicht gestört, wenn du spät abends hörst.\n\nStelle eine angenehme Lautstärke ein. Ein Signal, das du kaum hörst, ist mit Kopfhörern oft noch lesbar."
+    },
+    "tip": {
+     "en": "Keep the volume moderate to protect your ears.",
+     "de": "Lautstärke moderat halten, das schont die Ohren."
+    }
+   },
+   {
+    "t": {
+     "en": "Comparing levels: decibel",
+     "de": "Pegel vergleichen: Dezibel"
+    },
+    "b": {
+     "en": "To compare power levels we use the decibel (dB). It is a logarithmic scale and handles huge ratios easily.\n\nA few values: 0 dB is factor 1, 3 dB is factor 2, 10 dB is factor 10, 20 dB is factor 100.\n\nYou know dB from the S-meter: signals stronger than S9 are shown in dB above S9, for example 59+20 dB.",
+     "de": "Um Leistungen zu vergleichen, nutzt man das Dezibel (dB). Es ist eine logarithmische Skala und kommt mit riesigen Verhältnissen gut zurecht.\n\nEinige Werte: 0 dB sind Faktor 1, 3 dB sind Faktor 2, 10 dB sind Faktor 10, 20 dB sind Faktor 100.\n\nDas dB kennst du vom S-Meter: Signale stärker als S9 werden in dB über S9 angegeben, z. B. 59+20 dB."
+    },
+    "tip": {
+     "en": "Trick: for values ending in 0, the leading digit counts the zeros: 30 dB = factor 1000.",
+     "de": "Trick: Bei Werten auf 0 zählt die Ziffer die Nullen: 30 dB = Faktor 1000."
+    }
+   }
+  ],
+  "swr": [
+   {
+    "t": {
+     "en": "Why 50 ohms?",
+     "de": "Warum 50 Ohm?"
+    },
+    "b": {
+     "en": "Amateur radios and the coax cables used in amateur radio usually have an impedance of 50 ohms. That is where the name 50ohm comes from.\n\nFor the best power transfer, the antenna should also fit this value. If the feed resistance of the antenna matches the cable impedance, we speak of matching.\n\nIf not, part of the power is reflected at the junction.",
+     "de": "Amateurfunkgeräte und die im Amateurfunk üblichen Leitungen haben meist einen Wellenwiderstand von 50 Ohm. Daher kommt auch der Name 50ohm.\n\nFür die beste Leistungsübertragung sollte auch die Antenne dazu passen. Stimmt der Speisewiderstand der Antenne mit dem Wellenwiderstand der Leitung überein, spricht man von Anpassung.\n\nPasst es nicht, wird ein Teil der Leistung an der Verbindungsstelle reflektiert."
+    }
+   },
+   {
+    "t": {
+     "en": "Measuring the match",
+     "de": "Die Anpassung messen"
+    },
+    "b": {
+     "en": "The SWR meter shows how well the antenna is matched. SWR means standing wave ratio. It measures how much transmit power is reflected.\n\nYou connect it between the transceiver and the antenna. Many modern transceivers have a built-in SWR meter in the display.\n\nDo not confuse it with the S-meter: the SWR meter measures during transmit, the S-meter shows received signal strength.",
+     "de": "Das SWR-Meter zeigt, wie gut die Antenne angepasst ist. SWR steht für Stehwellenverhältnis. Es misst, wie viel Sendeleistung reflektiert wird.\n\nDu schleifst es zwischen Transceiver und Antenne ein. Viele moderne Transceiver haben ein SWR-Meter im Display eingebaut.\n\nVerwechsle es nicht mit dem S-Meter: Das SWR-Meter misst beim Senden, das S-Meter zeigt beim Empfang die Signalstärke."
+    },
+    "tip": {
+     "en": "SWR meter = while transmitting. S-meter = while receiving.",
+     "de": "SWR-Meter = beim Senden. S-Meter = beim Empfang."
+    },
+    "img": "670",
+    "img_kind": "drawing"
+   },
+   {
+    "t": {
+     "en": "Reading the value",
+     "de": "Den Wert ablesen"
+    },
+    "b": {
+     "en": "An SWR of 1 (1:1) is the best possible value. The antenna takes up all the power and nothing is reflected back.\n\nThe higher the SWR, the worse the match. For SWR 2 about 11 percent of the power is reflected, for SWR 3 about 25 percent.\n\nWith no antenna connected or a broken cable, the SWR is nearly infinite, because all power is reflected.",
+     "de": "Ein SWR von 1 (1:1) ist der beste erreichbare Wert. Die Antenne nimmt die gesamte Leistung auf und es wird nichts zurückgeworfen.\n\nJe höher das SWR, desto schlechter die Anpassung. Bei SWR 2 werden etwa 11 Prozent der Leistung reflektiert, bei SWR 3 etwa 25 Prozent.\n\nIst keine Antenne angeschlossen oder das Kabel defekt, ist das SWR nahezu unendlich, denn die Leistung wird komplett reflektiert."
+    },
+    "tip": {
+     "en": "Open or shorted cable: the transmitter can even be damaged.",
+     "de": "Offenes oder kurzgeschlossenes Kabel kann im schlimmsten Fall den Sender zerstören."
+    }
+   },
+   {
+    "t": {
+     "en": "High SWR: what now?",
+     "de": "Hohes SWR: was tun?"
+    },
+    "b": {
+     "en": "A high SWR means a mismatch: power is reflected back towards the transmitter instead of being radiated by the antenna.\n\nDo not simply keep transmitting at full power. Reduce power and look for the cause: check the antenna, the cable and the connectors.\n\nFor a dipole, correct the length step by step until the SWR drops towards 1.",
+     "de": "Ein hohes SWR bedeutet Fehlanpassung: Leistung wird zum Sender zurückgeworfen, statt von der Antenne abgestrahlt zu werden.\n\nSende nicht einfach mit voller Leistung weiter. Verringere die Leistung und suche die Ursache: Prüfe Antenne, Kabel und Stecker.\n\nBei einem Dipol korrigierst du die Länge schrittweise, bis das SWR Richtung 1 sinkt."
+    },
+    "tip": {
+     "en": "Fix the antenna first, not the radio.",
+     "de": "Erst die Antenne in Ordnung bringen, nicht das Funkgerät."
+    }
+   }
+  ],
+  "key": [
+   {
+    "t": {
+     "en": "Radio without a microphone",
+     "de": "Funken ohne Mikrofon"
+    },
+    "b": {
+     "en": "Morse telegraphy is the oldest radio mode. A key switches the transmitter briefly on and off. At the receiver you hear a tone in exactly this rhythm.\n\nThis mode is called CW, continuous wave. Giving Morse code is called keying.\n\nThe carrier has only two states: 0 percent and 100 percent. So CW is a very simple digital mode.",
+     "de": "Die Morsetelegrafie ist das älteste Übertragungsverfahren im Funk. Mit einer Taste wird der Sender kurz ein- und wieder ausgeschaltet. Beim Empfänger hörst du einen Ton in genau diesem Rhythmus.\n\nDieses Verfahren heißt CW, Continuous Wave. Morsezeichen zu senden nennt man geben.\n\nDer Träger kennt nur zwei Zustände: 0 und 100 Prozent. CW ist also ein sehr einfaches digitales Verfahren."
+    },
+    "img": "109",
+    "img_kind": "photo"
+   },
+   {
+    "t": {
+     "en": "Dit and dah",
+     "de": "Dit und Dah"
+    },
+    "b": {
+     "en": "Morse code uses short tones (dit, a dot) and long tones (dah, a dash). A dah is three times as long as a dit.\n\nEvery letter has its own pattern. E is a single dit, T is a single dah. C is dah-dit-dah-dit and Q is dah-dah-dit-dah, together the famous CQ call.\n\nYou decode with ears and brain, or with a computer.",
+     "de": "Der Morsecode benutzt kurze Töne (Dit, Punkt) und lange Töne (Dah, Strich). Ein Dah ist dreimal so lang wie ein Dit.\n\nJedes Zeichen hat sein eigenes Muster. E ist ein einzelnes Dit, T ist ein einzelnes Dah. C ist lang-kurz-lang-kurz, Q ist lang-lang-kurz-lang, zusammen der berühmte Ruf CQ.\n\nDecodiert wird mit Ohren und Gehirn, oder mit dem Computer."
+    },
+    "tip": {
+     "en": "Start with short letters: E, T, I, M.",
+     "de": "Fang mit kurzen Zeichen an: E, T, I, M."
+    },
+    "img": "216",
+    "img_kind": "photo"
+   },
+   {
+    "t": {
+     "en": "Why CW is great",
+     "de": "Warum CW so gut ist"
+    },
+    "b": {
+     "en": "CW works with weak signals and very simple equipment. A small transmitter is enough, which is why many operators like it for low-power (QRP) work.\n\nMorse is still used today. In Germany an exam in Morse code has been voluntary since 2003.\n\nSo you can start with a simple key and still make contacts around the world.",
+     "de": "CW funktioniert mit schwachen Signalen und sehr einfacher Technik. Ein kleiner Sender genügt, deshalb mögen viele Funkamateure es für Betrieb mit kleiner Leistung (QRP).\n\nMorsetelegrafie wird bis heute genutzt. In Deutschland ist die Morseprüfung seit 2003 freiwillig.\n\nMit einer einfachen Taste kannst du also trotzdem Verbindungen rund um die Welt schaffen."
+    }
+   },
+   {
+    "t": {
+     "en": "Keep the speed friendly",
+     "de": "Tempo freundlich wählen"
+    },
+    "b": {
+     "en": "Choose your speed wisely: do not send faster than the other station and not faster than you can receive yourself. Then everybody can keep up.\n\nIf the other station is too fast for you, use the Q code QRS: it asks to send more slowly.\n\nQRS is a three-letter Q code, like all Q codes it starts with Q.",
+     "de": "Wähle das Tempo mit Bedacht: Gib nicht schneller als die andere Station und nicht schneller, als du selbst aufnehmen kannst. So kommen alle mit.\n\nIst dir die Gegenstation zu schnell, nutze die Q-Gruppe QRS: Sie bedeutet: bitte langsamer geben.\n\nQRS ist wie alle Q-Gruppen drei Zeichen lang und beginnt mit Q."
+    },
+    "tip": {
+     "en": "QRS = please send more slowly.",
+     "de": "QRS = bitte langsamer geben."
+    }
+   }
+  ],
+  "logbook": [
+   {
+    "t": {
+     "en": "Why keep a log?",
+     "de": "Wozu ein Logbuch?"
+    },
+    "b": {
+     "en": "A logbook documents your radio activity, like the log on a ship or in an aircraft. You can keep it on paper or electronically.\n\nMany amateurs keep one voluntarily. The Bundesnetzagentur can also ask you to keep one, for example to find the cause of interference.\n\nIt is also a nice memory of all your contacts.",
+     "de": "Mit einem Logbuch dokumentierst du deine Funkaktivitäten, ähnlich wie das Logbuch auf einem Schiff oder im Flugzeug. Du kannst es handschriftlich oder elektronisch führen.\n\nViele Funkamateure führen freiwillig ein Logbuch. Die Bundesnetzagentur kann es aber auch verlangen, z. B. um Störungsursachen zu klären.\n\nNebenbei ist es eine schöne Erinnerung an alle deine Verbindungen."
+    }
+   },
+   {
+    "t": {
+     "en": "What goes in a log entry?",
+     "de": "Was gehört in den Eintrag?"
+    },
+    "b": {
+     "en": "For each contact (QSO, a radio contact) write down: the callsign of the other station, frequency or band, date and time, the mode (for example SSB), the reports given and received, your power and remarks such as the name of the operator.\n\nQSO is the short word for one complete radio contact, so one line in the log is one QSO.",
+     "de": "Für jede Funkverbindung (QSO) hältst du fest: Rufzeichen der Gegenstation, Frequenz oder Band, Datum und Uhrzeit, Übertragungsverfahren (z. B. SSB), gegebenen und erhaltenen Rapport, verwendete Sendeleistung und Bemerkungen wie den Namen des QSO-Partners.\n\nQSO bedeutet Funkverbindung."
+    },
+    "tip": {
+     "en": "With the ADIF file format you can move a log between programs.",
+     "de": "Mit dem ADIF-Format lässt sich ein Log zwischen Programmen übertragen."
+    }
+   },
+   {
+    "t": {
+     "en": "Always use UTC",
+     "de": "Immer UTC"
+    },
+    "b": {
+     "en": "Times in the log are entered in coordinated universal time, UTC. It is the same everywhere in the world, so nobody has to convert time zones.\n\nExample: 8:00 local time in Berlin (CET, winter) is 7:00 UTC, and in New York it is earlier in the day, but UTC is the same for both.\n\nWinter: UTC = CET minus 1 hour. Summer: UTC = CEST minus 2 hours.",
+     "de": "Zeiten trägst du im Logbuch in koordinierter Weltzeit ein, kurz UTC. Sie ist überall auf der Welt gleich, dadurch muss bei Funkverbindungen über Zeitzonen hinweg nichts umgerechnet werden.\n\nBeispiel: 8:00 Uhr in Berlin ist in New York erst 2:00 Uhr, für beide ist es aber 07:00 UTC.\n\nWinterzeit: UTC = MEZ minus 1 Stunde. Sommerzeit: UTC = MESZ minus 2 Stunden."
+    },
+    "tip": {
+     "en": "Your radio clock: set it to UTC to avoid mistakes.",
+     "de": "Tipp: Stelle deine Logbuch-Uhr auf UTC, das vermeidet Fehler."
+    }
+   },
+   {
+    "t": {
+     "en": "The QSL card",
+     "de": "Die QSL-Karte"
+    },
+    "b": {
+     "en": "A QSL card confirms a contact. It is like a postcard: one side shows the details, the other a personal picture. The name comes from the Q code QSL, which means I confirm receipt.\n\nIt should contain at least date, time in UTC, both callsigns, frequency or band, mode and the report. Cards are also the proof for amateur radio awards.",
+     "de": "Eine QSL-Karte bestätigt eine Funkverbindung. Sie ähnelt einer Postkarte: Eine Seite enthält die Angaben, die andere ein persönliches Motiv. Der Name kommt von der Q-Gruppe QSL: ich bestätige den Empfang.\n\nSie sollte mindestens Datum, Uhrzeit in UTC, beide Rufzeichen, Frequenz oder Band, Übertragungsverfahren und Rapport enthalten. Mit Karten weist man auch Funkdiplome nach."
+    },
+    "tip": {
+     "en": "Via the DARC bureau, QSL cards can be exchanged cheaply.",
+     "de": "Über das DARC-Büro lassen sich QSL-Karten günstig austauschen."
+    },
+    "img": "62",
+    "img_kind": "photo"
+   },
+   {
+    "t": {
+     "en": "Signal reports: RST",
+     "de": "Der Rapport: RST"
+    },
+    "b": {
+     "en": "In a contact you give a report on how well you hear the other station: R is readability from 1 to 5, S is signal strength from 1 to 9, and T is tone from 1 to 9 (only for Morse, not in voice).\n\nSo 59 means perfectly readable (5) and very strong (9). 45 means readable without difficulty and medium strength.\n\nYou take the S value from the S-meter.",
+     "de": "In einer Verbindung gibst du einen Rapport, wie gut du die Gegenstation hörst: R ist die Lesbarkeit von 1 bis 5, S die Signalstärke von 1 bis 9, und T die Tonqualität von 1 bis 9 (nur bei Morsetelegrafie, nicht im Sprechfunk).\n\n59 bedeutet also einwandfrei lesbar (5) und sehr stark (9). 45 heißt ohne Schwierigkeiten lesbar und mittlere Stärke.\n\nDen S-Wert liest du am S-Meter ab."
+    },
+    "tip": {
+     "en": "Write the reports you gave and received in the log.",
+     "de": "Trage gegebenen und erhaltenen Rapport ins Logbuch ein."
+    },
+    "img": "123",
+    "img_kind": "photo"
+   }
+  ]
+ }
+}

@@ -29,6 +29,7 @@ Headless checks:
 godot --headless --path . --import                       # first time, creates font imports
 godot --headless --path . --script tools/smoke.gd        # every screen builds, all packs load
 godot --headless --path . --script tests/flow.gd         # plays QSO and Morse logic
+godot --headless --path . --script tools/rasterize_course.gd <50ohm>/contents   # lesson images
 godot --headless --path . --script tests/levels.gd       # plays the level ladder for DE, US, UK
 xvfb-run -a godot --path . --rendering-driver opengl3 --script tools/shots.gd   # screenshots
 ```
@@ -41,7 +42,7 @@ Content lives in `content/` as JSON (`{"en": ..., "de": ...}` per string) and is
 
 | Content | Source | Licence |
 |---|---|---|
-| DE lessons | 50ohm.de, DARC e.V. | CC BY 4.0 |
+| DE lessons, shack lesson cards, drawings | 50ohm.de, DARC e.V. (condensed, English unofficial) | CC BY 4.0 |
 | DE questions | Bundesnetzagentur question catalogue, 3rd ed. March 2024 | DL-DE-BY-2.0 |
 | AT questions/terms | BMVIT amateur radio question catalogue (2009), supplied by the project owner | check before publishing |
 | US, UK, CH, other lessons | original short primers | this project |

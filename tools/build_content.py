@@ -127,6 +127,8 @@ UI = {
     "build.all_done": ("Your shack is complete!", "Deine Funkbude ist komplett!"),
     "build.back": ("Back to the shack", "Zurück zur Funkbude"),
     "build.start_quiz": ("Take the quiz", "Zum Quiz"),
+    "build.skip_to_quiz": ("Skip to quiz", "Direkt zum Quiz"),
+    "legal.skip_to_quiz": ("Skip to quiz", "Direkt zum Quiz"),
     "build.failed": ("You need %d of %d. Have another look at the lesson.", "Du brauchst %d von %d. Sieh dir die Lektion nochmal an."),
     "qso.title": ("Goal 3 · First contact", "Ziel 3 · Erstes Funkgespräch"),
     "qso.sub": ("Practice a real QSO, step by step", "Übe ein echtes QSO, Schritt für Schritt"),
@@ -209,8 +211,8 @@ UI = {
     "callsign.pick_hint": ("Click a free entry or type your own.", "Klicke auf einen freien Eintrag oder tippe ein eigenes."),
     "callsign.done_hint": ("Goal 1 complete!", "Ziel 1 geschafft!"),
     "about.title": ("About CQ Quest", "Über CQ Quest"),
-    "about.body": ("CQ Quest is a free game that shows how much fun amateur radio is. It is not affiliated with DARC e.V., the Bundesnetzagentur or any amateur radio magazine.\n\nGerman lessons: 50ohm.de, DARC e.V., [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url]. Questions: Bundesnetzagentur question catalogue, 3rd edition, March 2024, [url=https://www.govdata.de/dl-de/by-2-0]DL-DE-BY-2.0[/url]. Changes: shortened, English translation added (unofficial).\n\nAustrian topics: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009. US, UK and Swiss lessons are original primers.\n\nFonts Fredoka, Nunito and Share Tech Mono: [url=https://openfontlicense.org]SIL Open Font License 1.1[/url]. Made with Godot Engine ([url=https://godotengine.org/license/]MIT[/url]).\n\nOther text, art and sound are original. Callsigns and names in the game are fictional.\n\nSource code and full notices: [url=https://github.com/mikebeer/ham_radio_game]github.com/mikebeer/ham_radio_game[/url]",
-                   "CQ Quest ist ein kostenloses Spiel, das zeigt, wie viel Spaß Amateurfunk macht. Es steht in keiner Verbindung zum DARC e.V., zur Bundesnetzagentur oder zu Amateurfunk-Zeitschriften.\n\nDeutsche Lektionen: 50ohm.de, DARC e.V., [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url]. Fragen: Fragenkatalog der Bundesnetzagentur, 3. Auflage, März 2024, [url=https://www.govdata.de/dl-de/by-2-0]DL-DE-BY-2.0[/url]. Änderungen: gekürzt, englische Übersetzung ergänzt (inoffiziell).\n\nÖsterreichische Themen: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009. Lektionen für USA, UK und Schweiz sind eigene Kurzübersichten.\n\nSchriften Fredoka, Nunito und Share Tech Mono: [url=https://openfontlicense.org]SIL Open Font License 1.1[/url]. Erstellt mit der Godot Engine ([url=https://godotengine.org/license/]MIT[/url]).\n\nSonstige Texte, Grafik und Ton sind eigen. Rufzeichen und Namen im Spiel sind erfunden.\n\nQuellcode und vollständige Hinweise: [url=https://github.com/mikebeer/ham_radio_game]github.com/mikebeer/ham_radio_game[/url]"),
+    "about.body": ("CQ Quest is a free game that shows how much fun amateur radio is. It is not affiliated with DARC e.V., the Bundesnetzagentur or any amateur radio magazine.\n\nLessons and drawings: 50ohm.de, DARC e.V., [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url]. Questions: Bundesnetzagentur question catalogue, 3rd edition, March 2024, [url=https://www.govdata.de/dl-de/by-2-0]DL-DE-BY-2.0[/url]. Changes: shortened, English translation added (unofficial).\n\nAustrian topics: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009. US, UK and Swiss lessons are original primers.\n\nFonts Fredoka, Nunito and Share Tech Mono: [url=https://openfontlicense.org]SIL Open Font License 1.1[/url]. Made with Godot Engine ([url=https://godotengine.org/license/]MIT[/url]).\n\nOther text, art and sound are original. Callsigns and names in the game are fictional.\n\nSource code and full notices: [url=https://github.com/mikebeer/ham_radio_game]github.com/mikebeer/ham_radio_game[/url]",
+                   "CQ Quest ist ein kostenloses Spiel, das zeigt, wie viel Spaß Amateurfunk macht. Es steht in keiner Verbindung zum DARC e.V., zur Bundesnetzagentur oder zu Amateurfunk-Zeitschriften.\n\nLektionen und Zeichnungen: 50ohm.de, DARC e.V., [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url]. Fragen: Fragenkatalog der Bundesnetzagentur, 3. Auflage, März 2024, [url=https://www.govdata.de/dl-de/by-2-0]DL-DE-BY-2.0[/url]. Änderungen: gekürzt, englische Übersetzung ergänzt (inoffiziell).\n\nÖsterreichische Themen: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009. Lektionen für USA, UK und Schweiz sind eigene Kurzübersichten.\n\nSchriften Fredoka, Nunito und Share Tech Mono: [url=https://openfontlicense.org]SIL Open Font License 1.1[/url]. Erstellt mit der Godot Engine ([url=https://godotengine.org/license/]MIT[/url]).\n\nSonstige Texte, Grafik und Ton sind eigen. Rufzeichen und Namen im Spiel sind erfunden.\n\nQuellcode und vollständige Hinweise: [url=https://github.com/mikebeer/ham_radio_game]github.com/mikebeer/ham_radio_game[/url]"),
 }
 
 # ----------------------------------------------------------------------------------------
@@ -569,6 +571,30 @@ def leveled(pack, extras):
     return pack
 
 
+def _cards(cards):
+    out = []
+    for c in cards:
+        c = dict(c)
+        if c.get("img"):
+            c["img"] = c.pop("img_kind")[0] + c["img"]
+        else:
+            c.pop("img", None)
+            c.pop("img_kind", None)
+        out.append(c)
+    return out
+
+
+def load_course():
+    """Lesson cards written from the 50ohm course (tools/course/*.json)."""
+    base = os.path.join(ROOT, "tools", "course")
+    shack = {}
+    for lv in (1, 2, 3):
+        d = json.load(open(os.path.join(base, "shack_L%d.json" % lv), encoding="utf-8"))
+        shack[lv] = {pid: _cards(cards) for pid, cards in d["parts"].items()}
+    de = json.load(open(os.path.join(base, "de_rules.json"), encoding="utf-8"))
+    return {"shack": shack, "de_rules": {int(k): _cards(v) for k, v in de["levels"].items()}}
+
+
 def clean(o):
     """Replaces characters the game fonts lack."""
     if isinstance(o, dict):
@@ -588,13 +614,20 @@ if __name__ == "__main__":
     from levels_parts import TIERS
     from levels_qso import qso_levels
     dump("content/i18n/ui.json", {k: L(*v) for k, v in UI.items()})
+    course = load_course()
     extra = {"de": de_levels(), "us": us_levels(), "uk": uk_levels(), "ch": [], "at": at_levels()}
     for pack in (de_pack(), us_pack(), uk_pack(), ch_pack(), at_pack()):
         pack = leveled(pack, extra[pack["country"]])
+        if pack["country"] == "de":
+            for i, lvl in enumerate(pack["levels"]):
+                lvl["lessons"] = course["de_rules"][i + 1]
         dump("content/legal/%s.json" % pack["country"], clean(pack))
     plist = parts()
     for p in plist:
         p["tiers"] = {str(lv): TIERS[p["id"]][lv] for lv in (2, 3)}
+        p["cards"] = course["shack"][1][p["id"]]
+        for lv in (2, 3):
+            p["tiers"][str(lv)]["cards"] = course["shack"][lv][p["id"]]
         if p["id"] == "antenna":
             p["country_tiers"] = {"at": at_antenna_tiers()}
     dump("content/tech/parts.json", clean(plist))

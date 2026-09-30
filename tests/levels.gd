@@ -54,6 +54,16 @@ func _initialize() -> void:
 		_check(root.get_node("Content").qso_steps(3).size() == 3, "level 3 qso steps")
 		await _finish_level(g, 3)
 		_check(g.level_done(3) and g.check_level_up() == 0, c + " all levels done")
+	# lesson cards
+	g.begin_new_game("T", 1, "de")
+	for lv in [1, 2, 3]:
+		for id in g.PART_IDS:
+			var cards: Array = root.get_node("Content").part_tier(id, lv).get("cards", [])
+			_check(cards.size() >= 4, "%s level %d has lesson cards" % [id, lv])
+			for cd in cards:
+				if cd.get("img", "") != "":
+					_check(ResourceLoader.exists("res://assets/course/%s.png" % cd["img"]), "image " + str(cd["img"]))
+		_check((g.level_data(lv)["lessons"] as Array).size() >= 8, "de rules lessons level %d" % lv)
 	# Austria: band-specific content
 	g.begin_new_game("T", 1, "at")
 	_check(root.get_node("Content").part_tier("antenna", 1)["lesson"]["en"].contains("2 m"), "at class 3 antenna is 2 m / 70 cm")

@@ -29,19 +29,43 @@
       "de": "Was Amateurfunk ist"
      },
      "b": {
-      "en": "Amateur radio is a radio service that radio amateurs use among themselves, for their own training and for technical experiments. The Amateur Radio Act (AFuG) is the legal basis in Germany. You may not use it for business, and you may only talk to other amateur stations.",
-      "de": "Amateurfunk ist ein Funkdienst, den Funkamateure untereinander, zur eigenen Weiterbildung und für technische Experimente nutzen. Rechtsgrundlage in Deutschland ist das Amateurfunkgesetz (AFuG). Für Geschäfte darfst du ihn nicht nutzen, und du sprichst nur mit anderen Amateurfunkstellen."
+      "en": "Welcome to amateur radio! Anyone may buy a transceiver, put up an antenna and listen to amateur transmissions, with no licence at all. Only a radio amateur may actually transmit on the amateur frequencies, that is, press the PTT key (push to talk).\n\nThe amateur radio service is an official radio service, like broadcasting or maritime radio. It exists for radio amateurs to talk to each other, to experiment, to keep learning, to promote understanding between peoples and to help in emergencies and disasters.",
+      "de": "Willkommen im Amateurfunk! Jeder darf Funkgeräte kaufen, eine Antenne aufbauen und Amateurfunk empfangen, ganz ohne Genehmigung. Nur auf den Amateurfunkfrequenzen senden, also die PTT-Taste (push to talk) drücken, darf allein ein Funkamateur.\n\nDer Amateurfunkdienst ist ein offizieller Funkdienst, wie Rundfunk oder Seefunk. Er dient dem Funkverkehr der Funkamateure untereinander, dem Experimentieren, der eigenen Weiterbildung, der Völkerverständigung und der Hilfe in Not- und Katastrophenfällen."
+     },
+     "tip": {
+      "en": "Transceiver = transmitter + receiver, sender and receiver in one device.",
+      "de": "Transceiver = Transmitter + Receiver, also Sender und Empfänger in einem Gerät."
+     },
+     "img": "p117"
+    },
+    {
+     "t": {
+      "en": "The law and the authority",
+      "de": "Gesetz und Behörde"
+     },
+     "b": {
+      "en": "The legal basis for amateur radio in Germany is the Gesetz über den Amateurfunk, the Amateur Radio Act (AFuG). The details are set out in the Amateurfunkverordnung (AFuV), the Amateur Radio Ordinance. The Bundesnetzagentur (BNetzA), the Federal Network Agency, carries out the tasks and powers that follow from them.\n\nInternationally, the ITU Radio Regulations and the CEPT recommendations apply. They do not bind you directly, only through the laws of the country you are in.",
+      "de": "Die Rechtsgrundlage für den Amateurfunk in Deutschland ist das Gesetz über den Amateurfunk, kurz Amateurfunkgesetz (AFuG). Details regelt die Amateurfunkverordnung (AFuV). Die Aufgaben und Befugnisse, die sich daraus ergeben, nimmt die Bundesnetzagentur (BNetzA) wahr.\n\nInternational gelten die Radio Regulations der ITU und die Empfehlungen der CEPT. Sie wirken nicht direkt auf dich, sondern nur über die Gesetze und Verordnungen des Landes, in dem du dich gerade aufhältst."
+     },
+     "tip": {
+      "en": "The Amateurfunkgesetz is formally titled \"Gesetz über den Amateurfunk\".",
+      "de": "Das Amateurfunkgesetz heißt eigentlich \"Gesetz über den Amateurfunk\"."
      }
     },
     {
      "t": {
-      "en": "Authority and licence",
-      "de": "Behörde und Zulassung"
+      "en": "Exam and licence",
+      "de": "Prüfung und Zulassung"
      },
      "b": {
-      "en": "The Bundesnetzagentur looks after amateur radio. To become a radio amateur you pass an exam and get a licence with your own callsign. The licence belongs to you personally and cannot be handed over. The law sets no minimum age.",
-      "de": "Die Bundesnetzagentur kümmert sich um den Amateurfunk. Um Funkamateur zu werden, legst du eine Prüfung ab und bekommst eine Zulassung mit eigenem Rufzeichen. Die Zulassung gehört dir persönlich und kann nicht weitergegeben werden. Ein Mindestalter gibt es im Gesetz nicht."
-     }
+      "en": "After passing the exam at the Bundesnetzagentur you may call yourself a radio amateur. But you may only transmit once you have the licence to take part in the amateur radio service. The licence notice also assigns your personal callsign.\n\nThe licence is tied to the person named on the certificate and cannot be transferred, not even temporarily. There is no minimum age: any natural person resident in Germany is admitted to the exam on application.",
+      "de": "Nach der bestandenen Prüfung bei der Bundesnetzagentur darfst du dich Funkamateur nennen. Senden darfst du aber erst mit der Zulassung zur Teilnahme am Amateurfunkdienst. Mit dem Zulassungsbescheid bekommst du dein persönliches Rufzeichen.\n\nDie Zulassung ist an die in der Urkunde genannte Person gebunden und nicht übertragbar, auch nicht vorübergehend. Ein Mindestalter gibt es nicht: Jede natürliche Person mit Wohnsitz in Deutschland wird auf Antrag zur Prüfung zugelassen."
+     },
+     "tip": {
+      "en": "Once you have passed the exam you stay a radio amateur. Only the licence can be revoked.",
+      "de": "Wer die Prüfung einmal bestanden hat, bleibt Funkamateur. Nur die Zulassung kann widerrufen werden."
+     },
+     "img": "p91"
     },
     {
      "t": {
@@ -49,18 +73,27 @@
       "de": "Dein Rufzeichen"
      },
      "b": {
-      "en": "A callsign identifies your station. You say it at the start and end of every contact and at least every 10 minutes. You cannot demand a particular callsign. Use only the callsign assigned to you.",
-      "de": "Ein Rufzeichen kennzeichnet deine Station. Du nennst es am Anfang und am Ende jeder Funkverbindung und mindestens alle 10 Minuten. Auf ein bestimmtes Rufzeichen hast du keinen Anspruch. Benutze nur das dir zugeteilte Rufzeichen."
-     }
+      "en": "A callsign identifies an amateur station on the air. It is unique worldwide and consists of a prefix, a digit and a suffix. German personal callsigns have a two-letter prefix, one digit and a two- or three-letter suffix, for example DL1PZ or DN2JMU.\n\nYou may only use the callsign the Bundesnetzagentur has assigned to you. You can apply for a wish callsign, but there is no right to get a particular one. Class N starts with DN9, class E with DO1 to DO9.",
+      "de": "An seinem Rufzeichen erkennt man eine Amateurfunkstelle im Funkbetrieb. Es ist weltweit eindeutig und besteht aus Präfix, Ziffer und Suffix. Deutsche persönliche Rufzeichen haben ein 2-buchstabiges Präfix, eine Ziffer und ein 2- oder 3-buchstabiges Suffix, z. B. DL1PZ oder DN2JMU.\n\nDu darfst nur das Rufzeichen benutzen, das dir die Bundesnetzagentur zugeteilt hat. Ein Wunschrufzeichen kannst du beantragen, einen Anspruch darauf gibt es nicht. Klasse N beginnt mit DN9, Klasse E mit DO1 bis DO9."
+     },
+     "tip": {
+      "en": "The ITU allots Germany the prefixes DA to DR (and Y2 to Y9, rarely used).",
+      "de": "Deutschland hat laut ITU die Präfixe DA bis DR (und Y2 bis Y9, kaum benutzt)."
+     },
+     "img": "d654"
     },
     {
      "t": {
-      "en": "What you may and may not do",
-      "de": "Was erlaubt ist und was nicht"
+      "en": "Giving and spelling your callsign",
+      "de": "Rufzeichen nennen und buchstabieren"
      },
      "b": {
-      "en": "Transmit only on frequencies allocated to amateur radio. Talk only to other amateur stations. Do not pass messages for third parties, except in emergencies and disasters. Do not operate for commercial purposes.",
-      "de": "Sende nur auf Frequenzen, die dem Amateurfunkdienst zugewiesen sind. Sprich nur mit anderen Amateurfunkstellen. Übermittle keine Nachrichten für Dritte, außer in Not- und Katastrophenfällen. Betreibe keinen Funk zu gewerblichen Zwecken."
+      "en": "Give your callsign at the start and at the end of every contact, and during longer contacts at least every 10 minutes. You spell it with the ITU international phonetic alphabet, so that M and N cannot be mixed up: DM4EAX becomes Delta Mike Vier Echo Alfa X-Ray.\n\nDigits are spoken in German for national traffic and in English for international traffic. There are no umlauts: Ä is Alfa Echo, Ö is Oscar Echo, Ü is Uniform Echo and ß is Sierra Sierra.",
+      "de": "Nenne dein Rufzeichen am Anfang und am Ende jeder Funkverbindung und bei längeren Verbindungen mindestens alle 10 Minuten. Dazu nutzt du die internationale Buchstabiertafel der ITU, damit M und N nicht verwechselt werden: DM4EAX wird zu Delta Mike Vier Echo Alfa X-Ray.\n\nZiffern spricht man im nationalen Funkverkehr deutsch, im internationalen englisch. Umlaute gibt es nicht: Ä ist Alfa Echo, Ö ist Oscar Echo, Ü ist Uniform Echo und ß ist Sierra Sierra."
+     },
+     "tip": {
+      "en": "Words such as Nancy, Sugar, Ocean, Queen are fine as an extra, but never instead of the ITU alphabet.",
+      "de": "Zusätzlich sind auch Wörter wie Nancy, Sugar, Ocean, Queen erlaubt, aber nie statt der ITU-Tafel."
      }
     },
     {
@@ -69,9 +102,100 @@
       "de": "Ausbildungsfunkbetrieb"
      },
      "b": {
-      "en": "Beginners may try radio before their exam under direct guidance and supervision of a licensed amateur. The trainee adds \"/T\" to the callsign. It is meant to prepare you for the exam, not to replace it.",
-      "de": "Einsteiger dürfen vor der Prüfung unter unmittelbarer Anleitung und Aufsicht eines Funkamateurs Funkbetrieb erleben. Der Auszubildende hängt \"/T\" an das Rufzeichen. Das soll auf die Prüfung vorbereiten, nicht sie ersetzen."
+      "en": "Only radio amateurs may transmit. The exception is training operation, which is meant as practical preparation for the exam. Non-amateurs may take part only under the direct guidance and supervision of a class E or A radio amateur.\n\nThe trainee uses the trainer's callsign with the suffix /T, spoken Trainee or Stroke Trainee. The trainer may not use the training callsign for their own transmissions and must stay right beside the trainee at all times.",
+      "de": "Nur Funkamateure dürfen senden. Die Ausnahme ist der Ausbildungsfunkbetrieb: Er dient der praktischen Vorbereitung auf die Prüfung. Nicht-Funkamateure dürfen dabei nur unter unmittelbarer Anleitung und Aufsicht eines Funkamateurs der Klasse E oder A senden.\n\nDer Auszubildende benutzt das Rufzeichen des Ausbilders mit dem Zusatz /T, gesprochen Trainee oder Stroke Trainee. Der Ausbilder darf das Ausbildungsrufzeichen nicht selbst verwenden und muss stets in unmittelbarer Nähe bleiben."
+     },
+     "tip": {
+      "en": "Example: DG2RON/T, spoken \"DG2RON Trainee\". Only /T is mandatory; other suffixes such as /p or /m are optional.",
+      "de": "Beispiel: DG2RON/T, gesprochen \"DG2RON Trainee\". Nur /T ist Pflicht, andere Zusätze wie /p oder /m sind freiwillig."
      }
+    },
+    {
+     "t": {
+      "en": "What is and is not allowed",
+      "de": "Was erlaubt ist und was nicht"
+     },
+     "b": {
+      "en": "A radio amateur may only transmit on the frequencies designated for the amateur radio service, otherwise it is an administrative offence. Contacts are allowed exclusively with other amateur stations, not with authorities, aviation or maritime radio, and not with CB radio either.\n\nMessages for and from third parties are forbidden, except in emergencies and disasters. Commercial use is also not allowed. And you must use plain language: no secret codes meant to stop others from understanding.",
+      "de": "Ein Funkamateur darf nur auf den für den Amateurfunkdienst ausgewiesenen Frequenzen senden, sonst handelt er ordnungswidrig. Funkverkehr ist ausschließlich mit anderen Amateurfunkstellen erlaubt, nicht mit Behörden, Flug- oder Seefunk und auch nicht mit CB-Funk.\n\nNachrichten für und an Dritte sind verboten, nur in Not- und Katastrophenfällen nicht. Eine gewerblich-wirtschaftliche Nutzung ist ebenfalls unzulässig. Und es gilt offene Sprache: keine Geheimcodes, die andere am Verstehen hindern sollen."
+     },
+     "tip": {
+      "en": "Class N: at most 10 W ERP on 10 m and 10 W EIRP on 2 m and 70 cm.",
+      "de": "Klasse N: höchstens 10 W ERP im 10-m-Band und 10 W EIRP im 2-m- und 70-cm-Band."
+     }
+    },
+    {
+     "t": {
+      "en": "Calling, CQ and the report",
+      "de": "Anruf, CQ und Rapport"
+     },
+     "b": {
+      "en": "Listen first, then call: ask two or three times whether the frequency is free. If it stays quiet, call CQ, the general call. The reply always starts with the callsign of the calling station, then your own.\n\nYou give the reception report in the RST system: R is readability from 1 to 5, S is signal strength from 1 to 9 (read from the S-meter), T is tone quality, used only for Morse code. In voice, the T is dropped. A 59 means perfectly readable and very strong.",
+      "de": "Erst hören, dann rufen: Frage zwei- bis dreimal, ob die Frequenz frei ist. Bleibt es still, rufst du mit CQ, dem allgemeinen Anruf. Geantwortet wird immer mit dem Rufzeichen der anrufenden Station zuerst, dann dem eigenen.\n\nDen Empfangsbericht gibst du nach dem RST-System: R ist die Lesbarkeit von 1 bis 5, S die Signalstärke von 1 bis 9 (vom S-Meter), T die Tonqualität, nur bei Morsetelegrafie. Im Sprechfunk entfällt das T. 59 heißt: einwandfrei lesbar und sehr stark."
+     },
+     "tip": {
+      "en": "First come, first served. After the QSO you leave the frequency to the station that made the call.",
+      "de": "Wer zuerst kommt, funkt zuerst. Nach dem QSO überlässt du die Frequenz der Station, die gerufen hat."
+     },
+     "img": "p123"
+    },
+    {
+     "t": {
+      "en": "Abbreviations and Q codes",
+      "de": "Abkürzungen und Q-Gruppen"
+     },
+     "b": {
+      "en": "Many abbreviations come from Morse telegraphy: CQ general call, CW Morse, PSE please, K go ahead, BK break, R received. TX is the transmitter, RX the receiver, TRX the transceiver.\n\nQ codes always have three characters and start with Q. QRV: I am ready. QRM: man-made interference, QRN: natural interference. QTH: my location. QRT: stop transmitting. QRZ?: who is calling me? QSL: receipt confirmed. QRO: increase power, QRP: reduce power. QSB: fading. QSY: change frequency.",
+      "de": "Viele Abkürzungen stammen aus der Morsetelegrafie: CQ allgemeiner Anruf, CW Morsetelegrafie, PSE bitte, K Aufforderung zum Senden, BK Unterbrechung, R Empfangsbestätigung. TX ist der Sender, RX der Empfänger, TRX der Transceiver.\n\nQ-Gruppen haben immer drei Zeichen und beginnen mit Q. QRV: ich bin bereit. QRM: menschengemachte Störung, QRN: natürliche Störung. QTH: mein Standort. QRT: Übermittlung einstellen. QRZ?: wer ruft mich? QSL: Empfang bestätigt. QRO: Leistung erhöhen, QRP: Leistung verringern. QSB: Fading. QSY: Frequenzwechsel."
+     },
+     "tip": {
+      "en": "Memory aids: QRM = man-made, QRN = natural, QRV = vorbereitet (prepared), QRT = terminate.",
+      "de": "Merkhilfen: QRM = Menschengemacht, QRN = Natürlich, QRV = vorbereitet, QRT = terminate."
+     }
+    },
+    {
+     "t": {
+      "en": "Country prefixes, ITU regions, DX",
+      "de": "Landeskenner, ITU-Regionen, DX"
+     },
+     "b": {
+      "en": "The prefix tells you the country: DA to DR Germany, OE Austria, HB9 Switzerland, F France, G Great Britain, PA Netherlands, SP Poland, EA Spain, JA Japan, VE Canada, VK Australia. USA: K, W, N and AA to AL (German mnemonic: Keiner Will Nach Amerika).\n\nThe ITU divides the world into three regions: 1 Africa, Europe, Russia, Mongolia and the Middle East; 2 North and South America and Greenland; 3 South and East Asia, Australia and Oceania. DX means a contact over a long distance, on shortwave with another continent.",
+      "de": "Das Präfix verrät das Land: DA bis DR Deutschland, OE Österreich, HB9 Schweiz, F Frankreich, G Großbritannien, PA Niederlande, SP Polen, EA Spanien, JA Japan, VE Kanada, VK Australien. USA: K, W, N und AA bis AL (Keiner Will Nach Amerika).\n\nDie ITU teilt die Welt in drei Regionen: 1 Afrika, Europa, Russland, Mongolei und Naher Osten; 2 Nord- und Südamerika und Grönland; 3 Süd- und Ostasien, Australien und Ozeanien. DX ist eine Verbindung über große Entfernung, auf Kurzwelle mit einem anderen Kontinent."
+     },
+     "tip": {
+      "en": "Someone calling \"CQ DX\" on shortwave wants another continent. Stations on the same continent should not answer.",
+      "de": "Wer \"CQ DX\" auf Kurzwelle ruft, sucht einen anderen Kontinent. Stationen vom selben Kontinent antworten nicht."
+     },
+     "img": "d658"
+    },
+    {
+     "t": {
+      "en": "Operating abroad (CEPT)",
+      "de": "Funken im Ausland (CEPT)"
+     },
+     "b": {
+      "en": "Thanks to the CEPT arrangement you may also operate abroad with your amateur licence, but only in countries that apply it. You must not have a permanent residence there and may stay only temporarily, for up to 3 months.\n\nYou put the prefix of the host country in front of your callsign, for example HB9/DL9MJ in Switzerland, spoken with \"stroke\". The host country's rules apply, including which bands are allowed. The German class N licence currently counts only in Germany.",
+      "de": "Dank der CEPT-Regelung darfst du mit deiner Amateurfunkzulassung auch im Ausland funken, aber nur in Staaten, die sie anwenden. Du darfst dort keinen festen Wohnsitz haben und dich nur vorübergehend für bis zu 3 Monate aufhalten.\n\nDu stellst deinem Rufzeichen das Präfix des Gastlandes voran, z. B. HB9/DL9MJ in der Schweiz, gesprochen mit \"stroke\". Die Regeln des Gastlandes gelten, auch für erlaubte Bänder. Das deutsche Zeugnis der Klasse N gilt aktuell nur in Deutschland."
+     },
+     "tip": {
+      "en": "The CEPT country list of the DARC foreign affairs desk shows what applies where.",
+      "de": "Die CEPT-Länderliste des DARC-Auslandsreferats zeigt, was in welchem Land gilt."
+     }
+    },
+    {
+     "t": {
+      "en": "Logbook and QSL cards",
+      "de": "Logbuch und QSL-Karten"
+     },
+     "b": {
+      "en": "A logbook, electronic or on paper, documents your contacts. Many keep one voluntarily, but the Bundesnetzagentur can order it, for example to clear up interference. If you change how you keep it, the old log must remain accessible.\n\nAlways enter times in UTC, coordinated universal time: in winter CET minus 1 hour, in summer CEST minus 2 hours. A QSL card confirms a QSO and shows at least the date, time in UTC, both callsigns, frequency or band, mode and report.",
+      "de": "Ein Logbuch, ob elektronisch oder auf Papier, dokumentiert deine Funkverbindungen. Viele führen es freiwillig; die Bundesnetzagentur kann es aber anordnen, etwa um Störungen zu klären. Wechselst du die Art der Führung, muss das alte Logbuch einsehbar bleiben.\n\nZeiten trägst du immer in UTC ein, der koordinierten Weltzeit: im Winter MEZ minus 1 Stunde, im Sommer MESZ minus 2 Stunden. Eine QSL-Karte bestätigt ein QSO und nennt mindestens Datum, Uhrzeit in UTC, beide Rufzeichen, Frequenz oder Band, Übertragungsverfahren und Rapport."
+     },
+     "tip": {
+      "en": "With the ADIF format you can easily move a log from one program to another.",
+      "de": "Mit dem ADIF-Format lässt sich ein Logbuch leicht von einer Software in eine andere übertragen."
+     },
+     "img": "p62"
     }
    ],
    "questions": [
@@ -480,52 +604,177 @@
    "lessons": [
     {
      "t": {
-      "en": "Decibels and tolerances",
-      "de": "Dezibel und Toleranzen"
+      "en": "Decibel: 3 dB means double power",
+      "de": "Dezibel: 3 dB sind doppelte Leistung"
      },
      "b": {
-      "en": "Doubling the power adds 3 dB to the power level. A resistor with a 10 % tolerance may differ by that much from its nominal value, so 5.6 kOhm can really be anywhere from 5040 to 6160 Ohm. The turns ratio of a transformer is a simple proportion: a 150-turn primary at 45 V with 180 V on the secondary needs 600 secondary turns.",
-      "de": "Eine Verdopplung der Leistung erhöht den Leistungspegel um 3 dB. Ein Widerstand mit 10 % Toleranz darf um so viel vom Nennwert abweichen, 5,6 kOhm können also zwischen 5040 und 6160 Ohm liegen. Das Windungsverhältnis eines Transformators ist eine einfache Proportion: Bei 150 Windungen primär mit 45 V und 180 V sekundär braucht man 600 Windungen sekundär."
+      "en": "Power ratios can be given in decibels (dB), which saves counting zeros. The formula: g = 10 · log10(P2 / P1) dB. If the power is doubled, the level changes by 3 dB: 50 W becomes 100 W, so 10 · log10(2) ≈ 3 dB.\n\nMore values to remember: 6 dB is a factor of 4, 10 dB a factor of 10 and 20 dB a factor of 100. Zero dB means a factor of 1, so no change.",
+      "de": "Leistungsverhältnisse lassen sich in Dezibel (dB) angeben, das erspart das Zählen von Nullen. Die Formel: g = 10 · log10(P2 / P1) dB. Wird die Leistung verdoppelt, ändert sich der Pegel um 3 dB: aus 50 W werden 100 W, also 10 · log10(2) ≈ 3 dB.\n\nWeitere Werte zum Merken: 6 dB sind Faktor 4, 10 dB Faktor 10 und 20 dB Faktor 100. Null dB entsprechen dem Faktor 1, also keiner Änderung."
+     },
+     "tip": {
+      "en": "If the dB value ends in 0, cover the zero: the digit counts the zeros. 30 dB = a factor of 1000.",
+      "de": "Endet der dB-Wert auf 0: Null zuhalten, die Ziffer zählt die Nullen. 30 dB = Faktor 1000."
      }
     },
     {
      "t": {
-      "en": "Coils, capacitors, diodes, transistors",
-      "de": "Spule, Kondensator, Diode, Transistor"
+      "en": "Resistor tolerance",
+      "de": "Widerstandstoleranz"
      },
      "b": {
-      "en": "With rising frequency the AC resistance of an ideal capacitor falls, while that of an ideal coil rises. A germanium diode starts to conduct at about 0.2 to 0.4 V, a silicon diode at about 0.6 to 0.8 V. A transistor amplifies current: a small base current controls a large collector current. Together, these parts make up the building blocks of every radio circuit you will meet later.",
-      "de": "Mit steigender Frequenz sinkt der Wechselstromwiderstand eines idealen Kondensators, der einer idealen Spule steigt. Eine Germaniumdiode leitet ab etwa 0,2 bis 0,4 V, eine Siliziumdiode ab etwa 0,6 bis 0,8 V. Ein Transistor verstärkt den Strom: Ein kleiner Basisstrom steuert einen großen Kollektorstrom. Diese Bauteile sind die Bausteine aller Funkschaltungen, die dir später begegnen."
+      "en": "The tolerance says how far the real resistance may differ from the printed nominal value. It is given in percent. First work out the percentage of the nominal value, then subtract it and add it.\n\nExample: 1 kOhm with 5 % tolerance. 5 % of 1000 ohms is 50 ohms, so the real value lies between 950 and 1050 ohms. A 470 ohm resistor at 10 % lies between 423 and 517 ohms. Common values are 1 %, 2 %, 5 % and 10 %; the smaller, the more accurate and expensive.",
+      "de": "Die Toleranz sagt, wie weit der tatsächliche Widerstandswert vom aufgedruckten Nennwert abweichen darf. Sie wird in Prozent angegeben. Rechne erst den Prozentanteil des Nennwerts aus, dann ziehst du ihn ab und zählst ihn dazu.\n\nBeispiel: 1 kOhm mit 5 % Toleranz. 5 % von 1000 Ohm sind 50 Ohm, der Istwert liegt also zwischen 950 und 1050 Ohm. Ein 470-Ohm-Widerstand mit 10 % liegt zwischen 423 und 517 Ohm. Üblich sind 1 %, 2 %, 5 % und 10 %, je kleiner, desto genauer und teurer."
+     },
+     "tip": {
+      "en": "A silver tolerance band in the colour code means 10 %.",
+      "de": "Ein silberner Toleranzring auf dem Farbcode bedeutet 10 %."
      }
     },
     {
      "t": {
-      "en": "SSB and the receiver",
-      "de": "SSB und der Empfänger"
+      "en": "Capacitor and frequency",
+      "de": "Kondensator und Frequenz"
      },
      "b": {
-      "en": "A single-sideband signal needs about as much RF bandwidth as the audio signal it carries, because the carrier and one sideband are suppressed. In the receiver, the beat-frequency oscillator (BFO) supplies an auxiliary carrier so that CW and SSB signals become audible. Without it, these signals would only sound like faint clicks or unintelligible noise.",
-      "de": "Ein Einseitenbandsignal braucht etwa so viel HF-Bandbreite wie das übertragene NF-Signal, weil Träger und ein Seitenband unterdrückt werden. Im Empfänger liefert der Überlagerungsoszillator (BFO) einen Hilfsträger, damit CW- und SSB-Signale hörbar werden. Ohne ihn wären diese Signale nur als leises Knacken oder unverständliches Rauschen zu hören."
+      "en": "A capacitor consists of two conducting surfaces separated by an insulator, the dielectric. Its capacitance C, in farads, tells you how much charge it can store. If you increase the plate spacing, the capacitance falls.\n\nOn alternating voltage it acts like a frequency-dependent resistance: X_C = 1 / (2π · f · C). The higher the frequency, the smaller this reactance gets; at lower frequency it grows. On direct voltage, no current flows once it is charged.",
+      "de": "Ein Kondensator besteht aus zwei leitenden Flächen, getrennt durch einen Isolator, das Dielektrikum. Seine Kapazität C in Farad gibt an, wie viel Ladung er speichern kann. Vergrößerst du den Plattenabstand, sinkt die Kapazität.\n\nBei Wechselspannung verhält er sich wie ein frequenzabhängiger Widerstand: X_C = 1 / (2π · f · C). Je höher die Frequenz, desto kleiner wird dieser Blindwiderstand, bei tieferer Frequenz wird er größer. Bei Gleichspannung fließt nach dem Aufladen kein Strom mehr."
+     },
+     "tip": {
+      "en": "Electrolytic capacitors may only be used on DC, with the correct polarity.",
+      "de": "Elkos dürfen nur an Gleichspannung und nur richtig gepolt betrieben werden."
+     },
+     "img": "d922"
+    },
+    {
+     "t": {
+      "en": "Coil: reactance rises",
+      "de": "Spule: Blindwiderstand steigt"
+     },
+     "b": {
+      "en": "A coil creates a magnetic field as soon as current flows. Its inductance L is given in henries. It rises with the square of the number of turns, with the cross-section and with an iron core, and it falls if the coil gets longer.\n\nOn alternating current the coil acts as a reactance: X_L = 2π · f · L. The higher the frequency, the larger the resistance. On direct current, self-induction only slows down the moment of switching on; after that the coil behaves almost like a piece of wire.",
+      "de": "Eine Spule erzeugt ein Magnetfeld, sobald Strom fließt. Ihre Induktivität L wird in Henry angegeben. Sie steigt mit dem Quadrat der Windungszahl, mit der Querschnittsfläche und mit einem Eisenkern, und sie sinkt, wenn die Spule länger wird.\n\nBei Wechselstrom wirkt die Spule als Blindwiderstand: X_L = 2π · f · L. Je höher die Frequenz, desto größer wird der Widerstand. Bei Gleichstrom bremst die Selbstinduktion nur den Einschaltmoment, danach verhält sich die Spule fast wie ein Stück Draht."
+     },
+     "tip": {
+      "en": "Capacitor and coil are opposites: X_C falls with frequency, X_L rises.",
+      "de": "Kondensator und Spule sind Gegenspieler: X_C sinkt mit der Frequenz, X_L steigt."
      }
     },
     {
      "t": {
-      "en": "Antennas and propagation",
-      "de": "Antennen und Ausbreitung"
+      "en": "The transformer",
+      "de": "Transformator"
      },
      "b": {
-      "en": "At the centre of a half-wave dipole the feed-point resistance is roughly 40 to 90 Ohm, depending on height. An antenna gain given in dBd becomes dBi by adding 2.15 dB, so 5 dBd is 7.15 dBi. On shortwave, the MUF is the maximum usable frequency for a given path.",
-      "de": "In der Mitte eines Halbwellendipols beträgt der Fußpunktwiderstand je nach Aufbauhöhe etwa 40 bis 90 Ohm. Ein Antennengewinn in dBd wird durch Addition von 2,15 dB zu dBi, 5 dBd sind also 7,15 dBi. Im Kurzwellenbereich ist die MUF die höchste nutzbare Frequenz einer Funkstrecke."
+      "en": "A transformer has two coils on an iron or ferrite core, the primary and the secondary side. It only transforms alternating voltage. If you apply direct voltage, the primary winding acts almost like a short circuit and can burn out.\n\nThe turns ratio: ü = N_P / N_S = U_P / U_S. Example: N_P = 600, U_P = 230 V and U_S = 11.5 V. Then 600 / N_S = 230 / 11.5 = 20, so N_S = 600 / 20 = 30 turns.",
+      "de": "Ein Übertrager oder Transformator besteht aus zwei Spulen auf einem Eisen- oder Ferritkern, der Primärseite und der Sekundärseite. Er setzt nur Wechselspannung um. Legst du Gleichspannung an, wirkt die Primärwicklung fast wie ein Kurzschluss und kann durchbrennen.\n\nDas Übersetzungsverhältnis: ü = N_P / N_S = U_P / U_S. Beispiel: N_P = 600, U_P = 230 V und U_S = 11,5 V. Dann ist 600 / N_S = 230 / 11,5 = 20, also N_S = 600 / 20 = 30 Windungen."
+     },
+     "tip": {
+      "en": "Rearrange: if you need N_S, then N_S = N_P · U_S / U_P.",
+      "de": "Stelle die Gleichung um: Wenn du N_S suchst, ist N_S = N_P · U_S / U_P."
+     },
+     "img": "d1017"
+    },
+    {
+     "t": {
+      "en": "Diode and threshold voltage",
+      "de": "Diode und Schwellspannung"
+     },
+     "b": {
+      "en": "A diode lets current flow in one direction only, when the anode is more positive than the cathode. But a noticeable current flows only above the threshold voltage. For germanium it is around 0.2 to 0.3 V, for silicon around 0.6 to 0.7 V.\n\nLEDs are diodes too. They have a higher threshold voltage, about 1.7 V for red and 2.5 V for green, and need a series resistor: I = (U − U_th) / R_V. Zener diodes work in the reverse region and stabilise voltages.",
+      "de": "Eine Diode lässt Strom nur in einer Richtung fließen, nämlich wenn die Anode positiver ist als die Kathode. Doch erst ab der Schwellspannung fließt ein merklicher Strom. Für Germanium liegt sie bei etwa 0,2 bis 0,3 V, für Silizium bei etwa 0,6 bis 0,7 V.\n\nLEDs sind ebenfalls Dioden. Sie haben eine höhere Schwellspannung, rot etwa 1,7 V, grün etwa 2,5 V, und brauchen einen Vorwiderstand: I = (U − U_th) / R_V. Zenerdioden arbeiten im Sperrbereich und stabilisieren Spannungen."
+     },
+     "tip": {
+      "en": "Catalogues sometimes quote wider ranges: Ge up to 0.4 V, Si up to 0.8 V. The order of magnitude is what counts.",
+      "de": "Kataloge nennen teils weitere Bereiche: Ge bis 0,4 V, Si bis 0,8 V. Die Größenordnung zählt."
      }
     },
     {
      "t": {
-      "en": "Power, CEPT, Q-codes and log",
-      "de": "Leistung, CEPT, Q-Gruppen und Log"
+      "en": "Transistor: current gain",
+      "de": "Transistor: Stromverstärkung"
      },
      "b": {
-      "en": "In the 2 m and 70 cm bands class A may use up to 750 W PEP and class E up to 75 W PEP. Under the CEPT arrangement you may operate temporarily abroad for up to 3 months per stay. \"PSE QRP\" asks you to reduce your power. Write times on QSL cards in UTC so partners abroad can find them in their log.",
-      "de": "Auf 2 m und 70 cm darf Klasse A bis 750 W PEP senden, Klasse E bis 75 W PEP. Nach der CEPT-Regelung darfst du je Aufenthalt bis zu 3 Monate vorübergehend im Ausland funken. \"PSE QRP\" bittet dich, die Sendeleistung zu verringern. Trage Uhrzeiten auf QSL-Karten in UTC ein, damit Funkpartner im Ausland sie im Logbuch finden."
+      "en": "The bipolar transistor has three terminals: emitter, base and collector. A small base current controls a large collector current. That is the current gain: B = I_C / I_B. In practice it lies between 50 and 350.\n\nThe emitter current is the sum of collector and base current: I_E = I_C + I_B. A silicon NPN transistor conducts when the base is about 0.6 V more positive than the emitter. Transistors do not only amplify, they can also work as switches.",
+      "de": "Der Bipolartransistor hat drei Anschlüsse: Emitter, Basis und Kollektor. Mit einem geringen Basisstrom wird ein großer Kollektorstrom gesteuert. Das ist die Stromverstärkung: B = I_C / I_B. In der Praxis liegt sie zwischen 50 und 350.\n\nDer Emitterstrom ist die Summe aus Kollektor- und Basisstrom: I_E = I_C + I_B. Ein Silizium-NPN-Transistor leitet, wenn die Basis etwa 0,6 V positiver ist als der Emitter. Transistoren verstärken nicht nur, sie können auch als Schalter arbeiten."
+     },
+     "tip": {
+      "en": "Remember: small base current in, large collector current out.",
+      "de": "Merke: kleiner Basisstrom rein, großer Kollektorstrom raus."
+     },
+     "img": "d863"
+    },
+    {
+     "t": {
+      "en": "SSB, bandwidth and BFO",
+      "de": "SSB, Bandbreite und BFO"
+     },
+     "b": {
+      "en": "With SSB you transmit only one sideband; the carrier and the other sideband are dropped. Example: carrier 7.100 MHz, audio tone 1 kHz. In USB you send 7.101 MHz, in LSB 7.099 MHz. The bandwidth of an SSB signal roughly equals the bandwidth of the audio signal, while AM needs more than double. Keep SSB to about 2.7 kHz at most.\n\nIn the receiver the BFO (Beat Frequency Oscillator) generates an auxiliary carrier. It makes CW and SSB signals audible, since they have no carrier of their own.",
+      "de": "Bei SSB sendest du nur ein Seitenband, der Träger und das zweite Seitenband entfallen. Beispiel: Träger 7,100 MHz, NF-Ton 1 kHz. In USB sendest du 7,101 MHz, in LSB 7,099 MHz. Die Bandbreite eines SSB-Signals entspricht etwa der Bandbreite des NF-Signals, AM braucht mehr als das Doppelte. Halte SSB auf höchstens etwa 2,7 kHz.\n\nIm Empfänger erzeugt der BFO (Beat Frequency Oscillator) einen Hilfsträger. Damit werden CW- und SSB-Signale hörbar gemacht, die keinen eigenen Träger haben."
+     },
+     "tip": {
+      "en": "Too much microphone gain causes splatter and widens your signal.",
+      "de": "Zu viel Mikrofonverstärkung macht Splatter und verbreitert dein Signal."
+     },
+     "img": "d1056"
+    },
+    {
+     "t": {
+      "en": "Dipole: impedance and gain",
+      "de": "Dipol: Impedanz und Gewinn"
+     },
+     "b": {
+      "en": "A centre-fed half-wave dipole has about 73 ohms at its feed point in free space. Depending on its height above ground, the feed-point resistance is roughly 40 to 90 ohms. A folded dipole has 240 to 300 ohms, a ground plane 30 to 50 ohms.\n\nYou state antenna gain in dBi, relative to the isotropic radiator, or in dBd, relative to the half-wave dipole. The dipole has 0 dBd, which is 2.15 dBi. The formula: g_i = g_d + 2.15 dB. The dBi value is always 2.15 dB higher.",
+      "de": "Ein mittengespeister Halbwellendipol hat im Freiraum am Speisepunkt etwa 73 Ohm. Je nach Aufbauhöhe über dem Boden liegt der Fußpunktwiderstand ungefähr bei 40 bis 90 Ohm. Ein Faltdipol hat 240 bis 300 Ohm, eine Groundplane 30 bis 50 Ohm.\n\nDen Antennengewinn gibst du in dBi an, bezogen auf den Kugelstrahler, oder in dBd, bezogen auf den Halbwellendipol. Der Dipol hat 0 dBd, das sind 2,15 dBi. Die Formel: g_i = g_d + 2,15 dB. Der dBi-Wert ist also immer um 2,15 dB höher."
+     },
+     "tip": {
+      "en": "An isotropic radiator is hypothetical: it radiates equally in all directions.",
+      "de": "Ein Isotropstrahler ist gedacht: Er strahlt in alle Richtungen gleich stark."
+     },
+     "img": "d788"
+    },
+    {
+     "t": {
+      "en": "MUF and LUF",
+      "de": "MUF und LUF"
+     },
+     "b": {
+      "en": "For sky-wave contacts you need a frequency the ionosphere bends back to Earth. The upper limit is the MUF (maximum usable frequency), the highest usable frequency for that path. Above it, signals leave Earth towards space.\n\nThe stronger the ionisation, the higher the MUF, so usually higher by day than at night. The lower limit is the LUF (lowest usable frequency), set mainly by absorption in the D region. If the LUF lies above the MUF, nothing works.",
+      "de": "Für Verbindungen über die Raumwelle brauchst du eine Frequenz, die die Ionosphäre zur Erde zurückbricht. Nach oben begrenzt sie die MUF (maximum usable frequency), die höchste nutzbare Frequenz für die Strecke. Darüber verlassen die Signale die Erde in Richtung Weltraum.\n\nJe stärker die Ionisation, desto höher die MUF, tagsüber also meist mehr als nachts. Nach unten begrenzt die LUF (lowest usable frequency), die niedrigste nutzbare Frequenz, vor allem durch die Dämpfung in der D-Region. Liegt die LUF über der MUF, geht nichts."
+     },
+     "tip": {
+      "en": "That is why the ISS works on 145.800 MHz: it lies far above any MUF.",
+      "de": "Darum klappt die ISS auf 145,800 MHz: Sie liegt weit über jeder MUF."
+     },
+     "img": "d991"
+    },
+    {
+     "t": {
+      "en": "Power limits: PEP",
+      "de": "Leistungsgrenzen: PEP"
+     },
+     "b": {
+      "en": "For classes E and A, what counts is the transmitter output power in PEP (peak envelope power), measured at the transmitter output before any SWR meter or antenna tuner. The values are in Annex 1 of the AFuV, which you have as an aid in the exam. Find the row with the frequency range and read the column for your class.\n\nExamples: 1810 to 1850 kHz, 3.5 to 3.8 MHz, 21 to 21.45 MHz and 28 to 29.7 MHz: class A 750 W PEP, class E 100 W PEP. 144 to 146 MHz and 430 to 440 MHz: class A 750 W PEP, class E 75 W PEP.",
+      "de": "Für Klasse E und A zählt die Senderausgangsleistung in PEP (peak envelope power), gemessen am Senderausgang vor SWR-Meter und Anpassgerät. Die Werte stehen in Anlage 1 der AFuV, die du in der Prüfung als Hilfsmittel hast. Such die Zeile mit dem Frequenzbereich und lies die Spalte deiner Klasse ab.\n\nBeispiele: 1810 bis 1850 kHz, 3,5 bis 3,8 MHz, 21 bis 21,45 MHz und 28 bis 29,7 MHz: Klasse A 750 W PEP, Klasse E 100 W PEP. 144 bis 146 MHz und 430 bis 440 MHz: Klasse A 750 W PEP, Klasse E 75 W PEP."
+     },
+     "tip": {
+      "en": "An empty cell in your class column means that range is not allowed for you.",
+      "de": "Leerer Eintrag in der Spalte deiner Klasse heißt: Dieser Bereich ist für dich nicht erlaubt."
+     },
+     "img": "p145"
+    },
+    {
+     "t": {
+      "en": "CEPT, QRP and time",
+      "de": "CEPT, QRP und Uhrzeiten"
+     },
+     "b": {
+      "en": "Under the CEPT arrangement you may operate abroad temporarily, up to 3 months per stay, without living there. You put the host country's prefix in front of your callsign, for example HB3/DO7PR as a class E operator in Switzerland.\n\nIf you hear PSE QRP, you should reduce your transmit power. QRO would be the opposite, more power. Enter times in the log and on QSL cards in UTC, so that partners in other time zones can easily find the contact in their logbook. UTC is CET minus 1 hour, or CEST minus 2 hours in summer.",
+      "de": "Mit der CEPT-Regelung darfst du im Ausland vorübergehend bis zu 3 Monate je Aufenthalt funken, ohne dort zu wohnen. Dazu setzt du das Präfix des Gastlandes vor dein Rufzeichen, etwa HB3/DO7PR als Klasse E in der Schweiz.\n\nHörst du PSE QRP, sollst du deine Sendeleistung verringern. QRO wäre das Gegenteil, mehr Leistung. Uhrzeiten trägst du in Logbuch und QSL-Karte in UTC ein, damit Funkpartner in anderen Zeitzonen die Verbindung in ihrem Logbuch leicht wiederfinden. UTC ist MEZ minus 1 Stunde, im Sommer MESZ minus 2 Stunden."
+     },
+     "tip": {
+      "en": "The CEPT recommendations apply only to personal callsigns, not to club stations.",
+      "de": "Die Empfehlungen der CEPT gelten nur für persönliche Rufzeichen, nicht für Klubstationen."
      }
     }
    ],
@@ -962,53 +1211,177 @@
    "lessons": [
     {
      "t": {
-      "en": "Decibels and the S-meter",
-      "de": "Dezibel und S-Meter"
+      "en": "Decibel II: power and voltage",
+      "de": "Dezibel II: Leistung und Spannung"
      },
      "b": {
-      "en": "One S-unit is 6 dB, so S4 to S7 is 18 dB. A power gain of 40 equals 16 dB, and a voltage ratio of 4 equals 12 dB. Raising power from 10 to 100 W adds 10 dB, which takes an S8 reading to S9+4 dB. Efficiency is output power divided by input power: 3 A at 5 V from 2 A at 12 V is 62.5 %.",
-      "de": "Eine S-Stufe entspricht 6 dB, von S4 auf S7 sind es also 18 dB. Eine Leistungsverstärkung von 40 entspricht 16 dB, ein Spannungsverhältnis von 4 entspricht 12 dB. Von 10 auf 100 W sind es 10 dB, die S8 auf S9+4 dB anheben. Der Wirkungsgrad ist Ausgangsleistung geteilt durch Eingangsleistung: 3 A bei 5 V aus 2 A bei 12 V ergeben 62,5 %."
+      "en": "Power ratios: g = 10 · log10(P2 / P1) dB. Break the factor into known values: 2 is 3 dB, 4 is 6 dB, 10 is 10 dB, 100 is 20 dB. Factor 20 = 2 · 10 is therefore 3 dB + 10 dB = 13 dB. Reverse: x = 10^(g / 10 dB).\n\nFor voltages, with equal resistance, the factor is 20: g = 20 · log10(U1 / U2). A voltage ratio of about 3 is roughly 10 dB, and 6 dB is a factor of 2. Example: voltage factor 4 = 2 · 2 is 6 dB + 6 dB = 12 dB. Always check whether a power or a voltage ratio is meant.",
+      "de": "Leistungsverhältnisse: g = 10 · log10(P2 / P1) dB. Zerlege den Faktor in bekannte Werte: 2 sind 3 dB, 4 sind 6 dB, 10 sind 10 dB, 100 sind 20 dB. Faktor 20 = 2 · 10 sind also 3 dB + 10 dB = 13 dB. Umgekehrt: x = 10^(g / 10 dB).\n\nBei Spannungen gilt bei gleichem Widerstand der Faktor 20: g = 20 · log10(U1 / U2). Ein Spannungsverhältnis von 3 ist ungefähr 10 dB, 6 dB sind Faktor 2. Beispiel: Spannungsfaktor 4 = 2 · 2 sind 6 dB + 6 dB = 12 dB. Prüfe immer, ob ein Leistungs- oder ein Spannungsverhältnis gemeint ist."
+     },
+     "tip": {
+      "en": "Negative dB values are ratios below 1: −3 dB is a factor of 0.5.",
+      "de": "Negative dB-Werte sind Verhältnisse kleiner als 1: −3 dB ist Faktor 0,5."
      }
     },
     {
      "t": {
-      "en": "Reactance, filters, transformers",
-      "de": "Blindwiderstand, Filter, Übertrager"
+      "en": "S-meter: 6 dB per S-unit",
+      "de": "S-Meter: 6 dB pro S-Stufe"
      },
      "b": {
-      "en": "In an ideal capacitor the current leads the voltage by 90 degrees. A 50 pF capacitor has about 22 Ohm of reactance at 145 MHz. A high-pass filter of 4.7 kOhm and 2.2 nF cuts off at 15.4 kHz. To match 450 Ohm to 50 Ohm you need a 3:1 turns ratio, because impedance scales with the square of the turns.",
-      "de": "Im idealen Kondensator eilt der Strom der Spannung um 90 Grad voraus. Ein Kondensator mit 50 pF hat bei 145 MHz etwa 22 Ohm Blindwiderstand. Ein Hochpass aus 4,7 kOhm und 2,2 nF hat eine Grenzfrequenz von 15,4 kHz. Zur Anpassung von 450 Ohm an 50 Ohm braucht man ein Windungsverhältnis von 3:1, weil die Impedanz mit dem Quadrat der Windungszahl wächst."
+      "en": "One S-unit equals 6 dB. That is double the voltage or four times the power. From S2 to S4 it is therefore 2 · 6 dB = 12 dB. Above S9 you count in dB over S9, for example S9+20 dB.\n\nExample: your partner raises power from 5 to 50 W. That is 10 dB, ten times the power. From S6 the meter then shows S7 + 4 dB: one unit is 6 dB and the remaining 4 dB go on top. On shortwave, S9 is exactly 50 µV across 50 ohms; from VHF (144 MHz) up it is 5 µV.",
+      "de": "Eine S-Stufe entspricht 6 dB. Das sind doppelte Spannung oder vierfache Leistung. Von S2 bis S4 sind es also 2 · 6 dB = 12 dB. Oberhalb von S9 zählt man in dB über S9, zum Beispiel S9+20 dB.\n\nBeispiel: Dein Gegenüber erhöht die Leistung von 5 auf 50 W. Das sind 10 dB, also das Zehnfache. Bei S6 zeigt das S-Meter danach S7 + 4 dB: Eine Stufe sind 6 dB, die restlichen 4 dB kommen obendrauf. Im Kurzwellenbereich ist S9 genau 50 µV an 50 Ohm, ab VHF (144 MHz) sind es 5 µV."
+     },
+     "tip": {
+      "en": "There is no S0: a receiver always has background noise, so never report S0.",
+      "de": "Es gibt kein S0: Ein Empfänger hat immer Grundrauschen, melde also nie S0."
+     },
+     "img": "d420"
+    },
+    {
+     "t": {
+      "en": "Efficiency",
+      "de": "Wirkungsgrad"
+     },
+     "b": {
+      "en": "Every voltage conversion has losses. The output power is therefore always smaller than the input power. The ratio of the two is the efficiency: η = P_out / P_in.\n\nYou work out the power with P = U · I, first for the input, then for the output. Example: a step-down converter draws exactly 2 A at 12 V, which is 24 W. At the output it delivers exactly 4 A at 5 V, which is 20 W. The efficiency is 20 W / 24 W = 0.833, about 83 %.",
+      "de": "Bei jeder Spannungswandlung entstehen Verluste. Die abgegebene Leistung ist deshalb immer kleiner als die zugeführte. Das Verhältnis beider ist der Wirkungsgrad: η = P_out / P_in.\n\nDie Leistung berechnest du mit P = U · I, erst für den Eingang, dann für den Ausgang. Beispiel: Ein Step-Down-Wandler nimmt bei 12 V genau 2 A auf, das sind 24 W. Am Ausgang gibt er bei 5 V genau 4 A ab, das sind 20 W. Der Wirkungsgrad ist 20 W / 24 W = 0,833, also etwa 83 %."
+     },
+     "tip": {
+      "en": "Efficiency is usually given in percent. It can never exceed 100 %.",
+      "de": "Den Wirkungsgrad gibst du meist in Prozent an. Er kann nie über 100 % liegen."
      }
     },
     {
      "t": {
-      "en": "Modulation, receivers, digital",
-      "de": "Modulation, Empfänger, Digitales"
+      "en": "Capacitor: reactance and phase",
+      "de": "Kondensator: Blindwiderstand und Phase"
      },
      "b": {
-      "en": "An FM signal with 2 kHz audio and 1.8 kHz deviation needs roughly 7.6 kHz of bandwidth. In a superhet the image frequency lies twice the IF away from the wanted one: for 14.24 MHz with a 24.94 MHz oscillator it is 35.64 MHz. A 10-bit D/A converter can produce 1024 different output values.",
-      "de": "Ein FM-Signal mit 2 kHz NF und 1,8 kHz Hub braucht etwa 7,6 kHz Bandbreite. Beim Superhet liegt die Spiegelfrequenz um die doppelte ZF von der Nutzfrequenz entfernt: Bei 14,24 MHz und einem Oszillator auf 24,94 MHz sind es 35,64 MHz. Ein D/A-Umsetzer mit 10 Bit Auflösung kann 1024 verschiedene Ausgangswerte erzeugen."
+      "en": "The magnitude of the capacitive reactance is |X_C| = 1 / (2π · f · C). Watch the powers of ten: 1 pF = 10⁻¹² F, 1 MHz = 10⁶ Hz. Example: 100 pF at 100 MHz gives 1 / (2π · 10⁸ · 10⁻¹⁰) = 15.9 ohms. More frequency or more capacitance means less resistance.\n\nIn a lossless capacitor the current leads the voltage by 90°. The German memory aid: with the capacitor, the current comes first. No real power is used; the energy swings back and forth between source and capacitor as reactive power.",
+      "de": "Der Betrag des kapazitiven Blindwiderstands ist |X_C| = 1 / (2π · f · C). Achte auf die Zehnerpotenzen: 1 pF = 10⁻¹² F, 1 MHz = 10⁶ Hz. Beispiel: 100 pF bei 100 MHz ergibt 1 / (2π · 10⁸ · 10⁻¹⁰) = 15,9 Ohm. Mehr Frequenz oder mehr Kapazität bedeutet weniger Widerstand.\n\nAm verlustlosen Kondensator eilt der Strom der Spannung um 90° voraus. Die Merkhilfe: Beim Kondensator eilt der Strom vor. Es wird keine Wirkleistung umgesetzt, die Energie pendelt als Blindleistung zwischen Quelle und Kondensator."
+     },
+     "tip": {
+      "en": "German mnemonic: in the Kondensat-ooo-r the current runs v-ooo-r (ahead).",
+      "de": "Merkhilfe: Beim Kondensat-ooo-r eilt der Strom v-ooo-r."
+     },
+     "img": "p268"
+    },
+    {
+     "t": {
+      "en": "Transformer: matching impedance",
+      "de": "Übertrager: Impedanz anpassen"
+     },
+     "b": {
+      "en": "With a transformer you match impedances. The turns ratio is ü = √(Z_p / Z_s) = N_p / N_s = U_p / U_s. So the impedance ratio is the square of the turns ratio. The side with the higher impedance gets more turns.\n\nExample: an end-fed antenna of 2450 ohms is to be matched to 50 ohms. The impedance ratio is 50 : 2450 = 1 : 49, so the turns ratio is 1 : 7. For the currents it is the other way round: ü = I_s / I_p.",
+      "de": "Mit einem Übertrager passt du Impedanzen an. Das Übersetzungsverhältnis ist ü = √(Z_p / Z_s) = N_p / N_s = U_p / U_s. Das Impedanzverhältnis ist also das Quadrat des Windungsverhältnisses. Die Seite mit der höheren Impedanz bekommt mehr Windungen.\n\nBeispiel: Eine endgespeiste Antenne mit 2450 Ohm soll an 50 Ohm angepasst werden. Das Impedanzverhältnis ist 50 : 2450 = 1 : 49, das Windungsverhältnis also 1 : 7. Für die Ströme gilt umgekehrt: ü = I_s / I_p."
+     },
+     "tip": {
+      "en": "Take the square root of the impedance ratio first, then you have the turns ratio.",
+      "de": "Erst die Wurzel aus dem Impedanzverhältnis ziehen, dann hast du das Windungsverhältnis."
      }
     },
     {
      "t": {
-      "en": "Oscillators, antennas, harmonics",
-      "de": "Oszillatoren, Antennen, Oberwellen"
+      "en": "RC filter: cut-off frequency",
+      "de": "RC-Filter: Grenzfrequenz"
      },
      "b": {
-      "en": "Of the listed oscillator types the OCXO, a crystal oscillator in a temperature-controlled oven, is the most stable. A 20 m wire dipole with a velocity factor of 0.95 resonates at 7.125 MHz. The second harmonic of a signal is at twice its frequency, so for 3.730 MHz it lies at 7.460 MHz.",
-      "de": "Von den genannten Oszillatoren ist der OCXO, ein Quarzoszillator im temperaturgeregelten Ofen, der stabilste. Ein 20 m langer Runddraht-Dipol mit Verkürzungsfaktor 0,95 ist bei 7,125 MHz in Resonanz. Die zweite Harmonische liegt bei der doppelten Frequenz, bei 3,730 MHz also bei 7,460 MHz."
+      "en": "High-pass and low-pass filters made from a resistor and a capacitor have a cut-off frequency: f_g = 1 / (2π · R · C). At f_g the output power drops to half, that is by 3 dB, and the voltage to about 70 %.\n\nExample: R = 1 kohm, C = 100 nF. Then f_g = 1 / (2π · 1000 · 100 · 10⁻⁹) ≈ 1.6 kHz. Work carefully with the powers of ten: 1 nF = 10⁻⁹ F, 1 kohm = 10³ ohms. A high-pass lets high frequencies through and attenuates low ones; a low-pass does the opposite.",
+      "de": "Hoch- und Tiefpässe aus Widerstand und Kondensator haben eine Grenzfrequenz: f_g = 1 / (2π · R · C). Bei f_g sinkt die Ausgangsleistung auf die Hälfte, also um 3 dB, die Spannung auf etwa 70 %.\n\nBeispiel: R = 1 kOhm, C = 100 nF. Dann ist f_g = 1 / (2π · 1000 · 100 · 10⁻⁹) ≈ 1,6 kHz. Rechne genau mit den Zehnerpotenzen: 1 nF = 10⁻⁹ F, 1 kOhm = 10³ Ohm. Ein Hochpass lässt hohe Frequenzen durch und dämpft tiefe, ein Tiefpass macht es umgekehrt."
+     },
+     "tip": {
+      "en": "High-pass hint: a capacitor in the upper branch (an upright H) means a high-pass.",
+      "de": "Hochpass-Merkhilfe: Sitzt im oberen Zweig ein Kondensator (aufrechtes H), ist es ein Hochpass."
      }
     },
     {
      "t": {
-      "en": "Power limits for class A",
+      "en": "FM: deviation and bandwidth",
+      "de": "FM: Hub und Bandbreite"
+     },
+     "b": {
+      "en": "In FM the information is in the frequency change of the carrier. The audio amplitude determines the deviation, and the modulation frequency determines how often the frequency changes. A larger deviation needs more bandwidth and may disturb neighbouring channels.\n\nAs a first approximation use Carson's formula: B ≈ 2 · (Δf + f_mod max). Example: deviation 2.5 kHz, highest modulation frequency 3 kHz. Then B ≈ 2 · (2.5 kHz + 3 kHz) = 11 kHz. You can generate FM with a varicap diode in the oscillator.",
+      "de": "Bei FM steckt die Information in der Frequenzänderung des Trägers. Die Amplitude der NF bestimmt den Frequenzhub, die Modulationsfrequenz bestimmt, wie oft sich die Frequenz ändert. Ein größerer Hub braucht mehr Bandbreite und kann Nachbarkanäle stören.\n\nIn erster Näherung gilt die Carson-Formel: B ≈ 2 · (Δf + f_mod max). Beispiel: Hub 2,5 kHz, höchste Modulationsfrequenz 3 kHz. Dann ist B ≈ 2 · (2,5 kHz + 3 kHz) = 11 kHz. Erzeugen kannst du FM mit einer Kapazitätsdiode im Oszillator."
+     },
+     "tip": {
+      "en": "FM is insensitive to amplitude noise, such as ignition sparks in a car.",
+      "de": "FM ist unempfindlich gegen Amplitudenstörungen, etwa Zündfunken im Auto."
+     },
+     "img": "d910"
+    },
+    {
+     "t": {
+      "en": "Image frequency",
+      "de": "Spiegelfrequenz"
+     },
+     "b": {
+      "en": "In a superheterodyne receiver f_IF = |f_e − f_o|. This gives two reception frequencies that produce the same intermediate frequency: the wanted one and the image frequency. Their spacing is always twice the IF.\n\nIf the oscillator is above, f_S = f_E + 2 · f_IF; if it is below, f_S = f_E − 2 · f_IF. Example: f_e = 3.500 MHz, f_o = 3.955 MHz, IF = 0.455 MHz. The image frequency is 3.500 + 2 · 0.455 = 4.410 MHz. A bandpass before the mixer and a higher IF suppress it better.",
+      "de": "Im Überlagerungsempfänger gilt f_ZF = |f_e − f_o|. Dadurch gibt es zwei Empfangsfrequenzen, die dieselbe Zwischenfrequenz erzeugen: die gewünschte und die Spiegelfrequenz. Ihr Abstand beträgt immer das Doppelte der ZF.\n\nSchwingt der Oszillator oberhalb, ist f_S = f_E + 2 · f_ZF, liegt er unterhalb, ist f_S = f_E − 2 · f_ZF. Beispiel: f_e = 3,500 MHz, f_o = 3,955 MHz, ZF = 0,455 MHz. Die Spiegelfrequenz liegt bei 3,500 + 2 · 0,455 = 4,410 MHz. Ein Bandpass vor dem Mischer und eine höhere ZF unterdrücken sie besser."
+     },
+     "tip": {
+      "en": "Work out the IF first: |f_e − f_o|. Everything else follows.",
+      "de": "Erst die ZF ausrechnen: |f_e − f_o|. Dann ergibt sich alles andere."
+     },
+     "img": "d806"
+    },
+    {
+     "t": {
+      "en": "A/D and D/A converters",
+      "de": "A/D- und D/A-Umsetzer"
+     },
+     "b": {
+      "en": "An A/D converter samples an analogue signal and turns it into numbers. It can capture the amplitude only in steps, which produces a quantisation error. A D/A converter creates an analogue signal again from digital values.\n\nResolution is given in bits. With n bits there are 2^n possible values: 8 bits give 256, 16 bits give 65536, 4 bits give 16 steps. Every extra bit doubles the number of steps. If the sampling clock wanders (jitter), extra noise appears, in the A/D as well as the D/A converter.",
+      "de": "Ein A/D-Umsetzer tastet ein analoges Signal ab und macht Zahlenwerte daraus. Er kann die Amplitude nur in Stufen erfassen, dabei entsteht ein Quantisierungsfehler. Ein D/A-Umsetzer erzeugt aus digitalen Werten wieder ein analoges Signal.\n\nDie Auflösung wird in Bit angegeben. Mit n Bit gibt es 2^n mögliche Werte: 8 Bit sind 256, 16 Bit sind 65536, 4 Bit sind 16 Stufen. Jedes zusätzliche Bit verdoppelt die Zahl der Stufen. Schwankt der Abtasttakt (Jitter), entsteht zusätzliches Rauschen, beim A/D- wie beim D/A-Umsetzer."
+     },
+     "tip": {
+      "en": "A/D and D/A converters are inside every SDR receiver and transceiver.",
+      "de": "A/D- und D/A-Umsetzer stecken in jedem SDR-Empfänger und -Transceiver."
+     }
+    },
+    {
+     "t": {
+      "en": "Oscillators: XO, TCXO, OCXO",
+      "de": "Oszillatoren: XO, TCXO, OCXO"
+     },
+     "b": {
+      "en": "An oscillator's frequency depends on temperature. Thanks to the high quality factor of the crystal, a crystal oscillator is more stable than an RC, LC or VCO oscillator. The simplest is the XO (crystal oscillator).\n\nA TCXO compensates temperature effects with extra components. An OCXO (oven-controlled crystal oscillator) keeps the crystal at constant temperature in an insulated housing with a regulated heater. Of these types it offers the highest frequency stability. Multiplying also multiplies errors, so on 10 GHz at least a TCXO should be used.",
+      "de": "Die Frequenz eines Oszillators hängt von der Temperatur ab. Ein Quarzoszillator ist dank der hohen Güte des Quarzes stabiler als ein RC-, LC- oder VCO-Oszillator. Der einfachste ist der XO (Crystal Oscillator).\n\nEin TCXO gleicht Temperatureinflüsse mit zusätzlichen Bauteilen aus. Ein OCXO (Oven-Controlled Crystal Oscillator) hält den Quarz in einem isolierten Gehäuse mit geregelter Heizung auf konstanter Temperatur. Er bietet von diesen Typen die höchste Frequenzstabilität. Beim Vervielfachen wachsen Fehler mit: auf 10 GHz mindestens ein TCXO."
+     },
+     "tip": {
+      "en": "Remember: XO is simple, TCXO compensates, OCXO heats and is the most stable.",
+      "de": "Merke: XO einfach, TCXO kompensiert, OCXO heizt und ist am stabilsten."
+     },
+     "img": "p337"
+    },
+    {
+     "t": {
+      "en": "Dipole length and harmonics",
+      "de": "Dipollänge und Oberwellen"
+     },
+     "b": {
+      "en": "The length of a half-wave dipole is λ/2 times the velocity factor, usually 0.95. The wavelength is λ = c / f. Example: 14.2 MHz. Then λ = 300 / 14.2 = 21.1 m, λ/2 = 10.56 m and times 0.95 is about 10.0 m. If you have the wire length L, work backwards: λ = 2 · L / 0.95, then f = c / λ.\n\nHarmonics are integer multiples of the fundamental frequency. The Nth harmonic lies at N · f. The 1st harmonic is the fundamental, and the 2nd harmonic (the 1st overtone) lies at twice the frequency: for 1.850 MHz that is 3.700 MHz. A low-pass filter helps against them.",
+      "de": "Die Länge eines Halbwellendipols ist λ/2 mal Verkürzungsfaktor, meist 0,95. Die Wellenlänge ist λ = c / f. Beispiel: 14,2 MHz. Dann ist λ = 300 / 14,2 = 21,1 m, λ/2 = 10,56 m und mal 0,95 sind etwa 10,0 m. Hast du die Drahtlänge L, rechne zurück: λ = 2 · L / 0,95, dann f = c / λ.\n\nOberwellen sind ganzzahlige Vielfache der Grundfrequenz. Die N-te Harmonische liegt auf N · f. Die 1. Harmonische ist die Grundwelle, die 2. Harmonische (1. Oberwelle) liegt auf der doppelten Frequenz: Bei 1,850 MHz sind es 3,700 MHz. Dagegen hilft ein Tiefpass."
+     },
+     "tip": {
+      "en": "The velocity factor exists because wires are not infinitely thin. Antennas end up about 5 % shorter.",
+      "de": "Der Verkürzungsfaktor entsteht, weil Drähte nicht unendlich dünn sind. Antennen werden etwa 5 % kürzer."
+     }
+    },
+    {
+     "t": {
+      "en": "Class A power limits",
       "de": "Leistungsgrenzen der Klasse A"
      },
      "b": {
-      "en": "Class A has the highest limits: up to 750 W PEP on 20 m and 17 m, and 750 W PEP at 1240 to 1300 MHz, but no more than 5 W EIRP in the sub-range 1247 to 1263 MHz. On 30 m (10.1 to 10.15 MHz) the limit is 150 W PEP.",
-      "de": "Die Klasse A hat die höchsten Grenzen: bis zu 750 W PEP auf 20 m und 17 m sowie 750 W PEP bei 1240 bis 1300 MHz, im Teilbereich 1247 bis 1263 MHz jedoch höchstens 5 W EIRP. Auf 30 m (10,1 bis 10,15 MHz) liegt die Grenze bei 150 W PEP."
-     }
+      "en": "The transmitter output power in PEP is listed in Annex 1 of the AFuV, which is available in the exam. For class A it is 750 W PEP on most shortwave bands, for example 80 m, 20 m, 17 m, 15 m and 12 m. On 144 to 146 MHz and 430 to 440 MHz it is also 750 W PEP (class E only 75 W).\n\nSpecial cases: on the 30 m band (10.1 to 10.15 MHz) it is only 150 W PEP. In the range 1240 to 1300 MHz 750 W PEP applies, but in the sub-range 1247 to 1263 MHz at most 5 W EIRP, because the radiated power is limited there as well.",
+      "de": "Die Senderausgangsleistung in PEP steht in Anlage 1 der AFuV, die in der Prüfung bereitliegt. Für Klasse A sind es auf den meisten Kurzwellenbändern 750 W PEP, zum Beispiel im 80-m-, 20-m-, 17-m-, 15-m- und 12-m-Band. Auch auf 144 bis 146 MHz und 430 bis 440 MHz sind es 750 W PEP (Klasse E nur 75 W).\n\nSonderfälle: Im 30-m-Band (10,1 bis 10,15 MHz) sind es nur 150 W PEP. Im Bereich 1240 bis 1300 MHz gelten 750 W PEP, im Teilbereich 1247 bis 1263 MHz aber höchstens 5 W EIRP, weil dort zusätzlich die Strahlungsleistung begrenzt ist."
+     },
+     "tip": {
+      "en": "Always read the row of the frequency range and the class A column. Mind the footnotes.",
+      "de": "Lies immer die Zeile des Frequenzbereichs und die Spalte Klasse A ab. Die Fußnoten beachten."
+     },
+     "img": "p145"
     }
    ],
    "questions": [

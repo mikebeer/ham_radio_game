@@ -43,13 +43,14 @@ def main():
         out += ["[chapter.%s]" % ch, "display_name = %s" % q("Level %d" % lv),
                 "description = %s" % q("Four goals: rules, shack, first contact, Morse code."), ""]
         quest(out, "rules" + s, ch, "Know the rules", "Learn the rules for your class and pass the quiz.", fp + "goal.rules")
-        task(out, "rules%s.lessons" % s, "Read all lessons", fp + "rules.lessons_all", "eq", True)
+        task(out, "rules%s.lessons" % s, "Study all lessons", fp + "rules.lessons_all", "eq", True)
         task(out, "rules%s.quiz" % s, "Pass the quiz", fp + "rules.quiz_passed", "eq", True)
         if lv == 1:
             task(out, "rules.callsign", "Find your callsign", "rules.callsign", "eq", True)
         quest(out, "shack" + s, ch, "Build your shack", "Learn about each part and earn it.", fp + "goal.shack")
         for pid, pname in PARTS:
-            task(out, "shack%s.%s" % (s, pid), pname, "%sshack.%s" % (fp, pid), "eq", True)
+            task(out, "shack%s.%s.read" % (s, pid), "Study: " + pname, "%sshack.%s.read" % (fp, pid), "eq", True)
+            task(out, "shack%s.%s" % (s, pid), "Earn: " + pname, "%sshack.%s" % (fp, pid), "eq", True)
         quest(out, "qso" + s, ch, "First contact", "Make a contact: tune in, answer, exchange details and say 73.", fp + "goal.qso")
         for k, name in [("tuned", "Find a station"), ("answered", "Answer the call"), ("exchanged", "Exchange details"),
                         ("spelled", "Spell your callsign"), ("done", "Say 73")]:

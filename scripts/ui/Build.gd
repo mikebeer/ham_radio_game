@@ -15,6 +15,7 @@ var _t := 0.0
 var _scene: Control
 var _pop := 0.0             # 0..1 reward animation progress
 var _score := 0
+var _page := 0
 
 
 func _ready() -> void:
@@ -80,14 +81,51 @@ func _draw_scene() -> void:
 
 # ---- states -----------------------------------------------------------------------------
 
+func _cards() -> Array:
+	var cards: Array = _data.get("cards", [])
+	if cards.is_empty():
+		cards = [{"t": I18n.t("part." + _part), "b": _data.get("lesson", "")}]
+	return cards
+
+
+func _read_key() -> String:
+	return Game.k("shack.%s.read" % _part)
+
+
 func _build_lesson(part_name: String) -> void:
-	add_title(part_name, Vector2(692, 146), 44, Palette.CREAM, 500)
-	add_lbl(I18n.loc(_data.get("lesson", "")), Vector2(692, 216), 496, 19, Palette.MUTED)
-	if Game.owns(_part):
-		add_lbl(I18n.t("hub.owned"), Vector2(692, 520), 300, 16, Palette.GREEN, Style.font_body_bold)
-	add_btn(I18n.t("build.start_quiz"), Vector2(920, 540), func() -> void:
-		_state = "quiz"
-		_rebuild(), "PrimaryButton", Vector2(268, 52))
+	var cards := _cards()
+	var n := cards.size()
+	_page = clampi(_page, 0, n - 1)
+	add_lbl("%s  ·  %d / %d" % [part_name, _page + 1, n], Vector2(692, 140), 496, 15, Palette.AMBER, Style.font_body_bold)
+	var view := LessonView.new()
+	view.position = Vector2(692, 172)
+	add_child(view)
+	view.show_card(cards[_page], Vector2(496, 344), 17)
+	for i in n:
+		var d := Panel.new()
+		d.position = Vector2(692 + i * 22, 524)
+		d.size = Vector2(14, 14)
+		d.add_theme_stylebox_override("panel", Style.box(Palette.TEAL if i <= _page else Palette.LINE, 7))
+		add_child(d)
+	var last := _page == n - 1
+	if last:
+		Game.set_flag(_read_key(), true)
+	if _page > 0:
+		add_btn(I18n.t("common.back"), Vector2(692, 556), func() -> void:
+			_page -= 1
+			_rebuild(), "", Vector2(110, 44))
+	if last:
+		add_btn(I18n.t("build.start_quiz"), Vector2(920, 556), func() -> void:
+			_state = "quiz"
+			_rebuild(), "PrimaryButton", Vector2(268, 44))
+	else:
+		add_btn(I18n.t("common.next"), Vector2(1018, 556), func() -> void:
+			_page += 1
+			_rebuild(), "PrimaryButton", Vector2(170, 44))
+		if Game.fact_bool(_read_key()):
+			add_btn(I18n.t("build.skip_to_quiz"), Vector2(820, 556), func() -> void:
+				_state = "quiz"
+				_rebuild(), "", Vector2(190, 44))
 
 
 func _build_quiz() -> void:

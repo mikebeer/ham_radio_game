@@ -8,4 +8,6 @@ Decided with the project owner (2026-09-30):
 4. **Italian and French** - translations written by us, flagged "unreviewed translation" until native speakers check them; add to `I18n.LOCALES`, the `{"en","de"}` dictionaries become `{"en","de","fr","it"}` and the generator needs the extra strings.
 5. More levels for CH (HB9), callsign per class on level-up, Figma screens for profile / callsign / share / level-up, web export on cq-quest.com.
 
+Lesson decks - done: every quiz is preceded by lesson cards (study first, quiz second). Shack parts have 4-6 cards per level for all countries (written from 50ohm N/E/A sections, DE + EN, with drawings); DE rules have 12 cards per level. Study tasks are part of the quest (`shack.<part>.read`). Next: cards for the AT/CH/US/UK rules from the sources the owner supplies, callsign/QSO/Morse decks.
+
 Open checks: trademark search for "CQ Quest" (DPMA, EUIPO, USPTO); clearance of the 2009 Austrian catalogue.

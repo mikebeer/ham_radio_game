@@ -84,6 +84,11 @@ func load_game() -> void:
 		if loc != "":
 			I18n.set_locale(loc)
 		FactDatabase.restore(data.get("facts", {}))
+		# saves from before lesson decks: earned parts count as studied
+		for l in range(1, MAX_LEVELS + 1):
+			for id in PART_IDS:
+				if owns(id, l):
+					FactDatabase.set_fact(k("shack." + id + ".read", l), true)
 		_start_quests()
 
 
@@ -139,6 +144,10 @@ func change_country(c: String) -> void:
 	profile["level"] = 1
 	_start_quests()
 	save_game()
+
+
+func fact_bool(key: String) -> bool:
+	return bool(FactDatabase.get_fact(key, false))
 
 
 func fact_int(key: String, default: int = 0) -> int:
@@ -229,6 +238,7 @@ func tier(part_id: String) -> int:
 
 
 func award(part_id: String) -> void:
+	FactDatabase.set_fact(k("shack." + part_id + ".read"), true)
 	FactDatabase.set_fact(k("shack." + part_id), true)
 	part_awarded.emit(part_id)
 	save_game()

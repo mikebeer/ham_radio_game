@@ -215,6 +215,91 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "The power supply: 230 V to 13.8 V",
+       "de": "Das Netzgerät: 230 V zu 13,8 V"
+      },
+      "b": {
+       "en": "A power supply turns the 230 V mains AC into a lower DC voltage. In the ham shack this is usually 13.8 V, to run a transceiver. The mains plug has a protective contact (PE) that earths the metal case, so no dangerous voltage can appear on it.\n\nThe output is two-pole: red is plus, black is minus. Connect all cables and check the polarity first, only then switch on. Wrong polarity can cause a short circuit or destroy the radio.",
+       "de": "Ein Netzgerät wandelt die Wechselspannung von 230 V aus der Steckdose in eine kleinere Gleichspannung um. Im Amateurfunk sind das oft 13,8 V, um einen Transceiver zu betreiben. Der Schutzkontakt des Schukosteckers verbindet das Metallgehäuse mit dem PE-Leiter, so kann dort keine gefährliche Spannung auftreten.\n\nDer Ausgang ist zweipolig: Rot ist Plus, Schwarz ist Minus. Erst alle Leitungen anschließen und die Polung kontrollieren, dann einschalten. Falsche Polung kann zum Kurzschluss oder zur Zerstörung des Transceivers führen."
+      },
+      "tip": {
+       "en": "Red = plus, black = minus. Check before switching on.",
+       "de": "Rot = Plus, Schwarz = Minus. Vor dem Einschalten prüfen."
+      },
+      "img": "d740"
+     },
+     {
+      "t": {
+       "en": "How much current? I = P / U",
+       "de": "Wie viel Strom? I = P / U"
+      },
+      "b": {
+       "en": "Power is voltage times current: P = U x I. Rearranged, the current is I = P / U. This is how you size a supply and its fuse: the supply must be able to deliver at least the current your radio draws.\n\nExample: a transceiver takes 138 W at 13.8 V. Then I = 138 W / 13.8 V = 10 A. A supply rated for 10 A is the minimum; one rated 12 A or more leaves a margin.\n\nThe same rule works the other way: U = P / I gives the voltage, and P = U x I gives the power you read off a meter.",
+       "de": "Die Leistung ist das Produkt aus Spannung und Strom: P = U · I. Umgestellt ergibt sich der Strom zu I = P / U. So bestimmt man, wie stark ein Netzgerät und seine Sicherung sein müssen: Das Netzgerät muss mindestens den Strom liefern, den das Funkgerät zieht.\n\nBeispiel: Ein Transceiver nimmt 138 W bei 13,8 V auf. Dann ist I = 138 W / 13,8 V = 10 A. Ein Netzgerät für 10 A ist das Minimum; mit 12 A oder mehr hat man Reserve.\n\nUmgekehrt gilt auch U = P / I und P = U · I."
+      },
+      "tip": {
+       "en": "Always convert to base units first: W, V, A.",
+       "de": "Immer zuerst in Grundeinheiten umrechnen: W, V, A."
+      }
+     },
+     {
+      "t": {
+       "en": "Rectifying and smoothing",
+       "de": "Gleichrichten und Glätten"
+      },
+      "b": {
+       "en": "A diode passes current one way only. One diode gives half-wave rectification; a bridge rectifier (or two diodes on a centre-tapped transformer) uses both half-waves: full-wave rectification.\n\nA large electrolytic capacitor across the load charges quickly and discharges slowly, which smooths the voltage. The small AC part that remains is called ripple.\n\nWith full-wave rectification on 50 Hz mains the ripple frequency is 100 Hz, because both half-waves point the same way. You would hear it as a 100 Hz hum.",
+       "de": "Eine Diode lässt Strom nur in einer Richtung durch. Sie ergibt Einweggleichrichtung; ein Brückengleichrichter (oder zwei Dioden an einem Trafo mit Mittelanzapfung) nutzt beide Halbwellen: Vollweggleichrichtung.\n\nEin großer Elektrolytkondensator parallel zur Last lädt sich schnell auf und entlädt sich langsam. So wird die Spannung geglättet. Der verbleibende Wechselspannungsanteil heißt Restwelligkeit.\n\nBei Vollweggleichrichtung an 50 Hz Netzfrequenz beträgt sie 100 Hz, weil auch die negative Halbwelle nach oben gespiegelt wird. Man hört sie als Brummton."
+      },
+      "tip": {
+       "en": "Electrolytic capacitors are polarised: observe the polarity.",
+       "de": "Elkos sind gepolt: auf die Polung achten."
+      },
+      "img": "d946"
+     },
+     {
+      "t": {
+       "en": "Linear supply: stable but hot",
+       "de": "Linearnetzteil: stabil, aber warm"
+      },
+      "b": {
+       "en": "A linear regulator keeps the output voltage stable by using a pass transistor as a variable resistor. The load current flows through it, so it gets hot and sits on a heat sink. The power lost as heat is P_V = P_in - P_out.\n\nThe efficiency is eta = P_out / P_in and is often low. Example: input 15 V, output 12 V at the same current means 3 of 15 volts are burnt, only 80 percent arrives at the load.\n\nA fixed regulator such as the 7812 needs about 3 V more input than output, a low-drop type only about 1 V.",
+       "de": "Ein linearer Spannungsregler hält die Ausgangsspannung stabil, indem ein Längstransistor als veränderlicher Widerstand arbeitet. Der Laststrom fließt durch ihn, deshalb wird er warm und sitzt auf einem Kühlkörper. Die Verlustleistung ist P_V = P_ein - P_aus.\n\nDer Wirkungsgrad eta = P_aus / P_ein ist oft niedrig. Beispiel: 15 V Eingang, 12 V Ausgang bei gleichem Strom: 3 von 15 Volt werden verheizt, nur 80 Prozent kommen an.\n\nEin Festspannungsregler wie der 7812 braucht etwa 3 V mehr Eingangs- als Ausgangsspannung, ein Low-Drop-Typ nur etwa 1 V."
+      },
+      "tip": {
+       "en": "Loss power = P_in - P_out. Efficiency = P_out / P_in.",
+       "de": "Verlustleistung = P_ein - P_aus. Wirkungsgrad = P_aus / P_ein."
+      }
+     },
+     {
+      "t": {
+       "en": "Switching supply: light but noisy",
+       "de": "Schaltnetzteil: leicht, aber störend"
+      },
+      "b": {
+       "en": "A switching supply first rectifies the mains, then chops it on and off very fast, for example at 30 kHz. At this high frequency a small ferrite transformer is enough. Output voltage is regulated by varying the on-time (pulse width).\n\nAdvantages against a linear supply: high efficiency, low weight and volume, good regulation. Drawback: the switching creates radio-frequency interference, in a spectrum with a spike every 30 kHz. Poor designs disturb your receiver, so a good mains filter is needed and the supply should sit away from the radio.",
+       "de": "Ein Schaltnetzteil richtet die Netzspannung zuerst gleich, schaltet sie dann sehr schnell ein und aus, z. B. mit 30 kHz. Bei dieser hohen Frequenz genügt ein kleiner Ferritkern-Übertrager. Die Ausgangsspannung wird über die Einschaltdauer (Impulsbreite) geregelt.\n\nVorteile gegenüber dem Linearnetzteil: hoher Wirkungsgrad, geringes Gewicht und Volumen, gute Regelbarkeit. Nachteil: Der Schaltbetrieb erzeugt hochfrequente Störungen, im Spektrum alle 30 kHz eine Linie. Schlecht entstörte Geräte stören den Empfang, daher ist ein gutes Netzfilter nötig."
+      },
+      "tip": {
+       "en": "Interference is strongest right above the case; keep it away from the receiver.",
+       "de": "Die Störung ist direkt über dem Gehäuse am stärksten; Abstand zum Empfänger halten."
+      },
+      "img": "d35"
+     },
+     {
+      "t": {
+       "en": "Fuses and protection",
+       "de": "Sicherungen und Schutz"
+      },
+      "b": {
+       "en": "Fuses protect against short circuit and overload. A thin wire melts when too much current flows. After fixing the cause, replace the fuse only with one of the same current rating and the same characteristic: fast (F, 30 ms), medium (MT, 90 ms) or slow (T, 300 ms) at ten times the rated current.\n\nNever bridge a blown fuse, for example with aluminium foil: this is a fire hazard. Good supplies also have electronic short-circuit current limiting, so no fuse has to be replaced afterwards.",
+       "de": "Sicherungen schützen bei Kurzschluss und Überlast. Ein dünner Draht schmilzt, wenn zu viel Strom fließt. Nach Beseitigung der Ursache darf nur eine gleichartige Sicherung eingesetzt werden: gleiche Stromstärke und gleiche Auslösecharakteristik, flink (F, 30 ms), mittelträge (MT, 90 ms) oder träge (T, 300 ms) bei zehnfachem Nennstrom.\n\nEine defekte Sicherung darf niemals überbrückt werden, etwa mit Alufolie: Brandgefahr! Hochwertige Netzgeräte haben zusätzlich eine elektronische Kurzschlussstrombegrenzung, dann muss keine Sicherung getauscht werden."
+      }
+     }
     ]
    },
    "3": {
@@ -323,9 +408,154 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "Efficiency and heat",
+       "de": "Wirkungsgrad und Abwärme"
+      },
+      "b": {
+       "en": "Efficiency is output power divided by input power: eta = P_out / P_in. The part that is not delivered is lost as heat: P_loss = P_in - P_out.\n\nExample: a supply delivers 13.8 V x 20 A = 276 W at an efficiency of 80 % (0.8). It takes P_in = 276 W / 0.8 = 345 W from the mains. 69 W are turned into heat and must be carried away by the heat sink or fan.\n\nThe lower the efficiency, the more heat the supply has to get rid of.",
+       "de": "Der Wirkungsgrad ist das Verhältnis von abgegebener zu aufgenommener Leistung: eta = P_aus / P_ein. Der Rest geht als Wärme verloren: P_V = P_ein - P_aus.\n\nBeispiel: Ein Netzteil liefert 13,8 V x 20 A = 276 W bei einem Wirkungsgrad von 80 % (0,8). Es nimmt P_ein = 276 W / 0,8 = 345 W aus dem Netz auf. 69 W werden zu Wärme und müssen über Kühlkörper oder Lüfter abgeführt werden.\n\nJe niedriger der Wirkungsgrad, desto mehr Wärme fällt an."
+      },
+      "tip": {
+       "en": "Always divide by eta to get the input power: P_in = P_out / eta (not P_out x eta).",
+       "de": "Zur Eingangsleistung immer durch eta teilen: P_ein = P_aus / eta (nicht malnehmen)."
+      }
+     },
+     {
+      "t": {
+       "en": "Linear regulator losses",
+       "de": "Verluste im Linearregler"
+      },
+      "b": {
+       "en": "A linear regulator uses a pass transistor as a variable resistor. It stabilises the output by burning the surplus voltage as heat:\n\nP_loss = (U_in - U_out) x I\n\nExample: 18 V in, 13.8 V out at 10 A. The transistor drops 4.2 V, so P_loss = 4.2 V x 10 A = 42 W, while the load gets 138 W. Efficiency = 13.8 V / 18 V = 77 %. That is why pass transistors sit on a heat sink.",
+       "de": "Ein Linearregler betreibt einen Längstransistor als veränderlichen Widerstand. Er stabilisiert die Ausgangsspannung, indem er die überschüssige Spannung in Wärme umsetzt:\n\nP_V = (U_ein - U_aus) x I\n\nBeispiel: 18 V Eingang, 13,8 V Ausgang bei 10 A. Am Transistor fallen 4,2 V ab, also P_V = 4,2 V x 10 A = 42 W, während die Last 138 W erhält. Wirkungsgrad = 13,8 V / 18 V = 77 %. Deshalb sitzt der Längstransistor auf einem Kühlkörper."
+      },
+      "tip": {
+       "en": "The load current flows through the pass transistor, so heat rises with current.",
+       "de": "Der Laststrom fließt durch den Längstransistor, die Wärme wächst also mit dem Strom."
+      },
+      "img": "d1079"
+     },
+     {
+      "t": {
+       "en": "Switching power supply",
+       "de": "Schaltnetzteil"
+      },
+      "b": {
+       "en": "A switching supply turns a transistor fully on or off. There is no state in between, so little heat is produced and efficiency is high. The output voltage is regulated by pulse width modulation: the switching frequency stays constant, the on-time changes. A longer on-time moves more energy to the load and raises the output voltage.\n\nA ferrite-core transformer isolates the output from the mains. The switching creates interference, e.g. every 30 kHz at a 30 kHz clock, so a low-pass filter sits at the 230 V input.",
+       "de": "Ein Schaltnetzteil schaltet einen Transistor voll ein oder aus. Es gibt keinen Zustand dazwischen, daher entsteht wenig Wärme und der Wirkungsgrad ist hoch. Die Ausgangsspannung wird per Pulsbreitenmodulation geregelt: Die Schaltfrequenz bleibt konstant, die Einschaltdauer ändert sich. Ein längeres Einschalten transportiert mehr Energie zur Last, die Spannung steigt.\n\nEin Übertrager mit Ferritkern trennt den Ausgang galvanisch vom Netz. Das Schalten erzeugt Störungen, z. B. alle 30 kHz bei 30 kHz Takt. Darum sitzt am 230-V-Eingang ein Tiefpassfilter."
+      },
+      "tip": {
+       "en": "A badly filtered switching supply can ruin HF reception near it.",
+       "de": "Ein schlecht entstörtes Schaltnetzteil kann den Funkempfang in der Nähe stark stören."
+      },
+      "img": "d35"
+     },
+     {
+      "t": {
+       "en": "Internal resistance, load regulation",
+       "de": "Innenwiderstand, Lastregelung"
+      },
+      "b": {
+       "en": "A real supply has an internal resistance R_i in series with the ideal source. Under load the terminal voltage drops: U_k = U_q - I x R_i. So R_i should be as small as possible, R_i << R_L.\n\nGood load regulation means the output voltage barely changes when the load current changes. Measure it with two cases: R_i = (U_q - U_L) / I_L.\n\nExample: 13.8 V unloaded, 13.5 V at 20 A gives R_i = 0.3 V / 20 A = 15 milliohm.",
+       "de": "Ein reales Netzteil hat einen Innenwiderstand R_i in Reihe zur idealen Quelle. Unter Last sinkt die Klemmenspannung: U_k = U_q - I x R_i. Der Innenwiderstand soll daher möglichst klein sein, R_i << R_L.\n\nGute Lastregelung heißt: Die Ausgangsspannung ändert sich kaum, wenn sich der Laststrom ändert. R_i ergibt sich aus zwei Belastungsfällen: R_i = (U_q - U_L) / I_L.\n\nBeispiel: 13,8 V im Leerlauf, 13,5 V bei 20 A ergibt R_i = 0,3 V / 20 A = 15 Milliohm."
+      },
+      "tip": {
+       "en": "Power matching (R_i = R_L) gives maximum power but only 50 % efficiency - not wanted for a supply.",
+       "de": "Leistungsanpassung (R_i = R_L) liefert maximale Leistung, aber nur 50 % Wirkungsgrad - beim Netzteil nicht gewollt."
+      },
+      "img": "d1018"
+     },
+     {
+      "t": {
+       "en": "Voltage drop in supply cables",
+       "de": "Spannungsfall in Zuleitungen"
+      },
+      "b": {
+       "en": "Cables have resistance too. By Ohm's law the drop is U = I x R. With 20 A through cables of total 0.05 ohm: U = 20 A x 0.05 ohm = 1 V. The rig then sees only 12.8 V instead of 13.8 V. The heat in the cable is P = I^2 x R = 400 x 0.05 = 20 W.\n\nThe wire resistance is R = rho x l / A (copper rho = 0.018 ohm mm^2/m). Example: 4 m (out and back) of 2.5 mm^2 gives 0.029 ohm. Use short, thick cables and good contacts.",
+       "de": "Auch Kabel haben einen Widerstand. Nach dem Ohmschen Gesetz fällt U = I x R ab. Bei 20 A durch Kabel mit insgesamt 0,05 Ohm: U = 20 A x 0,05 Ohm = 1 V. Das Funkgerät sieht dann nur 12,8 V statt 13,8 V. Die Wärme im Kabel beträgt P = I^2 x R = 400 x 0,05 = 20 W.\n\nDer Drahtwiderstand ist R = rho x l / A (Kupfer rho = 0,018 Ohm mm^2/m). Beispiel: 4 m (hin und zurück) mit 2,5 mm^2 ergeben 0,029 Ohm. Kurze, dicke Kabel und gute Kontakte verwenden."
+      },
+      "tip": {
+       "en": "Doubling the length doubles R; doubling the cross-section halves it.",
+       "de": "Doppelte Länge verdoppelt R, doppelter Querschnitt halbiert R."
+      }
+     }
     ]
    }
-  }
+  },
+  "cards": [
+   {
+    "t": {
+     "en": "Your shack's power source",
+     "de": "Die Stromquelle deiner Station"
+    },
+    "b": {
+     "en": "A power supply unit turns the 230 V alternating current (AC) from the wall socket into a lower direct current (DC) voltage.\n\nIn amateur radio we often use supplies with 13.8 V DC at the output. That is exactly what most transceivers want, so this is the number to remember.\n\nYou can see voltage and current on the display, and the output sockets are coloured.",
+     "de": "Ein Netzgerät wandelt die Wechselspannung von 230 V aus der Steckdose in eine kleinere Gleichspannung um.\n\nIm Amateurfunk verwenden wir häufig Netzgeräte, die am Ausgang 13,8 V Gleichspannung bereitstellen. Damit betreibst du zum Beispiel einen Transceiver. Diese Zahl solltest du dir merken.\n\nAuf dem Display siehst du Spannung und Strom, die Ausgangsbuchsen sind farbig."
+    },
+    "tip": {
+     "en": "The mains plug has a protective earth contact, so the metal case is earthed.",
+     "de": "Der Schutzkontakt im Schukostecker erdet das Metallgehäuse des Netzgeräts."
+    },
+    "img": "d740"
+   },
+   {
+    "t": {
+     "en": "Connect it safely",
+     "de": "Sicher anschließen"
+    },
+    "b": {
+     "en": "The output of the supply and the cable to the transceiver have two poles, so a closed circuit is formed: current flows from the supply through the transceiver and back.\n\nThe terminals are coloured: red is plus, black is minus. Always respect this polarity, otherwise a short circuit or even a destroyed transceiver can result.\n\nOnly switch the supply on once everything is connected and checked.",
+     "de": "Der Ausgang des Netzgeräts und die Leitung zum Transceiver sind zweipolig. So ergibt sich ein geschlossener Stromkreis: Der Strom fließt vom Netzgerät durch den Transceiver und zurück.\n\nDie Klemmen sind farbig: Rot steht für Plus, Schwarz für Minus. Achte unbedingt auf die Polung, sonst droht ein Kurzschluss oder sogar die Zerstörung des Transceivers.\n\nSchalte das Netzgerät erst ein, wenn alles angeschlossen und kontrolliert ist."
+    },
+    "tip": {
+     "en": "Red = plus, black = minus. Check twice before you switch on.",
+     "de": "Rot = Plus, Schwarz = Minus. Vor dem Einschalten zweimal prüfen."
+    },
+    "img": "d680"
+   },
+   {
+    "t": {
+     "en": "Ohm's law",
+     "de": "Das Ohmsche Gesetz"
+    },
+    "b": {
+     "en": "Voltage U (volts, V), current I (amperes, A) and resistance R (ohms) belong together. Ohm's law: U = R × I.\n\nRearranged: I = U / R and R = U / I. Example: 10 V drive 1 mA through a resistor. Then R = 10 V / 0.001 A = 10,000 ohms, or 10 kilohms.\n\nDouble the voltage and the current doubles too.",
+     "de": "Spannung U (Volt, V), Strom I (Ampere, A) und Widerstand R (Ohm) hängen zusammen. Das Ohmsche Gesetz lautet: U = R · I.\n\nUmgestellt: I = U / R und R = U / I. Beispiel: 10 V treiben 1 mA durch einen Widerstand. Dann ist R = 10 V / 0,001 A = 10000 Ohm, also 10 Kiloohm.\n\nVerdoppelst du die Spannung, verdoppelt sich auch der Strom."
+    },
+    "tip": {
+     "en": "You do not need to memorise the formulas: the exam provides a formula sheet.",
+     "de": "Du musst die Formeln nicht auswendig lernen: In der Prüfung gibt es eine Formelsammlung."
+    }
+   },
+   {
+    "t": {
+     "en": "How much power?",
+     "de": "Wie viel Leistung?"
+    },
+    "b": {
+     "en": "Electrical power P is measured in watts (W). It is voltage times current: P = U × I.\n\nExample: a transceiver draws 20 A from a 13.8 V supply. Then P = 13.8 V × 20 A = 276 W.\n\nThe bigger the voltage or the current, the bigger the power. Conversely I = P / U tells you how much current a device needs, so your supply must be able to deliver enough current.",
+     "de": "Die elektrische Leistung P wird in Watt (W) gemessen. Sie ist das Produkt aus Spannung und Strom: P = U · I.\n\nBeispiel: Ein Transceiver zieht 20 A aus einem Netzgerät mit 13,8 V. Dann ist P = 13,8 V · 20 A = 276 W.\n\nJe größer Spannung oder Strom, desto größer die Leistung. Umgekehrt sagt dir I = P / U, wie viel Strom ein Gerät braucht. Dein Netzgerät muss diesen Strom liefern können."
+    }
+   },
+   {
+    "t": {
+     "en": "The fuse protects you",
+     "de": "Die Sicherung schützt"
+    },
+    "b": {
+     "en": "Fuses protect against a short circuit or overload. A thin wire inside melts when too much current flows and opens the circuit. The fuse has blown.\n\nFind and fix the cause first, then replace the fuse with one of the same type: same current rating and same tripping characteristic (fast, medium, slow).\n\nBridging a blown fuse, for example with aluminium foil, is forbidden and can start a fire.",
+     "de": "Sicherungen schützen bei Kurzschluss oder Überlast. Ein dünner Draht schmilzt, wenn zu viel Strom fließt, und unterbricht den Stromkreis. Die Sicherung ist durchgebrannt.\n\nSuche zuerst die Ursache und behebe sie. Ersetze die Sicherung dann nur durch eine gleichartige: gleiche Stromstärke und gleiche Auslösecharakteristik (flink, mittelträge, träge).\n\nEine defekte Sicherung zu überbrücken, z. B. mit Alufolie, ist unzulässig und kann einen Brand auslösen."
+    },
+    "tip": {
+     "en": "Never bridge a fuse. Fire hazard!",
+     "de": "Sicherung nie überbrücken. Brandgefahr!"
+    }
+   }
+  ]
  },
  {
   "id": "antenna",
@@ -543,6 +773,81 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "The half-wave dipole",
+       "de": "Der Halbwellendipol"
+      },
+      "b": {
+       "en": "A dipole has two equal halves, usually wire or rod, with the feed line connected in the middle. The most common type is the half-wave dipole, one half wavelength long.\n\nWavelength: lambda = 300 / f (f in MHz, lambda in m). In the 10 m band lambda is about 10 m, so the dipole is 5 m long and each leg about 2.5 m. At this length it is resonant and radiates well.\n\nIf the resonance lies below your frequency, the dipole is too long: shorten both legs equally. If it lies above, lengthen both legs.",
+       "de": "Ein Dipol besteht aus zwei gleich langen Teilen, meist Draht oder Metallstäbe, mit der Speiseleitung in der Mitte. Häufig wird der Halbwellendipol benutzt, er ist eine halbe Wellenlänge lang.\n\nWellenlänge: lambda = 300 / f (f in MHz, lambda in m). Im 10-m-Band ist lambda etwa 10 m, der Dipol also 5 m lang, jedes Teilstück etwa 2,5 m. Dann ist er in Resonanz und strahlt gut ab.\n\nLiegt die Resonanz unterhalb der gewünschten Frequenz, ist der Dipol zu lang: beide Seiten gleichmäßig kürzen. Liegt sie zu hoch, beide Seiten verlängern."
+      },
+      "tip": {
+       "en": "Cut the wire a bit long, then shorten it step by step.",
+       "de": "Draht etwas länger zuschneiden und schrittweise kürzen."
+      },
+      "img": "d589"
+     },
+     {
+      "t": {
+       "en": "Real wire is about 5 % shorter",
+       "de": "Echter Draht ist etwa 5 % kürzer"
+      },
+      "b": {
+       "en": "Waves travel slightly slower along a wire than in free space. This is the velocity (shortening) factor, often about 0.95. So a resonant wire antenna must be about 5 percent shorter than the free-space half wavelength.\n\nHalf-wave dipole: length = 0.95 x 150 / f, in practice about 143 / f (f in MHz, length in m).\n\nExample 7.1 MHz: lambda / 2 = 300 / 7.1 / 2 = 21.1 m. Times 0.95 gives about 20 m. The rule 143 / 7.1 gives the same 20 m.",
+       "de": "Wellen breiten sich entlang eines Drahtes etwas langsamer aus als im Freiraum. Das beschreibt der Verkürzungsfaktor, oft etwa 0,95. Eine resonante Drahtantenne muss daher etwa 5 Prozent kürzer sein als die halbe Freiraumwellenlänge.\n\nHalbwellendipol: Länge = 0,95 · 150 / f, praktisch etwa 143 / f (f in MHz, Länge in m).\n\nBeispiel 7,1 MHz: lambda / 2 = 300 / 7,1 / 2 = 21,1 m. Mal 0,95 ergibt etwa 20 m. Die Faustregel 143 / 7,1 liefert dieselben 20 m."
+      },
+      "tip": {
+       "en": "Lambda / 2 x 0.95: for 7.1 MHz about 20 m in total, 10 m per leg.",
+       "de": "Lambda / 2 x 0,95: bei 7,1 MHz etwa 20 m gesamt, 10 m je Seite."
+      }
+     },
+     {
+      "t": {
+       "en": "Velocity factor of coax",
+       "de": "Verkürzungsfaktor beim Koaxkabel"
+      },
+      "b": {
+       "en": "In a coax cable the wave travels in the dielectric, so only the dielectric counts, not the cable diameter. The velocity factor is v = 1 / square root of epsilon_r. Polyethylene has epsilon_r = 2.29, so v = 0.66.\n\nThe wavelength in the cable is lambda_cable = 0.66 x 300 / f.\n\nExample: a quarter-wave piece of coax at 14 MHz. Free space: 300 / 14 = 21.4 m. In the cable: 21.4 x 0.66 = 14.1 m. A quarter of that is about 3.5 m.",
+       "de": "Im Koaxkabel breitet sich die Welle im Dielektrikum aus, nur dieses zählt, nicht der Kabeldurchmesser. Der Verkürzungsfaktor ist v = 1 / Wurzel aus epsilon_r. Polyethylen hat epsilon_r = 2,29, also v = 0,66.\n\nDie Wellenlänge im Kabel ist lambda_Kabel = 0,66 · 300 / f.\n\nBeispiel: Ein Viertelwellenstück Koax bei 14 MHz. Freiraum: 300 / 14 = 21,4 m. Im Kabel: 21,4 · 0,66 = 14,1 m. Ein Viertel davon sind etwa 3,5 m."
+      },
+      "tip": {
+       "en": "Quarter-wave coax: lambda / 4 x v. Here 21.4 / 4 x 0.66 = 3.5 m.",
+       "de": "Viertelwellen-Koax: lambda / 4 · v. Hier 21,4 / 4 · 0,66 = 3,5 m."
+      }
+     },
+     {
+      "t": {
+       "en": "Antenna gain: dBi and dBd",
+       "de": "Antennengewinn: dBi und dBd"
+      },
+      "b": {
+       "en": "Gain is given against a reference antenna. dBi refers to the isotropic radiator, an imaginary antenna radiating equally in all directions. dBd refers to the half-wave dipole.\n\nA half-wave dipole radiates 2.15 dB more than the isotropic radiator in its main direction. So it has 2.15 dBi, which is 0 dBd.\n\nConversion: g_i = g_d + 2.15 dB. Example: an antenna with 5 dBd has 5 + 2.15 = 7.15 dBi. The dBi value is always 2.15 higher than the dBd value.",
+       "de": "Der Gewinn wird auf eine Referenzantenne bezogen. dBi bezieht sich auf den Isotropstrahler, eine gedachte Antenne, die in alle Richtungen gleich stark abstrahlt. dBd bezieht sich auf den Halbwellendipol.\n\nEin Halbwellendipol strahlt in Hauptstrahlrichtung um 2,15 dB stärker ab als der Isotropstrahler. Er hat also 2,15 dBi, das sind 0 dBd.\n\nUmrechnung: g_i = g_d + 2,15 dB. Beispiel: Eine Antenne mit 5 dBd hat 5 + 2,15 = 7,15 dBi. Der dBi-Wert ist stets um 2,15 höher als der dBd-Wert."
+      },
+      "tip": {
+       "en": "3 dB more = double power. dBi > dBd, always by 2.15.",
+       "de": "3 dB mehr = doppelte Leistung. dBi > dBd, immer um 2,15."
+      },
+      "img": "d751"
+     },
+     {
+      "t": {
+       "en": "Balun: balanced to unbalanced",
+       "de": "Balun: symmetrisch zu unsymmetrisch"
+      },
+      "b": {
+       "en": "A dipole is balanced: both halves carry equal and opposite currents. Coax is unbalanced: only the inner conductor carries voltage against earth. Connect them directly and some current flows back on the outside of the shield. These sheath currents make the cable radiate and pick up noise from the house.\n\nA balun (balanced-unbalanced) between the coax and the dipole prevents this. A coax wound around a ferrite core, a sheath-current choke, does the same job: it blocks common-mode current but passes the wanted signal.",
+       "de": "Ein Dipol ist symmetrisch: beide Hälften führen gleich große, entgegengesetzte Ströme. Koax ist unsymmetrisch: nur der Innenleiter führt Spannung gegen Erde. Schließt man beides direkt zusammen, fließt ein Teil des Stroms außen auf dem Schirm zurück. Diese Mantelwellen lassen das Kabel abstrahlen und Störungen aus dem Haus aufnehmen.\n\nEin Balun (balanced-unbalanced) zwischen Koax und Dipol verhindert das. Auch ein um einen Ferritkern gewickeltes Koax, die Mantelwellensperre, wirkt so: Sie sperrt Gleichtaktströme und lässt das Nutzsignal durch."
+      },
+      "tip": {
+       "en": "Sheath currents: TV or hi-fi interference, distorted SWR.",
+       "de": "Mantelwellen: Störungen bei TV oder HiFi, veränderte SWR-Anzeige."
+      },
+      "img": "d633"
+     }
     ]
    },
    "3": {
@@ -651,9 +956,142 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "dBd, dBi and EIRP",
+       "de": "dBd, dBi und EIRP"
+      },
+      "b": {
+       "en": "Antenna gain needs a reference. dBd refers to the half-wave dipole, dBi to the isotropic radiator. The dipole itself has 2.15 dBi, so g_i = g_d + 2.15 dB.\n\nERP refers to a dipole, EIRP to an isotropic radiator, so EIRP = ERP x 1.64, i.e. +2.15 dB. Example: 100 W ERP corresponds to 100 W x 1.64 = 164 W EIRP.\n\nEIRP is always larger than ERP for the same antenna and power.",
+       "de": "Antennengewinn braucht einen Bezug. dBd bezieht sich auf den Halbwellendipol, dBi auf den isotropen Strahler. Der Dipol selbst hat 2,15 dBi, also g_i = g_d + 2,15 dB.\n\nDie ERP bezieht sich auf einen Dipol, die EIRP auf einen isotropen Strahler, also EIRP = ERP x 1,64, das sind +2,15 dB. Beispiel: 100 W ERP entsprechen 100 W x 1,64 = 164 W EIRP.\n\nDie EIRP ist bei gleicher Antenne und Leistung immer größer als die ERP."
+      },
+      "tip": {
+       "en": "Memory aid: 2.15 dB equals a power factor of 1.64.",
+       "de": "Merkhilfe: 2,15 dB entsprechen dem Leistungsfaktor 1,64."
+      },
+      "img": "d751"
+     },
+     {
+      "t": {
+       "en": "Calculating ERP in dB",
+       "de": "ERP in dB berechnen"
+      },
+      "b": {
+       "en": "Only the power that reaches the antenna counts. Feedline loss is subtracted first, then the gain is added, all in dB. With gain in dBd the result is ERP:\n\nERP = P_TX x 10^((g_d - a) / 10 dB)\n\nExample: 100 W transmitter, 2 dB feedline loss, 5 dBd antenna. Net = 5 - 2 = +3 dB, a factor 2, so ERP = 200 W. With a gain given in dBi, the same formula gives EIRP. For this example EIRP = 200 W x 1.64 = about 328 W.",
+       "de": "Es zählt nur die Leistung, die an der Antenne ankommt. Zuerst wird die Kabeldämpfung abgezogen, dann der Gewinn addiert, alles in dB. Bei Gewinn in dBd ergibt sich die ERP:\n\nERP = P_Sender x 10^((g_d - a) / 10 dB)\n\nBeispiel: 100 W Sender, 2 dB Kabeldämpfung, 5 dBd Antenne. Netto 5 - 2 = +3 dB, das ist Faktor 2, also ERP = 200 W. Bei Gewinn in dBi liefert dieselbe Formel die EIRP. Hier: EIRP = 200 W x 1,64 = rund 328 W."
+      },
+      "tip": {
+       "en": "Watch the signs: loss is subtracted, gain is added.",
+       "de": "Auf die Vorzeichen achten: Dämpfung abziehen, Gewinn addieren."
+      }
+     },
+     {
+      "t": {
+       "en": "Dipole feed impedance",
+       "de": "Speisewiderstand des Dipols"
+      },
+      "b": {
+       "en": "A centre-fed half-wave dipole in free space has a feed resistance of about 73 ohms. Near the ground it is usually 65 to 75 ohms and settles at the free-space value from about one wavelength height.\n\nAt resonance the feed impedance is purely resistive. Below the resonant frequency the dipole is electrically too short and looks capacitive, above it is too long and looks inductive. A folded dipole has about 240 to 300 ohms.",
+       "de": "Ein in der Mitte gespeister Halbwellendipol hat im Freiraum einen Speisewiderstand von etwa 73 Ohm. In Bodennähe sind es meist 65 bis 75 Ohm; ab etwa einer Wellenlänge Aufbauhöhe nähert er sich dem Freiraumwert.\n\nIn Resonanz ist die Speiseimpedanz ein reiner Wirkwiderstand. Unterhalb der Resonanzfrequenz ist der Dipol elektrisch zu kurz und wirkt kapazitiv, oberhalb ist er zu lang und wirkt induktiv. Ein Faltdipol hat etwa 240 bis 300 Ohm."
+      },
+      "tip": {
+       "en": "Current leads voltage in a capacitive, lags in an inductive impedance.",
+       "de": "Bei kapazitiver Impedanz eilt der Strom der Spannung voraus, bei induktiver nach."
+      },
+      "img": "d788"
+     },
+     {
+      "t": {
+       "en": "SWR from feed resistance",
+       "de": "SWR aus dem Speisewiderstand"
+      },
+      "b": {
+       "en": "For a purely resistive antenna, SWR is the ratio of load resistance R_a to line impedance Z, arranged so that SWR >= 1:\n\ns = R_a / Z if R_a > Z, and s = Z / R_a if R_a < Z.\n\nExamples on 50 ohm coax: 100 ohm gives s = 2, 10 ohm gives s = 5. A dipole with 73 ohms fed directly gives s = 73 / 50 = 1.46, about 1.5:1. At SWR 1.5 only 4 % of the power is reflected, so this is perfectly usable.",
+       "de": "Bei einer rein ohmschen Antenne ist das SWR das Verhältnis von Lastwiderstand R_a zu Leitungswellenwiderstand Z, so gebildet, dass SWR >= 1:\n\ns = R_a / Z für R_a > Z und s = Z / R_a für R_a < Z.\n\nBeispiele an 50-Ohm-Koax: 100 Ohm ergeben s = 2, 10 Ohm ergeben s = 5. Ein Dipol mit 73 Ohm direkt angeschlossen ergibt s = 73 / 50 = 1,46, also etwa 1,5:1. Bei SWR 1,5 werden nur 4 % der Leistung reflektiert, das ist gut brauchbar."
+      }
+     },
+     {
+      "t": {
+       "en": "Yagi: gain and front-to-back",
+       "de": "Yagi: Gewinn und Vor-Rück"
+      },
+      "b": {
+       "en": "A Yagi bundles the power in the main direction. More directors and a longer boom raise the gain and narrow the beam. The gain is given relative to a dipole (dBd) or isotropic radiator (dBi).\n\nThe front-to-back ratio compares forward and rearward power. 20 dB means a factor of 100: a signal from behind arrives with 1/100 of the power it would have from the front. 10 dB would be 1/10. The parasitic elements also change the feed impedance.",
+       "de": "Eine Yagi bündelt die Leistung in Hauptstrahlrichtung. Mehr Direktoren und ein längerer Boom erhöhen den Gewinn und verkleinern den Öffnungswinkel. Der Gewinn wird auf den Dipol (dBd) oder den isotropen Strahler (dBi) bezogen.\n\nDas Vor-Rück-Verhältnis vergleicht die Leistung nach vorn und nach hinten. 20 dB bedeuten Faktor 100: Ein Signal von hinten kommt mit 1/100 der Leistung an, die es von vorn hätte. 10 dB wären 1/10. Die parasitären Elemente verändern außerdem die Speiseimpedanz."
+      },
+      "img": "d1106"
+     }
     ]
    }
   },
+  "cards": [
+   {
+    "t": {
+     "en": "The magic of the antenna",
+     "de": "Die Magie der Antenne"
+    },
+    "b": {
+     "en": "The antenna does the real magic of radio. When transmitting, it turns electrical oscillations into radio waves that travel far away. When receiving, it picks up radio waves and passes them on as electrical signals through the antenna cable to your radio.\n\nAn amateur station is simple: transceiver, cable, antenna.",
+     "de": "Die Antenne bewirkt die eigentliche Magie des Funkens. Beim Senden gibt sie elektrische Schwingungen als Funkwellen ab, die sich in die Ferne ausbreiten. Beim Empfang nimmt sie Funkwellen auf und leitet sie als elektrische Schwingungen über das Antennenkabel zum Funkgerät weiter.\n\nEine Amateurfunkstation ist einfach aufgebaut: Transceiver, Kabel, Antenne."
+    },
+    "img": "d657"
+   },
+   {
+    "t": {
+     "en": "Wavelength from frequency",
+     "de": "Wellenlänge aus der Frequenz"
+    },
+    "b": {
+     "en": "The distance between two wave crests is the wavelength. It depends on the frequency: the higher the frequency, the shorter the wavelength.\n\nA simple rule: wavelength in metres = 300 divided by frequency in MHz. Example: 14 MHz gives 300 / 14 = about 21 m. And 145.3 MHz gives about 2.06 m.\n\nThis is why bands are named by their rounded wavelength, like the 2 m band.",
+     "de": "Den Abstand zwischen zwei Wellenbergen nennt man Wellenlänge. Sie hängt von der Frequenz ab: Je größer die Frequenz, desto kleiner die Wellenlänge.\n\nEine einfache Regel: Wellenlänge in Metern = 300 geteilt durch die Frequenz in MHz. Beispiel: 14 MHz ergeben 300 / 14 = rund 21 m. Und 145,3 MHz ergeben etwa 2,06 m.\n\nDeshalb benennt man Bänder nach der gerundeten Wellenlänge, z. B. das 2-m-Band."
+    },
+    "tip": {
+     "en": "High frequency means short wavelength, low frequency means long wavelength.",
+     "de": "Hohe Frequenz heißt kurze Wellenlänge, niedrige Frequenz heißt lange Wellenlänge."
+    }
+   },
+   {
+    "t": {
+     "en": "The half-wave dipole",
+     "de": "Der Halbwellendipol"
+    },
+    "b": {
+     "en": "The basic antenna is the dipole: two wires or rods, with the cable connected in the middle, one conductor to each half.\n\nThe common half-wave dipole is half a wavelength long, so each half is a quarter wavelength. For the 10 m band: wavelength about 10 m, dipole 5 m, each half about 2.5 m. For 14 MHz (about 21 m) the dipole is about 10 m long.\n\nThen the antenna is in resonance and radiates well.",
+     "de": "Die Grundform der Antenne ist der Dipol: zwei Drähte oder Stäbe. Das Kabel wird in der Mitte angeschlossen, je ein Leiter an jede Hälfte.\n\nHäufig nutzt man den Halbwellendipol mit einer Länge von einer halben Wellenlänge. Jede Hälfte ist also eine Viertelwellenlänge. Im 10-m-Band: Wellenlänge rund 10 m, Dipol 5 m, jede Hälfte etwa 2,5 m. Bei 14 MHz (rund 21 m) ist der Dipol etwa 10 m lang.\n\nDann ist er in Resonanz und strahlt gut ab."
+    },
+    "tip": {
+     "en": "Cut the wire a bit long first and shorten it step by step: shortening is easier than extending.",
+     "de": "Draht zuerst etwas länger auslegen und schrittweise kürzen: Kürzen ist einfacher als verlängern."
+    },
+    "img": "d589"
+   },
+   {
+    "t": {
+     "en": "Tuning by length",
+     "de": "Abstimmen über die Länge"
+    },
+    "b": {
+     "en": "A dipole of the right length radiates best. Long dipoles suit low frequencies, short dipoles suit high frequencies, like a double bass and a violin.\n\nIf the resonance frequency is below the wanted frequency, the dipole is too long: shorten both sides equally. If it is too high, lengthen both sides equally.\n\nOn other frequencies the dipole works worse and worse.",
+     "de": "Ein Dipol der richtigen Länge strahlt am besten ab. Lange Dipole eignen sich für tiefe Frequenzen, kurze Dipole für hohe Frequenzen, wie Kontrabass und Geige.\n\nLiegt die Resonanzfrequenz unter der gewünschten Frequenz, ist der Dipol zu lang: Kürze beide Seiten gleichmäßig. Ist sie zu hoch, verlängere beide Seiten gleichmäßig.\n\nAuf anderen Frequenzen funktioniert der Dipol zunehmend schlechter."
+    }
+   },
+   {
+    "t": {
+     "en": "Stay away from power lines",
+     "de": "Abstand zu Freileitungen"
+    },
+    "b": {
+     "en": "Overhead power lines carry dangerously high voltage. An antenna must never touch them, and must be kept well away from them.\n\nThink ahead: in a storm, a wire or a mast part could come loose and fall onto a power line or onto people.\n\nIf an antenna touches a power line, there is acute danger of a lethal electric shock.",
+     "de": "Freileitungen führen gefährlich hohe Spannungen. Eine Antenne muss von ihnen immer weit entfernt sein und darf sie unter keinen Umständen berühren.\n\nDenke voraus: Bei einem Sturm könnten sich Drähte oder Antennenteile lösen und auf eine Leitung oder auf Personen fallen.\n\nBerührt eine Antenne eine Energieversorgungsleitung, besteht akute Lebensgefahr durch Stromschlag."
+    },
+    "tip": {
+     "en": "Safety first: always plan the antenna site away from overhead lines.",
+     "de": "Sicherheit zuerst: Antennenstandort immer weit weg von Freileitungen planen."
+    }
+   }
+  ],
   "country_tiers": {
    "at": {
     "1": {
@@ -1091,6 +1529,90 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "Bandwidth of each mode",
+       "de": "Bandbreite der Sendearten"
+      },
+      "b": {
+       "en": "Each mode occupies a different amount of spectrum. SSB voice needs about 2.4 to 3 kHz, and the occupied bandwidth should stay below about 2.7 kHz. CW needs only a few hundred hertz: about 300 Hz at 20 words per minute. Narrow digital modes are even slimmer, FT8 about 50 Hz. FM voice on VHF is much wider, more than 10 kHz: bandwidth is roughly 2 x (deviation + highest audio frequency), for example 2 x (3 + 3) kHz = 12 kHz.\n\nBandwidth is measured between the points where power has dropped to 50 percent (-3 dB).",
+       "de": "Jede Betriebsart belegt unterschiedlich viel Spektrum. SSB-Sprache braucht etwa 2,4 bis 3 kHz, belegt sollten höchstens etwa 2,7 kHz werden. CW kommt mit wenigen hundert Hertz aus: etwa 300 Hz bei 20 Wörtern pro Minute. Schmalbandige Digimodes sind noch schmaler, FT8 etwa 50 Hz. FM-Sprache auf UKW ist deutlich breiter, mehr als 10 kHz: Bandbreite ungefähr 2 · (Hub + höchste NF-Frequenz), z. B. 2 · (3 + 3) kHz = 12 kHz.\n\nDie Bandbreite misst man zwischen den Punkten, an denen die Leistung auf 50 Prozent (-3 dB) gefallen ist."
+      },
+      "img": "d1044"
+     },
+     {
+      "t": {
+       "en": "SSB: only one sideband",
+       "de": "SSB: nur ein Seitenband"
+      },
+      "b": {
+       "en": "AM sends a carrier plus two sidebands. All information is in the sidebands, and both carry the same. The carrier contains none. So SSB suppresses the carrier and sends just one sideband: lower (LSB) or upper (USB). No power is wasted, and there is no output in speech pauses.\n\nSSB takes about half the bandwidth of AM. Example: carrier 7.100 MHz with a 1 kHz tone gives 7.101 MHz on USB and 7.099 MHz on LSB.\n\nSSB has no carrier, so tune very accurately, or speech sounds distorted.",
+       "de": "AM sendet einen Träger und zwei Seitenbänder. Die gesamte Information steckt in den Seitenbändern, beide enthalten dasselbe. Der Träger enthält keine. Bei SSB wird daher der Träger unterdrückt und nur ein Seitenband gesendet: unteres (LSB) oder oberes (USB). Keine Leistung geht verloren, in Sprechpausen wird nichts gesendet.\n\nSSB braucht weniger als die halbe AM-Bandbreite. Beispiel: Träger 7,100 MHz mit 1-kHz-Ton ergibt 7,101 MHz bei USB und 7,099 MHz bei LSB.\n\nDa der Träger fehlt, muss man sehr genau abstimmen, sonst klingt die Sprache verzerrt."
+      },
+      "tip": {
+       "en": "USB is upper sideband, not lower!",
+       "de": "USB heißt oberes Seitenband, nicht unteres!"
+      },
+      "img": "d743"
+     },
+     {
+      "t": {
+       "en": "Narrow filter, less noise",
+       "de": "Schmales Filter, weniger Rauschen"
+      },
+      "b": {
+       "en": "Receiver noise is proportional to bandwidth: double the bandwidth, double the noise power. A filter as narrow as the wanted signal gives the best selectivity.\n\nThe change in noise level: delta P = 10 x log10(B1 / B2) dB.\n\nExample: from 2400 Hz down to 600 Hz. The ratio is 4, and 10 x log10(4) = 6 dB. So 6 dB less noise power gets through. Remember: 3 dB is a factor of 2, 6 dB a factor of 4.",
+       "de": "Das Empfängerrauschen ist proportional zur Bandbreite: Doppelte Bandbreite bedeutet doppelte Rauschleistung. Ein Filter, das nur so breit ist wie das Nutzsignal, liefert die beste Trennschärfe.\n\nDie Pegeländerung des Rauschens: delta P = 10 · log10(B1 / B2) dB.\n\nBeispiel: von 2400 Hz auf 600 Hz. Das Verhältnis ist 4 und 10 · log10(4) = 6 dB. Es gelangt also 6 dB weniger Rauschleistung durch. Merke: 3 dB sind Faktor 2, 6 dB Faktor 4."
+      },
+      "tip": {
+       "en": "Use the narrowest filter the mode allows: 2.4 kHz SSB, about 500 Hz CW.",
+       "de": "Das schmalste Filter, das die Betriebsart erlaubt: SSB 2,4 kHz, CW etwa 500 Hz."
+      }
+     },
+     {
+      "t": {
+       "en": "LSB or USB?",
+       "de": "LSB oder USB?"
+      },
+      "b": {
+       "en": "With a few exceptions, amateurs use lower sideband below 10 MHz and upper sideband from 10 MHz up. The IARU band plan recommends this. So on 80 m and 40 m you choose LSB, on 20 m and higher USB.\n\nDigital modes such as FT8 are always sent on USB, even below 10 MHz.\n\nThe wrong sideband makes speech unintelligible, because the sidebands are mirror images: low voice tones become high and the other way round. With AM and FM this problem does not exist.",
+       "de": "Mit wenigen Ausnahmen wird unterhalb von 10 MHz das untere Seitenband und ab 10 MHz das obere Seitenband benutzt. Der IARU-Bandplan empfiehlt das so. Auf 80 m und 40 m wählt man also LSB, auf 20 m und darüber USB.\n\nBei digitalen Übertragungsverfahren wie FT8 wird immer das obere Seitenband verwendet, auch unterhalb von 10 MHz.\n\nDas falsche Seitenband macht Sprache unverständlich, denn die Seitenbänder sind gespiegelt: Tiefe Töne werden hoch und umgekehrt. Bei AM und FM gibt es dieses Problem nicht."
+      },
+      "tip": {
+       "en": "40 m = LSB. 20 m = USB. Digimodes = USB.",
+       "de": "40 m = LSB. 20 m = USB. Digimodes = USB."
+      }
+     },
+     {
+      "t": {
+       "en": "Digital modes and FT8",
+       "de": "Digimodes und FT8"
+      },
+      "b": {
+       "en": "Digital modes need very little bandwidth. FT8 takes about 50 Hz, BPSK31 about 31 Hz. On HF they are sent via SSB, always USB. In a 2.4 kHz SSB channel there is room for up to 48 FT8 signals, since 2400 / 50 = 48.\n\nFT8 works even when the signal is barely above the noise, but only a few characters are sent per transmission. Sending is done in fixed time slots, so all stations must share the same time: keep the PC clock accurate to about a second.\n\nIf the ALC reacts, the audio from the PC is too strong and causes splatter.",
+       "de": "Digitale Verfahren brauchen sehr wenig Bandbreite. FT8 belegt etwa 50 Hz, BPSK31 etwa 31 Hz. Auf Kurzwelle werden sie über SSB gesendet, immer mit USB. In einem 2,4-kHz-SSB-Kanal haben bis zu 48 FT8-Signale Platz, denn 2400 / 50 = 48.\n\nFT8 funktioniert auch bei kaum hörbarem Signal, dafür sind nur wenige Zeichen je Sendung möglich. Gesendet wird in festen Zeitschlitzen, alle Stationen brauchen dieselbe Uhrzeit: Die PC-Uhr sollte auf etwa eine Sekunde genau gehen.\n\nSpricht die ALC an, ist das NF-Signal vom PC zu stark und verursacht Splatter."
+      },
+      "tip": {
+       "en": "Use a time-sync program for the PC clock.",
+       "de": "Die PC-Uhr per Zeitsynchronisation genau halten."
+      }
+     },
+     {
+      "t": {
+       "en": "Attenuator and preamp",
+       "de": "Abschwächer und Vorverstärker"
+      },
+      "b": {
+       "en": "On HF, strong signals can overload the front end and first mixer. The result is a distorted, unintelligible sound. The remedy is the attenuator: it reduces the input level by a fixed amount, so weak signals suffer less from strong ones.\n\nOn VHF and above the cable to the radio already attenuates the signal. A preamplifier close to the antenna makes up for the cable loss. It must be switched off during transmit (PTT-controlled) and be deactivatable when strong local signals overload the receiver.",
+       "de": "Auf Kurzwelle können starke Signale den Eingang und den ersten Mischer übersteuern. Die Folge ist eine verzerrte, unverständliche Wiedergabe. Abhilfe schafft der Abschwächer (Attenuator): Er dämpft das Eingangssignal um einen festen Wert, dadurch stören starke Signale schwache weniger.\n\nAuf VHF und höher schwächt schon die Antennenleitung das Signal ab. Ein Vorverstärker möglichst direkt an der Antenne gleicht die Kabelverluste aus. Er muss im Sendefall abgeschaltet werden (PTT-gesteuert) und bei starken lokalen Signalen deaktivierbar sein."
+      },
+      "tip": {
+       "en": "Overload on HF: attenuator on. Weak VHF signals: preamp on.",
+       "de": "Übersteuerung auf KW: Abschwächer an. Schwache UKW-Signale: Vorverstärker an."
+      }
+     }
     ]
    },
    "3": {
@@ -1199,9 +1721,130 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "Superheterodyne principle",
+       "de": "Überlagerungsprinzip"
+      },
+      "b": {
+       "en": "In a superheterodyne receiver a mixer combines the input signal f_e with a local oscillator f_o. The difference is a fixed intermediate frequency: f_IF = |f_e - f_o|.\n\nTuning moves the oscillator, while everything after the mixer works on one fixed IF. There the IF filter can be built very steep and stable. This filter decides how well the receiver separates neighbouring stations (selectivity). After the IF stage come the demodulator, the AF amplifier and the speaker.",
+       "de": "Im Überlagerungsempfänger mischt ein Mischer das Eingangssignal f_e mit einem Oszillator f_o. Die Differenz ist eine feste Zwischenfrequenz: f_ZF = |f_e - f_o|.\n\nBeim Abstimmen wird der Oszillator verstellt, alle Stufen hinter dem Mischer arbeiten auf einer festen ZF. Dort lässt sich das ZF-Filter sehr steil und stabil bauen. Es bestimmt, wie gut der Empfänger benachbarte Stationen trennt (Trennschärfe). Danach folgen Demodulator, NF-Verstärker und Lautsprecher."
+      },
+      "img": "d839"
+     },
+     {
+      "t": {
+       "en": "The image frequency",
+       "de": "Die Spiegelfrequenz"
+      },
+      "b": {
+       "en": "The mixer equation has two solutions: the wanted frequency and the image frequency. Both give the same IF. They are 2 x f_IF apart. With the oscillator above the signal, the image lies above: f_S = f_E + 2 x f_IF; with the oscillator below, f_S = f_E - 2 x f_IF.\n\nExample: IF 9 MHz, receiving 14.2 MHz, oscillator at 23.2 MHz. Image = 14.2 + 18 = 32.2 MHz. Front-end band-pass filters must block it. A higher IF gives a larger spacing and makes this easier.",
+       "de": "Die Mischgleichung hat zwei Lösungen: die gewünschte Frequenz und die Spiegelfrequenz. Beide ergeben dieselbe ZF. Sie liegen 2 x f_ZF auseinander. Schwingt der Oszillator oberhalb, liegt die Spiegelfrequenz oberhalb: f_S = f_E + 2 x f_ZF; bei Oszillator unterhalb ist f_S = f_E - 2 x f_ZF.\n\nBeispiel: ZF 9 MHz, Empfang 14,2 MHz, Oszillator 23,2 MHz. Spiegelfrequenz = 14,2 + 18 = 32,2 MHz. Bandfilter am Eingang müssen sie sperren. Eine höhere ZF vergrößert den Abstand und erleichtert das."
+      },
+      "img": "d807"
+     },
+     {
+      "t": {
+       "en": "Dynamic range and overload",
+       "de": "Dynamikbereich und Übersteuerung"
+      },
+      "b": {
+       "en": "The dynamic range of a receiver is the span between the noise floor (weakest usable signal) and the strongest signal that is still handled without distortion. It is given in dB.\n\nTwo strong signals in a non-linear stage create intermodulation products, which do not come from outside. The third-order intercept point IP3 is a measure of large-signal strength: the higher the IP3, the stronger the signals the receiver handles cleanly. Overload sounds like distorted, unreadable audio.",
+       "de": "Der Dynamikbereich eines Empfängers ist der Abstand zwischen Rauschgrenze (schwächstes nutzbares Signal) und dem stärksten Signal, das noch ohne Verzerrung verarbeitet wird. Er wird in dB angegeben.\n\nZwei starke Signale erzeugen in nichtlinearen Stufen Intermodulationsprodukte, die nicht von außen kommen. Der Intercept Point dritter Ordnung (IP3) misst die Großsignalfestigkeit: Je höher der IP3, desto stärkere Signale verarbeitet der Empfänger sauber. Übersteuerung klingt verzerrt und unverständlich."
+      },
+      "tip": {
+       "en": "Intermodulation appears as extra signals next to two strong ones.",
+       "de": "Intermodulation erscheint als zusätzliche Signale neben zwei starken."
+      }
+     },
+     {
+      "t": {
+       "en": "Preamplifier or attenuator?",
+       "de": "Vorverstärker oder Abschwächer?"
+      },
+      "b": {
+       "en": "On the HF bands, noise and signals from the antenna are already strong. A good antenna makes an extra preamplifier almost useless, and it only raises the risk of overload. If a receiver is overloaded, switch on the attenuator. It reduces strong input signals by a fixed value.\n\nOn VHF and above, cable loss matters more. There a preamplifier at the antenna compensates it. It must be switched off during transmit (PTT-controlled). The noise figure of a preamp in dB tells how much the SNR gets worse: a factor 2 is 3 dB.",
+       "de": "Auf Kurzwelle sind Rauschen und Signale aus der Antenne ohnehin stark. Bei guter Antenne bringt ein zusätzlicher Vorverstärker kaum Nutzen und erhöht nur die Gefahr der Übersteuerung. Ist der Empfänger übersteuert, schaltet man den Abschwächer (Attenuator) zu, der starke Eingangssignale um einen festen Wert dämpft.\n\nAb VHF überwiegen die Kabelverluste. Dort gleicht ein Vorverstärker an der Antenne sie aus. Er muss im Sendefall abgeschaltet werden (PTT-gesteuert). Die Rauschzahl in dB sagt, wie stark das SNR schlechter wird: Faktor 2 sind 3 dB."
+      }
+     },
+     {
+      "t": {
+       "en": "PLL synthesizer",
+       "de": "PLL-Synthesizer"
+      },
+      "b": {
+       "en": "Modern rigs generate their oscillator frequencies with a PLL (phase-locked loop). A phase detector compares the VCO output, divided by n, with a stable reference from a crystal oscillator. A low-pass filter turns the error into a control voltage for the VCO. When locked: f_out = n x f_ref.\n\nExample: f_ref = 10 MHz, n = 100 gives 1 GHz. Accuracy and stability come from the crystal. The smallest step equals f_ref: with 12.5 kHz as reference, n + 1 shifts the output by 12.5 kHz.",
+       "de": "Moderne Geräte erzeugen ihre Oszillatorfrequenzen mit einer PLL (Phasenregelschleife). Ein Phasenvergleicher vergleicht den durch n geteilten VCO-Ausgang mit einer stabilen Referenz aus einem Quarzoszillator. Ein Tiefpass macht aus dem Fehler eine Steuerspannung für den VCO. Im eingerasteten Zustand gilt: f_aus = n x f_ref.\n\nBeispiel: f_ref = 10 MHz, n = 100 ergibt 1 GHz. Genauigkeit und Stabilität kommen vom Quarz. Die kleinste Schrittweite ist f_ref: Bei 12,5 kHz Referenz verschiebt n + 1 den Ausgang um 12,5 kHz."
+      },
+      "img": "d45"
+     },
+     {
+      "t": {
+       "en": "SDR: signal chain in software",
+       "de": "SDR: Signalkette in Software"
+      },
+      "b": {
+       "en": "A software defined radio (SDR) digitises the signal with an A/D converter and processes it in software or an FPGA. A transmit chain: microphone, A/D converter, source coder (compress), channel coder (add redundancy), mapper (symbols), I/Q modulator, power amplifier, antenna.\n\nThe receiver works in reverse: I/Q demodulator, de-mapper, channel decoder (correct errors), source decoder, D/A converter, speaker. Filters, noise reduction and modes are then just software.",
+       "de": "Ein Software Defined Radio (SDR) digitalisiert das Signal mit einem A/D-Umsetzer und verarbeitet es in Software oder im FPGA. Eine Sendekette: Mikrofon, A/D-Umsetzer, Quellencodierer (komprimieren), Kanalcodierer (Redundanz), Mapper (Symbole), I/Q-Modulator, Leistungsverstärker, Antenne.\n\nDer Empfänger arbeitet rückwärts: I/Q-Demodulator, De-Mapper, Kanaldecodierer (Fehler korrigieren), Quellendecodierer, D/A-Umsetzer, Lautsprecher. Filter, Rauschunterdrückung und Betriebsarten sind dann reine Software."
+      }
+     }
     ]
    }
-  }
+  },
+  "cards": [
+   {
+    "t": {
+     "en": "Transmitter and receiver in one",
+     "de": "Sender und Empfänger in einem"
+    },
+    "b": {
+     "en": "The word transceiver combines transmitter and receiver. One device does both jobs.\n\nNormally it is in receive mode. Only when you press and hold the PTT key does it transmit. When you release the key, it switches back to receiving.\n\nAnyone may buy and own such a radio and listen. Only licensed radio amateurs may transmit on amateur frequencies.",
+     "de": "Der Begriff Transceiver setzt sich aus Transmitter (Sender) und Receiver (Empfänger) zusammen. Ein Gerät erledigt beide Aufgaben.\n\nNormalerweise ist er im Empfangsbetrieb. Erst wenn du die PTT-Taste drückst und hältst, wird gesendet. Lässt du los, schaltet er zurück auf Empfang.\n\nJeder darf ein solches Gerät kaufen, besitzen und damit hören. Senden auf Amateurfunkfrequenzen darf nur ein Funkamateur."
+    },
+    "img": "p117"
+   },
+   {
+    "t": {
+     "en": "Frequency and hertz",
+     "de": "Frequenz und Hertz"
+    },
+    "b": {
+     "en": "The number of oscillations per second is the frequency, measured in hertz (Hz). The mains oscillates 50 times per second, so 50 Hz.\n\nRadio uses much higher frequencies, so we use prefixes: 1 kilohertz (kHz) is 1000 Hz, 1 megahertz (MHz) is 1000 kHz or 1,000,000 Hz.\n\nSo 144 MHz means 144 million oscillations per second.",
+     "de": "Die Anzahl der Schwingungen pro Sekunde nennt man Frequenz. Sie wird in Hertz (Hz) gemessen. Unser Stromnetz schwingt 50-mal pro Sekunde, also 50 Hz.\n\nIm Funk nutzen wir viel höhere Frequenzen, darum gibt es Vorsätze: 1 Kilohertz (kHz) sind 1000 Hz, 1 Megahertz (MHz) sind 1000 kHz oder 1000000 Hz.\n\n144 MHz bedeuten also 144 Millionen Schwingungen pro Sekunde."
+    },
+    "tip": {
+     "en": "Remember: 1 MHz = 1000 kHz.",
+     "de": "Merke: 1 MHz = 1000 kHz."
+    }
+   },
+   {
+    "t": {
+     "en": "Choose a mode",
+     "de": "Die Betriebsart wählen"
+    },
+    "b": {
+     "en": "Most transceivers have a MODE switch. Common modes: CW (Morse code), AM, FM and SSB. SSB is sent as LSB or USB.\n\nSSB sends only one sideband and saves power and bandwidth: it is the usual voice mode on shortwave. FM is typical for local voice on VHF and UHF.\n\nOn SSB, tune very gently with the VFO knob. A wrong sideband or a slightly wrong frequency makes speech unintelligible.",
+     "de": "An vielen Funkgeräten gibt es einen Schalter, der meist mit Mode beschriftet ist. Gängig sind CW (Telegrafie), AM, FM und SSB. SSB wird als LSB oder USB gesendet.\n\nSSB sendet nur ein Seitenband und spart Leistung und Bandbreite. Es ist die übliche Sprechbetriebsart auf Kurzwelle. FM ist typisch für lokalen Sprechfunk auf UKW und UHF.\n\nBei SSB stellst du mit dem VFO-Knopf ganz feinfühlig ein. Falsches Seitenband oder leicht falsche Frequenz machen Sprache unverständlich."
+    },
+    "tip": {
+     "en": "Class N can always use USB because of the allowed bands.",
+     "de": "Mit Klasse N nutzt du wegen der erlaubten Bänder immer USB."
+    }
+   },
+   {
+    "t": {
+     "en": "Bands by wavelength",
+     "de": "Bänder nach Wellenlänge"
+    },
+    "b": {
+     "en": "Amateur bands are named after the rounded wavelength. Class N may use 28 to 29.7 MHz (10 m band), 144 to 146 MHz (2 m band) and 430 to 440 MHz (70 cm band).\n\nHigher classes get more bands. For instance 14.205 MHz lies in the 20 m band: 300 divided by about 14 MHz is roughly 21 m, which is rounded to 20 m.\n\nListen first, then ask whether the frequency is free.",
+     "de": "Amateurfunkbänder werden nach der gerundeten Wellenlänge benannt. Mit Klasse N darfst du 28 bis 29,7 MHz (10-m-Band), 144 bis 146 MHz (2-m-Band) und 430 bis 440 MHz (70-cm-Band) nutzen.\n\nHöhere Klassen bekommen weitere Bänder. So liegt 14,205 MHz im 20-m-Band: 300 geteilt durch rund 14 MHz sind etwa 21 m, gerundet also 20 m.\n\nErst hören, dann fragen, ob die Frequenz frei ist."
+    },
+    "img": "d749"
+   }
+  ]
  },
  {
   "id": "mic",
@@ -1419,6 +2062,80 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "Microphone and speech signal",
+       "de": "Mikrofon und Sprachsignal"
+      },
+      "b": {
+       "en": "A microphone converts the sound wave into an electrical signal: low and high, quiet and loud tones become slow and fast oscillations of small and large amplitude. For radio, speech is limited to about 300 to 2700 Hz, a bandwidth of 2400 Hz.\n\nTwo common types: a dynamic microphone is rugged and needs no power. A condenser (electret) microphone is more sensitive but needs a small bias voltage, often supplied by the radio.\n\nAn equalizer in the microphone amplifier can lift the higher speech frequencies and cut the lows for better intelligibility.",
+       "de": "Ein Mikrofon wandelt die Schallwelle in ein elektrisches Signal um. Für den Funk wird Sprache auf etwa 300 bis 2700 Hz begrenzt, also 2400 Hz Bandbreite.\n\nZwei gängige Bauarten: Das dynamische Mikrofon ist robust und braucht keine Spannung. Das Kondensator-(Elektret-)Mikrofon ist empfindlicher, braucht aber eine kleine Vorspannung, oft vom Funkgerät geliefert.\n\nEin Equalizer kann hohe Sprachfrequenzen anheben und tiefe abschwächen."
+      },
+      "tip": {
+       "en": "Electret microphones on a radio jack: the bias comes from the radio.",
+       "de": "Elektret-Mikrofon am Funkgerät: Die Vorspannung kommt vom Funkgerät."
+      }
+     },
+     {
+      "t": {
+       "en": "Mic gain and the ALC meter",
+       "de": "Mikrofonverstärkung und ALC-Anzeige"
+      },
+      "b": {
+       "en": "The ALC (automatic level control) limits the drive of the transmitter stages and reduces the signal when it is overdriven. The ALC meter shows how much it works. Its marked zone (green) is the range in which it corrects without distortion; the red zone means overdrive.\n\nIn SSB a slight reaction on voice peaks is wanted: it evens out loudness and uses the power well. Adjust the microphone gain so that the ALC moves only on the peaks and stays in its zone.",
+       "de": "Die ALC (Automatic Level Control) begrenzt die Aussteuerung der Sendestufen und reduziert das Signal bei Übersteuerung. Die ALC-Anzeige zeigt, wie stark sie eingreift. Im markierten (grünen) Bereich regelt sie verzerrungsfrei, der rote Bereich bedeutet Übersteuerung.\n\nBei SSB ist ein leichtes Ansprechen auf Sprachspitzen erwünscht: Es gleicht Lautstärkeschwankungen aus und nutzt die Sendeleistung gut. Die Mikrofonverstärkung so einstellen, dass die ALC nur auf den Spitzen ausschlägt und im Bereich bleibt."
+      },
+      "tip": {
+       "en": "Raise the gain until the ALC just reacts, then turn it back a little.",
+       "de": "Verstärkung erhöhen, bis die ALC anspricht, dann etwas zurückdrehen."
+      },
+      "img": "d915"
+     },
+     {
+      "t": {
+       "en": "Too much gain: splatter",
+       "de": "Zu viel Pegel: Splatter"
+      },
+      "b": {
+       "en": "Turn the microphone gain too high and the audio stages are overdriven. The signal is distorted and its bandwidth grows beyond the 2.7 kHz that SSB should stay within. This is called splatter. It disturbs stations on neighbouring frequencies.\n\nToo little gain gives weak modulation and less output power. So the gain must be set right, not too high and not too low.\n\nThe same holds for digital modes: if the ALC reacts when you send FT8, the audio from the PC is too strong.",
+       "de": "Wird die Mikrofonverstärkung zu hoch eingestellt, werden die NF-Stufen übersteuert. Das Signal wird verzerrt und seine Bandbreite wächst über die 2,7 kHz hinaus, innerhalb derer SSB bleiben soll. Man nennt das Splatter. Er stört Stationen auf Nachbarfrequenzen.\n\nZu geringe Verstärkung führt zu schwacher Modulation und kleinerer Ausgangsleistung. Die Verstärkung muss also richtig eingestellt werden, nicht zu hoch und nicht zu niedrig.\n\nDasselbe gilt für Digimodes: Spricht die ALC beim Senden von FT8 an, ist das NF-Signal vom PC zu stark."
+      },
+      "tip": {
+       "en": "Ask for a report on your audio; better a clean signal than a loud one.",
+       "de": "Hol dir einen Rapport zur Modulation: lieber sauber als laut."
+      }
+     },
+     {
+      "t": {
+       "en": "Speech processor (compressor)",
+       "de": "Sprachprozessor (Kompressor)"
+      },
+      "b": {
+       "en": "Speech has big swings between loud and quiet. A compressor amplifies loud parts less than quiet parts, so the differences shrink. Then the whole level is raised.\n\nThe average level, and with it the average transmit power, goes up, without raising the peak power. The signal is more penetrating: useful for DX and contests.\n\nDo not overdo it. Too much compression sounds unnatural, is harder to understand and may cause distortion and splatter.",
+       "de": "Sprache schwankt stark zwischen laut und leise. Ein Kompressor verstärkt laute Anteile weniger stark als leise, die Unterschiede werden kleiner. Anschließend wird der Gesamtpegel angehoben.\n\nDer mittlere Pegel und damit die mittlere Sendeleistung steigen, ohne dass die Spitzenleistung erhöht werden muss. Das Signal wird durchdringender: nützlich bei DX und Contest.\n\nNicht übertreiben! Zu starke Kompression klingt unnatürlich, ist schlechter verständlich und kann Verzerrungen und Splatter verursachen."
+      },
+      "tip": {
+       "en": "First set the gain without compressor, then add compression step by step.",
+       "de": "Erst die Verstärkung ohne Kompressor einstellen, dann schrittweise Kompression zuschalten."
+      },
+      "img": "d1043"
+     },
+     {
+      "t": {
+       "en": "PTT and VOX",
+       "de": "PTT und VOX"
+      },
+      "b": {
+       "en": "Normally you switch to transmit with the PTT (push-to-talk) key. Many transceivers offer VOX, voice-operated exchange: the radio switches to transmit automatically as soon as you speak. When you stop, transmission ends after a short delay.\n\nVOX keeps your hands free. But it reacts to any loud sound, so room noise or audio from a speaker can trigger it. Set the VOX sensitivity and delay so that normal pauses do not switch back to receive. Use a headset if you can.",
+       "de": "Normalerweise schaltet man mit der PTT-Taste (push-to-talk) auf Senden. Viele Transceiver bieten auch VOX, voice-operated exchange: Sobald man spricht, schaltet das Funkgerät automatisch auf Senden. Hört man auf zu sprechen, endet die Aussendung nach einer kurzen Verzögerung.\n\nVOX lässt die Hände frei. Es reagiert aber auf jedes laute Geräusch, auch Raumlärm oder Ton aus einem Lautsprecher kann es auslösen. Empfindlichkeit und Verzögerung so einstellen, dass normale Sprechpausen nicht auf Empfang zurückschalten. Am besten ein Headset benutzen."
+      },
+      "tip": {
+       "en": "In pauses the delay time decides: too short chops words, too long blocks replies.",
+       "de": "Die Verzögerung entscheidet: zu kurz schneidet Wörter ab, zu lang blockiert die Gegenstation."
+      }
+     }
     ]
    },
    "3": {
@@ -1527,9 +2244,116 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "Microphone level in dB",
+       "de": "Mikrofonpegel in dB"
+      },
+      "b": {
+       "en": "The microphone amplifier raises the tiny microphone voltage. Levels are compared in dB. Power: 10 x log10(P2/P1). Since P = U^2/R, voltages use a factor 20: g = 20 x log10(U2/U1).\n\nExamples: 10 mV to 100 mV is a factor 10 in voltage, so 20 x log10(10) = +20 dB. Doubling the voltage is +6 dB, a tenfold power is +10 dB, doubled power is +3 dB.\n\nThe amplifier also band-limits the audio to about 300 Hz to 3 kHz, which is enough for speech.",
+       "de": "Der Mikrofonverstärker hebt die kleine Mikrofonspannung an. Pegel vergleicht man in dB. Leistung: 10 x log10(P2/P1). Wegen P = U^2/R gilt für Spannungen der Faktor 20: g = 20 x log10(U2/U1).\n\nBeispiele: 10 mV auf 100 mV ist Spannungsfaktor 10, also 20 x log10(10) = +20 dB. Doppelte Spannung sind +6 dB, zehnfache Leistung +10 dB, doppelte Leistung +3 dB.\n\nDer Verstärker begrenzt das NF-Signal außerdem auf etwa 300 Hz bis 3 kHz, das reicht für Sprache."
+      },
+      "tip": {
+       "en": "Voltage: 20 x log. Power: 10 x log. Mixing these up is a classic error.",
+       "de": "Spannung: 20 x log, Leistung: 10 x log. Diese Verwechslung ist ein Klassiker."
+      }
+     },
+     {
+      "t": {
+       "en": "FM deviation",
+       "de": "Frequenzhub bei FM"
+      },
+      "b": {
+       "en": "In FM the information is in the frequency change of the carrier. The frequency deviation is how far the instantaneous frequency swings away from the carrier. A louder microphone signal gives a larger deviation, while the audio frequency only decides how often the frequency swings.\n\nToo much deviation widens the bandwidth and disturbs adjacent channels. So the microphone signal is limited in amplitude first and then applied to the carrier, e.g. with a capacitance diode in the oscillator.",
+       "de": "Bei FM steckt die Information in der Frequenzänderung des Trägers. Der Frequenzhub ist die Auslenkung der momentanen Frequenz vom Träger. Ein lauteres Mikrofonsignal ergibt einen größeren Hub, die NF-Frequenz bestimmt nur, wie oft die Frequenz schwingt.\n\nZu viel Hub vergrößert die Bandbreite und stört Nachbarkanäle. Darum wird das Mikrofonsignal zuerst in der Amplitude begrenzt und dann auf den Träger moduliert, z. B. mit einer Kapazitätsdiode im Oszillator."
+      }
+     },
+     {
+      "t": {
+       "en": "Modulation index and Carson",
+       "de": "Modulationsindex und Carson"
+      },
+      "b": {
+       "en": "The modulation index relates deviation to audio frequency: m = deviation / f_audio. With 3 kHz deviation and a 1 kHz tone: m = 3.\n\nCarson's rule estimates the occupied bandwidth, which holds about 99 % of the power:\n\nB = 2 x (deviation + highest audio frequency)\n\nExample: deviation 3 kHz, highest audio frequency 3 kHz gives B = 2 x (3 + 3) kHz = 12 kHz. Rearranged, the formula also gives the deviation from a given bandwidth.",
+       "de": "Der Modulationsindex setzt den Hub ins Verhältnis zur NF-Frequenz: m = Hub / f_NF. Bei 3 kHz Hub und 1 kHz Ton ist m = 3.\n\nDie Carson-Formel schätzt die belegte Bandbreite ab, in der etwa 99 % der Leistung liegen:\n\nB = 2 x (Hub + höchste NF-Frequenz)\n\nBeispiel: Hub 3 kHz, höchste NF-Frequenz 3 kHz ergibt B = 2 x (3 + 3) kHz = 12 kHz. Durch Umstellen erhält man auch den Hub aus einer gegebenen Bandbreite."
+      },
+      "img": "d910"
+     },
+     {
+      "t": {
+       "en": "Overdriving SSB: splatter",
+       "de": "SSB übersteuert: Splatter"
+      },
+      "b": {
+       "en": "If the microphone gain is too high, the audio stages and the SSB modulator are overdriven. The signal is distorted and intermodulation products appear outside the normal bandwidth of 2.7 kHz. This is called splatter and disturbs neighbouring stations.\n\nThe ALC meter helps: slowly raise the audio level until the ALC just responds, then turn it back a little. A slight ALC action is fine, the red range is too much.",
+       "de": "Ist die Mikrofonverstärkung zu hoch, werden die NF-Stufen und der SSB-Modulator übersteuert. Das Signal wird verzerrt, und Intermodulationsprodukte entstehen außerhalb der normalen Bandbreite von 2,7 kHz. Man nennt das Splatter; er stört benachbarte Stationen.\n\nALC-Instrument beachten: NF-Pegel langsam erhöhen, bis die ALC gerade anspricht, dann etwas zurückdrehen. Der rote Bereich ist zu viel."
+      },
+      "img": "d914"
+     },
+     {
+      "t": {
+       "en": "Speech compressor",
+       "de": "Sprachkompressor"
+      },
+      "b": {
+       "en": "Speech has large level swings between quiet and loud parts (dynamic range). A speech compressor amplifies loud parts less than quiet ones, so the differences shrink. Afterwards the overall level can be raised. The average transmit power increases without a higher peak power, which helps in DX and contests.\n\nToo much compression sounds unnatural, hurts readability and can overdrive later stages. Then splatter appears again. Set the mic gain first, then add compression step by step.",
+       "de": "Sprache hat große Pegelunterschiede zwischen leisen und lauten Anteilen (Dynamikumfang). Ein Sprachkompressor verstärkt laute Anteile weniger als leise, die Unterschiede werden kleiner. Danach lässt sich der Gesamtpegel anheben. Die mittlere Sendeleistung steigt, ohne dass die Spitzenleistung wächst; das hilft bei DX und im Contest.\n\nZu viel Kompression klingt unnatürlich, verschlechtert die Verständlichkeit und kann spätere Stufen übersteuern (Splatter). Erst die Mikrofonverstärkung einstellen, dann die Kompression schrittweise zuschalten."
+      },
+      "img": "d1043"
+     }
     ]
    }
-  }
+  },
+  "cards": [
+   {
+    "t": {
+     "en": "From sound to signal",
+     "de": "Vom Schall zum Signal"
+    },
+    "b": {
+     "en": "When you speak, you create many deep and high, quiet and loud tones as sound waves. This is your speech signal.\n\nThe microphone converts it into an electrical signal: deep and high tones become slow and fast oscillations, quiet and loud tones become small and large amplitudes.\n\nNow your voice can be processed inside the radio.",
+     "de": "Wenn du sprichst, entstehen viele tiefe und hohe sowie leise und laute Töne als Schallwellen. Das nennt man Sprachsignal.\n\nDas Mikrofon wandelt es in ein elektrisches Signal um: Aus tiefen und hohen Tönen werden langsame und schnelle Schwingungen, aus leisen und lauten Tönen kleine und große Amplituden.\n\nSo kann deine Stimme im Funkgerät weiterverarbeitet werden."
+    },
+    "img": "d730"
+   },
+   {
+    "t": {
+     "en": "Push to talk",
+     "de": "Push to talk"
+    },
+    "b": {
+     "en": "PTT stands for push to talk. It is the function that switches the transceiver to transmit.\n\nThe transceiver starts in receive mode. Press and hold PTT to transmit, release it to listen again. On hand microphones the PTT key is usually on the side of the mic.\n\nThe voice from the microphone is amplified in the radio and then used to modulate the radio signal.",
+     "de": "PTT ist die Abkürzung für push to talk, also drücken, um zu senden. So heißt die Funktion, die den Transceiver auf Sendung schaltet.\n\nNormalerweise ist der Transceiver im Empfangsbetrieb. Halte PTT gedrückt, um zu senden, und lass los, um wieder zu hören. Die PTT-Taste ist meistens am Mikrofon angebracht.\n\nDie Stimme vom Mikrofon wird im Funkgerät verstärkt und dient dann zur Modulation des Funksignals."
+    },
+    "img": "p118"
+   },
+   {
+    "t": {
+     "en": "What is modulation?",
+     "de": "Was ist Modulation?"
+    },
+    "b": {
+     "en": "A radio wave alone carries no message. It is the carrier. To send information, you change the carrier: that is modulation.\n\nWith Morse code the carrier is switched on and off. With AM the amplitude is changed, with FM the frequency. The signal that does this, such as your voice from the microphone, is the modulation signal.\n\nThe receiver then recovers it from the wave.",
+     "de": "Eine Funkwelle allein trägt noch keine Nachricht. Sie ist der Träger. Um Information zu übertragen, beeinflusst man den Träger gezielt: Das ist Modulation.\n\nBei Morsetelegrafie wird der Träger ein- und ausgeschaltet. Bei AM verändert man die Amplitude, bei FM die Frequenz. Das Signal, das dies bewirkt, etwa deine Stimme vom Mikrofon, heißt Modulationssignal.\n\nDer Empfänger gewinnt die Information aus der Welle zurück."
+    }
+   },
+   {
+    "t": {
+     "en": "Speak clearly, not loudly",
+     "de": "Deutlich, nicht laut"
+    },
+    "b": {
+     "en": "Too much microphone gain or shouting overdrives the audio stages. Your signal gets distorted and becomes wider, so-called splatter, which can disturb neighbouring stations.\n\nToo little audio reduces your output power and modulation.\n\nSo speak at normal volume, clearly and close enough to the microphone, and adjust the mic gain moderately.",
+     "de": "Zu viel Mikrofonverstärkung oder Schreien übersteuert die Niederfrequenzstufen. Dein Signal wird verzerrt und breiter, man spricht von Splattern. Das kann benachbarte Stationen stören.\n\nZu wenig Sprachsignal verringert dagegen Modulation und Ausgangsleistung.\n\nSprich also in normaler Lautstärke, deutlich und nah genug am Mikrofon, und stelle die Mikrofonverstärkung mäßig ein."
+    },
+    "tip": {
+     "en": "Best setting: not too high, not too low. Ask for a signal report.",
+     "de": "Am besten nicht zu hoch, nicht zu niedrig einstellen. Frage nach einem Rapport."
+    }
+   }
+  ]
  },
  {
   "id": "speaker",
@@ -1747,6 +2571,71 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "Power at the speaker: P = U² / R",
+       "de": "Leistung am Lautsprecher: P = U² / R"
+      },
+      "b": {
+       "en": "Speakers usually have an impedance of 4 or 8 ohms. The power follows from voltage and resistance: P = U x I and with I = U / R it becomes P = U² / R. For current: P = I² x R.\n\nUse RMS (effective) values for alternating voltage. Peak value and RMS differ by a factor of square root of 2.\n\nExample: 4 V RMS on an 8 ohm speaker gives P = 4² / 8 = 16 / 8 = 2 W.",
+       "de": "Lautsprecher haben meist eine Impedanz von 4 oder 8 Ohm. Die Leistung folgt aus Spannung und Widerstand: P = U · I und mit I = U / R wird daraus P = U² / R. Für den Strom gilt P = I² · R.\n\nBei Wechselspannung rechnet man mit Effektivwerten. Spitzenwert und Effektivwert unterscheiden sich um den Faktor Wurzel aus 2.\n\nBeispiel: 4 V effektiv an einem 8-Ohm-Lautsprecher ergeben P = 4² / 8 = 16 / 8 = 2 W."
+      },
+      "tip": {
+       "en": "Keep the units in volts, ohms and watts when calculating.",
+       "de": "Beim Rechnen in Volt, Ohm und Watt bleiben."
+      }
+     },
+     {
+      "t": {
+       "en": "Speakers in series and parallel",
+       "de": "Lautsprecher in Reihe und parallel"
+      },
+      "b": {
+       "en": "In series the resistances add up: R = R1 + R2. The total is larger than the largest single value.\n\nIn parallel the reciprocals add: 1/R = 1/R1 + 1/R2, for two speakers R = (R1 x R2) / (R1 + R2). The total is smaller than the smallest single value.\n\nFor equal speakers in parallel, divide the value by the number. Two 8 ohm speakers in parallel: 8 / 2 = 4 ohms. Two 8 ohm speakers in series: 16 ohms.",
+       "de": "In Reihe addieren sich die Widerstände: R = R1 + R2. Der Gesamtwert ist größer als der größte Einzelwert.\n\nParallel addieren sich die Kehrwerte: 1/R = 1/R1 + 1/R2, bei zwei Lautsprechern R = (R1 · R2) / (R1 + R2). Der Gesamtwert ist kleiner als der kleinste Einzelwert.\n\nBei gleichen Lautsprechern parallel teilt man den Wert durch die Anzahl. Zwei 8-Ohm-Lautsprecher parallel: 8 / 2 = 4 Ohm. Zwei 8-Ohm-Lautsprecher in Reihe: 16 Ohm."
+      },
+      "tip": {
+       "en": "Amplifiers have a minimum load: do not go below it.",
+       "de": "Verstärker haben eine Mindestlast: nicht darunter gehen."
+      },
+      "img": "d945"
+     },
+     {
+      "t": {
+       "en": "Decibels: 3 dB is double",
+       "de": "Dezibel: 3 dB sind das Doppelte"
+      },
+      "b": {
+       "en": "Power ratios are given in decibels: g = 10 x log10(P2 / P1) dB. Important values: 3 dB is a factor of 2 in power, 6 dB is 4, 10 dB is 10 and 20 dB is 100. 0 dB means no change.\n\nExample: an amplifier raises 50 W to 100 W. The ratio is 2, so g = 10 x log10(2) = 3 dB.\n\nSo an audio output raised by 3 dB has roughly double the power; 6 dB means four times. A trick for values ending in 0: 30 dB means three zeros, a factor of 1000.",
+       "de": "Leistungsverhältnisse gibt man in Dezibel an: g = 10 · log10(P2 / P1) dB. Wichtige Werte: 3 dB sind Faktor 2 in der Leistung, 6 dB Faktor 4, 10 dB Faktor 10 und 20 dB Faktor 100. 0 dB bedeutet keine Änderung.\n\nBeispiel: Ein Verstärker hebt 50 W auf 100 W an. Das Verhältnis ist 2, also g = 10 · log10(2) = 3 dB.\n\nEine um 3 dB erhöhte NF-Ausgangsleistung ist also etwa doppelt so groß, bei 6 dB ist sie viermal so groß. Trick bei Werten auf 0: 30 dB heißt drei Nullen, Faktor 1000."
+      },
+      "tip": {
+       "en": "Adding dB means multiplying the factors: 9 dB = 6 + 3 dB = 4 x 2 = 8.",
+       "de": "Dezibel addieren heißt Faktoren multiplizieren: 9 dB = 6 + 3 dB = 4 · 2 = 8."
+      }
+     },
+     {
+      "t": {
+       "en": "Narrow audio filter for CW",
+       "de": "Schmales NF-Filter für CW"
+      },
+      "b": {
+       "en": "Noise is proportional to bandwidth. A CW signal is a single tone and needs only a few hundred hertz: about 300 Hz at 20 words per minute. A narrow filter lets only the tone pass and cuts the noise and neighbouring signals around it.\n\nThe narrower the bandwidth, the better the selectivity and the lower the noise in your speaker.\n\nA notch filter does the opposite: it cuts out one narrow frequency, such as an annoying carrier, and leaves the rest of the audio nearly untouched.",
+       "de": "Rauschen ist proportional zur Bandbreite. Ein CW-Signal ist ein einzelner Ton und braucht nur wenige hundert Hertz: etwa 300 Hz bei 20 Wörtern pro Minute. Ein schmales Filter lässt nur den Ton durch und unterdrückt das Rauschen und Nachbarsignale um ihn herum.\n\nJe schmaler die Bandbreite, desto besser die Trennschärfe und desto weniger Rauschen im Lautsprecher.\n\nEin Notch-Filter (Kerbfilter) macht das Gegenteil: Es unterdrückt eine einzelne schmale Frequenz, z. B. einen störenden Träger, und lässt den Rest der NF nahezu unberührt."
+      }
+     },
+     {
+      "t": {
+       "en": "Noise reduction and noise blanker",
+       "de": "Rauschunterdrückung und Noise Blanker"
+      },
+      "b": {
+       "en": "Modern receivers use DSP (digital signal processing). Digital noise reduction (NR, DNR) tells wanted signal from noise and suppresses the noise. It helps with weak signals, as long as they do not vanish completely in the noise.\n\nImpulse noise, such as car ignition, machines or switching supplies, is removed by the noise blanker (NB).\n\nAn auto-notch filter finds steady carriers in the audio and removes them by itself. Turn these functions on when needed and listen: too much processing can distort speech.",
+       "de": "Moderne Empfänger nutzen digitale Signalverarbeitung (DSP). Die digitale Rauschunterdrückung (NR, DNR) unterscheidet Nutzsignal und Rauschen und unterdrückt letzteres. Sie hilft bei schwachen Signalen, solange diese nicht ganz im Rauschen verschwinden.\n\nImpulsförmige Störungen, etwa durch Zündfunken, Maschinen oder Schaltnetzteile, beseitigt der Störaustaster (Noise Blanker, NB).\n\nEin Auto-Notch-Filter erkennt stehende Träger im NF-Signal und blendet sie selbst aus. Nur bei Bedarf einschalten: Zu viel Bearbeitung verzerrt Sprache."
+      }
+     }
     ]
    },
    "3": {
@@ -1855,9 +2744,118 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "Decibel for power",
+       "de": "Dezibel bei Leistung"
+      },
+      "b": {
+       "en": "The decibel compares two powers logarithmically: g = 10 x log10(P2/P1). Multiplication becomes addition, which makes chains of gains and losses easy.\n\nValues to know: factor 2 is +3 dB, factor 4 is +6 dB, factor 10 is +10 dB, factor 100 is +20 dB. Negative dB means a factor below 1: -3 dB is 0.5, -10 dB is 0.1.\n\nExample: an audio amplifier goes from 1 W to 10 W. That is a factor 10, so +10 dB.",
+       "de": "Das Dezibel vergleicht zwei Leistungen logarithmisch: g = 10 x log10(P2/P1). Multiplikationen werden zu Additionen, so sind Ketten aus Verstärkung und Dämpfung einfach zu rechnen.\n\nWichtige Werte: Faktor 2 sind +3 dB, Faktor 4 sind +6 dB, Faktor 10 sind +10 dB, Faktor 100 sind +20 dB. Negative dB bedeuten einen Faktor unter 1: -3 dB sind 0,5, -10 dB sind 0,1.\n\nBeispiel: Ein NF-Verstärker geht von 1 W auf 10 W. Das ist Faktor 10, also +10 dB."
+      }
+     },
+     {
+      "t": {
+       "en": "Decibel for voltage",
+       "de": "Dezibel bei Spannung"
+      },
+      "b": {
+       "en": "For voltages the factor is 20, because power grows with the square of the voltage (P = U^2/R):\n\ng = 20 x log10(U2/U1)\n\nDoubling the audio voltage is +6 dB (20 x log10 2). A tenfold voltage is +20 dB and a hundredfold voltage +40 dB. Half the voltage is -6 dB.\n\nCheck: doubled voltage means four times the power, and four times the power is 10 x log10(4) = +6 dB. Both ways give the same result.",
+       "de": "Bei Spannungen gilt der Faktor 20, weil die Leistung mit dem Quadrat der Spannung wächst (P = U^2/R):\n\ng = 20 x log10(U2/U1)\n\nVerdoppelt sich die NF-Spannung, sind das +6 dB (20 x log10 2). Zehnfache Spannung sind +20 dB, hundertfache +40 dB. Halbe Spannung sind -6 dB.\n\nProbe: Doppelte Spannung bedeutet vierfache Leistung, und vierfache Leistung sind 10 x log10(4) = +6 dB. Beide Wege führen zum selben Ergebnis."
+      }
+     },
+     {
+      "t": {
+       "en": "Amplifier voltage and current",
+       "de": "Spannung am Lautsprecher"
+      },
+      "b": {
+       "en": "An audio amplifier delivers power P into the speaker impedance R. From P = U^2/R follows:\n\nU = sqrt(P x R)\n\nExample: 50 W into 8 ohms. U = sqrt(50 x 8) = sqrt(400) = 20 V (RMS). The current is I = U/R = 20 V / 8 ohms = 2.5 A. Check: 20 V x 2.5 A = 50 W.\n\nThe same power into 4 ohms needs only 14.1 V, but 3.5 A.",
+       "de": "Ein NF-Verstärker gibt die Leistung P an die Lautsprecherimpedanz R ab. Aus P = U^2/R folgt:\n\nU = Wurzel(P x R)\n\nBeispiel: 50 W an 8 Ohm. U = Wurzel(50 x 8) = Wurzel(400) = 20 V (Effektivwert). Der Strom ist I = U/R = 20 V / 8 Ohm = 2,5 A. Probe: 20 V x 2,5 A = 50 W.\n\nDieselbe Leistung an 4 Ohm braucht nur 14,1 V, dafür aber 3,5 A."
+      }
+     },
+     {
+      "t": {
+       "en": "Digital audio: sampling",
+       "de": "Digitales Audio: Abtastung"
+      },
+      "b": {
+       "en": "To process audio digitally, an A/D converter samples the signal at fixed time steps. The sampling theorem of Nyquist and Shannon says: the sampling rate must be more than twice the highest signal frequency, f_s > 2 x f_max.\n\nExample: speech up to 3 kHz needs more than 6 kHz. A CD uses 44.1 kHz, so it reproduces up to about 22 kHz.\n\nIf the rate is too low, aliasing occurs and the signal cannot be rebuilt correctly. An anti-alias filter before the converter removes higher frequencies.",
+       "de": "Zur digitalen Verarbeitung tastet ein A/D-Umsetzer das Signal in festen Zeitabständen ab. Das Abtasttheorem von Nyquist und Shannon besagt: Die Abtastrate muss mehr als das Doppelte der höchsten Signalfrequenz betragen, f_s > 2 x f_max.\n\nBeispiel: Sprache bis 3 kHz braucht mehr als 6 kHz. Eine CD nutzt 44,1 kHz und gibt daher Frequenzen bis etwa 22 kHz wieder.\n\nIst die Rate zu klein, entsteht Aliasing und das Signal lässt sich nicht richtig rekonstruieren. Ein Anti-Alias-Filter vor dem Umsetzer entfernt höhere Frequenzen."
+      },
+      "img": "d411"
+     },
+     {
+      "t": {
+       "en": "DSP: from antenna to speaker",
+       "de": "DSP: von der Antenne zum Lautsprecher"
+      },
+      "b": {
+       "en": "In a modern rig the audio path is digital: the signal is sampled by an A/D converter, processed by a digital signal processor (DSP) and turned back into an analogue voltage by a D/A converter. The NF amplifier then drives the speaker.\n\nFilters, noise reduction and notch filters are calculations on the samples, so they can be changed by software. More samples per second and more bits per sample mean higher quality, but also more computing work.",
+       "de": "In einem modernen Funkgerät ist der NF-Weg digital: Der A/D-Umsetzer tastet das Signal ab, ein digitaler Signalprozessor (DSP) verarbeitet es, und ein D/A-Umsetzer macht daraus wieder eine analoge Spannung. Der NF-Verstärker treibt dann den Lautsprecher.\n\nFilter, Rauschunterdrückung und Notchfilter sind Rechenschritte auf den Abtastwerten und lassen sich per Software ändern. Mehr Abtastwerte pro Sekunde und mehr Bit je Wert bedeuten höhere Qualität, aber auch mehr Rechenaufwand."
+      },
+      "img": "d911"
+     }
     ]
    }
-  }
+  },
+  "cards": [
+   {
+    "t": {
+     "en": "Back to sound",
+     "de": "Zurück zum Schall"
+    },
+    "b": {
+     "en": "In the receiver the demodulated signal is amplified by an audio amplifier. The last step is the loudspeaker: it converts the electrical oscillation into a sound wave and makes it audible again.\n\nHeadphones do the same job directly at your ears.\n\nSo the speaker is the counterpart of the microphone: the microphone turns sound into an electrical signal, the speaker turns it back into sound.",
+     "de": "Im Empfänger wird das demodulierte Signal von einem Niederfrequenz-Verstärker verstärkt. Den letzten Schritt macht der Lautsprecher: Er wandelt die elektrische Schwingung in eine Schallwelle um und macht sie wieder hörbar.\n\nKopfhörer erledigen dieselbe Aufgabe direkt an deinen Ohren.\n\nDer Lautsprecher ist also das Gegenstück zum Mikrofon: Das Mikrofon macht aus Schall ein elektrisches Signal, der Lautsprecher macht wieder Schall daraus."
+    }
+   },
+   {
+    "t": {
+     "en": "How wide is speech?",
+     "de": "Wie breit ist Sprache?"
+    },
+    "b": {
+     "en": "Speech contains deep and high tones, but not arbitrarily high ones. For radio we use only a limited range: roughly 300 to 3000 Hz. That is enough for good intelligibility.\n\nIn the 50ohm example the range is 300 to 2700 Hz. The width of the signal is called bandwidth, here 2700 - 300 = 2400 Hz.\n\nA narrow signal leaves more room for other stations.",
+     "de": "Sprache enthält tiefe und hohe Töne, aber keine beliebig hohen. Für Funk nutzt man nur einen begrenzten Bereich: grob 300 bis 3000 Hz. Das reicht für gute Verständlichkeit.\n\nIm Beispiel von 50ohm sind es 300 bis 2700 Hz. Die Breite des Signals heißt Bandbreite, hier 2700 - 300 = 2400 Hz.\n\nEin schmales Signal lässt mehr Platz für andere Stationen."
+    },
+    "tip": {
+     "en": "Audio range: about 300 Hz to 3 kHz.",
+     "de": "Sprachbereich: etwa 300 Hz bis 3 kHz."
+    },
+    "img": "d475"
+   },
+   {
+    "t": {
+     "en": "Headphones for weak stations",
+     "de": "Kopfhörer für schwache Stationen"
+    },
+    "b": {
+     "en": "Headphones help you hear weak stations better, because they bring the sound directly into your ears and keep room noise out.\n\nThey are also polite: neighbours and family are not disturbed when you listen late in the evening.\n\nSet the volume to a comfortable level. A weak signal you can barely hear is often readable with headphones.",
+     "de": "Kopfhörer helfen dir, schwache Stationen besser zu hören, weil sie den Ton direkt ans Ohr bringen und Raumgeräusche fernhalten.\n\nSie sind auch rücksichtsvoll: Nachbarn und Familie werden nicht gestört, wenn du spät abends hörst.\n\nStelle eine angenehme Lautstärke ein. Ein Signal, das du kaum hörst, ist mit Kopfhörern oft noch lesbar."
+    },
+    "tip": {
+     "en": "Keep the volume moderate to protect your ears.",
+     "de": "Lautstärke moderat halten, das schont die Ohren."
+    }
+   },
+   {
+    "t": {
+     "en": "Comparing levels: decibel",
+     "de": "Pegel vergleichen: Dezibel"
+    },
+    "b": {
+     "en": "To compare power levels we use the decibel (dB). It is a logarithmic scale and handles huge ratios easily.\n\nA few values: 0 dB is factor 1, 3 dB is factor 2, 10 dB is factor 10, 20 dB is factor 100.\n\nYou know dB from the S-meter: signals stronger than S9 are shown in dB above S9, for example 59+20 dB.",
+     "de": "Um Leistungen zu vergleichen, nutzt man das Dezibel (dB). Es ist eine logarithmische Skala und kommt mit riesigen Verhältnissen gut zurecht.\n\nEinige Werte: 0 dB sind Faktor 1, 3 dB sind Faktor 2, 10 dB sind Faktor 10, 20 dB sind Faktor 100.\n\nDas dB kennst du vom S-Meter: Signale stärker als S9 werden in dB über S9 angegeben, z. B. 59+20 dB."
+    },
+    "tip": {
+     "en": "Trick: for values ending in 0, the leading digit counts the zeros: 30 dB = factor 1000.",
+     "de": "Trick: Bei Werten auf 0 zählt die Ziffer die Nullen: 30 dB = Faktor 1000."
+    }
+   }
+  ]
  },
  {
   "id": "swr",
@@ -2075,6 +3073,77 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "What SWR tells you",
+       "de": "Was das SWR aussagt"
+      },
+      "b": {
+       "en": "Ham transceivers and coax use 50 ohms. If the antenna's feed impedance does not match the cable, part of the power is reflected back towards the radio instead of being radiated. When they match, we speak of matching.\n\nA SWR meter sits between transceiver and antenna and measures forward and reflected power. SWR 1 is perfect: nothing is reflected. A disconnected, open or shorted cable gives SWR near infinity, everything is reflected, which can even destroy the transmitter stage. Modern radios reduce power automatically.",
+       "de": "Amateurfunkgeräte und Koaxkabel haben 50 Ohm. Passt der Speisewiderstand der Antenne nicht zum Kabel, wird Leistung zum Funkgerät zurück reflektiert und nicht abgestrahlt. Passt er, liegt Anpassung vor.\n\nDas SWR-Meter wird zwischen Transceiver und Antenne eingeschleift und misst vor- und rücklaufende Leistung. SWR 1 ist perfekt: nichts wird reflektiert. Bei fehlender Antenne, Unterbrechung oder Kurzschluss geht das SWR gegen unendlich: alles wird reflektiert, im Extremfall wird die Endstufe zerstört. Moderne Geräte regeln die Leistung herunter."
+      },
+      "tip": {
+       "en": "SWR meter is not the S-meter: SWR on transmit, S on receive.",
+       "de": "SWR-Meter ist nicht das S-Meter: SWR beim Senden, S beim Empfang."
+      },
+      "img": "d670"
+     },
+     {
+      "t": {
+       "en": "SWR from resistances",
+       "de": "SWR aus Widerständen"
+      },
+      "b": {
+       "en": "For a purely resistive load R_a on a line of impedance Z, the SWR is the ratio of the two, always larger over smaller, so the result is at least 1.\n\nA 100 ohm load on 50 ohm coax gives SWR = 100 / 50 = 2. A 10 ohm load gives 50 / 10 = 5. A 50 ohm load gives 1.\n\nThe SWR is also the ratio of the maximum to the minimum voltage on the line, U_max / U_min. These maxima are half a wavelength apart. A folded dipole, with about 240 to 300 ohms, on 50 ohm coax gives a SWR of about 5 to 6.",
+       "de": "Bei einer rein ohmschen Last R_a an einer Leitung mit dem Wellenwiderstand Z ist das SWR das Verhältnis beider Werte, stets größer durch kleiner, sodass sich mindestens 1 ergibt.\n\nEine Last von 100 Ohm an 50-Ohm-Koax ergibt SWR = 100 / 50 = 2. Eine Last von 10 Ohm ergibt 50 / 10 = 5. Bei 50 Ohm ist das SWR 1.\n\nDas SWR ist auch das Verhältnis der größten zur kleinsten Spannung auf der Leitung, U_max / U_min. Die Maxima liegen eine halbe Wellenlänge auseinander. Ein Faltdipol mit etwa 240 bis 300 Ohm an 50-Ohm-Koax hat ein SWR von etwa 5 bis 6."
+      },
+      "tip": {
+       "en": "Always divide larger by smaller: SWR is never below 1.",
+       "de": "Immer groß durch klein teilen: SWR ist nie kleiner als 1."
+      },
+      "img": "d978"
+     },
+     {
+      "t": {
+       "en": "SWR and reflected power",
+       "de": "SWR und reflektierte Leistung"
+      },
+      "b": {
+       "en": "With forward power P_V and reflected power P_R: SWR = (sqrt(P_V) + sqrt(P_R)) / (sqrt(P_V) - sqrt(P_R)).\n\nExample: 100 W forward and 25 W reflected give (10 + 5) / (10 - 5) = 3. So SWR 3 reflects 25 percent.\n\nMemorise the table: SWR 1 gives 0 percent, 1.5 gives 4 percent, 2 gives 11 percent, 3 gives 25 percent, 6 gives 51 percent, infinity gives 100 percent. Equivalent: reflection factor r = (SWR - 1) / (SWR + 1), and the reflected power share is r². At 1.5 that is 0.2² = 0.04.",
+       "de": "Mit vorlaufender Leistung P_V und rücklaufender Leistung P_R gilt: SWR = (Wurzel(P_V) + Wurzel(P_R)) / (Wurzel(P_V) - Wurzel(P_R)).\n\nBeispiel: 100 W vorlaufend und 25 W rücklaufend ergeben (10 + 5) / (10 - 5) = 3. SWR 3 heißt also 25 Prozent Reflexion.\n\nDie Tabelle merken: SWR 1 gibt 0 Prozent, 1,5 gibt 4 Prozent, 2 gibt 11 Prozent, 3 gibt 25 Prozent, 6 gibt 51 Prozent, unendlich gibt 100 Prozent. Gleichwertig: Reflexionsfaktor r = (SWR - 1) / (SWR + 1), der reflektierte Leistungsanteil ist r². Bei 1,5 sind das 0,2² = 0,04."
+      },
+      "tip": {
+       "en": "SWR 1.5 loses only 4 %: usually no reason to worry.",
+       "de": "SWR 1,5 verliert nur 4 %: meist kein Grund zur Sorge."
+      }
+     },
+     {
+      "t": {
+       "en": "Measuring SWR properly",
+       "de": "SWR richtig messen"
+      },
+      "b": {
+       "en": "Where you put the meter matters. Directly at the antenna it shows how well the antenna is matched. Directly behind the transmitter it shows how well the transmitter is matched to the whole antenna system, including filters and tuner.\n\nCable loss fools you: it reduces both forward and reflected power, so a long cable makes the SWR look better. Example: 5 dB loss each way and total reflection at the end still reads only about SWR 2.\n\nOn a cross-needle meter, read the SWR where the two pointers cross.",
+       "de": "Der Einbauort ist wichtig. Direkt an der Antenne zeigt das Messgerät, wie gut die Antenne angepasst ist. Direkt hinter dem Sender zeigt es die Anpassung der gesamten Antennenanlage, samt Filter und Tuner.\n\nKabeldämpfung täuscht: Sie verringert vor- und rücklaufende Leistung, ein langes Kabel lässt das SWR besser aussehen. Beispiel: 5 dB Dämpfung je Richtung und Totalreflexion am Ende ergeben nur SWR 2.\n\nBeim Kreuzzeigerinstrument liest man das SWR am Schnittpunkt der Zeiger ab."
+      },
+      "img": "p143"
+     },
+     {
+      "t": {
+       "en": "Matching with an ATU",
+       "de": "Anpassen mit dem Antennentuner"
+      },
+      "b": {
+       "en": "An antenna tuner (ATU, matching unit) does not change the antenna. It transforms the impedance so that the transceiver sees 50 ohms. Transformers, quarter-wave lines or networks of coils and capacitors can do this; a pi filter is often used as a tuner.\n\nThe antenna itself stays as it is.\n\nTune only on a free frequency or into a dummy load, so you do not disturb other stations. As a rule, SWR 1.5 loses only 4 percent and needs no correction.",
+       "de": "Ein Antennentuner (Anpassgerät) verändert nicht die Antenne. Er transformiert die Impedanz so, dass das Funkgerät 50 Ohm sieht. Das leisten Transformatoren, Viertelwellenleitungen oder Netzwerke aus Spulen und Kondensatoren; oft dient ein Pi-Filter als Tuner.\n\nDie Antenne selbst bleibt unverändert.\n\nNur auf freier Frequenz oder an einem Dummy Load abstimmen, damit man andere Stationen nicht stört. Faustregel: SWR 1,5 verliert nur 4 Prozent und braucht keine Korrektur."
+      },
+      "tip": {
+       "en": "Tuners also transmit while tuning: pick a free frequency first.",
+       "de": "Tuner senden beim Abstimmen: vorher eine freie Frequenz suchen."
+      }
+     }
     ]
    },
    "3": {
@@ -2183,9 +3252,137 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "SWR from power and resistance",
+       "de": "SWR aus Leistung und Widerstand"
+      },
+      "b": {
+       "en": "SWR (s) can be found from forward power P_f and reflected power P_r:\n\ns = (sqrt(P_f) + sqrt(P_r)) / (sqrt(P_f) - sqrt(P_r))\n\nExample: 100 W forward and 25 W reflected give s = (10 + 5) / (10 - 5) = 3. So SWR 3 means 25 % reflection. Other values: SWR 1.5 is 4 %, SWR 2 is 11 %, SWR 6 is 51 %, SWR infinity is 100 %.\n\nOn the line the voltage swings between U_max and U_min: s = U_max / U_min.",
+       "de": "Das SWR (s) folgt aus vorlaufender Leistung P_v und rücklaufender Leistung P_r:\n\ns = (Wurzel(P_v) + Wurzel(P_r)) / (Wurzel(P_v) - Wurzel(P_r))\n\nBeispiel: 100 W vor und 25 W zurück ergeben s = (10 + 5) / (10 - 5) = 3. SWR 3 bedeutet also 25 % Reflexion. Weitere Werte: SWR 1,5 sind 4 %, SWR 2 sind 11 %, SWR 6 sind 51 %, SWR unendlich sind 100 %.\n\nAuf der Leitung schwankt die Spannung zwischen U_max und U_min: s = U_max / U_min."
+      },
+      "img": "d978"
+     },
+     {
+      "t": {
+       "en": "Reflection coefficient",
+       "de": "Reflexionsfaktor"
+      },
+      "b": {
+       "en": "The reflection coefficient rho tells how much of the voltage wave is reflected at the load Z_L on a line of impedance Z_0:\n\nrho = (Z_L - Z_0) / (Z_L + Z_0)\n\nThe SWR follows as s = (1 + rho) / (1 - rho), and the reflected power is rho^2 x P_f.\n\nExample: SWR 3 gives rho = (3 - 1) / (3 + 1) = 0.5, so the reflected power is 0.25 of the forward power. Check: 150 ohms on 50 ohm coax gives rho = 100 / 200 = 0.5 and s = 3.",
+       "de": "Der Reflexionsfaktor rho sagt, welcher Teil der Spannungswelle an der Last Z_L auf einer Leitung mit Wellenwiderstand Z_0 reflektiert wird:\n\nrho = (Z_L - Z_0) / (Z_L + Z_0)\n\nDas SWR folgt aus s = (1 + rho) / (1 - rho), die reflektierte Leistung ist rho^2 x P_v.\n\nBeispiel: SWR 3 ergibt rho = (3 - 1) / (3 + 1) = 0,5, die reflektierte Leistung ist also 0,25 der vorlaufenden. Probe: 150 Ohm an 50-Ohm-Koax ergeben rho = 100 / 200 = 0,5 und s = 3."
+      },
+      "tip": {
+       "en": "Inverse: rho = (s - 1) / (s + 1).",
+       "de": "Umkehrung: rho = (s - 1) / (s + 1)."
+      }
+     },
+     {
+      "t": {
+       "en": "How much power does the load get?",
+       "de": "Wie viel Leistung nimmt die Last auf?"
+      },
+      "b": {
+       "en": "On a lossless line the load absorbs the forward power minus the reflected power: P_load = P_f - P_r.\n\nExample: P_f = 100 W at SWR 3. Reflected power is rho^2 = 0.5^2 = 25 %, so P_r = 25 W and the load absorbs 75 W. At SWR 2 the load gets 89 %, at SWR 1.5 it gets 96 %.\n\nA high reflected power alone is not lost on a good line, but it can overload the transmitter output stage. With no antenna connected, nearly all power is reflected.",
+       "de": "Auf einer verlustfreien Leitung nimmt die Last die vorlaufende Leistung abzüglich der reflektierten auf: P_Last = P_v - P_r.\n\nBeispiel: P_v = 100 W bei SWR 3. Die reflektierte Leistung ist rho^2 = 0,5^2 = 25 %, also P_r = 25 W, und die Last nimmt 75 W auf. Bei SWR 2 erhält sie 89 %, bei SWR 1,5 sind es 96 %.\n\nDie Leistung geht auf einer guten Leitung nicht verloren, kann aber die Endstufe des Senders überlasten. Ohne angeschlossene Antenne wird fast alles reflektiert."
+      }
+     },
+     {
+      "t": {
+       "en": "Return loss",
+       "de": "Rückflussdämpfung"
+      },
+      "b": {
+       "en": "Return loss says by how many dB the reflected wave is weaker than the forward wave:\n\na_r = -20 x log10(rho) = 10 x log10(P_f / P_r)\n\nA large return loss means a good match. Examples: rho = 0.5 (SWR 3) is 6 dB. SWR 1.5 gives rho = 0.2, about 14 dB. A return loss of 20 dB means rho = 0.1, and SWR = (1 + 0.1) / (1 - 0.1) = about 1.2:1. At 10 dB the SWR is about 1.9:1.",
+       "de": "Die Rückflussdämpfung gibt an, um wie viel dB die reflektierte Welle schwächer ist als die vorlaufende:\n\na_r = -20 x log10(rho) = 10 x log10(P_v / P_r)\n\nEine große Rückflussdämpfung bedeutet gute Anpassung. Beispiele: rho = 0,5 (SWR 3) sind 6 dB. SWR 1,5 ergibt rho = 0,2, etwa 14 dB. 20 dB Rückflussdämpfung bedeuten rho = 0,1 und SWR = (1 + 0,1) / (1 - 0,1) = etwa 1,2:1. Bei 10 dB liegt das SWR bei etwa 1,9:1."
+      },
+      "tip": {
+       "en": "Higher return loss = lower SWR.",
+       "de": "Mehr Rückflussdämpfung = kleineres SWR."
+      }
+     },
+     {
+      "t": {
+       "en": "Cable loss hides a mismatch",
+       "de": "Kabeldämpfung täuscht gutes SWR vor"
+      },
+      "b": {
+       "en": "Coax attenuates the forward wave on the way to the antenna and the reflected wave again on the way back. The reflected power is weakened twice. A lossy cable therefore shows a better SWR at the radio than at the antenna.\n\nExample: 5 dB loss each way is 10 dB in total, so P_r is only 1/10 of P_f at the meter: s = (1 + 0.32) / (1 - 0.32) = 1.9, even with the antenna disconnected (total reflection)! A low reading through long, lossy cable proves little. Measure at the antenna.",
+       "de": "Koax dämpft die vorlaufende Welle auf dem Weg zur Antenne und die reflektierte Welle noch einmal auf dem Rückweg. Die reflektierte Leistung wird also doppelt geschwächt. Ein verlustreiches Kabel zeigt daher am Funkgerät ein besseres SWR als an der Antenne.\n\nBeispiel: 5 dB Dämpfung je Richtung sind insgesamt 10 dB, P_r beträgt am Messgerät nur 1/10 von P_v: s = (1 + 0,32) / (1 - 0,32) = 1,9, sogar bei abgeklemmter Antenne (Totalreflexion)! Ein niedriger Wert über langes, dämpfendes Kabel beweist wenig. Am Antennenfuß messen."
+      },
+      "img": "d1051"
+     },
+     {
+      "t": {
+       "en": "How a SWR meter works",
+       "de": "So arbeitet ein SWR-Meter"
+      },
+      "b": {
+       "en": "A SWR meter contains two directional couplers, connected in opposite directions. Each one takes a small part of the voltage (capacitive coupling) and of the current (inductive coupling) from the line. For one wave direction these parts add up, for the other they cancel.\n\nSo one coupler gives forward and one reflected wave. Diodes rectify the RF, capacitors smooth it, and two meters (cross-pointer) show both values. Measure directly at the antenna to judge the antenna, directly behind the transmitter to judge the whole system.",
+       "de": "Ein SWR-Meter enthält zwei Richtkoppler, die gegensinnig betrieben werden. Jeder koppelt einen kleinen Teil der Spannung (kapazitiv) und des Stroms (induktiv) aus der Leitung aus. Bei der einen Laufrichtung addieren sich die Anteile, bei der anderen heben sie sich auf.\n\nSo liefert ein Koppler die vorlaufende, der andere die rücklaufende Welle. Dioden richten die HF gleich, Kondensatoren glätten, zwei Messwerke (Kreuzzeiger) zeigen beide Werte. Direkt an der Antenne messen, um die Antenne zu beurteilen, direkt hinter dem Sender für die gesamte Anlage."
+      },
+      "img": "d499"
+     }
     ]
    }
-  }
+  },
+  "cards": [
+   {
+    "t": {
+     "en": "Why 50 ohms?",
+     "de": "Warum 50 Ohm?"
+    },
+    "b": {
+     "en": "Amateur radios and the coax cables used in amateur radio usually have an impedance of 50 ohms. That is where the name 50ohm comes from.\n\nFor the best power transfer, the antenna should also fit this value. If the feed resistance of the antenna matches the cable impedance, we speak of matching.\n\nIf not, part of the power is reflected at the junction.",
+     "de": "Amateurfunkgeräte und die im Amateurfunk üblichen Leitungen haben meist einen Wellenwiderstand von 50 Ohm. Daher kommt auch der Name 50ohm.\n\nFür die beste Leistungsübertragung sollte auch die Antenne dazu passen. Stimmt der Speisewiderstand der Antenne mit dem Wellenwiderstand der Leitung überein, spricht man von Anpassung.\n\nPasst es nicht, wird ein Teil der Leistung an der Verbindungsstelle reflektiert."
+    }
+   },
+   {
+    "t": {
+     "en": "Measuring the match",
+     "de": "Die Anpassung messen"
+    },
+    "b": {
+     "en": "The SWR meter shows how well the antenna is matched. SWR means standing wave ratio. It measures how much transmit power is reflected.\n\nYou connect it between the transceiver and the antenna. Many modern transceivers have a built-in SWR meter in the display.\n\nDo not confuse it with the S-meter: the SWR meter measures during transmit, the S-meter shows received signal strength.",
+     "de": "Das SWR-Meter zeigt, wie gut die Antenne angepasst ist. SWR steht für Stehwellenverhältnis. Es misst, wie viel Sendeleistung reflektiert wird.\n\nDu schleifst es zwischen Transceiver und Antenne ein. Viele moderne Transceiver haben ein SWR-Meter im Display eingebaut.\n\nVerwechsle es nicht mit dem S-Meter: Das SWR-Meter misst beim Senden, das S-Meter zeigt beim Empfang die Signalstärke."
+    },
+    "tip": {
+     "en": "SWR meter = while transmitting. S-meter = while receiving.",
+     "de": "SWR-Meter = beim Senden. S-Meter = beim Empfang."
+    },
+    "img": "d670"
+   },
+   {
+    "t": {
+     "en": "Reading the value",
+     "de": "Den Wert ablesen"
+    },
+    "b": {
+     "en": "An SWR of 1 (1:1) is the best possible value. The antenna takes up all the power and nothing is reflected back.\n\nThe higher the SWR, the worse the match. For SWR 2 about 11 percent of the power is reflected, for SWR 3 about 25 percent.\n\nWith no antenna connected or a broken cable, the SWR is nearly infinite, because all power is reflected.",
+     "de": "Ein SWR von 1 (1:1) ist der beste erreichbare Wert. Die Antenne nimmt die gesamte Leistung auf und es wird nichts zurückgeworfen.\n\nJe höher das SWR, desto schlechter die Anpassung. Bei SWR 2 werden etwa 11 Prozent der Leistung reflektiert, bei SWR 3 etwa 25 Prozent.\n\nIst keine Antenne angeschlossen oder das Kabel defekt, ist das SWR nahezu unendlich, denn die Leistung wird komplett reflektiert."
+    },
+    "tip": {
+     "en": "Open or shorted cable: the transmitter can even be damaged.",
+     "de": "Offenes oder kurzgeschlossenes Kabel kann im schlimmsten Fall den Sender zerstören."
+    }
+   },
+   {
+    "t": {
+     "en": "High SWR: what now?",
+     "de": "Hohes SWR: was tun?"
+    },
+    "b": {
+     "en": "A high SWR means a mismatch: power is reflected back towards the transmitter instead of being radiated by the antenna.\n\nDo not simply keep transmitting at full power. Reduce power and look for the cause: check the antenna, the cable and the connectors.\n\nFor a dipole, correct the length step by step until the SWR drops towards 1.",
+     "de": "Ein hohes SWR bedeutet Fehlanpassung: Leistung wird zum Sender zurückgeworfen, statt von der Antenne abgestrahlt zu werden.\n\nSende nicht einfach mit voller Leistung weiter. Verringere die Leistung und suche die Ursache: Prüfe Antenne, Kabel und Stecker.\n\nBei einem Dipol korrigierst du die Länge schrittweise, bis das SWR Richtung 1 sinkt."
+    },
+    "tip": {
+     "en": "Fix the antenna first, not the radio.",
+     "de": "Erst die Antenne in Ordnung bringen, nicht das Funkgerät."
+    }
+   }
+  ]
  },
  {
   "id": "key",
@@ -2403,6 +3600,74 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "CW: the carrier on and off",
+       "de": "CW: Träger ein und aus"
+      },
+      "b": {
+       "en": "In Morse telegraphy (CW, continuous wave) a carrier is switched on and off in a rhythm with a key. There are only two levels, 0 and 100 percent of the amplitude, so it is a digital mode, the oldest one used on radio.\n\nEach character is a fixed sequence of short tones (dit, dot) and long tones (dah, dash). The decoding is done by ear and brain, or by computer.\n\nCW needs the smallest bandwidth of all modes: at 20 words per minute only about 300 Hz. That is why CW still gets through weak, noisy conditions.",
+       "de": "Bei der Morsetelegrafie (CW, continuous wave) wird ein Träger mit einer Taste im Rhythmus ein- und ausgeschaltet. Es gibt nur zwei Stufen, 0 und 100 Prozent der Amplitude, die Übertragung ist also digital, das älteste Verfahren im Funk.\n\nJedes Zeichen ist eine feste Folge aus kurzen Tönen (Punkt, dit) und langen Tönen (Strich, dah), decodiert mit Ohren und Gehirn oder per Computer.\n\nCW braucht von allen Betriebsarten die geringste Bandbreite: bei 20 Wörtern pro Minute nur etwa 300 Hz. Deshalb kommt CW auch bei schwachen, verrauschten Bedingungen durch."
+      }
+     },
+     {
+      "t": {
+       "en": "Speed: words per minute",
+       "de": "Tempo: Wörter pro Minute"
+      },
+      "b": {
+       "en": "Morse speed is given in words per minute (WPM). The reference word is PARIS, which lasts 50 dit lengths including the gaps. A dah is 3 dits long.\n\nSo one dit lasts 1.2 / WPM seconds. At 20 WPM: 1.2 / 20 = 0.06 s = 60 ms. At 10 WPM a dit lasts 120 ms. A dah at 20 WPM is 3 x 60 ms = 180 ms.\n\nThe formula also works backwards: if a dit lasts 40 ms, the speed is 1.2 / 0.04 = 30 WPM.",
+       "de": "Die Morsegeschwindigkeit wird in Wörtern pro Minute (WPM) angegeben. Das Referenzwort ist PARIS, es dauert einschließlich der Pausen 50 Punktlängen. Ein Strich ist 3 Punkte lang.\n\nEin Punkt dauert also 1,2 / WPM Sekunden. Bei 20 WPM: 1,2 / 20 = 0,06 s = 60 ms. Bei 10 WPM dauert ein Punkt 120 ms. Ein Strich bei 20 WPM ist 3 · 60 ms = 180 ms lang.\n\nDie Formel geht auch rückwärts: Dauert ein Punkt 40 ms, beträgt das Tempo 1,2 / 0,04 = 30 WPM."
+      },
+      "tip": {
+       "en": "Dit in ms = 1200 / WPM. At 20 WPM that is 60 ms.",
+       "de": "Punkt in ms = 1200 / WPM. Bei 20 WPM sind das 60 ms."
+      }
+     },
+     {
+      "t": {
+       "en": "Gaps: 1, 3 and 7",
+       "de": "Pausen: 1, 3 und 7"
+      },
+      "b": {
+       "en": "Timing is what makes Morse readable. The standard: a dit is 1 unit, a dah is 3 units. Between the elements of one letter the gap is 1 unit, between letters 3 units and between words 7 units.\n\nAt 20 WPM with 60 ms per unit that is 60 ms inside a letter, 180 ms between letters and 420 ms between words.\n\nCheck the word PARIS: P (dit dah dah dit), A, R, I, S, plus the letter and word gaps, add up to exactly 50 units. Sloppy gaps are the main reason why someone else cannot read your sending.",
+       "de": "Das Timing macht Morsezeichen lesbar. Der Standard: Ein Punkt ist 1 Einheit, ein Strich 3 Einheiten. Zwischen den Elementen eines Zeichens beträgt die Pause 1 Einheit, zwischen Buchstaben 3 Einheiten und zwischen Wörtern 7 Einheiten.\n\nBei 20 WPM mit 60 ms je Einheit sind das 60 ms im Zeichen, 180 ms zwischen Buchstaben und 420 ms zwischen Wörtern.\n\nPrüfe am Wort PARIS: P (Punkt Strich Strich Punkt), A, R, I, S samt Buchstaben- und Wortpausen ergeben genau 50 Einheiten. Unsaubere Pausen sind der Hauptgrund, warum andere dein Geben nicht lesen können."
+      },
+      "tip": {
+       "en": "Rhythm: 1 - 3 - 7. Practise with a metronome.",
+       "de": "Rhythmus: 1 - 3 - 7. Mit Metronom üben."
+      }
+     },
+     {
+      "t": {
+       "en": "Straight key, paddle, keyer",
+       "de": "Handtaste, Paddle, Keyer"
+      },
+      "b": {
+       "en": "A straight key switches the carrier directly: you form every dit and dah with your hand. A paddle has two levers, one for dits, one for dahs, and works with an electronic keyer that makes the elements and gaps exactly timed.\n\nWith an iambic keyer, squeezing both paddles together sends alternating dits and dahs, for example dah dit dah dit for the letter C. The keyer also sets the speed in WPM.\n\nThe key connects to the KEY jack of the transceiver; many radios have a built-in keyer.",
+       "de": "Eine Handtaste schaltet den Träger direkt: Jeden Punkt und Strich formt man mit der Hand. Ein Paddle hat zwei Hebel, einen für Punkte, einen für Striche, und arbeitet mit einem elektronischen Keyer, der Elemente und Pausen exakt zeitlich erzeugt.\n\nBeim Iambic-Keyer sendet das gleichzeitige Drücken beider Hebel abwechselnd Punkte und Striche, z. B. Strich Punkt Strich Punkt für den Buchstaben C. Der Keyer stellt auch das Tempo ein.\n\nDie Taste wird an die KEY-Buchse des Transceivers angeschlossen; viele Geräte haben einen eingebauten Keyer."
+      },
+      "tip": {
+       "en": "Squeeze both paddles: the keyer alternates dits and dahs for you.",
+       "de": "Beide Hebel drücken: Der Keyer wechselt selbst zwischen Punkt und Strich."
+      }
+     },
+     {
+      "t": {
+       "en": "CW on the air",
+       "de": "CW im Funkbetrieb"
+      },
+      "b": {
+       "en": "Choose a speed that suits the other station: never send faster than the other operator, and never faster than you can copy yourself. Then everyone keeps up.\n\nIn a CW report the RST system has three digits: R readability 1 to 5, S strength 1 to 9, T tone 1 to 9. The T value is used only for CW. So 579 means readable, fairly strong and a perfect tone. In speech the T is left out.\n\nA narrow receiver filter of a few hundred hertz cuts noise and neighbouring stations, as CW needs just a few hundred hertz.",
+       "de": "Wähle ein Tempo, das zur Gegenstation passt: nie schneller geben als die andere Station und nie schneller, als man selbst aufnehmen kann. So kommen alle mit.\n\nIm CW-Rapport hat das RST-System drei Ziffern: R Lesbarkeit 1 bis 5, S Signalstärke 1 bis 9, T Tonqualität 1 bis 9. Der T-Wert wird nur bei CW verwendet. 579 heißt also lesbar, ziemlich stark und perfekter Ton. Im Sprechfunk entfällt das T.\n\nEin schmales Empfangsfilter von wenigen hundert Hertz unterdrückt Rauschen und Nachbarstationen, denn CW braucht nur wenige hundert Hertz."
+      },
+      "tip": {
+       "en": "Faster is not better: the other side must copy you.",
+       "de": "Schneller ist nicht besser: Die Gegenseite muss mitkommen."
+      }
+     }
     ]
    },
    "3": {
@@ -2511,9 +3776,127 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "CW: keying the carrier",
+       "de": "CW: Tastung des Trägers"
+      },
+      "b": {
+       "en": "In Morse telegraphy (CW) the key switches the transmitter carrier on and off: 0 % and 100 % of the amplitude. This is the oldest digital mode.\n\nAll times are multiples of one dit length t:\n- dit = 1 t\n- dah = 3 t\n- gap between elements in a letter = 1 t\n- gap between letters = 3 t\n- gap between words = 7 t\n\nThese ratios stay the same at any speed. Only t changes.",
+       "de": "Bei der Morsetelegrafie (CW) schaltet die Taste den Träger des Senders ein und aus: 0 % und 100 % der Amplitude. Es ist das älteste digitale Verfahren.\n\nAlle Zeiten sind Vielfache der Punktlänge t:\n- Punkt (dit) = 1 t\n- Strich (dah) = 3 t\n- Pause zwischen Elementen eines Zeichens = 1 t\n- Pause zwischen Zeichen = 3 t\n- Pause zwischen Wörtern = 7 t\n\nDiese Verhältnisse bleiben bei jedem Tempo gleich. Nur t ändert sich."
+      }
+     },
+     {
+      "t": {
+       "en": "Speed: WPM and dit length",
+       "de": "Tempo: WPM und Punktlänge"
+      },
+      "b": {
+       "en": "Speed is given in WPM (words per minute). The standard word PARIS takes 50 dit lengths, so\n\nt = 1.2 s / WPM\n\nExamples: 12 WPM gives t = 100 ms; 24 WPM gives t = 50 ms. Reverse: WPM = 1.2 s / t. A dit of 40 ms is 1.2 / 0.040 = 30 WPM.\n\nDoubling the speed halves all times. As a rule, never send faster than the other station or than you can copy yourself.",
+       "de": "Das Tempo wird in WPM (Wörter pro Minute) angegeben. Das Standardwort PARIS dauert 50 Punktlängen, daher gilt\n\nt = 1,2 s / WPM\n\nBeispiele: 12 WPM ergeben t = 100 ms; 24 WPM ergeben t = 50 ms. Umgekehrt: WPM = 1,2 s / t. Ein Punkt von 40 ms entspricht 1,2 / 0,040 = 30 WPM.\n\nDoppeltes Tempo halbiert alle Zeiten. Als Faustregel gilt: nie schneller geben als die Gegenstation oder als man selbst aufnehmen kann."
+      }
+     },
+     {
+      "t": {
+       "en": "Duration of a letter",
+       "de": "Dauer eines Zeichens"
+      },
+      "b": {
+       "en": "A letter's length is the sum of its dits, dahs and the gaps between its elements. Count in units of t.\n\nExample K = dah dit dah: dah 3 + gap 1 + dit 1 + gap 1 + dah 3 = 9 t. At 24 WPM (t = 50 ms) this is 9 x 50 ms = 450 ms. The gap after the letter (3 t) is not counted in the letter itself.\n\nAnother example: the letter A = dit dah = 1 + 1 + 3 = 5 t, at 50 ms that is 250 ms.",
+       "de": "Die Länge eines Zeichens ist die Summe aus Punkten, Strichen und den Pausen zwischen den Elementen. Man zählt in Einheiten von t.\n\nBeispiel K = Strich Punkt Strich: Strich 3 + Pause 1 + Punkt 1 + Pause 1 + Strich 3 = 9 t. Bei 24 WPM (t = 50 ms) sind das 9 x 50 ms = 450 ms. Die Pause nach dem Zeichen (3 t) gehört nicht mehr zum Zeichen.\n\nEin weiteres Beispiel: Der Buchstabe A = Punkt Strich = 1 + 1 + 3 = 5 t, bei 50 ms sind das 250 ms."
+      }
+     },
+     {
+      "t": {
+       "en": "Key clicks",
+       "de": "Tastklicks"
+      },
+      "b": {
+       "en": "If the carrier is switched on and off too abruptly by the key, the keyed envelope has sharp, nearly square edges. Such edges contain many frequency components and spread far to both sides of the signal. They are heard as clicks on neighbouring frequencies and disturb other stations.\n\nThe cure is to round the rise and fall of the envelope to a few milliseconds, e.g. with a filter or soft keying in the transmitter. The signal gets narrower and the clicks disappear. Do not make it too slow either, or dits get mushy.",
+       "de": "Wird der Träger durch die Taste zu abrupt ein- und ausgeschaltet, hat die getastete Hüllkurve scharfe, fast rechteckige Flanken. Solche Flanken enthalten viele Frequenzanteile und reichen weit zu beiden Seiten des Signals. Man hört sie als Klicks auf Nachbarfrequenzen, sie stören andere Stationen.\n\nAbhilfe: Anstieg und Abfall der Hüllkurve auf einige Millisekunden abrunden, z. B. durch ein Filter oder weiches Tasten im Sender. Das Signal wird schmaler und die Klicks verschwinden. Nicht zu langsam wählen, sonst klingen die Punkte verschmiert."
+      },
+      "tip": {
+       "en": "A sudden switch means a broad spectrum. A soft edge means a narrow one.",
+       "de": "Schlagartiges Schalten heißt breites Spektrum. Weiche Flanken heißen schmales Spektrum."
+      }
+     },
+     {
+      "t": {
+       "en": "Full break-in (QSK)",
+       "de": "Vollbreak-in (QSK)"
+      },
+      "b": {
+       "en": "With full break-in (QSK) the rig switches between transmit and receive so fast that the receiver is listening in every gap between dits and dahs. You can hear the other station between your own elements and they can interrupt you at once.\n\nWith semi break-in the rig stays in transmit for a short hold time after the last element, so you hear the other station only in longer pauses. QSK needs fast antenna relays or electronic switching, and the receiver must recover quickly after each element.",
+       "de": "Bei Vollbreak-in (QSK) schaltet das Gerät so schnell zwischen Senden und Empfangen um, dass der Empfänger in jeder Lücke zwischen Punkten und Strichen mithört. Man hört die Gegenstation zwischen den eigenen Zeichen, und sie kann sofort unterbrechen.\n\nBei Semi-Break-in bleibt das Gerät nach dem letzten Element noch kurz auf Senden (Hold-Zeit), sodass man die Gegenstation nur in längeren Pausen hört. QSK erfordert schnelle Antennenrelais oder elektronisches Umschalten, und der Empfänger muss nach jedem Element schnell erholt sein."
+      }
+     },
+     {
+      "t": {
+       "en": "Types of Morse keys",
+       "de": "Arten von Morsetasten"
+      },
+      "b": {
+       "en": "A straight key is a simple lever: you form every dit and dah by hand, so the timing depends on your hand. A paddle (iambic key) with an electronic keyer produces dits and dahs automatically with exact timing; you set the speed in WPM and press the left or right lever. Squeezing both gives alternating elements.\n\nThe keyer follows the 1 : 3 : 1 timing, so the spacing is always regular. For the transmitter any key is just a switch.",
+       "de": "Eine Handtaste ist ein einfacher Hebel: Jeden Punkt und Strich formt man von Hand, der Rhythmus hängt von der eigenen Hand ab. Eine Paddle (Doppeltaste, iambic) mit elektronischem Keyer erzeugt Punkte und Striche automatisch mit exaktem Timing; man stellt das Tempo in WPM ein und drückt den linken oder rechten Hebel. Drückt man beide, entstehen abwechselnde Elemente.\n\nDer Keyer folgt dem Zeitverhältnis 1 : 3 : 1, die Abstände sind stets gleichmäßig. Für den Sender ist jede Taste nur ein Schalter."
+      }
+     }
     ]
    }
-  }
+  },
+  "cards": [
+   {
+    "t": {
+     "en": "Radio without a microphone",
+     "de": "Funken ohne Mikrofon"
+    },
+    "b": {
+     "en": "Morse telegraphy is the oldest radio mode. A key switches the transmitter briefly on and off. At the receiver you hear a tone in exactly this rhythm.\n\nThis mode is called CW, continuous wave. Giving Morse code is called keying.\n\nThe carrier has only two states: 0 percent and 100 percent. So CW is a very simple digital mode.",
+     "de": "Die Morsetelegrafie ist das älteste Übertragungsverfahren im Funk. Mit einer Taste wird der Sender kurz ein- und wieder ausgeschaltet. Beim Empfänger hörst du einen Ton in genau diesem Rhythmus.\n\nDieses Verfahren heißt CW, Continuous Wave. Morsezeichen zu senden nennt man geben.\n\nDer Träger kennt nur zwei Zustände: 0 und 100 Prozent. CW ist also ein sehr einfaches digitales Verfahren."
+    },
+    "img": "p109"
+   },
+   {
+    "t": {
+     "en": "Dit and dah",
+     "de": "Dit und Dah"
+    },
+    "b": {
+     "en": "Morse code uses short tones (dit, a dot) and long tones (dah, a dash). A dah is three times as long as a dit.\n\nEvery letter has its own pattern. E is a single dit, T is a single dah. C is dah-dit-dah-dit and Q is dah-dah-dit-dah, together the famous CQ call.\n\nYou decode with ears and brain, or with a computer.",
+     "de": "Der Morsecode benutzt kurze Töne (Dit, Punkt) und lange Töne (Dah, Strich). Ein Dah ist dreimal so lang wie ein Dit.\n\nJedes Zeichen hat sein eigenes Muster. E ist ein einzelnes Dit, T ist ein einzelnes Dah. C ist lang-kurz-lang-kurz, Q ist lang-lang-kurz-lang, zusammen der berühmte Ruf CQ.\n\nDecodiert wird mit Ohren und Gehirn, oder mit dem Computer."
+    },
+    "tip": {
+     "en": "Start with short letters: E, T, I, M.",
+     "de": "Fang mit kurzen Zeichen an: E, T, I, M."
+    },
+    "img": "p216"
+   },
+   {
+    "t": {
+     "en": "Why CW is great",
+     "de": "Warum CW so gut ist"
+    },
+    "b": {
+     "en": "CW works with weak signals and very simple equipment. A small transmitter is enough, which is why many operators like it for low-power (QRP) work.\n\nMorse is still used today. In Germany an exam in Morse code has been voluntary since 2003.\n\nSo you can start with a simple key and still make contacts around the world.",
+     "de": "CW funktioniert mit schwachen Signalen und sehr einfacher Technik. Ein kleiner Sender genügt, deshalb mögen viele Funkamateure es für Betrieb mit kleiner Leistung (QRP).\n\nMorsetelegrafie wird bis heute genutzt. In Deutschland ist die Morseprüfung seit 2003 freiwillig.\n\nMit einer einfachen Taste kannst du also trotzdem Verbindungen rund um die Welt schaffen."
+    }
+   },
+   {
+    "t": {
+     "en": "Keep the speed friendly",
+     "de": "Tempo freundlich wählen"
+    },
+    "b": {
+     "en": "Choose your speed wisely: do not send faster than the other station and not faster than you can receive yourself. Then everybody can keep up.\n\nIf the other station is too fast for you, use the Q code QRS: it asks to send more slowly.\n\nQRS is a three-letter Q code, like all Q codes it starts with Q.",
+     "de": "Wähle das Tempo mit Bedacht: Gib nicht schneller als die andere Station und nicht schneller, als du selbst aufnehmen kannst. So kommen alle mit.\n\nIst dir die Gegenstation zu schnell, nutze die Q-Gruppe QRS: Sie bedeutet: bitte langsamer geben.\n\nQRS ist wie alle Q-Gruppen drei Zeichen lang und beginnt mit Q."
+    },
+    "tip": {
+     "en": "QRS = please send more slowly.",
+     "de": "QRS = bitte langsamer geben."
+    }
+   }
+  ]
  },
  {
   "id": "logbook",
@@ -2731,6 +4114,74 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "What goes into the log",
+       "de": "Was ins Logbuch gehört"
+      },
+      "b": {
+       "en": "A logbook documents your radio activity, on paper or electronically. For every contact note: call sign of the other station, frequency or band, date and time, mode (SSB, FT8, RTTY...), report given and received, transmit power, and remarks such as name or your own station.\n\nKeeping a log is usually voluntary. But the Bundesnetzagentur can order you to keep one, for example to trace interference. Then it must stay readable later: if you change from paper to computer or change software, keep the old log or convert it.",
+       "de": "Ein Logbuch dokumentiert die Funkaktivitäten, auf Papier oder elektronisch. Für jede Verbindung notiert man: Rufzeichen der Gegenstation, Frequenz oder Band, Datum und Uhrzeit, Übertragungsverfahren (SSB, FT8, RTTY ...), vergebenen und erhaltenen Rapport, Sendeleistung und Bemerkungen wie Name oder eigene Station.\n\nDas Logbuch ist meist freiwillig. Die Bundesnetzagentur kann es aber anordnen, etwa bei Störungen. Dann muss es später einsehbar bleiben: Beim Wechsel von Papier auf Computer oder zwischen Programmen das alte Logbuch aufheben oder übertragen."
+      },
+      "tip": {
+       "en": "ADIF files move a log from one program to another.",
+       "de": "Mit ADIF-Dateien lässt sich ein Log zwischen Programmen übertragen."
+      }
+     },
+     {
+      "t": {
+       "en": "Why UTC?",
+       "de": "Warum UTC?"
+      },
+      "b": {
+       "en": "Times in the log should always be entered in coordinated universal time, UTC. The reason: radio contacts span time zones, and UTC is the same everywhere in the world, at any time, so nobody has to convert.\n\nExample: when it is 8:00 local time in Berlin, it is only 2:00 in New York, but for both it is 07:00 UTC.\n\nUTC also has no daylight saving time, so it does not jump twice a year like local time. Most logging programs and clocks can show UTC directly.",
+       "de": "Zeiten sollten im Logbuch immer in koordinierter Weltzeit, UTC, eingetragen werden. Der Grund: Funkverbindungen überspannen Zeitzonen, und UTC ist überall auf der Welt zu jeder Zeit gleich, niemand muss umrechnen.\n\nBeispiel: Wenn es in Berlin 8:00 Uhr Ortszeit ist, ist es in New York erst 2:00 Uhr, für beide aber 07:00 UTC.\n\nUTC kennt außerdem keine Sommerzeit und springt daher nicht zweimal im Jahr wie die Ortszeit. Die meisten Logprogramme und Uhren können UTC direkt anzeigen."
+      }
+     },
+     {
+      "t": {
+       "en": "Local time to UTC",
+       "de": "Ortszeit nach UTC"
+      },
+      "b": {
+       "en": "In winter Germany uses CET (MEZ), which is UTC + 1. To get UTC, subtract 1 hour. In summer we use CEST (MESZ), which is UTC + 2: subtract 2 hours.\n\nExamples: 9:00 CET is 08:00 UTC. 9:00 CEST is 07:00 UTC. A contact at 20:30 CEST is 18:30 UTC.\n\nBack from UTC to local time you add 1 hour (CET) or 2 hours (CEST). Check first which one is currently in force: the same clock reading means different UTC in summer and winter.",
+       "de": "Im Winter gilt in Deutschland die Mitteleuropäische Zeit (MEZ), das ist UTC + 1. Für UTC zieht man 1 Stunde ab. Im Sommer gilt die Mitteleuropäische Sommerzeit (MESZ), das ist UTC + 2: 2 Stunden abziehen.\n\nBeispiele: 9:00 MEZ sind 08:00 UTC. 9:00 MESZ sind 07:00 UTC. Eine Verbindung um 20:30 MESZ ist also 18:30 UTC.\n\nVon UTC zurück zur Ortszeit addiert man 1 Stunde (MEZ) oder 2 Stunden (MESZ). Erst prüfen, welche Zeit gerade gilt: Dieselbe Uhrzeit bedeutet im Sommer und Winter eine andere UTC."
+      },
+      "tip": {
+       "en": "MEZ - 1 h = UTC. MESZ - 2 h = UTC.",
+       "de": "MEZ - 1 h = UTC. MESZ - 2 h = UTC."
+      }
+     },
+     {
+      "t": {
+       "en": "Midnight: the date changes too",
+       "de": "Um Mitternacht wechselt das Datum"
+      },
+      "b": {
+       "en": "Near midnight the subtraction can cross into the previous day. The date in the log must then change as well.\n\nExample: it is 00:30 CEST on 12 June. Subtract 2 hours: 00:30 - 2:00 = 22:30 of the day before. So the log entry reads 22:30 UTC on 11 June.\n\nThe other way round: 23:30 UTC on 11 June is 01:30 CEST on 12 June. Always write date and time together, both in UTC.",
+       "de": "Kurz nach Mitternacht kann das Abziehen in den Vortag führen. Dann muss sich auch das Datum im Logbuch ändern.\n\nBeispiel: Es ist 00:30 MESZ am 12. Juni. Zwei Stunden abziehen: 00:30 - 2:00 = 22:30 des Vortags. Der Logeintrag lautet also 22:30 UTC am 11. Juni.\n\nUmgekehrt: 23:30 UTC am 11. Juni sind 01:30 MESZ am 12. Juni. Datum und Uhrzeit immer gemeinsam in UTC eintragen."
+      },
+      "tip": {
+       "en": "Before midnight UTC = day before; subtracting past 00:00 means date minus 1.",
+       "de": "Beim Abziehen über 00:00 hinaus: Datum minus 1."
+      }
+     },
+     {
+      "t": {
+       "en": "The RST report",
+       "de": "Der RST-Rapport"
+      },
+      "b": {
+       "en": "The RST report says how well you receive the other station. R is readability, 1 to 5: 1 unreadable, 3 readable with difficulty, 5 perfectly readable. S is signal strength, 1 to 9, read off the S-meter. T is tone, 1 to 9, and is used only in CW; in speech it is omitted.\n\nSo in speech 59 is perfect, 45 is readable without difficulty but weak. In CW 599 is top, and in 579 the last digit 9 describes a perfect tone. Strong signals are given as 9 plus dB, for example 59+20 dB.",
+       "de": "Der RST-Rapport sagt, wie gut man die Gegenstation empfängt. R ist die Lesbarkeit, 1 bis 5: 1 nicht lesbar, 3 mit Schwierigkeiten lesbar, 5 einwandfrei lesbar. S ist die Signalstärke, 1 bis 9, am S-Meter abgelesen. T ist die Tonqualität, 1 bis 9, nur bei CW; im Sprechfunk entfällt sie.\n\nIm Sprechfunk ist 59 also perfekt, 45 ist ohne Schwierigkeiten lesbar, aber schwach. Bei CW ist 599 Spitze, bei 579 beschreibt die letzte Ziffer 9 den perfekten Ton. Starke Signale gibt man als 9 plus dB an, z. B. 59+20 dB."
+      },
+      "tip": {
+       "en": "Speech: two digits (RS). CW: three digits (RST).",
+       "de": "Sprechfunk: zwei Ziffern (RS). CW: drei Ziffern (RST)."
+      }
+     }
     ]
    },
    "3": {
@@ -2839,8 +4290,135 @@
       ],
       "c": 0
      }
+    ],
+    "cards": [
+     {
+      "t": {
+       "en": "What goes into a log entry",
+       "de": "Was ins Logbuch gehört"
+      },
+      "b": {
+       "en": "A log documents every contact. For each QSO write down: date and time in UTC, your and the partner's callsign, band or frequency, mode (SSB, CW, FT8), the reports given and received, and optionally power and remarks such as the name.\n\nTo match your QSO with the partner's log, date, UTC time, both callsigns, band and mode are enough. The same minimum holds for a QSL card. A log can be on paper or electronic, but it must stay readable.",
+       "de": "Ein Logbuch dokumentiert jede Funkverbindung. Pro QSO trägt man ein: Datum und Uhrzeit in UTC, eigenes Rufzeichen und das der Gegenstation, Band oder Frequenz, Betriebsart (SSB, CW, FT8), gegebenen und erhaltenen Rapport und optional Leistung sowie Bemerkungen, z. B. den Namen.\n\nUm ein QSO mit dem Log der Gegenstation abzugleichen, genügen Datum, UTC-Zeit, beide Rufzeichen, Band und Betriebsart. Dasselbe Minimum gilt für die QSL-Karte. Das Logbuch kann auf Papier oder elektronisch geführt werden, muss aber lesbar bleiben."
+      }
+     },
+     {
+      "t": {
+       "en": "Time in UTC",
+       "de": "Die Zeit in UTC"
+      },
+      "b": {
+       "en": "Log times are always UTC, so nobody has to convert across time zones. In Germany: UTC = CET - 1 h in winter, UTC = CEST - 2 h in summer. Example: Berlin 08:00 local (winter) is 07:00 UTC, the same moment as 02:00 in New York.\n\nFor zones behind UTC the sign is reversed: UTC-5 means local time = UTC - 5 h, so UTC = local + 5 h. Example: 21:00 local at UTC-5 gives 21 + 5 = 26:00, i.e. 02:00 UTC on the next day. Always check the date too.",
+       "de": "Im Logbuch steht die Zeit immer in UTC, damit man nicht über Zeitzonen umrechnen muss. In Deutschland gilt: UTC = MEZ - 1 h im Winter, UTC = MESZ - 2 h im Sommer. Beispiel: Berlin 08:00 Ortszeit (Winter) sind 07:00 UTC, zugleich 02:00 Uhr in New York.\n\nBei Zonen hinter UTC ist das Vorzeichen umgekehrt: UTC-5 bedeutet Ortszeit = UTC - 5 h, also UTC = Ortszeit + 5 h. Beispiel: 21:00 Ortszeit bei UTC-5 ergibt 21 + 5 = 26:00, also 02:00 UTC am Folgetag. Auch das Datum prüfen."
+      },
+      "tip": {
+       "en": "UTC-5 means add 5 hours to get UTC; UTC+2 means subtract 2.",
+       "de": "UTC-5: 5 Stunden addieren, um UTC zu erhalten; UTC+2: 2 Stunden abziehen."
+      }
+     },
+     {
+      "t": {
+       "en": "ADIF: exchanging logs",
+       "de": "ADIF: Logdaten austauschen"
+      },
+      "b": {
+       "en": "ADIF (Amateur Data Interchange Format) is the standard text format for log data. Every program can export and import it, so you can move a log from one logging software to another or to a new computer. It is also used to upload QSOs to QSL services such as LoTW, eQSL, QRZ or the DARC DCL.\n\nEach field is tagged with its length, e.g. <CALL:5>DL1AB <BAND:3>20m <MODE:3>SSB <EOR>. The end-of-record tag closes one QSO. When you change software, export to ADIF and keep the file.",
+       "de": "ADIF (Amateur Data Interchange Format) ist das Standard-Textformat für Logdaten. Jedes Programm kann es exportieren und importieren, so lässt sich ein Log von einer Logbuch-Software in eine andere oder auf einen neuen Computer übertragen. Es dient auch zum Hochladen der QSOs zu QSL-Diensten wie LoTW, eQSL, QRZ oder dem DARC-DCL.\n\nJedes Feld trägt seine Länge im Tag, z. B. <CALL:5>DL1AB <BAND:3>20m <MODE:3>SSB <EOR>. Die Endemarke schließt ein QSO ab. Beim Wechsel der Software exportiert man nach ADIF und bewahrt die Datei auf."
+      }
+     },
+     {
+      "t": {
+       "en": "Maidenhead locator",
+       "de": "Maidenhead-Locator"
+      },
+      "b": {
+       "en": "The Maidenhead locator describes your position in a short code. A six-character locator has three steps: field, square, subsquare.\n\n- Field: 2 letters, A to R (18 x 18 fields)\n- Square: 2 digits, 00 to 99\n- Subsquare: 2 letters, A to X\n\nExample JO62QM: field JO, square 62, subsquare QM. The DARC office in Baunatal is in JO41RG. So the pattern is letters, digits, letters. It is used mostly on VHF, UHF and higher bands, and the locator is often exchanged in the QSO and logged.",
+       "de": "Der Maidenhead-Locator beschreibt die eigene Position in einem kurzen Code. Ein sechsstelliger Locator hat drei Stufen: Feld, Quadrat, Unter-Quadrat.\n\n- Feld: 2 Buchstaben, A bis R (18 x 18 Felder)\n- Quadrat: 2 Ziffern, 00 bis 99\n- Unter-Quadrat: 2 Buchstaben, A bis X\n\nBeispiel JO62QM: Feld JO, Quadrat 62, Unter-Quadrat QM. Die DARC-Geschäftsstelle in Baunatal liegt in JO41RG. Das Muster lautet also Buchstaben, Ziffern, Buchstaben. Er wird vor allem auf VHF, UHF und höheren Bändern genutzt und im QSO ausgetauscht und geloggt."
+      },
+      "img": "p4"
+     },
+     {
+      "t": {
+       "en": "Keeping and confirming logs",
+       "de": "Logbuch führen und bestätigen"
+      },
+      "b": {
+       "en": "A QSL card confirms a contact, e.g. for awards. It should show at least date, time in UTC, both callsigns, band or frequency, mode and report. Because all times are UTC, the partner can find the QSO in his log at once.\n\nThe authorities may order you to keep a log, e.g. to find interference causes. Then it must stay available, also after a change of method: keep the old paper log or software, or transfer the data to the new program, for example via an ADIF file.",
+       "de": "Eine QSL-Karte bestätigt eine Verbindung, z. B. für Diplome. Sie sollte mindestens Datum, Uhrzeit in UTC, beide Rufzeichen, Band oder Frequenz, Betriebsart und Rapport enthalten. Da alle Zeiten in UTC stehen, findet die Gegenstation das QSO sofort in ihrem Log.\n\nDie Behörde kann anordnen, ein Logbuch zu führen, z. B. um Störungsursachen zu klären. Dann muss es auch nach einem Methodenwechsel einsehbar bleiben: Altes Papierlogbuch oder alte Software aufheben oder die Daten in das neue Programm übertragen, z. B. über eine ADIF-Datei."
+      }
+     }
     ]
    }
-  }
+  },
+  "cards": [
+   {
+    "t": {
+     "en": "Why keep a log?",
+     "de": "Wozu ein Logbuch?"
+    },
+    "b": {
+     "en": "A logbook documents your radio activity, like the log on a ship or in an aircraft. You can keep it on paper or electronically.\n\nMany amateurs keep one voluntarily. The Bundesnetzagentur can also ask you to keep one, for example to find the cause of interference.\n\nIt is also a nice memory of all your contacts.",
+     "de": "Mit einem Logbuch dokumentierst du deine Funkaktivitäten, ähnlich wie das Logbuch auf einem Schiff oder im Flugzeug. Du kannst es handschriftlich oder elektronisch führen.\n\nViele Funkamateure führen freiwillig ein Logbuch. Die Bundesnetzagentur kann es aber auch verlangen, z. B. um Störungsursachen zu klären.\n\nNebenbei ist es eine schöne Erinnerung an alle deine Verbindungen."
+    }
+   },
+   {
+    "t": {
+     "en": "What goes in a log entry?",
+     "de": "Was gehört in den Eintrag?"
+    },
+    "b": {
+     "en": "For each contact (QSO, a radio contact) write down: the callsign of the other station, frequency or band, date and time, the mode (for example SSB), the reports given and received, your power and remarks such as the name of the operator.\n\nQSO is the short word for one complete radio contact, so one line in the log is one QSO.",
+     "de": "Für jede Funkverbindung (QSO) hältst du fest: Rufzeichen der Gegenstation, Frequenz oder Band, Datum und Uhrzeit, Übertragungsverfahren (z. B. SSB), gegebenen und erhaltenen Rapport, verwendete Sendeleistung und Bemerkungen wie den Namen des QSO-Partners.\n\nQSO bedeutet Funkverbindung."
+    },
+    "tip": {
+     "en": "With the ADIF file format you can move a log between programs.",
+     "de": "Mit dem ADIF-Format lässt sich ein Log zwischen Programmen übertragen."
+    }
+   },
+   {
+    "t": {
+     "en": "Always use UTC",
+     "de": "Immer UTC"
+    },
+    "b": {
+     "en": "Times in the log are entered in coordinated universal time, UTC. It is the same everywhere in the world, so nobody has to convert time zones.\n\nExample: 8:00 local time in Berlin (CET, winter) is 7:00 UTC, and in New York it is earlier in the day, but UTC is the same for both.\n\nWinter: UTC = CET minus 1 hour. Summer: UTC = CEST minus 2 hours.",
+     "de": "Zeiten trägst du im Logbuch in koordinierter Weltzeit ein, kurz UTC. Sie ist überall auf der Welt gleich, dadurch muss bei Funkverbindungen über Zeitzonen hinweg nichts umgerechnet werden.\n\nBeispiel: 8:00 Uhr in Berlin ist in New York erst 2:00 Uhr, für beide ist es aber 07:00 UTC.\n\nWinterzeit: UTC = MEZ minus 1 Stunde. Sommerzeit: UTC = MESZ minus 2 Stunden."
+    },
+    "tip": {
+     "en": "Your radio clock: set it to UTC to avoid mistakes.",
+     "de": "Tipp: Stelle deine Logbuch-Uhr auf UTC, das vermeidet Fehler."
+    }
+   },
+   {
+    "t": {
+     "en": "The QSL card",
+     "de": "Die QSL-Karte"
+    },
+    "b": {
+     "en": "A QSL card confirms a contact. It is like a postcard: one side shows the details, the other a personal picture. The name comes from the Q code QSL, which means I confirm receipt.\n\nIt should contain at least date, time in UTC, both callsigns, frequency or band, mode and the report. Cards are also the proof for amateur radio awards.",
+     "de": "Eine QSL-Karte bestätigt eine Funkverbindung. Sie ähnelt einer Postkarte: Eine Seite enthält die Angaben, die andere ein persönliches Motiv. Der Name kommt von der Q-Gruppe QSL: ich bestätige den Empfang.\n\nSie sollte mindestens Datum, Uhrzeit in UTC, beide Rufzeichen, Frequenz oder Band, Übertragungsverfahren und Rapport enthalten. Mit Karten weist man auch Funkdiplome nach."
+    },
+    "tip": {
+     "en": "Via the DARC bureau, QSL cards can be exchanged cheaply.",
+     "de": "Über das DARC-Büro lassen sich QSL-Karten günstig austauschen."
+    },
+    "img": "p62"
+   },
+   {
+    "t": {
+     "en": "Signal reports: RST",
+     "de": "Der Rapport: RST"
+    },
+    "b": {
+     "en": "In a contact you give a report on how well you hear the other station: R is readability from 1 to 5, S is signal strength from 1 to 9, and T is tone from 1 to 9 (only for Morse, not in voice).\n\nSo 59 means perfectly readable (5) and very strong (9). 45 means readable without difficulty and medium strength.\n\nYou take the S value from the S-meter.",
+     "de": "In einer Verbindung gibst du einen Rapport, wie gut du die Gegenstation hörst: R ist die Lesbarkeit von 1 bis 5, S die Signalstärke von 1 bis 9, und T die Tonqualität von 1 bis 9 (nur bei Morsetelegrafie, nicht im Sprechfunk).\n\n59 bedeutet also einwandfrei lesbar (5) und sehr stark (9). 45 heißt ohne Schwierigkeiten lesbar und mittlere Stärke.\n\nDen S-Wert liest du am S-Meter ab."
+    },
+    "tip": {
+     "en": "Write the reports you gave and received in the log.",
+     "de": "Trage gegebenen und erhaltenen Rapport ins Logbuch ein."
+    },
+    "img": "p123"
+   }
+  ]
  }
 ]
