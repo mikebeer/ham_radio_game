@@ -79,11 +79,12 @@ func add_card(rect: Rect2, style: StyleBox = null) -> Panel:
 	return p
 
 
-func add_art(kind: String, rect: Rect2, index: int = 0, part: String = "") -> ArtView:
+func add_art(kind: String, rect: Rect2, index: int = 0, part: String = "", look: Dictionary = {}) -> ArtView:
 	var a := ArtView.new()
 	a.kind = kind
 	a.index = index
 	a.part = part
+	a.look = look
 	a.position = rect.position
 	a.size = rect.size
 	add_child(a)
@@ -91,11 +92,30 @@ func add_art(kind: String, rect: Rect2, index: int = 0, part: String = "") -> Ar
 
 
 ## Back button plus title and subtitle, as on the Figma work screens.
+func add_icon(kind: String, pos: Vector2, cb: Callable, tip: String = "", sz: Vector2 = Vector2(52, 46)) -> IconButton:
+	var b := IconButton.new()
+	b.kind = kind
+	b.custom_minimum_size = sz
+	b.size = sz
+	b.position = pos
+	b.tooltip_text = tip
+	b.pressed.connect(cb)
+	add_child(b)
+	return b
+
+
+## The same two icons at the same place on every screen: share and settings.
+func add_top_icons(y: float = 28.0) -> void:
+	add_icon("share", Vector2(1108, y), Share.open, I18n.t("share.btn"))
+	add_icon("settings", Vector2(1168, y), func() -> void: SceneManager.go("settings", {"from": SceneManager.current}), I18n.t("settings.title"))
+
+
+## Back arrow (always at the same place), title and subtitle, share and settings icons.
 func add_header(title: String, sub: String, back_scene: String = "hub", back_params: Dictionary = {}) -> Label:
-	add_btn(I18n.t("common.back"), Vector2(40, 28), func() -> void: SceneManager.go(back_scene, back_params))
-	add_btn(I18n.t("share.btn"), Vector2(1112, 28), Share.open, "", Vector2(108, 40))
-	add_title(title, Vector2(190, 26), 32)
-	return add_lbl(sub, Vector2(190, 70), 700, 16, Palette.MUTED)
+	add_icon("back", Vector2(40, 28), func() -> void: SceneManager.go(back_scene, back_params), I18n.t("common.back"))
+	add_top_icons()
+	add_title(title, Vector2(116, 26), 32)
+	return add_lbl(sub, Vector2(116, 70), 900, 16, Palette.MUTED)
 
 
 func toast(text: String, color: Color = Palette.AMBER) -> void:

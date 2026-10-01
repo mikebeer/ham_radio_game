@@ -182,7 +182,7 @@ UI = {
     "share.note": ("Social sites accept only text and a link from apps. The screenshot is saved for you to attach to your post.",
                    "Soziale Netze nehmen von Apps nur Text und Link an. Den Screenshot speichern wir, damit du ihn an deinen Beitrag hängen kannst."),
     "profile.title": ("Your profile", "Dein Profil"),
-    "profile.sub": ("Change your avatar, name, language and country.", "Ändere Avatar, Name, Sprache und Land."),
+    "profile.sub": ("Change your avatar, name and country.", "Ändere Avatar, Name und Land."),
     "profile.save": ("Save", "Speichern"),
     "profile.callsign": ("Callsign", "Rufzeichen"),
     "profile.none": ("not chosen yet", "noch nicht gewählt"),
@@ -595,6 +595,18 @@ def load_course():
     return {"shack": shack, "de_rules": {int(k): _cards(v) for k, v in de["levels"].items()}}
 
 
+def merge_ui(ui):
+    """Adds the translations from tools/i18n/ui_<lang>.json (it, fr, es, la) when present."""
+    for lang in ("it", "fr", "es", "la"):
+        p = os.path.join(ROOT, "tools", "i18n", "ui_%s.json" % lang)
+        if os.path.exists(p):
+            tr = json.load(open(p, encoding="utf-8"))
+            for k, v in tr.items():
+                if k in ui:
+                    ui[k][lang] = v
+    return ui
+
+
 def clean(o):
     """Replaces characters the game fonts lack."""
     if isinstance(o, dict):
@@ -613,7 +625,9 @@ if __name__ == "__main__":
     from levels_primers import us_levels, uk_levels
     from levels_parts import TIERS
     from levels_qso import qso_levels
-    dump("content/i18n/ui.json", {k: L(*v) for k, v in UI.items()})
+    from ui_more import UI_MORE
+    UI.update(UI_MORE)
+    dump("content/i18n/ui.json", merge_ui({k: L(*v) for k, v in UI.items()}))
     course = load_course()
     extra = {"de": de_levels(), "us": us_levels(), "uk": uk_levels(), "ch": [], "at": at_levels()}
     for pack in (de_pack(), us_pack(), uk_pack(), ch_pack(), at_pack()):
@@ -622,6 +636,8 @@ if __name__ == "__main__":
             for i, lvl in enumerate(pack["levels"]):
                 lvl["lessons"] = course["de_rules"][i + 1]
         dump("content/legal/%s.json" % pack["country"], clean(pack))
+    lib = json.load(open(os.path.join(ROOT, "tools", "course", "library.json"), encoding="utf-8"))
+    dump("content/library.json", clean(lib))
     plist = parts()
     for p in plist:
         p["tiers"] = {str(lv): TIERS[p["id"]][lv] for lv in (2, 3)}

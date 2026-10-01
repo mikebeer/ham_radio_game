@@ -83,7 +83,7 @@ func _draw_art() -> void:
 		0:
 			ci.draw_circle(Vector2(300, 170), 130, Art.fade(Palette.TEAL, 0.08))
 			Art.rings(ci, Vector2(300, 170), _t, 3, 170.0, Palette.AMBER)
-			Art.avatar(ci, Vector2(300, 175), 120.0, Game.profile.get("avatar", 1))
+			Art.avatar(ci, Vector2(300, 175), 120.0, Game.look())
 		1:
 			ci.draw_rect(Rect2(0, 250, 600, 120), Palette.WOOD)
 			Art.gear(ci, "transceiver", Rect2(150, 130, 300, 120))

@@ -1,0 +1,2478 @@
+{
+ "entries": [
+  {
+   "id": "73",
+   "term": "73 and 88",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Best regards / love and kisses",
+    "de": "Beste Grüße / Liebe Grüße"
+   },
+   "text": {
+    "en": "73 means 'best regards' and is the normal sign-off at the end of a contact; saying 73 once is already plural, so '73s' is not needed. 88 means 'love and kisses', friendly between close friends and sweethearts.",
+    "de": "73 bedeutet 'beste Grüße' und ist der normale Abschluss eines Funkkontakts; 73 ist schon eine Mehrzahl, daher braucht man kein '73s'. 88 heißt 'Liebe und Küsse' und ist unter engen Freunden und Verliebten üblich."
+   },
+   "see": [
+    "qso",
+    "cq",
+    "cw"
+   ]
+  },
+  {
+   "id": "agc",
+   "term": "AGC",
+   "cat": "equipment",
+   "level": 2,
+   "name": {
+    "en": "Automatic gain control",
+    "de": "Automatische Verstärkungsregelung"
+   },
+   "text": {
+    "en": "AGC adjusts the receiver gain automatically so loud and weak stations come out at a similar volume. It is usually switchable to fast or slow: fast suits CW and weak signals, slow suits SSB speech. The S-meter often reads the AGC level.",
+    "de": "Die AGC regelt die Empfängerverstärkung automatisch, sodass laute und leise Stationen etwa gleich laut klingen. Meist lässt sie sich auf schnell oder langsam umschalten: schnell für CW und schwache Signale, langsam für SSB-Sprache. Das S-Meter zeigt oft den AGC-Pegel."
+   },
+   "see": [
+    "smeter",
+    "qsb",
+    "preamp"
+   ]
+  },
+  {
+   "id": "alc",
+   "term": "ALC",
+   "cat": "equipment",
+   "level": 2,
+   "name": {
+    "en": "Automatic level control",
+    "de": "Automatische Pegelregelung"
+   },
+   "text": {
+    "en": "ALC protects the transmitter from being overdriven by reducing the gain when the signal is too strong. On SSB and digital modes the ALC meter should only just move; if it is pegged, the signal becomes distorted and splatters across the band.",
+    "de": "Die ALC schützt den Sender vor Übersteuerung, indem sie die Verstärkung bei zu starkem Signal absenkt. Bei SSB und Digimodes darf das ALC-Meter nur gerade ausschlagen; schlägt es voll aus, wird das Signal verzerrt und splattert über das Band."
+   },
+   "see": [
+    "splatter",
+    "ssb",
+    "microphone"
+   ]
+  },
+  {
+   "id": "am",
+   "term": "AM",
+   "cat": "modes",
+   "level": 1,
+   "name": {
+    "en": "Amplitude modulation",
+    "de": "Amplitudenmodulation"
+   },
+   "text": {
+    "en": "In AM the strength of the carrier follows the voice. The signal contains a carrier and two sidebands and is about 6 kHz wide. It sounds natural and is used by broadcasters and vintage-radio fans, but it is less efficient than SSB.",
+    "de": "Bei AM folgt die Amplitude des Trägers der Sprache. Das Signal enthält einen Träger und zwei Seitenbänder und ist etwa 6 kHz breit. Es klingt natürlich und wird von Rundfunk und Freunden alter Röhrengeräte genutzt, ist aber weniger effizient als SSB."
+   },
+   "see": [
+    "ssb",
+    "modulation",
+    "sideband"
+   ]
+  },
+  {
+   "id": "bands",
+   "term": "Amateur bands",
+   "cat": "rules",
+   "level": 1,
+   "name": {
+    "en": "Band names, 160 m to 70 cm",
+    "de": "Bandnamen, 160 m bis 70 cm"
+   },
+   "text": {
+    "en": "Bands are named after their rough wavelength. The common HF ones are 160 m (1.8 MHz), 80 m (3.5), 40 m (7), 30 m (10.1), 20 m (14), 17 m (18), 15 m (21), 12 m (24.9) and 10 m (28 MHz). Above are 6 m (50 MHz), 2 m (144) and 70 cm (430).",
+    "de": "Die Bänder sind nach ihrer ungefähren Wellenlänge benannt. Die üblichen Kurzwellenbänder sind 160 m (1,8 MHz), 80 m (3,5), 40 m (7), 30 m (10,1), 20 m (14), 17 m (18), 15 m (21), 12 m (24,9) und 10 m (28 MHz). Darüber folgen 6 m (50 MHz), 2 m (144) und 70 cm (430)."
+   },
+   "see": [
+    "wavelength",
+    "bandplan",
+    "itu"
+   ]
+  },
+  {
+   "id": "tuner",
+   "term": "Antenna tuner",
+   "cat": "equipment",
+   "level": 2,
+   "name": {
+    "en": "Antenna tuner (ATU)",
+    "de": "Antennenanpassgerät (Antennentuner)"
+   },
+   "text": {
+    "en": "An antenna tuner sits between the transmitter and the antenna and transforms the impedance so your transmitter sees 50 ohms. It does not make the antenna itself resonant and loses some power, so it cannot cure a bad antenna.",
+    "de": "Ein Antennentuner sitzt zwischen Sender und Antenne und transformiert die Impedanz, damit der Sender 50 Ohm sieht. Er macht die Antenne selbst nicht resonant und verbraucht etwas Leistung, kann also eine schlechte Antenne nicht retten."
+   },
+   "see": [
+    "swr",
+    "impedance",
+    "resonance"
+   ]
+  },
+  {
+   "id": "aprs",
+   "term": "APRS",
+   "cat": "modes",
+   "level": 2,
+   "name": {
+    "en": "Automatic Packet Reporting System",
+    "de": "Automatisches Paket-Melde-System"
+   },
+   "text": {
+    "en": "APRS broadcasts short data packets with position, weather or messages, so you can follow a hiker or car on a web map. In Europe it uses 144.800 MHz FM with 1200 baud packets; in North America 144.390 MHz.",
+    "de": "APRS sendet kurze Datenpakete mit Position, Wetterdaten oder Nachrichten, sodass man Wanderer oder Fahrzeuge auf einer Webkarte verfolgen kann. In Europa läuft es auf 144,800 MHz in FM mit 1200 Baud, in Nordamerika auf 144,390 MHz."
+   },
+   "see": [
+    "packet",
+    "fm",
+    "maidenhead"
+   ]
+  },
+  {
+   "id": "balun",
+   "term": "Balun",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "Balanced-to-unbalanced transformer",
+    "de": "Symmetrierglied (Balun)"
+   },
+   "text": {
+    "en": "A balun connects a balanced antenna, like a dipole, to an unbalanced coax cable. It prevents current from flowing on the outside of the coax, which would distort the pattern and bring RF into the shack. A 1:1 choke balun is common for dipoles.",
+    "de": "Ein Balun verbindet eine symmetrische Antenne, etwa einen Dipol, mit einem unsymmetrischen Koaxkabel. Er verhindert Mantelwellen auf der Außenseite des Kabels, die das Strahlungsdiagramm verzerren und HF ins Shack bringen. Für Dipole ist ein 1:1-Strombalun üblich."
+   },
+   "see": [
+    "coax",
+    "dipole",
+    "emc"
+   ]
+  },
+  {
+   "id": "bandplan",
+   "term": "Band plan",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Band plan",
+    "de": "Bandplan"
+   },
+   "text": {
+    "en": "A band plan, by the IARU, shows which parts of a band are for which mode. For example, on 20 m the lowest part is for CW, then digital, then voice. It is a gentlemen's agreement that keeps everybody out of each other's way.",
+    "de": "Ein Bandplan, von der IARU erstellt, zeigt, welche Teile eines Bandes für welche Betriebsart gedacht sind. Auf 20 m liegt z. B. unten CW, dann Digimodes, dann Sprechfunk. Das ist eine Vereinbarung unter Funkamateuren, damit man sich nicht stört."
+   },
+   "see": [
+    "iaru",
+    "calling",
+    "qsy"
+   ]
+  },
+  {
+   "id": "bandwidth",
+   "term": "Bandwidth",
+   "cat": "electronics",
+   "level": 1,
+   "name": {
+    "en": "Bandwidth",
+    "de": "Bandbreite"
+   },
+   "text": {
+    "en": "Bandwidth is the width of frequency a signal occupies. CW needs only 100 to 500 Hz, SSB about 2.7 kHz, AM about 6 kHz and FM about 12.5 kHz. Narrower modes fit more stations in a band and cut through noise better.",
+    "de": "Die Bandbreite ist die Frequenzbreite, die ein Signal belegt. CW braucht nur 100 bis 500 Hz, SSB etwa 2,7 kHz, AM etwa 6 kHz und FM etwa 12,5 kHz. Schmalere Betriebsarten lassen mehr Stationen im Band zu und kommen besser durch das Rauschen."
+   },
+   "see": [
+    "cw",
+    "ssb",
+    "filter",
+    "modulation"
+   ]
+  },
+  {
+   "id": "bfo",
+   "term": "BFO",
+   "cat": "equipment",
+   "level": 3,
+   "name": {
+    "en": "Beat frequency oscillator",
+    "de": "Überlagerungsoszillator (BFO)"
+   },
+   "text": {
+    "en": "The BFO makes CW and SSB audible. It adds a local signal that mixes with the intermediate frequency so the result falls into the audio range. Shifting it by around 600 to 800 Hz gives the pitch of a CW signal.",
+    "de": "Der BFO macht CW und SSB hörbar. Er liefert ein lokales Signal, das sich mit der Zwischenfrequenz mischt, sodass das Ergebnis im Hörbereich liegt. Eine Verschiebung um etwa 600 bis 800 Hz ergibt die Tonhöhe eines CW-Signals."
+   },
+   "see": [
+    "cw",
+    "ssb",
+    "oscillator"
+   ]
+  },
+  {
+   "id": "calling",
+   "term": "Calling frequency",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Calling frequency",
+    "de": "Anruffrequenz"
+   },
+   "text": {
+    "en": "A calling frequency is a meeting place where you call, find a partner and then move away. The well-known 2 m FM calling frequency in Europe is 145.500 MHz; for 2 m SSB it is 144.300 MHz. Keep calls short, then QSY.",
+    "de": "Eine Anruffrequenz ist ein Treffpunkt, auf dem man ruft, einen Partner findet und dann wegwechselt. Bekannt ist 145,500 MHz für FM auf 2 m in Europa; für 2-m-SSB 144,300 MHz. Anrufe kurz halten, dann QSY."
+   },
+   "see": [
+    "qsy",
+    "simplex",
+    "bandplan",
+    "cq"
+   ]
+  },
+  {
+   "id": "callsign",
+   "term": "Callsign and prefix",
+   "cat": "rules",
+   "level": 1,
+   "name": {
+    "en": "Callsign / prefix",
+    "de": "Rufzeichen / Präfix"
+   },
+   "text": {
+    "en": "A callsign is your unique on-air name. It starts with a prefix for the country, e.g. DL for Germany, HB9 for Switzerland, G for England or W/K for the USA, then a digit and a suffix. Call yourself that at the start and end of contacts.",
+    "de": "Das Rufzeichen ist dein eindeutiger Name im Funkverkehr. Es beginnt mit einem Präfix für das Land, z. B. DL für Deutschland, HB9 für die Schweiz, G für England oder W/K für die USA, dann folgen eine Ziffer und das Suffix. Man nennt es zu Beginn und Ende des Funkverkehrs."
+   },
+   "see": [
+    "itu",
+    "cept",
+    "phonetic",
+    "cq"
+   ]
+  },
+  {
+   "id": "capacitor",
+   "term": "Capacitor",
+   "cat": "electronics",
+   "level": 1,
+   "name": {
+    "en": "Capacitor",
+    "de": "Kondensator"
+   },
+   "text": {
+    "en": "A capacitor stores electric charge between two plates. It lets AC pass but blocks DC. Its unit is the farad, in practice pF to µF. Together with a coil it forms a resonant circuit, and it smooths voltage in power supplies.",
+    "de": "Ein Kondensator speichert elektrische Ladung zwischen zwei Platten. Er lässt Wechselstrom durch und sperrt Gleichstrom. Die Einheit ist das Farad, praktisch pF bis µF. Mit einer Spule bildet er einen Schwingkreis, im Netzteil glättet er die Spannung."
+   },
+   "see": [
+    "coil",
+    "filter",
+    "resonance"
+   ]
+  },
+  {
+   "id": "cept",
+   "term": "CEPT",
+   "cat": "rules",
+   "level": 2,
+   "name": {
+    "en": "European Conference of Postal and Telecommunications Administrations",
+    "de": "Europäische Konferenz der Verwaltungen für Post und Telekommunikation"
+   },
+   "text": {
+    "en": "CEPT is a European group of telecom authorities. Its recommendation lets a licensed ham operate temporarily in another CEPT country without extra paperwork. Use the home callsign with a prefix, e.g. DL/HB9XYZ in Germany.",
+    "de": "Die CEPT ist ein europäischer Zusammenschluss der Fernmeldeverwaltungen. Ihre Empfehlung erlaubt lizenzierten Funkamateuren, vorübergehend in einem anderen CEPT-Land ohne zusätzliche Formalitäten zu funken. Man nutzt das Heimatrufzeichen mit Präfix, z. B. DL/HB9XYZ in Deutschland."
+   },
+   "see": [
+    "harec",
+    "callsign",
+    "licence"
+   ]
+  },
+  {
+   "id": "coax",
+   "term": "Coax",
+   "cat": "antennas",
+   "level": 1,
+   "name": {
+    "en": "Coaxial cable",
+    "de": "Koaxialkabel"
+   },
+   "text": {
+    "en": "Coax is a cable with a centre conductor, insulation and a braided shield. Ham gear uses 50 ohm coax, e.g. RG-58 or thicker RG-213. Loss grows with frequency, so on 2 m and 70 cm use thick low-loss cable.",
+    "de": "Koaxkabel hat einen Innenleiter, eine Isolierung und ein Geflecht als Abschirmung. Im Amateurfunk nutzt man 50-Ohm-Kabel, z. B. RG-58 oder das dickere RG-213. Die Dämpfung steigt mit der Frequenz, auf 2 m und 70 cm nimmt man dickes, verlustarmes Kabel."
+   },
+   "see": [
+    "impedance",
+    "vf",
+    "swr",
+    "balun"
+   ]
+  },
+  {
+   "id": "coil",
+   "term": "Coil",
+   "cat": "electronics",
+   "level": 1,
+   "name": {
+    "en": "Coil (inductor)",
+    "de": "Spule (Induktivität)"
+   },
+   "text": {
+    "en": "A coil is a wire wound in turns that stores energy in a magnetic field. Its unit is the henry, in practice nH to mH. It lets DC pass but opposes AC, more so at higher frequencies, and is used in filters and tuned circuits.",
+    "de": "Eine Spule ist ein gewickelter Draht, der Energie im Magnetfeld speichert. Die Einheit ist das Henry, praktisch nH bis mH. Sie lässt Gleichstrom durch, hemmt aber Wechselstrom, bei höherer Frequenz stärker, und wird in Filtern und Schwingkreisen verwendet."
+   },
+   "see": [
+    "capacitor",
+    "filter",
+    "transformer"
+   ]
+  },
+  {
+   "id": "contest",
+   "term": "Contest",
+   "cat": "operating",
+   "level": 2,
+   "name": {
+    "en": "Radio contest",
+    "de": "Funkwettbewerb"
+   },
+   "text": {
+    "en": "A contest is an on-air competition, often a weekend, where you make as many contacts as possible and swap a short exchange, e.g. report and a serial number. Points, multipliers and logs are rated. It is a great way to practise.",
+    "de": "Ein Contest ist ein Funkwettbewerb, oft über ein Wochenende, bei dem man möglichst viele Verbindungen fährt und einen kurzen Austausch macht, z. B. Rapport und laufende Nummer. Punkte, Multiplikatoren und Logs werden gewertet. Eine gute Übung."
+   },
+   "see": [
+    "rst",
+    "logbook",
+    "maidenhead"
+   ]
+  },
+  {
+   "id": "cq",
+   "term": "CQ",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "General call",
+    "de": "Allgemeiner Anruf"
+   },
+   "text": {
+    "en": "CQ is the general call that says 'Anyone, please answer'. You send 'CQ CQ CQ, this is DL1ABC, calling CQ and listening' and wait for a reply. The sound-alike 'seek you' is a popular but not official explanation.",
+    "de": "CQ ist der allgemeine Anruf und heißt sinngemäß 'Wer hört, bitte antworten'. Man sendet 'CQ CQ CQ, hier DL1ABC, ruft CQ und hört' und wartet auf Antwort. 'Seek you' ist eine beliebte, aber nicht offizielle Deutung."
+   },
+   "see": [
+    "qso",
+    "callsign",
+    "calling",
+    "pileup"
+   ]
+  },
+  {
+   "id": "ctcss",
+   "term": "CTCSS",
+   "cat": "operating",
+   "level": 2,
+   "name": {
+    "en": "Continuous tone-coded squelch system",
+    "de": "Selektivruf mit Subaudio-Ton"
+   },
+   "text": {
+    "en": "CTCSS is a very low tone, between 67 and 254 Hz, added to an FM signal. A repeater opens its squelch only if it hears the right tone, e.g. 88.5 Hz, which keeps out stray signals. Some repeaters also use a 1750 Hz tone burst.",
+    "de": "CTCSS ist ein sehr tiefer Ton zwischen 67 und 254 Hz, der einem FM-Signal beigemischt wird. Ein Relais öffnet nur bei richtigem Ton, z. B. 88,5 Hz, und blendet so fremde Signale aus. Manche Relais nutzen zusätzlich einen 1750-Hz-Ton."
+   },
+   "see": [
+    "squelch",
+    "repeater",
+    "fm"
+   ]
+  },
+  {
+   "id": "cw",
+   "term": "CW",
+   "cat": "modes",
+   "level": 1,
+   "name": {
+    "en": "Continuous wave (Morse code)",
+    "de": "Telegrafie (Morsetelegrafie)"
+   },
+   "text": {
+    "en": "CW means sending Morse code by switching a carrier on and off. It is the oldest ham mode and still a favourite: a CW signal is only about 100 to 500 Hz wide, so it gets through where speech would be lost in the noise.",
+    "de": "CW bedeutet Morsetelegrafie: Ein Träger wird im Rhythmus der Morsezeichen ein- und ausgetastet. Die älteste Betriebsart ist noch immer beliebt: Ein CW-Signal ist nur etwa 100 bis 500 Hz breit und kommt auch durch, wenn Sprache im Rauschen untergeht."
+   },
+   "see": [
+    "key",
+    "ditdah",
+    "wpm",
+    "bandwidth"
+   ]
+  },
+  {
+   "id": "dstar",
+   "term": "D-STAR",
+   "cat": "modes",
+   "level": 2,
+   "name": {
+    "en": "Digital Smart Technologies for Amateur Radio",
+    "de": "Digitale Sprach- und Datenübertragung (Icom/JARL)"
+   },
+   "text": {
+    "en": "D-STAR is a digital voice and data system developed in Japan, promoted by Icom. It carries your callsign in every transmission and links repeaters over the internet via reflectors. The voice stream uses about 2.4 kbit/s.",
+    "de": "D-STAR ist ein in Japan entwickeltes digitales Sprach- und Datensystem, das Icom stark fördert. Das Rufzeichen steckt in jeder Aussendung, und Relais werden über Reflektoren per Internet verbunden. Der Sprachdatenstrom nutzt etwa 2,4 kbit/s."
+   },
+   "see": [
+    "dmr",
+    "repeater",
+    "callsign"
+   ]
+  },
+  {
+   "id": "db",
+   "term": "dB",
+   "cat": "electronics",
+   "level": 1,
+   "name": {
+    "en": "Decibel",
+    "de": "Dezibel"
+   },
+   "text": {
+    "en": "The decibel compares two powers on a log scale. +3 dB is double power, +10 dB is ten times, and 6 dB is double voltage. Gain, loss and S-units are given in dB, which turns multiplying into easy adding.",
+    "de": "Das Dezibel vergleicht zwei Leistungen auf einer logarithmischen Skala. +3 dB bedeuten doppelte Leistung, +10 dB das Zehnfache und 6 dB doppelte Spannung. Gewinn, Dämpfung und S-Stufen werden in dB angegeben, so wird aus Multiplizieren leichtes Addieren."
+   },
+   "see": [
+    "smeter",
+    "gain",
+    "power"
+   ]
+  },
+  {
+   "id": "deviation",
+   "term": "Deviation",
+   "cat": "electronics",
+   "level": 2,
+   "name": {
+    "en": "Frequency deviation",
+    "de": "Frequenzhub"
+   },
+   "text": {
+    "en": "Deviation is how far an FM carrier swings away from its centre frequency when you speak. On 12.5 kHz channels it is about 2.5 kHz at most. Too much deviation makes the signal wider and spills into the next channel.",
+    "de": "Der Frequenzhub gibt an, wie weit der FM-Träger beim Sprechen von seiner Mittenfrequenz abweicht. In 12,5-kHz-Kanälen sind es höchstens etwa 2,5 kHz. Bei zu viel Hub wird das Signal breiter und stört den Nachbarkanal."
+   },
+   "see": [
+    "fm",
+    "splatter",
+    "bandwidth"
+   ]
+  },
+  {
+   "id": "diode",
+   "term": "Diode",
+   "cat": "electronics",
+   "level": 1,
+   "name": {
+    "en": "Diode",
+    "de": "Diode"
+   },
+   "text": {
+    "en": "A diode lets current flow in one direction only. Rectifiers in power supplies use it, as do detectors and protection circuits. An LED is a diode that glows, and a silicon diode drops about 0.7 V.",
+    "de": "Eine Diode lässt Strom nur in eine Richtung durch. Gleichrichter in Netzteilen nutzen sie, ebenso Detektoren und Schutzschaltungen. Eine LED ist eine Diode, die leuchtet, und eine Siliziumdiode verliert etwa 0,7 V."
+   },
+   "see": [
+    "transistor",
+    "psu"
+   ]
+  },
+  {
+   "id": "dipole",
+   "term": "Dipole",
+   "cat": "antennas",
+   "level": 1,
+   "name": {
+    "en": "Half-wave dipole",
+    "de": "Dipol"
+   },
+   "text": {
+    "en": "A dipole is two equal wires fed in the middle, each a quarter wavelength long. A half-wave dipole is about 142.5 divided by the frequency in MHz, in metres: roughly 20 m for the 40 m band. It has 2.15 dBi gain and is the classic first antenna.",
+    "de": "Ein Dipol besteht aus zwei gleich langen Drähten, die in der Mitte gespeist werden, jeder eine Viertelwellenlänge lang. Ein Halbwellendipol ist etwa 142,5 geteilt durch die Frequenz in MHz, in Metern: rund 20 m für das 40-m-Band. Er hat 2,15 dBi Gewinn und ist die klassische erste Antenne."
+   },
+   "see": [
+    "resonance",
+    "gain",
+    "balun",
+    "wavelength"
+   ]
+  },
+  {
+   "id": "ditdah",
+   "term": "Dit and dah",
+   "cat": "learning",
+   "level": 1,
+   "name": {
+    "en": "Dit and dah",
+    "de": "Punkt und Strich (dit und dah)"
+   },
+   "text": {
+    "en": "A dit is the short Morse element, a dah is the long one, three times as long. Operators speak them as sounds, not 'dot' and 'dash'. For example, K is dah-dit-dah and SOS is dit-dit-dit dah-dah-dah dit-dit-dit.",
+    "de": "Dit ist das kurze Morsezeichen, dah das lange, dreimal so lange. Man spricht sie als Laute und nicht als 'Punkt' und 'Strich'. Beispiel: K ist dah-dit-dah und SOS ist dit-dit-dit dah-dah-dah dit-dit-dit."
+   },
+   "see": [
+    "cw",
+    "koch",
+    "key",
+    "wpm"
+   ]
+  },
+  {
+   "id": "dmr",
+   "term": "DMR",
+   "cat": "modes",
+   "level": 2,
+   "name": {
+    "en": "Digital mobile radio",
+    "de": "Digital Mobile Radio"
+   },
+   "text": {
+    "en": "DMR is a digital voice mode that squeezes two time slots into one 12.5 kHz channel. Radios connect through repeaters to worldwide talkgroups, so you can chat across the globe from a handheld. You need a personal DMR ID.",
+    "de": "DMR ist ein digitaler Sprachmodus, der zwei Zeitschlitze in einem 12,5-kHz-Kanal unterbringt. Über Relais verbinden sich die Geräte mit weltweiten Sprechgruppen, sodass man vom Handfunkgerät aus um die Welt plaudern kann. Man braucht eine persönliche DMR-ID."
+   },
+   "see": [
+    "dstar",
+    "repeater",
+    "fm"
+   ]
+  },
+  {
+   "id": "dx",
+   "term": "DX",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Long distance",
+    "de": "Weitverkehr"
+   },
+   "text": {
+    "en": "DX means long distance, usually contacts with faraway countries. Hunting DX is a core part of the hobby: on HF, hearing a station from another continent with a simple wire is a thrill. Rare countries are called 'new ones'.",
+    "de": "DX steht für große Entfernung, meist für Verbindungen mit weit entfernten Ländern. DX-Jagd ist ein Kern des Hobbys: Auf Kurzwelle mit einem einfachen Draht eine Station von einem anderen Kontinent zu hören, begeistert. Seltene Länder heißen 'New Ones'."
+   },
+   "see": [
+    "dxpedition",
+    "skip",
+    "pileup"
+   ]
+  },
+  {
+   "id": "dxpedition",
+   "term": "DXpedition",
+   "cat": "operating",
+   "level": 2,
+   "name": {
+    "en": "DXpedition",
+    "de": "DXpedition"
+   },
+   "text": {
+    "en": "A DXpedition is a trip to a rare place, such as a remote island, so that hams everywhere can add a new country. The team brings antennas and amplifiers and may make over 100,000 contacts, usually with split operation.",
+    "de": "Eine DXpedition ist eine Reise an einen seltenen Ort, etwa eine entlegene Insel, damit Funkamateure weltweit ein neues Land erreichen können. Das Team bringt Antennen und Endstufen mit und kann über 100.000 QSOs fahren, meist im Split-Betrieb."
+   },
+   "see": [
+    "dx",
+    "split",
+    "pileup"
+   ]
+  },
+  {
+   "id": "eirp",
+   "term": "EIRP",
+   "cat": "antennas",
+   "level": 3,
+   "name": {
+    "en": "Effective isotropic radiated power",
+    "de": "Äquivalente isotrope Strahlungsleistung"
+   },
+   "text": {
+    "en": "EIRP is the power an ideal isotropic radiator would need to send to give the same signal in the main direction. EIRP = transmitter power x antenna gain. 100 W into a 10 dBi antenna gives 1000 W EIRP. Rules for notification refer to it.",
+    "de": "EIRP ist die Leistung, die ein idealer Kugelstrahler abstrahlen müsste, um in Hauptstrahlrichtung dasselbe Signal zu erzeugen. EIRP = Sendeleistung mal Antennengewinn. 100 W an einer 10-dBi-Antenne ergeben 1000 W EIRP. Anzeigepflichten beziehen sich darauf."
+   },
+   "see": [
+    "gain",
+    "rfexposure",
+    "pep"
+   ]
+  },
+  {
+   "id": "emc",
+   "term": "EMC",
+   "cat": "rules",
+   "level": 2,
+   "name": {
+    "en": "Electromagnetic compatibility",
+    "de": "Elektromagnetische Verträglichkeit (EMV)"
+   },
+   "text": {
+    "en": "EMC means equipment can work next to other devices without causing or suffering interference. Hams must keep their emissions clean and also deal with sensitive neighbours. Ferrites, filters, good earthing and low power all help.",
+    "de": "EMV bedeutet, dass Geräte nebeneinander arbeiten können, ohne zu stören oder gestört zu werden. Funkamateure müssen ihre Aussendungen sauber halten und auch mit empfindlichen Nachbargeräten zurechtkommen. Ferrite, Filter, gute Erdung und geringe Leistung helfen."
+   },
+   "see": [
+    "tvi",
+    "harmonics",
+    "balun"
+   ]
+  },
+  {
+   "id": "endfed",
+   "term": "End-fed and long wire",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "End-fed half-wave / long wire",
+    "de": "Endgespeiste Antenne / Langdraht"
+   },
+   "text": {
+    "en": "An end-fed half-wave is a wire fed at one end through a 49:1 or 64:1 transformer; a long wire is one or more wavelengths long. Both are easy to hang in a tree, so popular for portable work, but may need an ATU and a counterpoise.",
+    "de": "Eine endgespeiste Halbwellenantenne ist ein Draht, der am Ende über einen 49:1- oder 64:1-Übertrager eingespeist wird; ein Langdraht ist eine oder mehrere Wellenlängen lang. Beide lassen sich leicht in einen Baum hängen und sind beim Portabelfunk beliebt, brauchen aber oft ein Anpassgerät und ein Gegengewicht."
+   },
+   "see": [
+    "tuner",
+    "sotapota",
+    "balun",
+    "dipole"
+   ]
+  },
+  {
+   "id": "farnsworth",
+   "term": "Farnsworth",
+   "cat": "learning",
+   "level": 2,
+   "name": {
+    "en": "Farnsworth timing",
+    "de": "Farnsworth-Methode"
+   },
+   "text": {
+    "en": "Farnsworth sends each character at full speed, such as 20 WPM, but with longer gaps between characters, so the overall speed is slow, such as 10 WPM. You learn the sound of characters while having time to think.",
+    "de": "Bei Farnsworth werden die Zeichen in vollem Tempo gegeben, z. B. 20 WPM, aber mit längeren Pausen zwischen den Zeichen, sodass das Gesamttempo niedrig ist, z. B. 10 WPM. So lernt man den Klang der Zeichen und hat Zeit zum Nachdenken."
+   },
+   "see": [
+    "koch",
+    "wpm",
+    "cw"
+   ]
+  },
+  {
+   "id": "filter",
+   "term": "Filter",
+   "cat": "electronics",
+   "level": 2,
+   "name": {
+    "en": "Filter",
+    "de": "Filter"
+   },
+   "text": {
+    "en": "A filter lets some frequencies through and blocks others. Low-pass, high-pass, band-pass and band-stop are the four types. A low-pass filter after the transmitter reduces harmonics; a crystal filter in the receiver narrows it for CW.",
+    "de": "Ein Filter lässt manche Frequenzen durch und sperrt andere. Es gibt Tiefpass, Hochpass, Bandpass und Bandsperre. Ein Tiefpass hinter dem Sender mindert Oberwellen; ein Quarzfilter im Empfänger macht ihn für CW schmalbandig."
+   },
+   "see": [
+    "harmonics",
+    "bandwidth",
+    "tvi",
+    "capacitor"
+   ]
+  },
+  {
+   "id": "fm",
+   "term": "FM",
+   "cat": "modes",
+   "level": 1,
+   "name": {
+    "en": "Frequency modulation",
+    "de": "Frequenzmodulation"
+   },
+   "text": {
+    "en": "FM changes the frequency of the carrier in step with the voice. It sounds clear and ignores most noise, so it is the standard mode on VHF and UHF repeaters and handhelds. On 2 m a channel is typically 12.5 kHz wide.",
+    "de": "Bei FM ändert sich die Frequenz des Trägers im Takt der Sprache. Das klingt klar und unterdrückt viele Störungen, deshalb ist FM die Standardbetriebsart für Relais und Handfunkgeräte auf UKW und UHF. Auf 2 m ist ein Kanal meist 12,5 kHz breit."
+   },
+   "see": [
+    "deviation",
+    "repeater",
+    "squelch",
+    "ctcss"
+   ]
+  },
+  {
+   "id": "ft4",
+   "term": "FT4",
+   "cat": "modes",
+   "level": 2,
+   "text": {
+    "en": "FT4 is a faster cousin of FT8 made for contesting. Its time slots are 7.5 seconds instead of 15, so a contact takes about half as long, at the price of needing somewhat stronger signals. A typical 20 m frequency is 14.080 MHz.",
+    "de": "FT4 ist die schnellere Schwester von FT8 und wurde für Contests entwickelt. Die Zeitfenster dauern 7,5 statt 15 Sekunden, ein QSO geht also etwa doppelt so schnell, dafür braucht man etwas stärkere Signale. Eine übliche 20-m-Frequenz ist 14,080 MHz."
+   },
+   "see": [
+    "ft8",
+    "contest",
+    "utc"
+   ]
+  },
+  {
+   "id": "ft8",
+   "term": "FT8",
+   "cat": "modes",
+   "level": 1,
+   "name": {
+    "en": "Franke-Taylor design, 8-FSK",
+    "de": "Franke-Taylor-Verfahren, 8-FSK"
+   },
+   "text": {
+    "en": "FT8 is a weak-signal digital mode made by Joe Taylor, K1JT, and Steve Franke in 2017. Fixed 15-second slots carry a short fixed-format message, and decoding works far below the noise. Your PC clock must be accurate, and 20 m activity sits near 14.074 MHz.",
+    "de": "FT8 ist ein digitaler Modus für schwache Signale, 2017 von Joe Taylor, K1JT, und Steve Franke entwickelt. In festen 15-Sekunden-Takten wird eine kurze Nachricht gesendet, die auch weit unter dem Rauschen dekodiert wird. Die PC-Uhr muss genau gehen; auf 20 m ist es um 14,074 MHz."
+   },
+   "see": [
+    "ft4",
+    "utc",
+    "qrp",
+    "maidenhead"
+   ]
+  },
+  {
+   "id": "gain",
+   "term": "Gain (dBi, dBd)",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "Antenna gain",
+    "de": "Antennengewinn"
+   },
+   "text": {
+    "en": "Antenna gain says how much stronger an antenna radiates in its best direction than a reference antenna. dBi refers to a theoretical point source, dBd to a half-wave dipole. A dipole has 0 dBd, which equals 2.15 dBi.",
+    "de": "Der Antennengewinn sagt, um wie viel stärker eine Antenne in ihre beste Richtung strahlt als eine Bezugsantenne. dBi bezieht sich auf den theoretischen Kugelstrahler, dBd auf den Halbwellendipol. Ein Dipol hat 0 dBd, das entspricht 2,15 dBi."
+   },
+   "see": [
+    "db",
+    "eirp",
+    "yagi",
+    "dipole"
+   ]
+  },
+  {
+   "id": "greyline",
+   "term": "Greyline",
+   "cat": "propagation",
+   "level": 2,
+   "name": {
+    "en": "Grey line",
+    "de": "Grauzone (Dämmerungslinie)"
+   },
+   "text": {
+    "en": "The greyline is the band around the Earth between day and night, where it is dawn or dusk. There the D layer fades while the F layer remains, so signals along the line can travel unusually far, especially on 160 m to 40 m.",
+    "de": "Die Grauzone ist der Streifen um die Erde zwischen Tag und Nacht, also Dämmerung. Dort verschwindet die D-Schicht, während die F-Schicht noch besteht, deshalb laufen Signale entlang der Linie ungewöhnlich weit, besonders auf 160 m bis 40 m."
+   },
+   "see": [
+    "ionosphere",
+    "dx",
+    "utc"
+   ]
+  },
+  {
+   "id": "ground",
+   "term": "Ground",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "Earth / grounding",
+    "de": "Erdung"
+   },
+   "text": {
+    "en": "Ground means two things: the safety earth (protective earthing) that keeps equipment safe, and the RF ground of a vertical antenna. They differ: a protective earth rod does not make a good RF ground without radials.",
+    "de": "Erdung meint zweierlei: die Schutzerdung, die Geräte sicher macht, und die HF-Erde einer Vertikalantenne. Beides ist verschieden: Ein Erdspieß für die Schutzerdung ergibt ohne Radials keine gute HF-Erde."
+   },
+   "see": [
+    "lightning",
+    "groundplane",
+    "emc"
+   ]
+  },
+  {
+   "id": "groundplane",
+   "term": "Ground plane",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "Ground-plane antenna with radials",
+    "de": "Groundplane-Antenne mit Radials"
+   },
+   "text": {
+    "en": "A ground plane is a quarter-wave vertical with radials, wires lying out like a skirt as a mirror for the signal. About four sloping radials give a match to 50 ohms; a bare ground needs many more, perhaps 16 or more.",
+    "de": "Eine Groundplane ist ein Viertelwellen-Vertikalstrahler mit Radials, also Drähten, die wie ein Rock abstehen und als Spiegel für das Signal dienen. Etwa vier abgewinkelte Radials ergeben Anpassung an 50 Ohm; auf blankem Boden braucht man deutlich mehr, etwa 16 oder mehr."
+   },
+   "see": [
+    "vertical",
+    "ground",
+    "wavelength"
+   ]
+  },
+  {
+   "id": "groundwave",
+   "term": "Ground wave",
+   "cat": "propagation",
+   "level": 1,
+   "name": {
+    "en": "Ground wave",
+    "de": "Bodenwelle"
+   },
+   "text": {
+    "en": "The ground wave follows the Earth's surface instead of going through the ionosphere. It works best on low frequencies like 160 m and 80 m and over wet ground or sea, and covers perhaps up to 100 km or more depending on power and terrain.",
+    "de": "Die Bodenwelle folgt der Erdoberfläche und läuft nicht über die Ionosphäre. Sie funktioniert am besten auf niedrigen Frequenzen wie 160 m und 80 m und über feuchtem Boden oder Meer und reicht je nach Leistung und Gelände vielleicht 100 km oder mehr."
+   },
+   "see": [
+    "skip",
+    "los",
+    "bands"
+   ]
+  },
+  {
+   "id": "harec",
+   "term": "HAREC",
+   "cat": "rules",
+   "level": 3,
+   "name": {
+    "en": "Harmonised Amateur Radio Examination Certificate",
+    "de": "Harmonisiertes Amateurfunk-Prüfungszeugnis"
+   },
+   "text": {
+    "en": "HAREC is the European standard for a full amateur exam (CEPT T/R 61-02). A licence based on HAREC is recognised across CEPT countries for foreign visits and for getting a local licence. In Germany classes E and A meet it.",
+    "de": "HAREC ist der europäische Standard für eine volle Amateurfunkprüfung (CEPT T/R 61-02). Eine darauf beruhende Lizenz wird in den CEPT-Ländern anerkannt, für Auslandsbesuche und für die Erteilung einer örtlichen Lizenz. In Deutschland erfüllen die Klassen E und A diese Anforderungen."
+   },
+   "see": [
+    "cept",
+    "licence"
+   ]
+  },
+  {
+   "id": "harmonics",
+   "term": "Harmonics",
+   "cat": "electronics",
+   "level": 2,
+   "name": {
+    "en": "Harmonics",
+    "de": "Oberwellen"
+   },
+   "text": {
+    "en": "Harmonics are unwanted signals at whole multiples of the transmit frequency. A 7 MHz signal also has weak ones at 14 and 21 MHz. They can interfere with other services, so transmitters need low-pass filters.",
+    "de": "Oberwellen sind unerwünschte Signale bei ganzzahligen Vielfachen der Sendefrequenz. Ein 7-MHz-Signal hat auch schwache Anteile bei 14 und 21 MHz. Sie können andere Funkdienste stören, deshalb brauchen Sender Tiefpassfilter."
+   },
+   "see": [
+    "filter",
+    "tvi",
+    "emc"
+   ]
+  },
+  {
+   "id": "iaru",
+   "term": "IARU",
+   "cat": "rules",
+   "level": 1,
+   "name": {
+    "en": "International Amateur Radio Union",
+    "de": "Internationale Amateurfunk-Union"
+   },
+   "text": {
+    "en": "The IARU is the worldwide federation of national amateur radio societies, founded in 1925. It represents hams at the ITU and has three regions: Region 1 (Europe, Africa, Middle East), 2 (Americas) and 3 (Asia-Pacific). It writes the band plans.",
+    "de": "Die IARU ist der weltweite Dachverband der nationalen Amateurfunkverbände, gegründet 1925. Sie vertritt Funkamateure bei der ITU und hat drei Regionen: Region 1 (Europa, Afrika, Naher Osten), 2 (Amerika) und 3 (Asien-Pazifik). Sie erstellt die Bandpläne."
+   },
+   "see": [
+    "itu",
+    "bandplan",
+    "cept"
+   ]
+  },
+  {
+   "id": "impedance",
+   "term": "Impedance",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "Impedance",
+    "de": "Impedanz (Wellenwiderstand)"
+   },
+   "text": {
+    "en": "Impedance, measured in ohms, is the opposition a circuit or antenna presents to alternating current. Ham gear is built for 50 ohms. A half-wave dipole in free space is about 73 ohms, close enough to 50. A mismatch means reflected power.",
+    "de": "Die Impedanz, gemessen in Ohm, ist der Widerstand, den ein Kreis oder eine Antenne dem Wechselstrom entgegensetzt. Amateurfunkgeräte sind für 50 Ohm gebaut. Ein Halbwellendipol im Freiraum hat etwa 73 Ohm, nahe genug an 50. Fehlanpassung bedeutet reflektierte Leistung."
+   },
+   "see": [
+    "swr",
+    "coax",
+    "tuner",
+    "resonance"
+   ]
+  },
+  {
+   "id": "ionosphere",
+   "term": "Ionosphere",
+   "cat": "propagation",
+   "level": 1,
+   "name": {
+    "en": "Ionosphere",
+    "de": "Ionosphäre"
+   },
+   "text": {
+    "en": "The ionosphere is a layer of electrically charged air about 60 to 400 km above us, ionised by the Sun. It bends HF signals back to Earth, which is why shortwave reaches other continents. By day the D layer absorbs low bands; the F layers reflect high ones.",
+    "de": "Die Ionosphäre ist eine Schicht aus elektrisch geladener Luft in etwa 60 bis 400 km Höhe, von der Sonne ionisiert. Sie lenkt Kurzwellensignale zur Erde zurück, weshalb man auf Kurzwelle andere Kontinente erreicht. Tags dämpft die D-Schicht die tiefen Bänder, die F-Schichten reflektieren die hohen."
+   },
+   "see": [
+    "skip",
+    "muf",
+    "sunspots",
+    "greyline"
+   ]
+  },
+  {
+   "id": "itu",
+   "term": "ITU",
+   "cat": "rules",
+   "level": 1,
+   "name": {
+    "en": "International Telecommunication Union",
+    "de": "Internationale Fernmeldeunion"
+   },
+   "text": {
+    "en": "The ITU is the United Nations body in Geneva that manages radio frequencies and the Radio Regulations. It defines the amateur service, assigns callsign prefixes to countries and divides the world into three regions.",
+    "de": "Die ITU ist die UN-Organisation in Genf, die Funkfrequenzen und die Vollzugsordnung für den Funkdienst verwaltet. Sie definiert den Amateurfunkdienst, teilt den Ländern Rufzeichenpräfixe zu und gliedert die Welt in drei Regionen."
+   },
+   "see": [
+    "iaru",
+    "callsign",
+    "bands"
+   ]
+  },
+  {
+   "id": "keyer",
+   "term": "Keyer",
+   "cat": "equipment",
+   "level": 2,
+   "name": {
+    "en": "Electronic keyer",
+    "de": "Elektronischer Keyer"
+   },
+   "text": {
+    "en": "A keyer is an electronic circuit, built into most rigs, that makes perfectly timed dits and dahs from paddle input. You set the speed in WPM, and in iambic mode it alternates dits and dahs while you hold both paddles.",
+    "de": "Ein Keyer ist eine Elektronik, in die meisten Geräte eingebaut, die aus dem Paddle-Signal sauber getaktete Punkte und Striche bildet. Man stellt die Geschwindigkeit in WPM ein, und im iambischen Modus wechseln sich Punkte und Striche ab, solange beide Hebel gedrückt sind."
+   },
+   "see": [
+    "paddle",
+    "wpm",
+    "cw"
+   ]
+  },
+  {
+   "id": "koch",
+   "term": "Koch method",
+   "cat": "learning",
+   "level": 1,
+   "name": {
+    "en": "Koch method",
+    "de": "Koch-Methode"
+   },
+   "text": {
+    "en": "The Koch method teaches Morse at full character speed from day one, e.g. 20 WPM, with only two characters at first. You add one new character each time you copy 90 percent right. It builds instant recognition instead of counting dits and dahs.",
+    "de": "Die Koch-Methode lehrt Morsen von Anfang an in vollem Zeichentempo, z. B. 20 WPM, zunächst mit nur zwei Zeichen. Jedes Mal, wenn man 90 Prozent richtig aufnimmt, kommt ein neues Zeichen dazu. So lernt man sofort zu erkennen, statt Punkte und Striche zu zählen."
+   },
+   "see": [
+    "farnsworth",
+    "wpm",
+    "ditdah",
+    "cw"
+   ]
+  },
+  {
+   "id": "licence",
+   "term": "Licence classes",
+   "cat": "rules",
+   "level": 1,
+   "name": {
+    "en": "Licence classes",
+    "de": "Zeugnisklassen"
+   },
+   "text": {
+    "en": "A licence says what you may do on the air. In Germany there are classes N, E and A, with more power and more bands as you go up: for example 10 W for N, 100 W for E and 750 W for A. Other countries use other names, e.g. Technician, General, Extra in the USA.",
+    "de": "Eine Lizenz regelt, was du auf Sendung tun darfst. In Deutschland gibt es die Klassen N, E und A, die mit mehr Leistung und mehr Bändern aufsteigen: etwa 10 W für N, 100 W für E und 750 W für A. Andere Länder haben andere Namen, z. B. Technician, General, Extra in den USA."
+   },
+   "see": [
+    "harec",
+    "pep",
+    "cept"
+   ]
+  },
+  {
+   "id": "lightning",
+   "term": "Lightning protection",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "Lightning protection",
+    "de": "Blitzschutz"
+   },
+   "text": {
+    "en": "Lightning protection reduces the damage from a strike. Ground the mast and bond the coax shield to a common earth bar where it enters the house, ideally with surge arresters. Disconnect cables and stay off the air in a thunderstorm.",
+    "de": "Der Blitzschutz mindert Schäden bei einem Einschlag. Mast erden und den Koaxschirm am Hauseintritt mit einer gemeinsamen Erdungsschiene verbinden, am besten mit Überspannungsableitern. Bei Gewitter Kabel abziehen und nicht senden."
+   },
+   "see": [
+    "ground",
+    "coax",
+    "emc"
+   ]
+  },
+  {
+   "id": "los",
+   "term": "Line of sight",
+   "cat": "propagation",
+   "level": 1,
+   "name": {
+    "en": "Line of sight",
+    "de": "Sichtverbindung (quasi-optische Ausbreitung)"
+   },
+   "text": {
+    "en": "VHF, UHF and higher waves mostly travel in straight lines, so range is limited by the horizon. With a rule of thumb the radio horizon is about 4 km times the square root of the antenna height in metres. A hilltop beats a tall mast.",
+    "de": "UKW-, UHF- und höhere Wellen laufen meist geradlinig, die Reichweite wird also vom Horizont begrenzt. Faustregel: Der Funkhorizont liegt bei etwa 4 km mal der Wurzel aus der Antennenhöhe in Metern. Ein Berggipfel schlägt jeden hohen Mast."
+   },
+   "see": [
+    "tropo",
+    "polarization",
+    "repeater"
+   ]
+  },
+  {
+   "id": "linear",
+   "term": "Linear amplifier",
+   "cat": "equipment",
+   "level": 3,
+   "name": {
+    "en": "Linear amplifier (PA)",
+    "de": "Linearendstufe (PA)"
+   },
+   "text": {
+    "en": "A linear amplifier raises the output of a transceiver from 100 W to several hundred watts and keeps the modulation clean. Your licence limits the output, e.g. 750 W PEP for German Class A. Check that your power supply, cable and RF exposure suit it.",
+    "de": "Eine Linearendstufe hebt die Ausgangsleistung eines Transceivers von 100 W auf mehrere hundert Watt und erhält dabei die Modulation. Die Lizenz begrenzt die Leistung, z. B. 750 W PEP in der deutschen Klasse A. Netzteil, Kabel und Personenschutz müssen dazu passen."
+   },
+   "see": [
+    "qro",
+    "pep",
+    "rfexposure"
+   ]
+  },
+  {
+   "id": "logbook",
+   "term": "Logbook and ADIF",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Logbook / ADIF",
+    "de": "Stationstagebuch / ADIF"
+   },
+   "text": {
+    "en": "The logbook records your contacts: date, UTC, callsign, frequency, mode and reports. Most use software and exchange it as an ADIF file (.adi), a simple text format that lets you move logs between programs and upload to LoTW.",
+    "de": "Das Logbuch hält deine Verbindungen fest: Datum, UTC, Rufzeichen, Frequenz, Betriebsart und Rapporte. Meist nutzt man Software und tauscht Logs als ADIF-Datei (.adi) aus, ein einfaches Textformat, mit dem sich Logs zwischen Programmen verschieben und zu LoTW hochladen lassen."
+   },
+   "see": [
+    "lotw",
+    "utc",
+    "qso",
+    "contest"
+   ]
+  },
+  {
+   "id": "loop",
+   "term": "Loop",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "Loop antenna",
+    "de": "Schleifenantenne (Loop)"
+   },
+   "text": {
+    "en": "A full-wave loop is a closed wire loop with a circumference of about 306 divided by the frequency in MHz, in metres. A small magnetic loop is only a fraction of that size, quiet on noise and good for small spaces, but very narrow in bandwidth.",
+    "de": "Eine Ganzwellenschleife ist ein geschlossener Drahtring mit einem Umfang von etwa 306 geteilt durch die Frequenz in MHz, in Metern. Eine kleine Magnetloop ist nur ein Bruchteil davon, rauscharm und gut für wenig Platz, aber sehr schmalbandig."
+   },
+   "see": [
+    "resonance",
+    "bandwidth",
+    "wavelength"
+   ]
+  },
+  {
+   "id": "lotw",
+   "term": "LoTW and eQSL",
+   "cat": "operating",
+   "level": 2,
+   "name": {
+    "en": "Logbook of The World / eQSL",
+    "de": "Logbook of The World / eQSL"
+   },
+   "text": {
+    "en": "LoTW is a free online confirmation service by the ARRL; eQSL.cc is a similar site. You upload your log, and when your partner uploads a matching QSO, it is confirmed. LoTW uses digital signatures, so it counts for awards such as DXCC.",
+    "de": "LoTW ist ein kostenloser Online-Bestätigungsdienst der ARRL, eQSL.cc ein ähnlicher Dienst. Man lädt sein Log hoch, und lädt der Partner ein passendes QSO hoch, gilt es als bestätigt. LoTW arbeitet mit digitalen Signaturen und zählt für Diplome wie DXCC."
+   },
+   "see": [
+    "qsl",
+    "logbook",
+    "qslcard"
+   ]
+  },
+  {
+   "id": "maidenhead",
+   "term": "Maidenhead locator",
+   "cat": "operating",
+   "level": 2,
+   "name": {
+    "en": "Maidenhead locator system",
+    "de": "Maidenhead-Locator (QTH-Locator)"
+   },
+   "text": {
+    "en": "The Maidenhead locator splits the Earth into squares named by letters and digits. JO62 is the Berlin area; JO62qm narrows it to a few km. Two letters, two digits, then two letters. Needed in VHF contests and FT8.",
+    "de": "Der Maidenhead-Locator teilt die Erde in Felder, die mit Buchstaben und Ziffern benannt sind. JO62 ist der Raum Berlin; JO62qm grenzt auf wenige Kilometer ein. Aufbau: zwei Buchstaben, zwei Ziffern, dann zwei Buchstaben. Wichtig bei UKW-Contesten und FT8."
+   },
+   "see": [
+    "qth",
+    "contest",
+    "ft8"
+   ]
+  },
+  {
+   "id": "microphone",
+   "term": "Microphone",
+   "cat": "equipment",
+   "level": 1,
+   "name": {
+    "en": "Microphone",
+    "de": "Mikrofon"
+   },
+   "text": {
+    "en": "The microphone changes your voice into a signal. Hand mics are fine for beginners, and headsets leave your hands free. Speak across or just past it at close range, and keep the gain low so the ALC hardly moves.",
+    "de": "Das Mikrofon wandelt deine Stimme in ein Signal um. Handmikrofone genügen Einsteigern, Headsets lassen die Hände frei. Sprich dicht, aber nicht direkt hinein, und halte die Verstärkung klein, damit die ALC kaum anspricht."
+   },
+   "see": [
+    "ptt",
+    "alc",
+    "ssb"
+   ]
+  },
+  {
+   "id": "modulation",
+   "term": "Modulation",
+   "cat": "electronics",
+   "level": 1,
+   "name": {
+    "en": "Modulation",
+    "de": "Modulation"
+   },
+   "text": {
+    "en": "Modulation puts information, such as speech, onto a radio-frequency carrier by varying its amplitude, frequency or phase. AM, FM and SSB are examples. Without modulation the carrier would carry no message.",
+    "de": "Modulation bringt Information, etwa Sprache, auf einen hochfrequenten Träger, indem man dessen Amplitude, Frequenz oder Phase verändert. AM, FM und SSB sind Beispiele. Ohne Modulation trägt der Träger keine Nachricht."
+   },
+   "see": [
+    "am",
+    "fm",
+    "ssb",
+    "sideband"
+   ]
+  },
+  {
+   "id": "key",
+   "term": "Morse key",
+   "cat": "equipment",
+   "level": 1,
+   "name": {
+    "en": "Straight key",
+    "de": "Morsetaste (Handtaste)"
+   },
+   "text": {
+    "en": "A Morse key, also called a straight key, is a simple switch. Press for a dit or dah and send the code yourself; the length of the press decides the character. Start with one, since it teaches timing.",
+    "de": "Die Morsetaste, auch Handtaste genannt, ist ein einfacher Schalter. Man drückt für Punkt oder Strich und gibt den Code selbst; die Länge des Tastendrucks entscheidet. Zum Einstieg ist sie ideal, denn sie schult das Timing."
+   },
+   "see": [
+    "paddle",
+    "keyer",
+    "cw",
+    "ditdah"
+   ]
+  },
+  {
+   "id": "muf",
+   "term": "MUF and LUF",
+   "cat": "propagation",
+   "level": 2,
+   "name": {
+    "en": "Maximum / lowest usable frequency",
+    "de": "Maximal / niedrigste nutzbare Frequenz"
+   },
+   "text": {
+    "en": "The MUF is the highest frequency the ionosphere still bends back for a given path; above it signals pass through into space. The LUF is the lowest, below which D-layer absorption kills signals. Between them is a good window.",
+    "de": "Die MUF ist die höchste Frequenz, die die Ionosphäre auf einer bestimmten Strecke noch zurückwirft; darüber laufen Signale ins All. Die LUF ist die niedrigste, darunter schluckt die D-Schicht die Signale. Dazwischen liegt das nutzbare Fenster."
+   },
+   "see": [
+    "ionosphere",
+    "skip",
+    "sunspots"
+   ]
+  },
+  {
+   "id": "net",
+   "term": "Net",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Radio net",
+    "de": "Funkrunde"
+   },
+   "text": {
+    "en": "A net is a scheduled on-air meeting on a set frequency, led by a net control station. Clubs run weekly nets for news, and emergency nets coordinate help in a crisis. Checking in is a good way to meet your local hams.",
+    "de": "Eine Runde (Net) ist ein geplantes Treffen auf Sendung, geleitet von einer Rundenleitung. Vereine halten wöchentliche Runden für Neuigkeiten, und Notfunkrunden koordinieren Hilfe im Krisenfall. Mitmachen ist ein guter Weg, Funkamateure vor Ort kennenzulernen."
+   },
+   "see": [
+    "ragchew",
+    "repeater",
+    "qso"
+   ]
+  },
+  {
+   "id": "noiseblanker",
+   "term": "Noise blanker",
+   "cat": "equipment",
+   "level": 2,
+   "name": {
+    "en": "Noise blanker",
+    "de": "Störaustaster (Noise Blanker)"
+   },
+   "text": {
+    "en": "A noise blanker mutes the receiver for a split second when it sees short impulses, such as spark from an electric fence or a car ignition. It helps against that kind of interference, but not against steady noise or against QRN.",
+    "de": "Ein Störaustaster schaltet den Empfänger für Sekundenbruchteile stumm, wenn er kurze Impulse erkennt, etwa Funken von Weidezäunen oder Zündanlagen. Er hilft gegen solche Störungen, aber nicht gegen Dauerrauschen oder QRN."
+   },
+   "see": [
+    "qrm",
+    "qrn",
+    "filter"
+   ]
+  },
+  {
+   "id": "ohm",
+   "term": "Ohm's law",
+   "cat": "electronics",
+   "level": 1,
+   "name": {
+    "en": "Ohm's law",
+    "de": "Ohmsches Gesetz"
+   },
+   "text": {
+    "en": "Ohm's law links voltage, current and resistance: U = R x I. With 12 V across 4 ohms, 3 A flows. If you know any two values, you can calculate the third. It is the basic equation of almost all electronics.",
+    "de": "Das Ohmsche Gesetz verbindet Spannung, Strom und Widerstand: U = R mal I. Liegen 12 V an 4 Ohm, fließen 3 A. Kennt man zwei Werte, lässt sich der dritte berechnen. Es ist die Grundgleichung fast der gesamten Elektronik."
+   },
+   "see": [
+    "vir",
+    "power"
+   ]
+  },
+  {
+   "id": "oscillator",
+   "term": "Oscillator",
+   "cat": "electronics",
+   "level": 2,
+   "name": {
+    "en": "Oscillator",
+    "de": "Oszillator"
+   },
+   "text": {
+    "en": "An oscillator makes a steady AC signal at a set frequency, the heart of every transmitter and receiver. It can use an LC circuit or a quartz crystal, which is very stable, or a synthesiser locked to a quartz reference.",
+    "de": "Ein Oszillator erzeugt ein gleichmäßiges Wechselsignal mit einer festen Frequenz, das Herz jedes Senders und Empfängers. Er kann einen LC-Kreis oder einen sehr stabilen Quarz nutzen, oder einen Synthesizer, der auf eine Quarzreferenz einrastet."
+   },
+   "see": [
+    "vfo",
+    "bfo",
+    "transistor"
+   ]
+  },
+  {
+   "id": "packet",
+   "term": "Packet radio",
+   "cat": "modes",
+   "level": 2,
+   "name": {
+    "en": "Packet radio",
+    "de": "Packet-Radio"
+   },
+   "text": {
+    "en": "Packet radio sends data as short error-checked packets using the AX.25 protocol, usually at 1200 baud on VHF or 9600 baud on faster setups. It powers digipeaters, mailboxes and APRS, and was a kind of early radio internet.",
+    "de": "Packet-Radio sendet Daten als kurze, fehlergesicherte Pakete nach dem AX.25-Protokoll, meist mit 1200 Baud auf UKW, schneller mit 9600 Baud. Es ermöglicht Digipeater, Mailboxen und APRS und war eine Art frühes Funk-Internet."
+   },
+   "see": [
+    "aprs",
+    "fm",
+    "bandwidth"
+   ]
+  },
+  {
+   "id": "paddle",
+   "term": "Paddle",
+   "cat": "equipment",
+   "level": 2,
+   "name": {
+    "en": "Paddle (iambic key)",
+    "de": "Doppelpaddle (Paddle)"
+   },
+   "text": {
+    "en": "A paddle has two levers, one for dits and one for dahs, worked with thumb and finger. With a keyer it forms the characters. Squeezing both at once is iambic keying and sends alternating dits and dahs.",
+    "de": "Ein Paddle hat zwei Hebel, einen für Punkte und einen für Striche, die man mit Daumen und Finger bedient. Mit einem Keyer bildet es die Zeichen. Drückt man beide gleichzeitig, spricht man von iambischem Tasten, bei dem abwechselnd Punkte und Striche entstehen."
+   },
+   "see": [
+    "keyer",
+    "key",
+    "cw"
+   ]
+  },
+  {
+   "id": "pep",
+   "term": "PEP",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "Peak envelope power",
+    "de": "Spitzenleistung (PEP)"
+   },
+   "text": {
+    "en": "PEP is the average power over one radio-frequency cycle at the peak of the modulation envelope. Licence limits are given in PEP, e.g. 100 W PEP for Class E. SSB speech has a much lower average power, often a quarter or third of PEP.",
+    "de": "PEP ist die mittlere Leistung über eine Hochfrequenzperiode an der Spitze der Hüllkurve. Leistungsgrenzen der Lizenz werden in PEP angegeben, z. B. 100 W PEP für Klasse E. Bei SSB-Sprache liegt die mittlere Leistung deutlich niedriger, oft bei einem Viertel bis einem Drittel der PEP."
+   },
+   "see": [
+    "ssb",
+    "licence",
+    "linear"
+   ]
+  },
+  {
+   "id": "phonetic",
+   "term": "Phonetic alphabet",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Spelling alphabet",
+    "de": "Buchstabiertafel"
+   },
+   "text": {
+    "en": "The phonetic alphabet replaces letters with words so they are not misheard. Hams mostly use the international ICAO list: Alfa, Bravo, Charlie. DL1ABC becomes 'Delta Lima One Alfa Bravo Charlie'. Germans also know a national version.",
+    "de": "Das Buchstabieralphabet ersetzt Buchstaben durch Wörter, damit nichts verwechselt wird. Funkamateure nutzen meist die internationale ICAO-Liste: Alfa, Bravo, Charlie. DL1ABC wird zu 'Delta Lima One Alfa Bravo Charlie'. Daneben gibt es die nationale deutsche Tafel."
+   },
+   "see": [
+    "callsign",
+    "qso",
+    "cq"
+   ]
+  },
+  {
+   "id": "pileup",
+   "term": "Pile-up",
+   "cat": "operating",
+   "level": 2,
+   "name": {
+    "en": "Pile-up",
+    "de": "Pile-up"
+   },
+   "text": {
+    "en": "A pile-up is a crowd of stations calling the same rare station at once. The DX station picks callsigns out of the noise. Calling only when asked, with your call once, short, and without talking over others, gets you through.",
+    "de": "Ein Pile-up ist ein Gedränge vieler Stationen, die dieselbe seltene Station gleichzeitig rufen. Die DX-Station pickt Rufzeichen aus dem Durcheinander. Wer nur auf Aufforderung ruft, sein Rufzeichen einmal und kurz gibt und niemanden überfährt, kommt durch."
+   },
+   "see": [
+    "dx",
+    "dxpedition",
+    "split",
+    "qrz"
+   ]
+  },
+  {
+   "id": "polarization",
+   "term": "Polarization",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "Polarization",
+    "de": "Polarisation"
+   },
+   "text": {
+    "en": "Polarization is the direction of the electric field, mostly horizontal or vertical. Both antennas should match: a vertical to a horizontal antenna loses a lot on line-of-sight. FM repeaters use vertical; weak-signal SSB on VHF uses horizontal.",
+    "de": "Die Polarisation ist die Richtung des elektrischen Feldes, meist horizontal oder vertikal. Beide Antennen sollten übereinstimmen: Zwischen vertikaler und horizontaler Antenne geht bei Sichtverbindung viel verloren. FM-Relais arbeiten vertikal, SSB auf UKW horizontal."
+   },
+   "see": [
+    "vertical",
+    "yagi",
+    "los"
+   ]
+  },
+  {
+   "id": "power",
+   "term": "Power",
+   "cat": "electronics",
+   "level": 1,
+   "name": {
+    "en": "Electrical power",
+    "de": "Elektrische Leistung"
+   },
+   "text": {
+    "en": "Power in watts is voltage times current: P = U x I. A rig drawing 20 A at 13.8 V uses about 276 W from the supply. A transmitter's output power is always less than what it takes in; the rest becomes heat.",
+    "de": "Leistung in Watt ist Spannung mal Strom: P = U mal I. Ein Gerät mit 20 A bei 13,8 V nimmt etwa 276 W aus dem Netzteil auf. Die abgegebene Sendeleistung eines Senders ist immer kleiner als die aufgenommene; der Rest wird zu Wärme."
+   },
+   "see": [
+    "ohm",
+    "psu",
+    "db"
+   ]
+  },
+  {
+   "id": "psu",
+   "term": "Power supply",
+   "cat": "equipment",
+   "level": 1,
+   "name": {
+    "en": "Power supply",
+    "de": "Netzteil"
+   },
+   "text": {
+    "en": "Most rigs run from 13.8 V DC, which matches a car battery on charge. A 100 W rig needs about 20 to 25 A. Choose a supply that is well filtered, since a noisy switching supply can cause interference on the bands.",
+    "de": "Die meisten Geräte laufen mit 13,8 V Gleichspannung, passend zur Autobatterie beim Laden. Ein 100-W-Gerät braucht etwa 20 bis 25 A. Wähle ein gut gesiebtes Netzteil, denn ein verrauschtes Schaltnetzteil kann Störungen auf den Bändern verursachen."
+   },
+   "see": [
+    "ohm",
+    "emc",
+    "qrm"
+   ]
+  },
+  {
+   "id": "preamp",
+   "term": "Preamp and attenuator",
+   "cat": "equipment",
+   "level": 2,
+   "name": {
+    "en": "Preamplifier / attenuator",
+    "de": "Vorverstärker / Abschwächer"
+   },
+   "text": {
+    "en": "A preamplifier boosts weak signals, typically 10 to 20 dB. It helps on 10 m and VHF but on the low bands the noise is louder than your receiver, so it only adds noise. An attenuator does the opposite and cuts signal by 6, 12 or 18 dB to prevent overload.",
+    "de": "Ein Vorverstärker hebt schwache Signale an, typisch um 10 bis 20 dB. Er hilft auf 10 m und UKW, aber auf den tiefen Bändern ist das Außenrauschen ohnehin lauter als das Empfängerrauschen. Ein Abschwächer tut das Gegenteil und senkt um 6, 12 oder 18 dB, um Übersteuerung zu verhindern."
+   },
+   "see": [
+    "db",
+    "agc",
+    "qrm"
+   ]
+  },
+  {
+   "id": "psk31",
+   "term": "PSK31",
+   "cat": "modes",
+   "level": 2,
+   "name": {
+    "en": "Phase shift keying, 31 baud",
+    "de": "Phasenumtastung, 31 Baud"
+   },
+   "text": {
+    "en": "PSK31 is a keyboard-to-keyboard chat mode from 1998. It sends about 31 baud by shifting the signal's phase and fits in roughly 60 Hz, so even 5 W can work the world. A popular spot is around 14.070 MHz on 20 m.",
+    "de": "PSK31 ist ein Schreibmodus von 1998, bei dem man Text direkt von Tastatur zu Tastatur tippt. Die Phase des Signals wird mit etwa 31 Baud umgetastet, es passt in rund 60 Hz Bandbreite, und schon 5 W reichen weit. Beliebt ist 14,070 MHz auf 20 m."
+   },
+   "see": [
+    "rtty",
+    "ft8",
+    "qrp"
+   ]
+  },
+  {
+   "id": "ptt",
+   "term": "PTT",
+   "cat": "equipment",
+   "level": 1,
+   "name": {
+    "en": "Push to talk",
+    "de": "Sendetaste (Push-to-talk)"
+   },
+   "text": {
+    "en": "PTT is the key you hold to transmit and release to receive, on a microphone or the handheld's side. A radio can only transmit or receive at one time, so you press, talk and release. A foot switch or computer interface can also trigger it.",
+    "de": "PTT ist die Taste, die man zum Senden gedrückt hält und zum Empfang loslässt, am Mikrofon oder seitlich am Handfunkgerät. Ein Funkgerät kann nur entweder senden oder empfangen, also drücken, sprechen, loslassen. Auch Fußschalter oder PC-Schnittstelle können sie auslösen."
+   },
+   "see": [
+    "vox",
+    "microphone",
+    "transceiver"
+   ]
+  },
+  {
+   "id": "qcodes",
+   "term": "Q-codes",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Q-codes",
+    "de": "Q-Gruppen"
+   },
+   "text": {
+    "en": "Q-codes are three-letter abbreviations starting with Q, made for telegraphy but used in speech too. Followed by a question mark they ask, without it they state: QRM? means 'Are you being interfered with?', QRM means 'I am'.",
+    "de": "Q-Gruppen sind dreibuchstabige Abkürzungen mit Q am Anfang, für die Telegrafie erfunden und auch im Sprechfunk verbreitet. Mit Fragezeichen sind sie eine Frage, ohne eine Aussage: QRM? heißt 'Werden Sie gestört?', QRM heißt 'Ich werde gestört'."
+   },
+   "see": [
+    "qrm",
+    "qso",
+    "qth",
+    "qrz"
+   ]
+  },
+  {
+   "id": "qrm",
+   "term": "QRM",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Man-made interference",
+    "de": "Störungen durch andere Stationen"
+   },
+   "text": {
+    "en": "QRM is interference from other stations or from man-made electrical noise, such as a signal on your frequency or a noisy switching power supply. Say 'I have QRM' when others get in your way.",
+    "de": "QRM bezeichnet Störungen durch andere Stationen oder durch technische Geräte, etwa ein Signal auf deiner Frequenz oder ein rauschendes Schaltnetzteil. 'Ich habe QRM' sagt man, wenn andere dazwischenfunken."
+   },
+   "see": [
+    "qrn",
+    "tvi",
+    "emc"
+   ]
+  },
+  {
+   "id": "qrn",
+   "term": "QRN",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Natural noise (static)",
+    "de": "Atmosphärische Störungen"
+   },
+   "text": {
+    "en": "QRN is natural radio noise, mostly static crashes from distant thunderstorms. It is worst on the low bands in summer and on 160 m and 80 m in the evening. A noise blanker does little against it.",
+    "de": "QRN sind natürliche Störgeräusche, meist atmosphärisches Knacken von fernen Gewittern. Es ist auf den niedrigen Bändern im Sommer und auf 160 m und 80 m abends am stärksten. Ein Noise Blanker hilft dagegen kaum."
+   },
+   "see": [
+    "qrm",
+    "noiseblanker",
+    "ionosphere"
+   ]
+  },
+  {
+   "id": "qro",
+   "term": "QRO",
+   "cat": "qcodes",
+   "level": 2,
+   "name": {
+    "en": "High power",
+    "de": "Hohe Sendeleistung"
+   },
+   "text": {
+    "en": "QRO means high power, the opposite of QRP. It stands for running a linear amplifier. More power helps only slowly: going from 100 W to 1000 W gains 10 dB, less than two S-units. Your licence limits the maximum.",
+    "de": "QRO bedeutet hohe Sendeleistung, das Gegenteil von QRP, etwa mit Endstufe. Mehr Leistung bringt aber nur langsam etwas: Von 100 W auf 1000 W sind es 10 dB, weniger als zwei S-Stufen. Die Lizenzklasse begrenzt die Maximalleistung."
+   },
+   "see": [
+    "qrp",
+    "linear",
+    "pep",
+    "db"
+   ]
+  },
+  {
+   "id": "qrp",
+   "term": "QRP",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Low power",
+    "de": "Geringe Sendeleistung"
+   },
+   "text": {
+    "en": "QRP means low-power operation, commonly 5 W or less (some count up to 10 W). It makes small portable rigs and clever antennas fun, and with a good band and CW or FT8 you can still reach other continents.",
+    "de": "QRP bedeutet Betrieb mit geringer Leistung, meist 5 W oder weniger (manche zählen bis 10 W). Das macht kleine portable Geräte und clevere Antennen reizvoll, und mit gutem Band sowie CW oder FT8 erreicht man auch andere Kontinente."
+   },
+   "see": [
+    "qro",
+    "sotapota",
+    "cw",
+    "ft8"
+   ]
+  },
+  {
+   "id": "qrs",
+   "term": "QRS",
+   "cat": "qcodes",
+   "level": 2,
+   "name": {
+    "en": "Send more slowly",
+    "de": "Langsamer geben"
+   },
+   "text": {
+    "en": "QRS asks the other station to send more slowly. It is very handy in Morse when a beginner is on the other end, and 'QRS please' is always welcome, even from experienced operators. Its opposite is QRQ, which means send faster.",
+    "de": "QRS bittet die Gegenstation, langsamer zu geben. In der Telegrafie ist das besonders für Anfänger hilfreich, und 'QRS bitte' ist auch unter erfahrenen Funkern jederzeit willkommen. Das Gegenteil ist QRQ, also schneller geben."
+   },
+   "see": [
+    "cw",
+    "wpm",
+    "farnsworth"
+   ]
+  },
+  {
+   "id": "qrt",
+   "term": "QRT",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Stop transmitting",
+    "de": "Sendebetrieb beenden"
+   },
+   "text": {
+    "en": "QRT means 'I am stopping transmission' or 'closing down'. At the end of a session you say 'going QRT' to let others know the station is being shut down. 'QRT?' asks the other station whether they are about to stop.",
+    "de": "QRT bedeutet 'Ich stelle den Sendebetrieb ein'. Am Ende einer Funksession sagt man 'ich gehe QRT' und zeigt damit an, dass die Station abgeschaltet wird. 'QRT?' fragt die Gegenstation, ob sie gleich Schluss macht."
+   },
+   "see": [
+    "qrv",
+    "qrx",
+    "73"
+   ]
+  },
+  {
+   "id": "qrv",
+   "term": "QRV",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Ready",
+    "de": "Empfangsbereit"
+   },
+   "text": {
+    "en": "QRV means 'I am ready' to transmit or receive. 'QRV on 20 m' says you are on the air and listening. It is also used when planning, as in 'I will be QRV on Sunday', and 'QRV?' asks the other station whether they are ready.",
+    "de": "QRV bedeutet 'ich bin bereit' zum Senden oder Empfangen. 'QRV auf 20 m' heißt, dass man auf dem Band hörbereit ist. Man sagt es auch in der Planung, z. B. 'Sonntag bin ich QRV', und 'QRV?' fragt die Gegenstation, ob sie bereit ist."
+   },
+   "see": [
+    "qrx",
+    "qrt"
+   ]
+  },
+  {
+   "id": "qrx",
+   "term": "QRX",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Stand by",
+    "de": "Warten, ich rufe später"
+   },
+   "text": {
+    "en": "QRX means 'stand by' or 'wait for my call'. You use it when you have to step away briefly. 'QRX 10 minutes' tells the other station that you will call back or come back after ten minutes.",
+    "de": "QRX bedeutet 'Warten Sie' oder 'ich rufe später wieder'. Man sagt es, wenn man kurz weg muss. 'QRX 10 Minuten' sagt der Gegenstation, dass man sich in zehn Minuten wieder meldet und solange nicht auf Antwort wartet."
+   },
+   "see": [
+    "qrv",
+    "qrt",
+    "qrz"
+   ]
+  },
+  {
+   "id": "qrz",
+   "term": "QRZ",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Who is calling me?",
+    "de": "Wer ruft mich?"
+   },
+   "text": {
+    "en": "QRZ? asks 'Who is calling me?'. DX stations use it after a contact in a pile-up to ask for the next callsign, and you also say it if you heard a call but missed the callsign. It is also the name of a well-known callsign lookup website.",
+    "de": "QRZ? fragt 'Wer ruft mich?'. DX-Stationen nutzen es im Pile-up nach einem QSO, um das nächste Rufzeichen abzufragen, und man sagt es auch, wenn man einen Anruf gehört, das Rufzeichen aber nicht verstanden hat. So heißt auch eine bekannte Webseite zur Rufzeichen-Suche."
+   },
+   "see": [
+    "pileup",
+    "callsign",
+    "dx"
+   ]
+  },
+  {
+   "id": "qsb",
+   "term": "QSB",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Fading",
+    "de": "Schwund"
+   },
+   "text": {
+    "en": "QSB means your signal strength rises and falls, known as fading. It happens when radio waves reach you by several paths and add up or cancel out. Typical on HF: a signal drops from S9 to S3 and returns within seconds.",
+    "de": "QSB bedeutet, dass die Signalstärke schwankt, man spricht von Schwund (Fading). Er entsteht, wenn Funkwellen auf mehreren Wegen eintreffen und sich verstärken oder auslöschen. Typisch auf Kurzwelle: Ein Signal fällt von S9 auf S3 und kommt nach Sekunden zurück."
+   },
+   "see": [
+    "skip",
+    "agc",
+    "smeter",
+    "ionosphere"
+   ]
+  },
+  {
+   "id": "qsl",
+   "term": "QSL",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Confirmation of receipt",
+    "de": "Empfangsbestätigung"
+   },
+   "text": {
+    "en": "QSL means 'I confirm' or 'I acknowledge receipt'. Hams use it to confirm a contact, on paper or online. Asking 'QSL?' means 'Do you confirm?'. Saying 'QSL' during a call also means 'understood'.",
+    "de": "QSL bedeutet 'ich bestätige' oder 'ich habe verstanden'. Funkamateure bestätigen damit eine Funkverbindung, auf Papier oder online. 'QSL?' fragt 'Bestätigen Sie?'. Im Funkverkehr heißt 'QSL' auch einfach 'verstanden'."
+   },
+   "see": [
+    "qslcard",
+    "lotw",
+    "qso"
+   ]
+  },
+  {
+   "id": "qslcard",
+   "term": "QSL card",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "QSL card",
+    "de": "QSL-Karte"
+   },
+   "text": {
+    "en": "A QSL card is a paper card that confirms a contact with callsign, date, UTC, band, mode and report. Many hams collect them and send them via the QSL bureau, which is cheap and slow, or directly by post.",
+    "de": "Eine QSL-Karte ist eine Papierkarte, die ein QSO mit Rufzeichen, Datum, UTC, Band, Betriebsart und Rapport bestätigt. Viele sammeln sie und verschicken sie über das QSL-Büro, was günstig, aber langsam ist, oder direkt per Post."
+   },
+   "see": [
+    "qsl",
+    "logbook",
+    "lotw",
+    "utc"
+   ]
+  },
+  {
+   "id": "qso",
+   "term": "QSO",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "A radio contact",
+    "de": "Funkverbindung"
+   },
+   "text": {
+    "en": "A QSO is a two-way radio contact between two stations. For a valid one you normally exchange at least both callsigns and a signal report. Every QSO is noted in the logbook and can later be confirmed with a QSL, for example for awards.",
+    "de": "Ein QSO ist eine Funkverbindung zwischen zwei Stationen. Dazu gehören mindestens beide Rufzeichen und ein Rapport. Jedes QSO wird ins Logbuch eingetragen und kann per QSL für Diplome bestätigt werden."
+   },
+   "see": [
+    "logbook",
+    "rst",
+    "qslcard",
+    "cq"
+   ]
+  },
+  {
+   "id": "qsy",
+   "term": "QSY",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Change frequency",
+    "de": "Frequenzwechsel"
+   },
+   "text": {
+    "en": "QSY means 'change frequency' or 'I am moving to another frequency'. Two stations that meet on a busy calling frequency often agree to QSY, e.g. 'QSY to 145.550', to leave the channel free for others.",
+    "de": "QSY bedeutet 'Frequenz wechseln' oder 'ich wechsle die Frequenz'. Wer sich auf einem belebten Anruf-Kanal trifft, verabredet oft ein QSY, z. B. 'QSY auf 145,550', damit der Anruf-Kanal frei bleibt."
+   },
+   "see": [
+    "calling",
+    "simplex",
+    "bandplan"
+   ]
+  },
+  {
+   "id": "qth",
+   "term": "QTH",
+   "cat": "qcodes",
+   "level": 1,
+   "name": {
+    "en": "Station location",
+    "de": "Standort"
+   },
+   "text": {
+    "en": "QTH is your location. 'My QTH is Hamburg' tells your partner where you are, and portable operators often mention a new QTH. A very exact QTH can be given as a Maidenhead locator such as JO53.",
+    "de": "QTH ist dein Standort. 'Mein QTH ist Hamburg' sagt dem Partner, wo du bist, und bei portablem Betrieb nennt man oft ein neues QTH. Sehr genau lässt sich der Standort als Maidenhead-Locator angeben, z. B. JO53."
+   },
+   "see": [
+    "maidenhead",
+    "sotapota",
+    "qso"
+   ]
+  },
+  {
+   "id": "ragchew",
+   "term": "Ragchew",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Ragchew",
+    "de": "Plauderrunde (Ragchew)"
+   },
+   "text": {
+    "en": "A ragchew is a long, relaxed chat that goes beyond signal reports. You talk about the weather, gear, family or hobbies, often for half an hour or more. It is the social side of ham radio.",
+    "de": "Ein Ragchew ist ein langes, entspanntes Gespräch, das über Rapporte hinausgeht. Man plaudert über Wetter, Technik, Familie oder Hobbys, oft eine halbe Stunde und mehr. Es ist die gesellige Seite des Amateurfunks."
+   },
+   "see": [
+    "qso",
+    "net",
+    "ssb"
+   ]
+  },
+  {
+   "id": "repeater",
+   "term": "Repeater",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Repeater",
+    "de": "Relaisfunkstelle (Relais)"
+   },
+   "text": {
+    "en": "A repeater is an automatic station on a hill or tower. It receives your signal on one frequency and sends it out on another, which extends the range. In Germany 2 m repeaters use an offset of 600 kHz, 70 cm repeaters 7.6 MHz.",
+    "de": "Ein Relais ist eine automatische Station auf einem Berg oder Turm. Es empfängt dein Signal auf einer Frequenz und sendet es auf einer anderen wieder aus, wodurch die Reichweite wächst. In Deutschland beträgt die Ablage auf 2 m 600 kHz, auf 70 cm 7,6 MHz."
+   },
+   "see": [
+    "ctcss",
+    "simplex",
+    "fm",
+    "dmr"
+   ]
+  },
+  {
+   "id": "resonance",
+   "term": "Resonance",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "Resonance",
+    "de": "Resonanz"
+   },
+   "text": {
+    "en": "An antenna is resonant on a frequency where its reactance is zero and it looks purely resistive. A half-wave dipole is resonant when its length matches the half wavelength. Shorten the wire to raise the resonant frequency.",
+    "de": "Eine Antenne ist auf einer Frequenz resonant, wenn ihr Blindwiderstand null ist und sie rein wirkwiderstandsartig erscheint. Ein Halbwellendipol ist resonant, wenn seine Länge der halben Wellenlänge entspricht. Verkürzt man den Draht, steigt die Resonanzfrequenz."
+   },
+   "see": [
+    "dipole",
+    "swr",
+    "impedance",
+    "coil"
+   ]
+  },
+  {
+   "id": "rfexposure",
+   "term": "RF exposure",
+   "cat": "rules",
+   "level": 2,
+   "name": {
+    "en": "RF exposure and safety distance",
+    "de": "Elektromagnetische Felder / Sicherheitsabstand"
+   },
+   "text": {
+    "en": "Strong RF fields can heat body tissue, so there are limits. Around every antenna is a safety distance inside which the limits are exceeded; it grows with power and gain and must lie on your own property. In Germany, above 10 W EIRP a station must be notified.",
+    "de": "Starke Hochfrequenzfelder können Körpergewebe erwärmen, deshalb gibt es Grenzwerte. Um jede Antenne liegt ein Sicherheitsabstand, innerhalb dessen sie überschritten werden; er wächst mit Leistung und Gewinn und muss auf dem eigenen Grundstück liegen. In Deutschland ist ab 10 W EIRP eine Anzeige nötig."
+   },
+   "see": [
+    "eirp",
+    "qrp",
+    "linear"
+   ]
+  },
+  {
+   "id": "rst",
+   "term": "RST",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Readability, Strength, Tone",
+    "de": "Verständlichkeit, Stärke, Tonqualität"
+   },
+   "text": {
+    "en": "RST is the signal report: Readability 1 to 5, Strength 1 to 9, and Tone 1 to 9 (CW only). A perfect CW signal is 599, spoken or sent as 5NN; in speech you give just two digits like 59. Honest reports help the other station.",
+    "de": "RST ist der Rapport: Readability (Verständlichkeit) 1 bis 5, Strength (Lautstärke) 1 bis 9 und Tone (Tonqualität) 1 bis 9, nur bei CW. Ein perfektes CW-Signal ist 599, gesendet oft als 5NN; im Sprechfunk gibt man nur zwei Ziffern, z. B. 59."
+   },
+   "see": [
+    "smeter",
+    "qso",
+    "cw"
+   ]
+  },
+  {
+   "id": "rtty",
+   "term": "RTTY",
+   "cat": "modes",
+   "level": 2,
+   "name": {
+    "en": "Radioteletype",
+    "de": "Funkfernschreiben"
+   },
+   "text": {
+    "en": "RTTY sends text by shifting between two tones, one for each bit. The classic setup runs at 45.45 baud with 170 Hz shift. It is a favourite in contests, and a computer sound card is enough to decode it nowadays.",
+    "de": "RTTY überträgt Text durch Umschalten zwischen zwei Tönen, je einer pro Bit. Klassisch sind 45,45 Baud und 170 Hz Shift. RTTY ist in Contesten sehr beliebt, und heute reicht eine PC-Soundkarte zum Dekodieren."
+   },
+   "see": [
+    "psk31",
+    "contest",
+    "bandwidth"
+   ]
+  },
+  {
+   "id": "smeter",
+   "term": "S-meter",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Signal strength meter",
+    "de": "S-Meter (Feldstärkeanzeige)"
+   },
+   "text": {
+    "en": "The S-meter on your receiver shows signal strength in S-units from S1 to S9. One S-unit is 6 dB. On HF, S9 is 50 microvolts at 50 ohms; on VHF it is 5 microvolts. Stronger signals are shown as S9 plus 10, 20 dB and so on.",
+    "de": "Das S-Meter am Empfänger zeigt die Signalstärke in S-Stufen von S1 bis S9. Eine S-Stufe entspricht 6 dB. Auf Kurzwelle ist S9 gleich 50 Mikrovolt an 50 Ohm, auf UKW sind es 5 Mikrovolt. Stärkere Signale werden als S9 plus 10, 20 dB usw. angegeben."
+   },
+   "see": [
+    "rst",
+    "db",
+    "agc"
+   ]
+  },
+  {
+   "id": "sdr",
+   "term": "SDR",
+   "cat": "equipment",
+   "level": 2,
+   "name": {
+    "en": "Software-defined radio",
+    "de": "Software Defined Radio"
+   },
+   "text": {
+    "en": "An SDR digitises the radio signal early and does the filtering and demodulating in software. You see the band on a waterfall display. Cheap USB sticks (RTL-SDR) cost around 30 euro and cover roughly 0.5 MHz to 1.7 GHz.",
+    "de": "Ein SDR digitalisiert das Funksignal früh und übernimmt Filterung und Demodulation per Software. Man sieht das ganze Band auf einem Wasserfalldiagramm. Günstige USB-Sticks (RTL-SDR) kosten rund 30 Euro und decken etwa 0,5 MHz bis 1,7 GHz ab."
+   },
+   "see": [
+    "transceiver",
+    "filter",
+    "bandwidth"
+   ]
+  },
+  {
+   "id": "sideband",
+   "term": "Sideband",
+   "cat": "electronics",
+   "level": 2,
+   "name": {
+    "en": "Sideband (USB / LSB)",
+    "de": "Seitenband (USB / LSB)"
+   },
+   "text": {
+    "en": "Modulation creates sidebands above and below the carrier. SSB sends only one: upper (USB) or lower (LSB). Hams use LSB on 160, 80 and 40 m and USB on 20 m and higher. Pick the wrong one and speech turns into gibberish.",
+    "de": "Durch Modulation entstehen Seitenbänder über und unter dem Träger. SSB sendet nur eines: das obere (USB) oder untere (LSB). Funkamateure nutzen LSB auf 160, 80 und 40 m und USB ab 20 m aufwärts. Wählt man das falsche, wird die Sprache unverständlich."
+   },
+   "see": [
+    "ssb",
+    "modulation",
+    "am"
+   ]
+  },
+  {
+   "id": "simplex",
+   "term": "Simplex and duplex",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Simplex / duplex",
+    "de": "Simplex / Duplex"
+   },
+   "text": {
+    "en": "In simplex both stations use the same frequency and take turns, so you hear each other directly with no repeater. In duplex two different frequencies are used, as a repeater does: it listens on one and transmits on another.",
+    "de": "Beim Simplex nutzen beide Stationen dieselbe Frequenz und sprechen abwechselnd, man hört sich also direkt ohne Relais. Beim Duplex werden zwei verschiedene Frequenzen verwendet, wie bei einem Relais: Es hört auf der einen und sendet auf der anderen."
+   },
+   "see": [
+    "repeater",
+    "split",
+    "fm"
+   ]
+  },
+  {
+   "id": "skip",
+   "term": "Skip and skywave",
+   "cat": "propagation",
+   "level": 1,
+   "name": {
+    "en": "Skip / skywave",
+    "de": "Sprungstrecke / Raumwelle"
+   },
+   "text": {
+    "en": "Skywave is the signal that returns from the ionosphere. It lands far from the transmitter, leaving an area in between with no signal: the skip zone. Hops can chain, so one signal can go around the world.",
+    "de": "Raumwelle nennt man das Signal, das von der Ionosphäre zurückkommt. Es landet weit vom Sender entfernt und lässt dazwischen ein Gebiet ohne Empfang, die tote Zone. Sprünge können sich aneinanderreihen, sodass ein Signal um die Erde läuft."
+   },
+   "see": [
+    "ionosphere",
+    "groundwave",
+    "muf"
+   ]
+  },
+  {
+   "id": "sotapota",
+   "term": "SOTA and POTA",
+   "cat": "operating",
+   "level": 2,
+   "name": {
+    "en": "Summits / Parks on the Air",
+    "de": "Summits / Parks on the Air"
+   },
+   "text": {
+    "en": "SOTA (Summits on the Air) and POTA (Parks on the Air) are outdoor programs. SOTA activators climb a mountain and need 4 contacts for points based on height; POTA activators operate from a park and need 10 contacts. Hunters at home call them.",
+    "de": "SOTA (Summits on the Air) und POTA (Parks on the Air) sind Outdoor-Programme. SOTA-Aktivierer steigen auf einen Berg und brauchen 4 QSOs für Punkte nach Höhe; POTA-Aktivierer funken aus einem Park und brauchen 10 QSOs. Jäger zu Hause rufen sie an."
+   },
+   "see": [
+    "qrp",
+    "endfed",
+    "qth"
+   ]
+  },
+  {
+   "id": "audio",
+   "term": "Speaker and headphones",
+   "cat": "equipment",
+   "level": 1,
+   "name": {
+    "en": "Speaker / headphones",
+    "de": "Lautsprecher / Kopfhörer"
+   },
+   "text": {
+    "en": "A speaker is fine for local FM, but headphones help hugely with weak signals and CW. They block room noise, and a good pair can reveal a signal that the speaker alone buries. They also let you operate without disturbing others.",
+    "de": "Ein Lautsprecher reicht für lokalen FM-Betrieb, doch Kopfhörer helfen bei schwachen Signalen und CW enorm. Sie blenden Raumgeräusche aus, und ein gutes Paar lässt ein Signal erkennen, das im Lautsprecher untergeht. So stört man auch niemanden."
+   },
+   "see": [
+    "cw",
+    "qrn",
+    "ssb"
+   ]
+  },
+  {
+   "id": "splatter",
+   "term": "Splatter and key clicks",
+   "cat": "rules",
+   "level": 3,
+   "name": {
+    "en": "Splatter / key clicks",
+    "de": "Splatter / Tastklicks"
+   },
+   "text": {
+    "en": "Splatter is the wide, harsh spread of a signal that is overdriven or has too much mic gain. Key clicks are the same problem in CW, caused by too-sharp keying edges. Both interfere with neighbouring stations and mark you as a poor operator.",
+    "de": "Splatter ist die breite, raue Ausbreitung eines Signals, das übersteuert wird oder zu viel Mikrofonverstärkung hat. Tastklicks sind dasselbe Problem bei CW, verursacht durch zu steile Tastflanken. Beides stört Nachbarstationen und gilt als schlechter Funkstil."
+   },
+   "see": [
+    "alc",
+    "cw",
+    "bandwidth",
+    "deviation"
+   ]
+  },
+  {
+   "id": "split",
+   "term": "Split operation",
+   "cat": "operating",
+   "level": 2,
+   "name": {
+    "en": "Split operation",
+    "de": "Split-Betrieb"
+   },
+   "text": {
+    "en": "In split operation you transmit on one frequency and listen on another. It is the standard way to handle a pile-up: the DX station says 'listening up 5', transmits at 14.195 and hears callers around 14.200 using VFO A and B.",
+    "de": "Beim Split-Betrieb sendet man auf einer und hört auf einer anderen Frequenz. Im Pile-up ist das üblich: Die DX-Station sagt 'listening up 5', sendet auf 14,195 MHz und hört Anrufer um 14,200 MHz, mit VFO A und B."
+   },
+   "see": [
+    "pileup",
+    "vfo",
+    "dxpedition"
+   ]
+  },
+  {
+   "id": "sporadice",
+   "term": "Sporadic E",
+   "cat": "propagation",
+   "level": 2,
+   "name": {
+    "en": "Sporadic E (Es)",
+    "de": "Sporadische E-Schicht (Es)"
+   },
+   "text": {
+    "en": "Sporadic E happens when dense patches of ionisation form in the E layer, mostly in summer. They can reflect 10 m, 6 m and even 2 m signals over about 1000 to 2000 km, for minutes or hours. It is unpredictable, hence 'sporadic'.",
+    "de": "Sporadic E entsteht, wenn sich in der E-Schicht dichte Ionisationswolken bilden, meist im Sommer. Sie können 10 m, 6 m und sogar 2 m über etwa 1000 bis 2000 km reflektieren, für Minuten bis Stunden. Es lässt sich nicht vorhersagen, daher 'sporadisch'."
+   },
+   "see": [
+    "ionosphere",
+    "muf",
+    "tropo"
+   ]
+  },
+  {
+   "id": "squelch",
+   "term": "Squelch",
+   "cat": "equipment",
+   "level": 1,
+   "name": {
+    "en": "Squelch",
+    "de": "Rauschsperre (Squelch)"
+   },
+   "text": {
+    "en": "Squelch mutes the receiver's speaker when no signal is present, so you are not subject to constant hiss. Raise it until the noise just disappears. It is standard on FM radios; on SSB the radio usually has no squelch.",
+    "de": "Die Rauschsperre schaltet den Lautsprecher stumm, solange kein Signal anliegt, damit du nicht ständig Rauschen hörst. Man stellt sie so ein, dass das Rauschen gerade verschwindet. Sie ist bei FM-Geräten Standard; bei SSB gibt es meist keine."
+   },
+   "see": [
+    "fm",
+    "ctcss",
+    "repeater"
+   ]
+  },
+  {
+   "id": "ssb",
+   "term": "SSB",
+   "cat": "modes",
+   "level": 1,
+   "name": {
+    "en": "Single sideband",
+    "de": "Einseitenband"
+   },
+   "text": {
+    "en": "SSB is the standard voice mode on the HF bands. It sends only one sideband and no carrier, so a signal needs just about 2.7 kHz and uses power very efficiently. By convention LSB is used below 10 MHz and USB above it.",
+    "de": "SSB ist die übliche Sprechbetriebsart auf Kurzwelle. Es wird nur ein Seitenband ohne Träger gesendet, daher genügen etwa 2,7 kHz Bandbreite, und die Sendeleistung wird sehr effizient genutzt. Üblich ist LSB unter 10 MHz und USB darüber."
+   },
+   "see": [
+    "sideband",
+    "am",
+    "pep",
+    "alc"
+   ]
+  },
+  {
+   "id": "sstv",
+   "term": "SSTV",
+   "cat": "modes",
+   "level": 2,
+   "name": {
+    "en": "Slow-scan television",
+    "de": "Schmalband-Fernsehen (Bildübertragung)"
+   },
+   "text": {
+    "en": "SSTV sends still pictures as audio tones in a normal voice channel. A picture in the popular Robot 36 mode takes about 36 seconds. Hams swap photos on 14.230 MHz, and the ISS sometimes sends SSTV pictures on 145.800 MHz during events.",
+    "de": "SSTV überträgt Standbilder als Tonfolgen in einem normalen Sprachkanal. Ein Bild im beliebten Modus Robot 36 braucht etwa 36 Sekunden. Funkamateure tauschen Fotos auf 14,230 MHz aus, und die ISS sendet bei Aktionen manchmal SSTV-Bilder auf 145,800 MHz."
+   },
+   "see": [
+    "ssb",
+    "modulation"
+   ]
+  },
+  {
+   "id": "sunspots",
+   "term": "Sunspots and solar flux",
+   "cat": "propagation",
+   "level": 2,
+   "name": {
+    "en": "Sunspots / solar flux",
+    "de": "Sonnenflecken / Solarer Fluss"
+   },
+   "text": {
+    "en": "Sunspots are dark patches on the Sun that follow an 11-year cycle. More spots mean more ionisation and better high-band propagation. The solar flux index (SFI) measures radio noise at 10.7 cm: above about 100, 15 m and 10 m open well.",
+    "de": "Sonnenflecken sind dunkle Flecken auf der Sonne, die einem 11-Jahres-Zyklus folgen. Mehr Flecken bedeuten mehr Ionisation und bessere Ausbreitung auf den hohen Bändern. Der Solar-Flux-Index (SFI) misst das Radiorauschen bei 10,7 cm: Über etwa 100 öffnen sich 15 m und 10 m gut."
+   },
+   "see": [
+    "ionosphere",
+    "muf",
+    "dx"
+   ]
+  },
+  {
+   "id": "swr",
+   "term": "SWR",
+   "cat": "antennas",
+   "level": 1,
+   "name": {
+    "en": "Standing wave ratio",
+    "de": "Stehwellenverhältnis (SWV)"
+   },
+   "text": {
+    "en": "SWR tells how well an antenna is matched to the cable. 1:1 is perfect. An SWR of 1.5 reflects about 4 percent of the power, 2:1 about 11 percent, 3:1 about 25 percent. Most rigs reduce power when SWR goes above about 3.",
+    "de": "Das SWV sagt, wie gut eine Antenne an das Kabel angepasst ist. 1:1 ist perfekt. Bei SWV 1,5 werden etwa 4 Prozent der Leistung reflektiert, bei 2:1 etwa 11 Prozent, bei 3:1 etwa 25 Prozent. Die meisten Geräte reduzieren die Leistung ab etwa SWV 3."
+   },
+   "see": [
+    "impedance",
+    "tuner",
+    "coax",
+    "resonance"
+   ]
+  },
+  {
+   "id": "transceiver",
+   "term": "Transceiver",
+   "cat": "equipment",
+   "level": 1,
+   "name": {
+    "en": "Transmitter and receiver in one",
+    "de": "Sende-Empfänger (Transceiver)"
+   },
+   "text": {
+    "en": "A transceiver combines transmitter and receiver in one box. Most amateur rigs are transceivers: handhelds for VHF and UHF, base and mobile units for HF. A typical HF rig puts out 100 W and works on all bands from 160 m to 10 m.",
+    "de": "Ein Transceiver vereint Sender und Empfänger in einem Gerät. Fast alle Amateurfunkgeräte sind Transceiver: Handfunkgeräte für UKW und UHF, Stations- und Mobilgeräte für Kurzwelle. Ein typisches KW-Gerät leistet 100 W und deckt alle Bänder von 160 m bis 10 m ab."
+   },
+   "see": [
+    "vfo",
+    "ptt",
+    "sdr"
+   ]
+  },
+  {
+   "id": "transformer",
+   "term": "Transformer",
+   "cat": "electronics",
+   "level": 2,
+   "name": {
+    "en": "Transformer",
+    "de": "Transformator (Übertrager)"
+   },
+   "text": {
+    "en": "A transformer transfers AC from one coil to another through a magnetic core and changes voltage by the turns ratio. It also transforms impedance by the square of that ratio, so a 1:3 turns ratio gives 1:9. Used in baluns and tuners.",
+    "de": "Ein Transformator überträgt Wechselstrom über einen Kern von einer Spule auf eine andere und ändert die Spannung im Windungsverhältnis. Auch die Impedanz wird transformiert, mit dem Quadrat dieses Verhältnisses: 1:3 Windungen ergeben 1:9. Anwendung in Baluns und Tunern."
+   },
+   "see": [
+    "balun",
+    "coil",
+    "impedance"
+   ]
+  },
+  {
+   "id": "transistor",
+   "term": "Transistor",
+   "cat": "electronics",
+   "level": 1,
+   "name": {
+    "en": "Transistor",
+    "de": "Transistor"
+   },
+   "text": {
+    "en": "A transistor is a semiconductor that works as a switch or as an amplifier, with a small signal at its input controlling a larger current. Almost every radio stage, from oscillator to power amplifier, contains transistors.",
+    "de": "Ein Transistor ist ein Halbleiter, der als Schalter oder Verstärker arbeitet: Ein kleines Eingangssignal steuert einen größeren Strom. Fast jede Stufe in einem Funkgerät, vom Oszillator bis zur Endstufe, enthält Transistoren."
+   },
+   "see": [
+    "diode",
+    "oscillator",
+    "linear"
+   ]
+  },
+  {
+   "id": "tropo",
+   "term": "Tropospheric ducting",
+   "cat": "propagation",
+   "level": 2,
+   "name": {
+    "en": "Tropospheric ducting",
+    "de": "Troposphärische Überreichweiten (Ducting)"
+   },
+   "text": {
+    "en": "Under a high-pressure weather system a temperature inversion can trap VHF, UHF and microwave signals in a layer of air like a pipe. Contacts on 2 m or 70 cm can then reach 500 km and more, far beyond the line of sight.",
+    "de": "Bei Hochdrucklagen kann eine Temperaturinversion UKW-, UHF- und Mikrowellensignale wie in einer Röhre in einer Luftschicht einfangen. Verbindungen auf 2 m oder 70 cm reichen dann 500 km und weiter, weit über die Sichtweite hinaus."
+   },
+   "see": [
+    "los",
+    "sporadice",
+    "wavelength"
+   ]
+  },
+  {
+   "id": "tvi",
+   "term": "TVI / EMI",
+   "cat": "rules",
+   "level": 2,
+   "name": {
+    "en": "Interference to TV and electronics",
+    "de": "Störungen an Rundfunk- und Elektronikgeräten"
+   },
+   "text": {
+    "en": "TVI and EMI are interference your transmitter causes in TVs, radios or other electronics nearby. The causes are often harmonics or an overloaded neighbour's device. Fix by adding a low-pass filter, ferrites on cables and by good earthing.",
+    "de": "TVI und EMI sind Störungen, die dein Sender in Fernsehern, Radios oder anderer Elektronik nebenan verursacht. Ursachen sind oft Oberwellen oder ein übersteuertes Nachbargerät. Abhilfe schaffen Tiefpassfilter, Ferrite auf Kabeln und gute Erdung."
+   },
+   "see": [
+    "emc",
+    "harmonics",
+    "filter",
+    "qrm"
+   ]
+  },
+  {
+   "id": "utc",
+   "term": "UTC",
+   "cat": "operating",
+   "level": 1,
+   "name": {
+    "en": "Coordinated Universal Time",
+    "de": "Koordinierte Weltzeit"
+   },
+   "text": {
+    "en": "UTC is the world time used in ham radio logs. It does not change with summer time. Germany is UTC+1 in winter and UTC+2 in summer. Using UTC lets two stations on different continents write down the same time.",
+    "de": "UTC ist die Weltzeit, die im Amateurfunk-Log verwendet wird. Sie kennt keine Sommerzeit. Deutschland liegt im Winter bei UTC+1, im Sommer bei UTC+2. Mit UTC schreiben zwei Stationen auf verschiedenen Kontinenten dieselbe Zeit ins Log."
+   },
+   "see": [
+    "logbook",
+    "ft8",
+    "qslcard"
+   ]
+  },
+  {
+   "id": "vf",
+   "term": "Velocity factor",
+   "cat": "antennas",
+   "level": 3,
+   "name": {
+    "en": "Velocity factor",
+    "de": "Verkürzungsfaktor"
+   },
+   "text": {
+    "en": "The velocity factor says how fast a wave travels in a cable compared to light in free space. Solid-polyethylene coax is about 0.66, foam types about 0.8. So a quarter-wave piece of coax is shorter than the free-space quarter wave.",
+    "de": "Der Verkürzungsfaktor gibt an, wie schnell sich eine Welle im Kabel im Vergleich zum Licht im Freiraum ausbreitet. Koax mit Vollpolyethylen hat etwa 0,66, geschäumte Typen etwa 0,8. Ein Viertelwellenstück Koax ist also kürzer als die Viertelwelle im Freiraum."
+   },
+   "see": [
+    "coax",
+    "wavelength",
+    "dipole"
+   ]
+  },
+  {
+   "id": "vertical",
+   "term": "Vertical",
+   "cat": "antennas",
+   "level": 1,
+   "name": {
+    "en": "Vertical antenna",
+    "de": "Vertikalantenne"
+   },
+   "text": {
+    "en": "A vertical antenna stands upright and radiates equally in all horizontal directions, with a low angle suited to DX. It is easy to mount and takes little space, but it hears local noise well and needs a good ground or radials.",
+    "de": "Eine Vertikalantenne steht senkrecht und strahlt in alle horizontalen Richtungen gleichmäßig ab, mit flachem Abstrahlwinkel, der sich für DX eignet. Sie ist einfach aufzubauen und braucht wenig Platz, nimmt aber örtliche Störungen gut auf und braucht eine gute Erde oder Radials."
+   },
+   "see": [
+    "groundplane",
+    "polarization",
+    "ground"
+   ]
+  },
+  {
+   "id": "vfo",
+   "term": "VFO",
+   "cat": "equipment",
+   "level": 1,
+   "name": {
+    "en": "Variable frequency oscillator",
+    "de": "Abstimmbarer Oszillator (VFO)"
+   },
+   "text": {
+    "en": "The VFO sets the frequency you transmit and receive on, and you turn its knob to tune. Modern rigs have a digital VFO with a synthesiser, and often two (A and B) for split operation or quick comparison.",
+    "de": "Der VFO legt die Frequenz fest, auf der du sendest und empfängst; mit dem Drehknopf stimmst du ab. Moderne Geräte haben einen digitalen VFO mit Synthesizer, oft zwei (A und B) für Split-Betrieb oder schnellen Vergleich."
+   },
+   "see": [
+    "split",
+    "oscillator",
+    "transceiver"
+   ]
+  },
+  {
+   "id": "vir",
+   "term": "Voltage, current, resistance",
+   "cat": "electronics",
+   "level": 1,
+   "name": {
+    "en": "Voltage / current / resistance",
+    "de": "Spannung / Strom / Widerstand"
+   },
+   "text": {
+    "en": "Voltage (volt, V) is the push on the charges, current (ampere, A) is their flow, and resistance (ohm, Ω) is the opposition. A car battery has 12 V. Think of water: pressure is voltage, flow is current, a narrow pipe is resistance.",
+    "de": "Die Spannung (Volt, V) ist der Druck auf die Ladungen, der Strom (Ampere, A) ihr Fluss und der Widerstand (Ohm, Ω) das Hindernis. Eine Autobatterie hat 12 V. Wie beim Wasser: Druck ist Spannung, Durchfluss ist Strom, ein enges Rohr ist Widerstand."
+   },
+   "see": [
+    "ohm",
+    "power"
+   ]
+  },
+  {
+   "id": "vox",
+   "term": "VOX",
+   "cat": "equipment",
+   "level": 2,
+   "name": {
+    "en": "Voice-operated transmit",
+    "de": "Sprachgesteuerte Sendeumschaltung"
+   },
+   "text": {
+    "en": "VOX switches the transmitter on when you speak, so you do not need a PTT. It is handy when both hands are busy but also triggers on noise. Adjust the gain and delay so it does not chop your first words or key up on background noise.",
+    "de": "VOX schaltet den Sender ein, sobald du sprichst, also ohne PTT-Taste. Praktisch, wenn die Hände beschäftigt sind, aber es spricht auch auf Geräusche an. Empfindlichkeit und Nachlaufzeit müssen so eingestellt sein, dass nichts abgeschnitten wird und Nebengeräusche nicht auslösen."
+   },
+   "see": [
+    "ptt",
+    "microphone",
+    "ssb"
+   ]
+  },
+  {
+   "id": "wavelength",
+   "term": "Wavelength",
+   "cat": "antennas",
+   "level": 1,
+   "name": {
+    "en": "Wavelength",
+    "de": "Wellenlänge"
+   },
+   "text": {
+    "en": "Wavelength is the distance a wave travels in one cycle: in metres about 300 divided by the frequency in MHz. So 7 MHz is about 43 m and 145 MHz about 2 m, hence band names. Antenna sizes follow the wavelength.",
+    "de": "Die Wellenlänge ist die Strecke, die eine Welle in einer Periode zurücklegt: in Metern etwa 300 geteilt durch die Frequenz in MHz. So sind 7 MHz etwa 43 m und 145 MHz etwa 2 m, daher die Bandnamen. Antennenmaße richten sich nach der Wellenlänge."
+   },
+   "see": [
+    "bands",
+    "dipole",
+    "vf"
+   ]
+  },
+  {
+   "id": "wpm",
+   "term": "WPM and PARIS",
+   "cat": "learning",
+   "level": 1,
+   "name": {
+    "en": "Words per minute",
+    "de": "Wörter pro Minute"
+   },
+   "text": {
+    "en": "WPM measures Morse speed. The standard word PARIS is exactly 50 timing units long, so 20 WPM means one unit is 60 ms (1200 divided by WPM). Beginners often start around 12 to 15 WPM; good ops reach 25 or more.",
+    "de": "WPM misst die Morsegeschwindigkeit. Das Standardwort PARIS ist genau 50 Zeiteinheiten lang, bei 20 WPM dauert eine Einheit also 60 ms (1200 geteilt durch WPM). Anfänger beginnen oft bei 12 bis 15 WPM, geübte kommen auf 25 und mehr."
+   },
+   "see": [
+    "cw",
+    "farnsworth",
+    "keyer",
+    "koch"
+   ]
+  },
+  {
+   "id": "yagi",
+   "term": "Yagi",
+   "cat": "antennas",
+   "level": 2,
+   "name": {
+    "en": "Yagi-Uda beam antenna",
+    "de": "Yagi-Uda-Antenne"
+   },
+   "text": {
+    "en": "A Yagi has a driven element plus a reflector and one or more directors, which focus the signal in one direction. A typical three-element Yagi adds around 5 dB over a dipole. You turn it with a rotator.",
+    "de": "Eine Yagi-Antenne hat einen gespeisten Strahler sowie einen Reflektor und einen oder mehrere Direktoren, die das Signal in eine Richtung bündeln. Eine typische Dreielement-Yagi bringt etwa 5 dB mehr als ein Dipol. Man dreht sie mit einem Rotor."
+   },
+   "see": [
+    "gain",
+    "dipole",
+    "polarization"
+   ]
+  }
+ ]
+}

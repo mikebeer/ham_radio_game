@@ -120,6 +120,7 @@ func _build_lesson(part_name: String) -> void:
 			_rebuild(), "PrimaryButton", Vector2(268, 44))
 	else:
 		add_btn(I18n.t("common.next"), Vector2(1018, 556), func() -> void:
+			Game.stat_add("cards")
 			_page += 1
 			_rebuild(), "PrimaryButton", Vector2(170, 44))
 		if Game.fact_bool(_read_key()):
@@ -141,6 +142,7 @@ func _on_quiz_done(correct: int, total: int) -> void:
 	if correct >= PASS_COUNT:
 		var already := Game.owns(_part)
 		if not already:
+			Game.stat_add("quizzes")
 			Game.award(_part)
 			Sfx.reward()
 		_state = "reward"

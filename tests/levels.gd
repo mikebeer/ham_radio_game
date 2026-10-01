@@ -54,6 +54,23 @@ func _initialize() -> void:
 		_check(root.get_node("Content").qso_steps(3).size() == 3, "level 3 qso steps")
 		await _finish_level(g, 3)
 		_check(g.level_done(3) and g.check_level_up() == 0, c + " all levels done")
+	# avatar look, statistics, badges, languages, library
+	var look: Dictionary = load("res://scripts/art/AvatarArt.gd").default_look()
+	look["beard"] = 3
+	look["skin"] = 7
+	g.begin_new_game("T", look, "de")
+	_check(g.look()["beard"] == 3 and g.look()["skin"] == 7, "look is stored")
+	g.stat_add("correct", 50)
+	_check(g.badge_earned("quiz50"), "badge quiz50")
+	_check(not g.badge_earned("full_shack"), "no full shack yet")
+	var ui = JSON.parse_string(FileAccess.get_file_as_string("res://content/i18n/ui.json"))
+	for loc in root.get_node("I18n").LOCALES:
+		for key in ui:
+			_check(ui[key].has(loc), "ui key %s has %s" % [key, loc])
+	_check(root.get_node("Content").library.size() > 100, "library loaded")
+	for e in root.get_node("Content").library:
+		for sid in e.get("see", []):
+			_check(not root.get_node("Content").library_entry(sid).is_empty(), "library link " + str(sid))
 	# lesson cards
 	g.begin_new_game("T", 1, "de")
 	for lv in [1, 2, 3]:

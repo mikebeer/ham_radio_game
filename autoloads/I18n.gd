@@ -1,5 +1,5 @@
 extends Node
-## National language support: English and German.
+## National language support: English, German, Italian, French, Spanish and Latin (UI); lessons in English and German.
 ##
 ## UI strings live in content/i18n/ui.json as {"key": {"en": "...", "de": "..."}}.
 ## Lesson and question content carries the same {"en","de"} shape; use loc() for those.
@@ -8,7 +8,13 @@ extends Node
 
 signal locale_changed(locale: String)
 
-const LOCALES := ["en", "de"]
+const LOCALES := ["en", "de", "it", "fr", "es", "la"]
+## Native names for the language picker.
+const NAMES := {"en": "English", "de": "Deutsch", "it": "Italiano", "fr": "Français", "es": "Español", "la": "Latina"}
+## Lessons and questions exist in these languages; other languages show the English lessons.
+const CONTENT_LOCALES := ["en", "de"]
+## UI translations made with AI that native speakers have not reviewed yet.
+const UNREVIEWED := ["it", "fr", "es", "la"]
 const UI_PATH := "res://content/i18n/ui.json"
 
 var locale: String = "en"
@@ -19,8 +25,9 @@ func _ready() -> void:
 	var parsed = _read_json(UI_PATH)
 	if parsed is Dictionary:
 		_ui = parsed
-	if OS.get_locale_language() == "de":
-		locale = "de"
+	var os_lang := OS.get_locale_language()
+	if LOCALES.has(os_lang):
+		locale = os_lang
 	TranslationServer.set_locale(locale)
 
 

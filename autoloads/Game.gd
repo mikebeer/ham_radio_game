@@ -24,12 +24,14 @@ func _ready() -> void:
 
 # ---- lifecycle --------------------------------------------------------------------------
 
-func begin_new_game(name: String, avatar: int, country: String) -> void:
+func begin_new_game(name: String, avatar, country: String) -> void:
 	FactDatabase.clear_all()
 	Global.reset()
 	for q in all_quest_ids():
 		QuestSystem.reset_quest(q)
-	profile = {"name": name.strip_edges(), "avatar": avatar, "country": country, "locale": I18n.locale, "started": true, "level": 1}
+	profile = {"name": name.strip_edges(), "avatar": 1, "country": country, "locale": I18n.locale, "started": true, "level": 1,
+			"since": Time.get_date_string_from_system(), "stats": {}}
+	_set_look(avatar)
 	FactDatabase.set_fact("rules.country", country)
 	_start_quests()
 	save_game()
@@ -122,10 +124,93 @@ func set_callsign(cs: String) -> void:
 	save_game()
 
 
-func set_profile(name: String, avatar: int) -> void:
+func set_profile(name: String, avatar) -> void:
 	profile["name"] = name.strip_edges()
-	profile["avatar"] = avatar
+	_set_look(avatar)
 	save_game()
+
+
+## `avatar` is a look Dictionary (see AvatarArt) or an old preset index.
+func _set_look(avatar) -> void:
+	if avatar is Dictionary:
+		profile["look"] = AvatarArt.sanitize(avatar)
+	else:
+		profile["avatar"] = int(avatar)
+		profile.erase("look")
+
+
+# ---- statistics and badges ---------------------------------------------------------------
+
+func stat_add(key: String, n: int = 1) -> void:
+	if not profile.get("started", false):
+		return
+	var st: Dictionary = profile.get("stats", {})
+	st[key] = int(st.get(key, 0)) + n
+	profile["stats"] = st
+	save_game()
+
+
+func stat(key: String) -> int:
+	return int((profile.get("stats", {}) as Dictionary).get(key, 0))
+
+
+const BADGE_IDS := ["first_part", "full_shack", "rules", "callsign", "qso", "morse3", "morse10", "level2", "level3", "reader", "quiz50", "perfect"]
+
+
+func badge_earned(id: String) -> bool:
+	match id:
+		"first_part":
+			return total_parts() > 0
+		"full_shack":
+			for l in range(1, MAX_LEVELS + 1):
+				if parts_owned(l) == PART_IDS.size():
+					return true
+			return false
+		"rules":
+			for l in range(1, MAX_LEVELS + 1):
+				if rules_done(l):
+					return true
+			return false
+		"callsign":
+			return has_callsign()
+		"qso":
+			return bool(FactDatabase.get_fact("qso.done", false))
+		"morse3":
+			return morse_passed() >= 3
+		"morse10":
+			return morse_passed() >= MORSE_LEVELS
+		"level2":
+			return levels_unlocked() >= 2
+		"level3":
+			return levels_unlocked() >= 3
+		"reader":
+			return stat("cards") >= 25
+		"quiz50":
+			return stat("correct") >= 50
+		"perfect":
+			return stat("perfect") >= 1
+	return false
+
+
+func badges_earned() -> int:
+	var n := 0
+	for id in BADGE_IDS:
+		if badge_earned(id):
+			n += 1
+	return n
+
+
+func total_parts() -> int:
+	var n := 0
+	for l in range(1, MAX_LEVELS + 1):
+		n += parts_owned(l)
+	return n
+
+
+func look() -> Dictionary:
+	if profile.has("look") and profile["look"] is Dictionary:
+		return AvatarArt.sanitize(profile["look"])
+	return AvatarArt.preset(int(profile.get("avatar", 1)))
 
 
 ## Changing the country restarts the rules goals (different rules) and gives the callsign back.

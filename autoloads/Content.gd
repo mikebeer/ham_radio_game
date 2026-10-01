@@ -7,6 +7,7 @@ var parts: Array = []
 var legal: Dictionary = {}
 var qso: Dictionary = {}
 var callsigns: Dictionary = {}
+var library: Array = []
 
 
 func _ready() -> void:
@@ -21,9 +22,30 @@ func _ready() -> void:
 		var cs = _read_json("res://content/callsigns/%s.json" % c)
 		if cs is Dictionary:
 			callsigns[c] = cs
+	var lib = _read_json("res://content/library.json")
+	if lib is Dictionary:
+		library = lib.get("entries", [])
 	var q = _read_json("res://content/qso/scripts.json")
 	if q is Dictionary:
 		qso = q
+
+
+func library_entry(id: String) -> Dictionary:
+	for e in library:
+		if e.get("id", "") == id:
+			return e
+	return {}
+
+
+## Categories in the order they first appear in a fixed list, only those that have entries.
+func library_categories() -> Array:
+	var out: Array = []
+	for c in ["modes", "qcodes", "operating", "equipment", "antennas", "propagation", "electronics", "rules", "learning"]:
+		for e in library:
+			if e.get("cat", "") == c:
+				out.append(c)
+				break
+	return out
 
 
 func legal_pack(country: String) -> Dictionary:

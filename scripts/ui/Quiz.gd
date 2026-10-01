@@ -122,6 +122,9 @@ func _on_option(k: int) -> void:
 	if not ok:
 		_mark(_options[k], Palette.CORAL)
 	_next.visible = true
+	Game.stat_add("answers")
+	if ok:
+		Game.stat_add("correct")
 	answered.emit(ok)
 
 
@@ -135,4 +138,6 @@ func _on_next() -> void:
 		_i += 1
 		_show()
 	else:
+		if _correct == _qs.size() and _qs.size() >= 3:
+			Game.stat_add("perfect")
 		finished.emit(_correct, _qs.size())

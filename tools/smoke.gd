@@ -9,7 +9,7 @@ func _initialize() -> void:
 	for id in game.PART_IDS:
 		game.award(id)
 	game.set_flag("rules.quiz_passed", true)
-	for n in ["splash", "intro", "setup", "hub", "callsign", "legal", "build", "qso", "morse"]:
+	for n in ["splash", "intro", "setup", "hub", "callsign", "legal", "build", "qso", "morse", "settings", "library"]:
 		var packed: PackedScene = load("res://scenes/%s.tscn" % n)
 		var s = packed.instantiate()
 		root.add_child(s)

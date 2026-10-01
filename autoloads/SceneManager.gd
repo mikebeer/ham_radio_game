@@ -2,6 +2,7 @@ extends CanvasLayer
 ## Scene switching with a short fade. Parameters for the next scene are kept in `params`.
 
 var params: Dictionary = {}
+var current := ""              # name of the scene last switched to
 var _fade: ColorRect
 var _busy := false
 
@@ -21,6 +22,7 @@ func go(scene: String, p: Dictionary = {}) -> void:
 		return
 	_busy = true
 	params = p
+	current = scene
 	_fade.mouse_filter = Control.MOUSE_FILTER_STOP
 	var t := create_tween()
 	t.tween_property(_fade, "modulate:a", 1.0, 0.22)

@@ -18,7 +18,6 @@ var _t := 0.0
 var _room: Control
 var _gear: Dictionary = {}
 var _pending_award := ""
-var _about: Control
 
 
 func _build() -> void:
@@ -117,7 +116,7 @@ func _build_sidebar() -> void:
 	edge.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(edge)
 
-	add_art("avatar", Rect2(8, 6, 100, 110), int(Game.profile.get("avatar", 1)))
+	add_art("avatar", Rect2(8, 6, 100, 110), 0, "", Game.look())
 	add_title(str(Game.profile.get("name", "")), Vector2(112, 22), 26, Palette.CREAM, 196)
 	var cs := I18n.t("hub.callsign", [Game.callsign()]) if Game.has_callsign() else I18n.t("hub.callsign_pending")
 	add_lbl(cs, Vector2(112, 60), 200, 14, Palette.MUTED, Style.font_mono)
@@ -127,7 +126,7 @@ func _build_sidebar() -> void:
 	pb.flat = true
 	pb.focus_mode = Control.FOCUS_NONE
 	pb.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
-	pb.pressed.connect(_open_profile)
+	pb.pressed.connect(func() -> void: SceneManager.go("settings"))
 	add_child(pb)
 	add_lbl(I18n.t("hub.goals"), Vector2(24, 132), 0, 14, Palette.MUTED, Style.font_body_bold)
 
@@ -249,11 +248,9 @@ func _build_topbar() -> void:
 	dot.add_theme_stylebox_override("panel", Style.box(Palette.AMBER, 12))
 	add_child(dot)
 	add_lbl(I18n.t("hub.shack", [Game.parts_owned(), 8]), Vector2(694, 20), 0, 20, Palette.AMBER, Style.font_display)
-	x = 862.0
-	for item in [["hub.profile", 116, _open_profile], ["share.btn", 100, Share.open], ["hub.about", 100, _show_about]]:
-		var b := add_btn(I18n.t(item[0]), Vector2(x, 14), item[2], "", Vector2(item[1], 40))
-		b.add_theme_font_size_override("font_size", 16)
-		x += float(item[1]) + 8.0
+	var lib := add_btn(I18n.t("hub.library"), Vector2(870, 14), func() -> void: SceneManager.go("library"), "", Vector2(130, 40))
+	lib.add_theme_font_size_override("font_size", 16)
+	add_top_icons(10.0)
 
 
 func _toggle_chip(text: String, pos: Vector2, sz: Vector2, on: bool) -> Button:
@@ -277,47 +274,6 @@ func _toggle_chip(text: String, pos: Vector2, sz: Vector2, on: bool) -> Button:
 	return b
 
 
-func _open_profile() -> void:
-	SceneManager.go("setup", {"profile": true})
-
-
-func _show_about() -> void:
-	if _about:
-		return
-	_about = Control.new()
-	_about.set_anchors_preset(Control.PRESET_FULL_RECT)
-	add_child(_about)
-	var dim := ColorRect.new()
-	dim.color = Color(0, 0, 0, 0.6)
-	dim.set_anchors_preset(Control.PRESET_FULL_RECT)
-	_about.add_child(dim)
-	var card := Panel.new()
-	card.position = Vector2(260, 90)
-	card.size = Vector2(760, 550)
-	_about.add_child(card)
-	var title := Style.display_label(I18n.t("about.title"), 32)
-	title.position = Vector2(296, 110)
-	_about.add_child(title)
-	var body := RichTextLabel.new()
-	body.bbcode_enabled = true
-	body.text = I18n.t("about.body")
-	body.position = Vector2(296, 176)
-	body.size = Vector2(690, 360)
-	body.add_theme_font_override("normal_font", Style.font_body)
-	body.add_theme_font_size_override("normal_font_size", 16)
-	body.add_theme_color_override("default_color", Palette.MUTED)
-	body.meta_clicked.connect(func(m) -> void: OS.shell_open(str(m)))
-	_about.add_child(body)
-	var close := Button.new()
-	close.text = I18n.t("common.close")
-	close.theme_type_variation = "PrimaryButton"
-	close.position = Vector2(860, 572)
-	close.pressed.connect(func() -> void:
-		_about.queue_free()
-		_about = null)
-	_about.add_child(close)
-
-
 # ---- level up ---------------------------------------------------------------------------
 
 func _show_levelup(n: int) -> void:
@@ -338,7 +294,7 @@ func _show_levelup(n: int) -> void:
 		for i in 8:
 			var a := _t * 0.6 + float(i) * TAU / 8.0
 			Art.sparkle(art, Vector2(640, 232) + Vector2(cos(a), sin(a)) * 130.0, 9.0 + 3.0 * sin(_t * 3.0 + i), Palette.AMBER, _t)
-		Art.avatar(art, Vector2(640, 232), 64.0, int(Game.profile.get("avatar", 1))))
+		Art.avatar(art, Vector2(640, 232), 64.0, Game.look()))
 	ov.add_child(art)
 	var t1 := Style.display_label(I18n.t("level.up", [n]), 40, Palette.AMBER)
 	t1.position = Vector2(340, 352)

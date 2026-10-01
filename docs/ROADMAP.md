@@ -10,4 +10,6 @@ Decided with the project owner (2026-09-30):
 
 Lesson decks - done: every quiz is preceded by lesson cards (study first, quiz second). Shack parts have 4-6 cards per level for all countries (written from 50ohm N/E/A sections, DE + EN, with drawings); DE rules have 12 cards per level. Study tasks are part of the quest (`shack.<part>.read`). Next: cards for the AT/CH/US/UK rules from the sources the owner supplies, callsign/QSO/Morse decks.
 
+Done 2026-10-01: back arrow, share + settings icons, settings screen (profile, statistics, badges, language, game, about), avatar editor, languages it/fr/es/la (UI), library. Full list of open items: docs/OPEN_ISSUES.md.
+
 Open checks: trademark search for "CQ Quest" (DPMA, EUIPO, USPTO); clearance of the 2009 Austrian catalogue.

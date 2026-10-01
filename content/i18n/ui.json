@@ -1,658 +1,2002 @@
 {
  "app.title": {
   "en": "CQ Quest",
-  "de": "CQ Quest"
+  "de": "CQ Quest",
+  "it": "CQ Quest",
+  "fr": "CQ Quest",
+  "es": "CQ Quest",
+  "la": "CQ Quest"
  },
  "app.tagline": {
   "en": "Become a ham radio operator",
-  "de": "Werde Funkamateur"
+  "de": "Werde Funkamateur",
+  "it": "Diventa radioamatore",
+  "fr": "Deviens radioamateur",
+  "es": "Hazte radioaficionado",
+  "la": "Fac radioamator"
  },
  "splash.start": {
   "en": "Press to start",
-  "de": "Zum Starten drücken"
+  "de": "Zum Starten drücken",
+  "it": "Premi per iniziare",
+  "fr": "Appuie pour jouer",
+  "es": "Pulsa para empezar",
+  "la": "Preme ut incipias"
  },
  "common.next": {
   "en": "Next",
-  "de": "Weiter"
+  "de": "Weiter",
+  "it": "Avanti",
+  "fr": "Suivant",
+  "es": "Siguiente",
+  "la": "Proximum"
  },
  "common.back": {
   "en": "Back",
-  "de": "Zurück"
+  "de": "Zurück",
+  "it": "Indietro",
+  "fr": "Retour",
+  "es": "Atrás",
+  "la": "Retro"
  },
  "common.skip": {
   "en": "Skip",
-  "de": "Überspringen"
+  "de": "Überspringen",
+  "it": "Salta",
+  "fr": "Passer",
+  "es": "Saltar",
+  "la": "Salta"
  },
  "common.continue": {
   "en": "Continue",
-  "de": "Los geht's"
+  "de": "Los geht's",
+  "it": "Continua",
+  "fr": "Continuer",
+  "es": "Seguir",
+  "la": "Perge"
  },
  "common.check": {
   "en": "Check",
-  "de": "Prüfen"
+  "de": "Prüfen",
+  "it": "Verifica",
+  "fr": "Vérifier",
+  "es": "Comprobar",
+  "la": "Proba"
  },
  "common.retry": {
   "en": "Try again",
-  "de": "Nochmal"
+  "de": "Nochmal",
+  "it": "Riprova",
+  "fr": "Réessayer",
+  "es": "Reintentar",
+  "la": "Iterum"
  },
  "common.close": {
   "en": "Close",
-  "de": "Schließen"
+  "de": "Schließen",
+  "it": "Chiudi",
+  "fr": "Fermer",
+  "es": "Cerrar",
+  "la": "Claude"
  },
  "common.correct": {
   "en": "Correct! Well done.",
-  "de": "Richtig! Gut gemacht."
+  "de": "Richtig! Gut gemacht.",
+  "it": "Giusto! Ben fatto.",
+  "fr": "Exact ! Bien joué.",
+  "es": "¡Correcto! Bien hecho.",
+  "la": "Recte! Bene fecisti."
  },
  "common.wrong": {
   "en": "Not quite. The right answer is highlighted.",
-  "de": "Leider falsch. Die richtige Antwort ist markiert."
+  "de": "Leider falsch. Die richtige Antwort ist markiert.",
+  "it": "Quasi. La risposta giusta è evidenziata.",
+  "fr": "Presque. La bonne réponse est en surbrillance.",
+  "es": "Casi. La respuesta correcta está resaltada.",
+  "la": "Paene. Responsum rectum notatum est."
  },
  "common.score": {
   "en": "%d of %d correct",
-  "de": "%d von %d richtig"
+  "de": "%d von %d richtig",
+  "it": "%d su %d corrette",
+  "fr": "%d sur %d correctes",
+  "es": "%d de %d correctas",
+  "la": "%d ex %d recta"
  },
  "common.locked": {
   "en": "Locked",
-  "de": "Gesperrt"
+  "de": "Gesperrt",
+  "it": "Bloccato",
+  "fr": "Verrouillé",
+  "es": "Bloqueado",
+  "la": "Clausum"
  },
  "intro.1.t": {
   "en": "Somewhere out there, someone is calling CQ.",
-  "de": "Irgendwo da draußen ruft jemand CQ."
+  "de": "Irgendwo da draußen ruft jemand CQ.",
+  "it": "Da qualche parte, qualcuno sta chiamando CQ.",
+  "fr": "Quelque part, quelqu'un lance un appel CQ.",
+  "es": "Ahí fuera, alguien está llamando a CQ.",
+  "la": "Alicubi aliquis CQ vocat."
  },
  "intro.1.b": {
   "en": "Radio waves cross oceans without wires or the internet. Amateur radio lets you send them yourself, once you know the rules and how to build a station.",
-  "de": "Funkwellen überqueren Ozeane, ganz ohne Kabel und Internet. Mit Amateurfunk sendest du sie selbst, sobald du die Regeln kennst und eine Station aufbauen kannst."
+  "de": "Funkwellen überqueren Ozeane, ganz ohne Kabel und Internet. Mit Amateurfunk sendest du sie selbst, sobald du die Regeln kennst und eine Station aufbauen kannst.",
+  "it": "Le onde radio attraversano gli oceani senza cavi né internet. Il radiantismo ti permette di trasmetterle tu stesso, appena conosci le regole e sai come costruire una stazione.",
+  "fr": "Les ondes radio traversent les océans sans fil ni internet. Le radioamateurisme te permet de les émettre toi-même, dès que tu connais les règles et sais monter une station.",
+  "es": "Las ondas de radio cruzan océanos sin cables ni internet. La radioafición te permite emitirlas tú mismo, cuando conozcas las reglas y sepas montar una estación.",
+  "la": "Undae radiophonicae maria transeunt sine filis et sine interreti. Radioamatoria te sinit eas ipse mittere, ubi leges nosti et stationem aedificare scis."
  },
  "intro.2.t": {
   "en": "Your own radio shack",
-  "de": "Deine eigene Funkbude"
+  "de": "Deine eigene Funkbude",
+  "it": "La tua stazione radio",
+  "fr": "Ta propre station radio",
+  "es": "Tu propia estación de radio",
+  "la": "Tua statio radiophonica"
  },
  "intro.2.b": {
   "en": "Every part you learn about, from power supply to antenna, appears in your shack. Answer the questions and the part is yours.",
-  "de": "Jedes Teil, über das du etwas lernst, vom Netzteil bis zur Antenne, erscheint in deiner Funkbude. Beantworte die Fragen und das Teil gehört dir."
+  "de": "Jedes Teil, über das du etwas lernst, vom Netzteil bis zur Antenne, erscheint in deiner Funkbude. Beantworte die Fragen und das Teil gehört dir.",
+  "it": "Ogni componente che scopri, dall'alimentatore all'antenna, compare nella tua stazione. Rispondi alle domande e il pezzo è tuo.",
+  "fr": "Chaque élément que tu découvres, de l'alimentation à l'antenne, apparaît dans ta station. Réponds aux questions et la pièce est à toi.",
+  "es": "Cada pieza que aprendes, de la fuente de alimentación a la antena, aparece en tu estación. Responde a las preguntas y la pieza es tuya.",
+  "la": "Omnis pars quam discis, a fonte energiae ad antennam, in statione tua apparet. Quaestionibus responde et pars tua est."
  },
  "intro.3.t": {
   "en": "Four goals",
-  "de": "Vier Ziele"
+  "de": "Vier Ziele",
+  "it": "4 obiettivi",
+  "fr": "4 objectifs",
+  "es": "Cuatro metas",
+  "la": "Quattuor metae"
  },
  "intro.3.b": {
   "en": "Learn the rules of your country. Build your shack. Make your first contact. Learn Morse code.",
-  "de": "Lerne die Regeln deines Landes. Baue deine Funkbude auf. Führe dein erstes Funkgespräch. Lerne Morsen."
+  "de": "Lerne die Regeln deines Landes. Baue deine Funkbude auf. Führe dein erstes Funkgespräch. Lerne Morsen.",
+  "it": "Impara le regole del tuo paese. Costruisci la tua stazione. Fai il tuo primo contatto. Impara il codice Morse.",
+  "fr": "Apprends les règles de ton pays. Monte ta station. Fais ton premier contact. Apprends le morse.",
+  "es": "Aprende las normas de tu país. Monta tu estación. Haz tu primer contacto. Aprende código Morse.",
+  "la": "Disce leges patriae tuae. Aedifica stationem tuam. Fac primum colloquium. Disce notas Morsianas."
  },
  "intro.goal1": {
   "en": "Know the rules",
-  "de": "Die Regeln kennen"
+  "de": "Die Regeln kennen",
+  "it": "Conosci le regole",
+  "fr": "Connaître les règles",
+  "es": "Conoce las normas",
+  "la": "Disce leges"
  },
  "intro.goal2": {
   "en": "Build your radio shack",
-  "de": "Deine Funkbude bauen"
+  "de": "Deine Funkbude bauen",
+  "it": "Costruisci la stazione",
+  "fr": "Monter ta station",
+  "es": "Monta tu estación",
+  "la": "Aedifica stationem"
  },
  "intro.goal3": {
   "en": "Make your first contact",
-  "de": "Dein erstes Funkgespräch"
+  "de": "Dein erstes Funkgespräch",
+  "it": "Fai il primo contatto",
+  "fr": "Faire ton 1er contact",
+  "es": "Haz tu primer contacto",
+  "la": "Primum colloquium"
  },
  "intro.goal4": {
   "en": "Learn Morse code",
-  "de": "Morsen lernen"
+  "de": "Morsen lernen",
+  "it": "Impara il Morse",
+  "fr": "Apprendre le morse",
+  "es": "Aprende Morse",
+  "la": "Disce Morse"
  },
  "setup.title": {
   "en": "Who are you?",
-  "de": "Wer bist du?"
+  "de": "Wer bist du?",
+  "it": "Chi sei?",
+  "fr": "Qui es-tu ?",
+  "es": "¿Quién eres?",
+  "la": "Quis es?"
  },
  "setup.sub": {
   "en": "Pick an avatar, a name, your country and language.",
-  "de": "Wähle Avatar, Namen, Land und Sprache."
+  "de": "Wähle Avatar, Namen, Land und Sprache.",
+  "it": "Scegli un avatar, un nome, il tuo paese e la lingua.",
+  "fr": "Choisis un avatar, un nom, ton pays et ta langue.",
+  "es": "Elige un avatar, un nombre, tu país y tu idioma.",
+  "la": "Elige imaginem, nomen, patriam et linguam."
  },
  "setup.name": {
   "en": "Your name",
-  "de": "Dein Name"
+  "de": "Dein Name",
+  "it": "Il tuo nome",
+  "fr": "Ton nom",
+  "es": "Tu nombre",
+  "la": "Nomen tuum"
  },
  "setup.name_hint": {
   "en": "Type your name",
-  "de": "Namen eingeben"
+  "de": "Namen eingeben",
+  "it": "Scrivi il tuo nome",
+  "fr": "Écris ton nom",
+  "es": "Escribe tu nombre",
+  "la": "Scribe nomen tuum"
  },
  "setup.country": {
   "en": "Country (sets the legal chapter)",
-  "de": "Land (bestimmt das Rechtskapitel)"
+  "de": "Land (bestimmt das Rechtskapitel)",
+  "it": "Paese (sceglie il capitolo normativo)",
+  "fr": "Pays (détermine le chapitre légal)",
+  "es": "País (define el capítulo legal)",
+  "la": "Patria (legem eligit)"
  },
  "setup.language": {
   "en": "Language",
-  "de": "Sprache"
+  "de": "Sprache",
+  "it": "Lingua",
+  "fr": "Langue",
+  "es": "Idioma",
+  "la": "Lingua"
  },
  "country.de": {
   "en": "Germany",
-  "de": "Deutschland"
+  "de": "Deutschland",
+  "it": "Germania",
+  "fr": "Allemagne",
+  "es": "Alemania",
+  "la": "Germania"
  },
  "country.ch": {
   "en": "Switzerland",
-  "de": "Schweiz"
+  "de": "Schweiz",
+  "it": "Svizzera",
+  "fr": "Suisse",
+  "es": "Suiza",
+  "la": "Helvetia"
  },
  "country.at": {
   "en": "Austria",
-  "de": "Österreich"
+  "de": "Österreich",
+  "it": "Austria",
+  "fr": "Autriche",
+  "es": "Austria",
+  "la": "Austria"
  },
  "country.us": {
   "en": "United States",
-  "de": "USA"
+  "de": "USA",
+  "it": "Stati Uniti",
+  "fr": "États-Unis",
+  "es": "Estados Unidos",
+  "la": "Civitates Foederatae"
  },
  "country.uk": {
   "en": "United Kingdom",
-  "de": "Großbritannien"
+  "de": "Großbritannien",
+  "it": "Regno Unito",
+  "fr": "Royaume-Uni",
+  "es": "Reino Unido",
+  "la": "Britannia"
  },
  "hub.goals": {
   "en": "Your goals",
-  "de": "Deine Ziele"
+  "de": "Deine Ziele",
+  "it": "Obiettivi",
+  "fr": "Tes objectifs",
+  "es": "Tus metas",
+  "la": "Metae tuae"
  },
  "hub.goal1": {
   "en": "Know the rules",
-  "de": "Regeln kennen"
+  "de": "Regeln kennen",
+  "it": "Conosci le regole",
+  "fr": "Connaître les règles",
+  "es": "Conoce las normas",
+  "la": "Disce leges"
  },
  "hub.goal2": {
   "en": "Build your shack",
-  "de": "Funkbude bauen"
+  "de": "Funkbude bauen",
+  "it": "Costruisci stazione",
+  "fr": "Monter ta station",
+  "es": "Monta tu estación",
+  "la": "Aedifica stationem"
  },
  "hub.goal3": {
   "en": "First QSO",
-  "de": "Erstes QSO"
+  "de": "Erstes QSO",
+  "it": "Primo QSO",
+  "fr": "Premier QSO",
+  "es": "Primer QSO",
+  "la": "Primum QSO"
  },
  "hub.goal4": {
   "en": "Morse code",
-  "de": "Morsen"
+  "de": "Morsen",
+  "it": "Codice Morse",
+  "fr": "Code morse",
+  "es": "Código Morse",
+  "la": "Notae Morse"
  },
  "hub.goal1.sub": {
   "en": "%s · %s",
-  "de": "%s · %s"
+  "de": "%s · %s",
+  "it": "%s · %s",
+  "fr": "%s · %s",
+  "es": "%s · %s",
+  "la": "%s · %s"
  },
  "hub.goal2.sub": {
   "en": "Earn each part by learning",
-  "de": "Jedes Teil durch Lernen verdienen"
+  "de": "Jedes Teil durch Lernen verdienen",
+  "it": "Guadagna ogni pezzo imparando",
+  "fr": "Gagne chaque pièce en apprenant",
+  "es": "Gana cada pieza aprendiendo",
+  "la": "Discendo partes merere"
  },
  "hub.goal3.sub": {
   "en": "Needs a working shack",
-  "de": "Braucht eine funktionierende Funkbude"
+  "de": "Braucht eine funktionierende Funkbude",
+  "it": "Serve una stazione funzionante",
+  "fr": "Il faut une station complète",
+  "es": "Necesita una estación lista",
+  "la": "Stationem paratam postulat"
  },
  "hub.goal4.sub": {
   "en": "Koch method",
-  "de": "Koch-Methode"
+  "de": "Koch-Methode",
+  "it": "Metodo Koch",
+  "fr": "Méthode Koch",
+  "es": "Método Koch",
+  "la": "Methodus Koch"
  },
  "hub.goal1.prog": {
   "en": "%d / %d steps",
-  "de": "%d / %d Schritte"
+  "de": "%d / %d Schritte",
+  "it": "%d / %d passi",
+  "fr": "%d / %d étapes",
+  "es": "%d / %d pasos",
+  "la": "%d / %d gradus"
  },
  "hub.goal2.prog": {
   "en": "%d / %d parts",
-  "de": "%d / %d Teile"
+  "de": "%d / %d Teile",
+  "it": "%d / %d pezzi",
+  "fr": "%d / %d pièces",
+  "es": "%d / %d piezas",
+  "la": "%d / %d partes"
  },
  "hub.goal4.prog": {
   "en": "Level %d / %d",
-  "de": "Stufe %d / %d"
+  "de": "Stufe %d / %d",
+  "it": "Livello %d / %d",
+  "fr": "Niveau %d / %d",
+  "es": "Nivel %d / %d",
+  "la": "Gradus %d / %d"
  },
  "hub.goal3.prog": {
   "en": "%d / %d steps",
-  "de": "%d / %d Schritte"
+  "de": "%d / %d Schritte",
+  "it": "%d / %d passi",
+  "fr": "%d / %d étapes",
+  "es": "%d / %d pasos",
+  "la": "%d / %d gradus"
  },
  "hub.shack": {
   "en": "Shack %d / %d",
-  "de": "Funkbude %d / %d"
+  "de": "Funkbude %d / %d",
+  "it": "Stazione %d / %d",
+  "fr": "Station %d / %d",
+  "es": "Estación %d / %d",
+  "la": "Statio %d / %d"
  },
  "hub.callsign": {
   "en": "Callsign: %s",
-  "de": "Rufzeichen: %s"
+  "de": "Rufzeichen: %s",
+  "it": "Nominativo: %s",
+  "fr": "Indicatif : %s",
+  "es": "Indicativo: %s",
+  "la": "Signum: %s"
  },
  "hub.tip_locked": {
   "en": "Finish the rules and build the transceiver, antenna, microphone and power supply first.",
-  "de": "Schließe zuerst die Regeln ab und baue Transceiver, Antenne, Mikrofon und Netzteil."
+  "de": "Schließe zuerst die Regeln ab und baue Transceiver, Antenne, Mikrofon und Netzteil.",
+  "it": "Prima completa le regole e costruisci ricetrasmettitore, antenna, microfono e alimentatore.",
+  "fr": "Termine d'abord les règles et monte l'émetteur-récepteur, l'antenne, le micro et l'alimentation.",
+  "es": "Antes, termina las normas y construye el transceptor, la antena, el micrófono y la fuente de alimentación.",
+  "la": "Prius leges perfice et radiophonum, antennam, microphonum, fontemque energiae aedifica."
  },
  "hub.click_slot": {
   "en": "Click an empty slot to learn about that part.",
-  "de": "Klicke auf einen leeren Platz, um das Teil kennenzulernen."
+  "de": "Klicke auf einen leeren Platz, um das Teil kennenzulernen.",
+  "it": "Tocca uno spazio vuoto per scoprire quel componente.",
+  "fr": "Clique sur un emplacement vide pour découvrir cette pièce.",
+  "es": "Toca un hueco vacío para aprender sobre esa pieza.",
+  "la": "Preme locum vacuum ut de ea parte discas."
  },
  "hub.owned": {
   "en": "Already in your shack. Tune in!",
-  "de": "Schon in deiner Funkbude. Viel Spaß beim Funken!"
+  "de": "Schon in deiner Funkbude. Viel Spaß beim Funken!",
+  "it": "Già nella tua stazione. Mettiti in ascolto!",
+  "fr": "Déjà dans ta station. Écoute !",
+  "es": "¡Ya está en tu estación! A sintonizar.",
+  "la": "Iam in statione tua est. Sintonizare!"
  },
  "hub.about": {
   "en": "About",
-  "de": "Info"
+  "de": "Info",
+  "it": "Info",
+  "fr": "À propos",
+  "es": "Acerca de",
+  "la": "De ludo"
  },
  "hub.callsign_pending": {
   "en": "Callsign: pending",
-  "de": "Rufzeichen: offen"
+  "de": "Rufzeichen: offen",
+  "it": "Nominativo: in attesa",
+  "fr": "Indicatif : en attente",
+  "es": "Indicativo: pendiente",
+  "la": "Signum: exspectatur"
  },
  "hub.reset_sure": {
   "en": "Sure?",
-  "de": "Sicher?"
+  "de": "Sicher?",
+  "it": "Sicuro?",
+  "fr": "Sûr ?",
+  "es": "¿Seguro?",
+  "la": "Certus?"
  },
  "hub.reset": {
   "en": "New game",
-  "de": "Neues Spiel"
+  "de": "Neues Spiel",
+  "it": "Nuova partita",
+  "fr": "Nouvelle partie",
+  "es": "Partida nueva",
+  "la": "Ludus novus"
  },
  "part.psu": {
   "en": "Power supply",
-  "de": "Netzteil"
+  "de": "Netzteil",
+  "it": "Alimentatore",
+  "fr": "Alimentation",
+  "es": "Fuente de alimentación",
+  "la": "Fons energiae"
  },
  "part.antenna": {
   "en": "Antenna",
-  "de": "Antenne"
+  "de": "Antenne",
+  "it": "Antenna",
+  "fr": "Antenne",
+  "es": "Antena",
+  "la": "Antenna"
  },
  "part.transceiver": {
   "en": "Transceiver",
-  "de": "Transceiver"
+  "de": "Transceiver",
+  "it": "Ricetrasm.",
+  "fr": "Émetteur-récept.",
+  "es": "Transceptor",
+  "la": "Radiophonum"
  },
  "part.mic": {
   "en": "Microphone",
-  "de": "Mikrofon"
+  "de": "Mikrofon",
+  "it": "Microfono",
+  "fr": "Microphone",
+  "es": "Micrófono",
+  "la": "Microphonum"
  },
  "part.speaker": {
   "en": "Speaker",
-  "de": "Lautsprecher"
+  "de": "Lautsprecher",
+  "it": "Altoparlante",
+  "fr": "Haut-parleur",
+  "es": "Altavoz",
+  "la": "Sonorum"
  },
  "part.swr": {
   "en": "SWR meter",
-  "de": "SWR-Meter"
+  "de": "SWR-Meter",
+  "it": "Misur. SWR",
+  "fr": "TOS-mètre",
+  "es": "Medidor de SWR",
+  "la": "Mensor SWR"
  },
  "part.key": {
   "en": "Morse key",
-  "de": "Morsetaste"
+  "de": "Morsetaste",
+  "it": "Tasto Morse",
+  "fr": "Manipulateur",
+  "es": "Llave Morse",
+  "la": "Clavis Morse"
  },
  "part.logbook": {
   "en": "Logbook",
-  "de": "Logbuch"
+  "de": "Logbuch",
+  "it": "Giornale di stazione",
+  "fr": "Cahier de trafic",
+  "es": "Diario",
+  "la": "Liber"
  },
  "legal.review": {
   "en": "Read the lessons",
-  "de": "Lektionen lesen"
+  "de": "Lektionen lesen",
+  "it": "Leggi le lezioni",
+  "fr": "Lire les leçons",
+  "es": "Lee las lecciones",
+  "la": "Lege lectiones"
  },
  "legal.title": {
   "en": "Goal 1 · Know the rules",
-  "de": "Ziel 1 · Regeln kennen"
+  "de": "Ziel 1 · Regeln kennen",
+  "it": "Obiettivo 1 · Le regole",
+  "fr": "Objectif 1 · Les règles",
+  "es": "Meta 1 · Conoce las normas",
+  "la": "Meta 1 · Disce leges"
  },
  "legal.sub": {
   "en": "%s · Lesson %d of %d",
-  "de": "%s · Lektion %d von %d"
+  "de": "%s · Lektion %d von %d",
+  "it": "%s · Lezione %d di %d",
+  "fr": "%s · Leçon %d sur %d",
+  "es": "%s · Lección %d de %d",
+  "la": "%s · Lectio %d ex %d"
  },
  "legal.quiz_sub": {
   "en": "%s · Quiz",
-  "de": "%s · Quiz"
+  "de": "%s · Quiz",
+  "it": "%s · Quiz",
+  "fr": "%s · Quiz",
+  "es": "%s · Test",
+  "la": "%s · Probatio"
  },
  "legal.question": {
   "en": "QUESTION %d / %d",
-  "de": "FRAGE %d / %d"
+  "de": "FRAGE %d / %d",
+  "it": "DOMANDA %d / %d",
+  "fr": "QUESTION %d / %d",
+  "es": "PREGUNTA %d / %d",
+  "la": "QUAESTIO %d / %d"
  },
  "legal.start_quiz": {
   "en": "Start the quiz",
-  "de": "Quiz starten"
+  "de": "Quiz starten",
+  "it": "Inizia il quiz",
+  "fr": "Lancer le quiz",
+  "es": "Empezar el test",
+  "la": "Incipe probationem"
  },
  "legal.passed": {
   "en": "You passed the rules quiz for %s! One step left: your callsign.",
-  "de": "Du hast das Regel-Quiz für %s bestanden! Noch ein Schritt: dein Rufzeichen."
+  "de": "Du hast das Regel-Quiz für %s bestanden! Noch ein Schritt: dein Rufzeichen.",
+  "it": "Hai superato il quiz sulle regole per %s! Manca un solo passo: il tuo nominativo.",
+  "fr": "Tu as réussi le quiz des règles pour %s ! Une dernière étape : ton indicatif.",
+  "es": "¡Has aprobado el test de normas de %s! Solo falta un paso: tu indicativo.",
+  "la": "Probationem legum %s superavisti! Unus gradus restat: signum tuum."
  },
  "legal.failed": {
   "en": "You need %d correct answers. Read the lessons again and retry.",
-  "de": "Du brauchst %d richtige Antworten. Lies die Lektionen nochmal und versuche es erneut."
+  "de": "Du brauchst %d richtige Antworten. Lies die Lektionen nochmal und versuche es erneut.",
+  "it": "Servono %d risposte giuste. Rileggi le lezioni e riprova.",
+  "fr": "Il faut %d bonnes réponses. Relis les leçons et réessaie.",
+  "es": "Necesitas %d respuestas correctas. Repasa las lecciones e inténtalo de nuevo.",
+  "la": "Opus est %d responsis rectis. Lectiones relege et iterum conare."
  },
  "legal.primer": {
   "en": "Learning primer, not an official exam pool. Check your regulator's current rules.",
-  "de": "Lern-Überblick, kein offizieller Fragenkatalog. Prüfe die aktuellen Regeln deiner Behörde."
+  "de": "Lern-Überblick, kein offizieller Fragenkatalog. Prüfe die aktuellen Regeln deiner Behörde.",
+  "it": "Guida per imparare, non un archivio d'esame ufficiale. Controlla le norme attuali della tua autorità.",
+  "fr": "Guide d'apprentissage, pas la banque d'examen officielle. Vérifie les règles en vigueur.",
+  "es": "Guía de aprendizaje, no es un examen oficial. Consulta las normas vigentes de tu regulador.",
+  "la": "Initium discendi, non examen publicum. Leges novissimas apud auctoritatem tuam vide."
  },
  "legal.official": {
   "en": "Official question catalogue",
-  "de": "Offizieller Fragenkatalog"
+  "de": "Offizieller Fragenkatalog",
+  "it": "Catalogo ufficiale delle domande",
+  "fr": "Catalogue officiel des questions",
+  "es": "Catálogo oficial de preguntas",
+  "la": "Catalogus quaestionum publicus"
  },
  "legal.translation": {
   "en": "English text is an unofficial translation.",
-  "de": "Der englische Text ist eine inoffizielle Übersetzung."
+  "de": "Der englische Text ist eine inoffizielle Übersetzung.",
+  "it": "Il testo inglese è una traduzione non ufficiale.",
+  "fr": "Le texte anglais est une traduction non officielle.",
+  "es": "El texto en español es una traducción no oficial.",
+  "la": "Textus Latinus translatio non publica est."
  },
  "build.title": {
   "en": "Goal 2 · Build your shack",
-  "de": "Ziel 2 · Funkbude bauen"
+  "de": "Ziel 2 · Funkbude bauen",
+  "it": "Obiettivo 2 · La stazione",
+  "fr": "Objectif 2 · Monte ta station",
+  "es": "Meta 2 · Monta tu estación",
+  "la": "Meta 2 · Aedifica stationem"
  },
  "build.sub": {
   "en": "%s · Question %d of %d",
-  "de": "%s · Frage %d von %d"
+  "de": "%s · Frage %d von %d",
+  "it": "%s · Domanda %d di %d",
+  "fr": "%s · Question %d sur %d",
+  "es": "%s · Pregunta %d de %d",
+  "la": "%s · Quaestio %d ex %d"
  },
  "build.lesson_sub": {
   "en": "%s · Learn first",
-  "de": "%s · Erst lernen"
+  "de": "%s · Erst lernen",
+  "it": "%s · Prima impara",
+  "fr": "%s · D'abord apprendre",
+  "es": "%s · Aprende primero",
+  "la": "%s · Prius disce"
  },
  "build.unlocked": {
   "en": "NEW PART UNLOCKED",
-  "de": "NEUES TEIL FREIGESCHALTET"
+  "de": "NEUES TEIL FREIGESCHALTET",
+  "it": "NUOVO PEZZO SBLOCCATO",
+  "fr": "NOUVELLE PIÈCE !",
+  "es": "NUEVA PIEZA DESBLOQUEADA",
+  "la": "PARS NOVA APERTA"
  },
  "build.shack_count": {
   "en": "Shack",
-  "de": "Funkbude"
+  "de": "Funkbude",
+  "it": "Stazione",
+  "fr": "Station",
+  "es": "Estación",
+  "la": "Statio"
  },
  "build.next_part": {
   "en": "Next part: %s",
-  "de": "Nächstes Teil: %s"
+  "de": "Nächstes Teil: %s",
+  "it": "Prossimo pezzo: %s",
+  "fr": "Ensuite : %s",
+  "es": "Siguiente pieza: %s",
+  "la": "Pars proxima: %s"
  },
  "build.all_done": {
   "en": "Your shack is complete!",
-  "de": "Deine Funkbude ist komplett!"
+  "de": "Deine Funkbude ist komplett!",
+  "it": "La tua stazione è completa!",
+  "fr": "Ta station est complète !",
+  "es": "¡Tu estación está completa!",
+  "la": "Statio tua perfecta est!"
  },
  "build.back": {
   "en": "Back to the shack",
-  "de": "Zurück zur Funkbude"
+  "de": "Zurück zur Funkbude",
+  "it": "Torna alla stazione",
+  "fr": "Retour à la station",
+  "es": "Volver a la estación",
+  "la": "Ad stationem redi"
  },
  "build.start_quiz": {
   "en": "Take the quiz",
-  "de": "Zum Quiz"
+  "de": "Zum Quiz",
+  "it": "Fai il quiz",
+  "fr": "Passer le quiz",
+  "es": "Hacer el test",
+  "la": "Probatio"
  },
  "build.skip_to_quiz": {
   "en": "Skip to quiz",
-  "de": "Direkt zum Quiz"
+  "de": "Direkt zum Quiz",
+  "it": "Vai al quiz",
+  "fr": "Aller au quiz",
+  "es": "Ir al test",
+  "la": "Ad probationem"
  },
  "legal.skip_to_quiz": {
   "en": "Skip to quiz",
-  "de": "Direkt zum Quiz"
+  "de": "Direkt zum Quiz",
+  "it": "Vai al quiz",
+  "fr": "Aller au quiz",
+  "es": "Ir al test",
+  "la": "Ad probationem"
  },
  "build.failed": {
   "en": "You need %d of %d. Have another look at the lesson.",
-  "de": "Du brauchst %d von %d. Sieh dir die Lektion nochmal an."
+  "de": "Du brauchst %d von %d. Sieh dir die Lektion nochmal an.",
+  "it": "Servono %d su %d. Dai un'altra occhiata alla lezione.",
+  "fr": "Il faut %d sur %d. Relis la leçon.",
+  "es": "Necesitas %d de %d. Echa otro vistazo a la lección.",
+  "la": "Opus est %d ex %d. Lectionem iterum inspice."
  },
  "qso.title": {
   "en": "Goal 3 · First contact",
-  "de": "Ziel 3 · Erstes Funkgespräch"
+  "de": "Ziel 3 · Erstes Funkgespräch",
+  "it": "Obiettivo 3 · Primo contatto",
+  "fr": "Objectif 3 · Premier contact",
+  "es": "Meta 3 · Primer contacto",
+  "la": "Meta 3 · Primum colloquium"
  },
  "qso.sub": {
   "en": "Practice a real QSO, step by step",
-  "de": "Übe ein echtes QSO, Schritt für Schritt"
+  "de": "Übe ein echtes QSO, Schritt für Schritt",
+  "it": "Prova un vero QSO, passo dopo passo",
+  "fr": "Entraîne-toi à un vrai QSO, pas à pas",
+  "es": "Practica un QSO real, paso a paso",
+  "la": "Exerce verum QSO, gradatim"
  },
  "qso.tune": {
   "en": "Tune in",
-  "de": "Abstimmen"
+  "de": "Abstimmen",
+  "it": "Sintonizzati",
+  "fr": "Accorde-toi",
+  "es": "Sintoniza",
+  "la": "Sintonizare"
  },
  "qso.tune_hint": {
   "en": "Turn the dial with the slider until you hear the station.",
-  "de": "Drehe mit dem Regler, bis du die Station hörst."
+  "de": "Drehe mit dem Regler, bis du die Station hörst.",
+  "it": "Gira la manopola con il cursore finché senti la stazione.",
+  "fr": "Tourne le cadran avec le curseur jusqu'à entendre la station.",
+  "es": "Gira el dial con el control deslizante hasta oír la estación.",
+  "la": "Rota quaerendi cursore verte donec stationem audias."
  },
  "qso.signal": {
   "en": "Signal",
-  "de": "Signal"
+  "de": "Signal",
+  "it": "Segnale",
+  "fr": "Signal",
+  "es": "Señal",
+  "la": "Signum"
  },
  "qso.found": {
   "en": "Found a station! Now answer them.",
-  "de": "Station gefunden! Jetzt antworte ihr."
+  "de": "Station gefunden! Jetzt antworte ihr.",
+  "it": "Trovata una stazione! Ora rispondi.",
+  "fr": "Station trouvée ! Réponds-lui.",
+  "es": "¡Has encontrado una estación! Ahora respóndele.",
+  "la": "Stationem invenisti! Nunc responde."
  },
  "qso.conversation": {
   "en": "The conversation",
-  "de": "Das Gespräch"
+  "de": "Das Gespräch",
+  "it": "La conversazione",
+  "fr": "La conversation",
+  "es": "La conversación",
+  "la": "Colloquium"
  },
  "qso.your_turn": {
   "en": "Your turn: pick the right reply",
-  "de": "Du bist dran: wähle die richtige Antwort"
+  "de": "Du bist dran: wähle die richtige Antwort",
+  "it": "Tocca a te: scegli la risposta giusta",
+  "fr": "À toi : choisis la bonne réponse",
+  "es": "Tu turno: elige la respuesta correcta",
+  "la": "Tua vices: responsum rectum elige"
  },
  "qso.step1": {
   "en": "Find a station",
-  "de": "Station finden"
+  "de": "Station finden",
+  "it": "Trova una stazione",
+  "fr": "Trouver une station",
+  "es": "Encuentra una estación",
+  "la": "Quaere stationem"
  },
  "qso.step2": {
   "en": "Answer the call",
-  "de": "Anruf beantworten"
+  "de": "Anruf beantworten",
+  "it": "Rispondi",
+  "fr": "Répondre à l'appel",
+  "es": "Responde a la llamada",
+  "la": "Responde vocationi"
  },
  "qso.step3": {
   "en": "Exchange details",
-  "de": "Daten austauschen"
+  "de": "Daten austauschen",
+  "it": "Scambia i dati",
+  "fr": "Échanger les infos",
+  "es": "Intercambia datos",
+  "la": "Muta notitias"
  },
  "qso.step4": {
   "en": "Spell your callsign",
-  "de": "Rufzeichen buchstabieren"
+  "de": "Rufzeichen buchstabieren",
+  "it": "Compita il nominativo",
+  "fr": "Épeler ton indicatif",
+  "es": "Deletrea tu indicativo",
+  "la": "Signum tuum literatim dic"
  },
  "qso.step5": {
   "en": "Say 73",
-  "de": "73 sagen"
+  "de": "73 sagen",
+  "it": "Saluta con 73",
+  "fr": "Dire 73",
+  "es": "Di 73",
+  "la": "Dic 73"
  },
  "qso.wrong": {
   "en": "Not the best reply. Try another one.",
-  "de": "Nicht die beste Antwort. Versuche eine andere."
+  "de": "Nicht die beste Antwort. Versuche eine andere.",
+  "it": "Non è la risposta migliore. Provane un'altra.",
+  "fr": "Pas la meilleure réponse. Essaie-en une autre.",
+  "es": "No es la mejor respuesta. Prueba otra.",
+  "la": "Non optimum responsum. Aliud tenta."
  },
  "qso.done": {
   "en": "Your first QSO is in the log! 73!",
-  "de": "Dein erstes QSO steht im Logbuch! 73!"
+  "de": "Dein erstes QSO steht im Logbuch! 73!",
+  "it": "Il tuo primo QSO è nel giornale! 73!",
+  "fr": "Ton premier QSO est dans le carnet ! 73 !",
+  "es": "¡Tu primer QSO está en el diario! ¡73!",
+  "la": "Primum QSO tuum in libro est! 73!"
  },
  "qso.replay": {
   "en": "Practice again",
-  "de": "Nochmal üben"
+  "de": "Nochmal üben",
+  "it": "Esercitati ancora",
+  "fr": "S'entraîner encore",
+  "es": "Practicar otra vez",
+  "la": "Iterum exerce"
  },
  "qso.need": {
   "en": "You need the rules, transceiver, antenna, microphone and power supply first.",
-  "de": "Du brauchst zuerst die Regeln, Transceiver, Antenne, Mikrofon und Netzteil."
+  "de": "Du brauchst zuerst die Regeln, Transceiver, Antenne, Mikrofon und Netzteil.",
+  "it": "Prima servono regole, ricetrasmettitore, antenna, microfono e alimentatore.",
+  "fr": "Il te faut d'abord les règles, l'émetteur-récepteur, l'antenne, le micro et l'alimentation.",
+  "es": "Antes necesitas las normas, el transceptor, la antena, el micrófono y la fuente de alimentación.",
+  "la": "Prius opus est legibus, radiophono, antenna, microphono, fonteque energiae."
  },
  "morse.title": {
   "en": "Goal 4 · Morse code",
-  "de": "Ziel 4 · Morsen"
+  "de": "Ziel 4 · Morsen",
+  "it": "Obiettivo 4 · Morse",
+  "fr": "Objectif 4 · Code morse",
+  "es": "Meta 4 · Código Morse",
+  "la": "Meta 4 · Notae Morse"
  },
  "morse.sub": {
   "en": "Koch method · Level %d of %d",
-  "de": "Koch-Methode · Stufe %d von %d"
+  "de": "Koch-Methode · Stufe %d von %d",
+  "it": "Metodo Koch · Livello %d di %d",
+  "fr": "Méthode Koch · Niveau %d sur %d",
+  "es": "Método Koch · Nivel %d de %d",
+  "la": "Methodus Koch · Gradus %d ex %d"
  },
  "morse.speed": {
   "en": "Speed: %d WPM",
-  "de": "Tempo: %d WPM"
+  "de": "Tempo: %d WPM",
+  "it": "Velocità: %d WPM",
+  "fr": "Vitesse : %d WPM",
+  "es": "Velocidad: %d WPM",
+  "la": "Celeritas: %d WPM"
  },
  "morse.listen": {
   "en": "LISTEN AND PICK WHAT YOU HEAR",
-  "de": "HÖREN UND AUSWÄHLEN"
+  "de": "HÖREN UND AUSWÄHLEN",
+  "it": "ASCOLTA E SCEGLI COSA SENTI",
+  "fr": "ÉCOUTE ET CHOISIS CE QUE TU ENTENDS",
+  "es": "ESCUCHA Y ELIGE LO QUE OYES",
+  "la": "AUDI ET ELIGE QUOD AUDIS"
  },
  "morse.play": {
   "en": "Play again",
-  "de": "Nochmal hören"
+  "de": "Nochmal hören",
+  "it": "Riascolta",
+  "fr": "Réécouter",
+  "es": "Repetir",
+  "la": "Iterum audi"
  },
  "morse.send": {
   "en": "Send it yourself",
-  "de": "Selbst geben"
+  "de": "Selbst geben",
+  "it": "Trasmetti tu",
+  "fr": "Émets toi-même",
+  "es": "Envíalo tú",
+  "la": "Ipse mitte"
  },
  "morse.hold": {
   "en": "Hold SPACE or click",
-  "de": "SPACE halten oder klicken"
+  "de": "SPACE halten oder klicken",
+  "it": "Tieni SPAZIO o clicca",
+  "fr": "Maintiens ESPACE",
+  "es": "Mantén ESPACIO o pulsa",
+  "la": "Tene SPATIUM vel preme"
  },
  "morse.known": {
   "en": "Letters you know",
-  "de": "Bekannte Zeichen"
+  "de": "Bekannte Zeichen",
+  "it": "Lettere che conosci",
+  "fr": "Lettres connues",
+  "es": "Letras que conoces",
+  "la": "Litterae notae"
  },
  "morse.round": {
   "en": "Character %d / %d",
-  "de": "Zeichen %d / %d"
+  "de": "Zeichen %d / %d",
+  "it": "Carattere %d / %d",
+  "fr": "Caractère %d / %d",
+  "es": "Carácter %d / %d",
+  "la": "Nota %d / %d"
  },
  "morse.levelup": {
   "en": "Level up! New characters unlocked.",
-  "de": "Stufe geschafft! Neue Zeichen freigeschaltet."
+  "de": "Stufe geschafft! Neue Zeichen freigeschaltet.",
+  "it": "Livello superato! Nuovi caratteri sbloccati.",
+  "fr": "Niveau réussi ! Nouveaux caractères.",
+  "es": "¡Subes de nivel! Nuevos caracteres desbloqueados.",
+  "la": "Gradus ascendisti! Notae novae apertae."
  },
  "morse.levelfail": {
   "en": "You need %d of %d. Listen again.",
-  "de": "Du brauchst %d von %d. Hör nochmal hin."
+  "de": "Du brauchst %d von %d. Hör nochmal hin.",
+  "it": "Servono %d su %d. Riascolta.",
+  "fr": "Il faut %d sur %d. Réécoute.",
+  "es": "Necesitas %d de %d. Escucha de nuevo.",
+  "la": "Opus est %d ex %d. Iterum audi."
  },
  "morse.you_sent": {
   "en": "You sent",
-  "de": "Du hast gegeben"
+  "de": "Du hast gegeben",
+  "it": "Hai inviato",
+  "fr": "Tu as envoyé",
+  "es": "Has enviado",
+  "la": "Misisti"
  },
  "morse.clear": {
   "en": "Clear",
-  "de": "Löschen"
+  "de": "Löschen",
+  "it": "Cancella",
+  "fr": "Effacer",
+  "es": "Borrar",
+  "la": "Dele"
  },
  "morse.practice_send": {
   "en": "Try to send",
-  "de": "Versuche zu geben"
+  "de": "Versuche zu geben",
+  "it": "Prova a inviare",
+  "fr": "Essaie d'émettre",
+  "es": "Intenta enviar",
+  "la": "Conare mittere"
  },
  "level.name": {
   "en": "Level %d",
-  "de": "Stufe %d"
+  "de": "Stufe %d",
+  "it": "Livello %d",
+  "fr": "Niveau %d",
+  "es": "Nivel %d",
+  "la": "Gradus %d"
  },
  "level.up": {
   "en": "Level %d unlocked!",
-  "de": "Stufe %d freigeschaltet!"
+  "de": "Stufe %d freigeschaltet!",
+  "it": "Livello %d sbloccato!",
+  "fr": "Niveau %d débloqué !",
+  "es": "¡Nivel %d desbloqueado!",
+  "la": "Gradus %d apertus!"
  },
  "level.up_body": {
   "en": "Your shack can be upgraded, new rules and questions are waiting, and there is a deeper first contact to try.",
-  "de": "Deine Funkbude lässt sich ausbauen, neue Regeln und Fragen warten und ein anspruchsvolleres Funkgespräch ebenfalls."
+  "de": "Deine Funkbude lässt sich ausbauen, neue Regeln und Fragen warten und ein anspruchsvolleres Funkgespräch ebenfalls.",
+  "it": "La tua stazione può crescere, ti aspettano nuove regole e domande, e un primo contatto più avanzato da provare.",
+  "fr": "Ta station peut évoluer, de nouvelles règles et questions t'attendent, et un premier contact plus poussé est à tenter.",
+  "es": "Puedes mejorar tu estación, te esperan nuevas normas y preguntas, y un primer contacto más profundo.",
+  "la": "Statio tua augeri potest, leges et quaestiones novae exspectant, et colloquium altius tentari potest."
  },
  "level.soon": {
   "en": "More levels for this country are coming.",
-  "de": "Weitere Stufen für dieses Land folgen."
+  "de": "Weitere Stufen für dieses Land folgen.",
+  "it": "Presto altri livelli per questo paese.",
+  "fr": "D'autres niveaux pour ce pays arrivent bientôt.",
+  "es": "Pronto habrá más niveles para este país.",
+  "la": "Plures gradus huic patriae mox veniunt."
  },
  "level.locked": {
   "en": "Finish all four goals of the previous level to unlock.",
-  "de": "Schließe alle vier Ziele der vorigen Stufe ab, um sie freizuschalten."
+  "de": "Schließe alle vier Ziele der vorigen Stufe ab, um sie freizuschalten.",
+  "it": "Completa i quattro obiettivi del livello precedente per sbloccarlo.",
+  "fr": "Termine les quatre objectifs du niveau précédent pour le débloquer.",
+  "es": "Termina las cuatro metas del nivel anterior para desbloquear.",
+  "la": "Quattuor metas gradus prioris perfice ut aperias."
  },
  "hub.profile": {
   "en": "Profile",
-  "de": "Profil"
+  "de": "Profil",
+  "it": "Profilo",
+  "fr": "Profil",
+  "es": "Perfil",
+  "la": "Tabula"
  },
  "share.btn": {
   "en": "Share",
-  "de": "Teilen"
+  "de": "Teilen",
+  "it": "Condividi",
+  "fr": "Partager",
+  "es": "Compartir",
+  "la": "Divide"
  },
  "share.title": {
   "en": "Share your progress",
-  "de": "Teile deinen Fortschritt"
+  "de": "Teile deinen Fortschritt",
+  "it": "Condividi",
+  "fr": "Partage ta progression",
+  "es": "Comparte tu progreso",
+  "la": "Progressum tuum divide"
  },
  "share.text": {
   "en": "I play CQ Quest and learn to become a ham radio operator! %d/8 parts in my shack. #hamradio #amateurradio",
-  "de": "Ich spiele CQ Quest und lerne Amateurfunk! %d/8 Teile in meiner Funkbude. #amateurfunk #hamradio"
+  "de": "Ich spiele CQ Quest und lerne Amateurfunk! %d/8 Teile in meiner Funkbude. #amateurfunk #hamradio",
+  "it": "Gioco a CQ Quest e imparo a diventare radioamatore! %d/8 pezzi nella mia stazione. #hamradio #amateurradio",
+  "fr": "Je joue à CQ Quest et j'apprends à devenir radioamateur ! %d/8 pièces dans ma station. #hamradio #amateurradio",
+  "es": "¡Juego a CQ Quest y aprendo a ser radioaficionado! %d/8 piezas en mi estación. #hamradio #amateurradio",
+  "la": "CQ Quest ludo et radioamator fio! %d/8 partes in statione mea. #hamradio #amateurradio"
  },
  "share.save": {
   "en": "Save screenshot",
-  "de": "Screenshot speichern"
+  "de": "Screenshot speichern",
+  "it": "Salva screenshot",
+  "fr": "Enregistrer capture",
+  "es": "Guardar captura",
+  "la": "Serva imaginem"
  },
  "share.copy": {
   "en": "Copy text",
-  "de": "Text kopieren"
+  "de": "Text kopieren",
+  "it": "Copia testo",
+  "fr": "Copier",
+  "es": "Copiar texto",
+  "la": "Exscribe"
  },
  "share.copied": {
   "en": "Text copied",
-  "de": "Text kopiert"
+  "de": "Text kopiert",
+  "it": "Testo copiato",
+  "fr": "Texte copié",
+  "es": "Texto copiado",
+  "la": "Textus exscriptus"
  },
  "share.saved": {
   "en": "Screenshot saved. Attach it to your post.",
-  "de": "Screenshot gespeichert. Hänge ihn an deinen Beitrag an."
+  "de": "Screenshot gespeichert. Hänge ihn an deinen Beitrag an.",
+  "it": "Screenshot salvato. Allegalo al tuo post.",
+  "fr": "Capture enregistrée. Joins-la à ta publication.",
+  "es": "Captura guardada. Adjúntala a tu publicación.",
+  "la": "Imago servata. Eam nuntio tuo adde."
  },
  "share.failed": {
   "en": "Could not save the screenshot.",
-  "de": "Screenshot konnte nicht gespeichert werden."
+  "de": "Screenshot konnte nicht gespeichert werden.",
+  "it": "Impossibile salvare lo screenshot.",
+  "fr": "Impossible d'enregistrer la capture.",
+  "es": "No se pudo guardar la captura.",
+  "la": "Imago servari non potuit."
  },
  "share.native": {
   "en": "Share with screenshot…",
-  "de": "Mit Screenshot teilen…"
+  "de": "Mit Screenshot teilen…",
+  "it": "Condividi con screenshot…",
+  "fr": "Partager avec capture…",
+  "es": "Compartir con captura…",
+  "la": "Divide cum imagine…"
  },
  "share.note": {
   "en": "Social sites accept only text and a link from apps. The screenshot is saved for you to attach to your post.",
-  "de": "Soziale Netze nehmen von Apps nur Text und Link an. Den Screenshot speichern wir, damit du ihn an deinen Beitrag hängen kannst."
+  "de": "Soziale Netze nehmen von Apps nur Text und Link an. Den Screenshot speichern wir, damit du ihn an deinen Beitrag hängen kannst.",
+  "it": "I social accettano dalle app solo testo e link. Lo screenshot viene salvato così puoi allegarlo al tuo post.",
+  "fr": "Les réseaux sociaux n'acceptent des applis que du texte et un lien. La capture est enregistrée pour que tu la joignes à ta publication.",
+  "es": "Las redes sociales solo aceptan texto y un enlace desde las apps. Guardamos la captura para que la adjuntes a tu publicación.",
+  "la": "Retia socialia ab applicationibus textum et nexum tantum accipiunt. Imago tibi servatur ut nuntio addatur."
  },
  "profile.title": {
   "en": "Your profile",
-  "de": "Dein Profil"
+  "de": "Dein Profil",
+  "it": "Il tuo profilo",
+  "fr": "Ton profil",
+  "es": "Tu perfil",
+  "la": "Tabula tua"
  },
  "profile.sub": {
-  "en": "Change your avatar, name, language and country.",
-  "de": "Ändere Avatar, Name, Sprache und Land."
+  "en": "Change your avatar, name and country.",
+  "de": "Ändere Avatar, Name und Land.",
+  "it": "Cambia avatar, nome e paese.",
+  "fr": "Change ton avatar, ton nom et ton pays.",
+  "es": "Cambia tu avatar, nombre y país.",
+  "la": "Muta imaginem, nomen, patriamque."
  },
  "profile.save": {
   "en": "Save",
-  "de": "Speichern"
+  "de": "Speichern",
+  "it": "Salva",
+  "fr": "Enregistrer",
+  "es": "Guardar",
+  "la": "Serva"
  },
  "profile.callsign": {
   "en": "Callsign",
-  "de": "Rufzeichen"
+  "de": "Rufzeichen",
+  "it": "Nominativo",
+  "fr": "Indicatif",
+  "es": "Indicativo",
+  "la": "Signum"
  },
  "profile.none": {
   "en": "not chosen yet",
-  "de": "noch nicht gewählt"
+  "de": "noch nicht gewählt",
+  "it": "non ancora scelto",
+  "fr": "pas encore choisi",
+  "es": "aún sin elegir",
+  "la": "nondum electum"
  },
  "profile.change_call": {
   "en": "Change callsign",
-  "de": "Rufzeichen ändern"
+  "de": "Rufzeichen ändern",
+  "it": "Cambia nominativo",
+  "fr": "Changer d'indicatif",
+  "es": "Cambiar indicativo",
+  "la": "Muta signum"
  },
  "profile.sound_on": {
   "en": "Sound: on",
-  "de": "Ton: an"
+  "de": "Ton: an",
+  "it": "Suono: sì",
+  "fr": "Son : oui",
+  "es": "Sonido: sí",
+  "la": "Sonus: est"
  },
  "profile.sound_off": {
   "en": "Sound: off",
-  "de": "Ton: aus"
+  "de": "Ton: aus",
+  "it": "Suono: no",
+  "fr": "Son : non",
+  "es": "Sonido: no",
+  "la": "Sonus: non est"
  },
  "profile.country_warn": {
   "en": "Changing the country restarts Goal 1 and gives back your callsign.",
-  "de": "Ein anderes Land startet Ziel 1 neu und gibt dein Rufzeichen zurück."
+  "de": "Ein anderes Land startet Ziel 1 neu und gibt dein Rufzeichen zurück.",
+  "it": "Cambiando paese l'Obiettivo 1 riparte e il nominativo viene restituito.",
+  "fr": "Changer de pays relance l'Objectif 1 et rend ton indicatif.",
+  "es": "Cambiar de país reinicia la Meta 1 y devuelve tu indicativo.",
+  "la": "Patriam mutare Metam 1 recommittit et signum tuum reddit."
  },
  "callsign.title": {
   "en": "Goal 1 · Find your callsign",
-  "de": "Ziel 1 · Rufzeichen finden"
+  "de": "Ziel 1 · Rufzeichen finden",
+  "it": "Obiettivo 1 · Trova il nominativo",
+  "fr": "Objectif 1 · Trouve ton indicatif",
+  "es": "Meta 1 · Encuentra tu indicativo",
+  "la": "Meta 1 · Signum tuum quaere"
  },
  "callsign.sub": {
   "en": "%s · prefix %s",
-  "de": "%s · Präfix %s"
+  "de": "%s · Präfix %s",
+  "it": "%s · prefisso %s",
+  "fr": "%s · préfixe %s",
+  "es": "%s · prefijo %s",
+  "la": "%s · praefixum %s"
  },
  "callsign.find": {
   "en": "Find your callsign",
-  "de": "Rufzeichen finden"
+  "de": "Rufzeichen finden",
+  "it": "Trova il tuo nominativo",
+  "fr": "Trouve ton indicatif",
+  "es": "Busca tu indicativo",
+  "la": "Quaere signum tuum"
  },
  "callsign.explain_title": {
   "en": "How a callsign works",
-  "de": "So ist ein Rufzeichen aufgebaut"
+  "de": "So ist ein Rufzeichen aufgebaut",
+  "it": "Come funziona un nominativo",
+  "fr": "Un indicatif, c'est quoi ?",
+  "es": "Cómo funciona un indicativo",
+  "la": "Quomodo signum vocationis valet"
  },
  "callsign.explain": {
   "en": "Your callsign is your station's name on the air. It starts with a prefix that shows the country (%s), then a digit or region code, then your own letters. Every callsign is given out only once, so you must pick a free one.",
-  "de": "Dein Rufzeichen ist der Name deiner Station im Äther. Es beginnt mit einem Präfix für das Land (%s), dann folgen eine Ziffer oder Region und deine eigenen Buchstaben. Jedes Rufzeichen wird nur einmal vergeben, du musst also ein freies wählen."
+  "de": "Dein Rufzeichen ist der Name deiner Station im Äther. Es beginnt mit einem Präfix für das Land (%s), dann folgen eine Ziffer oder Region und deine eigenen Buchstaben. Jedes Rufzeichen wird nur einmal vergeben, du musst also ein freies wählen.",
+  "it": "Il nominativo è il nome della tua stazione in aria. Inizia con un prefisso che indica il paese (%s), poi una cifra o un codice di zona, poi le tue lettere. Ogni nominativo viene assegnato una sola volta, quindi scegline uno libero.",
+  "fr": "Ton indicatif est le nom de ta station sur l'air. Il commence par un préfixe qui indique le pays (%s), puis un chiffre ou un code de région, puis tes propres lettres. Chaque indicatif n'est attribué qu'une fois : choisis-en un de libre.",
+  "es": "Tu indicativo es el nombre de tu estación en el aire. Empieza con un prefijo que indica el país (%s), sigue un dígito o código de región y luego tus propias letras. Cada indicativo se asigna una sola vez, así que elige uno libre.",
+  "la": "Signum tuum nomen stationis tuae in aere est. Incipit a praefixo quod patriam monstrat (%s), deinde numerus vel nota regionis, tum litterae tuae. Omne signum semel tantum datur, ergo liberum elige."
  },
  "callsign.format": {
   "en": "Format, for example: %s",
-  "de": "Format, zum Beispiel: %s"
+  "de": "Format, zum Beispiel: %s",
+  "it": "Formato, ad esempio: %s",
+  "fr": "Format, par exemple : %s",
+  "es": "Formato, por ejemplo: %s",
+  "la": "Forma, exempli gratia: %s"
  },
  "callsign.dir": {
   "en": "CALLSIGN DIRECTORY",
-  "de": "RUFZEICHENLISTE"
+  "de": "RUFZEICHENLISTE",
+  "it": "ELENCO NOMINATIVI",
+  "fr": "ANNUAIRE D'INDICATIFS",
+  "es": "DIRECTORIO DE INDICATIVOS",
+  "la": "INDEX SIGNORUM"
  },
  "callsign.free": {
   "en": "free",
-  "de": "frei"
+  "de": "frei",
+  "it": "libero",
+  "fr": "libre",
+  "es": "libre",
+  "la": "liberum"
  },
  "callsign.taken_toast": {
   "en": "%s is already taken by %s. Pick a free one.",
-  "de": "%s ist schon an %s vergeben. Wähle ein freies."
+  "de": "%s ist schon an %s vergeben. Wähle ein freies.",
+  "it": "%s è già assegnato a %s. Scegline uno libero.",
+  "fr": "%s est déjà pris par %s. Choisis-en un libre.",
+  "es": "%s ya es de %s. Elige uno libre.",
+  "la": "%s iam a %s tenetur. Liberum elige."
  },
  "callsign.wish": {
   "en": "Or try your own wish callsign",
-  "de": "Oder probiere ein Wunschrufzeichen"
+  "de": "Oder probiere ein Wunschrufzeichen",
+  "it": "O prova un nominativo tuo",
+  "fr": "Ou essaie l'indicatif de ton choix",
+  "es": "O prueba tu indicativo soñado",
+  "la": "Vel tuum signum optatum tenta"
  },
  "callsign.check": {
   "en": "Check",
-  "de": "Prüfen"
+  "de": "Prüfen",
+  "it": "Verifica",
+  "fr": "Vérifier",
+  "es": "Comprobar",
+  "la": "Proba"
  },
  "callsign.bad_format": {
   "en": "That does not fit the format, for example %s.",
-  "de": "Das passt nicht zum Format, zum Beispiel %s."
+  "de": "Das passt nicht zum Format, zum Beispiel %s.",
+  "it": "Non rispetta il formato, ad esempio %s.",
+  "fr": "Ce n'est pas le bon format, par exemple %s.",
+  "es": "No encaja con el formato, por ejemplo %s.",
+  "la": "Formae non convenit, exempli gratia %s."
  },
  "callsign.wish_taken": {
   "en": "%s is taken. Try another.",
-  "de": "%s ist vergeben. Probiere ein anderes."
+  "de": "%s ist vergeben. Probiere ein anderes.",
+  "it": "%s è occupato. Provane un altro.",
+  "fr": "%s est pris. Essaie-en un autre.",
+  "es": "%s está ocupado. Prueba otro.",
+  "la": "%s tenetur. Aliud tenta."
  },
  "callsign.take": {
   "en": "Take %s",
-  "de": "%s nehmen"
+  "de": "%s nehmen",
+  "it": "Prendi %s",
+  "fr": "Prendre %s",
+  "es": "Quedarme %s",
+  "la": "Cape %s"
  },
  "callsign.claimed": {
   "en": "Welcome, %s! This is your callsign now.",
-  "de": "Willkommen, %s! Das ist jetzt dein Rufzeichen."
+  "de": "Willkommen, %s! Das ist jetzt dein Rufzeichen.",
+  "it": "Benvenuto, %s! Questo è ora il tuo nominativo.",
+  "fr": "Bienvenue, %s ! C'est maintenant ton indicatif.",
+  "es": "¡Bienvenido, %s! Este es ya tu indicativo.",
+  "la": "Salve, %s! Hoc nunc signum tuum est."
  },
  "callsign.fiction": {
   "en": "Fictional directory. Real callsigns are assigned by your regulator.",
-  "de": "Erfundene Liste. Echte Rufzeichen vergibt deine Behörde."
+  "de": "Erfundene Liste. Echte Rufzeichen vergibt deine Behörde.",
+  "it": "Elenco fittizio. I nominativi veri li assegna la tua autorità.",
+  "fr": "Annuaire fictif. Les vrais indicatifs sont attribués par ton régulateur.",
+  "es": "Directorio ficticio. Los indicativos reales los asigna tu regulador.",
+  "la": "Index fictus. Signa vera ab auctoritate tua dantur."
  },
  "callsign.pick_hint": {
   "en": "Click a free entry or type your own.",
-  "de": "Klicke auf einen freien Eintrag oder tippe ein eigenes."
+  "de": "Klicke auf einen freien Eintrag oder tippe ein eigenes.",
+  "it": "Tocca una voce libera o scrivi la tua.",
+  "fr": "Choisis un indicatif libre ou saisis le tien.",
+  "es": "Toca uno libre o escribe el tuyo.",
+  "la": "Preme liberum vel scribe tuum."
  },
  "callsign.done_hint": {
   "en": "Goal 1 complete!",
-  "de": "Ziel 1 geschafft!"
+  "de": "Ziel 1 geschafft!",
+  "it": "Obiettivo 1 fatto!",
+  "fr": "Objectif 1 terminé !",
+  "es": "¡Meta 1 completada!",
+  "la": "Meta 1 perfecta!"
  },
  "about.title": {
   "en": "About CQ Quest",
-  "de": "Über CQ Quest"
+  "de": "Über CQ Quest",
+  "it": "Info su CQ Quest",
+  "fr": "À propos",
+  "es": "Acerca de CQ Quest",
+  "la": "De CQ Quest"
  },
  "about.body": {
   "en": "CQ Quest is a free game that shows how much fun amateur radio is. It is not affiliated with DARC e.V., the Bundesnetzagentur or any amateur radio magazine.\n\nLessons and drawings: 50ohm.de, DARC e.V., [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url]. Questions: Bundesnetzagentur question catalogue, 3rd edition, March 2024, [url=https://www.govdata.de/dl-de/by-2-0]DL-DE-BY-2.0[/url]. Changes: shortened, English translation added (unofficial).\n\nAustrian topics: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009. US, UK and Swiss lessons are original primers.\n\nFonts Fredoka, Nunito and Share Tech Mono: [url=https://openfontlicense.org]SIL Open Font License 1.1[/url]. Made with Godot Engine ([url=https://godotengine.org/license/]MIT[/url]).\n\nOther text, art and sound are original. Callsigns and names in the game are fictional.\n\nSource code and full notices: [url=https://github.com/mikebeer/ham_radio_game]github.com/mikebeer/ham_radio_game[/url]",
-  "de": "CQ Quest ist ein kostenloses Spiel, das zeigt, wie viel Spaß Amateurfunk macht. Es steht in keiner Verbindung zum DARC e.V., zur Bundesnetzagentur oder zu Amateurfunk-Zeitschriften.\n\nLektionen und Zeichnungen: 50ohm.de, DARC e.V., [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url]. Fragen: Fragenkatalog der Bundesnetzagentur, 3. Auflage, März 2024, [url=https://www.govdata.de/dl-de/by-2-0]DL-DE-BY-2.0[/url]. Änderungen: gekürzt, englische Übersetzung ergänzt (inoffiziell).\n\nÖsterreichische Themen: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009. Lektionen für USA, UK und Schweiz sind eigene Kurzübersichten.\n\nSchriften Fredoka, Nunito und Share Tech Mono: [url=https://openfontlicense.org]SIL Open Font License 1.1[/url]. Erstellt mit der Godot Engine ([url=https://godotengine.org/license/]MIT[/url]).\n\nSonstige Texte, Grafik und Ton sind eigen. Rufzeichen und Namen im Spiel sind erfunden.\n\nQuellcode und vollständige Hinweise: [url=https://github.com/mikebeer/ham_radio_game]github.com/mikebeer/ham_radio_game[/url]"
+  "de": "CQ Quest ist ein kostenloses Spiel, das zeigt, wie viel Spaß Amateurfunk macht. Es steht in keiner Verbindung zum DARC e.V., zur Bundesnetzagentur oder zu Amateurfunk-Zeitschriften.\n\nLektionen und Zeichnungen: 50ohm.de, DARC e.V., [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url]. Fragen: Fragenkatalog der Bundesnetzagentur, 3. Auflage, März 2024, [url=https://www.govdata.de/dl-de/by-2-0]DL-DE-BY-2.0[/url]. Änderungen: gekürzt, englische Übersetzung ergänzt (inoffiziell).\n\nÖsterreichische Themen: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009. Lektionen für USA, UK und Schweiz sind eigene Kurzübersichten.\n\nSchriften Fredoka, Nunito und Share Tech Mono: [url=https://openfontlicense.org]SIL Open Font License 1.1[/url]. Erstellt mit der Godot Engine ([url=https://godotengine.org/license/]MIT[/url]).\n\nSonstige Texte, Grafik und Ton sind eigen. Rufzeichen und Namen im Spiel sind erfunden.\n\nQuellcode und vollständige Hinweise: [url=https://github.com/mikebeer/ham_radio_game]github.com/mikebeer/ham_radio_game[/url]",
+  "it": "CQ Quest è un gioco gratuito che mostra quanto è divertente il radiantismo. Non è affiliato a DARC e.V., alla Bundesnetzagentur né ad alcuna rivista di radioamatori.\n\nLezioni e disegni: 50ohm.de, DARC e.V., [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url]. Domande: catalogo di domande della Bundesnetzagentur, 3ª edizione, marzo 2024, [url=https://www.govdata.de/dl-de/by-2-0]DL-DE-BY-2.0[/url]. Modifiche: abbreviato, aggiunta la traduzione inglese (non ufficiale).\n\nArgomenti austriaci: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009. Le lezioni per USA, Regno Unito e Svizzera sono guide originali.\n\nFont Fredoka, Nunito e Share Tech Mono: [url=https://openfontlicense.org]SIL Open Font License 1.1[/url]. Realizzato con Godot Engine ([url=https://godotengine.org/license/]MIT[/url]).\n\nTutti gli altri testi, la grafica e i suoni sono originali. Nominativi e nomi nel gioco sono fittizi.\n\nCodice sorgente e note complete: [url=https://github.com/mikebeer/ham_radio_game]github.com/mikebeer/ham_radio_game[/url]",
+  "fr": "CQ Quest est un jeu gratuit qui montre à quel point le radioamateurisme est amusant. Il n'est affilié ni au DARC e.V., ni à la Bundesnetzagentur, ni à aucun magazine de radioamateurs.\n\nLeçons et dessins : 50ohm.de, DARC e.V., [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url]. Questions : catalogue de questions de la Bundesnetzagentur, 3e édition, mars 2024, [url=https://www.govdata.de/dl-de/by-2-0]DL-DE-BY-2.0[/url]. Modifications : raccourci, traduction anglaise ajoutée (non officielle).\n\nSujets autrichiens : Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009. Les leçons pour les États-Unis, le Royaume-Uni et la Suisse sont des guides originaux.\n\nPolices Fredoka, Nunito et Share Tech Mono : [url=https://openfontlicense.org]SIL Open Font License 1.1[/url]. Réalisé avec Godot Engine ([url=https://godotengine.org/license/]MIT[/url]).\n\nLes autres textes, illustrations et sons sont originaux. Les indicatifs et noms du jeu sont fictifs.\n\nCode source et mentions complètes : [url=https://github.com/mikebeer/ham_radio_game]github.com/mikebeer/ham_radio_game[/url]",
+  "es": "CQ Quest es un juego gratuito que muestra lo divertida que es la radioafición. No está vinculado a DARC e.V., a la Bundesnetzagentur ni a ninguna revista de radioafición.\n\nLecciones y dibujos: 50ohm.de, DARC e.V., [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url]. Preguntas: catálogo de preguntas de la Bundesnetzagentur, 3.ª edición, marzo de 2024, [url=https://www.govdata.de/dl-de/by-2-0]DL-DE-BY-2.0[/url]. Cambios: abreviado, añadida traducción al inglés (no oficial).\n\nTemas de Austria: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009. Las lecciones de EE. UU., Reino Unido y Suiza son guías originales.\n\nTipografías Fredoka, Nunito y Share Tech Mono: [url=https://openfontlicense.org]SIL Open Font License 1.1[/url]. Hecho con Godot Engine ([url=https://godotengine.org/license/]MIT[/url]).\n\nEl resto de textos, arte y sonido son originales. Los indicativos y nombres del juego son ficticios.\n\nCódigo fuente y avisos completos: [url=https://github.com/mikebeer/ham_radio_game]github.com/mikebeer/ham_radio_game[/url]",
+  "la": "CQ Quest ludus gratuitus est qui ostendit quam iucunda sit radioamatoria. Cum DARC e.V., Bundesnetzagentur, nec ulla ephemeride radioamatoria coniunctus non est.\n\nLectiones et picturae: 50ohm.de, DARC e.V., [url=https://creativecommons.org/licenses/by/4.0/]CC BY 4.0[/url]. Quaestiones: catalogus quaestionum Bundesnetzagentur, editio tertia, Martius 2024, [url=https://www.govdata.de/dl-de/by-2-0]DL-DE-BY-2.0[/url]. Mutationes: breviatum, translatio Anglica addita (non publica).\n\nArgumenta Austriaca: Fragenkatalog für den Amateurfunkdienst, BMVIT, 2009. Lectiones Americanae, Britannicae et Helveticae initia propria sunt.\n\nLitterae Fredoka, Nunito et Share Tech Mono: [url=https://openfontlicense.org]SIL Open Font License 1.1[/url]. Factum cum Godot Engine ([url=https://godotengine.org/license/]MIT[/url]).\n\nCetera verba, artes et soni propria sunt. Signa et nomina in ludo ficta sunt.\n\nCodex fontis et notitiae plenae: [url=https://github.com/mikebeer/ham_radio_game]github.com/mikebeer/ham_radio_game[/url]"
+ },
+ "settings.title": {
+  "en": "Settings",
+  "de": "Einstellungen",
+  "it": "Impostazioni",
+  "fr": "Réglages",
+  "es": "Ajustes",
+  "la": "Optiones"
+ },
+ "settings.profile": {
+  "en": "Profile",
+  "de": "Profil",
+  "it": "Profilo",
+  "fr": "Profil",
+  "es": "Perfil",
+  "la": "Tabula"
+ },
+ "settings.stats": {
+  "en": "Statistics",
+  "de": "Statistik",
+  "it": "Statistiche",
+  "fr": "Statistiques",
+  "es": "Estadísticas",
+  "la": "Numeri"
+ },
+ "settings.badges": {
+  "en": "Badges",
+  "de": "Abzeichen",
+  "it": "Medaglie",
+  "fr": "Badges",
+  "es": "Insignias",
+  "la": "Insignia"
+ },
+ "settings.language": {
+  "en": "Language",
+  "de": "Sprache",
+  "it": "Lingua",
+  "fr": "Langue",
+  "es": "Idioma",
+  "la": "Lingua"
+ },
+ "settings.game": {
+  "en": "Game",
+  "de": "Spiel",
+  "it": "Gioco",
+  "fr": "Jeu",
+  "es": "Juego",
+  "la": "Ludus"
+ },
+ "settings.about": {
+  "en": "About and licences",
+  "de": "Info und Lizenzen",
+  "it": "Info e licenze",
+  "fr": "À propos et licences",
+  "es": "Acerca de y licencias",
+  "la": "De ludo et licentiae"
+ },
+ "settings.edit_profile": {
+  "en": "Edit avatar, name and country",
+  "de": "Avatar, Name und Land ändern",
+  "it": "Modifica avatar, nome e paese",
+  "fr": "Modifier avatar, nom et pays",
+  "es": "Editar avatar, nombre y país",
+  "la": "Muta imaginem, nomen, patriam"
+ },
+ "settings.since": {
+  "en": "Playing since %s",
+  "de": "Dabei seit %s",
+  "it": "Giochi dal %s",
+  "fr": "Joueur depuis le %s",
+  "es": "Jugando desde %s",
+  "la": "Ludis ab %s"
+ },
+ "settings.lang_note": {
+  "en": "Translations other than English and German were made with AI and are not yet reviewed by native speakers.",
+  "de": "Übersetzungen außer Englisch und Deutsch wurden mit KI erstellt und noch nicht von Muttersprachlern geprüft.",
+  "it": "Le traduzioni diverse da inglese e tedesco sono state fatte con l'IA e non sono ancora riviste da madrelingua.",
+  "fr": "Les traductions autres que l'anglais et l'allemand ont été faites par IA et n'ont pas encore été relues par des locuteurs natifs.",
+  "es": "Las traducciones distintas del inglés y el alemán se hicieron con IA y aún no las han revisado hablantes nativos.",
+  "la": "Translationes praeter Anglicam et Germanicam ab intellegentia artificiali factae sunt et a lingua nativis nondum recognitae."
+ },
+ "settings.lang_content": {
+  "en": "Lessons and questions exist in English and German. In other languages you see the English lessons.",
+  "de": "Lektionen und Fragen gibt es auf Englisch und Deutsch. In anderen Sprachen siehst du die englischen Lektionen.",
+  "it": "Lezioni e domande esistono in inglese e tedesco. In altre lingue vedi le lezioni in inglese.",
+  "fr": "Les leçons et questions existent en anglais et en allemand. Dans les autres langues, tu vois les leçons en anglais.",
+  "es": "Las lecciones y preguntas existen en inglés y alemán. En otros idiomas verás las lecciones en inglés.",
+  "la": "Lectiones et quaestiones Anglice et Germanice exstant. In aliis linguis lectiones Anglicas vides."
+ },
+ "settings.sound": {
+  "en": "Sound",
+  "de": "Ton",
+  "it": "Suono",
+  "fr": "Son",
+  "es": "Sonido",
+  "la": "Sonus"
+ },
+ "settings.reset_text": {
+  "en": "Start a new game. All progress, your callsign and your avatar are deleted.",
+  "de": "Neues Spiel starten. Aller Fortschritt, dein Rufzeichen und dein Avatar werden gelöscht.",
+  "it": "Inizia una nuova partita. Tutti i progressi, il nominativo e l'avatar vengono cancellati.",
+  "fr": "Lance une nouvelle partie. Toute ta progression, ton indicatif et ton avatar sont effacés.",
+  "es": "Empieza una partida nueva. Se borran todo tu progreso, tu indicativo y tu avatar.",
+  "la": "Ludum novum incipe. Omnis progressus, signum, et imago tua delentur."
+ },
+ "settings.library": {
+  "en": "Open the library",
+  "de": "Bibliothek öffnen",
+  "it": "Apri la biblioteca",
+  "fr": "Ouvrir la biblio",
+  "es": "Abrir la biblioteca",
+  "la": "Aperi bibliothecam"
+ },
+ "stat.level": {
+  "en": "Level",
+  "de": "Stufe",
+  "it": "Livello",
+  "fr": "Niveau",
+  "es": "Nivel",
+  "la": "Gradus"
+ },
+ "stat.parts": {
+  "en": "Shack parts earned",
+  "de": "Shack-Teile verdient",
+  "it": "Pezzi guadagnati",
+  "fr": "Pièces gagnées",
+  "es": "Piezas ganadas",
+  "la": "Partes meritae"
+ },
+ "stat.lessons": {
+  "en": "Lessons read",
+  "de": "Lektionen gelesen",
+  "it": "Lezioni lette",
+  "fr": "Leçons lues",
+  "es": "Lecciones leídas",
+  "la": "Lectiones lectae"
+ },
+ "stat.answers": {
+  "en": "Quiz answers",
+  "de": "Quiz-Antworten",
+  "it": "Risposte ai quiz",
+  "fr": "Réponses quiz",
+  "es": "Respuestas de test",
+  "la": "Responsa probationum"
+ },
+ "stat.accuracy": {
+  "en": "Correct answers",
+  "de": "Richtige Antworten",
+  "it": "Risposte corrette",
+  "fr": "Bonnes réponses",
+  "es": "Respuestas correctas",
+  "la": "Responsa recta"
+ },
+ "stat.quizzes": {
+  "en": "Quizzes passed",
+  "de": "Quizze bestanden",
+  "it": "Quiz superati",
+  "fr": "Quiz réussis",
+  "es": "Tests aprobados",
+  "la": "Probationes superatae"
+ },
+ "stat.qso": {
+  "en": "QSO steps done",
+  "de": "QSO-Schritte geschafft",
+  "it": "Passi QSO fatti",
+  "fr": "Étapes QSO faites",
+  "es": "Pasos de QSO hechos",
+  "la": "Gradus QSO factii"
+ },
+ "stat.morse": {
+  "en": "Morse levels passed",
+  "de": "Morse-Stufen bestanden",
+  "it": "Livelli Morse superati",
+  "fr": "Niveaux morse réussis",
+  "es": "Niveles de Morse",
+  "la": "Gradus Morse superati"
+ },
+ "stat.wpm": {
+  "en": "Morse speed",
+  "de": "Morse-Tempo",
+  "it": "Velocità Morse",
+  "fr": "Vitesse morse",
+  "es": "Velocidad Morse",
+  "la": "Celeritas Morse"
+ },
+ "stat.badges": {
+  "en": "Badges earned",
+  "de": "Abzeichen verdient",
+  "it": "Medaglie ottenute",
+  "fr": "Badges obtenus",
+  "es": "Insignias ganadas",
+  "la": "Insignia parta"
+ },
+ "badge.first_part.t": {
+  "en": "First part",
+  "de": "Erstes Teil",
+  "it": "Primo pezzo",
+  "fr": "1re pièce",
+  "es": "Primera pieza",
+  "la": "Prima pars"
+ },
+ "badge.first_part.d": {
+  "en": "Earn your first shack part.",
+  "de": "Verdiene dein erstes Shack-Teil.",
+  "it": "Guadagna il primo pezzo.",
+  "fr": "Gagne ta première pièce de station.",
+  "es": "Gana tu primera pieza de la estación.",
+  "la": "Merere primam partem stationis."
+ },
+ "badge.full_shack.t": {
+  "en": "Full shack",
+  "de": "Volles Shack",
+  "it": "Stazione piena",
+  "fr": "Station pleine",
+  "es": "Estación completa",
+  "la": "Statio plena"
+ },
+ "badge.full_shack.d": {
+  "en": "Own all 8 shack parts.",
+  "de": "Besitze alle 8 Shack-Teile.",
+  "it": "Possiedi tutti gli 8 pezzi.",
+  "fr": "Possède les 8 pièces.",
+  "es": "Consigue las 8 piezas de la estación.",
+  "la": "Habe omnes octo partes stationis."
+ },
+ "badge.rules.t": {
+  "en": "Rule keeper",
+  "de": "Regelkenner",
+  "it": "Rispetta regole",
+  "fr": "Gardien des règles",
+  "es": "Guardián de normas",
+  "la": "Custos legum"
+ },
+ "badge.rules.d": {
+  "en": "Pass the rules quiz of your country.",
+  "de": "Bestehe das Regel-Quiz deines Landes.",
+  "it": "Supera il quiz sulle regole del tuo paese.",
+  "fr": "Réussis le quiz des règles de ton pays.",
+  "es": "Aprueba el test de normas de tu país.",
+  "la": "Supera probationem legum patriae tuae."
+ },
+ "badge.callsign.t": {
+  "en": "On the air",
+  "de": "Auf Sendung",
+  "it": "In onda",
+  "fr": "En l'air",
+  "es": "En el aire",
+  "la": "In aere"
+ },
+ "badge.callsign.d": {
+  "en": "Claim your callsign.",
+  "de": "Sichere dir dein Rufzeichen.",
+  "it": "Ottieni il tuo nominativo.",
+  "fr": "Obtiens ton indicatif.",
+  "es": "Consigue tu indicativo.",
+  "la": "Cape signum tuum."
+ },
+ "badge.qso.t": {
+  "en": "First contact",
+  "de": "Erster Kontakt",
+  "it": "Primo contatto",
+  "fr": "Premier contact",
+  "es": "Primer contacto",
+  "la": "Primum colloquium"
+ },
+ "badge.qso.d": {
+  "en": "Finish your first QSO.",
+  "de": "Schließe dein erstes QSO ab.",
+  "it": "Completa il tuo primo QSO.",
+  "fr": "Termine ton premier QSO.",
+  "es": "Termina tu primer QSO.",
+  "la": "Perfice primum QSO."
+ },
+ "badge.morse3.t": {
+  "en": "Dit and dah",
+  "de": "Dit und Dah",
+  "it": "Punti e linee",
+  "fr": "Point et trait",
+  "es": "Punto y raya",
+  "la": "Punctum et linea"
+ },
+ "badge.morse3.d": {
+  "en": "Pass 3 Morse levels.",
+  "de": "Bestehe 3 Morse-Stufen.",
+  "it": "Supera 3 livelli Morse.",
+  "fr": "Réussis 3 niveaux de morse.",
+  "es": "Aprueba 3 niveles de Morse.",
+  "la": "Supera tres gradus Morse."
+ },
+ "badge.morse10.t": {
+  "en": "Morse master",
+  "de": "Morsemeister",
+  "it": "Maestro Morse",
+  "fr": "Maître du morse",
+  "es": "Maestro del Morse",
+  "la": "Magister Morse"
+ },
+ "badge.morse10.d": {
+  "en": "Pass all 10 Morse levels.",
+  "de": "Bestehe alle 10 Morse-Stufen.",
+  "it": "Supera tutti i 10 livelli Morse.",
+  "fr": "Réussis les 10 niveaux de morse.",
+  "es": "Aprueba los 10 niveles de Morse.",
+  "la": "Supera omnes decem gradus Morse."
+ },
+ "badge.level2.t": {
+  "en": "Level 2",
+  "de": "Stufe 2",
+  "it": "Livello 2",
+  "fr": "Niveau 2",
+  "es": "Nivel 2",
+  "la": "Gradus 2"
+ },
+ "badge.level2.d": {
+  "en": "Reach the second licence class.",
+  "de": "Erreiche die zweite Lizenzklasse.",
+  "it": "Raggiungi la seconda classe di licenza.",
+  "fr": "Atteins la deuxième classe de licence.",
+  "es": "Llega a la segunda clase de licencia.",
+  "la": "Perveni ad alterum genus licentiae."
+ },
+ "badge.level3.t": {
+  "en": "Level 3",
+  "de": "Stufe 3",
+  "it": "Livello 3",
+  "fr": "Niveau 3",
+  "es": "Nivel 3",
+  "la": "Gradus 3"
+ },
+ "badge.level3.d": {
+  "en": "Reach the third licence class.",
+  "de": "Erreiche die dritte Lizenzklasse.",
+  "it": "Raggiungi la terza classe di licenza.",
+  "fr": "Atteins la troisième classe de licence.",
+  "es": "Llega a la tercera clase de licencia.",
+  "la": "Perveni ad tertium genus licentiae."
+ },
+ "badge.reader.t": {
+  "en": "Bookworm",
+  "de": "Bücherwurm",
+  "it": "Topo di biblioteca",
+  "fr": "Rat de biblio",
+  "es": "Ratón de biblioteca",
+  "la": "Lector"
+ },
+ "badge.reader.d": {
+  "en": "Read 25 lessons.",
+  "de": "Lies 25 Lektionen.",
+  "it": "Leggi 25 lezioni.",
+  "fr": "Lis 25 leçons.",
+  "es": "Lee 25 lecciones.",
+  "la": "Lege viginti quinque lectiones."
+ },
+ "badge.quiz50.t": {
+  "en": "Quiz fan",
+  "de": "Quiz-Fan",
+  "it": "Fan dei quiz",
+  "fr": "Fan de quiz",
+  "es": "Fan de los tests",
+  "la": "Probator"
+ },
+ "badge.quiz50.d": {
+  "en": "Answer 50 questions correctly.",
+  "de": "Beantworte 50 Fragen richtig.",
+  "it": "Rispondi bene a 50 domande.",
+  "fr": "Réponds juste à 50 questions.",
+  "es": "Acierta 50 preguntas.",
+  "la": "Responde recte quinquaginta quaestionibus."
+ },
+ "badge.perfect.t": {
+  "en": "Perfect score",
+  "de": "Volle Punktzahl",
+  "it": "Punteggio pieno",
+  "fr": "Sans faute",
+  "es": "Pleno",
+  "la": "Sine errore"
+ },
+ "badge.perfect.d": {
+  "en": "Finish a quiz without a mistake.",
+  "de": "Beende ein Quiz ohne Fehler.",
+  "it": "Finisci un quiz senza errori.",
+  "fr": "Termine un quiz sans erreur.",
+  "es": "Termina un test sin ningún fallo.",
+  "la": "Perfice probationem sine ullo errore."
+ },
+ "avatar.skin": {
+  "en": "Skin",
+  "de": "Haut",
+  "it": "Pelle",
+  "fr": "Peau",
+  "es": "Piel",
+  "la": "Cutis"
+ },
+ "avatar.age": {
+  "en": "Age",
+  "de": "Alter",
+  "it": "Età",
+  "fr": "Âge",
+  "es": "Edad",
+  "la": "Aetas"
+ },
+ "avatar.gender": {
+  "en": "Gender",
+  "de": "Geschlecht",
+  "it": "Genere",
+  "fr": "Genre",
+  "es": "Género",
+  "la": "Genus"
+ },
+ "avatar.hair": {
+  "en": "Hair style",
+  "de": "Frisur",
+  "it": "Capelli",
+  "fr": "Coiffure",
+  "es": "Peinado",
+  "la": "Coma"
+ },
+ "avatar.haircol": {
+  "en": "Hair colour",
+  "de": "Haarfarbe",
+  "it": "Colore capelli",
+  "fr": "Couleur cheveux",
+  "es": "Color de pelo",
+  "la": "Color comae"
+ },
+ "avatar.beard": {
+  "en": "Beard",
+  "de": "Bart",
+  "it": "Barba",
+  "fr": "Barbe",
+  "es": "Barba",
+  "la": "Barba"
+ },
+ "avatar.glasses": {
+  "en": "Glasses",
+  "de": "Brille",
+  "it": "Occhiali",
+  "fr": "Lunettes",
+  "es": "Gafas",
+  "la": "Specilla"
+ },
+ "avatar.hat": {
+  "en": "Headwear",
+  "de": "Kopfbedeckung",
+  "it": "Copricapo",
+  "fr": "Couvre-chef",
+  "es": "Sombrero",
+  "la": "Capitium"
+ },
+ "avatar.shirt": {
+  "en": "Shirt",
+  "de": "Shirt",
+  "it": "Maglia",
+  "fr": "T-shirt",
+  "es": "Camiseta",
+  "la": "Tunica"
+ },
+ "avatar.headset": {
+  "en": "Headset",
+  "de": "Headset",
+  "it": "Cuffia",
+  "fr": "Casque",
+  "es": "Auriculares",
+  "la": "Auriculae"
+ },
+ "avatar.random": {
+  "en": "Surprise me",
+  "de": "Überrasch mich",
+  "it": "Sorprendimi",
+  "fr": "Surprends-moi",
+  "es": "Sorpréndeme",
+  "la": "Mirare me"
+ },
+ "avatar.age0": {
+  "en": "Young",
+  "de": "Jung",
+  "it": "Giovane",
+  "fr": "Jeune",
+  "es": "Joven",
+  "la": "Iuvenis"
+ },
+ "avatar.age1": {
+  "en": "Adult",
+  "de": "Erwachsen",
+  "it": "Adulto",
+  "fr": "Adulte",
+  "es": "Adulto",
+  "la": "Adultus"
+ },
+ "avatar.age2": {
+  "en": "Senior",
+  "de": "Senior",
+  "it": "Senior",
+  "fr": "Senior",
+  "es": "Mayor",
+  "la": "Senex"
+ },
+ "avatar.gender0": {
+  "en": "Female",
+  "de": "Weiblich",
+  "it": "Donna",
+  "fr": "Femme",
+  "es": "Mujer",
+  "la": "Femina"
+ },
+ "avatar.gender1": {
+  "en": "Male",
+  "de": "Männlich",
+  "it": "Uomo",
+  "fr": "Homme",
+  "es": "Hombre",
+  "la": "Vir"
+ },
+ "avatar.gender2": {
+  "en": "Neutral",
+  "de": "Neutral",
+  "it": "Neutro",
+  "fr": "Neutre",
+  "es": "Neutro",
+  "la": "Neutrum"
+ },
+ "avatar.on": {
+  "en": "On",
+  "de": "An",
+  "it": "Sì",
+  "fr": "Oui",
+  "es": "Sí",
+  "la": "Est"
+ },
+ "avatar.off": {
+  "en": "Off",
+  "de": "Aus",
+  "it": "No",
+  "fr": "Non",
+  "es": "No",
+  "la": "Non"
+ },
+ "hub.library": {
+  "en": "Library",
+  "de": "Bibliothek",
+  "it": "Biblioteca",
+  "fr": "Bibliothèque",
+  "es": "Biblioteca",
+  "la": "Bibliotheca"
+ },
+ "library.title": {
+  "en": "Library",
+  "de": "Bibliothek",
+  "it": "Biblioteca",
+  "fr": "Bibliothèque",
+  "es": "Biblioteca",
+  "la": "Bibliotheca"
+ },
+ "library.sub": {
+  "en": "Look up ham radio terms: %d entries",
+  "de": "Funk-Begriffe nachschlagen: %d Einträge",
+  "it": "Cerca termini radioamatoriali: %d voci",
+  "fr": "Cherche des termes radio : %d entrées",
+  "es": "Busca términos de radioafición: %d entradas",
+  "la": "Quaere verba radioamatoria: %d lemmata"
+ },
+ "library.search": {
+  "en": "Search a term",
+  "de": "Begriff suchen",
+  "it": "Cerca un termine",
+  "fr": "Chercher",
+  "es": "Busca un término",
+  "la": "Quaere verbum"
+ },
+ "library.all": {
+  "en": "All topics",
+  "de": "Alle Themen",
+  "it": "Tutti",
+  "fr": "Tous",
+  "es": "Todos los temas",
+  "la": "Omnia themata"
+ },
+ "library.empty": {
+  "en": "Nothing found.",
+  "de": "Nichts gefunden.",
+  "it": "Nessun risultato.",
+  "fr": "Aucun résultat.",
+  "es": "No se encontró nada.",
+  "la": "Nihil inventum est."
+ },
+ "library.see_also": {
+  "en": "See also",
+  "de": "Siehe auch",
+  "it": "Vedi anche",
+  "fr": "Voir aussi",
+  "es": "Ver también",
+  "la": "Vide etiam"
+ },
+ "library.level1": {
+  "en": "Beginner",
+  "de": "Einsteiger",
+  "it": "Principiante",
+  "fr": "Débutant",
+  "es": "Principiante",
+  "la": "Initium"
+ },
+ "library.level2": {
+  "en": "Intermediate",
+  "de": "Fortgeschritten",
+  "it": "Intermedio",
+  "fr": "Intermédiaire",
+  "es": "Intermedio",
+  "la": "Medium"
+ },
+ "library.level3": {
+  "en": "Advanced",
+  "de": "Experte",
+  "it": "Avanzato",
+  "fr": "Avancé",
+  "es": "Avanzado",
+  "la": "Progressum"
+ },
+ "cat.modes": {
+  "en": "Modes",
+  "de": "Betriebsarten",
+  "it": "Modi",
+  "fr": "Modes",
+  "es": "Modos",
+  "la": "Modi"
+ },
+ "cat.qcodes": {
+  "en": "Q-codes",
+  "de": "Q-Gruppen",
+  "it": "Codici Q",
+  "fr": "Codes Q",
+  "es": "Códigos Q",
+  "la": "Codices Q"
+ },
+ "cat.operating": {
+  "en": "Operating",
+  "de": "Funkbetrieb",
+  "it": "Operatività",
+  "fr": "Trafic",
+  "es": "Operación",
+  "la": "Usus"
+ },
+ "cat.equipment": {
+  "en": "Equipment",
+  "de": "Geräte",
+  "it": "Apparati",
+  "fr": "Matériel",
+  "es": "Equipos",
+  "la": "Instrumenta"
+ },
+ "cat.antennas": {
+  "en": "Antennas and lines",
+  "de": "Antennen und Leitungen",
+  "it": "Antenne e linee",
+  "fr": "Antennes et lignes",
+  "es": "Antenas y líneas",
+  "la": "Antennae et lineae"
+ },
+ "cat.propagation": {
+  "en": "Propagation",
+  "de": "Ausbreitung",
+  "it": "Propagazione",
+  "fr": "Propagation",
+  "es": "Propagación",
+  "la": "Propagatio"
+ },
+ "cat.electronics": {
+  "en": "Electronics",
+  "de": "Elektronik",
+  "it": "Elettronica",
+  "fr": "Électronique",
+  "es": "Electrónica",
+  "la": "Electronica"
+ },
+ "cat.rules": {
+  "en": "Rules and safety",
+  "de": "Regeln und Sicherheit",
+  "it": "Norme e sicurezza",
+  "fr": "Règles et sécurité",
+  "es": "Normas y seguridad",
+  "la": "Leges et securitas"
+ },
+ "cat.learning": {
+  "en": "Learning",
+  "de": "Lernen",
+  "it": "Imparare",
+  "fr": "Apprendre",
+  "es": "Aprendizaje",
+  "la": "Disciplina"
  }
 }

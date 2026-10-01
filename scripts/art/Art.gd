@@ -69,31 +69,9 @@ static func dashed_rect(ci: CanvasItem, r: Rect2, color: Color, width: float = 2
 	ci.draw_dashed_line(d, a, color, width, dash)
 
 
-## Head centre `c`, head diameter `s`.
-static func avatar(ci: CanvasItem, c: Vector2, s: float, idx: int) -> void:
-	var i := posmod(idx, 6)
-	var skin: Color = SKINS[i]
-	var hair: Color = HAIRS[i]
-	var shirt: Color = SHIRTS[i]
-	rrect(ci, Rect2(c.x - s * 0.7, c.y + s * 0.42, s * 1.4, s * 0.85), shirt, s * 0.35)
-	ci.draw_circle(c, s * 0.5, skin)
-	var pts := PackedVector2Array()
-	for k in 21:
-		var a := PI + PI * float(k) / 20.0
-		pts.append(c + Vector2(cos(a), sin(a)) * s * 0.52)
-	ci.draw_colored_polygon(pts, hair)
-	match i % 3:
-		1:
-			rrect(ci, Rect2(c.x - s * 0.52, c.y - s * 0.08, s * 0.2, s * 0.5), hair, s * 0.1)
-			rrect(ci, Rect2(c.x + s * 0.32, c.y - s * 0.08, s * 0.2, s * 0.5), hair, s * 0.1)
-		2:
-			ci.draw_circle(c + Vector2(0, -s * 0.56), s * 0.16, hair)
-	ci.draw_circle(c + Vector2(-s * 0.17, s * 0.02), s * 0.05, Palette.INK)
-	ci.draw_circle(c + Vector2(s * 0.17, s * 0.02), s * 0.05, Palette.INK)
-	ci.draw_arc(c + Vector2(0, s * 0.1), s * 0.16, 0.3, PI - 0.3, 12, Palette.INK, maxf(2.0, s * 0.03), true)
-	ci.draw_arc(c, s * 0.6, PI + 0.25, TAU - 0.25, 28, Palette.AMBER, maxf(3.0, s * 0.06), true)
-	rrect(ci, Rect2(c.x - s * 0.64, c.y - s * 0.1, s * 0.16, s * 0.34), Palette.AMBER, s * 0.06)
-	rrect(ci, Rect2(c.x + s * 0.48, c.y - s * 0.1, s * 0.16, s * 0.34), Palette.AMBER, s * 0.06)
+## Head centre `c`, head diameter `s`. `look` is a look Dictionary or an old preset index.
+static func avatar(ci: CanvasItem, c: Vector2, s: float, look) -> void:
+	AvatarArt.draw(ci, c, s, look)
 
 
 ## Draw one shack part inside rect `r`. `freq` is only used by the transceiver display.

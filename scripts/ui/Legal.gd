@@ -62,6 +62,7 @@ func _build_lesson(lesson: Dictionary, n: int) -> void:
 func _next_lesson() -> void:
 	var n := (_lvl.get("lessons", []) as Array).size()
 	Game.set_flag(Game.k("rules.lessons_done"), maxi(Game.fact_int(Game.k("rules.lessons_done")), _step + 1))
+	Game.stat_add("cards")
 	_step += 1
 	if _step >= n:
 		Game.set_flag(Game.k("rules.lessons_all"), true)
@@ -115,6 +116,8 @@ func _build_quiz_panel() -> void:
 func _on_finished(correct: int, total: int) -> void:
 	_result = {"correct": correct, "total": total, "need": ceili(total * PASS_RATIO)}
 	if correct >= int(_result["need"]):
+		if not Game.fact_bool(Game.k("rules.quiz_passed")):
+			Game.stat_add("quizzes")
 		Game.set_flag(Game.k("rules.quiz_passed"), true)
 		Game.set_flag(Game.k("rules.lessons_done"), (_lvl.get("lessons", []) as Array).size())
 		Game.set_flag(Game.k("rules.lessons_all"), true)
