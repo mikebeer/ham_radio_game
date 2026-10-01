@@ -98,6 +98,24 @@ func _begin_task() -> void:
 	_typed = ""
 	_state = "ask"
 	_rebuild()
+	var t: Dictionary = _tasks[_i]
+	if t["mode"] == "decode" and Voice.usable():
+		_listen.call_deferred()
+
+
+func _exit_tree() -> void:
+	Voice.stop()
+
+
+## Speaks the code words of the current word (the answer spelled in NATO words).
+func _listen() -> void:
+	if not is_inside_tree() or _i >= _tasks.size():
+		return
+	Voice.speak_text(str(_tasks[_i]["answer"]))
+
+
+func _audio_only() -> bool:
+	return Voice.usable() and Game.fact_bool("spell.audio_only")
 
 
 # ---- tasks ------------------------------------------------------------------------------
@@ -196,7 +214,17 @@ func _build_ask() -> void:
 		add_title(str(t["shown"]), Vector2(556, 214), 56, Palette.AMBER, 628)
 	else:
 		add_lbl(I18n.t("spell.decode", [I18n.t("spell.kind.d_" + t["kind"])]), Vector2(556, 178), 628, 19, Palette.CREAM)
-		add_title(" ".join(_spoken(t["answer"])), Vector2(556, 214), 34, Palette.AMBER, 628)
+		if _audio_only():
+			add_title("· · ·", Vector2(556, 214), 34, Palette.AMBER, 628)
+			add_lbl(I18n.t("spell.audio_hidden"), Vector2(556, 290), 628, 16, Palette.MUTED)
+		else:
+			add_title(" ".join(_spoken(t["answer"])), Vector2(556, 214), 34, Palette.AMBER, 628)
+		if Voice.usable():
+			add_btn(I18n.t("spell.listen"), Vector2(556, 322), _listen, "", Vector2(180, 44))
+			add_btn(I18n.t("spell.audio_on") if _audio_only() else I18n.t("spell.audio_off"), Vector2(752, 322), func() -> void:
+				Game.set_flag("spell.audio_only", not Game.fact_bool("spell.audio_only"))
+				_typed = _edit.text if _edit else _typed
+				_rebuild(), "", Vector2(250, 44))
 	_edit = LineEdit.new()
 	_edit.position = Vector2(556, 380)
 	_edit.size = Vector2(628, 56)
@@ -264,6 +292,8 @@ func _build_feedback() -> void:
 		add_lbl("> " + _typed, Vector2(556, 380), 628, 17, Palette.MUTED)
 	if _fb_ok and _hint:
 		add_lbl(I18n.t("spell.hint_used"), Vector2(556, 420), 400, 15, Palette.AMBER)
+	if Voice.usable():
+		add_btn(I18n.t("spell.listen"), Vector2(556, 470), _listen, "", Vector2(180, 44))
 	var last := _i == ROUNDS - 1
 	add_btn(I18n.t("spell.finish") if last else I18n.t("spell.next"), Vector2(964, 540), func() -> void:
 		if last:

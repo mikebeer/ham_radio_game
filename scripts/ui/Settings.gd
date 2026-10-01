@@ -173,6 +173,13 @@ func _tab_language() -> void:
 func _tab_game() -> void:
 	add_btn(I18n.t("profile.sound_on") if Sfx.enabled else I18n.t("profile.sound_off"), Vector2(370, 150), func() -> void:
 		Sfx.enabled = not Sfx.enabled
+		Game.set_flag("audio.sfx_off", not Sfx.enabled)
+		_rebuild(), "", Vector2(260, 50))
+	add_btn(I18n.t("audio.voice_on") if Voice.enabled else I18n.t("audio.voice_off"), Vector2(660, 150), func() -> void:
+		Voice.set_enabled(not Voice.enabled)
+		_rebuild(), "", Vector2(260, 50))
+	add_btn(I18n.t("audio.radio_on") if Voice.radio else I18n.t("audio.radio_off"), Vector2(660, 216), func() -> void:
+		Voice.set_radio(not Voice.radio)
 		_rebuild(), "", Vector2(260, 50))
 	add_btn(I18n.t("settings.library"), Vector2(370, 216), func() -> void: SceneManager.go("library"), "", Vector2(260, 50))
 	add_btn(I18n.t("share.btn"), Vector2(370, 282), Share.open, "", Vector2(260, 50))

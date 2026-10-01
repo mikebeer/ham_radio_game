@@ -31,5 +31,18 @@
  "spell.best": "Meilleur résultat : %d sur %d",
  "spell.hint_used": "Indice utilisé",
  "badge.spell.t": "Pro de la phonétique",
- "badge.spell.d": "Réussis l'entraînement à l'épellation."
+ "badge.spell.d": "Réussis l'entraînement à l'épellation.",
+ "morse.pitch": "Tonalité : %d Hz",
+ "morse.noise": "Bruit : %s",
+ "morse.noise_0": "aucun",
+ "morse.noise_1": "léger",
+ "morse.noise_2": "fort",
+ "spell.listen": "Écouter",
+ "spell.audio_on": "Audio seul : oui",
+ "spell.audio_off": "Audio seul : non",
+ "spell.audio_hidden": "Écoute et tape ce que tu entends.",
+ "audio.voice_on": "Voix : oui",
+ "audio.voice_off": "Voix : non",
+ "audio.radio_on": "Son radio : oui",
+ "audio.radio_off": "Son radio : non"
 }

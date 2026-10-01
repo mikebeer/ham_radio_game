@@ -31,5 +31,18 @@
  "spell.best": "Mejor resultado: %d de %d",
  "spell.hint_used": "Pista usada",
  "badge.spell.t": "Profesional de la fonética",
- "badge.spell.d": "Supera el entrenamiento de deletreo."
+ "badge.spell.d": "Supera el entrenamiento de deletreo.",
+ "morse.pitch": "Tono: %d Hz",
+ "morse.noise": "Ruido: %s",
+ "morse.noise_0": "ninguno",
+ "morse.noise_1": "poco",
+ "morse.noise_2": "fuerte",
+ "spell.listen": "Escuchar",
+ "spell.audio_on": "Solo audio: sí",
+ "spell.audio_off": "Solo audio: no",
+ "spell.audio_hidden": "Escucha y escribe lo que oyes.",
+ "audio.voice_on": "Voz: sí",
+ "audio.voice_off": "Voz: no",
+ "audio.radio_on": "Sonido de radio: sí",
+ "audio.radio_off": "Sonido de radio: no"
 }

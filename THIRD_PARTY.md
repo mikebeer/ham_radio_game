@@ -11,7 +11,9 @@
 | Godot Engine 4.6 | export templates | [MIT](https://godotengine.org/license/) | Include the licence notice in builds |
 | galene FactDatabase / QuestSystem | `autoloads/` | own project (mikebeer/galene) | |
 
-Everything else (code, vector art, sounds, technical lessons, QSO scripts, primers, UI text) is original.
+Everything else (code, vector art, UI sounds, Morse tones, technical lessons, QSO scripts, primers, UI text) is original.
+
+Spoken clips (NATO alphabet, digits, radio phrases), once generated: voices designed in the owner's ElevenLabs account and rendered with ElevenLabs text-to-speech (`tools/gen_audio.py`; `tools/audio/generated.json` records voice, text, model and date of every clip). Credit: "Voices generated with ElevenLabs".
 Callsigns and names in the callsign directory are fictional.
 
 Not affiliated with DARC e.V., the Bundesnetzagentur or any amateur radio magazine.

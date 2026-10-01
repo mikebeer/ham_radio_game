@@ -17,7 +17,7 @@ Germany, Austria, Switzerland, the USA and the UK.
 
 A profile screen (avatar, name, language, country, sound, new game) is reachable from the shack, and every screen has a Share button (screenshot, prefilled text, links for X, Bluesky, Facebook, LinkedIn, WhatsApp, Telegram, Reddit, e-mail). Social sites accept only text and a link from apps, so the screenshot is saved for attaching; web builds can use the browser share sheet with the image.
 
-Everything is drawn in code (`_draw()`), and all sound (UI and Morse) is synthesised, so there are no image or audio assets. Design: Figma file `1c1h1KXR4hK73PNQzxM762`; the Godot layouts use the same 1280×720 coordinates.
+Everything is drawn in code (`_draw()`). UI sounds and Morse are synthesised (pitch, speed, Farnsworth spacing, static and fading are adjustable); spoken NATO words, digits and radio phrases come from pre-generated clips (see **Audio** below) and fall back to the system text-to-speech. Design: Figma file `1c1h1KXR4hK73PNQzxM762`; the Godot layouts use the same 1280×720 coordinates.
 
 ## Run
 
@@ -54,6 +54,13 @@ Caveats:
 * The English text of the official German questions is an **unofficial translation**; the game says so.
 * US, UK and CH packs are **primers, not exam pools**. The Austrian catalogue is from 2009 (open questions, no answers), so the Austrian pack teaches abbreviations and Q-codes and points to the current rules. Always check the regulator's current rules.
 * The practice callsigns are placeholders, not real assignments.
+
+## Audio
+
+- **Morse and effects:** synthesised in `autoloads/Sfx.gd`, no files needed. Morse screen: speed, pitch, noise/fading sliders.
+- **Voice:** `autoloads/Voice.gd` plays clips from `assets/audio/voices/<voice>/<key>.mp3` over a "Radio" bus (band-pass filter and faint static, switchable in Settings). Without clips it uses the system text-to-speech (`DisplayServer.tts_*`: Windows, macOS, Android, iOS, web, Linux with speech-dispatcher). The spelling trainer has Listen buttons and an "audio only" mode for the decode words.
+- **Making the clips (ElevenLabs):** create the voices described in `tools/audio/VOICES.md`, paste their ids into `tools/audio/voices.json`, then on your own machine: `export ELEVENLABS_API_KEY=...`, `python3 tools/gen_audio.py --dry-run`, `python3 tools/gen_audio.py`. About 76 clips and 700 characters per voice (NATO alphabet, digits, 20 radio phrases in English and German). Only changed clips are regenerated. Afterwards listen to a few clips, run `godot --headless --import` and commit `assets/audio/` and `tools/audio/generated.json`. The key is read from the environment and never stored.
+- Tests: `tests/audio.gd`.
 
 ## Adding a language or country
 

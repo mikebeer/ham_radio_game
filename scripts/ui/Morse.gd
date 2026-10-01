@@ -79,7 +79,7 @@ func _new_round() -> void:
 func _play() -> void:
 	if not is_inside_tree() or _mode != "listen" or _target == "":
 		return
-	Sfx.play_morse(_target, _wpm())
+	Sfx.play_morse(_target, _wpm(), float(_pitch()), 0.0, _noise())
 	_segs = [[false, Sfx.LEAD_IN]] + Sfx.morse_segments(_target, _wpm())
 	_play_start = _t
 
@@ -154,20 +154,42 @@ func _build() -> void:
 			_build_result()
 
 
+func _pitch() -> int:
+	return clampi(Game.fact_int("morse.pitch", 600), 400, 900)
+
+
+func _noise() -> int:
+	return clampi(Game.fact_int("morse.noise", 0), 0, 2)
+
+
+func _noise_text(v: int) -> String:
+	return I18n.t("morse.noise", [I18n.t("morse.noise_%d" % v)])
+
+
 func _build_speed() -> void:
-	var lbl := add_lbl(I18n.t("morse.speed", [int(_wpm())]), Vector2(92, 556), 300, 16, Palette.CREAM, Style.font_body_bold)
+	_slider(526, 5, 30, 1, int(_wpm()), "morse.wpm",
+			func(v: float) -> String: return I18n.t("morse.speed", [int(v)]))
+	_slider(556, 400, 900, 25, _pitch(), "morse.pitch",
+			func(v: float) -> String: return I18n.t("morse.pitch", [int(v)]))
+	_slider(586, 0, 2, 1, _noise(), "morse.noise",
+			func(v: float) -> String: return _noise_text(int(v)))
+
+
+## A labelled slider in the left card that saves its value as a flag and replays the sound.
+func _slider(y: float, lo: float, hi: float, stp: float, value: int, flag: String, text: Callable) -> void:
+	var lbl := add_lbl(text.call(float(value)), Vector2(92, y), 300, 16, Palette.CREAM, Style.font_body_bold)
 	var sl := HSlider.new()
-	sl.min_value = 5
-	sl.max_value = 30
-	sl.step = 1
-	sl.value = _wpm()
-	sl.position = Vector2(300, 556)
-	sl.size = Vector2(270, 28)
+	sl.min_value = lo
+	sl.max_value = hi
+	sl.step = stp
+	sl.value = value
+	sl.position = Vector2(300, y)
+	sl.size = Vector2(270, 24)
 	sl.focus_mode = Control.FOCUS_NONE
-	sl.value_changed.connect(func(v: float) -> void: lbl.text = I18n.t("morse.speed", [int(v)]))
+	sl.value_changed.connect(func(v: float) -> void: lbl.text = text.call(v))
 	sl.drag_ended.connect(func(changed: bool) -> void:
 		if changed:
-			Game.set_flag("morse.wpm", int(sl.value))
+			Game.set_flag(flag, int(sl.value))
 			if _mode == "listen":
 				_play())
 	add_child(sl)
@@ -348,7 +370,7 @@ func _draw_grid() -> void:
 			x += ln + 5.0
 	# lamp
 	var on := _lamp_on()
-	var lamp := Vector2(270, 384)
+	var lamp := Vector2(270, 366)
 	if on:
 		ci.draw_circle(lamp, 40, Art.fade(Palette.AMBER, 0.25))
 	ci.draw_circle(lamp, 30, Palette.AMBER if on else Palette.LINE)

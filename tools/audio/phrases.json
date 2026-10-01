@@ -1,0 +1,112 @@
+{
+ "_comment": "Text for the spoken clips. NATO words and digits are generated from the lists in tools/gen_audio.py; 'say' overrides how a word is written for the voice model (pronunciation fixes). Clip file = phrase_<key>.mp3 (English) and phrase_<key>_de.mp3 (German).",
+ "say": {
+  "alfa": "Alfa",
+  "juliett": "Juliet",
+  "quebec": "Keh-beck",
+  "xray": "X-ray",
+  "nine": "niner"
+ },
+ "phrases": [
+  {
+   "key": "cq",
+   "en": "CQ CQ CQ",
+   "de": "CQ CQ CQ"
+  },
+  {
+   "key": "this_is",
+   "en": "this is",
+   "de": "hier ist"
+  },
+  {
+   "key": "calling_cq",
+   "en": "calling CQ and standing by",
+   "de": "ruft CQ und hört"
+  },
+  {
+   "key": "go_ahead",
+   "en": "go ahead",
+   "de": "kommen"
+  },
+  {
+   "key": "over",
+   "en": "over",
+   "de": "kommen"
+  },
+  {
+   "key": "out",
+   "en": "out",
+   "de": "Ende"
+  },
+  {
+   "key": "roger",
+   "en": "roger",
+   "de": "verstanden"
+  },
+  {
+   "key": "thanks_call",
+   "en": "thank you for the call",
+   "de": "danke für den Anruf"
+  },
+  {
+   "key": "my_qth",
+   "en": "my QTH is",
+   "de": "mein QTH ist"
+  },
+  {
+   "key": "my_name",
+   "en": "my name is",
+   "de": "mein Name ist"
+  },
+  {
+   "key": "report",
+   "en": "you are five nine",
+   "de": "dein Rapport ist fünf neun"
+  },
+  {
+   "key": "say_again",
+   "en": "say again please",
+   "de": "bitte wiederholen"
+  },
+  {
+   "key": "repeat_call",
+   "en": "please repeat your callsign",
+   "de": "bitte wiederhole dein Rufzeichen"
+  },
+  {
+   "key": "qrz",
+   "en": "QRZ, who is calling?",
+   "de": "QRZ, wer ruft?"
+  },
+  {
+   "key": "seventy_three",
+   "en": "seventy three",
+   "de": "dreiundsiebzig"
+  },
+  {
+   "key": "good_morning",
+   "en": "good morning",
+   "de": "guten Morgen"
+  },
+  {
+   "key": "good_afternoon",
+   "en": "good afternoon",
+   "de": "guten Tag"
+  },
+  {
+   "key": "good_evening",
+   "en": "good evening",
+   "de": "guten Abend"
+  },
+  {
+   "key": "spell",
+   "en": "I spell",
+   "de": "ich buchstabiere"
+  },
+  {
+   "key": "correct",
+   "en": "that is correct",
+   "de": "das ist richtig"
+  }
+ ]
+}

@@ -31,5 +31,18 @@
  "spell.best": "Optimus eventus: %d ex %d",
  "spell.hint_used": "Indicium adhibitum",
  "badge.spell.t": "Peritus phoneticus",
- "badge.spell.d": "Exercitationem litterarum perfice."
+ "badge.spell.d": "Exercitationem litterarum perfice.",
+ "morse.pitch": "Sonus: %d Hz",
+ "morse.noise": "Strepitus: %s",
+ "morse.noise_0": "nullus",
+ "morse.noise_1": "levis",
+ "morse.noise_2": "gravis",
+ "spell.listen": "Audi",
+ "spell.audio_on": "Sonus solus: ita",
+ "spell.audio_off": "Sonus solus: non",
+ "spell.audio_hidden": "Audi et scribe quod audis.",
+ "audio.voice_on": "Vox: ita",
+ "audio.voice_off": "Vox: non",
+ "audio.radio_on": "Sonus radiophonicus: ita",
+ "audio.radio_off": "Sonus radiophonicus: non"
 }

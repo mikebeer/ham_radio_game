@@ -18,9 +18,14 @@ var _morse_player: AudioStreamPlayer
 var _key_player: AudioStreamPlayer
 var _cache: Dictionary = {}
 var enabled := true
+## Noise settings for Morse: amplitude of the static and depth of the QSB fading.
+const NOISE_AMP := [0.0, 0.05, 0.13]
+const QSB_DEPTH := [0.0, 0.18, 0.4]
+const QSB_HZ := 0.35
 
 
 func _ready() -> void:
+	enabled = not Game.fact_bool("audio.sfx_off")
 	_player = AudioStreamPlayer.new()
 	_morse_player = AudioStreamPlayer.new()
 	_key_player = AudioStreamPlayer.new()
@@ -73,8 +78,13 @@ func unit_seconds(wpm: float) -> float:
 
 
 ## Returns the sequence of [is_tone, seconds] segments for a text, in Morse timing.
-func morse_segments(text: String, wpm: float) -> Array:
+## eff_wpm < wpm gives Farnsworth timing: characters are sent at `wpm`, the gaps between
+## characters and words are stretched so the overall speed is `eff_wpm` (PARIS = 50 units).
+func morse_segments(text: String, wpm: float, eff_wpm: float = 0.0) -> Array:
 	var u := unit_seconds(wpm)
+	var f := u
+	if eff_wpm > 0.0 and eff_wpm < wpm:
+		f = maxf(u, (60.0 / eff_wpm - 31.0 * u) / 19.0)
 	var segs: Array = []
 	var words := text.to_upper().split(" ", false)
 	for wi in words.size():
@@ -86,35 +96,65 @@ func morse_segments(text: String, wpm: float) -> Array:
 				if si < code.length() - 1:
 					segs.append([false, u])
 			if ci < word.length() - 1:
-				segs.append([false, 3.0 * u])
+				segs.append([false, 3.0 * f])
 		if wi < words.size() - 1:
-			segs.append([false, 7.0 * u])
+			segs.append([false, 7.0 * f])
 	return segs
 
 
-func morse_duration(text: String, wpm: float) -> float:
+func morse_duration(text: String, wpm: float, eff_wpm: float = 0.0) -> float:
 	var total := 0.0
-	for s in morse_segments(text, wpm):
+	for s in morse_segments(text, wpm, eff_wpm):
 		total += float(s[1])
 	return total
 
 
-func play_morse(text: String, wpm: float = 12.0, freq: float = 600.0) -> void:
+## noise: 0 = clean, 1 = some static and slow fading (QSB), 2 = heavy.
+func play_morse(text: String, wpm: float = 12.0, freq: float = 600.0, eff_wpm: float = 0.0, noise: int = 0) -> void:
 	if not enabled:
 		return
-	var data := PackedByteArray()
-	# Lead-in silence: the audio device swallows the start of a fresh stream, which made
-	# "S" (...) sound like "I" (..).
-	data.append_array(_silence_bytes(LEAD_IN))
-	for s in morse_segments(text, wpm):
-		if s[0]:
-			data.append_array(_tone_bytes(freq, float(s[1]), 0.45))
-		else:
-			data.append_array(_silence_bytes(float(s[1])))
-	data.append_array(_silence_bytes(0.05))
-	_morse_player.stream = _wav(data, false)
+	_morse_player.stream = morse_stream(text, wpm, freq, eff_wpm, noise)
 	_morse_player.volume_db = -6.0
 	_morse_player.play()
+
+
+## The audio of a text in Morse as a stream (also used by tests).
+func morse_stream(text: String, wpm: float = 12.0, freq: float = 600.0, eff_wpm: float = 0.0, noise: int = 0) -> AudioStreamWAV:
+	noise = clampi(noise, 0, NOISE_AMP.size() - 1)
+	var segs := morse_segments(text, wpm, eff_wpm)
+	# Lead-in silence: the audio device swallows the start of a fresh stream, which made
+	# "S" (...) sound like "I" (..).
+	segs.push_front([false, LEAD_IN])
+	segs.append([false, 0.05])
+	var total := 0
+	for sg in segs:
+		total += int(float(sg[1]) * RATE)
+	var data := PackedByteArray()
+	data.resize(total * 2)
+	var rng := RandomNumberGenerator.new()
+	rng.randomize()
+	var amp: float = NOISE_AMP[noise]
+	var depth: float = QSB_DEPTH[noise]
+	var phase := rng.randf() * TAU
+	var pos := 0
+	for sg in segs:
+		var n := int(float(sg[1]) * RATE)
+		var tone: bool = sg[0]
+		var attack := 0.006 * RATE
+		var release := 0.008 * RATE
+		for i in n:
+			var v := 0.0
+			if tone:
+				var env: float = min(1.0, float(i) / attack) * min(1.0, float(n - i) / release)
+				var fade := 1.0
+				if depth > 0.0:
+					fade = 1.0 - depth * (0.5 + 0.5 * sin(phase + TAU * QSB_HZ * float(pos + i) / RATE))
+				v = sin(TAU * freq * float(i) / RATE) * 0.45 * env * fade
+			if amp > 0.0:
+				v += (rng.randf() * 2.0 - 1.0) * amp
+			data.encode_s16((pos + i) * 2, int(clampf(v, -1.0, 1.0) * 32767.0))
+		pos += n
+	return _wav(data, false)
 
 
 func stop_morse() -> void:

@@ -2151,6 +2151,110 @@
   "es": "Comprobar",
   "la": "Proba"
  },
+ "morse.pitch": {
+  "en": "Pitch: %d Hz",
+  "de": "Tonhöhe: %d Hz",
+  "it": "Tono: %d Hz",
+  "fr": "Tonalité : %d Hz",
+  "es": "Tono: %d Hz",
+  "la": "Sonus: %d Hz"
+ },
+ "morse.noise": {
+  "en": "Noise: %s",
+  "de": "Rauschen: %s",
+  "it": "Rumore: %s",
+  "fr": "Bruit : %s",
+  "es": "Ruido: %s",
+  "la": "Strepitus: %s"
+ },
+ "morse.noise_0": {
+  "en": "off",
+  "de": "aus",
+  "it": "nessuno",
+  "fr": "aucun",
+  "es": "ninguno",
+  "la": "nullus"
+ },
+ "morse.noise_1": {
+  "en": "some",
+  "de": "etwas",
+  "it": "poco",
+  "fr": "léger",
+  "es": "poco",
+  "la": "levis"
+ },
+ "morse.noise_2": {
+  "en": "heavy",
+  "de": "stark",
+  "it": "forte",
+  "fr": "fort",
+  "es": "fuerte",
+  "la": "gravis"
+ },
+ "spell.listen": {
+  "en": "Listen",
+  "de": "Anhören",
+  "it": "Ascolta",
+  "fr": "Écouter",
+  "es": "Escuchar",
+  "la": "Audi"
+ },
+ "spell.audio_on": {
+  "en": "Audio only: on",
+  "de": "Nur Ton: an",
+  "it": "Solo audio: sì",
+  "fr": "Audio seul : oui",
+  "es": "Solo audio: sí",
+  "la": "Sonus solus: ita"
+ },
+ "spell.audio_off": {
+  "en": "Audio only: off",
+  "de": "Nur Ton: aus",
+  "it": "Solo audio: no",
+  "fr": "Audio seul : non",
+  "es": "Solo audio: no",
+  "la": "Sonus solus: non"
+ },
+ "spell.audio_hidden": {
+  "en": "Listen and type what you hear.",
+  "de": "Hör zu und tippe, was du hörst.",
+  "it": "Ascolta e scrivi ciò che senti.",
+  "fr": "Écoute et tape ce que tu entends.",
+  "es": "Escucha y escribe lo que oyes.",
+  "la": "Audi et scribe quod audis."
+ },
+ "audio.voice_on": {
+  "en": "Voice: on",
+  "de": "Stimme: an",
+  "it": "Voce: sì",
+  "fr": "Voix : oui",
+  "es": "Voz: sí",
+  "la": "Vox: ita"
+ },
+ "audio.voice_off": {
+  "en": "Voice: off",
+  "de": "Stimme: aus",
+  "it": "Voce: no",
+  "fr": "Voix : non",
+  "es": "Voz: no",
+  "la": "Vox: non"
+ },
+ "audio.radio_on": {
+  "en": "Radio sound: on",
+  "de": "Funkklang: an",
+  "it": "Suono radio: sì",
+  "fr": "Son radio : oui",
+  "es": "Sonido de radio: sí",
+  "la": "Sonus radiophonicus: ita"
+ },
+ "audio.radio_off": {
+  "en": "Radio sound: off",
+  "de": "Funkklang: aus",
+  "it": "Suono radio: no",
+  "fr": "Son radio : non",
+  "es": "Sonido de radio: no",
+  "la": "Sonus radiophonicus: non"
+ },
  "spell.hint": {
   "en": "Hint",
   "de": "Tipp",

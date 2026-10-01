@@ -31,5 +31,18 @@
  "spell.best": "Miglior risultato: %d su %d",
  "spell.hint_used": "Aiuto usato",
  "badge.spell.t": "Maestro di fonetica",
- "badge.spell.d": "Supera l'allenamento di compitazione."
+ "badge.spell.d": "Supera l'allenamento di compitazione.",
+ "morse.pitch": "Tono: %d Hz",
+ "morse.noise": "Rumore: %s",
+ "morse.noise_0": "nessuno",
+ "morse.noise_1": "poco",
+ "morse.noise_2": "forte",
+ "spell.listen": "Ascolta",
+ "spell.audio_on": "Solo audio: sì",
+ "spell.audio_off": "Solo audio: no",
+ "spell.audio_hidden": "Ascolta e scrivi ciò che senti.",
+ "audio.voice_on": "Voce: sì",
+ "audio.voice_off": "Voce: no",
+ "audio.radio_on": "Suono radio: sì",
+ "audio.radio_off": "Suono radio: no"
 }

@@ -647,6 +647,8 @@ if __name__ == "__main__":
         dump("content/legal/%s.json" % pack["country"], clean(pack))
     lib = json.load(open(os.path.join(ROOT, "tools", "course", "library.json"), encoding="utf-8"))
     dump("content/library.json", clean(lib))
+    # phrase texts for the spoken clips (also the text-to-speech fallback)
+    dump("content/audio.json", json.load(open(os.path.join(ROOT, "tools", "audio", "phrases.json"), encoding="utf-8")))
     json.dump(SPELL, open(os.path.join(ROOT, "content", "spelling.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     plist = parts()
     for p in plist:
