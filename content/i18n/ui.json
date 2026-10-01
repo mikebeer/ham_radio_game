@@ -1998,5 +1998,269 @@
   "fr": "Apprendre",
   "es": "Aprendizaje",
   "la": "Disciplina"
+ },
+ "hub.spelling": {
+  "en": "Spelling",
+  "de": "Buchstabieren",
+  "it": "Compitazione",
+  "fr": "Épellation",
+  "es": "Deletreo",
+  "la": "Litterae dictae"
+ },
+ "spell.title": {
+  "en": "Spelling trainer",
+  "de": "Buchstabier-Training",
+  "it": "Allenamento di compitazione",
+  "fr": "Entraînement à l'épellation",
+  "es": "Entrenamiento de deletreo",
+  "la": "Exercitatio litterarum dicendarum"
+ },
+ "spell.sub": {
+  "en": "NATO phonetic alphabet - a favourite exam task",
+  "de": "NATO-Buchstabiertafel - eine beliebte Prüfungsaufgabe",
+  "it": "Alfabeto fonetico NATO - un classico dell'esame",
+  "fr": "Alphabet phonétique OTAN - un classique de l'examen",
+  "es": "Alfabeto fonético NATO - un clásico del examen",
+  "la": "Alphabetum phoneticum NATO - res examinis amata"
+ },
+ "spell.intro": {
+  "en": "On the air you spell names, places and callsigns with the NATO phonetic alphabet: A = Alfa, B = Bravo, C = Charlie ... Numbers are said plainly: one, two, three. This is the only alphabet used in amateur radio worldwide. In the exam you may have to spell your own name or a place. Six words, typed answers.",
+  "de": "Im Funk buchstabierst du Namen, Orte und Rufzeichen mit dem NATO-Alphabet: A = Alfa, B = Bravo, C = Charlie ... Zahlen sprichst du einfach: eins, zwei, drei. Es ist das einzige Alphabet im Amateurfunk weltweit. In der Prüfung musst du vielleicht deinen eigenen Namen oder einen Ort buchstabieren. Sechs Wörter, du tippst die Antworten.",
+  "it": "In onda compili nomi, luoghi e nominativi con l'alfabeto fonetico NATO: A = Alfa, B = Bravo, C = Charlie ... I numeri si dicono semplicemente: uno, due, tre. È l'unico alfabeto usato nel radiantismo in tutto il mondo. All'esame potresti dover compitare il tuo nome o un luogo. Sei parole, risposte scritte.",
+  "fr": "À la radio, tu épelles noms, lieux et indicatifs avec l'alphabet phonétique OTAN : A = Alfa, B = Bravo, C = Charlie ... Les chiffres se disent simplement : un, deux, trois. C'est le seul alphabet utilisé en radioamateur dans le monde entier. À l'examen, tu devras peut-être épeler ton nom ou un lieu. Six mots, réponses à taper.",
+  "es": "En el aire deletreas nombres, lugares e indicativos con el alfabeto fonético NATO: A = Alfa, B = Bravo, C = Charlie ... Los números se dicen sin más: uno, dos, tres. Es el único alfabeto que se usa en la radioafición en todo el mundo. En el examen quizá tengas que deletrear tu propio nombre o un lugar. Seis palabras, respuestas escritas.",
+  "la": "In aethere nomina, locos et signa vocationis alphabeto phonetico NATO litteras dicis: A = Alfa, B = Bravo, C = Charlie ... Numeri simpliciter dicuntur: unus, duo, tres. Hoc unicum alphabetum in radioamatoria toto orbe adhibetur. In examine fortasse nomen tuum aut locum litteris dicere debes. Sex verba, responsa scribis."
+ },
+ "spell.start": {
+  "en": "Start",
+  "de": "Start",
+  "it": "Inizia",
+  "fr": "Démarrer",
+  "es": "Empezar",
+  "la": "Incipe"
+ },
+ "spell.word_n": {
+  "en": "Word %d of %d",
+  "de": "Wort %d von %d",
+  "it": "Parola %d di %d",
+  "fr": "Mot %d sur %d",
+  "es": "Palabra %d de %d",
+  "la": "Verbum %d ex %d"
+ },
+ "spell.encode": {
+  "en": "Spell %s with the NATO alphabet:",
+  "de": "Buchstabiere %s mit dem NATO-Alphabet:",
+  "it": "Compita %s con l'alfabeto NATO:",
+  "fr": "Épelle %s avec l'alphabet NATO :",
+  "es": "Deletrea %s con el alfabeto NATO:",
+  "la": "Dic litteras %s per alphabetum NATO:"
+ },
+ "spell.decode": {
+  "en": "Which %s is spelled here?",
+  "de": "Welches Wort wird hier buchstabiert (%s)?",
+  "it": "Qui si compita (%s): qual è?",
+  "fr": "Épellation (%s) : de quoi s'agit-il ?",
+  "es": "Aquí se deletrea (%s): ¿cuál es?",
+  "la": "Hic litterae dicuntur (%s): quid est?"
+ },
+ "spell.kind.name": {
+  "en": "your name",
+  "de": "deinen Namen",
+  "it": "il tuo nome",
+  "fr": "ton nom",
+  "es": "tu nombre",
+  "la": "nominis tui"
+ },
+ "spell.kind.city": {
+  "en": "this place",
+  "de": "diesen Ort",
+  "it": "questo luogo",
+  "fr": "ce lieu",
+  "es": "este lugar",
+  "la": "huius loci"
+ },
+ "spell.kind.callsign": {
+  "en": "this callsign",
+  "de": "dieses Rufzeichen",
+  "it": "questo nominativo",
+  "fr": "cet indicatif",
+  "es": "este indicativo",
+  "la": "huius signi vocationis"
+ },
+ "spell.kind.word": {
+  "en": "this word",
+  "de": "dieses Wort",
+  "it": "questa parola",
+  "fr": "ce mot",
+  "es": "esta palabra",
+  "la": "huius verbi"
+ },
+ "spell.kind.d_name": {
+  "en": "name",
+  "de": "Name",
+  "it": "nome",
+  "fr": "nom",
+  "es": "nombre",
+  "la": "nomen"
+ },
+ "spell.kind.d_city": {
+  "en": "place",
+  "de": "Ort",
+  "it": "luogo",
+  "fr": "lieu",
+  "es": "lugar",
+  "la": "locus"
+ },
+ "spell.kind.d_callsign": {
+  "en": "callsign",
+  "de": "Rufzeichen",
+  "it": "nominativo",
+  "fr": "indicatif",
+  "es": "indicativo",
+  "la": "signum vocationis"
+ },
+ "spell.kind.d_word": {
+  "en": "word",
+  "de": "Wort",
+  "it": "parola",
+  "fr": "mot",
+  "es": "palabra",
+  "la": "verbum"
+ },
+ "spell.ph_encode": {
+  "en": "Type the code words: Charlie Alfa Romeo ...",
+  "de": "Tippe die Codewörter: Charlie Alfa Romeo ...",
+  "it": "Scrivi le parole in codice: Charlie Alfa Romeo ...",
+  "fr": "Tape les mots de code : Charlie Alfa Romeo ...",
+  "es": "Escribe las palabras clave: Charlie Alfa Romeo ...",
+  "la": "Scribe verba codicis: Charlie Alfa Romeo ..."
+ },
+ "spell.ph_decode": {
+  "en": "Type the word",
+  "de": "Tippe das Wort",
+  "it": "Scrivi la parola",
+  "fr": "Tape le mot",
+  "es": "Escribe la palabra",
+  "la": "Scribe verbum"
+ },
+ "spell.check": {
+  "en": "Check",
+  "de": "Prüfen",
+  "it": "Verifica",
+  "fr": "Vérifier",
+  "es": "Comprobar",
+  "la": "Proba"
+ },
+ "spell.hint": {
+  "en": "Hint",
+  "de": "Tipp",
+  "it": "Aiuto",
+  "fr": "Indice",
+  "es": "Pista",
+  "la": "Indicium"
+ },
+ "spell.next": {
+  "en": "Next word",
+  "de": "Nächstes Wort",
+  "it": "Parola successiva",
+  "fr": "Mot suivant",
+  "es": "Siguiente palabra",
+  "la": "Verbum proximum"
+ },
+ "spell.finish": {
+  "en": "Finish",
+  "de": "Fertig",
+  "it": "Fine",
+  "fr": "Terminer",
+  "es": "Terminar",
+  "la": "Finis"
+ },
+ "spell.right": {
+  "en": "Perfect!",
+  "de": "Perfekt!",
+  "it": "Perfetto!",
+  "fr": "Parfait !",
+  "es": "¡Perfecto!",
+  "la": "Optime!"
+ },
+ "spell.wrong": {
+  "en": "Not quite. The correct answer:",
+  "de": "Nicht ganz. Richtig ist:",
+  "it": "Quasi. La risposta giusta:",
+  "fr": "Pas tout à fait. La bonne réponse :",
+  "es": "Casi. La respuesta correcta:",
+  "la": "Paene. Responsum rectum:"
+ },
+ "spell.chart": {
+  "en": "Show alphabet",
+  "de": "Alphabet zeigen",
+  "it": "Mostra alfabeto",
+  "fr": "Afficher l'alphabet",
+  "es": "Mostrar alfabeto",
+  "la": "Alphabetum ostende"
+ },
+ "spell.chart_hide": {
+  "en": "Hide alphabet",
+  "de": "Alphabet ausblenden",
+  "it": "Nascondi alfabeto",
+  "fr": "Masquer l'alphabet",
+  "es": "Ocultar alfabeto",
+  "la": "Alphabetum cela"
+ },
+ "spell.result": {
+  "en": "%d of %d words correct",
+  "de": "%d von %d Wörtern richtig",
+  "it": "%d parole corrette su %d",
+  "fr": "%d mots justes sur %d",
+  "es": "%d de %d palabras correctas",
+  "la": "%d ex %d verba recta"
+ },
+ "spell.passed": {
+  "en": "Well spelled! Your tongue is ready for the exam.",
+  "de": "Gut buchstabiert! Du bist bereit für die Prüfung.",
+  "it": "Ben compitato! La tua lingua è pronta per l'esame.",
+  "fr": "Bien épelé ! Tu es prêt pour l'examen.",
+  "es": "¡Bien deletreado! Estás listo para el examen.",
+  "la": "Bene dixisti! Paratus es ad examen."
+ },
+ "spell.failed": {
+  "en": "You need %d correct. Check the alphabet and try again.",
+  "de": "Du brauchst %d richtige. Schau dir das Alphabet an und versuche es nochmal.",
+  "it": "Te ne servono %d giuste. Guarda l'alfabeto e riprova.",
+  "fr": "Il t'en faut %d de justes. Regarde l'alphabet et réessaie.",
+  "es": "Necesitas %d correctas. Mira el alfabeto e inténtalo de nuevo.",
+  "la": "Opus est %d rectis. Alphabetum inspice et iterum conare."
+ },
+ "spell.best": {
+  "en": "Best result: %d of %d",
+  "de": "Bestes Ergebnis: %d von %d",
+  "it": "Miglior risultato: %d su %d",
+  "fr": "Meilleur résultat : %d sur %d",
+  "es": "Mejor resultado: %d de %d",
+  "la": "Optimus eventus: %d ex %d"
+ },
+ "spell.hint_used": {
+  "en": "Hint used",
+  "de": "Tipp genutzt",
+  "it": "Aiuto usato",
+  "fr": "Indice utilisé",
+  "es": "Pista usada",
+  "la": "Indicium adhibitum"
+ },
+ "badge.spell.t": {
+  "en": "Phonetic pro",
+  "de": "Buchstabier-Profi",
+  "it": "Maestro di fonetica",
+  "fr": "Pro de la phonétique",
+  "es": "Profesional de la fonética",
+  "la": "Peritus phoneticus"
+ },
+ "badge.spell.d": {
+  "en": "Pass the spelling trainer.",
+  "de": "Bestehe das Buchstabier-Training.",
+  "it": "Supera l'allenamento di compitazione.",
+  "fr": "Réussis l'entraînement à l'épellation.",
+  "es": "Supera el entrenamiento de deletreo.",
+  "la": "Exercitationem litterarum perfice."
  }
 }

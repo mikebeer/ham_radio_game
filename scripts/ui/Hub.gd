@@ -248,8 +248,10 @@ func _build_topbar() -> void:
 	dot.add_theme_stylebox_override("panel", Style.box(Palette.AMBER, 12))
 	add_child(dot)
 	add_lbl(I18n.t("hub.shack", [Game.parts_owned(), 8]), Vector2(694, 20), 0, 20, Palette.AMBER, Style.font_display)
-	var lib := add_btn(I18n.t("hub.library"), Vector2(870, 14), func() -> void: SceneManager.go("library"), "", Vector2(130, 40))
+	var lib := add_btn(I18n.t("hub.library"), Vector2(862, 14), func() -> void: SceneManager.go("library"), "", Vector2(112, 40))
 	lib.add_theme_font_size_override("font_size", 16)
+	var spl := add_btn(I18n.t("hub.spelling"), Vector2(982, 14), func() -> void: SceneManager.go("spell"), "", Vector2(112, 40))
+	spl.add_theme_font_size_override("font_size", 16)
 	add_top_icons(10.0)
 
 

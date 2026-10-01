@@ -595,6 +595,9 @@ def load_course():
     return {"shack": shack, "de_rules": {int(k): _cards(v) for k, v in de["levels"].items()}}
 
 
+SPELL = {'cities': {'de': ['Berlin', 'Hamburg', 'München', 'Köln', 'Frankfurt', 'Stuttgart', 'Dresden', 'Leipzig', 'Bremen', 'Hannover', 'Nürnberg', 'Kassel'], 'at': ['Wien', 'Graz', 'Linz', 'Salzburg', 'Innsbruck', 'Klagenfurt', 'Villach', 'Bregenz', 'Eisenstadt', 'Dornbirn', 'Wels', 'Steyr'], 'ch': ['Bern', 'Zürich', 'Basel', 'Luzern', 'Lausanne', 'Lugano', 'Chur', 'Zug', 'Thun', 'Biel', 'Genf', 'Aarau'], 'us': ['Boston', 'Denver', 'Seattle', 'Dallas', 'Chicago', 'Phoenix', 'Atlanta', 'Houston', 'Portland', 'Austin', 'Miami', 'Detroit'], 'uk': ['London', 'Bristol', 'Leeds', 'Oxford', 'Cardiff', 'Glasgow', 'Dundee', 'Belfast', 'Cambridge', 'Norwich', 'Exeter', 'Newcastle']}, 'words': ['RADIO', 'MORSE', 'SIGNAL', 'DIPOLE', 'ANTENNA', 'BEACON', 'CARRIER', 'FILTER', 'TUNER', 'SQUELCH', 'MICROPHONE', 'CONTACT', 'STATION', 'LISTEN', 'SPARK', 'MAST', 'COAX', 'BALUN', 'VOLTAGE', 'GROUND', 'REPEATER', 'SIDEBAND', 'MODEM', 'OSCILLATOR', 'HEADSET', 'QUARTZ', 'RECEIVER', 'LOGBOOK', 'TOWER', 'WAVE']}
+
+
 def merge_ui(ui):
     """Adds the translations from tools/i18n/ui_<lang>.json (it, fr, es, la) when present."""
     for lang in ("it", "fr", "es", "la"):
@@ -602,6 +605,12 @@ def merge_ui(ui):
         if os.path.exists(p):
             tr = json.load(open(p, encoding="utf-8"))
             for k, v in tr.items():
+                if k in ui:
+                    ui[k][lang] = v
+    for lang in ("it", "fr", "es", "la"):
+        p = os.path.join(ROOT, "tools", "i18n", "delta_%s.json" % lang)
+        if os.path.exists(p):
+            for k, v in json.load(open(p, encoding="utf-8")).items():
                 if k in ui:
                     ui[k][lang] = v
     return ui
@@ -638,6 +647,7 @@ if __name__ == "__main__":
         dump("content/legal/%s.json" % pack["country"], clean(pack))
     lib = json.load(open(os.path.join(ROOT, "tools", "course", "library.json"), encoding="utf-8"))
     dump("content/library.json", clean(lib))
+    json.dump(SPELL, open(os.path.join(ROOT, "content", "spelling.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     plist = parts()
     for p in plist:
         p["tiers"] = {str(lv): TIERS[p["id"]][lv] for lv in (2, 3)}

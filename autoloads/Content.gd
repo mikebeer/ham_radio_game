@@ -8,6 +8,7 @@ var legal: Dictionary = {}
 var qso: Dictionary = {}
 var callsigns: Dictionary = {}
 var library: Array = []
+var spelling: Dictionary = {}
 
 
 func _ready() -> void:
@@ -22,6 +23,9 @@ func _ready() -> void:
 		var cs = _read_json("res://content/callsigns/%s.json" % c)
 		if cs is Dictionary:
 			callsigns[c] = cs
+	var sp = _read_json("res://content/spelling.json")
+	if sp is Dictionary:
+		spelling = sp
 	var lib = _read_json("res://content/library.json")
 	if lib is Dictionary:
 		library = lib.get("entries", [])

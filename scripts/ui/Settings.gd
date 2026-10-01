@@ -117,17 +117,17 @@ func _tab_badges() -> void:
 	add_child(_medals)
 	for i in Game.BADGE_IDS.size():
 		var id: String = Game.BADGE_IDS[i]
-		var x := 366.0 + (i % 4) * 212.0
-		var y := 140.0 + (i / 4) * 160.0
+		var x := 358.0 + (i % 5) * 170.0
+		var y := 140.0 + (i / 5) * 160.0
 		var got := Game.badge_earned(id)
-		add_lbl(I18n.t("badge.%s.t" % id), Vector2(x, y + 84), 200, 16, Palette.CREAM if got else Palette.MUTED, Style.font_body_bold, HORIZONTAL_ALIGNMENT_CENTER)
-		add_lbl(I18n.t("badge.%s.d" % id), Vector2(x, y + 106), 200, 12, Palette.MUTED, null, HORIZONTAL_ALIGNMENT_CENTER)
+		add_lbl(I18n.t("badge.%s.t" % id), Vector2(x, y + 84), 160, 15, Palette.CREAM if got else Palette.MUTED, Style.font_body_bold, HORIZONTAL_ALIGNMENT_CENTER)
+		add_lbl(I18n.t("badge.%s.d" % id), Vector2(x, y + 106), 160, 11, Palette.MUTED, null, HORIZONTAL_ALIGNMENT_CENTER)
 
 
 func _draw_medals() -> void:
 	for i in Game.BADGE_IDS.size():
 		var id: String = Game.BADGE_IDS[i]
-		var c := Vector2(366.0 + (i % 4) * 212.0 + 100.0, 140.0 + (i / 4) * 160.0 + 38.0)
+		var c := Vector2(358.0 + (i % 5) * 170.0 + 80.0, 140.0 + (i / 5) * 160.0 + 38.0)
 		var got := Game.badge_earned(id)
 		var col: Color = [Palette.AMBER, Palette.TEAL, Palette.GREEN, Palette.CORAL][i % 4]
 		if not got:

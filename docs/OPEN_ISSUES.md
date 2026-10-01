@@ -61,3 +61,4 @@ Status 2026-10-01. P1 = before any public release, P2 = soon, P3 = nice to have.
 | 33 | P3 | Save file has no version number; migrations (e.g. study flags) are done ad hoc in `Game.load_game()`. |
 | 34 | P3 | Quest task names in `ham.cfg` are English only (not shown in the UI today). |
 | 35 | P3 | Avatar: no child avatars on purpose; headwear list is short (cap, beanie, headscarf); more skin/hair/accessory options possible. |
+| 37 | P2 | Spelling trainer (NATO alphabet only): digits are accepted as numerals, English and German number words; no audio (code words are shown as text); umlauts are folded to the base letter (Ü to U) for names and places; the QSO goal does not link to it yet and it is not a quest task (only a badge). |

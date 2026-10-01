@@ -154,7 +154,7 @@ func stat(key: String) -> int:
 	return int((profile.get("stats", {}) as Dictionary).get(key, 0))
 
 
-const BADGE_IDS := ["first_part", "full_shack", "rules", "callsign", "qso", "morse3", "morse10", "level2", "level3", "reader", "quiz50", "perfect"]
+const BADGE_IDS := ["first_part", "full_shack", "rules", "callsign", "qso", "morse3", "morse10", "level2", "level3", "reader", "quiz50", "perfect", "spell"]
 
 
 func badge_earned(id: String) -> bool:
@@ -189,6 +189,8 @@ func badge_earned(id: String) -> bool:
 			return stat("correct") >= 50
 		"perfect":
 			return stat("perfect") >= 1
+		"spell":
+			return fact_bool("spell.passed")
 	return false
 
 
