@@ -1,8 +1,8 @@
 {
  "_comment": "Create the voices in your ElevenLabs account (descriptions in VOICES.md), then replace PASTE_VOICE_ID with each voice id (Voices -> the voice -> copy ID). Only voices you may use commercially (see VOICES.md).",
  "voices": [
-  {"name": "anna", "voice_id": "PASTE_VOICE_ID"},
-  {"name": "tom",  "voice_id": "PASTE_VOICE_ID"},
-  {"name": "kai",  "voice_id": "PASTE_VOICE_ID"}
+  {"name": "anna", "voice_id": "zapJj7IQW19eWIxJCpBQ"},
+  {"name": "tom",  "voice_id": "oSrUqW7bP3P2y7DtxLPG"},
+  {"name": "kai",  "voice_id": "i0tPTZU0l9Z4bu4Dx3h5"}
  ]
 }
